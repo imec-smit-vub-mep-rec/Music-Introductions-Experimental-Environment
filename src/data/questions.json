@@ -1,0 +1,121 @@
+{
+  "onboarding": {
+    "id": "onboarding",
+    "title": "About You",
+    "questions": [
+      {
+        "id": "gender",
+        "type": "multiple-choice",
+        "text": "What is your gender?",
+        "options": ["Male", "Female", "Non-binary", "Prefer not to say"],
+        "required": true
+      },
+      {
+        "id": "age",
+        "type": "multiple-choice",
+        "text": "What is your age range?",
+        "options": ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"],
+        "required": true
+      },
+      {
+        "id": "music_frequency",
+        "type": "multiple-choice",
+        "text": "How often do you listen to music?",
+        "options": ["Daily", "Several times a week", "Weekly", "Monthly", "Rarely"],
+        "required": true
+      },
+      {
+        "id": "favorite_genres",
+        "type": "checkbox",
+        "text": "Which genres do you typically enjoy? (Select all that apply)",
+        "options": ["Pop", "Hip-hop", "Rock", "Electronic", "Latin", "Jazz", "Classical", "Country", "R&B", "Other"],
+        "required": true
+      },
+      {
+        "id": "music_discovery",
+        "type": "multiple-choice",
+        "text": "How do you usually discover new music?",
+        "options": ["Streaming recommendations", "Friends", "Radio", "Social media", "Live events", "Other"],
+        "required": true
+      }
+    ]
+  },
+  "postListening": {
+    "id": "postListening",
+    "title": "Your Listening Experience",
+    "questions": [
+      {
+        "id": "enjoyment",
+        "type": "rating",
+        "text": "How much did you enjoy the music you just heard?",
+        "min": 1,
+        "max": 5,
+        "required": true
+      },
+      {
+        "id": "familiarity",
+        "type": "rating",
+        "text": "How familiar were you with this genre?",
+        "min": 1,
+        "max": 5,
+        "required": true
+      },
+      {
+        "id": "emotional_response",
+        "type": "multiple-choice",
+        "text": "What was your primary emotional response?",
+        "options": ["Happy", "Sad", "Energetic", "Calm", "Nostalgic", "Excited", "Relaxed", "Other"],
+        "required": true
+      },
+      {
+        "id": "would_listen_again",
+        "type": "multiple-choice",
+        "text": "Would you listen to this genre again?",
+        "options": ["Definitely", "Probably", "Maybe", "Probably not", "Definitely not"],
+        "required": true
+      },
+      {
+        "id": "additional_thoughts",
+        "type": "text",
+        "text": "Any additional thoughts about the music you heard?",
+        "placeholder": "Share your thoughts...",
+        "required": false
+      }
+    ]
+  },
+  "final": {
+    "id": "final",
+    "title": "Final Thoughts",
+    "questions": [
+      {
+        "id": "overall_experience",
+        "type": "rating",
+        "text": "How would you rate your overall experience with this experiment?",
+        "min": 1,
+        "max": 5,
+        "required": true
+      },
+      {
+        "id": "genre_preference",
+        "type": "multiple-choice",
+        "text": "Which genre did you prefer overall?",
+        "options": ["The first genre", "The second genre", "Both equally", "Neither"],
+        "required": true
+      },
+      {
+        "id": "discovery_value",
+        "type": "multiple-choice",
+        "text": "Did this experiment help you discover new music you might enjoy?",
+        "options": ["Yes, definitely", "Yes, somewhat", "Maybe", "No, not really", "No, definitely not"],
+        "required": true
+      },
+      {
+        "id": "feedback",
+        "type": "text",
+        "text": "Any final feedback about this experiment?",
+        "placeholder": "Your feedback is valuable to us...",
+        "required": false
+      }
+    ]
+  }
+}

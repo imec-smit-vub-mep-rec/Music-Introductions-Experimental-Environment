@@ -1,0 +1,187 @@
+{
+  "songsPerGenre": 3,
+  "genres": [
+    {
+      "id": "pop",
+      "name": "Pop",
+      "color": "#FFB17A",
+      "pattern": "sandy-brown"
+    },
+    {
+      "id": "hip-hop",
+      "name": "Hip-hop",
+      "color": "#4F4789",
+      "pattern": "ultra-violet"
+    },
+    {
+      "id": "rock",
+      "name": "Rock",
+      "color": "#201335",
+      "pattern": "dark-purple"
+    },
+    {
+      "id": "electronic",
+      "name": "Electronic",
+      "color": "#FCE762",
+      "pattern": "maize"
+    },
+    {
+      "id": "latin",
+      "name": "Latin",
+      "color": "#FFFDED",
+      "pattern": "ivory"
+    },
+    {
+      "id": "jazz",
+      "name": "Jazz",
+      "color": "#FFB17A",
+      "pattern": "sandy-brown"
+    }
+  ],
+  "songs": [
+    {
+      "id": "pop_1",
+      "title": "Summer Vibes",
+      "artist": "Pop Artist",
+      "genre": "pop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 180
+    },
+    {
+      "id": "pop_2",
+      "title": "City Lights",
+      "artist": "Pop Artist",
+      "genre": "pop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 195
+    },
+    {
+      "id": "pop_3",
+      "title": "Dreams",
+      "artist": "Pop Artist",
+      "genre": "pop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 210
+    },
+    {
+      "id": "hip-hop_1",
+      "title": "Street Flow",
+      "artist": "Hip-hop Artist",
+      "genre": "hip-hop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 165
+    },
+    {
+      "id": "hip-hop_2",
+      "title": "Urban Beat",
+      "artist": "Hip-hop Artist",
+      "genre": "hip-hop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 180
+    },
+    {
+      "id": "hip-hop_3",
+      "title": "Rhythm City",
+      "artist": "Hip-hop Artist",
+      "genre": "hip-hop",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 175
+    },
+    {
+      "id": "rock_1",
+      "title": "Thunder",
+      "artist": "Rock Band",
+      "genre": "rock",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 240
+    },
+    {
+      "id": "rock_2",
+      "title": "Electric Storm",
+      "artist": "Rock Band",
+      "genre": "rock",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 220
+    },
+    {
+      "id": "rock_3",
+      "title": "Mountain High",
+      "artist": "Rock Band",
+      "genre": "rock",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 200
+    },
+    {
+      "id": "electronic_1",
+      "title": "Digital Dreams",
+      "artist": "Electronic Artist",
+      "genre": "electronic",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 300
+    },
+    {
+      "id": "electronic_2",
+      "title": "Synthetic Soul",
+      "artist": "Electronic Artist",
+      "genre": "electronic",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 280
+    },
+    {
+      "id": "electronic_3",
+      "title": "Neon Nights",
+      "artist": "Electronic Artist",
+      "genre": "electronic",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 320
+    },
+    {
+      "id": "latin_1",
+      "title": "Fiesta",
+      "artist": "Latin Artist",
+      "genre": "latin",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 210
+    },
+    {
+      "id": "latin_2",
+      "title": "Salsa Caliente",
+      "artist": "Latin Artist",
+      "genre": "latin",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 195
+    },
+    {
+      "id": "latin_3",
+      "title": "Ritmo",
+      "artist": "Latin Artist",
+      "genre": "latin",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 225
+    },
+    {
+      "id": "jazz_1",
+      "title": "Midnight Blues",
+      "artist": "Jazz Artist",
+      "genre": "jazz",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 360
+    },
+    {
+      "id": "jazz_2",
+      "title": "Smooth Jazz",
+      "artist": "Jazz Artist",
+      "genre": "jazz",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 280
+    },
+    {
+      "id": "jazz_3",
+      "title": "Urban Jazz",
+      "artist": "Jazz Artist",
+      "genre": "jazz",
+      "audioUrl": "/audio/demo.m4a",
+      "duration": 320
+    }
+  ]
+}

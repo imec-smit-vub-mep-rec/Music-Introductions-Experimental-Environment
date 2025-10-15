@@ -3,11 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Custom color palette */
+  --maize: #FCE762;
+  --ivory: #FFFDED;
+  --sandy-brown: #FFB17A;
+  --ultra-violet: #4F4789;
+  --dark-purple: #201335;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-maize: var(--maize);
+  --color-ivory: var(--ivory);
+  --color-sandy-brown: var(--sandy-brown);
+  --color-ultra-violet: var(--ultra-violet);
+  --color-dark-purple: var(--dark-purple);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
