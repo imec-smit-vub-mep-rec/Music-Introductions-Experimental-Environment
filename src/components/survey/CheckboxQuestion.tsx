@@ -2,12 +2,13 @@
 
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
+import { AnswerValue } from '@/lib/types';
 
 interface CheckboxQuestionProps {
   question: string;
   options: string[];
-  value?: string[];
-  onChange: (value: string[]) => void;
+  value?: AnswerValue;
+  onChange: (value: AnswerValue) => void;
   required?: boolean;
 }
 
@@ -18,11 +19,13 @@ export function CheckboxQuestion({
   onChange, 
   required = false 
 }: CheckboxQuestionProps) {
+  const currentValue = (value as string[]) || [];
+  
   const handleChange = (option: string, checked: boolean) => {
     if (checked) {
-      onChange([...value, option]);
+      onChange([...currentValue, option]);
     } else {
-      onChange(value.filter(v => v !== option));
+      onChange(currentValue.filter(v => v !== option));
     }
   };
 
@@ -37,7 +40,7 @@ export function CheckboxQuestion({
           <div key={option} className="flex items-center space-x-3">
             <Checkbox 
               id={option}
-              checked={value.includes(option)}
+              checked={currentValue.includes(option)}
               onCheckedChange={(checked) => handleChange(option, checked as boolean)}
               className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize"
             />

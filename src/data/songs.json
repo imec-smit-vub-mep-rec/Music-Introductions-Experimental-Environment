@@ -2,186 +2,186 @@
   "songsPerGenre": 3,
   "genres": [
     {
-      "id": "pop",
-      "name": "Pop",
-      "color": "#FFB17A",
-      "pattern": "sandy-brown"
+      "id": "disco",
+      "name": "Disco",
+      "color": "#FF6B6B",
+      "pattern": "coral-red"
     },
     {
-      "id": "hip-hop",
-      "name": "Hip-hop",
-      "color": "#4F4789",
-      "pattern": "ultra-violet"
+      "id": "opera",
+      "name": "Opera",
+      "color": "#4ECDC4",
+      "pattern": "teal"
     },
     {
-      "id": "rock",
-      "name": "Rock",
-      "color": "#201335",
-      "pattern": "dark-purple"
+      "id": "heavy-metal",
+      "name": "Heavy Metal",
+      "color": "#2C3E50",
+      "pattern": "dark-blue"
     },
     {
-      "id": "electronic",
-      "name": "Electronic",
-      "color": "#FCE762",
-      "pattern": "maize"
+      "id": "blues",
+      "name": "Blues",
+      "color": "#3498DB",
+      "pattern": "blue"
     },
     {
-      "id": "latin",
-      "name": "Latin",
-      "color": "#FFFDED",
-      "pattern": "ivory"
-    },
-    {
-      "id": "jazz",
-      "name": "Jazz",
-      "color": "#FFB17A",
-      "pattern": "sandy-brown"
+      "id": "country",
+      "name": "Country",
+      "color": "#E67E22",
+      "pattern": "orange"
     }
   ],
   "songs": [
     {
-      "id": "pop_1",
-      "title": "Summer Vibes",
-      "artist": "Pop Artist",
-      "genre": "pop",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 180
+      "id": "disco_1",
+      "title": "Saturday Night Fever",
+      "artist": "Disco Queen",
+      "genre": "disco",
+      "audioUrl": "/data/demo/1/song.mp3",
+      "duration": 180,
+      "explanationAudioUrl": "/data/demo/1/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json"
     },
     {
-      "id": "pop_2",
-      "title": "City Lights",
-      "artist": "Pop Artist",
-      "genre": "pop",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "disco_2",
+      "title": "Dancing Queen",
+      "artist": "Disco Queen",
+      "genre": "disco",
+      "audioUrl": "/data/demo/2/song.mp3",
+      "explanationAudioUrl": "/data/demo/2/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/2/transcript.json",
       "duration": 195
     },
     {
-      "id": "pop_3",
-      "title": "Dreams",
-      "artist": "Pop Artist",
-      "genre": "pop",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "disco_3",
+      "title": "Boogie Wonderland",
+      "artist": "Disco Queen",
+      "genre": "disco",
+      "audioUrl": "/data/demo/3/song.mp3",
+      "explanationAudioUrl": "/data/demo/3/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/3/transcript.json",
       "duration": 210
     },
     {
-      "id": "hip-hop_1",
-      "title": "Street Flow",
-      "artist": "Hip-hop Artist",
-      "genre": "hip-hop",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 165
-    },
-    {
-      "id": "hip-hop_2",
-      "title": "Urban Beat",
-      "artist": "Hip-hop Artist",
-      "genre": "hip-hop",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 180
-    },
-    {
-      "id": "hip-hop_3",
-      "title": "Rhythm City",
-      "artist": "Hip-hop Artist",
-      "genre": "hip-hop",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 175
-    },
-    {
-      "id": "rock_1",
-      "title": "Thunder",
-      "artist": "Rock Band",
-      "genre": "rock",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "opera_1",
+      "title": "La Traviata",
+      "artist": "Opera Singer",
+      "genre": "opera",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 240
     },
     {
-      "id": "rock_2",
-      "title": "Electric Storm",
-      "artist": "Rock Band",
-      "genre": "rock",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 220
+      "id": "opera_2",
+      "title": "Carmen",
+      "artist": "Opera Singer",
+      "genre": "opera",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
+      "duration": 280
     },
     {
-      "id": "rock_3",
-      "title": "Mountain High",
-      "artist": "Rock Band",
-      "genre": "rock",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "opera_3",
+      "title": "The Magic Flute",
+      "artist": "Opera Singer",
+      "genre": "opera",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
+      "duration": 320
+    },
+    {
+      "id": "heavy-metal_1",
+      "title": "Thunder Strike",
+      "artist": "Metal Band",
+      "genre": "heavy-metal",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 200
     },
     {
-      "id": "electronic_1",
-      "title": "Digital Dreams",
-      "artist": "Electronic Artist",
-      "genre": "electronic",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "heavy-metal_2",
+      "title": "Iron Fist",
+      "artist": "Metal Band",
+      "genre": "heavy-metal",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
+      "duration": 220
+    },
+    {
+      "id": "heavy-metal_3",
+      "title": "Steel Warriors",
+      "artist": "Metal Band",
+      "genre": "heavy-metal",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
+      "duration": 190
+    },
+    {
+      "id": "blues_1",
+      "title": "Midnight Blues",
+      "artist": "Blues Master",
+      "genre": "blues",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 300
     },
     {
-      "id": "electronic_2",
-      "title": "Synthetic Soul",
-      "artist": "Electronic Artist",
-      "genre": "electronic",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "blues_2",
+      "title": "Crossroads",
+      "artist": "Blues Master",
+      "genre": "blues",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 280
     },
     {
-      "id": "electronic_3",
-      "title": "Neon Nights",
-      "artist": "Electronic Artist",
-      "genre": "electronic",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 320
+      "id": "blues_3",
+      "title": "Sweet Home Chicago",
+      "artist": "Blues Master",
+      "genre": "blues",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
+      "duration": 260
     },
     {
-      "id": "latin_1",
-      "title": "Fiesta",
-      "artist": "Latin Artist",
-      "genre": "latin",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "country_1",
+      "title": "Country Roads",
+      "artist": "Country Star",
+      "genre": "country",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 210
     },
     {
-      "id": "latin_2",
-      "title": "Salsa Caliente",
-      "artist": "Latin Artist",
-      "genre": "latin",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "country_2",
+      "title": "Honky Tonk Angel",
+      "artist": "Country Star",
+      "genre": "country",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 195
     },
     {
-      "id": "latin_3",
-      "title": "Ritmo",
-      "artist": "Latin Artist",
-      "genre": "latin",
-      "audioUrl": "/audio/demo.m4a",
+      "id": "country_3",
+      "title": "Rodeo Queen",
+      "artist": "Country Star",
+      "genre": "country",
+      "audioUrl": "/data/demo/song.mp3",
+      "explanationAudioUrl": "/data/demo/explanation.ogg",
+      "explanationTranscriptUrl": "/data/demo/1/transcript.json",
       "duration": 225
-    },
-    {
-      "id": "jazz_1",
-      "title": "Midnight Blues",
-      "artist": "Jazz Artist",
-      "genre": "jazz",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 360
-    },
-    {
-      "id": "jazz_2",
-      "title": "Smooth Jazz",
-      "artist": "Jazz Artist",
-      "genre": "jazz",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 280
-    },
-    {
-      "id": "jazz_3",
-      "title": "Urban Jazz",
-      "artist": "Jazz Artist",
-      "genre": "jazz",
-      "audioUrl": "/audio/demo.m4a",
-      "duration": 320
     }
   ]
 }

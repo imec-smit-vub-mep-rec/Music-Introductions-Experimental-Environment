@@ -1,9 +1,11 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
 import { AudioPlayer } from '@/components/audio/AudioPlayer';
-import { Song, Genre } from '@/lib/types';
+import { LyricsDisplay } from '@/components/audio/LyricsDisplay';
+import { Song, Genre, Transcript } from '@/lib/types';
 
 interface AudioPlayerScreenProps {
   song: Song;
@@ -30,6 +32,45 @@ export function AudioPlayerScreen({
   hasNextSong,
   hasPreviousSong
 }: AudioPlayerScreenProps) {
+  const [currentTime, setCurrentTime] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [transcript, setTranscript] = useState<Transcript | null>(null);
+  const [isExplanationPhase, setIsExplanationPhase] = useState(true);
+  const [currentAudioUrl, setCurrentAudioUrl] = useState<string>('');
+
+  // Load transcript data and set initial audio URL
+  useEffect(() => {
+    if (song.explanationTranscriptUrl) {
+      fetch(song.explanationTranscriptUrl)
+        .then(response => response.json())
+        .then(data => setTranscript(data as Transcript))
+        .catch(error => console.error('Error loading transcript:', error));
+    }
+    
+    // Set initial audio URL to explanation if available
+    if (song.explanationAudioUrl) {
+      setIsExplanationPhase(true);
+      setCurrentAudioUrl(song.explanationAudioUrl);
+    } else {
+      setCurrentAudioUrl(song.audioUrl);
+      setIsExplanationPhase(false);
+    }
+  }, [song]);
+
+  const handleTimeUpdate = (time: number) => {
+    setCurrentTime(time);
+  };
+
+  const handlePlayStateChange = (playing: boolean) => {
+    setIsPlaying(playing);
+  };
+
+  const handleExplanationComplete = () => {
+    // Switch to song phase
+    setIsExplanationPhase(false);
+    setCurrentAudioUrl(song.audioUrl);
+    setCurrentTime(0);
+  };
   return (
     <ExperimentLayout background="light">
       <div className="min-h-screen px-6 py-8">
@@ -47,10 +88,11 @@ export function AudioPlayerScreen({
             )}
             <div className="flex-1 text-center">
               <h1 className="text-2xl font-bold text-dark-purple">
-                Listening to {genre.name}
+                {isExplanationPhase ? `Understanding ${genre.name}` : `Listening to ${genre.name}`}
               </h1>
               <p className="text-dark-purple/70">
                 Song {currentSongIndex + 1} of {totalSongs}
+                {isExplanationPhase && ' • Explanation'}
               </p>
             </div>
             <div className="w-16" /> {/* Spacer for centering */}
@@ -59,23 +101,24 @@ export function AudioPlayerScreen({
           {/* Audio Player */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-ivory">
             <AudioPlayer
-              song={song}
+              song={{
+                ...song,
+                audioUrl: currentAudioUrl
+              }}
               genre={genre}
               onNext={onNextSong}
               onPrevious={onPreviousSong}
               hasNext={hasNextSong}
               hasPrevious={hasPreviousSong}
+              onTimeUpdate={handleTimeUpdate}
+              onPlayStateChange={handlePlayStateChange}
+              showLyrics={isExplanationPhase}
+              transcript={transcript}
+              currentTime={currentTime}
+              isPlaying={isPlaying}
+              onExplanationComplete={isExplanationPhase ? handleExplanationComplete : undefined}
+            onComplete={onComplete}
             />
-          </div>
-
-          {/* Complete Button */}
-          <div className="flex justify-center">
-            <Button
-              onClick={onComplete}
-              className="bg-dark-purple text-white hover:bg-dark-purple/90 px-8 py-3 rounded-full"
-            >
-              Continue to Survey
-            </Button>
           </div>
         </div>
       </div>

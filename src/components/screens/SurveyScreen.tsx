@@ -5,12 +5,12 @@ import { Button } from '@/components/ui/button';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
 import { ProgressTracker } from '@/components/survey/ProgressTracker';
 import { QuestionRenderer } from '@/components/survey/QuestionRenderer';
-import { Question } from '@/lib/types';
+import { Question, AnswerValue } from '@/lib/types';
 
 interface SurveyScreenProps {
   questions: Question[];
-  responses: Record<string, any>;
-  onAnswer: (questionId: string, answer: any) => void;
+  responses: Record<string, AnswerValue>;
+  onAnswer: (questionId: string, answer: AnswerValue) => void;
   onNext: () => void;
   onBack?: () => void;
   title?: string;
@@ -43,9 +43,16 @@ export function SurveyScreen({
   const currentQuestion = questions[currentQuestionIndex];
   const currentAnswer = currentQuestion ? responses[currentQuestion.id] : undefined;
 
-  const handleAnswer = (answer: any) => {
+  const handleAnswer = (answer: AnswerValue) => {
     if (currentQuestion) {
       onAnswer(currentQuestion.id, answer);
+    }
+  };
+
+  const handleAutoNext = () => {
+    // Only auto-advance for multiple choice and rating questions
+    if (currentQuestion && (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'rating')) {
+      handleNext();
     }
   };
 
@@ -104,6 +111,7 @@ export function SurveyScreen({
                 question={currentQuestion}
                 value={currentAnswer}
                 onChange={handleAnswer}
+                onAutoNext={handleAutoNext}
               />
             ) : (
               <div className="text-center text-dark-purple/70">
@@ -113,7 +121,15 @@ export function SurveyScreen({
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-end">
+          <div className="flex justify-between">
+            <Button
+              onClick={handleBack}
+              disabled={currentQuestionIndex === 0 && !onBack}
+              variant="outline"
+              className="border-dark-purple text-dark-purple hover:bg-dark-purple/10 px-8 py-3 rounded-full"
+            >
+              Previous
+            </Button>
             <Button
               onClick={handleNext}
               disabled={!canProceed()}

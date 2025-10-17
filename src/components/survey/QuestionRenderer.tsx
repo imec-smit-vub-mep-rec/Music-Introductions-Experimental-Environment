@@ -1,6 +1,6 @@
 'use client';
 
-import { Question } from '@/lib/types';
+import { Question, AnswerValue } from '@/lib/types';
 import { MultipleChoice } from './MultipleChoice';
 import { CheckboxQuestion } from './CheckboxQuestion';
 import { TextInput } from './TextInput';
@@ -8,11 +8,12 @@ import { RatingScale } from './RatingScale';
 
 interface QuestionRendererProps {
   question: Question;
-  value?: any;
-  onChange: (value: any) => void;
+  value?: AnswerValue;
+  onChange: (value: AnswerValue) => void;
+  onAutoNext?: () => void;
 }
 
-export function QuestionRenderer({ question, value, onChange }: QuestionRendererProps) {
+export function QuestionRenderer({ question, value, onChange, onAutoNext }: QuestionRendererProps) {
   switch (question.type) {
     case 'multiple-choice':
       return (
@@ -22,6 +23,7 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
           value={value}
           onChange={onChange}
           required={question.required}
+          onAutoNext={onAutoNext}
         />
       );
     
@@ -30,7 +32,7 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
         <CheckboxQuestion
           question={question.text}
           options={question.options || []}
-          value={value}
+          value={value as string[]}
           onChange={onChange}
           required={question.required}
         />
@@ -40,7 +42,7 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
       return (
         <TextInput
           question={question.text}
-          value={value}
+          value={value as string}
           onChange={onChange}
           placeholder={question.placeholder}
           multiline={true}
@@ -52,11 +54,12 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
       return (
         <RatingScale
           question={question.text}
-          value={value}
+          value={value as number}
           onChange={onChange}
           min={question.min}
           max={question.max}
           required={question.required}
+          onAutoNext={onAutoNext}
         />
       );
     

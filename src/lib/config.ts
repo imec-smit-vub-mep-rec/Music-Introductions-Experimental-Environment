@@ -1,4 +1,4 @@
-import { ExperimentConfig } from './types';
+import { ExperimentConfig, SurveyConfig } from './types';
 import questionsData from '../data/questions.json';
 import songsData from '../data/songs.json';
 
@@ -6,9 +6,9 @@ export const experimentConfig: ExperimentConfig = {
   songsPerGenre: songsData.songsPerGenre,
   genres: songsData.genres,
   surveys: {
-    onboarding: questionsData.onboarding,
-    postListening: questionsData.postListening,
-    final: questionsData.final,
+    onboarding: questionsData.onboarding as SurveyConfig,
+    postListening: questionsData.postListening as SurveyConfig,
+    final: questionsData.final as SurveyConfig,
   },
 };
 

@@ -1,12 +1,15 @@
 'use client';
 
+import { AnswerValue } from '@/lib/types';
+
 interface RatingScaleProps {
   question: string;
-  value?: number;
-  onChange: (value: number) => void;
+  value?: AnswerValue;
+  onChange: (value: AnswerValue) => void;
   min?: number;
   max?: number;
   required?: boolean;
+  onAutoNext?: () => void;
 }
 
 export function RatingScale({ 
@@ -15,7 +18,8 @@ export function RatingScale({
   onChange, 
   min = 1, 
   max = 5,
-  required = false 
+  required = false,
+  onAutoNext
 }: RatingScaleProps) {
   const range = Array.from({ length: max - min + 1 }, (_, i) => min + i);
 
@@ -33,11 +37,16 @@ export function RatingScale({
           {range.map((rating) => (
             <button
               key={rating}
-              onClick={() => onChange(rating)}
+              onClick={() => {
+                onChange(rating);
+                if (onAutoNext) {
+                  onAutoNext();
+                }
+              }}
               className={`
                 w-12 h-12 rounded-full border-2 flex items-center justify-center
                 transition-all duration-200 font-medium
-                ${value === rating 
+                ${(value as number) === rating 
                   ? 'bg-maize border-maize text-dark-purple' 
                   : 'border-dark-purple text-dark-purple hover:border-maize hover:bg-maize/20'
                 }

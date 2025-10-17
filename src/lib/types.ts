@@ -1,5 +1,7 @@
 export type QuestionType = 'multiple-choice' | 'checkbox' | 'text' | 'rating';
 
+export type AnswerValue = string | string[] | number | null | undefined;
+
 export type ExperimentStep = 
   | 'welcome' 
   | 'terms' 
@@ -33,6 +35,8 @@ export interface Song {
   audioUrl: string;
   duration: number;
   albumArt?: string;
+  explanationAudioUrl?: string;
+  explanationTranscriptUrl?: string;
 }
 
 export interface Genre {
@@ -44,7 +48,7 @@ export interface Genre {
 
 export interface ExperimentState {
   currentStep: number;
-  responses: Record<string, any>;
+  responses: Record<string, AnswerValue>;
   selectedGenres: {
     familiar: string | null;
     unfamiliar: string | null;
@@ -71,4 +75,37 @@ export interface ExperimentConfig {
     postListening: SurveyConfig;
     final: SurveyConfig;
   };
+}
+
+export interface Word {
+  id: string;
+  text: string;
+  start: number;
+  end: number;
+  line: number;
+}
+
+export interface Subtitle {
+  id: number;
+  text: string;
+  words: Word[];
+  timing: {
+    start: number;
+    end: number;
+    duration: number;
+  };
+  speaker: {
+    id: number;
+    name: string;
+  };
+}
+
+export interface Transcript {
+  metadata: {
+    title: string;
+    exportDate: string;
+    totalSubtitles: number;
+    totalWords: number;
+  };
+  subtitles: Subtitle[];
 }

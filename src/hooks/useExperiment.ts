@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { ExperimentState, Question, Song } from '@/lib/types';
+import { ExperimentState, Question, Song, AnswerValue } from '@/lib/types';
 import { experimentSteps, getSongsByGenre } from '@/lib/config';
 
 const initialState: ExperimentState = {
@@ -43,7 +43,7 @@ export function useExperiment() {
     }));
   }, []);
 
-  const saveResponse = useCallback((questionId: string, answer: any) => {
+  const saveResponse = useCallback((questionId: string, answer: AnswerValue) => {
     setState(prev => ({
       ...prev,
       responses: {

@@ -2,13 +2,15 @@
 
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
+import { AnswerValue } from '@/lib/types';
 
 interface MultipleChoiceProps {
   question: string;
   options: string[];
-  value?: string;
-  onChange: (value: string) => void;
+  value?: AnswerValue;
+  onChange: (value: AnswerValue) => void;
   required?: boolean;
+  onAutoNext?: () => void;
 }
 
 export function MultipleChoice({ 
@@ -16,7 +18,8 @@ export function MultipleChoice({
   options, 
   value, 
   onChange, 
-  required = false 
+  required = false,
+  onAutoNext
 }: MultipleChoiceProps) {
   return (
     <div className="space-y-4">
@@ -24,7 +27,16 @@ export function MultipleChoice({
         {question}
         {required && <span className="text-red-500 ml-1">*</span>}
       </h3>
-      <RadioGroup value={value} onValueChange={onChange} className="space-y-3">
+      <RadioGroup 
+        value={value as string} 
+        onValueChange={(newValue) => {
+          onChange(newValue);
+          if (onAutoNext) {
+            onAutoNext();
+          }
+        }} 
+        className="space-y-3"
+      >
         {options.map((option) => (
           <div key={option} className="flex items-center space-x-3">
             <RadioGroupItem 
