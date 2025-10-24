@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useExperiment } from '@/hooks/useExperiment';
-import { experimentConfig, getSongsByGenre } from '@/lib/config';
+import { experimentConfig } from '@/lib/config';
 import { WelcomeScreen } from '@/components/screens/WelcomeScreen';
 import { TermsScreen } from '@/components/screens/TermsScreen';
 import { SurveyScreen } from '@/components/screens/SurveyScreen';
@@ -11,7 +11,7 @@ import { AudioPlayerScreen } from '@/components/screens/AudioPlayerScreen';
 import { QualtricsScreen } from '@/components/screens/QualtricsScreen';
 import { ThankYouScreen } from '@/components/screens/ThankYouScreen';
 import { useEngagementTracking } from '@/hooks/useEngagementTracking';
-import { getSession, addSongSession } from '@/lib/session';
+import { getSession } from '@/lib/session';
 
 export default function ExperimentPage() {
   const {
@@ -20,7 +20,6 @@ export default function ExperimentPage() {
     responses,
     selectedGenre,
     currentSongIndex,
-    session,
     nextStep,
     prevStep,
     saveResponse,

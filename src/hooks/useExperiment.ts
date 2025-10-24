@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect, useRef } from 'react';
-import { ExperimentState, Question, Song, AnswerValue } from '@/lib/types';
+import { ExperimentState, AnswerValue } from '@/lib/types';
 import { experimentSteps, getSongsByGenre } from '@/lib/config';
 import { 
   getSession, 
@@ -10,7 +10,6 @@ import {
   updateSessionGenre, 
   updateSessionOnboardingAnswers,
   updateSessionRandomizedSongs,
-  addSongSession,
   updateSongSession,
   syncSessionToRemote,
   updateExperimentCompletionStatus,
@@ -81,7 +80,7 @@ export function useExperiment() {
       setState(initialState);
       sessionRef.current = null;
     }
-  }, []);
+  }, [state.currentStep]);
 
   const nextStep = useCallback(() => {
     setState(prev => {
@@ -318,12 +317,6 @@ export function useExperiment() {
     }));
   }, []);
 
-  const goToNextSong = useCallback(() => {
-    setState(prev => ({
-      ...prev,
-      currentSongIndex: Math.min(prev.currentSongIndex + 1, 2),
-    }));
-  }, []);
 
   const prevSong = useCallback(() => {
     setState(prev => ({

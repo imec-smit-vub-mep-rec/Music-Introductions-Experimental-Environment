@@ -33,9 +33,7 @@ export function AudioPlayer({
   song, 
   genre, 
   onNext, 
-  onPrevious, 
-  hasNext = false, 
-  hasPrevious = false,
+  hasNext = false,
   onTimeUpdate,
   onPlayStateChange,
   showLyrics = false,
@@ -144,7 +142,7 @@ export function AudioPlayer({
       audio.removeEventListener('seeking', handleSeeking);
       audio.removeEventListener('seeked', handleSeeked);
     };
-  }, [song]);
+  }, [song, canSkip, onComplete, onExplanationComplete, onPlayStateChange, onSeek, onSongComplete, onTimeUpdate, showLyrics, songStartTime, totalListeningTime]);
 
   const togglePlayPause = async () => {
     const audio = audioRef.current;
@@ -281,7 +279,7 @@ export function AudioPlayer({
     } else if (!isPlaying && !audio.paused) {
       audio.pause();
     }
-  }, [isPlaying]);
+  }, [isPlaying, onPlayPause, showLyrics]);
 
   // Reset listening time tracking when song changes (not when audio URL changes within same song)
   const previousSongIdRef = useRef<string | null>(null);
@@ -360,7 +358,7 @@ export function AudioPlayer({
     }, 100);
 
     return () => clearTimeout(timer);
-  }, [song.audioUrl, song.id, song.title, onPlayStateChange, totalListeningTime, shouldAutoplay]);
+  }, [song.audioUrl, song.id, song.title, onPlayStateChange, totalListeningTime, shouldAutoplay, onPlayPause, showLyrics]);
 
   return (
     <div className="w-full max-w-md mx-auto space-y-6">

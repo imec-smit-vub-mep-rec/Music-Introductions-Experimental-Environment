@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
       clientIp = cfConnectingIp;
     } else {
       // Fallback to connection remote address
-      clientIp = request.ip || '127.0.0.1';
+      clientIp = request.headers.get('x-forwarded-for') || '127.0.0.1';
     }
     
     return NextResponse.json({ ip: clientIp });

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -34,12 +34,7 @@ export default function AdminPage() {
   const [stats, setStats] = useState<AdminStats | null>(null);
   const [error, setError] = useState('');
 
-  // Check authentication status on mount
-  useEffect(() => {
-    checkAuthStatus();
-  }, []);
-
-  const checkAuthStatus = async () => {
+  const checkAuthStatus = useCallback(async () => {
     try {
       const response = await fetch('/api/admin/auth');
       const data = await response.json();
@@ -48,12 +43,17 @@ export default function AdminPage() {
       if (data.authenticated) {
         loadStats();
       }
-    } catch (error) {
-      console.error('Auth check failed:', error);
+    } catch {
+      console.error('Auth check failed');
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
+
+  // Check authentication status on mount
+  useEffect(() => {
+    checkAuthStatus();
+  }, [checkAuthStatus]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ export default function AdminPage() {
         const data = await response.json();
         setError(data.error || 'Invalid password');
       }
-    } catch (error) {
+    } catch {
       setError('Login failed. Please try again.');
     } finally {
       setIsLoggingIn(false);
@@ -92,8 +92,8 @@ export default function AdminPage() {
       } else {
         console.error('Failed to load stats');
       }
-    } catch (error) {
-      console.error('Failed to load stats:', error);
+    } catch {
+      console.error('Failed to load stats');
     }
   };
 
@@ -125,7 +125,7 @@ export default function AdminPage() {
         const data = await response.json();
         setError(data.error || 'Export failed');
       }
-    } catch (error) {
+    } catch {
       setError('Export failed. Please try again.');
     } finally {
       setIsExporting(false);

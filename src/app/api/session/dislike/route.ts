@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
       const currentSongAnswers = sessionResult.rows[0].song_answers || [];
       
       // Find and update the specific song's dislike status
-      const updatedSongAnswers = currentSongAnswers.map((song: any) => {
+      const updatedSongAnswers = currentSongAnswers.map((song: Record<string, unknown>) => {
         if (song.songId === song_id) {
           return {
             ...song,

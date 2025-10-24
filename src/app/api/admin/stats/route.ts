@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import { Pool } from 'pg';
 
@@ -20,7 +20,7 @@ const pool = connectionString ? new Pool({
   connectionTimeoutMillis: 2000,
 }) : null;
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   // Check authentication
   const cookieStore = await cookies();
   const adminAuth = cookieStore.get('admin-auth');

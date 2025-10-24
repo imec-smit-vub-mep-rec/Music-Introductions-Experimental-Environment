@@ -13,7 +13,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Scatter, Bar } from 'react-chartjs-2';
-import { BarChart3, TrendingUp, Users, AlertCircle } from 'lucide-react';
+import { BarChart3, AlertCircle } from 'lucide-react';
 
 // Register Chart.js components
 ChartJS.register(
@@ -87,7 +87,7 @@ export function VisualizationSection({ isAuthenticated }: VisualizationSectionPr
       } else {
         setError('Failed to load visualization data');
       }
-    } catch (error) {
+    } catch {
       setError('Failed to load visualization data');
     } finally {
       setLoading(false);

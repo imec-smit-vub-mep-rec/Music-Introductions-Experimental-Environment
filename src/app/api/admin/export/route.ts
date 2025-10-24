@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import { Pool } from 'pg';
 import * as XLSX from 'xlsx';
@@ -74,24 +74,24 @@ export async function GET() {
           onboardingAnswers = typeof session.onboarding_answers === 'string' 
             ? JSON.parse(session.onboarding_answers) 
             : session.onboarding_answers || {};
-        } catch (e) {
-          console.warn('Failed to parse onboarding_answers:', e);
+        } catch {
+          console.warn('Failed to parse onboarding_answers');
         }
 
         try {
           songAnswers = typeof session.song_answers === 'string' 
             ? JSON.parse(session.song_answers) 
             : session.song_answers || [];
-        } catch (e) {
-          console.warn('Failed to parse song_answers:', e);
+        } catch {
+          console.warn('Failed to parse song_answers');
         }
 
         try {
           engagementMetrics = typeof session.engagement_metrics === 'string' 
             ? JSON.parse(session.engagement_metrics) 
             : session.engagement_metrics || {};
-        } catch (e) {
-          console.warn('Failed to parse engagement_metrics:', e);
+        } catch {
+          console.warn('Failed to parse engagement_metrics');
         }
 
         // Ensure engagementMetrics has the expected structure
@@ -178,7 +178,7 @@ export async function GET() {
               ? JSON.parse(s.song_answers) 
               : s.song_answers || [];
             return Array.isArray(songAnswers) && songAnswers.length > 0;
-          } catch (e) {
+          } catch {
             return false;
           }
         }).length },

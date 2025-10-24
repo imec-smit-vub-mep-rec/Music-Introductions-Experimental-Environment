@@ -4,10 +4,9 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
 import { AudioPlayer } from '@/components/audio/AudioPlayer';
-import { LyricsDisplay } from '@/components/audio/LyricsDisplay';
 import { Song, Genre, Transcript } from '@/lib/types';
 import { getIntroductionTranscriptUrl } from '@/lib/randomization';
-import { getSession, addSongSession, IntroductionStyle } from '@/lib/session';
+import { getSession, addSongSession, IntroductionStyle, SongSession } from '@/lib/session';
 import { useEngagementTracking } from '@/hooks/useEngagementTracking';
 
 interface AudioPlayerScreenProps {
@@ -30,7 +29,6 @@ interface AudioPlayerScreenProps {
 export function AudioPlayerScreen({
   song,
   genre,
-  currentSongIndex,
   totalSongs,
   onNextSong,
   onPreviousSong,
@@ -87,17 +85,21 @@ export function AudioPlayerScreen({
       setCurrentAudioUrl(song.audioUrl);
       setShouldAutoplay(true);
     }
-  }, [song, introductionStyle]);
+  }, [song, introductionStyle, song.title]);
 
   // Create initial song session when component mounts
   useEffect(() => {
-    const songSession = {
+    const songSession: SongSession = {
       songId: song.id,
       introduction_style: introductionStyle as IntroductionStyle,
       answers: {},
       skipped: false,
       skipped_at_ms: null,
       listening_time_ms: 0,
+      liked: null,
+      liked_at_ms: null,
+      dislike: null,
+      dislike_at_ms: null,
     };
     
     // Check if song session already exists

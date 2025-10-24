@@ -17,7 +17,7 @@ export function LyricsDisplay({
   isPlaying, 
   className 
 }: LyricsDisplayProps) {
-  const [activeWordId, setActiveWordId] = useState<string | null>(null);
+  const [, setActiveWordId] = useState<string | null>(null);
   const [activeLineIndex, setActiveLineIndex] = useState<number>(0);
   const [isUserScrolling, setIsUserScrolling] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -138,8 +138,7 @@ export function LyricsDisplay({
             )}
           >
             <div className="flex flex-wrap justify-center items-center gap-2">
-              {subtitle.words.map((word, wordIndex) => {
-                const isActive = activeWordId === word.id;
+              {subtitle.words.map((word) => {
                 const isInActiveLine = subtitleIndex === activeLineIndex;
                 const isPastLine = subtitleIndex < activeLineIndex;
                 const isFutureLine = subtitleIndex > activeLineIndex;

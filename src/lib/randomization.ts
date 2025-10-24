@@ -36,7 +36,7 @@ export function randomizeIntroductions(): IntroductionStyle[] {
 export function getIntroductionUrl(
   song: { informIntroductionUrl?: string; immersIntroductionUrl?: string }, 
   introductionStyle: IntroductionStyle, 
-  _sessionGroup: 'unfamiliar' | 'familiar'
+  _sessionGroup: 'unfamiliar' | 'familiar' // eslint-disable-line @typescript-eslint/no-unused-vars
 ): string | null {
   switch (introductionStyle) {
     case 'no_introduction':
