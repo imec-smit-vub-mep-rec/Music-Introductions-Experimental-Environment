@@ -37,6 +37,16 @@ export function useExperiment() {
     return getSession();
   }, []);
 
+  // Helper function to safely sync session to remote
+  const safeSyncSession = useCallback(() => {
+    const currentSession = getCurrentSession();
+    if (currentSession) {
+      syncSessionToRemote().catch(error => {
+        console.error('❌ SESSION SYNC FAILED:', error);
+      });
+    }
+  }, [getCurrentSession]);
+
   // Load session on mount (do NOT reload on every step change)
   useEffect(() => {
     const existingSession = getSession();
@@ -119,9 +129,7 @@ export function useExperiment() {
     });
 
     // Sync to remote database on step change
-    syncSessionToRemote().catch(error => {
-      console.error('❌ STEP SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, []);
 
   const prevStep = useCallback(() => {
@@ -159,9 +167,7 @@ export function useExperiment() {
     });
 
     // Sync to remote database on step change
-    syncSessionToRemote().catch(error => {
-      console.error('❌ STEP SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, []);
 
   const goToStep = useCallback((stepIndex: number) => {
@@ -171,9 +177,7 @@ export function useExperiment() {
     }));
 
     // Sync to remote database on step change
-    syncSessionToRemote().catch(error => {
-      console.error('❌ STEP SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, []);
 
   const saveResponse = useCallback((questionId: string, answer: AnswerValue) => {
@@ -243,9 +247,7 @@ export function useExperiment() {
     updateSessionRandomizedSongs(randomizedSongs, randomizedIntroductions);
 
     // Sync to remote database after genre selection
-    syncSessionToRemote().catch(error => {
-      console.error('❌ GENRE SELECTION SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, []);
 
   const getCurrentStep = useCallback(() => {
@@ -373,9 +375,7 @@ export function useExperiment() {
     updateExperimentCompletionStatus();
 
     // Sync to remote database after saving song answers
-    syncSessionToRemote().catch(error => {
-      console.error('❌ SONG ANSWERS SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, [getCurrentSession, state.selectedGenre, getCurrentSong, getCurrentIntroductionStyle, state.currentSongIndex]);
 
   const trackSongSkip = useCallback((skippedAtMs: number) => {
@@ -403,9 +403,7 @@ export function useExperiment() {
     });
 
     // Sync to remote database after tracking skip
-    syncSessionToRemote().catch(error => {
-      console.error('❌ SONG SKIP SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, [getCurrentSession, getCurrentSong, getCurrentIntroductionStyle]);
 
   const trackSongCompletion = useCallback((listeningTimeMs: number) => {
@@ -428,9 +426,7 @@ export function useExperiment() {
     });
 
     // Sync to remote database after tracking completion
-    syncSessionToRemote().catch(error => {
-      console.error('❌ SONG COMPLETION SYNC FAILED:', error);
-    });
+    safeSyncSession();
   }, [getCurrentSession, getCurrentSong]);
 
   const clearResponses = useCallback(() => {
