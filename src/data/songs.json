@@ -4,30 +4,35 @@
     {
       "id": "disco",
       "name": "Disco",
+      "icon": "🪩",
       "color": "#FF6B6B",
       "pattern": "coral-red"
     },
     {
       "id": "opera",
       "name": "Opera",
+      "icon": "🎭",
       "color": "#4ECDC4",
       "pattern": "teal"
     },
     {
       "id": "heavy-metal",
       "name": "Heavy Metal",
+      "icon": "🤘",
       "color": "#2C3E50",
       "pattern": "dark-blue"
     },
     {
       "id": "blues",
       "name": "Blues",
+      "icon": "🎸",
       "color": "#3498DB",
       "pattern": "blue"
     },
     {
       "id": "country",
       "name": "Country",
+      "icon": "🤠",
       "color": "#E67E22",
       "pattern": "orange"
     }
@@ -58,7 +63,7 @@
       "genre": "disco",
       "audioUrl": "/data/disco/3/song.mp3",
       "informIntroductionUrl": "/data/disco/3/inform.wav",
-      "immersIntroductionUrl": "/data/disco/3/immers.wav"      
+      "immersIntroductionUrl": "/data/disco/3/immers.wav"
     },
     {
       "id": "opera_1",

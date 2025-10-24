@@ -1,4 +1,4 @@
-export type QuestionType = 'multiple-choice' | 'checkbox' | 'text' | 'rating';
+export type QuestionType = 'multiple-choice' | 'checkbox' | 'text' | 'rating' | 'number';
 
 export type AnswerValue = string | string[] | number | null | undefined;
 
@@ -42,6 +42,7 @@ export interface Song {
 export interface Genre {
   id: string;
   name: string;
+  icon: string;
   color: string;
   pattern: string;
 }

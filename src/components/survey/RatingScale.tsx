@@ -31,6 +31,9 @@ export function RatingScale({
     if (!value) {
       setShowConfirmation(false);
       setSelectedRating(null);
+    } else {
+      // Update selected rating when value is set externally
+      setSelectedRating(value as number);
     }
   }, [value]);
 

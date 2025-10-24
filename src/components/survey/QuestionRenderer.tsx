@@ -5,6 +5,7 @@ import { MultipleChoice } from './MultipleChoice';
 import { CheckboxQuestion } from './CheckboxQuestion';
 import { TextInput } from './TextInput';
 import { RatingScale } from './RatingScale';
+import { NumberInput } from './NumberInput';
 
 interface QuestionRendererProps {
   question: Question;
@@ -60,6 +61,19 @@ export function QuestionRenderer({ question, value, onChange, onAutoNext }: Ques
           max={question.max}
           required={question.required}
           onAutoNext={onAutoNext}
+        />
+      );
+    
+    case 'number':
+      return (
+        <NumberInput
+          question={question.text}
+          value={value as number}
+          onChange={onChange}
+          placeholder={question.placeholder}
+          required={question.required}
+          min={question.min}
+          max={question.max}
         />
       );
     

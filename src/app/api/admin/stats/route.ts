@@ -50,6 +50,7 @@ export async function GET(request: NextRequest) {
           COUNT(CASE WHEN group_type = 'unfamiliar' THEN 1 END) as unfamiliar_group,
           COUNT(CASE WHEN group_type = 'familiar' THEN 1 END) as familiar_group,
           COUNT(CASE WHEN jsonb_array_length(COALESCE(song_answers, '[]'::jsonb)) > 0 THEN 1 END) as completed_sessions,
+          COUNT(CASE WHEN experiment_completed = TRUE THEN 1 END) as fully_completed_sessions,
           AVG(EXTRACT(EPOCH FROM (updated_at - created_at))) as avg_duration_seconds
         FROM experiment_sessions
       `;
@@ -79,6 +80,7 @@ export async function GET(request: NextRequest) {
           start_time,
           created_at,
           updated_at,
+          experiment_completed,
           jsonb_array_length(COALESCE(song_answers, '[]'::jsonb)) as songs_completed
         FROM experiment_sessions 
         ORDER BY created_at DESC 
@@ -92,6 +94,7 @@ export async function GET(request: NextRequest) {
         unfamiliarGroup: parseInt(stats.unfamiliar_group) || 0,
         familiarGroup: parseInt(stats.familiar_group) || 0,
         completedSessions: parseInt(stats.completed_sessions) || 0,
+        fullyCompletedSessions: parseInt(stats.fully_completed_sessions) || 0,
         averageDuration: Math.round((parseFloat(stats.avg_duration_seconds) || 0) / 60), // Convert to minutes
         genreDistribution: genreResult.rows,
         recentSessions: recentResult.rows,

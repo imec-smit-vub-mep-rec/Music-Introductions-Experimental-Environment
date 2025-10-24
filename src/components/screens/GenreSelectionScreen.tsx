@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
-import { Genre } from '@/lib/types';
-import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { ExperimentLayout } from "@/components/layout/ExperimentLayout";
+import { Genre } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 interface GenreSelectionScreenProps {
   genres: Genre[];
@@ -13,7 +13,7 @@ interface GenreSelectionScreenProps {
   onBack?: () => void;
   title?: string;
   subtitle?: string;
-  sessionGroup?: 'unfamiliar' | 'familiar';
+  sessionGroup?: "unfamiliar" | "familiar";
 }
 
 export function GenreSelectionScreen({
@@ -24,11 +24,19 @@ export function GenreSelectionScreen({
   onBack,
   title = "Choose a Genre",
   subtitle,
-  sessionGroup
+  sessionGroup,
 }: GenreSelectionScreenProps) {
   // Generate title and subtitle based on session group
-  const displayTitle = title || (sessionGroup === 'unfamiliar' ? "Choose an Unfamiliar Genre" : "Choose a Familiar Genre");
-  const displaySubtitle = subtitle || (sessionGroup === 'unfamiliar' ? "Select a genre you're less familiar with" : "Select a genre you already know and enjoy");
+  const displayTitle =
+    title ||
+    (sessionGroup === "unfamiliar"
+      ? "Choose an Unfamiliar Genre"
+      : "Choose a Familiar Genre");
+  const displaySubtitle =
+    subtitle ||
+    (sessionGroup === "unfamiliar"
+      ? "Select a genre you're less familiar with"
+      : "Select a genre you already know and enjoy");
 
   return (
     <ExperimentLayout background="light">
@@ -58,7 +66,10 @@ export function GenreSelectionScreen({
           {selectedGenre && (
             <div className="text-center">
               <p className="text-lg text-dark-purple">
-                You choose this genre: <span className="font-bold">{genres.find(g => g.id === selectedGenre)?.name}</span>
+                You choose this genre:{" "}
+                <span className="font-bold">
+                  {genres.find((g) => g.id === selectedGenre)?.name}
+                </span>
               </p>
             </div>
           )}
@@ -67,7 +78,7 @@ export function GenreSelectionScreen({
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {genres.map((genre) => {
               const isSelected = selectedGenre === genre.id;
-              
+
               return (
                 <button
                   key={genre.id}
@@ -80,7 +91,8 @@ export function GenreSelectionScreen({
                   style={{ backgroundColor: genre.color }}
                 >
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white">
+                    <div className="text-center text-white flex flex-col gap-4 items-center justify-center gap-2">
+                      <div className="text-8xl">{genre.icon}</div>
                       <div className="text-2xl font-bold drop-shadow-lg">
                         {genre.name}
                       </div>

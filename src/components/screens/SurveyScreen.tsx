@@ -14,6 +14,8 @@ interface SurveyScreenProps {
   onNext: () => void;
   onBack?: () => void;
   title?: string;
+  isSubmitting?: boolean;
+  submitButtonText?: string;
 }
 
 export function SurveyScreen({ 
@@ -22,7 +24,9 @@ export function SurveyScreen({
   onAnswer, 
   onNext, 
   onBack,
-  title = "Survey"
+  title = "Survey",
+  isSubmitting = false,
+  submitButtonText
 }: SurveyScreenProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showValidationError, setShowValidationError] = useState(false);
@@ -60,7 +64,16 @@ export function SurveyScreen({
   const handleAutoNext = () => {
     // Only auto-advance for multiple choice and rating questions
     if (currentQuestion && (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'rating')) {
-      handleNext();
+      // Auto-advance without validation - user just answered the question
+      setShowValidationError(false);
+      // Small delay to ensure state is properly updated
+      setTimeout(() => {
+        if (currentQuestionIndex < questions.length - 1) {
+          setCurrentQuestionIndex(currentQuestionIndex + 1);
+        } else {
+          onNext();
+        }
+      }, 100);
     }
   };
 
@@ -177,10 +190,17 @@ export function SurveyScreen({
             </Button>
             <Button
               onClick={handleNext}
-              disabled={!canProceed()}
+              disabled={!canProceed() || isSubmitting}
               className="bg-dark-purple text-white hover:bg-dark-purple/90 px-8 py-3 rounded-full"
             >
-              {currentQuestionIndex < questions.length - 1 ? 'Next' : 'Continue'}
+              {isSubmitting ? (
+                <div className="flex items-center gap-2">
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                  Submitting...
+                </div>
+              ) : (
+                currentQuestionIndex < questions.length - 1 ? 'Next' : (submitButtonText || 'Continue')
+              )}
             </Button>
           </div>
         </div>

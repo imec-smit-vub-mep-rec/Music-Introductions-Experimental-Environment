@@ -38,9 +38,9 @@ export async function POST(request: NextRequest) {
         INSERT INTO experiment_sessions (
           id, session_id, group_type, chosen_genre, 
           randomized_songs, randomized_introductions, 
-          start_time, onboarding_answers, song_answers, engagement_metrics, 
+          start_time, experiment_completed, onboarding_answers, final_answers, song_answers, engagement_metrics, 
           expires_at, created_at, updated_at
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, NOW(), NOW())
+        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, NOW(), NOW())
         ON CONFLICT (id) DO UPDATE SET
           session_id = EXCLUDED.session_id,
           group_type = EXCLUDED.group_type,
@@ -48,7 +48,9 @@ export async function POST(request: NextRequest) {
           randomized_songs = EXCLUDED.randomized_songs,
           randomized_introductions = EXCLUDED.randomized_introductions,
           start_time = EXCLUDED.start_time,
+          experiment_completed = EXCLUDED.experiment_completed,
           onboarding_answers = EXCLUDED.onboarding_answers,
+          final_answers = EXCLUDED.final_answers,
           song_answers = EXCLUDED.song_answers,
           engagement_metrics = EXCLUDED.engagement_metrics,
           expires_at = EXCLUDED.expires_at,
@@ -63,7 +65,9 @@ export async function POST(request: NextRequest) {
         JSON.stringify(sessionData.randomized_songs),
         JSON.stringify(sessionData.randomized_introductions),
         sessionData.start_time,
+        sessionData.experiment_completed || false, // experiment_completed
         JSON.stringify(sessionData.answers.onboarding || {}), // onboarding_answers
+        JSON.stringify(sessionData.answers.final || {}), // final_answers
         JSON.stringify(sessionData.answers.songs || []), // song_answers
         JSON.stringify(sessionData.engagement_metrics),
         new Date(Date.now() + 2 * 365 * 24 * 60 * 60 * 1000).toISOString(), // 2 years
@@ -73,6 +77,7 @@ export async function POST(request: NextRequest) {
 
       console.log('✅ SESSION SYNCED TO NEON:', {
         session_id: sessionData.session_id,
+        experiment_completed: sessionData.experiment_completed,
         timestamp: new Date().toISOString()
       });
 

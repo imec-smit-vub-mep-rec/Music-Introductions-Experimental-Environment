@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Song, Genre, Transcript } from '@/lib/types';
 import { LyricsDisplay } from '@/components/audio/LyricsDisplay';
 import { cn } from '@/lib/utils';
+import { updateSongLikeStatus, updateSongDislikeStatus } from '@/lib/session';
 
 interface AudioPlayerProps {
   song: Song;
@@ -55,6 +56,9 @@ export function AudioPlayer({
   const [hasFinished, setHasFinished] = useState(false);
   const [songStartTime, setSongStartTime] = useState<number | null>(null);
   const [totalListeningTime, setTotalListeningTime] = useState(0);
+  const [liked, setLiked] = useState<boolean | null>(null); // Track like status
+  const [disliked, setDisliked] = useState<boolean | null>(null); // Track dislike status
+  const [canSkip, setCanSkip] = useState(false); // Track if 30 seconds have been played
   const audioRef = useRef<HTMLAudioElement>(null);
   const userInteractionRef = useRef(false); // Track if current state change is from user interaction
   const lastSeekFromRef = useRef<number | null>(null);
@@ -71,6 +75,17 @@ export function AudioPlayer({
       const time = audio.currentTime;
       setInternalCurrentTime(time);
       onTimeUpdate?.(time);
+      
+      // Enable skip button after 30 seconds of playback (only during song phase, not introduction)
+      if (!showLyrics && time >= 30 && !canSkip) {
+        setCanSkip(true);
+        console.log('⏭️ SKIP BUTTON ENABLED - 30 seconds played:', {
+          song_id: song.id,
+          song_title: song.title,
+          current_time: time,
+          timestamp: new Date().toISOString()
+        });
+      }
     };
     const updateDuration = () => setDuration(audio.duration);
     const handleEnded = () => {
@@ -200,6 +215,40 @@ export function AudioPlayer({
     onSongComplete?.(totalTime);
   };
 
+  const handleLike = () => {
+    const newLikedStatus = liked === true ? null : true; // Toggle like
+    setLiked(newLikedStatus);
+    // Clear dislike when liking
+    if (newLikedStatus) {
+      setDisliked(false);
+    }
+    updateSongLikeStatus(song.id, newLikedStatus);
+    
+    console.log('👍 SONG LIKED:', {
+      song_id: song.id,
+      song_title: song.title,
+      liked: newLikedStatus,
+      timestamp: new Date().toISOString()
+    });
+  };
+
+  const handleDislike = () => {
+    const newDislikeStatus = disliked === true ? null : true; // Toggle dislike
+    setDisliked(newDislikeStatus);
+    // Clear like when disliking
+    if (newDislikeStatus) {
+      setLiked(false);
+    }
+    updateSongDislikeStatus(song.id, newDislikeStatus);
+    
+    console.log('👎 SONG DISLIKED:', {
+      song_id: song.id,
+      song_title: song.title,
+      dislike: newDislikeStatus,
+      timestamp: new Date().toISOString()
+    });
+  };
+
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -248,6 +297,7 @@ export function AudioPlayer({
       });
       setTotalListeningTime(0);
       setSongStartTime(null);
+      setCanSkip(false); // Reset skip button state for new song
       previousSongIdRef.current = song.id;
     }
   }, [song.id]);
@@ -259,6 +309,7 @@ export function AudioPlayer({
       // Transitioned from intro to song, reset timers to avoid counting intro time
       setTotalListeningTime(0);
       setSongStartTime(null);
+      setCanSkip(false); // Reset skip button state when transitioning to song
     }
     prevShowLyricsRef.current = showLyrics;
   }, [showLyrics]);
@@ -420,13 +471,52 @@ export function AudioPlayer({
         
         <Button
           onClick={handleSkip}
-          disabled={showLyrics} // Disable skip during introduction/explanation phase
+          disabled={showLyrics || !canSkip} // Disable skip during introduction/explanation phase or until 30 seconds played
           className="w-12 h-12 rounded-full bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
-          title={showLyrics ? "Cannot skip during introduction" : "Skip song"}
+          title={
+            showLyrics 
+              ? "Cannot skip during introduction" 
+              : !canSkip 
+                ? "Skip available after 30 seconds" 
+                : "Skip song"
+          }
         >
           ⏭
         </Button>
       </div>
+
+      {/* Like/Dislike Buttons - Only show during song playback (not introduction) */}
+      {!showLyrics && (
+        <div className="flex items-center justify-center space-x-4">
+          <Button
+            onClick={handleDislike}
+            variant={disliked === true ? "default" : "outline"}
+            className={cn(
+              "w-12 h-12 rounded-full",
+              disliked === true 
+                ? "bg-red-500 text-white hover:bg-red-600" 
+                : "border-red-500 text-red-500 hover:bg-red-50"
+            )}
+            title={disliked === true ? "Remove dislike" : "Dislike this song"}
+          >
+            👎
+          </Button>
+          
+          <Button
+            onClick={handleLike}
+            variant={liked === true ? "default" : "outline"}
+            className={cn(
+              "w-12 h-12 rounded-full",
+              liked === true 
+                ? "bg-green-500 text-white hover:bg-green-600" 
+                : "border-green-500 text-green-500 hover:bg-green-50"
+            )}
+            title={liked === true ? "Remove like" : "Like this song"}
+          >
+            👍
+          </Button>
+        </div>
+      )}
 
       {/* Hidden Audio Element */}
       <audio

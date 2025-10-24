@@ -24,6 +24,7 @@ export default function ExperimentPage() {
     nextStep,
     prevStep,
     saveResponse,
+    setLocalResponse,
     selectGenre,
     nextSong,
     prevSong,
@@ -72,6 +73,7 @@ export default function ExperimentPage() {
       case 'onboarding':
         return (
           <SurveyScreen
+            key="onboarding-survey" // Force re-render for onboarding
             questions={experimentConfig.surveys.onboarding.questions}
             responses={responses}
             onAnswer={saveResponse}
@@ -136,14 +138,15 @@ export default function ExperimentPage() {
       case 'survey-song-3':
         return (
           <SurveyScreen
+            key={`survey-${currentSongIndex}`} // Force re-render for each song
             questions={experimentConfig.surveys.postListening.questions}
             responses={responses}
-            onAnswer={saveResponse}
+            onAnswer={setLocalResponse}
             onNext={() => {
               // Save song answers before moving to next step
               saveSongAnswers(responses);
               
-              // Clear responses for next song
+              // Clear responses so the next song survey starts blank
               clearResponses();
               
               // Move to next step

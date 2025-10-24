@@ -30,6 +30,9 @@ export function MultipleChoice({
     if (!value) {
       setShowConfirmation(false);
       setSelectedOption(null);
+    } else {
+      // Update selected option when value is set externally
+      setSelectedOption(value as string);
     }
   }, [value]);
 

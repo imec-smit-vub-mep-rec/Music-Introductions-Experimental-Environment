@@ -13,6 +13,7 @@ import {
   addSongSession,
   updateSongSession,
   syncSessionToRemote,
+  updateExperimentCompletionStatus,
   SessionData
 } from '@/lib/session';
 import { randomizeSongsForGenre, randomizeIntroductions } from '@/lib/randomization';
@@ -37,18 +38,48 @@ export function useExperiment() {
     return getSession();
   }, []);
 
-  // Load session on mount
+  // Load session on mount (do NOT reload on every step change)
   useEffect(() => {
     const existingSession = getSession();
     if (existingSession) {
       sessionRef.current = existingSession;
-      setState(prev => ({
-        ...prev,
-        selectedGenre: existingSession.chosen_genre,
-        randomizedSongs: existingSession.randomized_songs || [],
-        randomizedIntroductions: existingSession.randomized_introductions || [],
-        responses: existingSession.answers.onboarding,
-      }));
+      
+      // If we're at the very beginning (welcome or terms), don't load previous session data
+      // This ensures fresh starts don't show previous answers
+      const currentStepName = experimentSteps[state.currentStep];
+      const isAtBeginning = currentStepName === 'welcome' || currentStepName === 'terms';
+      
+      if (isAtBeginning) {
+        console.log('🆕 AT EXPERIMENT BEGINNING - NOT LOADING PREVIOUS SESSION DATA');
+        setState(prev => ({
+          ...prev,
+          selectedGenre: null,
+          randomizedSongs: [],
+          randomizedIntroductions: [],
+          responses: {}, // Start with empty responses
+        }));
+      } else {
+        // We're continuing an existing experiment, load the data
+        setState(prev => ({
+          ...prev,
+          selectedGenre: existingSession.chosen_genre,
+          randomizedSongs: existingSession.randomized_songs || [],
+          randomizedIntroductions: existingSession.randomized_introductions || [],
+          responses: existingSession.answers.onboarding,
+        }));
+        
+        console.log('🔄 CONTINUING EXISTING EXPERIMENT:', {
+          session_id: existingSession.session_id,
+          current_step: currentStepName,
+          chosen_genre: existingSession.chosen_genre,
+          onboarding_answers_count: Object.keys(existingSession.answers.onboarding).length,
+          timestamp: new Date().toISOString()
+        });
+      }
+    } else {
+      // Clear any existing state if no session found
+      setState(initialState);
+      sessionRef.current = null;
     }
   }, []);
 
@@ -65,18 +96,26 @@ export function useExperiment() {
         newSongIndex = 2;
       }
       
+      // Clear responses when transitioning to any song survey
+      // This ensures each song survey starts fresh
+      const isTransitioningToSongSurvey = newStepName.startsWith('survey-song-');
+      
       console.log('🔄 STEP PROGRESSION:', {
         from_step: experimentSteps[prev.currentStep],
         to_step: newStepName,
         from_song_index: prev.currentSongIndex,
         to_song_index: newSongIndex,
+        is_transitioning_to_song_survey: isTransitioningToSongSurvey,
         timestamp: new Date().toISOString()
       });
       
+      // If moving into a song survey, drop any in-memory responses before render
+      const nextResponses = isTransitioningToSongSurvey ? {} : prev.responses;
       return {
         ...prev,
         currentStep: newStep,
         currentSongIndex: newSongIndex,
+        responses: nextResponses,
       };
     });
 
@@ -99,11 +138,15 @@ export function useExperiment() {
         newSongIndex = 1;
       }
       
+      // Clear responses when transitioning to any song survey
+      const isTransitioningToSongSurvey = newStepName.startsWith('survey-song-');
+      
       console.log('🔄 STEP REVERSAL:', {
         from_step: experimentSteps[prev.currentStep],
         to_step: newStepName,
         from_song_index: prev.currentSongIndex,
         to_song_index: newSongIndex,
+        is_transitioning_to_song_survey: isTransitioningToSongSurvey,
         timestamp: new Date().toISOString()
       });
       
@@ -111,6 +154,8 @@ export function useExperiment() {
         ...prev,
         currentStep: newStep,
         currentSongIndex: newSongIndex,
+        // Clear responses when transitioning to any song survey
+        responses: isTransitioningToSongSurvey ? {} : prev.responses,
       };
     });
 
@@ -152,10 +197,24 @@ export function useExperiment() {
       });
       const updatedAnswers = { ...currentSession.answers.onboarding, [questionId]: answer };
       updateSessionOnboardingAnswers(updatedAnswers);
+      
+      // Check if experiment is now complete
+      updateExperimentCompletionStatus();
     } else {
       console.warn('⚠️ COULD NOT SAVE ONBOARDING ANSWERS: NO SESSION FOUND');
     }
   }, [getCurrentSession]);
+
+  // Local-only response setter (does not touch session). Use for song surveys.
+  const setLocalResponse = useCallback((questionId: string, answer: AnswerValue) => {
+    setState(prev => ({
+      ...prev,
+      responses: {
+        ...prev.responses,
+        [questionId]: answer,
+      },
+    }));
+  }, []);
 
   const selectGenre = useCallback((genreId: string) => {
     // Randomize songs and introductions for this genre
@@ -317,6 +376,9 @@ export function useExperiment() {
       answers
     });
 
+    // Check if experiment is now complete
+    updateExperimentCompletionStatus();
+
     // Sync to remote database after saving song answers
     syncSessionToRemote().catch(error => {
       console.error('❌ SONG ANSWERS SYNC FAILED:', error);
@@ -385,10 +447,58 @@ export function useExperiment() {
     }));
   }, []);
 
+  const clearAllSurveyData = useCallback(() => {
+    setState(prev => ({
+      ...prev,
+      responses: {},
+      currentQuestionIndex: 0,
+    }));
+    console.log('🧹 ALL SURVEY DATA CLEARED');
+  }, []);
+
+  const forceClearSession = useCallback(() => {
+    // Clear localStorage session
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('serendipity_session');
+    }
+    
+    // Reset state to initial
+    setState(initialState);
+    sessionRef.current = null;
+    
+    console.log('🧹 SESSION FORCE CLEARED');
+  }, []);
+
   const reset = useCallback(() => {
     setState(initialState);
     sessionRef.current = null;
   }, []);
+
+  const startNewSession = useCallback(async () => {
+    // Clear any existing session data
+    setState(initialState);
+    sessionRef.current = null;
+    
+    // Create a new session
+    try {
+      const newSession = await createNewSession();
+      saveSession(newSession);
+      sessionRef.current = newSession;
+      
+      console.log('🆕 NEW SESSION STARTED:', {
+        session_id: newSession.session_id,
+        group: newSession.group,
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      console.error('❌ FAILED TO CREATE NEW SESSION:', error);
+    }
+  }, []);
+
+  const getExperimentCompleted = useCallback(() => {
+    const currentSession = getCurrentSession();
+    return currentSession?.experiment_completed || false;
+  }, [getCurrentSession]);
 
   return {
     // State
@@ -399,6 +509,7 @@ export function useExperiment() {
     currentSongIndex: state.currentSongIndex,
     currentQuestionIndex: state.currentQuestionIndex,
     session: getCurrentSession(),
+    experimentCompleted: getExperimentCompleted(),
     
     // Navigation
     nextStep,
@@ -409,6 +520,8 @@ export function useExperiment() {
     saveResponse,
     saveSongAnswers,
     clearResponses,
+    setLocalResponse,
+    clearAllSurveyData,
     
     // Genre selection
     selectGenre,
@@ -430,5 +543,7 @@ export function useExperiment() {
     
     // Utilities
     reset,
+    startNewSession,
+    forceClearSession,
   };
 }

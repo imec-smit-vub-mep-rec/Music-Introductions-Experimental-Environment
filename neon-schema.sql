@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     randomized_songs JSONB NOT NULL DEFAULT '[]',
     randomized_introductions JSONB NOT NULL DEFAULT '[]',
     start_time TIMESTAMP WITH TIME ZONE NOT NULL,
+    experiment_completed BOOLEAN NOT NULL DEFAULT FALSE, -- Track if all questions have been answered
     onboarding_answers JSONB NOT NULL DEFAULT '{}', -- Dedicated column for onboarding answers
     song_answers JSONB NOT NULL DEFAULT '[]', -- Dedicated column for song-specific answers
     engagement_metrics JSONB NOT NULL DEFAULT '{}',
@@ -23,6 +24,7 @@ CREATE INDEX IF NOT EXISTS idx_session_id ON experiment_sessions(session_id);
 CREATE INDEX IF NOT EXISTS idx_group_type ON experiment_sessions(group_type);
 CREATE INDEX IF NOT EXISTS idx_created_at ON experiment_sessions(created_at);
 CREATE INDEX IF NOT EXISTS idx_expires_at ON experiment_sessions(expires_at);
+CREATE INDEX IF NOT EXISTS idx_experiment_completed ON experiment_sessions(experiment_completed);
 
 -- Create indexes for JSONB columns for better query performance
 CREATE INDEX IF NOT EXISTS idx_onboarding_answers ON experiment_sessions USING GIN (onboarding_answers);
@@ -88,6 +90,7 @@ SELECT
     COUNT(*) as session_count,
     AVG(EXTRACT(EPOCH FROM (updated_at - created_at))) as avg_session_duration_seconds,
     COUNT(CASE WHEN jsonb_array_length(song_answers) > 0 THEN 1 END) as completed_sessions,
+    COUNT(CASE WHEN experiment_completed = TRUE THEN 1 END) as fully_completed_sessions,
     DATE_TRUNC('day', created_at) as session_date
 FROM experiment_sessions
 GROUP BY group_type, chosen_genre, DATE_TRUNC('day', created_at)

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
-import { createNewSession, saveSession, hasCompletedSession } from '@/lib/session';
+import { createNewSession, saveSession, hasCompletedSession, clearSession } from '@/lib/session';
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -27,15 +27,35 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
       if (hasCompletedSession()) {
         // Redirect to thank you or show message
         console.log('User has already completed the experiment');
-        return;
       }
       
-      // Create new session
-      const session = createNewSession();
-      saveSession(session);
+      // Clear any existing session data and create new session
+      const initializeSession = async () => {
+        try {
+          // Clear any existing session data first
+          clearSession();
+          
+          // Force a small delay to ensure localStorage is cleared
+          await new Promise(resolve => setTimeout(resolve, 100));
+          
+          const session = await createNewSession();
+          saveSession(session);
+          
+          console.log('🆕 NEW SESSION CREATED ON TERMS ACCEPTANCE:', {
+            session_id: session.session_id,
+            group: session.group,
+            onboarding_answers: Object.keys(session.answers.onboarding).length,
+            timestamp: new Date().toISOString()
+          });
+          
+          const timer = setTimeout(onAccept, 200);
+          return () => clearTimeout(timer);
+        } catch (error) {
+          console.error('Failed to create session:', error);
+        }
+      };
       
-      const timer = setTimeout(onAccept, 1000);
-      return () => clearTimeout(timer);
+      initializeSession();
     }
   }, [consent1, consent2, onAccept]);
 

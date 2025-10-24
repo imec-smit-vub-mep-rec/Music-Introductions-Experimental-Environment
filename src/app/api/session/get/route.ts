@@ -56,6 +56,7 @@ export async function GET(request: NextRequest) {
         randomized_songs: JSON.parse(row.randomized_songs),
         randomized_introductions: JSON.parse(row.randomized_introductions),
         start_time: row.start_time,
+        experiment_completed: row.experiment_completed || false,
         answers: {
           onboarding: JSON.parse(row.onboarding_answers),
           songs: JSON.parse(row.song_answers),
