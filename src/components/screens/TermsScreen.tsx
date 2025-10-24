@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
+import { createNewSession, saveSession, hasCompletedSession } from '@/lib/session';
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -22,6 +23,17 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
 
   useEffect(() => {
     if (consent1 && consent2) {
+      // Check if user has already completed the experiment
+      if (hasCompletedSession()) {
+        // Redirect to thank you or show message
+        console.log('User has already completed the experiment');
+        return;
+      }
+      
+      // Create new session
+      const session = createNewSession();
+      saveSession(session);
+      
       const timer = setTimeout(onAccept, 1000);
       return () => clearTimeout(timer);
     }

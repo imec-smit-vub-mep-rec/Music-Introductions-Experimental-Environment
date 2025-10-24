@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useExperiment } from '@/hooks/useExperiment';
 import { experimentConfig, getSongsByGenre } from '@/lib/config';
 import { WelcomeScreen } from '@/components/screens/WelcomeScreen';
@@ -7,15 +8,19 @@ import { TermsScreen } from '@/components/screens/TermsScreen';
 import { SurveyScreen } from '@/components/screens/SurveyScreen';
 import { GenreSelectionScreen } from '@/components/screens/GenreSelectionScreen';
 import { AudioPlayerScreen } from '@/components/screens/AudioPlayerScreen';
+import { QualtricsScreen } from '@/components/screens/QualtricsScreen';
 import { ThankYouScreen } from '@/components/screens/ThankYouScreen';
+import { useEngagementTracking } from '@/hooks/useEngagementTracking';
+import { getSession, addSongSession } from '@/lib/session';
 
 export default function ExperimentPage() {
   const {
     currentStep,
     currentStepName,
     responses,
-    selectedGenres,
+    selectedGenre,
     currentSongIndex,
+    session,
     nextStep,
     prevStep,
     saveResponse,
@@ -23,9 +28,38 @@ export default function ExperimentPage() {
     nextSong,
     prevSong,
     getCurrentSong,
-    getCurrentSongs,
-    canSelectGenre,
+    getCurrentIntroductionStyle,
+    getCurrentSongNumber,
+    isLastSong,
+    saveSongAnswers,
+    trackSongSkip,
+    trackSongCompletion,
+    clearResponses,
   } = useExperiment();
+
+  // Get session for engagement tracking
+  const currentSession = getSession();
+  
+  // Set up engagement tracking
+  useEngagementTracking({
+    page: currentStepName,
+    trackClicks: true,
+    trackScrolls: true,
+    trackAudioInteractions: true,
+    trackPageTime: true
+  });
+
+  // Log step transitions
+  useEffect(() => {
+    console.info('🔄 EXPERIMENT STEP CHANGED:', {
+      step_name: currentStepName,
+      step_index: currentStep,
+      session_id: currentSession?.session_id,
+      group: currentSession?.group,
+      selected_genre: currentSession?.chosen_genre,
+      timestamp: new Date().toISOString()
+    });
+  }, [currentStepName, currentStep, currentSession]);
 
   const renderCurrentStep = () => {
     switch (currentStepName) {
@@ -46,116 +80,82 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'genre-familiar':
+      case 'genre-selection':
         return (
           <GenreSelectionScreen
             genres={experimentConfig.genres}
-            selectedGenre={selectedGenres.familiar}
-            onSelectGenre={(genreId) => selectGenre(genreId, 'familiar')}
+            selectedGenre={selectedGenre}
+            onSelectGenre={selectGenre}
             onStart={nextStep}
             onBack={prevStep}
-            title="Choose a Familiar Genre"
-            subtitle="Select a genre you already know and enjoy"
+            sessionGroup={currentSession?.group}
           />
         );
 
-      case 'audio-familiar':
-        const familiarSongs = getSongsByGenre(selectedGenres.familiar || '');
-        const familiarSong = getCurrentSong();
-        const familiarGenre = experimentConfig.genres.find(g => g.id === selectedGenres.familiar);
+      case 'audio-song-1':
+      case 'audio-song-2':
+      case 'audio-song-3':
+        const currentSong = getCurrentSong();
+        const currentGenre = experimentConfig.genres.find(g => g.id === selectedGenre);
+        const songNumber = getCurrentSongNumber();
         
-        if (!familiarSong || !familiarGenre) return null;
+        if (!currentSong || !currentGenre) return <div>Loading...</div>;
         
         return (
           <AudioPlayerScreen
-            song={familiarSong}
-            genre={familiarGenre}
+            song={currentSong}
+            genre={currentGenre}
             currentSongIndex={currentSongIndex}
-            totalSongs={familiarSongs.length}
+            totalSongs={3}
             onNextSong={nextSong}
             onPreviousSong={prevSong}
-            onComplete={nextStep}
+            onComplete={() => {
+              // When song completes, go to survey
+              nextStep();
+            }}
             onBack={prevStep}
-            hasNextSong={currentSongIndex < familiarSongs.length - 1}
+            hasNextSong={!isLastSong()}
             hasPreviousSong={currentSongIndex > 0}
+            songNumber={songNumber}
+            introductionStyle={getCurrentIntroductionStyle()}
+            onSkip={(skippedAtMs) => {
+              // Track skip in session
+              trackSongSkip(skippedAtMs);
+              // When song is skipped, also go to survey
+              nextStep();
+            }}
+            onSongComplete={(listeningTimeMs) => {
+              // Track completion in session
+              trackSongCompletion(listeningTimeMs);
+            }}
           />
         );
 
-      case 'survey-familiar':
+      case 'survey-song-1':
+      case 'survey-song-2':
+      case 'survey-song-3':
         return (
           <SurveyScreen
             questions={experimentConfig.surveys.postListening.questions}
             responses={responses}
             onAnswer={saveResponse}
-            onNext={nextStep}
+            onNext={() => {
+              // Save song answers before moving to next step
+              saveSongAnswers(responses);
+              
+              // Clear responses for next song
+              clearResponses();
+              
+              // Move to next step
+              nextStep();
+            }}
             onBack={prevStep}
-            title="Your Listening Experience"
+            title={`Your Experience - Song ${getCurrentSongNumber()}`}
           />
         );
 
-      case 'genre-unfamiliar':
-        return (
-          <GenreSelectionScreen
-            genres={experimentConfig.genres}
-            selectedGenre={selectedGenres.unfamiliar}
-            onSelectGenre={(genreId) => selectGenre(genreId, 'unfamiliar')}
-            onStart={nextStep}
-            onBack={prevStep}
-            title="Choose an Unfamiliar Genre"
-            subtitle="Select a genre you're less familiar with"
-            disabledGenres={selectedGenres.familiar ? [selectedGenres.familiar] : []}
-          />
-        );
-
-      case 'audio-unfamiliar':
-        const unfamiliarSongs = getSongsByGenre(selectedGenres.unfamiliar || '');
-        const unfamiliarSong = getCurrentSong();
-        const unfamiliarGenre = experimentConfig.genres.find(g => g.id === selectedGenres.unfamiliar);
-        
-        if (!unfamiliarSong || !unfamiliarGenre) {
-          // Reset song index and try again
-          return <div>Loading...</div>;
-        }
-        
-        return (
-          <AudioPlayerScreen
-            song={unfamiliarSong}
-            genre={unfamiliarGenre}
-            currentSongIndex={currentSongIndex}
-            totalSongs={unfamiliarSongs.length}
-            onNextSong={nextSong}
-            onPreviousSong={prevSong}
-            onComplete={nextStep}
-            onBack={prevStep}
-            hasNextSong={currentSongIndex < unfamiliarSongs.length - 1}
-            hasPreviousSong={currentSongIndex > 0}
-          />
-        );
-
-      case 'survey-unfamiliar':
-        return (
-          <SurveyScreen
-            questions={experimentConfig.surveys.postListening.questions}
-            responses={responses}
-            onAnswer={saveResponse}
-            onNext={nextStep}
-            onBack={prevStep}
-            title="Your Listening Experience"
-          />
-        );
-
-      case 'final-survey':
-        console.log('Final survey questions:', experimentConfig.surveys.final.questions);
-        return (
-          <SurveyScreen
-            questions={experimentConfig.surveys.final.questions}
-            responses={responses}
-            onAnswer={saveResponse}
-            onNext={nextStep}
-            onBack={prevStep}
-            title={experimentConfig.surveys.final.title}
-          />
-        );
+      case 'qualtrics':
+        return <QualtricsScreen onComplete={nextStep} />;
 
       case 'thank-you':
         return <ThankYouScreen />;

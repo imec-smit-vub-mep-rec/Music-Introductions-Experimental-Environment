@@ -25,6 +25,12 @@ export function SurveyScreen({
   title = "Survey"
 }: SurveyScreenProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showValidationError, setShowValidationError] = useState(false);
+  
+  // Reset validation error when question changes
+  useEffect(() => {
+    setShowValidationError(false);
+  }, [currentQuestionIndex]);
   
   // Add safety checks
   if (!questions || questions.length === 0) {
@@ -46,6 +52,8 @@ export function SurveyScreen({
   const handleAnswer = (answer: AnswerValue) => {
     if (currentQuestion) {
       onAnswer(currentQuestion.id, answer);
+      // Clear validation error when user provides an answer
+      setShowValidationError(false);
     }
   };
 
@@ -57,6 +65,12 @@ export function SurveyScreen({
   };
 
   const handleNext = () => {
+    if (!canProceed()) {
+      setShowValidationError(true);
+      return;
+    }
+    
+    setShowValidationError(false);
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
@@ -65,6 +79,7 @@ export function SurveyScreen({
   };
 
   const handleBack = () => {
+    setShowValidationError(false);
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     } else if (onBack) {
@@ -74,7 +89,28 @@ export function SurveyScreen({
 
   const canProceed = () => {
     if (!currentQuestion || !currentQuestion.required) return true;
-    return currentAnswer !== undefined && currentAnswer !== null && currentAnswer !== '';
+    
+    // Handle different question types
+    switch (currentQuestion.type) {
+      case 'multiple-choice':
+      case 'rating':
+        // For single-value questions, check if answer exists and is not empty
+        return currentAnswer !== undefined && currentAnswer !== null && currentAnswer !== '';
+      
+      case 'checkbox':
+        // For checkbox questions, check if array exists and has at least one selection
+        const checkboxValue = currentAnswer as string[];
+        return Array.isArray(checkboxValue) && checkboxValue.length > 0;
+      
+      case 'text':
+        // For text questions, check if string exists and is not empty (trimmed)
+        const textValue = currentAnswer as string;
+        return textValue !== undefined && textValue !== null && textValue.trim() !== '';
+      
+      default:
+        // Fallback to basic check
+        return currentAnswer !== undefined && currentAnswer !== null && currentAnswer !== '';
+    }
   };
 
   return (
@@ -107,12 +143,21 @@ export function SurveyScreen({
           {/* Question */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-ivory">
             {currentQuestion ? (
-              <QuestionRenderer
-                question={currentQuestion}
-                value={currentAnswer}
-                onChange={handleAnswer}
-                onAutoNext={handleAutoNext}
-              />
+              <>
+                <QuestionRenderer
+                  question={currentQuestion}
+                  value={currentAnswer}
+                  onChange={handleAnswer}
+                  onAutoNext={handleAutoNext}
+                />
+                {showValidationError && currentQuestion.required && (
+                  <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+                    <p className="text-red-600 text-sm font-medium">
+                      Please answer this question before continuing.
+                    </p>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="text-center text-dark-purple/70">
                 <p>No question available</p>

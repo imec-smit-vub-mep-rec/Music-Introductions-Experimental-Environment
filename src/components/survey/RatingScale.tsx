@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { AnswerValue } from '@/lib/types';
 
 interface RatingScaleProps {
@@ -21,7 +22,30 @@ export function RatingScale({
   required = false,
   onAutoNext
 }: RatingScaleProps) {
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [selectedRating, setSelectedRating] = useState<number | null>(null);
   const range = Array.from({ length: max - min + 1 }, (_, i) => min + i);
+
+  // Reset confirmation state when value changes externally
+  useEffect(() => {
+    if (!value) {
+      setShowConfirmation(false);
+      setSelectedRating(null);
+    }
+  }, [value]);
+
+  const handleRatingClick = (rating: number) => {
+    onChange(rating);
+    setSelectedRating(rating);
+    setShowConfirmation(true);
+    
+    // Auto-advance after 0.5 seconds with visual confirmation
+    if (onAutoNext) {
+      setTimeout(() => {
+        onAutoNext();
+      }, 500);
+    }
+  };
 
   return (
     <div className="space-y-4">
@@ -37,18 +61,17 @@ export function RatingScale({
           {range.map((rating) => (
             <button
               key={rating}
-              onClick={() => {
-                onChange(rating);
-                if (onAutoNext) {
-                  onAutoNext();
-                }
-              }}
+              onClick={() => handleRatingClick(rating)}
               className={`
                 w-12 h-12 rounded-full border-2 flex items-center justify-center
                 transition-all duration-200 font-medium
                 ${(value as number) === rating 
                   ? 'bg-maize border-maize text-dark-purple' 
                   : 'border-dark-purple text-dark-purple hover:border-maize hover:bg-maize/20'
+                }
+                ${showConfirmation && selectedRating === rating 
+                  ? 'ring-2 ring-maize ring-offset-2 scale-110' 
+                  : ''
                 }
               `}
             >

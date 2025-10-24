@@ -1,0 +1,1168 @@
+{
+  "metadata": {
+    "title": "hustle_immers",
+    "exportDate": "2025-10-23T12:49:50.648Z",
+    "totalSubtitles": 17,
+    "totalWords": 129
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "The  disco  lights  whirl  overhead.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811b7",
+          "text": "The ",
+          "start": 0.2,
+          "end": 0.4,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811b8",
+          "text": "disco ",
+          "start": 0.4,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811b9",
+          "text": "lights ",
+          "start": 0.84,
+          "end": 1.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ba",
+          "text": "whirl ",
+          "start": 1.16,
+          "end": 1.56,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811bb",
+          "text": "overhead.",
+          "start": 1.56,
+          "end": 2.16,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 2.16,
+        "duration": 1.9600000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Painting  the  night  in  color.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811bc",
+          "text": "Painting ",
+          "start": 2.28,
+          "end": 2.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811bd",
+          "text": "the ",
+          "start": 2.8,
+          "end": 2.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811be",
+          "text": "night ",
+          "start": 2.96,
+          "end": 3.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811bf",
+          "text": "in ",
+          "start": 3.24,
+          "end": 3.44,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c0",
+          "text": "color.",
+          "start": 3.44,
+          "end": 3.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 2.28,
+        "end": 3.96,
+        "duration": 1.6800000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "You're  lost  in  the  rhythm until  you  see  her.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811c1",
+          "text": "You're ",
+          "start": 4.2,
+          "end": 4.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c2",
+          "text": "lost ",
+          "start": 4.52,
+          "end": 4.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c3",
+          "text": "in ",
+          "start": 4.84,
+          "end": 5.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c4",
+          "text": "the ",
+          "start": 5.04,
+          "end": 5.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c5",
+          "text": "rhythm",
+          "start": 5.16,
+          "end": 5.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c6",
+          "text": "until ",
+          "start": 5.84,
+          "end": 6.48,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c7",
+          "text": "you ",
+          "start": 6.48,
+          "end": 6.76,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c8",
+          "text": "see ",
+          "start": 6.76,
+          "end": 6.96,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811c9",
+          "text": "her.",
+          "start": 7,
+          "end": 7.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 4.2,
+        "end": 7.48,
+        "duration": 3.2800000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "The  most  magnetic  presence on  the  floor.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811ca",
+          "text": "The ",
+          "start": 7.8,
+          "end": 7.92,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811cb",
+          "text": "most ",
+          "start": 7.92,
+          "end": 8.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811cc",
+          "text": "magnetic ",
+          "start": 8.24,
+          "end": 8.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811cd",
+          "text": "presence",
+          "start": 8.96,
+          "end": 9.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ce",
+          "text": "on ",
+          "start": 9.48,
+          "end": 9.68,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811cf",
+          "text": "the ",
+          "start": 9.68,
+          "end": 9.76,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d0",
+          "text": "floor.",
+          "start": 9.76,
+          "end": 10.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 7.8,
+        "end": 10.24,
+        "duration": 2.4400000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Your  gaze  lingers  too  long.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811d1",
+          "text": "Your ",
+          "start": 10.6,
+          "end": 10.92,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d2",
+          "text": "gaze ",
+          "start": 10.92,
+          "end": 11.28,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d3",
+          "text": "lingers ",
+          "start": 11.28,
+          "end": 11.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d4",
+          "text": "too ",
+          "start": 11.88,
+          "end": 12.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d5",
+          "text": "long.",
+          "start": 12.16,
+          "end": 12.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 10.6,
+        "end": 12.68,
+        "duration": 2.08
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Glued  to  her  elegant  movements.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811d6",
+          "text": "Glued ",
+          "start": 12.8,
+          "end": 13.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d7",
+          "text": "to ",
+          "start": 13.36,
+          "end": 13.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d8",
+          "text": "her ",
+          "start": 13.56,
+          "end": 13.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811d9",
+          "text": "elegant ",
+          "start": 13.8,
+          "end": 14.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811da",
+          "text": "movements.",
+          "start": 14.24,
+          "end": 15,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 12.8,
+        "end": 15,
+        "duration": 2.1999999999999993
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Until  suddenly  she  catches  you  staring.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811db",
+          "text": "Until ",
+          "start": 15.12,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811dc",
+          "text": "suddenly ",
+          "start": 15.52,
+          "end": 16.12,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811dd",
+          "text": "she ",
+          "start": 16.12,
+          "end": 16.4,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811de",
+          "text": "catches ",
+          "start": 16.44,
+          "end": 16.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811df",
+          "text": "you ",
+          "start": 16.84,
+          "end": 17.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e0",
+          "text": "staring.",
+          "start": 17.08,
+          "end": 17.8,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 15.12,
+        "end": 17.8,
+        "duration": 2.6800000000000015
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Heat  floods  your  face.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811e1",
+          "text": "Heat ",
+          "start": 18.08,
+          "end": 18.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e2",
+          "text": "floods ",
+          "start": 18.48,
+          "end": 18.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e3",
+          "text": "your ",
+          "start": 18.84,
+          "end": 19.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e4",
+          "text": "face.",
+          "start": 19.04,
+          "end": 19.64,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 18.08,
+        "end": 19.64,
+        "duration": 1.5600000000000023
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Thank  God  it's  dark,  you  think.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811e5",
+          "text": "Thank ",
+          "start": 19.76,
+          "end": 20.12,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e6",
+          "text": "God ",
+          "start": 20.12,
+          "end": 20.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e7",
+          "text": "it's ",
+          "start": 20.48,
+          "end": 20.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e8",
+          "text": "dark, ",
+          "start": 20.72,
+          "end": 21.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811e9",
+          "text": "you ",
+          "start": 21.12,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ea",
+          "text": "think.",
+          "start": 21.32,
+          "end": 21.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.76,
+        "end": 21.76,
+        "duration": 2
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "But  then  a  shy  smile  appears  across  her face  just  for  you.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811eb",
+          "text": "But ",
+          "start": 21.88,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ec",
+          "text": "then ",
+          "start": 22.08,
+          "end": 22.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ed",
+          "text": "a ",
+          "start": 22.32,
+          "end": 22.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ee",
+          "text": "shy ",
+          "start": 22.48,
+          "end": 22.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ef",
+          "text": "smile ",
+          "start": 22.88,
+          "end": 23.44,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f0",
+          "text": "appears ",
+          "start": 23.44,
+          "end": 23.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f1",
+          "text": "across ",
+          "start": 23.84,
+          "end": 24.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f2",
+          "text": "her",
+          "start": 24.24,
+          "end": 24.4,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f3",
+          "text": "face ",
+          "start": 24.4,
+          "end": 25,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f4",
+          "text": "just ",
+          "start": 25.04,
+          "end": 25.48,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f5",
+          "text": "for ",
+          "start": 25.48,
+          "end": 25.72,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f6",
+          "text": "you.",
+          "start": 25.72,
+          "end": 26.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.88,
+        "end": 26.12,
+        "duration": 4.240000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "Your  heart  jumps.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811f7",
+          "text": "Your ",
+          "start": 26.56,
+          "end": 26.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f8",
+          "text": "heart ",
+          "start": 26.88,
+          "end": 27.28,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811f9",
+          "text": "jumps.",
+          "start": 27.28,
+          "end": 27.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 26.56,
+        "end": 27.96,
+        "duration": 1.4000000000000021
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "You  want  to  go  over  to  say  something, but  shyness  holds  you  back.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da1811fa",
+          "text": "You ",
+          "start": 28.08,
+          "end": 28.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811fb",
+          "text": "want ",
+          "start": 28.32,
+          "end": 28.56,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811fc",
+          "text": "to ",
+          "start": 28.56,
+          "end": 28.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811fd",
+          "text": "go ",
+          "start": 28.68,
+          "end": 28.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811fe",
+          "text": "over ",
+          "start": 28.88,
+          "end": 29.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da1811ff",
+          "text": "to ",
+          "start": 29.48,
+          "end": 29.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181200",
+          "text": "say ",
+          "start": 29.68,
+          "end": 29.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181201",
+          "text": "something,",
+          "start": 29.88,
+          "end": 30.6,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181202",
+          "text": "but ",
+          "start": 30.6,
+          "end": 30.88,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181203",
+          "text": "shyness ",
+          "start": 30.88,
+          "end": 31.44,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181204",
+          "text": "holds ",
+          "start": 31.44,
+          "end": 31.76,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181205",
+          "text": "you ",
+          "start": 31.76,
+          "end": 31.92,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181206",
+          "text": "back.",
+          "start": 31.92,
+          "end": 32.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 28.08,
+        "end": 32.44,
+        "duration": 4.359999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "How  you  wish  you  were  smooth.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da181207",
+          "text": "How ",
+          "start": 32.72,
+          "end": 32.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181208",
+          "text": "you ",
+          "start": 32.96,
+          "end": 33.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181209",
+          "text": "wish ",
+          "start": 33.24,
+          "end": 33.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18120a",
+          "text": "you ",
+          "start": 33.52,
+          "end": 33.68,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18120b",
+          "text": "were ",
+          "start": 33.68,
+          "end": 33.92,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18120c",
+          "text": "smooth.",
+          "start": 33.92,
+          "end": 34.64,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 32.72,
+        "end": 34.64,
+        "duration": 1.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "And  then,  as  if  the  universe  decided  to give  you  a  push,  the  DJ  drops  the  hustle.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da18120d",
+          "text": "And ",
+          "start": 34.84,
+          "end": 35.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18120e",
+          "text": "then, ",
+          "start": 35.08,
+          "end": 35.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18120f",
+          "text": "as ",
+          "start": 35.72,
+          "end": 35.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181210",
+          "text": "if ",
+          "start": 35.88,
+          "end": 36.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181211",
+          "text": "the ",
+          "start": 36.04,
+          "end": 36.2,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181212",
+          "text": "universe ",
+          "start": 36.2,
+          "end": 36.68,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181213",
+          "text": "decided ",
+          "start": 36.68,
+          "end": 37.2,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181214",
+          "text": "to",
+          "start": 37.2,
+          "end": 37.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181215",
+          "text": "give ",
+          "start": 37.36,
+          "end": 37.56,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181216",
+          "text": "you ",
+          "start": 37.56,
+          "end": 37.72,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181217",
+          "text": "a ",
+          "start": 37.72,
+          "end": 37.84,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181218",
+          "text": "push, ",
+          "start": 37.88,
+          "end": 38.32,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181219",
+          "text": "the ",
+          "start": 38.52,
+          "end": 38.76,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18121a",
+          "text": "DJ ",
+          "start": 38.76,
+          "end": 39.28,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18121b",
+          "text": "drops ",
+          "start": 39.32,
+          "end": 39.84,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18121c",
+          "text": "the ",
+          "start": 39.84,
+          "end": 40,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18121d",
+          "text": "hustle.",
+          "start": 40,
+          "end": 40.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 34.84,
+        "end": 40.6,
+        "duration": 5.759999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 14,
+      "text": "Your  eyes  spontaneously  meet  again.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da18121e",
+          "text": "Your ",
+          "start": 40.8,
+          "end": 41.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18121f",
+          "text": "eyes ",
+          "start": 41.16,
+          "end": 41.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181220",
+          "text": "spontaneously ",
+          "start": 41.52,
+          "end": 42.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181221",
+          "text": "meet ",
+          "start": 42.48,
+          "end": 42.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181222",
+          "text": "again.",
+          "start": 42.84,
+          "end": 43.4,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 40.8,
+        "end": 43.4,
+        "duration": 2.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 15,
+      "text": "You  move  toward  each  other and  as  your  hands  meet,",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da181223",
+          "text": "You ",
+          "start": 43.6,
+          "end": 43.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181224",
+          "text": "move ",
+          "start": 43.84,
+          "end": 44.2,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181225",
+          "text": "toward ",
+          "start": 44.24,
+          "end": 44.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181226",
+          "text": "each ",
+          "start": 44.64,
+          "end": 44.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181227",
+          "text": "other",
+          "start": 44.84,
+          "end": 45.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181228",
+          "text": "and ",
+          "start": 45.32,
+          "end": 45.48,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181229",
+          "text": "as ",
+          "start": 45.48,
+          "end": 45.64,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18122a",
+          "text": "your ",
+          "start": 45.64,
+          "end": 45.92,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18122b",
+          "text": "hands ",
+          "start": 45.92,
+          "end": 46.28,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da18122c",
+          "text": "meet,",
+          "start": 46.28,
+          "end": 46.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 43.6,
+        "end": 46.68,
+        "duration": 3.0799999999999983
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 16,
+      "text": "the  dance  becomes  the  conversation you  were  too  shy  to  start.",
+      "words": [
+        {
+          "id": "68fa1fe8964705c7da18122d",
+          "text": "the ",
+          "start": 46.8,
+          "end": 47.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18122e",
+          "text": "dance ",
+          "start": 47.04,
+          "end": 47.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da18122f",
+          "text": "becomes ",
+          "start": 47.52,
+          "end": 47.92,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181230",
+          "text": "the ",
+          "start": 47.92,
+          "end": 48.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181231",
+          "text": "conversation",
+          "start": 48.08,
+          "end": 49.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1fe8964705c7da181232",
+          "text": "you ",
+          "start": 49.16,
+          "end": 49.36,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181233",
+          "text": "were ",
+          "start": 49.36,
+          "end": 49.6,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181234",
+          "text": "too ",
+          "start": 49.6,
+          "end": 49.88,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181235",
+          "text": "shy ",
+          "start": 49.88,
+          "end": 50.2,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181236",
+          "text": "to ",
+          "start": 50.24,
+          "end": 50.44,
+          "line": 1
+        },
+        {
+          "id": "68fa1fe8964705c7da181237",
+          "text": "start.",
+          "start": 50.48,
+          "end": 51.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 46.8,
+        "end": 51.08,
+        "duration": 4.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

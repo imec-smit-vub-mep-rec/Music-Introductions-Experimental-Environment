@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { AnswerValue } from '@/lib/types';
@@ -21,6 +22,30 @@ export function MultipleChoice({
   required = false,
   onAutoNext
 }: MultipleChoiceProps) {
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+
+  // Reset confirmation state when value changes externally
+  useEffect(() => {
+    if (!value) {
+      setShowConfirmation(false);
+      setSelectedOption(null);
+    }
+  }, [value]);
+
+  const handleValueChange = (newValue: string) => {
+    onChange(newValue);
+    setSelectedOption(newValue);
+    setShowConfirmation(true);
+    
+    // Auto-advance after 0.5 seconds with visual confirmation
+    if (onAutoNext) {
+      setTimeout(() => {
+        onAutoNext();
+      }, 500);
+    }
+  };
+
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-medium text-dark-purple">
@@ -29,12 +54,7 @@ export function MultipleChoice({
       </h3>
       <RadioGroup 
         value={value as string} 
-        onValueChange={(newValue) => {
-          onChange(newValue);
-          if (onAutoNext) {
-            onAutoNext();
-          }
-        }} 
+        onValueChange={handleValueChange}
         className="space-y-3"
       >
         {options.map((option) => (
@@ -42,11 +62,19 @@ export function MultipleChoice({
             <RadioGroupItem 
               value={option} 
               id={option}
-              className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize"
+              className={`border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize transition-all duration-200 ${
+                showConfirmation && selectedOption === option 
+                  ? 'ring-2 ring-maize ring-offset-2 scale-105' 
+                  : ''
+              }`}
             />
             <Label 
               htmlFor={option}
-              className="text-dark-purple cursor-pointer flex-1"
+              className={`text-dark-purple cursor-pointer flex-1 transition-all duration-200 ${
+                showConfirmation && selectedOption === option 
+                  ? 'text-maize font-semibold' 
+                  : ''
+              }`}
             >
               {option}
             </Label>

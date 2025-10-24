@@ -1,0 +1,1030 @@
+{
+  "metadata": {
+    "title": "YMCA_inform",
+    "exportDate": "2025-10-23T12:49:50.647Z",
+    "totalSubtitles": 12,
+    "totalWords": 120
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "A  party  classic  and  mandatory on  any  dance  floor.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da18123a",
+          "text": "A ",
+          "start": 0.24,
+          "end": 0.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18123b",
+          "text": "party ",
+          "start": 0.48,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18123c",
+          "text": "classic ",
+          "start": 0.84,
+          "end": 1.44,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18123d",
+          "text": "and ",
+          "start": 1.44,
+          "end": 1.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18123e",
+          "text": "mandatory",
+          "start": 1.64,
+          "end": 2.4,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18123f",
+          "text": "on ",
+          "start": 2.4,
+          "end": 2.64,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181240",
+          "text": "any ",
+          "start": 2.64,
+          "end": 2.96,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181241",
+          "text": "dance ",
+          "start": 2.96,
+          "end": 3.28,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181242",
+          "text": "floor.",
+          "start": 3.28,
+          "end": 3.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.24,
+        "end": 3.68,
+        "duration": 3.4400000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "But  what  is  the  YMCA  actually  about?",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181243",
+          "text": "But ",
+          "start": 3.84,
+          "end": 4.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181244",
+          "text": "what ",
+          "start": 4.08,
+          "end": 4.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181245",
+          "text": "is ",
+          "start": 4.32,
+          "end": 4.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181246",
+          "text": "the ",
+          "start": 4.64,
+          "end": 4.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181247",
+          "text": "YMCA ",
+          "start": 4.8,
+          "end": 5.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181248",
+          "text": "actually ",
+          "start": 5.76,
+          "end": 6.28,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181249",
+          "text": "about?",
+          "start": 6.28,
+          "end": 6.88,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 3.84,
+        "end": 6.88,
+        "duration": 3.04
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "The  title  refers  to  the  Young  Men's Christian  Association,  a  global  organization",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da18124a",
+          "text": "The ",
+          "start": 7.16,
+          "end": 7.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18124b",
+          "text": "title ",
+          "start": 7.36,
+          "end": 7.68,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18124c",
+          "text": "refers ",
+          "start": 7.68,
+          "end": 8.16,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18124d",
+          "text": "to ",
+          "start": 8.16,
+          "end": 8.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18124e",
+          "text": "the ",
+          "start": 8.36,
+          "end": 8.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18124f",
+          "text": "Young ",
+          "start": 8.48,
+          "end": 8.76,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181250",
+          "text": "Men's",
+          "start": 8.76,
+          "end": 9.12,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181251",
+          "text": "Christian ",
+          "start": 9.12,
+          "end": 9.68,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181252",
+          "text": "Association, ",
+          "start": 9.68,
+          "end": 10.8,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181253",
+          "text": "a ",
+          "start": 10.84,
+          "end": 11,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181254",
+          "text": "global ",
+          "start": 11,
+          "end": 11.36,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181255",
+          "text": "organization",
+          "start": 11.36,
+          "end": 12.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 7.16,
+        "end": 12.08,
+        "duration": 4.92
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "that  offers  young  men  a  place  to  exercise, socialize,  and  find  shelter",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181256",
+          "text": "that ",
+          "start": 12.2,
+          "end": 12.4,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181257",
+          "text": "offers ",
+          "start": 12.4,
+          "end": 12.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181258",
+          "text": "young ",
+          "start": 12.72,
+          "end": 12.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181259",
+          "text": "men ",
+          "start": 12.96,
+          "end": 13.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18125a",
+          "text": "a ",
+          "start": 13.36,
+          "end": 13.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18125b",
+          "text": "place ",
+          "start": 13.52,
+          "end": 13.76,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18125c",
+          "text": "to ",
+          "start": 13.76,
+          "end": 13.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18125d",
+          "text": "exercise,",
+          "start": 13.92,
+          "end": 14.8,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18125e",
+          "text": "socialize, ",
+          "start": 14.8,
+          "end": 15.56,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18125f",
+          "text": "and ",
+          "start": 15.56,
+          "end": 15.8,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181260",
+          "text": "find ",
+          "start": 15.8,
+          "end": 16.12,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181261",
+          "text": "shelter",
+          "start": 16.16,
+          "end": 16.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.2,
+        "end": 16.8,
+        "duration": 4.600000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "rooted  in  the  tradition of  muscular  Christianity.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181262",
+          "text": "rooted ",
+          "start": 17,
+          "end": 17.48,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181263",
+          "text": "in ",
+          "start": 17.48,
+          "end": 17.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181264",
+          "text": "the ",
+          "start": 17.64,
+          "end": 17.76,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181265",
+          "text": "tradition",
+          "start": 17.76,
+          "end": 18.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181266",
+          "text": "of ",
+          "start": 18.36,
+          "end": 18.56,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181267",
+          "text": "muscular ",
+          "start": 18.56,
+          "end": 19.12,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181268",
+          "text": "Christianity.",
+          "start": 19.12,
+          "end": 20.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17,
+        "end": 20.08,
+        "duration": 3.0799999999999983
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "It  promotes  values  like  masculinity, patriotic  duty,  and  athletic  aesthetics.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181269",
+          "text": "It ",
+          "start": 20.2,
+          "end": 20.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18126a",
+          "text": "promotes ",
+          "start": 20.36,
+          "end": 20.76,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18126b",
+          "text": "values ",
+          "start": 20.8,
+          "end": 21.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18126c",
+          "text": "like ",
+          "start": 21.36,
+          "end": 21.6,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18126d",
+          "text": "masculinity,",
+          "start": 21.6,
+          "end": 22.56,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18126e",
+          "text": "patriotic ",
+          "start": 22.72,
+          "end": 23.4,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18126f",
+          "text": "duty, ",
+          "start": 23.4,
+          "end": 23.96,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181270",
+          "text": "and ",
+          "start": 23.96,
+          "end": 24.2,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181271",
+          "text": "athletic ",
+          "start": 24.2,
+          "end": 24.72,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181272",
+          "text": "aesthetics.",
+          "start": 24.76,
+          "end": 25.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 20.2,
+        "end": 25.56,
+        "duration": 5.359999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Somewhat  ironic,  then,  that  the  track became  one  of  the  world's  most  famous  gay  anthems.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181273",
+          "text": "Somewhat ",
+          "start": 25.92,
+          "end": 26.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181274",
+          "text": "ironic, ",
+          "start": 26.4,
+          "end": 26.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181275",
+          "text": "then, ",
+          "start": 27,
+          "end": 27.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181276",
+          "text": "that ",
+          "start": 27.36,
+          "end": 27.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181277",
+          "text": "the ",
+          "start": 27.52,
+          "end": 27.68,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181278",
+          "text": "track",
+          "start": 27.68,
+          "end": 28.04,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181279",
+          "text": "became ",
+          "start": 28.04,
+          "end": 28.36,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127a",
+          "text": "one ",
+          "start": 28.36,
+          "end": 28.52,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127b",
+          "text": "of ",
+          "start": 28.52,
+          "end": 28.64,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127c",
+          "text": "the ",
+          "start": 28.64,
+          "end": 28.72,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127d",
+          "text": "world's ",
+          "start": 28.72,
+          "end": 29.08,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127e",
+          "text": "most ",
+          "start": 29.08,
+          "end": 29.36,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18127f",
+          "text": "famous ",
+          "start": 29.36,
+          "end": 29.84,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181280",
+          "text": "gay ",
+          "start": 29.84,
+          "end": 30.24,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181281",
+          "text": "anthems.",
+          "start": 30.24,
+          "end": 30.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 25.92,
+        "end": 30.96,
+        "duration": 5.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Was  it  intentional?",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181282",
+          "text": "Was ",
+          "start": 31.12,
+          "end": 31.36,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181283",
+          "text": "it ",
+          "start": 31.36,
+          "end": 31.44,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181284",
+          "text": "intentional?",
+          "start": 31.48,
+          "end": 32.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 31.12,
+        "end": 32.28,
+        "duration": 1.1600000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Lead  singer  Victor  Willis  insisted  it  was not  because  of  the  simple  fact \" I'm  not  gay.\"",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181285",
+          "text": "Lead ",
+          "start": 32.52,
+          "end": 32.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181286",
+          "text": "singer ",
+          "start": 32.88,
+          "end": 33.24,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181287",
+          "text": "Victor ",
+          "start": 33.24,
+          "end": 33.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181288",
+          "text": "Willis ",
+          "start": 33.64,
+          "end": 34,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181289",
+          "text": "insisted ",
+          "start": 34.04,
+          "end": 34.6,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18128a",
+          "text": "it ",
+          "start": 34.6,
+          "end": 34.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18128b",
+          "text": "was",
+          "start": 34.72,
+          "end": 34.92,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18128c",
+          "text": "not ",
+          "start": 34.92,
+          "end": 35.44,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18128d",
+          "text": "because ",
+          "start": 35.44,
+          "end": 35.88,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18128e",
+          "text": "of ",
+          "start": 35.88,
+          "end": 36,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18128f",
+          "text": "the ",
+          "start": 36,
+          "end": 36.16,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181290",
+          "text": "simple ",
+          "start": 36.16,
+          "end": 36.52,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181291",
+          "text": "fact \"",
+          "start": 36.52,
+          "end": 37.04,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181292",
+          "text": "I'm ",
+          "start": 37.04,
+          "end": 37.28,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181293",
+          "text": "not ",
+          "start": 37.32,
+          "end": 37.6,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da181294",
+          "text": "gay.\"",
+          "start": 37.6,
+          "end": 38.04,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.52,
+        "end": 38.04,
+        "duration": 5.519999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Yet,  according  to  producer  Jacques  Morali, the  ambiguity  was  on  purpose  from  the  start",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da181295",
+          "text": "Yet, ",
+          "start": 38.4,
+          "end": 38.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181296",
+          "text": "according ",
+          "start": 38.72,
+          "end": 39.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181297",
+          "text": "to ",
+          "start": 39.12,
+          "end": 39.2,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181298",
+          "text": "producer ",
+          "start": 39.24,
+          "end": 39.84,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da181299",
+          "text": "Jacques ",
+          "start": 39.84,
+          "end": 40.12,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18129a",
+          "text": "Morali,",
+          "start": 40.12,
+          "end": 40.72,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da18129b",
+          "text": "the ",
+          "start": 40.84,
+          "end": 41.04,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18129c",
+          "text": "ambiguity ",
+          "start": 41.04,
+          "end": 41.72,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18129d",
+          "text": "was ",
+          "start": 41.72,
+          "end": 41.96,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18129e",
+          "text": "on ",
+          "start": 41.96,
+          "end": 42.2,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da18129f",
+          "text": "purpose ",
+          "start": 42.2,
+          "end": 42.64,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a0",
+          "text": "from ",
+          "start": 42.64,
+          "end": 42.88,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a1",
+          "text": "the ",
+          "start": 42.88,
+          "end": 43,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a2",
+          "text": "start",
+          "start": 43,
+          "end": 43.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.4,
+        "end": 43.6,
+        "duration": 5.200000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "and  even  a  trademark of  the  Village  People  style.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da1812a3",
+          "text": "and ",
+          "start": 43.72,
+          "end": 43.96,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a4",
+          "text": "even ",
+          "start": 43.96,
+          "end": 44.32,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a5",
+          "text": "a ",
+          "start": 44.32,
+          "end": 44.44,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a6",
+          "text": "trademark",
+          "start": 44.44,
+          "end": 45,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a7",
+          "text": "of ",
+          "start": 45,
+          "end": 45.12,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a8",
+          "text": "the ",
+          "start": 45.12,
+          "end": 45.24,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812a9",
+          "text": "Village ",
+          "start": 45.24,
+          "end": 45.6,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812aa",
+          "text": "People ",
+          "start": 45.6,
+          "end": 46,
+          "line": 1
+        },
+        {
+          "id": "68fa1ffe964705c7da1812ab",
+          "text": "style.",
+          "start": 46,
+          "end": 46.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 43.72,
+        "end": 46.64,
+        "duration": 2.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Listen  closely  and  decide  for  yourself.",
+      "words": [
+        {
+          "id": "68fa1ffe964705c7da1812ac",
+          "text": "Listen ",
+          "start": 46.8,
+          "end": 47.2,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812ad",
+          "text": "closely ",
+          "start": 47.2,
+          "end": 47.88,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812ae",
+          "text": "and ",
+          "start": 47.88,
+          "end": 48.08,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812af",
+          "text": "decide ",
+          "start": 48.08,
+          "end": 48.52,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812b0",
+          "text": "for ",
+          "start": 48.52,
+          "end": 48.64,
+          "line": 0
+        },
+        {
+          "id": "68fa1ffe964705c7da1812b1",
+          "text": "yourself.",
+          "start": 48.64,
+          "end": 49.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 46.8,
+        "end": 49.28,
+        "duration": 2.480000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -13,7 +13,7 @@ interface GenreSelectionScreenProps {
   onBack?: () => void;
   title?: string;
   subtitle?: string;
-  disabledGenres?: string[];
+  sessionGroup?: 'unfamiliar' | 'familiar';
 }
 
 export function GenreSelectionScreen({
@@ -24,9 +24,11 @@ export function GenreSelectionScreen({
   onBack,
   title = "Choose a Genre",
   subtitle,
-  disabledGenres = []
+  sessionGroup
 }: GenreSelectionScreenProps) {
-  const isDisabled = (genreId: string) => disabledGenres.includes(genreId);
+  // Generate title and subtitle based on session group
+  const displayTitle = title || (sessionGroup === 'unfamiliar' ? "Choose an Unfamiliar Genre" : "Choose a Familiar Genre");
+  const displaySubtitle = subtitle || (sessionGroup === 'unfamiliar' ? "Select a genre you're less familiar with" : "Select a genre you already know and enjoy");
 
   return (
     <ExperimentLayout background="light">
@@ -45,11 +47,9 @@ export function GenreSelectionScreen({
             )}
             <div className="flex-1 text-center">
               <h1 className="text-3xl font-bold text-dark-purple mb-2">
-                {title}
+                {displayTitle}
               </h1>
-              {subtitle && (
-                <p className="text-dark-purple/70">{subtitle}</p>
-              )}
+              <p className="text-dark-purple/70">{displaySubtitle}</p>
             </div>
             <div className="w-16" /> {/* Spacer for centering */}
           </div>
@@ -67,18 +67,15 @@ export function GenreSelectionScreen({
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {genres.map((genre) => {
               const isSelected = selectedGenre === genre.id;
-              const disabled = isDisabled(genre.id);
               
               return (
                 <button
                   key={genre.id}
-                  onClick={() => !disabled && onSelectGenre(genre.id)}
-                  disabled={disabled}
+                  onClick={() => onSelectGenre(genre.id)}
                   className={cn(
                     "relative aspect-square rounded-2xl overflow-hidden transition-all duration-300",
                     "hover:scale-105 focus:outline-none focus:ring-4 focus:ring-maize/50",
-                    isSelected && "ring-4 ring-maize scale-105",
-                    disabled && "opacity-50 cursor-not-allowed hover:scale-100"
+                    isSelected && "ring-4 ring-maize scale-105"
                   )}
                   style={{ backgroundColor: genre.color }}
                 >
@@ -89,12 +86,6 @@ export function GenreSelectionScreen({
                       </div>
                     </div>
                   </div>
-                  
-                  {disabled && (
-                    <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                      <span className="text-white text-sm font-medium">Already selected</span>
-                    </div>
-                  )}
                 </button>
               );
             })}

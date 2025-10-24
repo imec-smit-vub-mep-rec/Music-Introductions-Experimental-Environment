@@ -19,8 +19,10 @@ export function LyricsDisplay({
 }: LyricsDisplayProps) {
   const [activeWordId, setActiveWordId] = useState<string | null>(null);
   const [activeLineIndex, setActiveLineIndex] = useState<number>(0);
+  const [isUserScrolling, setIsUserScrolling] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const activeLineRef = useRef<HTMLDivElement>(null);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Find the currently active word and line based on current time
   useEffect(() => {
@@ -57,9 +59,24 @@ export function LyricsDisplay({
     }
   }, [currentTime, transcript, isPlaying]);
 
-  // Auto-scroll to active line
+  // Handle user scrolling
+  const handleScroll = () => {
+    setIsUserScrolling(true);
+    
+    // Clear existing timeout
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
+    }
+    
+    // Set timeout to re-enable auto-scroll after user stops scrolling
+    scrollTimeoutRef.current = setTimeout(() => {
+      setIsUserScrolling(false);
+    }, 2000); // 2 seconds after user stops scrolling
+  };
+
+  // Auto-scroll to active line (only if user is not manually scrolling)
   useEffect(() => {
-    if (activeLineRef.current && containerRef.current) {
+    if (activeLineRef.current && containerRef.current && !isUserScrolling) {
       const container = containerRef.current;
       const activeLine = activeLineRef.current;
       
@@ -75,7 +92,16 @@ export function LyricsDisplay({
         behavior: 'smooth'
       });
     }
-  }, [activeLineIndex]);
+  }, [activeLineIndex, isUserScrolling]);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
+  }, []);
 
   if (!transcript || !transcript.subtitles.length) {
     return (
@@ -88,11 +114,18 @@ export function LyricsDisplay({
   return (
     <div 
       ref={containerRef}
+      onScroll={handleScroll}
+      onTouchMove={handleScroll}
+      onWheel={handleScroll}
       className={cn(
-        "h-full overflow-y-auto scrollbar-hide px-4 py-6",
-        "scroll-smooth",
+        "h-full overflow-y-auto px-4 py-6",
+        "scroll-smooth scrollbar-minimal",
         className
       )}
+      style={{
+        overscrollBehavior: 'contain',
+        WebkitOverflowScrolling: 'touch'
+      }}
     >
       <div className="space-y-8">
         {transcript.subtitles.map((subtitle, subtitleIndex) => (
@@ -101,7 +134,7 @@ export function LyricsDisplay({
             ref={subtitleIndex === activeLineIndex ? activeLineRef : null}
             className={cn(
               "transition-all duration-300 ease-in-out",
-              "text-center leading-relaxed"
+              "text-center leading-normal"
             )}
           >
             <div className="flex flex-wrap justify-center items-center gap-2">
@@ -116,17 +149,17 @@ export function LyricsDisplay({
                     key={word.id}
                     className={cn(
                       "transition-all duration-200 ease-in-out",
-                      "inline-block text-xl",
+                      "inline-block text-lg",
                       {
                         
                         // Active line styling (white, larger size)
                         "text-white": isInActiveLine,
                         
                         // Past lines styling (faded, medium size)
-                        "text-white/50 text-lg": isPastLine,
+                        "text-white/50": isPastLine,
                         
                         // Future lines styling (very faded, medium size)
-                        "text-white/30 text-lg": isFutureLine,
+                        "text-white/30": isFutureLine,
                       }
                     )}
                   >

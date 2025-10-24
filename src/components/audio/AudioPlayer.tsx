@@ -21,6 +21,11 @@ interface AudioPlayerProps {
   isPlaying?: boolean;
   onExplanationComplete?: () => void;
   onComplete?: () => void;
+  onSkip?: (skippedAtMs: number) => void;
+  onSongComplete?: (listeningTimeMs: number) => void;
+  onPlayPause?: (isPlaying: boolean) => void;
+  onSeek?: (fromTime: number, toTime: number) => void;
+  shouldAutoplay?: boolean;
 }
 
 export function AudioPlayer({ 
@@ -37,13 +42,22 @@ export function AudioPlayer({
   currentTime: externalCurrentTime,
   isPlaying: externalIsPlaying,
   onExplanationComplete,
-  onComplete
+  onComplete,
+  onSkip,
+  onSongComplete,
+  onPlayPause,
+  onSeek,
+  shouldAutoplay = true
 }: AudioPlayerProps) {
   const [internalIsPlaying, setInternalIsPlaying] = useState(false);
   const [internalCurrentTime, setInternalCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [hasFinished, setHasFinished] = useState(false);
+  const [songStartTime, setSongStartTime] = useState<number | null>(null);
+  const [totalListeningTime, setTotalListeningTime] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const userInteractionRef = useRef(false); // Track if current state change is from user interaction
+  const lastSeekFromRef = useRef<number | null>(null);
 
   // Use external values if provided, otherwise use internal state
   const isPlaying = externalIsPlaying !== undefined ? externalIsPlaying : internalIsPlaying;
@@ -65,42 +79,125 @@ export function AudioPlayer({
       setHasFinished(true);
       onPlayStateChange?.(false);
       
+      // Track song completion only during song phase (not introduction)
+      if (songStartTime && !showLyrics) {
+        const listeningTime = Date.now() - songStartTime;
+        const totalTime = totalListeningTime + listeningTime;
+        setTotalListeningTime(prev => prev + listeningTime);
+        
+        console.log('✅ SONG COMPLETED:', {
+          song_id: song.id,
+          song_title: song.title,
+          listening_time_ms: totalTime,
+          timestamp: new Date().toISOString()
+        });
+        
+        onSongComplete?.(totalTime);
+      }
+      
       // If we're in explanation phase and have a completion callback, call it
       if (showLyrics && onExplanationComplete) {
         onExplanationComplete();
       } else {
-        // If we're in the song phase, automatically advance or complete if no next
-        if (hasNext) {
-          onNext?.();
-        } else {
-          onComplete?.();
-        }
+        // If we're in the song phase, call the song completion handler
+        onComplete?.();
       }
+    };
+
+    const handleSeeking = () => {
+      lastSeekFromRef.current = audio.currentTime;
+    };
+    const handleSeeked = () => {
+      const from = lastSeekFromRef.current ?? audio.currentTime;
+      const to = audio.currentTime;
+      if (from !== to) {
+        onSeek?.(from, to);
+      }
+      lastSeekFromRef.current = null;
     };
 
     audio.addEventListener('timeupdate', updateTime);
     audio.addEventListener('loadedmetadata', updateDuration);
     audio.addEventListener('ended', handleEnded);
+    audio.addEventListener('seeking', handleSeeking);
+    audio.addEventListener('seeked', handleSeeked);
 
     return () => {
       audio.removeEventListener('timeupdate', updateTime);
       audio.removeEventListener('loadedmetadata', updateDuration);
       audio.removeEventListener('ended', handleEnded);
+      audio.removeEventListener('seeking', handleSeeking);
+      audio.removeEventListener('seeked', handleSeeked);
     };
   }, [song]);
 
-  const togglePlayPause = () => {
+  const togglePlayPause = async () => {
     const audio = audioRef.current;
     if (!audio) return;
 
     const newPlayingState = !isPlaying;
-    if (newPlayingState) {
-      audio.play();
-    } else {
-      audio.pause();
+    userInteractionRef.current = true; // Mark as user interaction
+    
+    try {
+      if (newPlayingState) {
+        await audio.play();
+        // Start tracking only during song phase
+        if (!showLyrics) {
+          setSongStartTime(Date.now());
+        }
+      } else {
+        audio.pause();
+        // Track pause time
+        if (songStartTime && !showLyrics) {
+          const listeningTime = Date.now() - songStartTime;
+          setTotalListeningTime(prev => prev + listeningTime);
+          setSongStartTime(null);
+        }
+      }
+      
+      // Update state after successful play/pause
+      setInternalIsPlaying(newPlayingState);
+      onPlayStateChange?.(newPlayingState);
+      onPlayPause?.(newPlayingState);
+    } catch (error) {
+      console.log('Play/pause failed:', error);
+    } finally {
+      // Reset user interaction flag after a short delay
+      setTimeout(() => {
+        userInteractionRef.current = false;
+      }, 100);
     }
-    setInternalIsPlaying(newPlayingState);
-    onPlayStateChange?.(newPlayingState);
+  };
+
+  const handleSkip = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    
+    const skippedAtMs = audio.currentTime * 1000; // Convert to milliseconds
+    const listeningTime = songStartTime && !showLyrics ? Date.now() - songStartTime : 0;
+    const totalTime = totalListeningTime + listeningTime;
+    
+    console.log('⏭️ SONG SKIPPED:', {
+      song_id: song.id,
+      song_title: song.title,
+      skipped_at_ms: skippedAtMs,
+      listening_time_ms: totalTime,
+      timestamp: new Date().toISOString()
+    });
+    
+    // Track skip and update total listening time
+    if (songStartTime && !showLyrics) {
+      setTotalListeningTime(prev => prev + listeningTime);
+    }
+    // Pause and mark as finished
+    audio.pause();
+    setInternalIsPlaying(false);
+    onPlayStateChange?.(false);
+    setHasFinished(true);
+    
+    // Call both skip and completion callbacks to track all data
+    onSkip?.(skippedAtMs);
+    onSongComplete?.(totalTime);
   };
 
   const formatTime = (time: number) => {
@@ -122,12 +219,63 @@ export function AudioPlayer({
     setWaveform(generateWaveform());
   }, []);
 
-  // Autoplay when component mounts or song changes
+  // Sync audio element with isPlaying state (but not during user interactions)
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || userInteractionRef.current) return;
+
+    // Sync the audio element's play state with the component's play state
+    if (isPlaying && audio.paused) {
+      audio.play().catch(error => {
+        console.log('Play failed during sync:', error);
+      });
+    } else if (!isPlaying && !audio.paused) {
+      audio.pause();
+    }
+  }, [isPlaying]);
+
+  // Reset listening time tracking when song changes (not when audio URL changes within same song)
+  const previousSongIdRef = useRef<string | null>(null);
+  const previousAudioUrlRef = useRef<string | null>(null);
+  
+  useEffect(() => {
+    if (previousSongIdRef.current !== song.id) {
+      // New song detected, reset listening time tracking
+      console.log('🔄 NEW SONG DETECTED, RESETTING TRACKING:', {
+        previous_song: previousSongIdRef.current,
+        new_song: song.id,
+        timestamp: new Date().toISOString()
+      });
+      setTotalListeningTime(0);
+      setSongStartTime(null);
+      previousSongIdRef.current = song.id;
+    }
+  }, [song.id]);
+
+  // When leaving introduction (lyrics) phase to song phase, reset listening counters
+  const prevShowLyricsRef = useRef<boolean>(showLyrics);
+  useEffect(() => {
+    if (prevShowLyricsRef.current && !showLyrics) {
+      // Transitioned from intro to song, reset timers to avoid counting intro time
+      setTotalListeningTime(0);
+      setSongStartTime(null);
+    }
+    prevShowLyricsRef.current = showLyrics;
+  }, [showLyrics]);
+
+  // Autoplay when audio URL changes (introduction → song or new song) or when shouldAutoplay changes
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio || !song.audioUrl) return;
+    
+    // Only autoplay if the audio URL actually changed (not on every re-render) OR if shouldAutoplay is true
+    if (previousAudioUrlRef.current === song.audioUrl && !shouldAutoplay) {
+      return;
+    }
+    
+    previousAudioUrlRef.current = song.audioUrl;
 
-    // Reset finished state when song changes
+    // Reset finished state when audio changes
     setHasFinished(false);
 
     // Small delay to ensure audio is ready
@@ -137,6 +285,22 @@ export function AudioPlayer({
           // Update play state when autoplay succeeds
           setInternalIsPlaying(true);
           onPlayStateChange?.(true);
+          // Start/restart tracking listening time only during song phase
+          if (!showLyrics) {
+            setSongStartTime(Date.now());
+          }
+          // Emit play event for analytics if needed
+          onPlayPause?.(true);
+          
+          console.log('🎵 AUTOPLAY STARTED:', {
+            song_id: song.id,
+            song_title: song.title,
+            audio_url: song.audioUrl,
+            accumulated_time: totalListeningTime,
+            start_time: Date.now(),
+            should_autoplay: shouldAutoplay,
+            timestamp: new Date().toISOString()
+          });
         })
         .catch(error => {
           console.log('Autoplay prevented by browser:', error);
@@ -145,7 +309,7 @@ export function AudioPlayer({
     }, 100);
 
     return () => clearTimeout(timer);
-  }, [song.audioUrl, onPlayStateChange]);
+  }, [song.audioUrl, song.id, song.title, onPlayStateChange, totalListeningTime, shouldAutoplay]);
 
   return (
     <div className="w-full max-w-md mx-auto space-y-6">
@@ -153,10 +317,10 @@ export function AudioPlayer({
       <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
         {showLyrics && transcript ? (
           <div 
-            className="w-full h-full flex flex-col overflow-hidden"
+            className="w-full h-full flex flex-col"
             style={{ backgroundColor: genre.color }}
           >
-            <div className="flex-1 p-2">
+            <div className="flex-1 p-2 min-h-0">
               <LyricsDisplay
                 transcript={transcript}
                 currentTime={currentTime}
@@ -187,16 +351,26 @@ export function AudioPlayer({
       {/* Waveform */}
       <div className="flex items-end justify-center space-x-1 h-16">
         {waveform.length > 0 ? (
-          waveform.map((height, index) => (
-            <div
-              key={index}
-              className={cn(
-                "w-1 bg-dark-purple transition-all duration-300",
-                isPlaying && "animate-pulse"
-              )}
-              style={{ height: `${height}%` }}
-            />
-          ))
+          waveform.map((height, index) => {
+            // Calculate progress percentage
+            const progressPercentage = duration > 0 ? (currentTime / duration) * 100 : 0;
+            const barProgress = (index / (waveform.length - 1)) * 100;
+            const isPlayed = barProgress <= progressPercentage;
+            
+            return (
+              <div
+                key={index}
+                className={cn(
+                  "w-1 transition-all duration-700 ease-in-out",
+                  isPlayed 
+                    ? "bg-dark-purple" 
+                    : "bg-gray-300",
+                  isPlaying && isPlayed && "animate-pulse"
+                )}
+                style={{ height: `${height}%` }}
+              />
+            );
+          })
         ) : (
           // Placeholder bars while waveform is generating
           Array.from({ length: 50 }, (_, index) => (
@@ -245,11 +419,10 @@ export function AudioPlayer({
         )}
         
         <Button
-          variant="outline"
-          size="icon"
-          onClick={onNext}
-          disabled={!hasNext}
-          className="w-12 h-12 rounded-full border-dark-purple text-dark-purple hover:bg-maize hover:border-maize disabled:opacity-50"
+          onClick={handleSkip}
+          disabled={showLyrics} // Disable skip during introduction/explanation phase
+          className="w-12 h-12 rounded-full bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          title={showLyrics ? "Cannot skip during introduction" : "Skip song"}
         >
           ⏭
         </Button>

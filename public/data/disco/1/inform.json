@@ -1,0 +1,1176 @@
+{
+  "metadata": {
+    "title": "hustle_inform",
+    "exportDate": "2025-10-23T12:49:50.642Z",
+    "totalSubtitles": 11,
+    "totalWords": 143
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "It  took  Van  McCoy  just  one  hour  to  compose a  song  that  would  result  in  a  global  hit.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b09d7",
+          "text": "It ",
+          "start": 0.2,
+          "end": 0.44,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09d8",
+          "text": "took ",
+          "start": 0.44,
+          "end": 0.76,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09d9",
+          "text": "Van ",
+          "start": 0.76,
+          "end": 1.08,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09da",
+          "text": "McCoy ",
+          "start": 1.08,
+          "end": 1.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09db",
+          "text": "just ",
+          "start": 1.68,
+          "end": 2.08,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09dc",
+          "text": "one ",
+          "start": 2.08,
+          "end": 2.54,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09dd",
+          "text": "hour ",
+          "start": 2.54,
+          "end": 3,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09de",
+          "text": "to ",
+          "start": 3,
+          "end": 3.16,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09df",
+          "text": "compose",
+          "start": 3.2,
+          "end": 3.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e0",
+          "text": "a ",
+          "start": 3.72,
+          "end": 3.84,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e1",
+          "text": "song ",
+          "start": 3.84,
+          "end": 4.12,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e2",
+          "text": "that ",
+          "start": 4.12,
+          "end": 4.28,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e3",
+          "text": "would ",
+          "start": 4.28,
+          "end": 4.52,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e4",
+          "text": "result ",
+          "start": 4.52,
+          "end": 5,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e5",
+          "text": "in ",
+          "start": 5,
+          "end": 5.24,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e6",
+          "text": "a ",
+          "start": 5.24,
+          "end": 5.4,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e7",
+          "text": "global ",
+          "start": 5.4,
+          "end": 5.84,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09e8",
+          "text": "hit.",
+          "start": 5.88,
+          "end": 6.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 6.4,
+        "duration": 6.2
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "After  visiting  a  New  York  City  nightclub and  witnessing  the  smooth  steps  of  the  hustle,",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b09e9",
+          "text": "After ",
+          "start": 6.72,
+          "end": 7.16,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ea",
+          "text": "visiting ",
+          "start": 7.16,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09eb",
+          "text": "a ",
+          "start": 7.64,
+          "end": 7.8,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ec",
+          "text": "New ",
+          "start": 7.8,
+          "end": 7.96,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ed",
+          "text": "York ",
+          "start": 8,
+          "end": 8.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ee",
+          "text": "City ",
+          "start": 8.32,
+          "end": 8.56,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ef",
+          "text": "nightclub",
+          "start": 8.6,
+          "end": 9.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f0",
+          "text": "and ",
+          "start": 9.32,
+          "end": 9.6,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f1",
+          "text": "witnessing ",
+          "start": 9.6,
+          "end": 10.12,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f2",
+          "text": "the ",
+          "start": 10.12,
+          "end": 10.32,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f3",
+          "text": "smooth ",
+          "start": 10.32,
+          "end": 10.76,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f4",
+          "text": "steps ",
+          "start": 10.76,
+          "end": 11.24,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f5",
+          "text": "of ",
+          "start": 11.24,
+          "end": 11.48,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f6",
+          "text": "the ",
+          "start": 11.48,
+          "end": 11.64,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f7",
+          "text": "hustle,",
+          "start": 11.64,
+          "end": 12.28,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 6.72,
+        "end": 12.28,
+        "duration": 5.56
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "he  was  inspired  to  compose  a  song  about it.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b09f8",
+          "text": "he ",
+          "start": 12.44,
+          "end": 12.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09f9",
+          "text": "was ",
+          "start": 12.64,
+          "end": 12.88,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09fa",
+          "text": "inspired ",
+          "start": 12.88,
+          "end": 13.56,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09fb",
+          "text": "to ",
+          "start": 13.56,
+          "end": 13.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09fc",
+          "text": "compose ",
+          "start": 13.76,
+          "end": 14.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09fd",
+          "text": "a ",
+          "start": 14.28,
+          "end": 14.4,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09fe",
+          "text": "song ",
+          "start": 14.4,
+          "end": 14.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b09ff",
+          "text": "about",
+          "start": 14.72,
+          "end": 15.04,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a00",
+          "text": "it.",
+          "start": 15.04,
+          "end": 15.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.44,
+        "end": 15.44,
+        "duration": 3
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "The  resulting  track  combined  an  irresistible rhythm  with  simple  lyrics:  the  command",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a01",
+          "text": "The ",
+          "start": 15.6,
+          "end": 15.76,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a02",
+          "text": "resulting ",
+          "start": 15.76,
+          "end": 16.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a03",
+          "text": "track ",
+          "start": 16.36,
+          "end": 16.84,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a04",
+          "text": "combined ",
+          "start": 16.84,
+          "end": 17.44,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a05",
+          "text": "an ",
+          "start": 17.44,
+          "end": 17.68,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a06",
+          "text": "irresistible",
+          "start": 17.68,
+          "end": 18.4,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a07",
+          "text": "rhythm ",
+          "start": 18.4,
+          "end": 18.92,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a08",
+          "text": "with ",
+          "start": 18.92,
+          "end": 19.24,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a09",
+          "text": "simple ",
+          "start": 19.24,
+          "end": 19.6,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a0a",
+          "text": "lyrics: ",
+          "start": 19.6,
+          "end": 20.4,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a0b",
+          "text": "the ",
+          "start": 20.44,
+          "end": 20.64,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a0c",
+          "text": "command",
+          "start": 20.64,
+          "end": 21.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 15.6,
+        "end": 21.2,
+        "duration": 5.6
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "'Do  the  hustle'  repeated  11 and  'do  it'  repeated  five  times.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a0d",
+          "text": "'Do ",
+          "start": 21.32,
+          "end": 21.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a0e",
+          "text": "the ",
+          "start": 21.64,
+          "end": 21.8,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a0f",
+          "text": "hustle' ",
+          "start": 21.8,
+          "end": 22.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a10",
+          "text": "repeated ",
+          "start": 22.28,
+          "end": 22.96,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a11",
+          "text": "11",
+          "start": 22.96,
+          "end": 23.76,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a12",
+          "text": "and ",
+          "start": 23.76,
+          "end": 24.24,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a13",
+          "text": "'do ",
+          "start": 24.24,
+          "end": 24.6,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a14",
+          "text": "it' ",
+          "start": 24.64,
+          "end": 24.84,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a15",
+          "text": "repeated ",
+          "start": 24.88,
+          "end": 25.52,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a16",
+          "text": "five ",
+          "start": 25.52,
+          "end": 25.88,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a17",
+          "text": "times.",
+          "start": 25.92,
+          "end": 26.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.32,
+        "end": 26.68,
+        "duration": 5.359999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "It  was  not  the  deep  lyrics  that  made  the  song super  popular,  but  the  associated  dance  instead",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a18",
+          "text": "It ",
+          "start": 26.96,
+          "end": 27.12,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a19",
+          "text": "was ",
+          "start": 27.12,
+          "end": 27.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1a",
+          "text": "not ",
+          "start": 27.32,
+          "end": 27.52,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1b",
+          "text": "the ",
+          "start": 27.52,
+          "end": 27.76,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1c",
+          "text": "deep ",
+          "start": 27.76,
+          "end": 28.12,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1d",
+          "text": "lyrics ",
+          "start": 28.12,
+          "end": 28.52,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1e",
+          "text": "that ",
+          "start": 28.52,
+          "end": 28.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a1f",
+          "text": "made ",
+          "start": 28.72,
+          "end": 28.92,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a20",
+          "text": "the ",
+          "start": 28.92,
+          "end": 29.12,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a21",
+          "text": "song",
+          "start": 29.12,
+          "end": 29.48,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a22",
+          "text": "super ",
+          "start": 29.48,
+          "end": 29.8,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a23",
+          "text": "popular, ",
+          "start": 29.8,
+          "end": 30.48,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a24",
+          "text": "but ",
+          "start": 30.48,
+          "end": 30.72,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a25",
+          "text": "the ",
+          "start": 30.72,
+          "end": 30.96,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a26",
+          "text": "associated ",
+          "start": 30.96,
+          "end": 31.72,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a27",
+          "text": "dance ",
+          "start": 31.72,
+          "end": 32.44,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a28",
+          "text": "instead",
+          "start": 32.6,
+          "end": 32.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 26.96,
+        "end": 32.92,
+        "duration": 5.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "of  the  usual  dancing  next  to  each  other.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a29",
+          "text": "of ",
+          "start": 33.04,
+          "end": 33.16,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2a",
+          "text": "the ",
+          "start": 33.16,
+          "end": 33.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2b",
+          "text": "usual ",
+          "start": 33.32,
+          "end": 33.76,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2c",
+          "text": "dancing ",
+          "start": 33.76,
+          "end": 34.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2d",
+          "text": "next ",
+          "start": 34.28,
+          "end": 34.6,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2e",
+          "text": "to ",
+          "start": 34.6,
+          "end": 34.68,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a2f",
+          "text": "each ",
+          "start": 34.72,
+          "end": 34.92,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a30",
+          "text": "other.",
+          "start": 34.96,
+          "end": 35.32,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 33.04,
+        "end": 35.32,
+        "duration": 2.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "It  made  people  dance  with  each  other.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a31",
+          "text": "It ",
+          "start": 35.44,
+          "end": 35.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a32",
+          "text": "made ",
+          "start": 35.64,
+          "end": 35.92,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a33",
+          "text": "people ",
+          "start": 35.92,
+          "end": 36.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a34",
+          "text": "dance ",
+          "start": 36.28,
+          "end": 36.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a35",
+          "text": "with ",
+          "start": 36.72,
+          "end": 37.12,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a36",
+          "text": "each ",
+          "start": 37.12,
+          "end": 37.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a37",
+          "text": "other.",
+          "start": 37.36,
+          "end": 37.84,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 35.44,
+        "end": 37.84,
+        "duration": 2.4000000000000057
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "This  returned  to  a  more  structured,  couple-based  form, gave  'The  Hustle'  an  unexpected  mainstream  audience,",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a38",
+          "text": "This ",
+          "start": 38.04,
+          "end": 38.36,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a39",
+          "text": "returned ",
+          "start": 38.36,
+          "end": 38.88,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3a",
+          "text": "to ",
+          "start": 38.88,
+          "end": 39.04,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3b",
+          "text": "a ",
+          "start": 39.08,
+          "end": 39.16,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3c",
+          "text": "more ",
+          "start": 39.16,
+          "end": 39.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3d",
+          "text": "structured, ",
+          "start": 39.32,
+          "end": 40.04,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3e",
+          "text": "couple-based ",
+          "start": 40.04,
+          "end": 40.14,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a3f",
+          "text": "form,",
+          "start": 40.72,
+          "end": 41.32,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a40",
+          "text": "gave ",
+          "start": 41.36,
+          "end": 41.72,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a41",
+          "text": "'The ",
+          "start": 41.72,
+          "end": 41.88,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a42",
+          "text": "Hustle' ",
+          "start": 41.88,
+          "end": 42.28,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a43",
+          "text": "an ",
+          "start": 42.28,
+          "end": 42.38,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a44",
+          "text": "unexpected ",
+          "start": 42.56,
+          "end": 43.48,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a45",
+          "text": "mainstream ",
+          "start": 43.48,
+          "end": 44.28,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a46",
+          "text": "audience,",
+          "start": 44.28,
+          "end": 44.88,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.04,
+        "end": 44.88,
+        "duration": 6.840000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "and  some  conservative  politicians  even  lauded  it  for  bringing back  traditional  values  to  the  dance  floor,",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a47",
+          "text": "and ",
+          "start": 45,
+          "end": 45.24,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a48",
+          "text": "some ",
+          "start": 45.24,
+          "end": 45.52,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a49",
+          "text": "conservative ",
+          "start": 45.52,
+          "end": 46.24,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4a",
+          "text": "politicians ",
+          "start": 46.24,
+          "end": 47.16,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4b",
+          "text": "even ",
+          "start": 47.2,
+          "end": 47.56,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4c",
+          "text": "lauded ",
+          "start": 47.56,
+          "end": 48,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4d",
+          "text": "it ",
+          "start": 48,
+          "end": 48.12,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4e",
+          "text": "for ",
+          "start": 48.12,
+          "end": 48.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a4f",
+          "text": "bringing",
+          "start": 48.28,
+          "end": 48.64,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a50",
+          "text": "back ",
+          "start": 48.64,
+          "end": 49.12,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a51",
+          "text": "traditional ",
+          "start": 49.16,
+          "end": 49.84,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a52",
+          "text": "values ",
+          "start": 49.84,
+          "end": 50.4,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a53",
+          "text": "to ",
+          "start": 50.4,
+          "end": 50.52,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a54",
+          "text": "the ",
+          "start": 50.56,
+          "end": 50.68,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a55",
+          "text": "dance ",
+          "start": 50.68,
+          "end": 51,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a56",
+          "text": "floor,",
+          "start": 51,
+          "end": 51.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 45,
+        "end": 51.48,
+        "duration": 6.479999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "in  stark  contrast  to  the  sweaty  reality  in the  clubs  where  the  dance  was  born.",
+      "words": [
+        {
+          "id": "68fa2001246b04e8f65b0a57",
+          "text": "in ",
+          "start": 51.68,
+          "end": 52.04,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a58",
+          "text": "stark ",
+          "start": 52.04,
+          "end": 52.36,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a59",
+          "text": "contrast ",
+          "start": 52.36,
+          "end": 53.08,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5a",
+          "text": "to ",
+          "start": 53.08,
+          "end": 53.28,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5b",
+          "text": "the ",
+          "start": 53.32,
+          "end": 53.48,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5c",
+          "text": "sweaty ",
+          "start": 53.48,
+          "end": 53.8,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5d",
+          "text": "reality ",
+          "start": 53.84,
+          "end": 54.48,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5e",
+          "text": "in",
+          "start": 54.48,
+          "end": 54.72,
+          "line": 0
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a5f",
+          "text": "the ",
+          "start": 54.72,
+          "end": 54.84,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a60",
+          "text": "clubs ",
+          "start": 54.84,
+          "end": 55.28,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a61",
+          "text": "where ",
+          "start": 55.28,
+          "end": 55.48,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a62",
+          "text": "the ",
+          "start": 55.48,
+          "end": 55.64,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a63",
+          "text": "dance ",
+          "start": 55.64,
+          "end": 56,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a64",
+          "text": "was ",
+          "start": 56,
+          "end": 56.24,
+          "line": 1
+        },
+        {
+          "id": "68fa2001246b04e8f65b0a65",
+          "text": "born.",
+          "start": 56.24,
+          "end": 56.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 51.68,
+        "end": 56.64,
+        "duration": 4.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

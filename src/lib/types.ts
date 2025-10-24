@@ -6,13 +6,14 @@ export type ExperimentStep =
   | 'welcome' 
   | 'terms' 
   | 'onboarding' 
-  | 'genre-familiar' 
-  | 'audio-familiar' 
-  | 'survey-familiar' 
-  | 'genre-unfamiliar' 
-  | 'audio-unfamiliar' 
-  | 'survey-unfamiliar' 
-  | 'final-survey' 
+  | 'genre-selection'
+  | 'audio-song-1'
+  | 'survey-song-1'
+  | 'audio-song-2'
+  | 'survey-song-2'
+  | 'audio-song-3'
+  | 'survey-song-3'
+  | 'qualtrics'
   | 'thank-you';
 
 export interface Question {
@@ -33,10 +34,9 @@ export interface Song {
   artist: string;
   genre: string;
   audioUrl: string;
-  duration: number;
   albumArt?: string;
-  explanationAudioUrl?: string;
-  explanationTranscriptUrl?: string;
+  informIntroductionUrl?: string;
+  immersIntroductionUrl?: string;
 }
 
 export interface Genre {
@@ -49,15 +49,10 @@ export interface Genre {
 export interface ExperimentState {
   currentStep: number;
   responses: Record<string, AnswerValue>;
-  selectedGenres: {
-    familiar: string | null;
-    unfamiliar: string | null;
-  };
+  selectedGenre: string | null;
   currentSongIndex: number;
-  songsPlayed: {
-    familiar: number;
-    unfamiliar: number;
-  };
+  randomizedSongs: string[];
+  randomizedIntroductions: string[];
   currentQuestionIndex: number;
 }
 
@@ -92,7 +87,6 @@ export interface Subtitle {
   timing: {
     start: number;
     end: number;
-    duration: number;
   };
   speaker: {
     id: number;
