@@ -14,15 +14,6 @@ export default function DevOverlay() {
   const [localStorageData, setLocalStorageData] = useState<LocalStorageItem[]>([]);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
-  useEffect(() => {
-    refreshLocalStorage();
-  }, []);
-
-  // Only show in development
-  if (process.env.NODE_ENV !== 'development') {
-    return null;
-  }
-
   const refreshLocalStorage = () => {
     const data: LocalStorageItem[] = [];
     for (let i = 0; i < localStorage.length; i++) {
@@ -38,6 +29,15 @@ export default function DevOverlay() {
     }
     setLocalStorageData(data);
   };
+
+  useEffect(() => {
+    refreshLocalStorage();
+  }, []);
+
+  // Only show in development
+  if (process.env.NODE_ENV !== 'development') {
+    return null;
+  }
 
   const clearAllLocalStorage = () => {
     if (confirm('Are you sure you want to clear ALL localStorage data?')) {
