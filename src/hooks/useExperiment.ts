@@ -47,50 +47,62 @@ export function useExperiment() {
     }
   }, [getCurrentSession]);
 
-  // Load session on mount (do NOT reload on every step change)
+  // Load session on mount and detect session changes
   useEffect(() => {
     const existingSession = getSession();
     if (existingSession) {
       sessionRef.current = existingSession;
       
-      // If we're at the very beginning (welcome or terms), don't load previous session data
-      // This ensures fresh starts don't show previous answers
-      const currentStepName = experimentSteps[state.currentStep];
-      const isAtBeginning = currentStepName === 'welcome' || currentStepName === 'terms';
+      // Load the session data into state
+      setState(prev => ({
+        ...prev,
+        selectedGenre: existingSession.chosen_genre,
+        randomizedSongs: existingSession.randomized_songs || [],
+        randomizedIntroductions: existingSession.randomized_introductions || [],
+        responses: existingSession.answers.onboarding,
+      }));
       
-      if (isAtBeginning) {
-        console.log('🆕 AT EXPERIMENT BEGINNING - NOT LOADING PREVIOUS SESSION DATA');
-        setState(prev => ({
-          ...prev,
-          selectedGenre: null,
-          randomizedSongs: [],
-          randomizedIntroductions: [],
-          responses: {}, // Start with empty responses
-        }));
-      } else {
-        // We're continuing an existing experiment, load the data
-        setState(prev => ({
-          ...prev,
-          selectedGenre: existingSession.chosen_genre,
-          randomizedSongs: existingSession.randomized_songs || [],
-          randomizedIntroductions: existingSession.randomized_introductions || [],
-          responses: existingSession.answers.onboarding,
-        }));
-        
-        console.log('🔄 CONTINUING EXISTING EXPERIMENT:', {
-          session_id: existingSession.session_id,
-          current_step: currentStepName,
-          chosen_genre: existingSession.chosen_genre,
-          onboarding_answers_count: Object.keys(existingSession.answers.onboarding).length,
+      console.log('🔄 LOADED EXISTING SESSION:', {
+        session_id: existingSession.session_id,
+        chosen_genre: existingSession.chosen_genre,
+        onboarding_answers_count: Object.keys(existingSession.answers.onboarding).length,
+        timestamp: new Date().toISOString()
+      });
+    } else {
+      // No existing session - start fresh
+      console.log('🆕 NO EXISTING SESSION - STARTING FRESH');
+      sessionRef.current = null;
+    }
+  }, []); // Only run once on mount
+
+  // Listen for session changes (when new session is created)
+  useEffect(() => {
+    const checkForNewSession = () => {
+      const currentSession = getSession();
+      if (currentSession && (!sessionRef.current || sessionRef.current.session_id !== currentSession.session_id)) {
+        // New session detected
+        sessionRef.current = currentSession;
+        console.log('🆕 NEW SESSION DETECTED:', {
+          session_id: currentSession.session_id,
+          group: currentSession.group,
           timestamp: new Date().toISOString()
         });
       }
-    } else {
-      // Clear any existing state if no session found
-      setState(initialState);
-      sessionRef.current = null;
-    }
-  }, [state.currentStep]);
+    };
+
+    // Check for new session every 100ms (only when we don't have a session)
+    const interval = setInterval(checkForNewSession, 100);
+    
+    // Clean up interval after 5 seconds to avoid infinite checking
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, []);
 
   const nextStep = useCallback(() => {
     setState(prev => {
