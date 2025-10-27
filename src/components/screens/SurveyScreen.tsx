@@ -15,6 +15,7 @@ interface SurveyScreenProps {
   onBack?: () => void;
   isSubmitting?: boolean;
   submitButtonText?: string;
+  allowAutoSubmit?: boolean; // New prop to control auto-submission
 }
 
 export function SurveyScreen({ 
@@ -24,7 +25,8 @@ export function SurveyScreen({
   onNext, 
   onBack,
   isSubmitting = false,
-  submitButtonText
+  submitButtonText,
+  allowAutoSubmit = true // Default to true for backward compatibility
 }: SurveyScreenProps) {
   const [currentBlockIndex, setCurrentBlockIndex] = useState(0);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -92,7 +94,12 @@ export function SurveyScreen({
           setCurrentBlockIndex(currentBlockIndex + 1);
           setCurrentQuestionIndex(0);
         } else {
-          onNext();
+          // Only auto-submit if allowAutoSubmit is true
+          if (allowAutoSubmit) {
+            onNext();
+          }
+          // If auto-submit is disabled, stay on the last question
+          // User will need to manually click the submit button
         }
       }, 100);
     }

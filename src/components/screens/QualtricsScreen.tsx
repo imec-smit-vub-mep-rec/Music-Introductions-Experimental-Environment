@@ -205,6 +205,7 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
             onNext={handleSubmit}
             isSubmitting={isSubmitting}
             submitButtonText="Submit & Complete Experiment"
+            allowAutoSubmit={false} // Disable auto-submission to ensure all questions are answered
           />
         </div>
       </div>
