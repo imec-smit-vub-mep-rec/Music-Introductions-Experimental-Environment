@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { submitToQualtrics } from '@/lib/qualtrics';
-import { SessionData, AnswerValue } from '@/lib/types';
 
 /**
  * API Route: Submit survey response to Qualtrics

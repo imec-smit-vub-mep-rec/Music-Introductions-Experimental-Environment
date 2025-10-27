@@ -16,7 +16,8 @@
  * - QUALTRICS_SURVEY_ID: The survey ID to submit responses to
  */
 
-import { SessionData, AnswerValue } from './types';
+import { AnswerValue } from './types';
+import { SessionData } from './session';
 
 export interface QualtricsResponse {
   responseId: string;
@@ -187,7 +188,7 @@ export class QualtricsClient {
   private async makeRequestWithRetry(
     endpoint: string,
     method: 'POST' | 'PUT',
-    payload: any,
+    payload: { values: Record<string, string>; embeddedData: Record<string, string> },
     attempt: number = 1
   ): Promise<QualtricsSubmissionResult> {
     try {
