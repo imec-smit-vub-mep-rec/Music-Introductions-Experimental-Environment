@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     try {
       // First, get the current session data
       const getSessionQuery = `
-        SELECT song_answers FROM experiment_sessions 
+        SELECT post_listening_answers FROM experiment_sessions 
         WHERE session_id = $1
       `;
       
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
         );
       }
       
-      const currentSongAnswers = sessionResult.rows[0].song_answers || [];
+      const currentSongAnswers = sessionResult.rows[0].post_listening_answers || [];
       
       // Find and update the specific song's dislike status
       const updatedSongAnswers = currentSongAnswers.map((song: Record<string, unknown>) => {
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
       // Update the session with the new song answers
       const updateQuery = `
         UPDATE experiment_sessions 
-        SET song_answers = $1, updated_at = NOW()
+        SET post_listening_answers = $1, updated_at = NOW()
         WHERE session_id = $2
       `;
       

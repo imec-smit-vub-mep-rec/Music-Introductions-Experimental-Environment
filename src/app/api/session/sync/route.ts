@@ -38,9 +38,11 @@ export async function POST(request: NextRequest) {
         INSERT INTO experiment_sessions (
           id, session_id, group_type, chosen_genre, 
           randomized_songs, randomized_introductions, 
-          start_time, experiment_completed, onboarding_answers, final_answers, song_answers, engagement_metrics, 
+          start_time, experiment_completed, 
+          onboarding_answers, demographics_answers, post_listening_answers, final_answers,
+          qualtrics_response_id, raw_session_data, engagement_metrics, 
           expires_at, created_at, updated_at
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, NOW(), NOW())
+        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, NOW(), NOW())
         ON CONFLICT (id) DO UPDATE SET
           session_id = EXCLUDED.session_id,
           group_type = EXCLUDED.group_type,
@@ -50,8 +52,11 @@ export async function POST(request: NextRequest) {
           start_time = EXCLUDED.start_time,
           experiment_completed = EXCLUDED.experiment_completed,
           onboarding_answers = EXCLUDED.onboarding_answers,
+          demographics_answers = EXCLUDED.demographics_answers,
+          post_listening_answers = EXCLUDED.post_listening_answers,
           final_answers = EXCLUDED.final_answers,
-          song_answers = EXCLUDED.song_answers,
+          qualtrics_response_id = EXCLUDED.qualtrics_response_id,
+          raw_session_data = EXCLUDED.raw_session_data,
           engagement_metrics = EXCLUDED.engagement_metrics,
           expires_at = EXCLUDED.expires_at,
           updated_at = NOW()
@@ -67,8 +72,11 @@ export async function POST(request: NextRequest) {
         sessionData.start_time,
         sessionData.experiment_completed || false, // experiment_completed
         JSON.stringify(sessionData.answers.onboarding || {}), // onboarding_answers
+        JSON.stringify(sessionData.answers.demographics || {}), // demographics_answers
+        JSON.stringify(sessionData.answers.songs || []), // post_listening_answers
         JSON.stringify(sessionData.answers.final || {}), // final_answers
-        JSON.stringify(sessionData.answers.songs || []), // song_answers
+        sessionData.qualtrics_response_id || null, // qualtrics_response_id
+        JSON.stringify(sessionData), // raw_session_data - complete session backup
         JSON.stringify(sessionData.engagement_metrics),
         new Date(Date.now() + 2 * 365 * 24 * 60 * 60 * 1000).toISOString(), // 2 years
       ];

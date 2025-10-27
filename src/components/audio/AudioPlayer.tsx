@@ -506,42 +506,45 @@ export function AudioPlayer({
         >
           ⏭
         </Button>
-        <div className="flex items-center justify-center space-x-4">|</div>
-            {/* Like/Dislike Buttons - Only show during song playback (not introduction) */}
-            {!showLyrics && (
-        <div className="flex items-center justify-center space-x-4">
-          <Button
-            onClick={handleDislike}
-            variant={disliked === true ? "default" : "outline"}
-            className={cn(
-              "w-12 h-12 rounded-full",
-              disliked === true
-                ? "bg-red-500 text-white hover:bg-red-600"
-                : "border-red-500 text-red-500 hover:bg-red-50"
-            )}
-            title={disliked === true ? "Remove dislike" : "Dislike this song"}
-          >
-            <ThumbsDown className="w-6 h-6" />
-          </Button>
 
-          <Button
-            onClick={handleLike}
-            variant={liked === true ? "default" : "outline"}
-            className={cn(
-              "w-12 h-12 rounded-full",
-              liked === true
-                ? "bg-green-500 text-white hover:bg-green-600"
-                : "border-green-500 text-green-500 hover:bg-green-50"
-            )}
-            title={liked === true ? "Remove like" : "Like this song"}
-          >
-            <ThumbsUp className="w-6 h-6" />
-          </Button>
-        </div>
-      )}
+        {/* Like/Dislike Buttons - Only show during song playback (not introduction) */}
+        {!showLyrics && (
+          <>
+            <div className="flex items-center justify-center space-x-4">|</div>
+            <div className="flex items-center justify-center space-x-4">
+              <Button
+                onClick={handleDislike}
+                variant={disliked === true ? "default" : "outline"}
+                className={cn(
+                  "w-12 h-12 rounded-full",
+                  disliked === true
+                    ? "bg-red-500 text-white hover:bg-red-600"
+                    : "border-red-500 text-red-500 hover:bg-red-50"
+                )}
+                title={
+                  disliked === true ? "Remove dislike" : "Dislike this song"
+                }
+              >
+                <ThumbsDown className="w-6 h-6" />
+              </Button>
+
+              <Button
+                onClick={handleLike}
+                variant={liked === true ? "default" : "outline"}
+                className={cn(
+                  "w-12 h-12 rounded-full",
+                  liked === true
+                    ? "bg-green-500 text-white hover:bg-green-600"
+                    : "border-green-500 text-green-500 hover:bg-green-50"
+                )}
+                title={liked === true ? "Remove like" : "Like this song"}
+              >
+                <ThumbsUp className="w-6 h-6" />
+              </Button>
+            </div>
+          </>
+        )}
       </div>
-
-
 
       {/* Hidden Audio Element */}
       <audio

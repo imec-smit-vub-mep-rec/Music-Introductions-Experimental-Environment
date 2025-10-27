@@ -1,8 +1,11 @@
 -- Neon PostgreSQL Schema for Serendipity Experiment - Redesigned
 -- Individual columns for each questionnaire section for better data organization
--- GDPR-compliant session storage with automatic data retention
+-- Date: 2024-12-19
 
--- Create the experiment_sessions table
+-- Drop existing table if it exists (for clean migration)
+-- DROP TABLE IF EXISTS experiment_sessions CASCADE;
+
+-- Create the experiment_sessions table with logical column structure
 CREATE TABLE IF NOT EXISTS experiment_sessions (
     -- Primary identifiers
     id VARCHAR(255) PRIMARY KEY, -- session_${session_id}
@@ -20,6 +23,9 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     post_listening_answers JSONB NOT NULL DEFAULT '[]', -- post_item: song-specific questions (array of 3)
     final_answers JSONB NOT NULL DEFAULT '{}', -- post_list: overall experience questions
     
+    -- Qualtrics integration
+    qualtrics_response_id VARCHAR(255), -- Qualtrics response ID for updates
+    
     -- Raw session backup
     raw_session_data JSONB NOT NULL DEFAULT '{}', -- Complete session object backup
     
@@ -35,6 +41,7 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
 -- Create indexes for performance
 CREATE INDEX IF NOT EXISTS idx_session_id ON experiment_sessions(session_id);
 CREATE INDEX IF NOT EXISTS idx_group_type ON experiment_sessions(group_type);
+CREATE INDEX IF NOT EXISTS idx_chosen_genre ON experiment_sessions(chosen_genre);
 CREATE INDEX IF NOT EXISTS idx_created_at ON experiment_sessions(created_at);
 CREATE INDEX IF NOT EXISTS idx_expires_at ON experiment_sessions(expires_at);
 CREATE INDEX IF NOT EXISTS idx_experiment_completed ON experiment_sessions(experiment_completed);
@@ -131,7 +138,7 @@ ORDER BY session_date DESC;
 -- GRANT SELECT, INSERT, UPDATE, DELETE ON experiment_sessions TO your_app_user;
 -- GRANT USAGE ON SEQUENCE experiment_sessions_id_seq TO your_app_user;
 
--- Example queries for GDPR compliance and analysis:
+-- Example queries for data analysis:
 
 -- 1. Export all data for a specific session
 -- SELECT * FROM session_data_export WHERE session_id = 1234567890;
@@ -213,3 +220,5 @@ ORDER BY session_date DESC;
 --   AND demographics_answers != '{}' 
 --   AND jsonb_array_length(post_listening_answers) = 3
 --   AND final_answers != '{}';
+
+COMMIT;

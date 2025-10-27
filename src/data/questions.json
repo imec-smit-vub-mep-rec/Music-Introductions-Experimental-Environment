@@ -3401,22 +3401,6 @@
         ]
       },
       {
-        "id": "BL_6svc7jSyocggqBE",
-        "title": "Intro",
-        "description": "Intro",
-        "questions": [
-          {
-            "id": "QID11",
-            "text": "The following questions concern your listening experience of the playlist in general.",
-            "type": "textDisplay",
-            "required": false,
-            "choices": [],
-            "answers": [],
-            "dataExportTag": "Intro"
-          }
-        ]
-      },
-      {
         "id": "BL_5aIZEwJcIWABs10",
         "title": "Serendipity",
         "description": "Serendipity",

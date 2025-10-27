@@ -8,6 +8,9 @@ import {
   updateSessionFinalAnswers,
   markExperimentCompleted,
   syncSessionToRemote,
+  updateQualtricsResponseId,
+  getQualtricsResponseId,
+  updateFinalAnswersWithSync,
 } from "@/lib/session";
 import { AnswerValue } from "@/lib/types";
 import { experimentConfig } from "@/lib/config";
@@ -30,6 +33,57 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
     []
   );
 
+  const handleAnswerCorrection = useCallback(
+    async (questionId: string, answer: AnswerValue) => {
+      const updatedResponses = {
+        ...responses,
+        [questionId]: answer,
+      };
+
+      // Update local state immediately for UI responsiveness
+      setResponses(updatedResponses);
+
+      // Sync to both Qualtrics and Neon DB
+      const result = await updateFinalAnswersWithSync(updatedResponses);
+
+      if (!result.success) {
+        console.error("❌ ANSWER CORRECTION FAILED:", {
+          question_id: questionId,
+          error: result.error,
+          timestamp: new Date().toISOString(),
+        });
+
+        // Show error to user but don't block the UI
+        alert(
+          `Failed to save answer correction: ${result.error}. Please try again.`
+        );
+      } else {
+        console.log("✅ ANSWER CORRECTION SAVED:", {
+          question_id: questionId,
+          answer: answer,
+          timestamp: new Date().toISOString(),
+        });
+      }
+    },
+    [responses]
+  );
+
+  // Combined handler that detects if this is a correction or new answer
+  const handleAnswerWithCorrection = useCallback(
+    async (questionId: string, answer: AnswerValue) => {
+      const isCorrection = responses[questionId] !== undefined;
+
+      if (isCorrection) {
+        // This is a correction - use the correction handler
+        await handleAnswerCorrection(questionId, answer);
+      } else {
+        // This is a new answer - use the regular handler
+        handleAnswer(questionId, answer);
+      }
+    },
+    [responses, handleAnswer, handleAnswerCorrection]
+  );
+
   const handleSubmit = useCallback(async () => {
     setIsSubmitting(true);
 
@@ -49,113 +103,78 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
       // Sync to database with completion status
       await syncSessionToRemote();
 
-      // Get Qualtrics URL from environment variable
-      const baseUrl = process.env.NEXT_PUBLIC_QUALTRICS_URL;
-      if (!baseUrl) {
-        console.error("NEXT_PUBLIC_QUALTRICS_URL not configured");
-        onComplete();
-        return;
-      }
+      // // Submit to Qualtrics API
+      // const existingResponseId = getQualtricsResponseId();
 
-      // Build query string with all session data
-      const params = new URLSearchParams();
+      // console.log("📤 SUBMITTING TO QUALTRICS API:", {
+      //   session_id: session.session_id,
+      //   group: session.group,
+      //   chosen_genre: session.chosen_genre,
+      //   songs_count: session.answers.songs.length,
+      //   onboarding_answers: Object.keys(session.answers.onboarding).length,
+      //   final_answers: Object.keys(responses).length,
+      //   interactions_count: session.engagement_metrics.interactions.length,
+      //   has_existing_response_id: !!existingResponseId,
+      //   timestamp: new Date().toISOString(),
+      // });
 
-      // Add session metadata
-      params.append("session_id", session.session_id.toString());
-      params.append("group", session.group);
-      params.append("chosen_genre", session.chosen_genre || "");
-      params.append("start_time", session.start_time);
+      // const response = await fetch('/api/qualtrics/submit', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     sessionData: session,
+      //     finalAnswers: responses,
+      //     existingResponseId: existingResponseId,
+      //   }),
+      // });
 
-      // Add onboarding answers
-      Object.entries(session.answers.onboarding).forEach(([key, value]) => {
-        if (value !== null && value !== undefined) {
-          params.append(
-            `onboarding_${key}`,
-            Array.isArray(value) ? value.join(",") : String(value)
-          );
-        }
-      });
+      // if (!response.ok) {
+      //   throw new Error(`Qualtrics submission failed: ${response.statusText}`);
+      // }
 
-      // Add final answers
-      Object.entries(session.answers.final).forEach(([key, value]) => {
-        if (value !== null && value !== undefined) {
-          params.append(
-            `final_${key}`,
-            Array.isArray(value) ? value.join(",") : String(value)
-          );
-        }
-      });
+      // const result = await response.json();
 
-      // Add song data
-      session.answers.songs.forEach((song, index) => {
-        params.append(`song_${index + 1}_id`, song.songId);
-        params.append(
-          `song_${index + 1}_introduction_style`,
-          song.introduction_style
-        );
-        params.append(`song_${index + 1}_skipped`, song.skipped.toString());
-        params.append(
-          `song_${index + 1}_skipped_at_ms`,
-          song.skipped_at_ms?.toString() || ""
-        );
-        params.append(
-          `song_${index + 1}_listening_time_ms`,
-          song.listening_time_ms.toString()
-        );
-        params.append(`song_${index + 1}_liked`, song.liked?.toString() || "");
-        params.append(
-          `song_${index + 1}_liked_at_ms`,
-          song.liked_at_ms?.toString() || ""
-        );
+      // if (result.success) {
+      //   // Store the response ID for future updates
+      //   if (result.responseId) {
+      //     updateQualtricsResponseId(result.responseId);
+      //   }
 
-        // Add song answers
-        Object.entries(song.answers).forEach(([key, value]) => {
-          if (value !== null && value !== undefined) {
-            params.append(
-              `song_${index + 1}_${key}`,
-              Array.isArray(value) ? value.join(",") : String(value)
-            );
-          }
-        });
-      });
+      //   // console.log("✅ QUALTRICS SUBMISSION SUCCESSFUL:", {
+      //   //   session_id: session.session_id,
+      //   //   response_id: result.responseId,
+      //   //   timestamp: new Date().toISOString(),
+      //   // });
 
-      // Add engagement metrics
-      Object.entries(session.engagement_metrics.page_times).forEach(
-        ([page, time]) => {
-          params.append(`page_time_${page}`, time.toString());
-        }
-      );
+      //   // Complete the experiment
+      //   onComplete();
+      // } else {
+      //   console.error("❌ QUALTRICS SUBMISSION FAILED:", {
+      //     session_id: session.session_id,
+      //     error: result.error,
+      //     retryable: result.retryable,
+      //     timestamp: new Date().toISOString(),
+      //   });
 
-      // Add interaction counts
-      const interactionCounts: Record<string, number> = {};
-      session.engagement_metrics.interactions.forEach((interaction) => {
-        const key = `${interaction.page}_${interaction.type}`;
-        interactionCounts[key] = (interactionCounts[key] || 0) + 1;
-      });
+      //   // Show error message to user but still complete the experiment
+      //   // Data is already saved to Neon DB, so we don't lose the data
+      //   alert(`Survey submission failed: ${result.error}. Your responses have been saved locally.`);
+      //   onComplete();
+      // }
 
-      Object.entries(interactionCounts).forEach(([key, count]) => {
-        params.append(`interaction_${key}`, count.toString());
-      });
-
-      const finalUrl = `${baseUrl}?${params.toString()}`;
-
-      console.log("📋 QUALTRICS REDIRECT PREPARED:", {
-        session_id: session.session_id,
-        group: session.group,
-        chosen_genre: session.chosen_genre,
-        songs_count: session.answers.songs.length,
-        onboarding_answers: Object.keys(session.answers.onboarding).length,
-        final_answers: Object.keys(session.answers.final).length,
-        interactions_count: session.engagement_metrics.interactions.length,
-        url_length: finalUrl.length,
-        timestamp: new Date().toISOString(),
-      });
-
-      // Redirect to Qualtrics with all data
-      window.location.href = finalUrl;
+      onComplete();
     } catch (error) {
-      console.error("❌ QUALTRICS REDIRECT FAILED:", error);
-      // Still complete the experiment even if redirect fails
+      console.error("❌ QUALTRICS SUBMISSION ERROR:", error);
+
+      // Show error message to user but still complete the experiment
+      // Data is already saved to Neon DB, so we don't lose the data
+      alert(
+        `Survey submission failed: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }. Your responses have been saved locally.`
+      );
       onComplete();
     } finally {
       setIsSubmitting(false);
@@ -182,7 +201,7 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
           <SurveyScreen
             survey={experimentConfig.surveys.final}
             responses={responses}
-            onAnswer={handleAnswer}
+            onAnswer={handleAnswerWithCorrection}
             onNext={handleSubmit}
             isSubmitting={isSubmitting}
             submitButtonText="Submit & Complete Experiment"

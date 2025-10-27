@@ -2,12 +2,60 @@ import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import { Pool } from 'pg';
 import * as XLSX from 'xlsx';
+import questionsData from '@/data/questions.json';
 
 // Neon PostgreSQL configuration
 const connectionString = process.env.DATABASE_URL;
 
-if (!connectionString) {
-  console.error('❌ DATABASE_URL environment variable is not set');
+// Helper function to get question text by ID
+function getQuestionText(questionId: string, surveyType: 'onboarding' | 'demographics' | 'final'): string {
+  try {
+    const survey = questionsData[surveyType as keyof typeof questionsData];
+    if (!survey || !survey.blocks) {
+      console.log(`❌ Survey ${surveyType} not found or has no blocks`);
+      return questionId;
+    }
+
+    for (const block of survey.blocks) {
+      if (block.questions) {
+        for (const question of block.questions) {
+          if (question.id === questionId) {
+            // Use dataExportTag if available, otherwise use text, otherwise fall back to ID
+            const result = question.dataExportTag || question.text || questionId;
+            console.log(`✅ Found question ${questionId}: "${result}"`);
+            return result;
+          }
+        }
+      }
+    }
+    console.log(`❌ Question ${questionId} not found in ${surveyType}`);
+    return questionId;
+  } catch (error) {
+    console.log(`❌ Error getting question text for ${questionId}:`, error);
+    return questionId;
+  }
+}
+
+// Helper function to get all expected question IDs for a survey type
+function getExpectedQuestionIds(surveyType: 'onboarding' | 'demographics' | 'final'): string[] {
+  try {
+    const survey = questionsData[surveyType];
+    if (!survey || !survey.blocks) return [];
+
+    const questionIds: string[] = [];
+    for (const block of survey.blocks) {
+      if (block.questions) {
+        for (const question of block.questions) {
+          if (question.id) {
+            questionIds.push(question.id);
+          }
+        }
+      }
+    }
+    return questionIds;
+  } catch {
+    return [];
+  }
 }
 
 // Create connection pool
@@ -52,7 +100,10 @@ export async function GET() {
           chosen_genre,
           start_time,
           onboarding_answers,
-          song_answers,
+          demographics_answers,
+          post_listening_answers,
+          final_answers,
+          qualtrics_response_id,
           engagement_metrics,
           created_at,
           updated_at
@@ -63,11 +114,18 @@ export async function GET() {
       const result = await client.query(query);
       const sessions = result.rows;
 
+      // Get expected question IDs for validation
+      const expectedOnboardingIds = getExpectedQuestionIds('onboarding');
+      const expectedDemographicsIds = getExpectedQuestionIds('demographics');
+      const expectedFinalIds = getExpectedQuestionIds('final');
+
       // Transform data for Excel export
       const exportData = sessions.map(session => {
         // Safely parse JSON data, handling cases where it might already be parsed
         let onboardingAnswers: Record<string, unknown> = {};
-        let songAnswers: unknown[] = [];
+        let demographicsAnswers: Record<string, unknown> = {};
+        let postListeningAnswers: unknown[] = [];
+        let finalAnswers: Record<string, unknown> = {};
         let engagementMetrics: { page_times: Record<string, number>; interactions: unknown[] } = { page_times: {}, interactions: [] };
 
         try {
@@ -79,11 +137,27 @@ export async function GET() {
         }
 
         try {
-          songAnswers = typeof session.song_answers === 'string' 
-            ? JSON.parse(session.song_answers) 
-            : session.song_answers || [];
+          demographicsAnswers = typeof session.demographics_answers === 'string' 
+            ? JSON.parse(session.demographics_answers) 
+            : session.demographics_answers || {};
         } catch {
-          console.warn('Failed to parse song_answers');
+          console.warn('Failed to parse demographics_answers');
+        }
+
+        try {
+          postListeningAnswers = typeof session.post_listening_answers === 'string' 
+            ? JSON.parse(session.post_listening_answers) 
+            : session.post_listening_answers || [];
+        } catch {
+          console.warn('Failed to parse post_listening_answers');
+        }
+
+        try {
+          finalAnswers = typeof session.final_answers === 'string' 
+            ? JSON.parse(session.final_answers) 
+            : session.final_answers || {};
+        } catch {
+          console.warn('Failed to parse final_answers');
         }
 
         try {
@@ -105,25 +179,77 @@ export async function GET() {
           engagementMetrics.interactions = [];
         }
 
+        // Check for unanswered questions and log them
+        const sessionId = session.session_id;
+        
+        // Check onboarding questions
+        const unansweredOnboarding = expectedOnboardingIds.filter(qId => 
+          !onboardingAnswers[qId] || onboardingAnswers[qId] === '' || onboardingAnswers[qId] === null
+        );
+        
+        // Check demographics questions  
+        const unansweredDemographics = expectedDemographicsIds.filter(qId => 
+          !demographicsAnswers[qId] || demographicsAnswers[qId] === '' || demographicsAnswers[qId] === null
+        );
+        
+        // Check final questions
+        const unansweredFinal = expectedFinalIds.filter(qId => 
+          !finalAnswers[qId] || finalAnswers[qId] === '' || finalAnswers[qId] === null
+        );
+        
+        if (unansweredOnboarding.length > 0 || unansweredDemographics.length > 0 || unansweredFinal.length > 0) {
+          console.log(`⚠️ SESSION ${sessionId} HAS UNANSWERED QUESTIONS:`, {
+            session_id: sessionId,
+            unanswered_onboarding: unansweredOnboarding.map(qId => getQuestionText(qId, 'onboarding')),
+            unanswered_demographics: unansweredDemographics.map(qId => getQuestionText(qId, 'demographics')),
+            unanswered_final: unansweredFinal.map(qId => getQuestionText(qId, 'final')),
+            total_unanswered: unansweredOnboarding.length + unansweredDemographics.length + unansweredFinal.length
+          });
+        } else {
+          console.log(`✅ SESSION ${sessionId}: ALL QUESTIONS ANSWERED`);
+        }
+
         // Flatten the data for Excel
         const flattened: Record<string, unknown> = {
-        // Basic session info
-        session_id: session.session_id,
-        group_type: session.group_type,
-        chosen_genre: session.chosen_genre,
-        start_time: new Date(session.start_time).toLocaleString(),
-        created_at: new Date(session.created_at).toLocaleString(),
-        updated_at: new Date(session.updated_at).toLocaleString(),
-          
-          // Onboarding answers (flattened)
+          // Basic session info
+          session_id: session.session_id,
+          group_type: session.group_type,
+          chosen_genre: session.chosen_genre,
+          start_time: new Date(session.start_time).toLocaleString(),
+          qualtrics_response_id: session.qualtrics_response_id || '',
+          created_at: new Date(session.created_at).toLocaleString(),
+          updated_at: new Date(session.updated_at).toLocaleString(),
+            
+          // Onboarding answers (flattened with question text as headers)
           ...Object.entries(onboardingAnswers).reduce((acc, [key, value]) => {
-            acc[`onboarding_${key}`] = Array.isArray(value) ? value.join(', ') : value;
+            const questionText = getQuestionText(key, 'onboarding');
+            const header = `Onboarding: ${questionText}`;
+            console.log(`📝 Mapping onboarding ${key} -> "${header}"`);
+            acc[header] = Array.isArray(value) ? value.join(', ') : value;
+            return acc;
+          }, {} as Record<string, unknown>),
+          
+          // Demographics answers (flattened with question text as headers)
+          ...Object.entries(demographicsAnswers).reduce((acc, [key, value]) => {
+            const questionText = getQuestionText(key, 'demographics');
+            const header = `Demographics: ${questionText}`;
+            console.log(`📝 Mapping demographics ${key} -> "${header}"`);
+            acc[header] = Array.isArray(value) ? value.join(', ') : value;
+            return acc;
+          }, {} as Record<string, unknown>),
+          
+          // Final answers (flattened with question text as headers)
+          ...Object.entries(finalAnswers).reduce((acc, [key, value]) => {
+            const questionText = getQuestionText(key, 'final');
+            const header = `Final: ${questionText}`;
+            console.log(`📝 Mapping final ${key} -> "${header}"`);
+            acc[header] = Array.isArray(value) ? value.join(', ') : value;
             return acc;
           }, {} as Record<string, unknown>),
           
           // Song data summary
-          total_songs: songAnswers.length,
-          completed_songs: songAnswers.filter((song: unknown) => {
+          total_songs: postListeningAnswers.length,
+          completed_songs: postListeningAnswers.filter((song: unknown) => {
             if (typeof song === 'object' && song !== null && 'answers' in song) {
               const answers = (song as { answers?: unknown }).answers;
               return typeof answers === 'object' && answers !== null && Object.keys(answers).length > 0;
@@ -137,8 +263,8 @@ export async function GET() {
         };
 
         // Add individual song data
-        if (Array.isArray(songAnswers)) {
-          songAnswers.forEach((song: unknown, index: number) => {
+        if (Array.isArray(postListeningAnswers)) {
+          postListeningAnswers.forEach((song: unknown, index: number) => {
             if (song && typeof song === 'object' && song !== null) {
               const songObj = song as Record<string, unknown>;
               flattened[`song_${index + 1}_id`] = songObj.songId || '';
@@ -146,6 +272,10 @@ export async function GET() {
               flattened[`song_${index + 1}_skipped`] = songObj.skipped || false;
               flattened[`song_${index + 1}_skipped_at_ms`] = songObj.skipped_at_ms || null;
               flattened[`song_${index + 1}_listening_time_ms`] = songObj.listening_time_ms || 0;
+              flattened[`song_${index + 1}_liked`] = songObj.liked || false;
+              flattened[`song_${index + 1}_liked_at_ms`] = songObj.liked_at_ms || null;
+              flattened[`song_${index + 1}_disliked`] = songObj.dislike || false;
+              flattened[`song_${index + 1}_disliked_at_ms`] = songObj.dislike_at_ms || null;
               
               // Add song answers
               if (songObj.answers && typeof songObj.answers === 'object' && songObj.answers !== null) {
@@ -167,6 +297,32 @@ export async function GET() {
       const worksheet = XLSX.utils.json_to_sheet(exportData);
       XLSX.utils.book_append_sheet(workbook, worksheet, 'Experiment Data');
 
+      // Calculate song interaction statistics
+      let totalLikes = 0;
+      let totalDislikes = 0;
+      let totalSongs = 0;
+      
+      sessions.forEach(session => {
+        try {
+          const postListeningAnswers = typeof session.post_listening_answers === 'string' 
+            ? JSON.parse(session.post_listening_answers) 
+            : session.post_listening_answers || [];
+          
+          if (Array.isArray(postListeningAnswers)) {
+            postListeningAnswers.forEach((song: unknown) => {
+              if (song && typeof song === 'object' && song !== null) {
+                const songObj = song as Record<string, unknown>;
+                totalSongs++;
+                if (songObj.liked === true) totalLikes++;
+                if (songObj.dislike === true) totalDislikes++;
+              }
+            });
+          }
+        } catch {
+          // Skip invalid data
+        }
+      });
+
       // Create summary sheet
       const summaryData = [
         { metric: 'Total Sessions', value: sessions.length },
@@ -174,10 +330,10 @@ export async function GET() {
         { metric: 'Familiar Group', value: sessions.filter(s => s.group_type === 'familiar').length },
         { metric: 'Completed Sessions', value: sessions.filter(s => {
           try {
-            const songAnswers = typeof s.song_answers === 'string' 
-              ? JSON.parse(s.song_answers) 
-              : s.song_answers || [];
-            return Array.isArray(songAnswers) && songAnswers.length > 0;
+            const postListeningAnswers = typeof s.post_listening_answers === 'string' 
+              ? JSON.parse(s.post_listening_answers) 
+              : s.post_listening_answers || [];
+            return Array.isArray(postListeningAnswers) && postListeningAnswers.length > 0;
           } catch {
             return false;
           }
@@ -189,6 +345,11 @@ export async function GET() {
             return sum + (end - start) / (1000 * 60);
           }, 0) / sessions.length).toFixed(2) : 0
         },
+        { metric: 'Total Songs Played', value: totalSongs },
+        { metric: 'Total Likes', value: totalLikes },
+        { metric: 'Total Dislikes', value: totalDislikes },
+        { metric: 'Like Rate (%)', value: totalSongs > 0 ? ((totalLikes / totalSongs) * 100).toFixed(2) : 0 },
+        { metric: 'Dislike Rate (%)', value: totalSongs > 0 ? ((totalDislikes / totalSongs) * 100).toFixed(2) : 0 },
       ];
       
       const summarySheet = XLSX.utils.json_to_sheet(summaryData);

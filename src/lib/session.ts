@@ -38,6 +38,7 @@ export interface SessionData {
   experiment_completed: boolean;
   answers: {
     onboarding: Record<string, AnswerValue>;
+    demographics: Record<string, AnswerValue>;
     final: Record<string, AnswerValue>;
     songs: SongSession[];
   };
@@ -45,6 +46,7 @@ export interface SessionData {
     page_times: Record<string, number>;
     interactions: EngagementInteraction[];
   };
+  qualtrics_response_id?: string; // Track Qualtrics response ID for updates
 }
 
 const SESSION_STORAGE_KEY = "serendipity_session";
@@ -100,6 +102,7 @@ export async function createNewSession(): Promise<SessionData> {
     experiment_completed: false,
     answers: {
       onboarding: {}, // Always start with empty onboarding answers
+      demographics: {}, // Always start with empty demographics answers
       final: {}, // Always start with empty final answers
       songs: [],
     },
@@ -213,6 +216,24 @@ export function updateSessionOnboardingAnswers(
     saveSession(session);
   } else {
     console.warn("⚠️ Could not update onboarding answers. No session found.");
+  }
+}
+
+export function updateSessionDemographicsAnswers(
+  answers: Record<string, AnswerValue>
+): void {
+  const session = getSession();
+  if (session) {
+    session.answers.demographics = answers;
+    console.log("📝 DEMOGRAPHICS ANSWERS UPDATED:", {
+      session_id: session.session_id,
+      answers_count: Object.keys(answers).length,
+      answers: answers,
+      timestamp: new Date().toISOString(),
+    });
+    saveSession(session);
+  } else {
+    console.warn("⚠️ Could not update demographics answers. No session found.");
   }
 }
 
@@ -497,6 +518,102 @@ export function clearSession(): void {
   localStorage.removeItem(SESSION_STORAGE_KEY);
 }
 
+export function updateQualtricsResponseId(responseId: string): void {
+  const session = getSession();
+  if (session) {
+    session.qualtrics_response_id = responseId;
+    console.log("📋 QUALTRICS RESPONSE ID UPDATED:", {
+      session_id: session.session_id,
+      response_id: responseId,
+      timestamp: new Date().toISOString(),
+    });
+    saveSession(session);
+  } else {
+    console.warn("⚠️ Could not update Qualtrics response ID. No session found.");
+  }
+}
+
+export function getQualtricsResponseId(): string | undefined {
+  const session = getSession();
+  return session?.qualtrics_response_id;
+}
+
+/**
+ * Update final answers and sync to both Qualtrics and Neon DB
+ * This function handles answer corrections by updating both systems
+ */
+export async function updateFinalAnswersWithSync(
+  answers: Record<string, AnswerValue>
+): Promise<{ success: boolean; error?: string }> {
+  const session = getSession();
+  if (!session) {
+    return { success: false, error: 'No session found' };
+  }
+
+  try {
+    // Update local session
+    updateSessionFinalAnswers(answers);
+
+    // Sync to Neon DB
+    await syncSessionToRemote();
+
+    // Update Qualtrics if we have a response ID
+    const responseId = getQualtricsResponseId();
+    if (responseId) {
+      console.log("🔄 UPDATING QUALTRICS RESPONSE FOR ANSWER CORRECTION:", {
+        session_id: session.session_id,
+        response_id: responseId,
+        answers_count: Object.keys(answers).length,
+        timestamp: new Date().toISOString(),
+      });
+
+      const qualtricsResponse = await fetch('/api/qualtrics/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          sessionData: session,
+          finalAnswers: answers,
+          existingResponseId: responseId,
+        }),
+      });
+
+      if (!qualtricsResponse.ok) {
+        console.error("❌ QUALTRICS UPDATE FAILED:", {
+          session_id: session.session_id,
+          status: qualtricsResponse.status,
+          statusText: qualtricsResponse.statusText,
+        });
+        // Don't fail the entire operation if Qualtrics update fails
+        // Data is still saved to Neon DB
+      } else {
+        const result = await qualtricsResponse.json();
+        if (result.success) {
+          console.log("✅ QUALTRICS RESPONSE UPDATED:", {
+            session_id: session.session_id,
+            response_id: result.responseId,
+            timestamp: new Date().toISOString(),
+          });
+        } else {
+          console.error("❌ QUALTRICS UPDATE RESULT FAILED:", {
+            session_id: session.session_id,
+            error: result.error,
+          });
+        }
+      }
+    }
+
+    return { success: true };
+  } catch (error) {
+    console.error("❌ FINAL ANSWERS UPDATE FAILED:", error);
+    return { 
+      success: false, 
+      error: error instanceof Error ? error.message : 'Unknown error' 
+    };
+  }
+}
+
 export function hasCompletedSession(): boolean {
   const session = getSession();
   console.log("🔍 HAS COMPLETED SESSION DEBUG:", {
@@ -511,14 +628,26 @@ export function checkExperimentCompletion(): boolean {
   const session = getSession();
   if (!session) return false;
 
-  // Check onboarding questions (5 required questions)
+  // Check onboarding questions (personality and music preferences)
   const onboardingQuestions = [
-    'gender', 'age', 'music_frequency', 'favorite_genres', 'music_discovery'
+    'QID1', 'QID13', 'QID14', 'QID15', 'QID16', 'QID17', 'QID18', 'QID19', 'QID20', // Imagination
+    'QID37', 'QID38', 'QID39', 'QID40', 'QID41', // Cognitive engagement
+    'QID42', 'QID49', 'QID51', 'QID50', 'QID6', // GMSI
+    'QID21', 'QID22', 'QID23', 'QID24', 'QID25', 'QID26', 'QID27', 'QID28', 'QID29', 'QID30', // Intellect
+    'QID32', 'QID33', 'QID34', 'QID35', 'QID36' // Emotional engagement
   ];
   const onboardingComplete = onboardingQuestions.every(questionId => 
     session.answers.onboarding[questionId] !== undefined && 
     session.answers.onboarding[questionId] !== null &&
     session.answers.onboarding[questionId] !== ''
+  );
+
+  // Check demographics questions (3 required questions)
+  const demographicsQuestions = ['QID10', 'QID11', 'QID1218898227']; // Gender, Age, Country
+  const demographicsComplete = demographicsQuestions.every(questionId => 
+    session.answers.demographics[questionId] !== undefined && 
+    session.answers.demographics[questionId] !== null &&
+    session.answers.demographics[questionId] !== ''
   );
 
   // Check if we have 3 songs with complete postListening surveys
@@ -544,11 +673,12 @@ export function checkExperimentCompletion(): boolean {
     );
   });
 
-  const isComplete = onboardingComplete && songsComplete && postListeningComplete && finalComplete;
+  const isComplete = onboardingComplete && demographicsComplete && songsComplete && postListeningComplete && finalComplete;
   
   console.log("🔍 EXPERIMENT COMPLETION CHECK:", {
     session_id: session.session_id,
     onboarding_complete: onboardingComplete,
+    demographics_complete: demographicsComplete,
     songs_complete: songsComplete,
     post_listening_complete: postListeningComplete,
     final_complete: finalComplete,

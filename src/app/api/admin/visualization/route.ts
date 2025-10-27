@@ -48,11 +48,11 @@ export async function GET() {
         SELECT 
           session_id,
           group_type,
-          song_answers,
+          post_listening_answers,
           randomized_introductions
         FROM experiment_sessions 
-        WHERE song_answers IS NOT NULL 
-        AND jsonb_array_length(COALESCE(song_answers, '[]'::jsonb)) > 0
+        WHERE post_listening_answers IS NOT NULL 
+        AND jsonb_array_length(COALESCE(post_listening_answers, '[]'::jsonb)) > 0
         ORDER BY created_at DESC
       `;
       
@@ -87,9 +87,9 @@ export async function GET() {
 
       sessions.forEach(session => {
         try {
-          const songAnswers = typeof session.song_answers === 'string' 
-            ? JSON.parse(session.song_answers) 
-            : session.song_answers || [];
+          const songAnswers = typeof session.post_listening_answers === 'string' 
+            ? JSON.parse(session.post_listening_answers) 
+            : session.post_listening_answers || [];
           
           const introductions = typeof session.randomized_introductions === 'string'
             ? JSON.parse(session.randomized_introductions)

@@ -49,7 +49,7 @@ export async function GET() {
           COUNT(*) as total_sessions,
           COUNT(CASE WHEN group_type = 'unfamiliar' THEN 1 END) as unfamiliar_group,
           COUNT(CASE WHEN group_type = 'familiar' THEN 1 END) as familiar_group,
-          COUNT(CASE WHEN jsonb_array_length(COALESCE(song_answers, '[]'::jsonb)) > 0 THEN 1 END) as completed_sessions,
+          COUNT(CASE WHEN jsonb_array_length(COALESCE(post_listening_answers, '[]'::jsonb)) > 0 THEN 1 END) as completed_sessions,
           COUNT(CASE WHEN experiment_completed = TRUE THEN 1 END) as fully_completed_sessions,
           AVG(EXTRACT(EPOCH FROM (updated_at - created_at))) as avg_duration_seconds
         FROM experiment_sessions
@@ -81,7 +81,7 @@ export async function GET() {
           created_at,
           updated_at,
           experiment_completed,
-          jsonb_array_length(COALESCE(song_answers, '[]'::jsonb)) as songs_completed
+          jsonb_array_length(COALESCE(post_listening_answers, '[]'::jsonb)) as songs_completed
         FROM experiment_sessions 
         ORDER BY created_at DESC 
         LIMIT 10

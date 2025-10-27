@@ -1,0 +1,408 @@
+{
+  "onboarding": {
+    "id": "pre_list_onboarding",
+    "title": "About You",
+    "intro": "Please answer the following questions about yourself. There are no right or wrong answers - we're interested in your personal preferences and experiences.",
+    "blocks": [
+      {
+        "id": "BL_8tSKZsMsPBrsCRE",
+        "title": "Imagination",
+        "description": "Imagination",
+        "questions": [
+          {
+            "id": "QID1",
+            "text": "I have a vivid imagination",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Vivid imagination"
+          }
+        ]
+      }
+    ],
+    "randomizeBlocks": true
+  },
+  "demographics": {
+    "id": "pre_list_demographics",
+    "title": "Demographics",
+    "intro": "",
+    "blocks": [
+      {
+        "id": "BL_9ERu4yij2IHXGXY",
+        "title": "Demographics",
+        "description": "Demographics",
+        "questions": [
+          {
+            "id": "QID10",
+            "text": "How do you describe yourself?",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Male",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Female",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Non-binary / third gender",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Prefer to self-describe",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Prefer not to say",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Gender"
+          }
+        ]
+      }
+    ],
+    "randomizeBlocks": false
+  },
+  "postListening": {
+    "id": "post_item",
+    "title": "Your Listening Experience",
+    "intro": "The following questions concern your experience of the part of the playlist you just listened to.",
+    "blocks": [
+      {
+        "id": "BL_9yGPnRDpLtebTam",
+        "title": "Serendipity",
+        "description": "Serendipity",
+        "questions": [
+          {
+            "id": "QID2",
+            "text": "The song differs from the type of music I normally listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Unusual"
+          }
+        ]
+      }
+    ],
+    "randomizeBlocks": true
+  },
+  "final": {
+    "id": "post_list",
+    "title": "Post list",
+    "intro": "The following questions concern your listening experience of the playlist in general.",
+    "blocks": [
+      {
+        "id": "BL_41MXGbIIvfoJr0y",
+        "title": "Satisfaction",
+        "description": "Satisfaction",
+        "questions": [
+          {
+            "id": "QID4",
+            "text": "I enjoyed listening to the music",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Enjoyment"
+          }
+        ]
+      },
+      {
+        "id": "BL_3UyNXZtv9iSAAlw",
+        "title": "Other comments",
+        "description": "Other comments",
+        "questions": [
+          {
+            "id": "QID10",
+            "text": "Is there anything else you would like to share?",
+            "type": "textInput",
+            "required": true,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Additional comments",
+            "placeholder": "Please enter your response..."
+          }
+        ]
+      },
+      {
+        "id": "BL_5aIZEwJcIWABs10",
+        "title": "Serendipity",
+        "description": "Serendipity",
+        "questions": [
+          {
+            "id": "QID3",
+            "text": "The playlist was surprising to me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Serendipity"
+          }
+        ]
+      },
+      {
+        "id": "BL_1B2E7llCriM5rw2",
+        "title": "Quality",
+        "description": "Quality",
+        "questions": [
+          {
+            "id": "QID6",
+            "text": "The spoken introductions were clearly articulated",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Clarity"
+          },
+          {
+            "id": "QID7",
+            "text": "The spoken introductions were of good audio quality",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Audio quality"
+          },
+          {
+            "id": "QID8",
+            "text": "The spoken introductions were interesting",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Interest"
+          },
+          {
+            "id": "QID9",
+            "text": "The spoken introductions were annoying",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Annoyance"
+          }
+        ]
+      }
+    ],
+    "randomizeBlocks": true
+  }
+}

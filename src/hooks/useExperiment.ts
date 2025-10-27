@@ -9,6 +9,7 @@ import {
   createNewSession, 
   updateSessionGenre, 
   updateSessionOnboardingAnswers,
+  updateSessionDemographicsAnswers,
   updateSessionRandomizedSongs,
   updateSongSession,
   syncSessionToRemote,
@@ -199,24 +200,37 @@ export function useExperiment() {
       },
     }));
     
-    // Save to session
+    // Save to session based on current step
     const currentSession = getCurrentSession();
     if (currentSession) {
-      console.log('📝 SAVING ONBOARDING ANSWERS:', {
-        session_id: currentSession.session_id,
-        question_id: questionId,
-        answer: answer,
-        timestamp: new Date().toISOString()
-      });
-      const updatedAnswers = { ...currentSession.answers.onboarding, [questionId]: answer };
-      updateSessionOnboardingAnswers(updatedAnswers);
+      const currentStepName = experimentSteps[state.currentStep];
+      
+      if (currentStepName === 'onboarding') {
+        console.log('📝 SAVING ONBOARDING ANSWERS:', {
+          session_id: currentSession.session_id,
+          question_id: questionId,
+          answer: answer,
+          timestamp: new Date().toISOString()
+        });
+        const updatedAnswers = { ...currentSession.answers.onboarding, [questionId]: answer };
+        updateSessionOnboardingAnswers(updatedAnswers);
+      } else if (currentStepName === 'demographics') {
+        console.log('📝 SAVING DEMOGRAPHICS ANSWERS:', {
+          session_id: currentSession.session_id,
+          question_id: questionId,
+          answer: answer,
+          timestamp: new Date().toISOString()
+        });
+        const updatedAnswers = { ...currentSession.answers.demographics, [questionId]: answer };
+        updateSessionDemographicsAnswers(updatedAnswers);
+      }
       
       // Check if experiment is now complete
       updateExperimentCompletionStatus();
     } else {
-      console.warn('⚠️ COULD NOT SAVE ONBOARDING ANSWERS: NO SESSION FOUND');
+      console.warn('⚠️ COULD NOT SAVE ANSWERS: NO SESSION FOUND');
     }
-  }, [getCurrentSession]);
+  }, [getCurrentSession, state.currentStep]);
 
   // Local-only response setter (does not touch session). Use for song surveys.
   const setLocalResponse = useCallback((questionId: string, answer: AnswerValue) => {

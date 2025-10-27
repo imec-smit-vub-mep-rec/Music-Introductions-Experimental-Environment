@@ -59,7 +59,7 @@ export async function GET(request: NextRequest) {
         experiment_completed: row.experiment_completed || false,
         answers: {
           onboarding: JSON.parse(row.onboarding_answers),
-          songs: JSON.parse(row.song_answers),
+          songs: JSON.parse(row.post_listening_answers),
         },
         engagement_metrics: JSON.parse(row.engagement_metrics),
       };
