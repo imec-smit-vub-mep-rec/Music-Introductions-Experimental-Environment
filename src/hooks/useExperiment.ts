@@ -14,6 +14,7 @@ import {
   updateSongSession,
   syncSessionToRemote,
   updateExperimentCompletionStatus,
+  clearAllSessionData,
   SessionData
 } from '@/lib/session';
 import { randomizeSongsForGenre, randomizeIntroductions } from '@/lib/randomization';
@@ -469,17 +470,15 @@ export function useExperiment() {
     console.log('🧹 ALL SURVEY DATA CLEARED');
   }, []);
 
-  const forceClearSession = useCallback(() => {
-    // Clear localStorage session
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('serendipity_session');
-    }
+  const forceClearSession = useCallback(async () => {
+    // Clear ALL session data (localStorage + database)
+    await clearAllSessionData();
     
     // Reset state to initial
     setState(initialState);
     sessionRef.current = null;
     
-    console.log('🧹 SESSION FORCE CLEARED');
+    console.log('🧹 SESSION FORCE CLEARED (ALL DATA)');
   }, []);
 
   const reset = useCallback(() => {
@@ -488,7 +487,10 @@ export function useExperiment() {
   }, []);
 
   const startNewSession = useCallback(async () => {
-    // Clear any existing session data
+    // Clear ALL existing session data (localStorage + database)
+    await clearAllSessionData();
+    
+    // Reset state to initial
     setState(initialState);
     sessionRef.current = null;
     

@@ -1,6 +1,7 @@
 "use client";
 
 import { AnswerValue } from "./types";
+import { validateSurveyCompletion } from "./utils";
 
 export type SessionGroup = "unfamiliar" | "familiar";
 export type IntroductionStyle =
@@ -47,6 +48,7 @@ export interface SessionData {
     interactions: EngagementInteraction[];
   };
   qualtrics_response_id?: string; // Track Qualtrics response ID for updates
+  client_ip?: string; // Store client IP for session tracking
 }
 
 const SESSION_STORAGE_KEY = "serendipity_session";
@@ -55,8 +57,9 @@ export function generateSessionId(ipAddress?: string): number {
   const timestamp = Date.now();
   
   if (!ipAddress) {
-    // Fallback to timestamp only if no IP is provided
-    return timestamp;
+    // Add random component to ensure uniqueness even without IP
+    const randomComponent = Math.floor(Math.random() * 10000);
+    return timestamp + randomComponent;
   }
   
   // Create a hash combining timestamp and IP address
@@ -65,9 +68,12 @@ export function generateSessionId(ipAddress?: string): number {
     return acc * 256 + parseInt(octet, 10);
   }, 0);
   
-  // Combine timestamp with IP hash to create unique ID
+  // Add random component to ensure uniqueness even with same IP
+  const randomComponent = Math.floor(Math.random() * 10000);
+  
+  // Combine timestamp with IP hash and random component to create unique ID
   // Use bitwise operations to mix the values
-  const combined = timestamp ^ (ipHash << 16) ^ (ipHash >>> 16);
+  const combined = timestamp ^ (ipHash << 16) ^ (ipHash >>> 16) ^ randomComponent;
   
   // Ensure we return a positive number
   return Math.abs(combined);
@@ -110,6 +116,7 @@ export async function createNewSession(): Promise<SessionData> {
       page_times: {},
       interactions: [],
     },
+    client_ip: clientIp, // Store client IP for session tracking
   };
 
   console.log("🎯 NEW SESSION CREATED:", {
@@ -516,6 +523,76 @@ export function markExperimentCompleted(): void {
 export function clearSession(): void {
   if (typeof window === "undefined") return;
   localStorage.removeItem(SESSION_STORAGE_KEY);
+  console.log("🧹 SESSION CLEARED FROM LOCALSTORAGE:", {
+    timestamp: new Date().toISOString(),
+  });
+}
+
+export async function clearSessionFromDatabase(sessionId: number): Promise<void> {
+  try {
+    const response = await fetch(`/api/session/delete?sessionId=${sessionId}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Database session deletion failed: ${response.statusText}`);
+    }
+
+    console.log('🗑️ SESSION CLEARED FROM DATABASE:', {
+      session_id: sessionId,
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error('❌ DATABASE SESSION CLEAR FAILED:', error);
+    // Don't throw - this is not critical for user experience
+  }
+}
+
+export async function clearAllSessionData(): Promise<void> {
+  // Get current session before clearing
+  const currentSession = getSession();
+  
+  // Clear localStorage first
+  clearSession();
+  
+  // Clear from database if we have a session
+  if (currentSession?.session_id) {
+    await clearSessionFromDatabase(currentSession.session_id);
+  }
+  
+  // Also clear any other sessions from the same IP if we have it
+  if (currentSession?.client_ip) {
+    await clearSessionsByIP(currentSession.client_ip);
+  }
+  
+  console.log('🧹 ALL SESSION DATA CLEARED:', {
+    had_session: !!currentSession,
+    session_id: currentSession?.session_id,
+    client_ip: currentSession?.client_ip,
+    timestamp: new Date().toISOString(),
+  });
+}
+
+export async function clearSessionsByIP(ipAddress: string): Promise<void> {
+  try {
+    const response = await fetch(`/api/session/delete-by-ip?ip=${encodeURIComponent(ipAddress)}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`IP-based session deletion failed: ${response.statusText}`);
+    }
+
+    const result = await response.json();
+    console.log('🗑️ SESSIONS CLEARED BY IP:', {
+      ip_address: ipAddress,
+      deleted_count: result.deletedRows || 0,
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error('❌ IP-BASED SESSION CLEAR FAILED:', error);
+    // Don't throw - this is not critical for user experience
+  }
 }
 
 export function updateQualtricsResponseId(responseId: string): void {
@@ -628,27 +705,10 @@ export function checkExperimentCompletion(): boolean {
   const session = getSession();
   if (!session) return false;
 
-  // Check onboarding questions (personality and music preferences)
-  const onboardingQuestions = [
-    'QID1', 'QID13', 'QID14', 'QID15', 'QID16', 'QID17', 'QID18', 'QID19', 'QID20', // Imagination
-    'QID37', 'QID38', 'QID39', 'QID40', 'QID41', // Cognitive engagement
-    'QID42', 'QID49', 'QID51', 'QID50', 'QID6', // GMSI
-    'QID21', 'QID22', 'QID23', 'QID24', 'QID25', 'QID26', 'QID27', 'QID28', 'QID29', 'QID30', // Intellect
-    'QID32', 'QID33', 'QID34', 'QID35', 'QID36' // Emotional engagement
-  ];
-  const onboardingComplete = onboardingQuestions.every(questionId => 
-    session.answers.onboarding[questionId] !== undefined && 
-    session.answers.onboarding[questionId] !== null &&
-    session.answers.onboarding[questionId] !== ''
-  );
-
-  // Check demographics questions (3 required questions)
-  const demographicsQuestions = ['QID10', 'QID11', 'QID1218898227']; // Gender, Age, Country
-  const demographicsComplete = demographicsQuestions.every(questionId => 
-    session.answers.demographics[questionId] !== undefined && 
-    session.answers.demographics[questionId] !== null &&
-    session.answers.demographics[questionId] !== ''
-  );
+  // Use the flexible validation functions instead of hardcoded QIDs
+  const onboardingComplete = validateSurveyCompletion(session.answers.onboarding, 'onboarding');
+  const demographicsComplete = validateSurveyCompletion(session.answers.demographics, 'demographics');
+  const finalComplete = validateSurveyCompletion(session.answers.final, 'final');
 
   // Check if we have 3 songs with complete postListening surveys
   const songsComplete = session.answers.songs.length === 3;
@@ -656,17 +716,6 @@ export function checkExperimentCompletion(): boolean {
     // Each song should have answers for: enjoyment, familiarity, emotional_response, would_listen_again
     const requiredQuestions = ['enjoyment', 'familiarity', 'emotional_response', 'would_listen_again'];
     return requiredQuestions.every(questionId => 
-      song.answers[questionId] !== undefined && 
-      song.answers[questionId] !== null &&
-      song.answers[questionId] !== ''
-    );
-  });
-
-  // Check final survey questions (3 required questions)
-  const finalQuestions = ['overall_experience', 'genre_preference', 'discovery_value'];
-  const finalComplete = finalQuestions.every(questionId => {
-    // Check if any song has this question answered (since final questions are answered per song)
-    return session.answers.songs.some(song => 
       song.answers[questionId] !== undefined && 
       song.answers[questionId] !== null &&
       song.answers[questionId] !== ''

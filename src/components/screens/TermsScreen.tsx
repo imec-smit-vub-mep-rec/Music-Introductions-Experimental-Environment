@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
-import { createNewSession, saveSession, hasCompletedSession, clearSession } from '@/lib/session';
+import { createNewSession, saveSession, hasCompletedSession, clearAllSessionData } from '@/lib/session';
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -32,11 +32,11 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
       // Clear any existing session data and create new session
       const initializeSession = async () => {
         try {
-          // Clear any existing session data first
-          clearSession();
+          // Clear ALL existing session data (localStorage + database)
+          await clearAllSessionData();
           
-          // Force a small delay to ensure localStorage is cleared
-          await new Promise(resolve => setTimeout(resolve, 100));
+          // Force a small delay to ensure everything is cleared
+          await new Promise(resolve => setTimeout(resolve, 200));
           
           const session = await createNewSession();
           saveSession(session);

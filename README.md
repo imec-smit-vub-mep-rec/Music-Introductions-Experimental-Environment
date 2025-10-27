@@ -122,3 +122,32 @@ See [METRICS_DOCUMENTATION.md](./METRICS_DOCUMENTATION.md) for detailed document
 - session_id
 - answer_option: VARCHAR
 
+### Question ID Mapping:
+
+Onboarding: 
+on_
+* Imagination: on_im_*
+* Cognitive engagement: on_ce_*
+* GMSI: on_gmsi_* 
+* Intellect: on_in_*
+* Emotional engagement: on_em_*
+
+
+Demographics: 
+dem_
+* Gender: dem_1
+
+Post-Item/post-listening: 
+pi_
+* Serendipity: pi_se_*
+* Intellectual engagement: pi_ie_*
+* Coping potential: pi_cp_*
+* Perceived complexity: pi_pc_*
+* Transportation: pi_tr_*
+
+Final/post-list:
+pl_
+* Satisfaction: pl_sa_*
+* Other comments: pl_oc_*
+* Serendipity: pl_se_*
+* Quality: pl_qu_*

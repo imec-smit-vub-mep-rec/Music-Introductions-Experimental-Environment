@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { Pool } from "pg";
 import * as XLSX from "xlsx";
@@ -76,7 +76,7 @@ const pool = connectionString
     })
   : null;
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   // Check authentication
   const cookieStore = await cookies();
   const adminAuth = cookieStore.get("admin-auth");
@@ -84,6 +84,11 @@ export async function GET() {
   if (adminAuth?.value !== "authenticated") {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
+
+  // Get query parameters
+  const { searchParams } = new URL(request.url);
+  const useQuestionText = searchParams.get('useQuestionText') !== 'false'; // Default to true
+  const columnFormat = useQuestionText ? 'questionText' : 'questionId';
 
   if (!pool) {
     return NextResponse.json(
@@ -257,28 +262,34 @@ export async function GET() {
           created_at: new Date(session.created_at).toLocaleString(),
           updated_at: new Date(session.updated_at).toLocaleString(),
 
-          // Onboarding answers (flattened with question text as headers)
+          // Onboarding answers (flattened with configurable headers)
           ...Object.entries(onboardingAnswers).reduce((acc, [key, value]) => {
             const questionText = getQuestionText(key, "onboarding");
-            const header = `Onboarding: ${questionText}`;
+            const header = useQuestionText 
+              ? `Onboarding: ${questionText}` 
+              : `Onboarding: ${key}`;
             console.log(`📝 Mapping onboarding ${key} -> "${header}"`);
             acc[header] = Array.isArray(value) ? value.join(", ") : value;
             return acc;
           }, {} as Record<string, unknown>),
 
-          // Demographics answers (flattened with question text as headers)
+          // Demographics answers (flattened with configurable headers)
           ...Object.entries(demographicsAnswers).reduce((acc, [key, value]) => {
             const questionText = getQuestionText(key, "demographics");
-            const header = `Demographics: ${questionText}`;
+            const header = useQuestionText 
+              ? `Demographics: ${questionText}` 
+              : `Demographics: ${key}`;
             console.log(`📝 Mapping demographics ${key} -> "${header}"`);
             acc[header] = Array.isArray(value) ? value.join(", ") : value;
             return acc;
           }, {} as Record<string, unknown>),
 
-          // Final answers (flattened with question text as headers)
+          // Final answers (flattened with configurable headers)
           ...Object.entries(finalAnswers).reduce((acc, [key, value]) => {
             const questionText = getQuestionText(key, "final");
-            const header = `Final: ${questionText}`;
+            const header = useQuestionText 
+              ? `Final: ${questionText}` 
+              : `Final: ${key}`;
             console.log(`📝 Mapping final ${key} -> "${header}"`);
             acc[header] = Array.isArray(value) ? value.join(", ") : value;
             return acc;
@@ -352,6 +363,9 @@ export async function GET() {
 
         return flattened;
       });
+
+      console.log(`📊 EXPORTING DATA with ${columnFormat} column headers`);
+      console.log(`📊 Total sessions to export: ${sessions.length}`);
 
       // Create Excel workbook
       const workbook = XLSX.utils.book_new();
@@ -443,6 +457,7 @@ export async function GET() {
               ? ((totalDislikes / totalSongs) * 100).toFixed(2)
               : 0,
         },
+        { metric: "Column Format", value: columnFormat },
       ];
 
       const summarySheet = XLSX.utils.json_to_sheet(summaryData);
@@ -454,12 +469,14 @@ export async function GET() {
         bookType: "xlsx",
       });
 
+      console.log(`✅ EXPORT COMPLETE: ${sessions.length} sessions exported with ${columnFormat} headers`);
+
       // Return Excel file
       return new NextResponse(excelBuffer, {
         headers: {
           "Content-Type":
             "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-          "Content-Disposition": `attachment; filename="serendipity-experiment-data-${
+          "Content-Disposition": `attachment; filename="serendipity-experiment-data-${columnFormat}-${
             new Date().toISOString().split("T")[0]
           }.xlsx"`,
         },
