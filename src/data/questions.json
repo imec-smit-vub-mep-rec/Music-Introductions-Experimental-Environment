@@ -1,123 +1,3611 @@
 {
   "onboarding": {
-    "id": "onboarding",
+    "id": "pre_list_onboarding",
     "title": "About You",
-    "questions": [
+    "intro": "Please answer the following questions about yourself. There are no right or wrong answers - we're interested in your personal preferences and experiences.",
+    "blocks": [
       {
-        "id": "gender",
-        "type": "multiple-choice",
-        "text": "What is your gender?",
-        "options": ["Male", "Female", "Non-binary", "Prefer not to say"],
-        "required": true
+        "id": "BL_8tSKZsMsPBrsCRE",
+        "title": "Imagination",
+        "description": "Imagination",
+        "questions": [
+          {
+            "id": "QID1",
+            "text": "I have a vivid imagination",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Vivid imagination"
+          },
+          {
+            "id": "QID13",
+            "text": "I enjoy wild flights of fantasy",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Fantasy enjoyment"
+          },
+          {
+            "id": "QID14",
+            "text": "I love to daydream",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Daydreaming"
+          },
+          {
+            "id": "QID15",
+            "text": "I like to get lost in thought",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Lost in thought"
+          },
+          {
+            "id": "QID16",
+            "text": "I spend time reflecting on things",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Reflection"
+          },
+          {
+            "id": "QID17",
+            "text": "I seldom daydream",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Seldom daydream"
+          },
+          {
+            "id": "QID18",
+            "text": "I do not have a good imagination",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Poor imagination"
+          },
+          {
+            "id": "QID19",
+            "text": "I seldom get lost in thoughts",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Seldom lost in thought"
+          },
+          {
+            "id": "QID20",
+            "text": "I have difficulty imagining things",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Difficulty imagining"
+          }
+        ]
       },
       {
-        "id": "age",
-        "type": "number",
-        "text": "What is your age?",
-        "placeholder": "Enter your age",
-        "min": 18,
-        "max": 100,
-        "required": true
+        "id": "BL_77cdnkEH5s8ZohM",
+        "title": "Cognitive engagement",
+        "description": "Cognitive engagement",
+        "questions": [
+          {
+            "id": "QID37",
+            "text": "I enjoy learning about the background or story behind a song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Song background"
+          },
+          {
+            "id": "QID38",
+            "text": "I'm interested in knowing more about the artists I listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Artist interest"
+          },
+          {
+            "id": "QID39",
+            "text": "I like to understand the cultural or historical context that shapes music",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Cultural context"
+          },
+          {
+            "id": "QID40",
+            "text": "I like discovering the meaning or inspiration behind songs",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Song meaning"
+          },
+          {
+            "id": "QID41",
+            "text": "I'm not particularly interested in learning about the artists I listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Not interested artists"
+          }
+        ]
       },
       {
-        "id": "music_frequency",
-        "type": "multiple-choice",
-        "text": "How often do you listen to music?",
-        "options": ["Daily", "Several times a week", "Weekly", "Monthly", "Rarely"],
-        "required": true
+        "id": "BL_3q3EMYWJ2nNwTmC",
+        "title": "GMSI",
+        "description": "GMSI",
+        "questions": [
+          {
+            "id": "QID42",
+            "text": "I don't spend much of my disposable income on music",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Music spending"
+          },
+          {
+            "id": "QID49",
+            "text": "I keep track of new music that I come across e.g. new artists or recordings",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Track new music"
+          },
+          {
+            "id": "QID51",
+            "text": "Music is kind of an addiction for me - I couldn't live without it",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Music addiction"
+          },
+          {
+            "id": "QID50",
+            "text": "I often read or search the internet for things related to music",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Music research"
+          },
+          {
+            "id": "QID6",
+            "text": "I listen attentively to music for ___ per day",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "0-15 min",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "15-30 min",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "30-60 min",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "60-90 min",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "2 hrs",
+                "value": "5"
+              },
+              {
+                "id": "6",
+                "text": "2-3 hrs",
+                "value": "6"
+              },
+              {
+                "id": "7",
+                "text": "4 hrs or more",
+                "value": "7"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Active engagement"
+          }
+        ]
       },
       {
-        "id": "favorite_genres",
-        "type": "checkbox",
-        "text": "Which genres do you typically enjoy? (Select all that apply)",
-        "options": ["Pop", "Hip-hop", "Rock", "Electronic", "Latin", "Jazz", "Classical", "Country", "R&B", "Other"],
-        "required": true
+        "id": "BL_5hCFV8fkImg8ucC",
+        "title": "Intellect",
+        "description": "Intellect",
+        "questions": [
+          {
+            "id": "QID21",
+            "text": "I like to solve complex problems",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Complex problems"
+          },
+          {
+            "id": "QID22",
+            "text": "I love to read challenging material",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Challenging reading"
+          },
+          {
+            "id": "QID23",
+            "text": "I have a rich vocabulary",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Rich vocabulary"
+          },
+          {
+            "id": "QID24",
+            "text": "I can handle a lot of information",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Information handling"
+          },
+          {
+            "id": "QID25",
+            "text": "I enjoy thinking about things",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Enjoy thinking"
+          },
+          {
+            "id": "QID26",
+            "text": "I am not interested in abstract ideas",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Not interested abstract"
+          },
+          {
+            "id": "QID27",
+            "text": "I avoid philosophical discussions",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Avoid philosophy"
+          },
+          {
+            "id": "QID28",
+            "text": "I have difficulty understanding abstract ideas",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Difficulty abstract"
+          },
+          {
+            "id": "QID29",
+            "text": "I am not interested in theoretical discussions",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Not interested theoretical"
+          },
+          {
+            "id": "QID30",
+            "text": "I avoid difficult reading material",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Avoid difficult reading"
+          }
+        ]
       },
       {
-        "id": "music_discovery",
-        "type": "multiple-choice",
-        "text": "How do you usually discover new music?",
-        "options": ["Streaming recommendations", "Friends", "Radio", "Social media", "Live events", "Other"],
-        "required": true
+        "id": "BL_0cFjF1tq9JoqlIW",
+        "title": "Emotional engagement",
+        "description": "Emotional engagement",
+        "questions": [
+          {
+            "id": "QID32",
+            "text": "I am able to talk about the emotions that a piece of music evokes (stimulates) in me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Emotional articulation"
+          },
+          {
+            "id": "QID33",
+            "text": "I often pick certain music to motivate or excite me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Music motivation"
+          },
+          {
+            "id": "QID34",
+            "text": "I sometimes choose music that can trigger shivers down my spine (that gives me goosebumps)",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Goosebumps music"
+          },
+          {
+            "id": "QID35",
+            "text": "Music can evoke my memories of past people and places",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Music memories"
+          },
+          {
+            "id": "QID36",
+            "text": "Pieces of music rarely evoke emotions for me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Rarely emotional"
+          }
+        ]
       }
-    ]
+    ],
+    "randomizeBlocks": true
+  },
+  "demographics": {
+    "id": "pre_list_demographics",
+    "title": "Demographics",
+    "intro": "",
+    "blocks": [
+      {
+        "id": "BL_9ERu4yij2IHXGXY",
+        "title": "Demographics",
+        "description": "Demographics",
+        "questions": [
+          {
+            "id": "QID10",
+            "text": "How do you describe yourself?",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Male",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Female",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Non-binary / third gender",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Prefer to self-describe",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Prefer not to say",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Gender"
+          },
+          {
+            "id": "QID11",
+            "text": "What is your year of birth?",
+            "type": "number",
+            "required": true,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Age",
+            "placeholder": "Please enter your response..."
+          },
+          {
+            "id": "QID1218898227",
+            "text": "In which country do you currently reside?",
+            "type": "searchableSelect",
+            "required": true,
+            "placeholder": "Search for your country...",
+            "choices": [
+              {
+                "id": "1",
+                "text": "Afghanistan",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Albania",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Algeria",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Andorra",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Angola",
+                "value": "5"
+              },
+              {
+                "id": "6",
+                "text": "Antigua and Barbuda",
+                "value": "6"
+              },
+              {
+                "id": "7",
+                "text": "Argentina",
+                "value": "7"
+              },
+              {
+                "id": "8",
+                "text": "Armenia",
+                "value": "8"
+              },
+              {
+                "id": "9",
+                "text": "Australia",
+                "value": "9"
+              },
+              {
+                "id": "10",
+                "text": "Austria",
+                "value": "10"
+              },
+              {
+                "id": "11",
+                "text": "Azerbaijan",
+                "value": "11"
+              },
+              {
+                "id": "12",
+                "text": "Bahamas",
+                "value": "12"
+              },
+              {
+                "id": "13",
+                "text": "Bahrain",
+                "value": "13"
+              },
+              {
+                "id": "14",
+                "text": "Bangladesh",
+                "value": "14"
+              },
+              {
+                "id": "15",
+                "text": "Barbados",
+                "value": "15"
+              },
+              {
+                "id": "16",
+                "text": "Belarus",
+                "value": "16"
+              },
+              {
+                "id": "17",
+                "text": "Belgium",
+                "value": "17"
+              },
+              {
+                "id": "18",
+                "text": "Belize",
+                "value": "18"
+              },
+              {
+                "id": "19",
+                "text": "Benin",
+                "value": "19"
+              },
+              {
+                "id": "20",
+                "text": "Bhutan",
+                "value": "20"
+              },
+              {
+                "id": "21",
+                "text": "Bolivia",
+                "value": "21"
+              },
+              {
+                "id": "22",
+                "text": "Bosnia and Herzegovina",
+                "value": "22"
+              },
+              {
+                "id": "23",
+                "text": "Botswana",
+                "value": "23"
+              },
+              {
+                "id": "24",
+                "text": "Brazil",
+                "value": "24"
+              },
+              {
+                "id": "25",
+                "text": "Brunei Darussalam",
+                "value": "25"
+              },
+              {
+                "id": "26",
+                "text": "Bulgaria",
+                "value": "26"
+              },
+              {
+                "id": "27",
+                "text": "Burkina Faso",
+                "value": "27"
+              },
+              {
+                "id": "28",
+                "text": "Burundi",
+                "value": "28"
+              },
+              {
+                "id": "29",
+                "text": "Cambodia",
+                "value": "29"
+              },
+              {
+                "id": "30",
+                "text": "Cameroon",
+                "value": "30"
+              },
+              {
+                "id": "31",
+                "text": "Canada",
+                "value": "31"
+              },
+              {
+                "id": "32",
+                "text": "Cape Verde",
+                "value": "32"
+              },
+              {
+                "id": "33",
+                "text": "Central African Republic",
+                "value": "33"
+              },
+              {
+                "id": "34",
+                "text": "Chad",
+                "value": "34"
+              },
+              {
+                "id": "35",
+                "text": "Chile",
+                "value": "35"
+              },
+              {
+                "id": "36",
+                "text": "China",
+                "value": "36"
+              },
+              {
+                "id": "37",
+                "text": "Colombia",
+                "value": "37"
+              },
+              {
+                "id": "38",
+                "text": "Comoros",
+                "value": "38"
+              },
+              {
+                "id": "39",
+                "text": "Congo, Republic of the...",
+                "value": "39"
+              },
+              {
+                "id": "40",
+                "text": "Costa Rica",
+                "value": "40"
+              },
+              {
+                "id": "41",
+                "text": "Côte d'Ivoire",
+                "value": "41"
+              },
+              {
+                "id": "42",
+                "text": "Croatia",
+                "value": "42"
+              },
+              {
+                "id": "43",
+                "text": "Cuba",
+                "value": "43"
+              },
+              {
+                "id": "44",
+                "text": "Cyprus",
+                "value": "44"
+              },
+              {
+                "id": "45",
+                "text": "Czech Republic",
+                "value": "45"
+              },
+              {
+                "id": "47",
+                "text": "Democratic Republic of the Congo",
+                "value": "47"
+              },
+              {
+                "id": "48",
+                "text": "Denmark",
+                "value": "48"
+              },
+              {
+                "id": "49",
+                "text": "Djibouti",
+                "value": "49"
+              },
+              {
+                "id": "50",
+                "text": "Dominica",
+                "value": "50"
+              },
+              {
+                "id": "51",
+                "text": "Dominican Republic",
+                "value": "51"
+              },
+              {
+                "id": "52",
+                "text": "Ecuador",
+                "value": "52"
+              },
+              {
+                "id": "53",
+                "text": "Egypt",
+                "value": "53"
+              },
+              {
+                "id": "54",
+                "text": "El Salvador",
+                "value": "54"
+              },
+              {
+                "id": "55",
+                "text": "Equatorial Guinea",
+                "value": "55"
+              },
+              {
+                "id": "56",
+                "text": "Eritrea",
+                "value": "56"
+              },
+              {
+                "id": "57",
+                "text": "Estonia",
+                "value": "57"
+              },
+              {
+                "id": "58",
+                "text": "Ethiopia",
+                "value": "58"
+              },
+              {
+                "id": "59",
+                "text": "Fiji",
+                "value": "59"
+              },
+              {
+                "id": "60",
+                "text": "Finland",
+                "value": "60"
+              },
+              {
+                "id": "61",
+                "text": "France",
+                "value": "61"
+              },
+              {
+                "id": "62",
+                "text": "Gabon",
+                "value": "62"
+              },
+              {
+                "id": "63",
+                "text": "Gambia",
+                "value": "63"
+              },
+              {
+                "id": "64",
+                "text": "Georgia",
+                "value": "64"
+              },
+              {
+                "id": "65",
+                "text": "Germany",
+                "value": "65"
+              },
+              {
+                "id": "66",
+                "text": "Ghana",
+                "value": "66"
+              },
+              {
+                "id": "67",
+                "text": "Greece",
+                "value": "67"
+              },
+              {
+                "id": "68",
+                "text": "Grenada",
+                "value": "68"
+              },
+              {
+                "id": "69",
+                "text": "Guatemala",
+                "value": "69"
+              },
+              {
+                "id": "70",
+                "text": "Guinea",
+                "value": "70"
+              },
+              {
+                "id": "71",
+                "text": "Guinea-Bissau",
+                "value": "71"
+              },
+              {
+                "id": "72",
+                "text": "Guyana",
+                "value": "72"
+              },
+              {
+                "id": "73",
+                "text": "Haiti",
+                "value": "73"
+              },
+              {
+                "id": "74",
+                "text": "Honduras",
+                "value": "74"
+              },
+              {
+                "id": "75",
+                "text": "Hong Kong (S.A.R.)",
+                "value": "75"
+              },
+              {
+                "id": "76",
+                "text": "Hungary",
+                "value": "76"
+              },
+              {
+                "id": "77",
+                "text": "Iceland",
+                "value": "77"
+              },
+              {
+                "id": "78",
+                "text": "India",
+                "value": "78"
+              },
+              {
+                "id": "79",
+                "text": "Indonesia",
+                "value": "79"
+              },
+              {
+                "id": "80",
+                "text": "Iran",
+                "value": "80"
+              },
+              {
+                "id": "81",
+                "text": "Iraq",
+                "value": "81"
+              },
+              {
+                "id": "82",
+                "text": "Ireland",
+                "value": "82"
+              },
+              {
+                "id": "83",
+                "text": "Israel",
+                "value": "83"
+              },
+              {
+                "id": "84",
+                "text": "Italy",
+                "value": "84"
+              },
+              {
+                "id": "85",
+                "text": "Jamaica",
+                "value": "85"
+              },
+              {
+                "id": "86",
+                "text": "Japan",
+                "value": "86"
+              },
+              {
+                "id": "87",
+                "text": "Jordan",
+                "value": "87"
+              },
+              {
+                "id": "88",
+                "text": "Kazakhstan",
+                "value": "88"
+              },
+              {
+                "id": "89",
+                "text": "Kenya",
+                "value": "89"
+              },
+              {
+                "id": "90",
+                "text": "Kiribati",
+                "value": "90"
+              },
+              {
+                "id": "91",
+                "text": "Kuwait",
+                "value": "91"
+              },
+              {
+                "id": "92",
+                "text": "Kyrgyzstan",
+                "value": "92"
+              },
+              {
+                "id": "93",
+                "text": "Lao People's Democratic Republic",
+                "value": "93"
+              },
+              {
+                "id": "94",
+                "text": "Latvia",
+                "value": "94"
+              },
+              {
+                "id": "95",
+                "text": "Lebanon",
+                "value": "95"
+              },
+              {
+                "id": "96",
+                "text": "Lesotho",
+                "value": "96"
+              },
+              {
+                "id": "97",
+                "text": "Liberia",
+                "value": "97"
+              },
+              {
+                "id": "98",
+                "text": "Libyan Arab Jamahiriya",
+                "value": "98"
+              },
+              {
+                "id": "99",
+                "text": "Liechtenstein",
+                "value": "99"
+              },
+              {
+                "id": "100",
+                "text": "Lithuania",
+                "value": "100"
+              },
+              {
+                "id": "101",
+                "text": "Luxembourg",
+                "value": "101"
+              },
+              {
+                "id": "102",
+                "text": "Madagascar",
+                "value": "102"
+              },
+              {
+                "id": "103",
+                "text": "Malawi",
+                "value": "103"
+              },
+              {
+                "id": "104",
+                "text": "Malaysia",
+                "value": "104"
+              },
+              {
+                "id": "105",
+                "text": "Maldives",
+                "value": "105"
+              },
+              {
+                "id": "106",
+                "text": "Mali",
+                "value": "106"
+              },
+              {
+                "id": "107",
+                "text": "Malta",
+                "value": "107"
+              },
+              {
+                "id": "108",
+                "text": "Marshall Islands",
+                "value": "108"
+              },
+              {
+                "id": "109",
+                "text": "Mauritania",
+                "value": "109"
+              },
+              {
+                "id": "110",
+                "text": "Mauritius",
+                "value": "110"
+              },
+              {
+                "id": "111",
+                "text": "Mexico",
+                "value": "111"
+              },
+              {
+                "id": "112",
+                "text": "Micronesia, Federated States of...",
+                "value": "112"
+              },
+              {
+                "id": "113",
+                "text": "Monaco",
+                "value": "113"
+              },
+              {
+                "id": "114",
+                "text": "Mongolia",
+                "value": "114"
+              },
+              {
+                "id": "115",
+                "text": "Montenegro",
+                "value": "115"
+              },
+              {
+                "id": "116",
+                "text": "Morocco",
+                "value": "116"
+              },
+              {
+                "id": "117",
+                "text": "Mozambique",
+                "value": "117"
+              },
+              {
+                "id": "118",
+                "text": "Myanmar",
+                "value": "118"
+              },
+              {
+                "id": "119",
+                "text": "Namibia",
+                "value": "119"
+              },
+              {
+                "id": "120",
+                "text": "Nauru",
+                "value": "120"
+              },
+              {
+                "id": "121",
+                "text": "Nepal",
+                "value": "121"
+              },
+              {
+                "id": "122",
+                "text": "Netherlands",
+                "value": "122"
+              },
+              {
+                "id": "123",
+                "text": "New Zealand",
+                "value": "123"
+              },
+              {
+                "id": "124",
+                "text": "Nicaragua",
+                "value": "124"
+              },
+              {
+                "id": "125",
+                "text": "Niger",
+                "value": "125"
+              },
+              {
+                "id": "126",
+                "text": "Nigeria",
+                "value": "126"
+              },
+              {
+                "id": "127",
+                "text": "North Korea",
+                "value": "127"
+              },
+              {
+                "id": "128",
+                "text": "Norway",
+                "value": "128"
+              },
+              {
+                "id": "129",
+                "text": "Oman",
+                "value": "129"
+              },
+              {
+                "id": "130",
+                "text": "Pakistan",
+                "value": "130"
+              },
+              {
+                "id": "131",
+                "text": "Palau",
+                "value": "131"
+              },
+              {
+                "id": "132",
+                "text": "Panama",
+                "value": "132"
+              },
+              {
+                "id": "133",
+                "text": "Papua New Guinea",
+                "value": "133"
+              },
+              {
+                "id": "134",
+                "text": "Paraguay",
+                "value": "134"
+              },
+              {
+                "id": "135",
+                "text": "Peru",
+                "value": "135"
+              },
+              {
+                "id": "136",
+                "text": "Philippines",
+                "value": "136"
+              },
+              {
+                "id": "137",
+                "text": "Poland",
+                "value": "137"
+              },
+              {
+                "id": "138",
+                "text": "Portugal",
+                "value": "138"
+              },
+              {
+                "id": "139",
+                "text": "Qatar",
+                "value": "139"
+              },
+              {
+                "id": "141",
+                "text": "Republic of Moldova",
+                "value": "141"
+              },
+              {
+                "id": "142",
+                "text": "Romania",
+                "value": "142"
+              },
+              {
+                "id": "143",
+                "text": "Russian Federation",
+                "value": "143"
+              },
+              {
+                "id": "144",
+                "text": "Rwanda",
+                "value": "144"
+              },
+              {
+                "id": "145",
+                "text": "Saint Kitts and Nevis",
+                "value": "145"
+              },
+              {
+                "id": "146",
+                "text": "Saint Lucia",
+                "value": "146"
+              },
+              {
+                "id": "147",
+                "text": "Saint Vincent and the Grenadines",
+                "value": "147"
+              },
+              {
+                "id": "148",
+                "text": "Samoa",
+                "value": "148"
+              },
+              {
+                "id": "149",
+                "text": "San Marino",
+                "value": "149"
+              },
+              {
+                "id": "150",
+                "text": "Sao Tome and Principe",
+                "value": "150"
+              },
+              {
+                "id": "151",
+                "text": "Saudi Arabia",
+                "value": "151"
+              },
+              {
+                "id": "152",
+                "text": "Senegal",
+                "value": "152"
+              },
+              {
+                "id": "153",
+                "text": "Serbia",
+                "value": "153"
+              },
+              {
+                "id": "154",
+                "text": "Seychelles",
+                "value": "154"
+              },
+              {
+                "id": "155",
+                "text": "Sierra Leone",
+                "value": "155"
+              },
+              {
+                "id": "156",
+                "text": "Singapore",
+                "value": "156"
+              },
+              {
+                "id": "157",
+                "text": "Slovakia",
+                "value": "157"
+              },
+              {
+                "id": "158",
+                "text": "Slovenia",
+                "value": "158"
+              },
+              {
+                "id": "159",
+                "text": "Solomon Islands",
+                "value": "159"
+              },
+              {
+                "id": "160",
+                "text": "Somalia",
+                "value": "160"
+              },
+              {
+                "id": "161",
+                "text": "South Africa",
+                "value": "161"
+              },
+              {
+                "id": "162",
+                "text": "South Korea",
+                "value": "162"
+              },
+              {
+                "id": "163",
+                "text": "Spain",
+                "value": "163"
+              },
+              {
+                "id": "164",
+                "text": "Sri Lanka",
+                "value": "164"
+              },
+              {
+                "id": "165",
+                "text": "Sudan",
+                "value": "165"
+              },
+              {
+                "id": "166",
+                "text": "Suriname",
+                "value": "166"
+              },
+              {
+                "id": "167",
+                "text": "Swaziland",
+                "value": "167"
+              },
+              {
+                "id": "168",
+                "text": "Sweden",
+                "value": "168"
+              },
+              {
+                "id": "169",
+                "text": "Switzerland",
+                "value": "169"
+              },
+              {
+                "id": "170",
+                "text": "Syrian Arab Republic",
+                "value": "170"
+              },
+              {
+                "id": "171",
+                "text": "Tajikistan",
+                "value": "171"
+              },
+              {
+                "id": "172",
+                "text": "Thailand",
+                "value": "172"
+              },
+              {
+                "id": "173",
+                "text": "The former Yugoslav Republic of Macedonia",
+                "value": "173"
+              },
+              {
+                "id": "174",
+                "text": "Timor-Leste",
+                "value": "174"
+              },
+              {
+                "id": "175",
+                "text": "Togo",
+                "value": "175"
+              },
+              {
+                "id": "176",
+                "text": "Tonga",
+                "value": "176"
+              },
+              {
+                "id": "177",
+                "text": "Trinidad and Tobago",
+                "value": "177"
+              },
+              {
+                "id": "178",
+                "text": "Tunisia",
+                "value": "178"
+              },
+              {
+                "id": "179",
+                "text": "Turkey",
+                "value": "179"
+              },
+              {
+                "id": "180",
+                "text": "Turkmenistan",
+                "value": "180"
+              },
+              {
+                "id": "181",
+                "text": "Tuvalu",
+                "value": "181"
+              },
+              {
+                "id": "182",
+                "text": "Uganda",
+                "value": "182"
+              },
+              {
+                "id": "183",
+                "text": "Ukraine",
+                "value": "183"
+              },
+              {
+                "id": "184",
+                "text": "United Arab Emirates",
+                "value": "184"
+              },
+              {
+                "id": "185",
+                "text": "United Kingdom of Great Britain and Northern Ireland",
+                "value": "185"
+              },
+              {
+                "id": "186",
+                "text": "United Republic of Tanzania",
+                "value": "186"
+              },
+              {
+                "id": "187",
+                "text": "United States of America",
+                "value": "187"
+              },
+              {
+                "id": "188",
+                "text": "Uruguay",
+                "value": "188"
+              },
+              {
+                "id": "189",
+                "text": "Uzbekistan",
+                "value": "189"
+              },
+              {
+                "id": "190",
+                "text": "Vanuatu",
+                "value": "190"
+              },
+              {
+                "id": "191",
+                "text": "Venezuela, Bolivarian Republic of...",
+                "value": "191"
+              },
+              {
+                "id": "192",
+                "text": "Viet Nam",
+                "value": "192"
+              },
+              {
+                "id": "193",
+                "text": "Yemen",
+                "value": "193"
+              },
+              {
+                "id": "194",
+                "text": "Zambia",
+                "value": "194"
+              },
+              {
+                "id": "195",
+                "text": "Zimbabwe",
+                "value": "195"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Country of residence"
+          }
+        ]
+      }
+    ],
+    "randomizeBlocks": false
   },
   "postListening": {
-    "id": "postListening",
+    "id": "post_item",
     "title": "Your Listening Experience",
-    "questions": [
+    "intro": "The following questions concern your experience of the part of the playlist you just listened to.",
+    "blocks": [
       {
-        "id": "enjoyment",
-        "type": "rating",
-        "text": "How much did you enjoy the music you just heard?",
-        "min": 1,
-        "max": 5,
-        "required": true
+        "id": "BL_9yGPnRDpLtebTam",
+        "title": "Serendipity",
+        "description": "Serendipity",
+        "questions": [
+          {
+            "id": "QID2",
+            "text": "The song differs from the type of music I normally listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Unusual"
+          },
+          {
+            "id": "QID3",
+            "text": "It sparked my interest",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Intriguing"
+          },
+          {
+            "id": "QID6",
+            "text": "I felt surprised",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Unexpected"
+          },
+          {
+            "id": "QID5",
+            "text": "I discovered something unexpected",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Unexpected"
+          },
+          {
+            "id": "QID4",
+            "text": "I discovered something that might have been more difficult to discover without the help of this app",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Difficult to disc"
+          },
+          {
+            "id": "QID7",
+            "text": "I experienced the song through a new perspective",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Uncovering"
+          },
+          {
+            "id": "QID8",
+            "text": "I noticed details I didn't notice before",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Uncovering"
+          },
+          {
+            "id": "QID12",
+            "text": "The song was new to me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Novelty"
+          },
+          {
+            "id": "QID13",
+            "text": "I was pleasantly surprised",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Pleasant surprise"
+          }
+        ]
       },
       {
-        "id": "familiarity",
-        "type": "rating",
-        "text": "How familiar were you with this genre?",
-        "min": 1,
-        "max": 5,
-        "required": true
+        "id": "BL_8e5CatzrIJNyBp4",
+        "title": "Intellectual engagement",
+        "description": "Intellectual engagement",
+        "questions": [
+          {
+            "id": "QID14",
+            "text": "I felt intellectually stimulated",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Intellectual stimulation"
+          },
+          {
+            "id": "QID23",
+            "text": "I reflected on how the music connects to broader ideas or culture",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Cultural reflection"
+          },
+          {
+            "id": "QID16",
+            "text": "I learned something new",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Learning"
+          }
+        ]
       },
       {
-        "id": "emotional_response",
-        "type": "multiple-choice",
-        "text": "What was your primary emotional response?",
-        "options": ["Happy", "Sad", "Energetic", "Calm", "Nostalgic", "Excited", "Relaxed", "Other"],
-        "required": true
+        "id": "BL_ahJIz9cMg6WoQU6",
+        "title": "Coping potential ",
+        "description": "Coping potential ",
+        "questions": [
+          {
+            "id": "QID24",
+            "text": "I feel like I get the song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Understanding"
+          },
+          {
+            "id": "QID26",
+            "text": "The song makes sense to me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Makes sense"
+          },
+          {
+            "id": "QID27",
+            "text": "I understand the song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Understanding"
+          },
+          {
+            "id": "QID28",
+            "text": "The song feels meaningful",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Meaningfulness"
+          },
+          {
+            "id": "QID29",
+            "text": "I feel like I get what the song is about",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Comprehension"
+          },
+          {
+            "id": "QID25",
+            "text": "I find the song confusing",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Confusion"
+          }
+        ]
       },
       {
-        "id": "would_listen_again",
-        "type": "multiple-choice",
-        "text": "Would you listen to this genre again?",
-        "options": ["Definitely", "Probably", "Maybe", "Probably not", "Definitely not"],
-        "required": true
+        "id": "BL_bQM98uv2Q4zLoJ8",
+        "title": "Perceived complexity",
+        "description": "Perceived complexity",
+        "questions": [
+          {
+            "id": "QID30",
+            "text": "The song is complicated",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Complexity"
+          },
+          {
+            "id": "QID31",
+            "text": "There is a lot to unpack in this song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Depth"
+          },
+          {
+            "id": "QID35",
+            "text": "The song has a lot of musical depth",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Musical depth"
+          },
+          {
+            "id": "QID34",
+            "text": "The song expresses a deep meaning",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Deep meaning"
+          },
+          {
+            "id": "QID32",
+            "text": "This song feels superficial to me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Superficiality"
+          },
+          {
+            "id": "QID33",
+            "text": "There isn't much depth to this song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Lack of depth"
+          }
+        ]
       },
       {
-        "id": "additional_thoughts",
-        "type": "text",
-        "text": "Any additional thoughts about the music you heard?",
-        "placeholder": "Share your thoughts...",
-        "required": false
+        "id": "BL_bDUxY4RAja7BLBc",
+        "title": "Transportation",
+        "description": "Transportation",
+        "questions": [
+          {
+            "id": "QID18",
+            "text": "I could picture myself in the scenes of the song",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Visual imagery"
+          },
+          {
+            "id": "QID19",
+            "text": "I was mentally involved in the song while listening",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Mental involvement"
+          },
+          {
+            "id": "QID20",
+            "text": "The song affected me emotionally",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Emotional impact"
+          },
+          {
+            "id": "QID21",
+            "text": "While listening to the song I had a vivid image of what it was about",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Vivid imagery"
+          }
+        ]
       }
-    ]
+    ],
+    "randomizeBlocks": true
   },
   "final": {
-    "id": "final",
-    "title": "Final Thoughts",
-    "questions": [
+    "id": "post_list",
+    "title": "Post list",
+    "intro": "The following questions concern your listening experience of the playlist in general.",
+    "blocks": [
       {
-        "id": "overall_experience",
-        "type": "rating",
-        "text": "How would you rate your overall experience with this experiment?",
-        "min": 1,
-        "max": 5,
-        "required": true
+        "id": "BL_41MXGbIIvfoJr0y",
+        "title": "Satisfaction",
+        "description": "Satisfaction",
+        "questions": [
+          {
+            "id": "QID4",
+            "text": "I enjoyed listening to the music",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Enjoyment"
+          },
+          {
+            "id": "QID5",
+            "text": "I would like to listen to more music from this genre",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Genre interest"
+          }
+        ]
       },
       {
-        "id": "genre_preference",
-        "type": "multiple-choice",
-        "text": "Which genre did you prefer overall?",
-        "options": ["The first genre", "The second genre", "Both equally", "Neither"],
-        "required": true
+        "id": "BL_3UyNXZtv9iSAAlw",
+        "title": "Other comments",
+        "description": "Other comments",
+        "questions": [
+          {
+            "id": "QID10",
+            "text": "Is there anything else you would like to share?",
+            "type": "textInput",
+            "required": true,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Additional comments",
+            "placeholder": "Please enter your response..."
+          }
+        ]
       },
       {
-        "id": "discovery_value",
-        "type": "multiple-choice",
-        "text": "Did this experiment help you discover new music you might enjoy?",
-        "options": ["Yes, definitely", "Yes, somewhat", "Maybe", "No, not really", "No, definitely not"],
-        "required": true
+        "id": "BL_6svc7jSyocggqBE",
+        "title": "Intro",
+        "description": "Intro",
+        "questions": [
+          {
+            "id": "QID11",
+            "text": "The following questions concern your listening experience of the playlist in general.",
+            "type": "textDisplay",
+            "required": false,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Intro"
+          }
+        ]
       },
       {
-        "id": "feedback",
-        "type": "text",
-        "text": "Any final feedback about this experiment?",
-        "placeholder": "Your feedback is valuable to us...",
-        "required": false
+        "id": "BL_5aIZEwJcIWABs10",
+        "title": "Serendipity",
+        "description": "Serendipity",
+        "questions": [
+          {
+            "id": "QID3",
+            "text": "The playlist was surprising to me",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Serendipity"
+          }
+        ]
+      },
+      {
+        "id": "BL_1B2E7llCriM5rw2",
+        "title": "Quality",
+        "description": "Quality",
+        "questions": [
+          {
+            "id": "QID6",
+            "text": "The spoken introductions were clearly articulated",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Clarity"
+          },
+          {
+            "id": "QID7",
+            "text": "The spoken introductions were of good audio quality",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Audio quality"
+          },
+          {
+            "id": "QID8",
+            "text": "The spoken introductions were interesting",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Interest"
+          },
+          {
+            "id": "QID9",
+            "text": "The spoken introductions were annoying",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Annoyance"
+          }
+        ]
       }
-    ]
+    ],
+    "randomizeBlocks": true
   }
 }

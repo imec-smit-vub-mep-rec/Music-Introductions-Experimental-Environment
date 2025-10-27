@@ -1,11 +1,12 @@
-export type QuestionType = 'multiple-choice' | 'checkbox' | 'text' | 'rating' | 'number';
+export type QuestionType = 'multipleChoice' | 'checkbox' | 'textInput' | 'textDisplay' | 'rating' | 'number' | 'likertGrid' | 'searchableSelect';
 
-export type AnswerValue = string | string[] | number | null | undefined;
+export type AnswerValue = string | string[] | number | Record<string, string> | null | undefined;
 
 export type ExperimentStep = 
   | 'welcome' 
   | 'terms' 
   | 'onboarding' 
+  | 'demographics'
   | 'genre-selection'
   | 'audio-song-1'
   | 'survey-song-1'
@@ -21,11 +22,23 @@ export interface Question {
   type: QuestionType;
   text: string;
   description?: string;
-  options?: string[];
+  choices?: Array<{
+    id: string;
+    text: string;
+    value: string;
+  }>;
+  answers?: Array<{
+    id: string;
+    text: string;
+    value: string;
+  }>;
   required?: boolean;
   min?: number;
   max?: number;
   placeholder?: string;
+  statements?: string[];
+  scale?: string[];
+  dataExportTag?: string;
 }
 
 export interface Song {
@@ -47,6 +60,13 @@ export interface Genre {
   pattern: string;
 }
 
+export interface QuestionBlock {
+  id: string;
+  title: string;
+  description?: string;
+  questions: Question[];
+}
+
 export interface ExperimentState {
   currentStep: number;
   responses: Record<string, AnswerValue>;
@@ -55,12 +75,15 @@ export interface ExperimentState {
   randomizedSongs: string[];
   randomizedIntroductions: string[];
   currentQuestionIndex: number;
+  currentBlockIndex: number;
 }
 
 export interface SurveyConfig {
   id: string;
   title: string;
-  questions: Question[];
+  intro?: string;
+  blocks: QuestionBlock[];
+  randomizeBlocks?: boolean;
 }
 
 export interface ExperimentConfig {
@@ -68,6 +91,7 @@ export interface ExperimentConfig {
   genres: Genre[];
   surveys: {
     onboarding: SurveyConfig;
+    demographics: SurveyConfig;
     postListening: SurveyConfig;
     final: SurveyConfig;
   };

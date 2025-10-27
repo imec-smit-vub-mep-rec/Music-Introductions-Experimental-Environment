@@ -1,11 +1,12 @@
 'use client';
 
 import { Input } from '@/components/ui/input';
+import { AnswerValue } from '@/lib/types';
 
 interface NumberInputProps {
   question: string;
-  value: number | null;
-  onChange: (value: number | null) => void;
+  value?: AnswerValue;
+  onChange: (value: AnswerValue) => void;
   placeholder?: string;
   required?: boolean;
   min?: number;
@@ -41,7 +42,7 @@ export function NumberInput({
       </h3>
       <Input
         type="number"
-        value={value || ''}
+        value={value as number || ''}
         onChange={handleChange}
         placeholder={placeholder}
         min={min}

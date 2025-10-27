@@ -26,13 +26,15 @@ export function RatingScale({
   const [selectedRating, setSelectedRating] = useState<number | null>(null);
   const range = Array.from({ length: max - min + 1 }, (_, i) => min + i);
 
-  // Reset confirmation state when value changes externally
+  // Reset state when question changes - this is the key fix
   useEffect(() => {
-    if (!value) {
-      setShowConfirmation(false);
-      setSelectedRating(null);
-    } else {
-      // Update selected rating when value is set externally
+    setShowConfirmation(false);
+    setSelectedRating(null);
+  }, [question]);
+
+  // Only update from external value if it's not empty
+  useEffect(() => {
+    if (value && value !== null && value !== undefined) {
       setSelectedRating(value as number);
     }
   }, [value]);
@@ -68,7 +70,7 @@ export function RatingScale({
               className={`
                 w-12 h-12 rounded-full border-2 flex items-center justify-center
                 transition-all duration-200 font-medium
-                ${(value as number) === rating 
+                ${selectedRating === rating 
                   ? 'bg-maize border-maize text-dark-purple' 
                   : 'border-dark-purple text-dark-purple hover:border-maize hover:bg-maize/20'
                 }

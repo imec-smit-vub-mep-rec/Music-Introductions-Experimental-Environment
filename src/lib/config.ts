@@ -7,15 +7,17 @@ export const experimentConfig: ExperimentConfig = {
   genres: songsData.genres,
   surveys: {
     onboarding: questionsData.onboarding as SurveyConfig,
+    demographics: questionsData.demographics as SurveyConfig,
     postListening: questionsData.postListening as SurveyConfig,
     final: questionsData.final as SurveyConfig,
   },
-};
+} as const;
 
 export const experimentSteps = [
   'welcome',
   'terms',
   'onboarding',
+  'demographics',
   'genre-selection',
   'audio-song-1',
   'survey-song-1',

@@ -73,11 +73,22 @@ export default function ExperimentPage() {
         return (
           <SurveyScreen
             key="onboarding-survey" // Force re-render for onboarding
-            questions={experimentConfig.surveys.onboarding.questions}
+            survey={experimentConfig.surveys.onboarding}
             responses={responses}
             onAnswer={saveResponse}
             onNext={nextStep}
-            title={experimentConfig.surveys.onboarding.title}
+          />
+        );
+
+      case 'demographics':
+        return (
+          <SurveyScreen
+            key="demographics-survey" // Force re-render for demographics
+            survey={experimentConfig.surveys.demographics}
+            responses={responses}
+            onAnswer={saveResponse}
+            onNext={nextStep}
+            onBack={prevStep}
           />
         );
 
@@ -138,7 +149,7 @@ export default function ExperimentPage() {
         return (
           <SurveyScreen
             key={`survey-${currentSongIndex}`} // Force re-render for each song
-            questions={experimentConfig.surveys.postListening.questions}
+            survey={experimentConfig.surveys.postListening}
             responses={responses}
             onAnswer={setLocalResponse}
             onNext={() => {
@@ -152,7 +163,6 @@ export default function ExperimentPage() {
               nextStep();
             }}
             onBack={prevStep}
-            title={`Your Experience - Song ${getCurrentSongNumber()}`}
           />
         );
 

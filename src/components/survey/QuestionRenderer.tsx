@@ -6,6 +6,8 @@ import { CheckboxQuestion } from './CheckboxQuestion';
 import { TextInput } from './TextInput';
 import { RatingScale } from './RatingScale';
 import { NumberInput } from './NumberInput';
+import { LikertGrid } from './LikertGrid';
+import { SearchableSelect } from './SearchableSelect';
 
 interface QuestionRendererProps {
   question: Question;
@@ -15,12 +17,13 @@ interface QuestionRendererProps {
 }
 
 export function QuestionRenderer({ question, value, onChange, onAutoNext }: QuestionRendererProps) {
+  console.log('question', question);  
   switch (question.type) {
-    case 'multiple-choice':
+    case 'multipleChoice':
       return (
         <MultipleChoice
           question={question.text}
-          options={question.options || []}
+          options={question.choices || []}
           value={value}
           onChange={onChange}
           required={question.required}
@@ -32,14 +35,14 @@ export function QuestionRenderer({ question, value, onChange, onAutoNext }: Ques
       return (
         <CheckboxQuestion
           question={question.text}
-          options={question.options || []}
+          options={question.choices || []}
           value={value as string[]}
           onChange={onChange}
           required={question.required}
         />
       );
     
-    case 'text':
+    case 'textInput':
       return (
         <TextInput
           question={question.text}
@@ -49,6 +52,13 @@ export function QuestionRenderer({ question, value, onChange, onAutoNext }: Ques
           multiline={true}
           required={question.required}
         />
+      );
+    
+    case 'textDisplay':
+      return (
+        <div className="text-center py-8">
+          <p className="text-lg text-dark-purple">{question.text}</p>
+        </div>
       );
     
     case 'rating':
@@ -74,6 +84,32 @@ export function QuestionRenderer({ question, value, onChange, onAutoNext }: Ques
           required={question.required}
           min={question.min}
           max={question.max}
+        />
+      );
+    
+    case 'likertGrid':
+      return (
+        <LikertGrid
+          question={question.text}
+          statements={question.statements || []}
+          scale={question.scale || []}
+          value={value}
+          onChange={onChange}
+          required={question.required}
+          onAutoNext={onAutoNext}
+        />
+      );
+    
+    case 'searchableSelect':
+      return (
+        <SearchableSelect
+          question={question.text}
+          options={question.choices || []}
+          value={value}
+          onChange={onChange}
+          required={question.required}
+          placeholder={question.placeholder}
+          onAutoNext={onAutoNext}
         />
       );
     

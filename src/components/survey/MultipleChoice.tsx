@@ -5,9 +5,14 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { AnswerValue } from '@/lib/types';
 
+interface Option {
+  id: string;
+  text: string;
+  value: string;
+}
 interface MultipleChoiceProps {
   question: string;
-  options: string[];
+  options: Option[];
   value?: AnswerValue;
   onChange: (value: AnswerValue) => void;
   required?: boolean;
@@ -25,13 +30,15 @@ export function MultipleChoice({
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  // Reset confirmation state when value changes externally
+  // Reset state when question changes - this is the key fix
   useEffect(() => {
-    if (!value) {
-      setShowConfirmation(false);
-      setSelectedOption(null);
-    } else {
-      // Update selected option when value is set externally
+    setShowConfirmation(false);
+    setSelectedOption(null);
+  }, [question]);
+
+  // Only update from external value if it's not empty
+  useEffect(() => {
+    if (value && value !== '') {
       setSelectedOption(value as string);
     }
   }, [value]);
@@ -56,30 +63,31 @@ export function MultipleChoice({
         {required && <span className="text-red-500 ml-1">*</span>}
       </h3>
       <RadioGroup 
-        value={value as string} 
+        key={question} // Force re-render for each new question
+        value={selectedOption || ""} // Use internal state, not external value
         onValueChange={handleValueChange}
         className="space-y-3"
       >
         {options.map((option) => (
-          <div key={option} className="flex items-center space-x-3">
+          <div key={option.id} className="flex items-center space-x-3">
             <RadioGroupItem 
-              value={option} 
-              id={option}
+              value={option.value} 
+              id={option.id}
               className={`border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize transition-all duration-200 ${
-                showConfirmation && selectedOption === option 
+                showConfirmation && selectedOption === option.value 
                   ? 'ring-2 ring-maize ring-offset-2 scale-105' 
                   : ''
               }`}
             />
             <Label 
-              htmlFor={option}
+              htmlFor={option.id}
               className={`text-dark-purple cursor-pointer flex-1 transition-all duration-200 ${
-                showConfirmation && selectedOption === option 
+                showConfirmation && selectedOption === option.value 
                   ? 'text-maize font-semibold' 
                   : ''
               }`}
             >
-              {option}
+              {option.text}
             </Label>
           </div>
         ))}

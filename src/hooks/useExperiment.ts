@@ -25,6 +25,7 @@ const initialState: ExperimentState = {
   randomizedSongs: [],
   randomizedIntroductions: [],
   currentQuestionIndex: 0,
+  currentBlockIndex: 0,
 };
 
 export function useExperiment() {
@@ -53,21 +54,18 @@ export function useExperiment() {
     if (existingSession) {
       sessionRef.current = existingSession;
       
-      // Load the session data into state
+      // Always start with empty responses on page load - don't load previous answers
+      // The session is only used for data persistence, not for loading previous state
+      console.log('🔄 PAGE LOAD - STARTING WITH EMPTY RESPONSES (SESSION EXISTS FOR PERSISTENCE)');
       setState(prev => ({
         ...prev,
-        selectedGenre: existingSession.chosen_genre,
-        randomizedSongs: existingSession.randomized_songs || [],
-        randomizedIntroductions: existingSession.randomized_introductions || [],
-        responses: existingSession.answers.onboarding,
+        responses: {}, // Always start with empty responses on page load
+        selectedGenre: null,
+        randomizedSongs: [],
+        randomizedIntroductions: [],
+        currentStep: 0,
+        currentQuestionIndex: 0,
       }));
-      
-      console.log('🔄 LOADED EXISTING SESSION:', {
-        session_id: existingSession.session_id,
-        chosen_genre: existingSession.chosen_genre,
-        onboarding_answers_count: Object.keys(existingSession.answers.onboarding).length,
-        timestamp: new Date().toISOString()
-      });
     } else {
       // No existing session - start fresh
       console.log('🆕 NO EXISTING SESSION - STARTING FRESH');
