@@ -24,6 +24,7 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [recaptchaValidating, setRecaptchaValidating] = useState(false);
   const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
     // Simulate loading spinner
@@ -32,11 +33,16 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   }, []);
 
   useEffect(() => {
-    if (consent1 && consent2 && recaptchaToken) {
+    if (consent1 && consent2 && recaptchaToken && !isProcessing) {
+      // Prevent multiple simultaneous processing
+      setIsProcessing(true);
+      
       // Check if user has already completed the experiment
       if (hasCompletedSession()) {
         // Redirect to thank you or show message
         console.log("User has already completed the experiment");
+        setIsProcessing(false);
+        return;
       }
 
       // Clear any existing session data and create new session
@@ -98,18 +104,22 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
             // Continue anyway - session is saved locally
           }
 
-          const timer = setTimeout(onAccept, 200);
+          const timer = setTimeout(() => {
+            onAccept();
+            setIsProcessing(false);
+          }, 200);
           return () => clearTimeout(timer);
         } catch (error) {
           console.error("Failed to create session or validate reCAPTCHA:", error);
           setRecaptchaError(error instanceof Error ? error.message : 'Validation failed');
           setRecaptchaValidating(false);
+          setIsProcessing(false);
         }
       };
 
       initializeSession();
     }
-  }, [consent1, consent2, recaptchaToken, onAccept]);
+  }, [consent1, consent2, recaptchaToken, onAccept, isProcessing]);
 
   if (loading) {
     return (
@@ -178,12 +188,13 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
               <Checkbox
                 id="consent1"
                 checked={consent1}
+                disabled={isProcessing}
                 onCheckedChange={(checked) => setConsent1(checked as boolean)}
                 className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize mt-1"
               />
               <Label
                 htmlFor="consent1"
-                className="text-dark-purple cursor-pointer leading-relaxed"
+                className={`text-dark-purple leading-relaxed ${isProcessing ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
               >
                 I understand that my participation is voluntary and I can
                 withdraw at any time.
@@ -194,12 +205,13 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
               <Checkbox
                 id="consent2"
                 checked={consent2}
+                disabled={isProcessing}
                 onCheckedChange={(checked) => setConsent2(checked as boolean)}
                 className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize mt-1"
               />
               <Label
                 htmlFor="consent2"
-                className="text-dark-purple cursor-pointer leading-relaxed"
+                className={`text-dark-purple leading-relaxed ${isProcessing ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
               >
                 I have read and agree with the informed consent document.
               </Label>

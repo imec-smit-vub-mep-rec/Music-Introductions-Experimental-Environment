@@ -139,6 +139,82 @@ export function useExperiment() {
         return prev; // Don't change state
       }
       
+      // Prevent skipping onboarding step - ensure onboarding is completed before moving to demographics
+      if (currentStepName === 'terms' && newStepName === 'demographics') {
+        console.warn('⚠️ CANNOT SKIP ONBOARDING: Must complete onboarding before demographics', {
+          current_step: currentStepName,
+          attempted_next_step: newStepName,
+          timestamp: new Date().toISOString()
+        });
+        return prev; // Don't change state - stay on terms
+      }
+      
+      // Prevent skipping demographics step - ensure demographics is completed before genre selection
+      if (currentStepName === 'onboarding' && newStepName === 'genre-selection') {
+        console.warn('⚠️ CANNOT SKIP DEMOGRAPHICS: Must complete demographics before genre selection', {
+          current_step: currentStepName,
+          attempted_next_step: newStepName,
+          timestamp: new Date().toISOString()
+        });
+        return prev; // Don't change state - stay on onboarding
+      }
+      
+      // Additional validation: Check if onboarding survey is actually completed before allowing progression
+      if (currentStepName === 'onboarding' && newStepName === 'demographics') {
+        const currentSession = getCurrentSession();
+        if (currentSession && currentSession.answers.onboarding) {
+          const onboardingAnswers = currentSession.answers.onboarding;
+          const onboardingQuestions = experimentConfig.surveys.onboarding.blocks.flatMap(block => 
+            block.questions.filter(q => q.required)
+          );
+          
+          // Check if all required onboarding questions have been answered
+          const allRequiredAnswered = onboardingQuestions.every(question => {
+            const answer = onboardingAnswers[question.id];
+            return answer !== undefined && answer !== null && answer !== '';
+          });
+          
+          if (!allRequiredAnswered) {
+            console.warn('⚠️ CANNOT PROCEED FROM ONBOARDING: Not all required questions answered', {
+              current_step: currentStepName,
+              attempted_next_step: newStepName,
+              answered_questions: Object.keys(onboardingAnswers).length,
+              required_questions: onboardingQuestions.length,
+              timestamp: new Date().toISOString()
+            });
+            return prev; // Don't change state - stay on onboarding
+          }
+        }
+      }
+      
+      // Additional validation: Check if demographics survey is actually completed before allowing progression
+      if (currentStepName === 'demographics' && newStepName === 'genre-selection') {
+        const currentSession = getCurrentSession();
+        if (currentSession && currentSession.answers.demographics) {
+          const demographicsAnswers = currentSession.answers.demographics;
+          const demographicsQuestions = experimentConfig.surveys.demographics.blocks.flatMap(block => 
+            block.questions.filter(q => q.required)
+          );
+          
+          // Check if all required demographics questions have been answered
+          const allRequiredAnswered = demographicsQuestions.every(question => {
+            const answer = demographicsAnswers[question.id];
+            return answer !== undefined && answer !== null && answer !== '';
+          });
+          
+          if (!allRequiredAnswered) {
+            console.warn('⚠️ CANNOT PROCEED FROM DEMOGRAPHICS: Not all required questions answered', {
+              current_step: currentStepName,
+              attempted_next_step: newStepName,
+              answered_questions: Object.keys(demographicsAnswers).length,
+              required_questions: demographicsQuestions.length,
+              timestamp: new Date().toISOString()
+            });
+            return prev; // Don't change state - stay on demographics
+          }
+        }
+      }
+      
       // Auto-increment song index when moving to next audio step
       let newSongIndex = prev.currentSongIndex;
       if (newStepName === 'audio-song-2' && prev.currentSongIndex === 0) {
