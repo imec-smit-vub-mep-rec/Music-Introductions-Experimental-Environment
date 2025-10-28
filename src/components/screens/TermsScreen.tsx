@@ -1,10 +1,15 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { ExperimentLayout } from '@/components/layout/ExperimentLayout';
-import { createNewSession, saveSession, hasCompletedSession, clearAllSessionData } from '@/lib/session';
+import { useState, useEffect } from "react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { ExperimentLayout } from "@/components/layout/ExperimentLayout";
+import {
+  createNewSession,
+  saveSession,
+  hasCompletedSession,
+  clearAllSessionData,
+} from "@/lib/session";
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -26,35 +31,35 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
       // Check if user has already completed the experiment
       if (hasCompletedSession()) {
         // Redirect to thank you or show message
-        console.log('User has already completed the experiment');
+        console.log("User has already completed the experiment");
       }
-      
+
       // Clear any existing session data and create new session
       const initializeSession = async () => {
         try {
           // Clear ALL existing session data (localStorage + database)
           await clearAllSessionData();
-          
+
           // Force a small delay to ensure everything is cleared
-          await new Promise(resolve => setTimeout(resolve, 200));
-          
+          await new Promise((resolve) => setTimeout(resolve, 200));
+
           const session = await createNewSession();
           saveSession(session);
-          
-          console.log('🆕 NEW SESSION CREATED ON TERMS ACCEPTANCE:', {
+
+          console.log("🆕 NEW SESSION CREATED ON TERMS ACCEPTANCE:", {
             session_id: session.session_id,
             group: session.group,
             onboarding_answers: Object.keys(session.answers.onboarding).length,
-            timestamp: new Date().toISOString()
+            timestamp: new Date().toISOString(),
           });
-          
+
           const timer = setTimeout(onAccept, 200);
           return () => clearTimeout(timer);
         } catch (error) {
-          console.error('Failed to create session:', error);
+          console.error("Failed to create session:", error);
         }
       };
-      
+
       initializeSession();
     }
   }, [consent1, consent2, onAccept]);
@@ -75,42 +80,70 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
         <div className="w-full max-w-md space-y-8">
           {/* Privacy Card */}
           <div className="bg-ultra-violet/10 rounded-2xl p-6 border border-ultra-violet/20">
-            <h2 className="text-2xl font-bold text-dark-purple mb-4">Privacy first</h2>
-            <p className="text-dark-purple/80 leading-relaxed">
-              Your participation in this experiment is completely anonymous. 
-              We only collect your responses to help us understand music discovery patterns.
-            </p>
+            <h2 className="text-2xl font-bold text-dark-purple mb-4">
+              Privacy first
+            </h2>
+            <p className="text-dark-purple/80 leading-relaxed"></p>
+            Please read the informed consent document carefully and check the
+            boxes below to indicate that you have read and agree with the
+            document.
+            <div className="mt-4">
+                <ul className="list-disc list-inside">
+                  <li>
+                  English version:{" "}
+                  <a
+                    href="/data/ic/informed_consent_en.pdf"
+                    target="_blank"
+                    className="text-dark-purple/80 underline"
+                  >
+                    Informed Consent Document
+                  </a>
+
+                  </li>
+                  <li>
+                    Dutch version:{" "}
+                  <a
+                    href="/data/ic/informed_consent_nl.pdf"
+                    target="_blank"
+                    className="text-dark-purple/80 underline"
+                  >
+                    Informed Consent Document (Nederlands)
+                  </a>
+                  </li>
+                </ul>
+              </div>
           </div>
 
           {/* Consent Checkboxes */}
           <div className="space-y-4">
             <div className="flex items-start space-x-3">
-              <Checkbox 
+              <Checkbox
                 id="consent1"
                 checked={consent1}
                 onCheckedChange={(checked) => setConsent1(checked as boolean)}
                 className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize mt-1"
               />
-              <Label 
+              <Label
                 htmlFor="consent1"
                 className="text-dark-purple cursor-pointer leading-relaxed"
               >
-                I understand that my participation is voluntary and I can withdraw at any time.
+                I understand that my participation is voluntary and I can
+                withdraw at any time.
               </Label>
             </div>
 
             <div className="flex items-start space-x-3">
-              <Checkbox 
+              <Checkbox
                 id="consent2"
                 checked={consent2}
                 onCheckedChange={(checked) => setConsent2(checked as boolean)}
                 className="border-dark-purple data-[state=checked]:bg-maize data-[state=checked]:border-maize mt-1"
               />
-              <Label 
+              <Label
                 htmlFor="consent2"
                 className="text-dark-purple cursor-pointer leading-relaxed"
               >
-                I consent to the use of my anonymous responses for research purposes.
+                I have read and agree with the informed consent document.
               </Label>
             </div>
           </div>
