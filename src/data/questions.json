@@ -3384,29 +3384,12 @@
         ]
       },
       {
-        "id": "BL_3UyNXZtv9iSAAlw",
-        "title": "Other comments",
-        "description": "Other comments",
-        "questions": [
-          {
-            "id": "67_pl_oc_1",
-            "text": "Is there anything else you would like to share?",
-            "type": "textInput",
-            "required": false,
-            "choices": [],
-            "answers": [],
-            "dataExportTag": "Additional comments",
-            "placeholder": "Please enter your response..."
-          }
-        ]
-      },
-      {
         "id": "BL_5aIZEwJcIWABs10",
         "title": "Serendipity",
         "description": "Serendipity",
         "questions": [
           {
-            "id": "68_pl_se_1",
+            "id": "67_pl_se_1",
             "text": "The playlist was surprising to me",
             "type": "multipleChoice",
             "required": true,
@@ -3448,7 +3431,7 @@
         "description": "Quality",
         "questions": [
           {
-            "id": "69_pl_qu_1",
+            "id": "68_pl_qu_1",
             "text": "The spoken introductions were clearly articulated",
             "type": "multipleChoice",
             "required": true,
@@ -3483,7 +3466,7 @@
             "dataExportTag": "Clarity"
           },
           {
-            "id": "70_pl_qu_2",
+            "id": "69_pl_qu_2",
             "text": "The spoken introductions were of good audio quality",
             "type": "multipleChoice",
             "required": true,
@@ -3518,7 +3501,7 @@
             "dataExportTag": "Audio quality"
           },
           {
-            "id": "71_pl_qu_3",
+            "id": "70_pl_qu_3",
             "text": "The spoken introductions were interesting",
             "type": "multipleChoice",
             "required": true,
@@ -3553,7 +3536,7 @@
             "dataExportTag": "Interest"
           },
           {
-            "id": "72_pl_qu_4",
+            "id": "71_pl_qu_4",
             "text": "The spoken introductions were annoying",
             "type": "multipleChoice",
             "required": true,
@@ -3588,8 +3571,25 @@
             "dataExportTag": "Annoyance"
           }
         ]
+      },
+      {
+        "id": "BL_3UyNXZtv9iSAAlw",
+        "title": "Other comments",
+        "description": "Other comments",
+        "questions": [
+          {
+            "id": "72_pl_oc_1",
+            "text": "Is there anything else you would like to share?",
+            "type": "textInput",
+            "required": false,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Additional comments",
+            "placeholder": "Please enter your response..."
+          }
+        ]
       }
     ],
-    "randomizeBlocks": true
+    "randomizeBlocks": false
   }
 }
