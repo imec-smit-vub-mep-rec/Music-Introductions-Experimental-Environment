@@ -28,6 +28,12 @@ The experiment is structured as follows:
 6. **Qualtrics survey** - Final questionnaire with all experiment data passed via URL parameters
 7. **Thank you screen**
 
+## Reference tracking
+?ref=value is used to track the source of the user. This is used to track the source of the user and to track the effectiveness of the different sources.
+Examples:
+?ref=vub_students
+?ref=prolific
+
 ### Introduction Styles
 - `no_introduction`: No spoken explanation
 - `informative_introduction`: Introduction for users familiar with the genre
@@ -55,7 +61,7 @@ The experiment is structured as follows:
 ## Getting Started
 
 1. Clone the repository
-2. Run `npm install` to install the dependencies
+2. Run `pnpm install` to install the dependencies
 3. Copy `.env.example` to `.env.local` and configure your Qualtrics URL:
    ```
    NEXT_PUBLIC_QUALTRICS_URL=https://your-qualtrics-instance.com/jfe/form/SV_xxx

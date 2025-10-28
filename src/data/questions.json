@@ -1290,12 +1290,558 @@
           {
             "id": "35_dem_2",
             "text": "What is your year of birth?",
-            "type": "number",
+            "type": "searchableSelect",
             "required": true,
-            "choices": [],
+            "choices": [
+              {
+                "id": "1900",
+                "text": "1900",
+                "value": "1900"
+              },
+              {
+                "id": "1901",
+                "text": "1901",
+                "value": "1901"
+              },
+              {
+                "id": "1902",
+                "text": "1902",
+                "value": "1902"
+              },
+              {
+                "id": "1903",
+                "text": "1903",
+                "value": "1903"
+              },
+              {
+                "id": "1904",
+                "text": "1904",
+                "value": "1904"
+              },
+              {
+                "id": "1905",
+                "text": "1905",
+                "value": "1905"
+              },
+              {
+                "id": "1906",
+                "text": "1906",
+                "value": "1906"
+              },
+              {
+                "id": "1907",
+                "text": "1907",
+                "value": "1907"
+              },
+              {
+                "id": "1908",
+                "text": "1908",
+                "value": "1908"
+              },
+              {
+                "id": "1909",
+                "text": "1909",
+                "value": "1909"
+              },
+              {
+                "id": "1910",
+                "text": "1910",
+                "value": "1910"
+              },
+              {
+                "id": "1911",
+                "text": "1911",
+                "value": "1911"
+              },
+              {
+                "id": "1912",
+                "text": "1912",
+                "value": "1912"
+              },
+              {
+                "id": "1913",
+                "text": "1913",
+                "value": "1913"
+              },
+              {
+                "id": "1914",
+                "text": "1914",
+                "value": "1914"
+              },
+              {
+                "id": "1915",
+                "text": "1915",
+                "value": "1915"
+              },
+              {
+                "id": "1916",
+                "text": "1916",
+                "value": "1916"
+              },
+              {
+                "id": "1917",
+                "text": "1917",
+                "value": "1917"
+              },
+              {
+                "id": "1918",
+                "text": "1918",
+                "value": "1918"
+              },
+              {
+                "id": "1919",
+                "text": "1919",
+                "value": "1919"
+              },
+              {
+                "id": "1920",
+                "text": "1920",
+                "value": "1920"
+              },
+              {
+                "id": "1921",
+                "text": "1921",
+                "value": "1921"
+              },
+              {
+                "id": "1922",
+                "text": "1922",
+                "value": "1922"
+              },
+              {
+                "id": "1923",
+                "text": "1923",
+                "value": "1923"
+              },
+              {
+                "id": "1924",
+                "text": "1924",
+                "value": "1924"
+              },
+              {
+                "id": "1925",
+                "text": "1925",
+                "value": "1925"
+              },
+              {
+                "id": "1926",
+                "text": "1926",
+                "value": "1926"
+              },
+              {
+                "id": "1927",
+                "text": "1927",
+                "value": "1927"
+              },
+              {
+                "id": "1928",
+                "text": "1928",
+                "value": "1928"
+              },
+              {
+                "id": "1929",
+                "text": "1929",
+                "value": "1929"
+              },
+              {
+                "id": "1930",
+                "text": "1930",
+                "value": "1930"
+              },
+              {
+                "id": "1931",
+                "text": "1931",
+                "value": "1931"
+              },
+              {
+                "id": "1932",
+                "text": "1932",
+                "value": "1932"
+              },
+              {
+                "id": "1933",
+                "text": "1933",
+                "value": "1933"
+              },
+              {
+                "id": "1934",
+                "text": "1934",
+                "value": "1934"
+              },
+              {
+                "id": "1935",
+                "text": "1935",
+                "value": "1935"
+              },
+              {
+                "id": "1936",
+                "text": "1936",
+                "value": "1936"
+              },
+              {
+                "id": "1937",
+                "text": "1937",
+                "value": "1937"
+              },
+              {
+                "id": "1938",
+                "text": "1938",
+                "value": "1938"
+              },
+              {
+                "id": "1939",
+                "text": "1939",
+                "value": "1939"
+              },
+              {
+                "id": "1940",
+                "text": "1940",
+                "value": "1940"
+              },
+              {
+                "id": "1941",
+                "text": "1941",
+                "value": "1941"
+              },
+              {
+                "id": "1942",
+                "text": "1942",
+                "value": "1942"
+              },
+              {
+                "id": "1943",
+                "text": "1943",
+                "value": "1943"
+              },
+              {
+                "id": "1944",
+                "text": "1944",
+                "value": "1944"
+              },
+              {
+                "id": "1945",
+                "text": "1945",
+                "value": "1945"
+              },
+              {
+                "id": "1946",
+                "text": "1946",
+                "value": "1946"
+              },
+              {
+                "id": "1947",
+                "text": "1947",
+                "value": "1947"
+              },
+              {
+                "id": "1948",
+                "text": "1948",
+                "value": "1948"
+              },
+              {
+                "id": "1949",
+                "text": "1949",
+                "value": "1949"
+              },
+              {
+                "id": "1950",
+                "text": "1950",
+                "value": "1950"
+              },
+              {
+                "id": "1951",
+                "text": "1951",
+                "value": "1951"
+              },
+              {
+                "id": "1952",
+                "text": "1952",
+                "value": "1952"
+              },
+              {
+                "id": "1953",
+                "text": "1953",
+                "value": "1953"
+              },
+              {
+                "id": "1954",
+                "text": "1954",
+                "value": "1954"
+              },
+              {
+                "id": "1955",
+                "text": "1955",
+                "value": "1955"
+              },
+              {
+                "id": "1956",
+                "text": "1956",
+                "value": "1956"
+              },
+              {
+                "id": "1957",
+                "text": "1957",
+                "value": "1957"
+              },
+              {
+                "id": "1958",
+                "text": "1958",
+                "value": "1958"
+              },
+              {
+                "id": "1959",
+                "text": "1959",
+                "value": "1959"
+              },
+              {
+                "id": "1960",
+                "text": "1960",
+                "value": "1960"
+              },
+              {
+                "id": "1961",
+                "text": "1961",
+                "value": "1961"
+              },
+              {
+                "id": "1962",
+                "text": "1962",
+                "value": "1962"
+              },
+              {
+                "id": "1963",
+                "text": "1963",
+                "value": "1963"
+              },
+              {
+                "id": "1964",
+                "text": "1964",
+                "value": "1964"
+              },
+              {
+                "id": "1965",
+                "text": "1965",
+                "value": "1965"
+              },
+              {
+                "id": "1966",
+                "text": "1966",
+                "value": "1966"
+              },
+              {
+                "id": "1967",
+                "text": "1967",
+                "value": "1967"
+              },
+              {
+                "id": "1968",
+                "text": "1968",
+                "value": "1968"
+              },
+              {
+                "id": "1969",
+                "text": "1969",
+                "value": "1969"
+              },
+              {
+                "id": "1970",
+                "text": "1970",
+                "value": "1970"
+              },
+              {
+                "id": "1971",
+                "text": "1971",
+                "value": "1971"
+              },
+              {
+                "id": "1972",
+                "text": "1972",
+                "value": "1972"
+              },
+              {
+                "id": "1973",
+                "text": "1973",
+                "value": "1973"
+              },
+              {
+                "id": "1974",
+                "text": "1974",
+                "value": "1974"
+              },
+              {
+                "id": "1975",
+                "text": "1975",
+                "value": "1975"
+              },
+              {
+                "id": "1976",
+                "text": "1976",
+                "value": "1976"
+              },
+              {
+                "id": "1977",
+                "text": "1977",
+                "value": "1977"
+              },
+              {
+                "id": "1978",
+                "text": "1978",
+                "value": "1978"
+              },
+              {
+                "id": "1979",
+                "text": "1979",
+                "value": "1979"
+              },
+              {
+                "id": "1980",
+                "text": "1980",
+                "value": "1980"
+              },
+              {
+                "id": "1981",
+                "text": "1981",
+                "value": "1981"
+              },
+              {
+                "id": "1982",
+                "text": "1982",
+                "value": "1982"
+              },
+              {
+                "id": "1983",
+                "text": "1983",
+                "value": "1983"
+              },
+              {
+                "id": "1984",
+                "text": "1984",
+                "value": "1984"
+              },
+              {
+                "id": "1985",
+                "text": "1985",
+                "value": "1985"
+              },
+              {
+                "id": "1986",
+                "text": "1986",
+                "value": "1986"
+              },
+              {
+                "id": "1987",
+                "text": "1987",
+                "value": "1987"
+              },
+              {
+                "id": "1988",
+                "text": "1988",
+                "value": "1988"
+              },
+              {
+                "id": "1989",
+                "text": "1989",
+                "value": "1989"
+              },
+              {
+                "id": "1990",
+                "text": "1990",
+                "value": "1990"
+              },
+              {
+                "id": "1991",
+                "text": "1991",
+                "value": "1991"
+              },
+              {
+                "id": "1992",
+                "text": "1992",
+                "value": "1992"
+              },
+              {
+                "id": "1993",
+                "text": "1993",
+                "value": "1993"
+              },
+              {
+                "id": "1994",
+                "text": "1994",
+                "value": "1994"
+              },
+              {
+                "id": "1995",
+                "text": "1995",
+                "value": "1995"
+              },
+              {
+                "id": "1996",
+                "text": "1996",
+                "value": "1996"
+              },
+              {
+                "id": "1997",
+                "text": "1997",
+                "value": "1997"
+              },
+              {
+                "id": "1998",
+                "text": "1998",
+                "value": "1998"
+              },
+              {
+                "id": "1999",
+                "text": "1999",
+                "value": "1999"
+              },
+              {
+                "id": "2000",
+                "text": "2000",
+                "value": "2000"
+              },
+              {
+                "id": "2001",
+                "text": "2001",
+                "value": "2001"
+              },
+              {
+                "id": "2002",
+                "text": "2002",
+                "value": "2002"
+              },
+              {
+                "id": "2003",
+                "text": "2003",
+                "value": "2003"
+              },
+              {
+                "id": "2004",
+                "text": "2004",
+                "value": "2004"
+              },
+              {
+                "id": "2005",
+                "text": "2005",
+                "value": "2005"
+              },
+              {
+                "id": "2006",
+                "text": "2006",
+                "value": "2006"
+              },
+              {
+                "id": "2007",
+                "text": "2007",
+                "value": "2007"
+              },
+              {
+                "id": "2008",
+                "text": "2008",
+                "value": "2008"
+              }
+            ],
             "answers": [],
             "dataExportTag": "Age",
-            "placeholder": "Please enter your response..."
+            "placeholder": "Search for your birth year..."
           },
           {
             "id": "36_dem_3",
@@ -2394,6 +2940,41 @@
             "dataExportTag": "Unexpected"
           },
           {
+            "id": "attention_check_1",
+            "text": "Indicate 'Strongly disagree' to continue",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Attention check 1"
+          },
+          {
             "id": "40_pi_se_4",
             "text": "I discovered something unexpected",
             "type": "multipleChoice",
@@ -3380,6 +3961,41 @@
             ],
             "answers": [],
             "dataExportTag": "Genre interest"
+          },
+          {
+            "id": "attention_check_2",
+            "text": "Indicate 'Strongly agree' to continue",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Somewhat disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neither agree nor disagree",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Somewhat agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Attention check 2"
           }
         ]
       },

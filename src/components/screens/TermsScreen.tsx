@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { ExperimentLayout } from "@/components/layout/ExperimentLayout";
+import { RecaptchaWrapper } from "@/components/RecaptchaWrapper";
 import {
   createNewSession,
   saveSession,
   hasCompletedSession,
   clearAllSessionData,
 } from "@/lib/session";
+import { validateRecaptcha } from "@/lib/recaptcha";
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -19,6 +21,9 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   const [consent1, setConsent1] = useState(false);
   const [consent2, setConsent2] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const [recaptchaValidating, setRecaptchaValidating] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
 
   useEffect(() => {
     // Simulate loading spinner
@@ -27,7 +32,7 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   }, []);
 
   useEffect(() => {
-    if (consent1 && consent2) {
+    if (consent1 && consent2 && recaptchaToken) {
       // Check if user has already completed the experiment
       if (hasCompletedSession()) {
         // Redirect to thank you or show message
@@ -37,6 +42,20 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
       // Clear any existing session data and create new session
       const initializeSession = async () => {
         try {
+          setRecaptchaValidating(true);
+          setRecaptchaError(null);
+
+          // Validate reCAPTCHA token
+          console.log('🛡️ reCAPTCHA: Starting validation in TermsScreen', {
+            hasToken: !!recaptchaToken,
+            tokenLength: recaptchaToken?.length,
+            timestamp: new Date().toISOString()
+          });
+          
+          await validateRecaptcha(recaptchaToken, 'consent_form');
+          
+          console.log('🛡️ reCAPTCHA: Validation completed successfully in TermsScreen');
+
           // Clear ALL existing session data (localStorage + database)
           await clearAllSessionData();
 
@@ -56,13 +75,15 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
           const timer = setTimeout(onAccept, 200);
           return () => clearTimeout(timer);
         } catch (error) {
-          console.error("Failed to create session:", error);
+          console.error("Failed to create session or validate reCAPTCHA:", error);
+          setRecaptchaError(error instanceof Error ? error.message : 'Validation failed');
+          setRecaptchaValidating(false);
         }
       };
 
       initializeSession();
     }
-  }, [consent1, consent2, onAccept]);
+  }, [consent1, consent2, recaptchaToken, onAccept]);
 
   if (loading) {
     return (
@@ -78,6 +99,17 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
     <ExperimentLayout background="light">
       <div className="min-h-screen flex items-center justify-center px-6">
         <div className="w-full max-w-md space-y-8">
+          {/* reCAPTCHA Wrapper */}
+          <RecaptchaWrapper 
+            action="consent_form" 
+            onTokenGenerated={(token) => {
+              console.log('🛡️ reCAPTCHA: Token received in TermsScreen', {
+                tokenLength: token.length,
+                timestamp: new Date().toISOString()
+              });
+              setRecaptchaToken(token);
+            }}
+          />
           {/* Privacy Card */}
           <div className="bg-ultra-violet/10 rounded-2xl p-6 border border-ultra-violet/20">
             <h2 className="text-2xl font-bold text-dark-purple mb-4">
@@ -149,8 +181,26 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
           </div>
 
           {consent1 && consent2 && (
-            <div className="text-center">
-              <p className="text-dark-purple/70">Thank you! Proceeding...</p>
+            <div className="text-center space-y-2">
+              {!recaptchaToken && (
+                <p className="text-dark-purple/70">Please wait while we verify you&apos;re human...</p>
+              )}
+              {recaptchaToken && !recaptchaValidating && !recaptchaError && (
+                <p className="text-dark-purple/70">Thank you! Proceeding...</p>
+              )}
+              {recaptchaValidating && (
+                <div className="flex items-center justify-center space-x-2">
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-ultra-violet"></div>
+                  <p className="text-dark-purple/70">Validating...</p>
+                </div>
+              )}
+              {recaptchaError && (
+                <div className="bg-red-100 border border-red-300 rounded-lg p-3">
+                  <p className="text-red-700 text-sm">
+                    Verification failed. Please refresh the page and try again.
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </div>

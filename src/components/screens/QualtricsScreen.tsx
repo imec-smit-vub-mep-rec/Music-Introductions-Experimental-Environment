@@ -8,8 +8,6 @@ import {
   updateSessionFinalAnswers,
   markExperimentCompleted,
   syncSessionToRemote,
-  updateQualtricsResponseId,
-  getQualtricsResponseId,
   updateFinalAnswersWithSync,
 } from "@/lib/session";
 import { AnswerValue } from "@/lib/types";

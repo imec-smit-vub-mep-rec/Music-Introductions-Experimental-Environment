@@ -8,6 +8,10 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     id VARCHAR(255) PRIMARY KEY, -- session_${session_id}
     session_id BIGINT UNIQUE NOT NULL,
     
+    -- Client tracking
+    client_ip VARCHAR(45) NOT NULL, -- Store client IP address (supports IPv6)
+    referer VARCHAR(500), -- Store referer parameter from URL (?ref=value)
+    
     -- Experiment configuration
     group_type VARCHAR(20) NOT NULL CHECK (group_type IN ('unfamiliar', 'familiar')),
     chosen_genre VARCHAR(50),
@@ -34,6 +38,8 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
 
 -- Create indexes for performance
 CREATE INDEX IF NOT EXISTS idx_session_id ON experiment_sessions(session_id);
+CREATE INDEX IF NOT EXISTS idx_client_ip ON experiment_sessions(client_ip);
+CREATE INDEX IF NOT EXISTS idx_referer ON experiment_sessions(referer);
 CREATE INDEX IF NOT EXISTS idx_group_type ON experiment_sessions(group_type);
 CREATE INDEX IF NOT EXISTS idx_created_at ON experiment_sessions(created_at);
 CREATE INDEX IF NOT EXISTS idx_expires_at ON experiment_sessions(expires_at);

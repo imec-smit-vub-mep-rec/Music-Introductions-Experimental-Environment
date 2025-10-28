@@ -50,29 +50,66 @@ export function useExperiment() {
     }
   }, [getCurrentSession]);
 
-  // Load session on mount and detect session changes
+  // Load session on mount - ALWAYS create a new session on page reload
   useEffect(() => {
-    const existingSession = getSession();
-    if (existingSession) {
-      sessionRef.current = existingSession;
-      
-      // Always start with empty responses on page load - don't load previous answers
-      // The session is only used for data persistence, not for loading previous state
-      console.log('🔄 PAGE LOAD - STARTING WITH EMPTY RESPONSES (SESSION EXISTS FOR PERSISTENCE)');
-      setState(prev => ({
-        ...prev,
-        responses: {}, // Always start with empty responses on page load
-        selectedGenre: null,
-        randomizedSongs: [],
-        randomizedIntroductions: [],
-        currentStep: 0,
-        currentQuestionIndex: 0,
-      }));
-    } else {
-      // No existing session - start fresh
-      console.log('🆕 NO EXISTING SESSION - STARTING FRESH');
-      sessionRef.current = null;
-    }
+    console.log('🔄 PAGE LOAD DETECTED - ALWAYS CREATING NEW SESSION');
+    
+    // Clear any existing localStorage data first (database sessions are preserved)
+    clearAllSessionData().then(() => {
+      // Create a new session
+      createNewSession().then(newSession => {
+        saveSession(newSession);
+        sessionRef.current = newSession;
+        
+        console.log('🆕 NEW SESSION CREATED ON PAGE LOAD:', {
+          session_id: newSession.session_id,
+          group: newSession.group,
+          client_ip: newSession.client_ip,
+          referer: newSession.referer,
+          timestamp: new Date().toISOString()
+        });
+        
+        // Always start with empty responses on page load
+        setState(prev => ({
+          ...prev,
+          responses: {},
+          selectedGenre: null,
+          randomizedSongs: [],
+          randomizedIntroductions: [],
+          currentStep: 0,
+          currentQuestionIndex: 0,
+        }));
+        
+        // Sync the new session to database immediately
+        syncSessionToRemote().catch(error => {
+          console.error('❌ FAILED TO SYNC NEW SESSION TO DATABASE:', error);
+        });
+        
+      }).catch(error => {
+        console.error('❌ FAILED TO CREATE NEW SESSION ON PAGE LOAD:', error);
+        // If session creation fails, continue without session
+        sessionRef.current = null;
+      });
+    }).catch(error => {
+      console.error('❌ FAILED TO CLEAR LOCAL SESSION DATA:', error);
+      // Try to create new session anyway
+      createNewSession().then(newSession => {
+        saveSession(newSession);
+        sessionRef.current = newSession;
+        setState(prev => ({
+          ...prev,
+          responses: {},
+          selectedGenre: null,
+          randomizedSongs: [],
+          randomizedIntroductions: [],
+          currentStep: 0,
+          currentQuestionIndex: 0,
+        }));
+      }).catch(createError => {
+        console.error('❌ FAILED TO CREATE NEW SESSION AFTER CLEAR FAILURE:', createError);
+        sessionRef.current = null;
+      });
+    });
   }, []); // Only run once on mount
 
   // Listen for session changes (when new session is created)
@@ -471,14 +508,14 @@ export function useExperiment() {
   }, []);
 
   const forceClearSession = useCallback(async () => {
-    // Clear ALL session data (localStorage + database)
+    // Clear localStorage only - database sessions are preserved for multiple users
     await clearAllSessionData();
     
     // Reset state to initial
     setState(initialState);
     sessionRef.current = null;
     
-    console.log('🧹 SESSION FORCE CLEARED (ALL DATA)');
+    console.log('🧹 LOCAL SESSION CLEARED (DATABASE PRESERVED FOR MULTIPLE USERS)');
   }, []);
 
   const reset = useCallback(() => {
@@ -487,14 +524,16 @@ export function useExperiment() {
   }, []);
 
   const startNewSession = useCallback(async () => {
-    // Clear ALL existing session data (localStorage + database)
+    console.log('🆕 STARTING NEW SESSION - CLEARING LOCAL DATA ONLY');
+    
+    // Clear localStorage only - database sessions are preserved for multiple users
     await clearAllSessionData();
     
     // Reset state to initial
     setState(initialState);
     sessionRef.current = null;
     
-    // Create a new session
+    // Create a new session with guaranteed unique ID
     try {
       const newSession = await createNewSession();
       saveSession(newSession);
@@ -503,10 +542,18 @@ export function useExperiment() {
       console.log('🆕 NEW SESSION STARTED:', {
         session_id: newSession.session_id,
         group: newSession.group,
+        client_ip: newSession.client_ip,
+        referer: newSession.referer,
         timestamp: new Date().toISOString()
       });
+      
+      // Sync the new session to database immediately
+      await syncSessionToRemote();
+      
     } catch (error) {
       console.error('❌ FAILED TO CREATE NEW SESSION:', error);
+      // If session creation fails, try to continue without session
+      // The user can still use the experiment, but data won't be persisted
     }
   }, []);
 

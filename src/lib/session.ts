@@ -49,17 +49,48 @@ export interface SessionData {
   };
   qualtrics_response_id?: string; // Track Qualtrics response ID for updates
   client_ip?: string; // Store client IP for session tracking
+  referer?: string; // Store referer parameter from URL (?ref=value)
 }
 
 const SESSION_STORAGE_KEY = "serendipity_session";
 
+// Global counter to ensure uniqueness even with rapid successive calls
+let sessionCounter = 0;
+
+export function getRefererFromURL(): string | undefined {
+  if (typeof window === 'undefined') return undefined;
+  
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const referer = urlParams.get('ref');
+    return referer || undefined;
+  } catch (error) {
+    console.warn('Could not extract referer from URL:', error);
+    return undefined;
+  }
+}
+
 export function generateSessionId(ipAddress?: string): number {
   const timestamp = Date.now();
   
+  // Increment global counter for additional uniqueness
+  sessionCounter = (sessionCounter + 1) % 1000000; // Reset to prevent overflow
+  
+  // Generate a high-precision random component using crypto if available
+  let randomComponent: number;
+  if (typeof window !== 'undefined' && window.crypto && window.crypto.getRandomValues) {
+    // Use crypto.getRandomValues for better randomness in browser
+    const array = new Uint32Array(1);
+    window.crypto.getRandomValues(array);
+    randomComponent = array[0];
+  } else {
+    // Fallback to Math.random with higher precision
+    randomComponent = Math.floor(Math.random() * 0xFFFFFFFF);
+  }
+  
   if (!ipAddress) {
-    // Add random component to ensure uniqueness even without IP
-    const randomComponent = Math.floor(Math.random() * 10000);
-    return timestamp + randomComponent;
+    // Combine timestamp with high-precision random component and counter
+    return timestamp + randomComponent + (sessionCounter * 1000);
   }
   
   // Create a hash combining timestamp and IP address
@@ -68,12 +99,9 @@ export function generateSessionId(ipAddress?: string): number {
     return acc * 256 + parseInt(octet, 10);
   }, 0);
   
-  // Add random component to ensure uniqueness even with same IP
-  const randomComponent = Math.floor(Math.random() * 10000);
-  
-  // Combine timestamp with IP hash and random component to create unique ID
+  // Combine timestamp with IP hash, random component, and counter to create unique ID
   // Use bitwise operations to mix the values
-  const combined = timestamp ^ (ipHash << 16) ^ (ipHash >>> 16) ^ randomComponent;
+  const combined = timestamp ^ (ipHash << 16) ^ (ipHash >>> 16) ^ randomComponent ^ (sessionCounter << 8);
   
   // Ensure we return a positive number
   return Math.abs(combined);
@@ -85,16 +113,37 @@ export function generateRandomGroup(): SessionGroup {
 
 export async function createNewSession(): Promise<SessionData> {
   let clientIp: string | undefined;
+  let referer: string | undefined;
   
   try {
     // Fetch client IP address
     const response = await fetch('/api/client-ip');
     const data = await response.json();
     clientIp = data.ip;
+    
+    // Log IP for debugging (no need to check for existing sessions since we always create new ones)
+    console.log('🌐 CLIENT IP DETECTED:', {
+      ip_address: clientIp,
+      timestamp: new Date().toISOString()
+    });
   } catch (error) {
     console.warn('Could not fetch client IP, using timestamp-only session ID:', error);
   }
   
+  // Extract referer from URL
+  try {
+    referer = getRefererFromURL();
+    if (referer) {
+      console.log('🔗 REFERER DETECTED:', {
+        referer: referer,
+        timestamp: new Date().toISOString()
+      });
+    }
+  } catch (error) {
+    console.warn('Could not extract referer from URL:', error);
+  }
+  
+  // Generate a unique session ID (simplified since we always create new sessions)
   const sessionId = generateSessionId(clientIp);
   const group = generateRandomGroup();
 
@@ -117,12 +166,15 @@ export async function createNewSession(): Promise<SessionData> {
       interactions: [],
     },
     client_ip: clientIp, // Store client IP for session tracking
+    referer: referer, // Store referer parameter from URL
   };
 
   console.log("🎯 NEW SESSION CREATED:", {
     session_id: sessionId,
     group: group,
     client_ip: clientIp,
+    referer: referer,
+    counter: sessionCounter,
     timestamp: new Date().toISOString(),
   });
 
@@ -528,71 +580,21 @@ export function clearSession(): void {
   });
 }
 
-export async function clearSessionFromDatabase(sessionId: number): Promise<void> {
-  try {
-    const response = await fetch(`/api/session/delete?sessionId=${sessionId}`, {
-      method: 'DELETE',
-    });
-
-    if (!response.ok) {
-      throw new Error(`Database session deletion failed: ${response.statusText}`);
-    }
-
-    console.log('🗑️ SESSION CLEARED FROM DATABASE:', {
-      session_id: sessionId,
-      timestamp: new Date().toISOString(),
-    });
-  } catch (error) {
-    console.error('❌ DATABASE SESSION CLEAR FAILED:', error);
-    // Don't throw - this is not critical for user experience
-  }
-}
-
 export async function clearAllSessionData(): Promise<void> {
-  // Get current session before clearing
+  // Get current session before clearing (for logging only)
   const currentSession = getSession();
   
-  // Clear localStorage first
+  // Only clear localStorage - NEVER delete from database
   clearSession();
   
-  // Clear from database if we have a session
-  if (currentSession?.session_id) {
-    await clearSessionFromDatabase(currentSession.session_id);
-  }
-  
-  // Also clear any other sessions from the same IP if we have it
-  if (currentSession?.client_ip) {
-    await clearSessionsByIP(currentSession.client_ip);
-  }
-  
-  console.log('🧹 ALL SESSION DATA CLEARED:', {
+  console.log('🧹 LOCAL SESSION DATA CLEARED (DATABASE PRESERVED):', {
     had_session: !!currentSession,
     session_id: currentSession?.session_id,
     client_ip: currentSession?.client_ip,
+    referer: currentSession?.referer,
+    message: 'Database sessions are preserved for multiple users per IP/device',
     timestamp: new Date().toISOString(),
   });
-}
-
-export async function clearSessionsByIP(ipAddress: string): Promise<void> {
-  try {
-    const response = await fetch(`/api/session/delete-by-ip?ip=${encodeURIComponent(ipAddress)}`, {
-      method: 'DELETE',
-    });
-
-    if (!response.ok) {
-      throw new Error(`IP-based session deletion failed: ${response.statusText}`);
-    }
-
-    const result = await response.json();
-    console.log('🗑️ SESSIONS CLEARED BY IP:', {
-      ip_address: ipAddress,
-      deleted_count: result.deletedRows || 0,
-      timestamp: new Date().toISOString(),
-    });
-  } catch (error) {
-    console.error('❌ IP-BASED SESSION CLEAR FAILED:', error);
-    // Don't throw - this is not critical for user experience
-  }
 }
 
 export function updateQualtricsResponseId(responseId: string): void {
@@ -610,10 +612,6 @@ export function updateQualtricsResponseId(responseId: string): void {
   }
 }
 
-export function getQualtricsResponseId(): string | undefined {
-  const session = getSession();
-  return session?.qualtrics_response_id;
-}
 
 /**
  * Update final answers and sync to both Qualtrics and Neon DB
@@ -635,7 +633,7 @@ export async function updateFinalAnswersWithSync(
     await syncSessionToRemote();
 
     // Update Qualtrics if we have a response ID
-    const responseId = getQualtricsResponseId();
+    const responseId = session.qualtrics_response_id;
     if (responseId) {
       console.log("🔄 UPDATING QUALTRICS RESPONSE FOR ANSWER CORRECTION:", {
         session_id: session.session_id,
