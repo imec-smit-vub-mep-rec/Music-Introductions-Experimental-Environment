@@ -66,17 +66,36 @@ export function useExperiment() {
         timestamp: new Date().toISOString()
       });
       
-      // Restore state from existing session
-      setState(prev => ({
-        ...prev,
-        responses: {},
-        selectedGenre: existingSession.chosen_genre,
-        randomizedSongs: existingSession.randomized_songs,
-        randomizedIntroductions: existingSession.randomized_introductions,
-        // Don't restore currentStep - always start from welcome screen
-        currentStep: 0,
-        currentQuestionIndex: 0,
-      }));
+      // If experiment is completed, clear the session to allow new user
+      if (existingSession.experiment_completed) {
+        console.log('✅ EXPERIMENT ALREADY COMPLETED - CLEARING SESSION FOR NEW USER');
+        // Clear the completed session to allow a new user to start
+        clearAllSessionData();
+        sessionRef.current = null;
+        
+        // Start with clean state for new user
+        setState(prev => ({
+          ...prev,
+          responses: {},
+          selectedGenre: null,
+          randomizedSongs: [],
+          randomizedIntroductions: [],
+          currentStep: 0,
+          currentQuestionIndex: 0,
+        }));
+      } else {
+        // Restore state from existing session but start from welcome screen
+        setState(prev => ({
+          ...prev,
+          responses: {},
+          selectedGenre: existingSession.chosen_genre,
+          randomizedSongs: existingSession.randomized_songs,
+          randomizedIntroductions: existingSession.randomized_introductions,
+          // Don't restore currentStep - always start from welcome screen
+          currentStep: 0,
+          currentQuestionIndex: 0,
+        }));
+      }
     } else {
       console.log('📋 NO EXISTING SESSION FOUND - WAITING FOR INFORMED CONSENT');
       sessionRef.current = null;
