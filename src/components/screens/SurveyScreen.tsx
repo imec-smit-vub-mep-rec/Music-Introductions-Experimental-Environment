@@ -205,9 +205,9 @@ export function SurveyScreen({
                 ← Back
               </Button>
             )} */}
-            <h1 className="text-2xl font-bold text-dark-purple flex-1 text-center">
+            {/* <h1 className="text-2xl font-bold text-dark-purple flex-1 text-center">
               {survey.title}
-            </h1>
+            </h1> */}
             <div className="w-16" /> {/* Spacer for centering */}
           </div>
 
