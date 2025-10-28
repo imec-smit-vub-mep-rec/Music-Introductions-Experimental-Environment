@@ -1,76 +1,97 @@
 {
   "metadata": {
-    "title": "hound_dog_inform2 (2)",
-    "exportDate": "2025-10-28T06:59:20.191Z",
-    "totalSubtitles": 8,
-    "totalWords": 84
+    "title": "hound_dog_immers2 (2)",
+    "exportDate": "2025-10-28T07:01:46.624Z",
+    "totalSubtitles": 16,
+    "totalWords": 141
   },
   "subtitles": [
     {
       "id": 0,
-      "text": "While  it  became  world  famous through  Elvis's  version,",
+      "text": "He  comes  strutting  in,  looking  sharp, dripping  in  that  slick  talk",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfde1",
-          "text": "While ",
+          "id": "6900696250bc00c30d3bfd52",
+          "text": "He ",
           "start": 0.16,
-          "end": 0.6,
+          "end": 0.4,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfde2",
-          "text": "it ",
-          "start": 0.6,
-          "end": 0.76,
+          "id": "6900696250bc00c30d3bfd53",
+          "text": "comes ",
+          "start": 0.4,
+          "end": 0.72,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfde3",
-          "text": "became ",
+          "id": "6900696250bc00c30d3bfd54",
+          "text": "strutting ",
           "start": 0.76,
-          "end": 1.12,
+          "end": 1.24,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfde4",
-          "text": "world ",
-          "start": 1.12,
-          "end": 1.4,
+          "id": "6900696250bc00c30d3bfd55",
+          "text": "in, ",
+          "start": 1.24,
+          "end": 1.44,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfde5",
-          "text": "famous",
-          "start": 1.4,
-          "end": 1.76,
+          "id": "6900696250bc00c30d3bfd56",
+          "text": "looking ",
+          "start": 1.48,
+          "end": 1.8,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfde6",
-          "text": "through ",
-          "start": 1.76,
-          "end": 2,
+          "id": "6900696250bc00c30d3bfd57",
+          "text": "sharp,",
+          "start": 1.8,
+          "end": 2.28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd58",
+          "text": "dripping ",
+          "start": 2.28,
+          "end": 2.84,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfde7",
-          "text": "Elvis's ",
-          "start": 2.04,
-          "end": 2.56,
+          "id": "6900696250bc00c30d3bfd59",
+          "text": "in ",
+          "start": 2.84,
+          "end": 3,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfde8",
-          "text": "version,",
-          "start": 2.6,
-          "end": 3.08,
+          "id": "6900696250bc00c30d3bfd5a",
+          "text": "that ",
+          "start": 3.04,
+          "end": 3.2,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd5b",
+          "text": "slick ",
+          "start": 3.2,
+          "end": 3.52,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd5c",
+          "text": "talk",
+          "start": 3.56,
+          "end": 3.8,
           "line": 1
         }
       ],
       "timing": {
         "start": 0.16,
-        "end": 3.08,
-        "duration": 2.92
+        "end": 3.8,
+        "duration": 3.6399999999999997
       },
       "speaker": {
         "id": 1,
@@ -79,90 +100,41 @@
     },
     {
       "id": 1,
-      "text": "and  continues  to  reverberate  in  pop  music through  Doja  Cat's  Vegas,",
+      "text": "and  Sunday  suit  swagger.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfde9",
+          "id": "6900696250bc00c30d3bfd5d",
           "text": "and ",
-          "start": 3.2,
-          "end": 3.48,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfdea",
-          "text": "continues ",
-          "start": 3.48,
+          "start": 3.92,
           "end": 4.08,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdeb",
-          "text": "to ",
+          "id": "6900696250bc00c30d3bfd5e",
+          "text": "Sunday ",
           "start": 4.08,
-          "end": 4.2,
+          "end": 4.44,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdec",
-          "text": "reverberate ",
-          "start": 4.24,
-          "end": 4.88,
+          "id": "6900696250bc00c30d3bfd5f",
+          "text": "suit ",
+          "start": 4.48,
+          "end": 4.76,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfded",
-          "text": "in ",
-          "start": 4.88,
-          "end": 5.16,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfdee",
-          "text": "pop ",
-          "start": 5.16,
+          "id": "6900696250bc00c30d3bfd60",
+          "text": "swagger.",
+          "start": 4.76,
           "end": 5.32,
           "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfdef",
-          "text": "music",
-          "start": 5.32,
-          "end": 5.64,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfdf0",
-          "text": "through ",
-          "start": 5.64,
-          "end": 5.8,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfdf1",
-          "text": "Doja ",
-          "start": 5.84,
-          "end": 6.12,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfdf2",
-          "text": "Cat's ",
-          "start": 6.12,
-          "end": 6.36,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfdf3",
-          "text": "Vegas,",
-          "start": 6.4,
-          "end": 7,
-          "line": 1
         }
       ],
       "timing": {
-        "start": 3.2,
-        "end": 7,
-        "duration": 3.8
+        "start": 3.92,
+        "end": 5.32,
+        "duration": 1.4000000000000004
       },
       "speaker": {
         "id": 1,
@@ -171,90 +143,118 @@
     },
     {
       "id": 2,
-      "text": "Hound  Dog  was  originally  written by  Jerry  Leiber  and  Mike  Stoller",
+      "text": "He  gives  you  that  sweet  smile and  for  a  second  your  heart  go  boom  boom",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfdf4",
-          "text": "Hound ",
-          "start": 7.12,
-          "end": 7.48,
+          "id": "6900696250bc00c30d3bfd61",
+          "text": "He ",
+          "start": 5.56,
+          "end": 5.76,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdf5",
-          "text": "Dog ",
-          "start": 7.48,
-          "end": 7.68,
+          "id": "6900696250bc00c30d3bfd62",
+          "text": "gives ",
+          "start": 5.76,
+          "end": 5.96,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdf6",
-          "text": "was ",
-          "start": 7.68,
-          "end": 7.88,
+          "id": "6900696250bc00c30d3bfd63",
+          "text": "you ",
+          "start": 5.96,
+          "end": 6.12,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdf7",
-          "text": "originally ",
-          "start": 7.88,
-          "end": 8.44,
+          "id": "6900696250bc00c30d3bfd64",
+          "text": "that ",
+          "start": 6.12,
+          "end": 6.28,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdf8",
-          "text": "written",
-          "start": 8.44,
-          "end": 8.72,
+          "id": "6900696250bc00c30d3bfd65",
+          "text": "sweet ",
+          "start": 6.28,
+          "end": 6.56,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdf9",
-          "text": "by ",
-          "start": 8.72,
-          "end": 8.96,
-          "line": 1
+          "id": "6900696250bc00c30d3bfd66",
+          "text": "smile",
+          "start": 6.56,
+          "end": 7.16,
+          "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfdfa",
-          "text": "Jerry ",
-          "start": 8.96,
-          "end": 9.36,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfdfb",
-          "text": "Leiber ",
-          "start": 9.36,
-          "end": 9.76,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfdfc",
+          "id": "6900696250bc00c30d3bfd67",
           "text": "and ",
-          "start": 9.76,
-          "end": 9.92,
+          "start": 7.16,
+          "end": 7.32,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfdfd",
-          "text": "Mike ",
-          "start": 9.92,
-          "end": 10.2,
+          "id": "6900696250bc00c30d3bfd68",
+          "text": "for ",
+          "start": 7.32,
+          "end": 7.56,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfdfe",
-          "text": "Stoller",
-          "start": 10.2,
-          "end": 10.56,
+          "id": "6900696250bc00c30d3bfd69",
+          "text": "a ",
+          "start": 7.56,
+          "end": 7.68,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6a",
+          "text": "second ",
+          "start": 7.68,
+          "end": 8.12,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6b",
+          "text": "your ",
+          "start": 8.12,
+          "end": 8.32,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6c",
+          "text": "heart ",
+          "start": 8.32,
+          "end": 8.52,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6d",
+          "text": "go ",
+          "start": 8.52,
+          "end": 8.72,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6e",
+          "text": "boom ",
+          "start": 8.76,
+          "end": 9.04,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd6f",
+          "text": "boom",
+          "start": 9.04,
+          "end": 9.32,
           "line": 1
         }
       ],
       "timing": {
-        "start": 7.12,
-        "end": 10.56,
-        "duration": 3.4400000000000004
+        "start": 5.56,
+        "end": 9.32,
+        "duration": 3.7600000000000007
       },
       "speaker": {
         "id": 1,
@@ -263,76 +263,76 @@
     },
     {
       "id": 3,
-      "text": "to  fit  Big  Mama  Thornton's brusque  and  badass  presence.",
+      "text": "like  it  wants  to  jump  out  of  your  chest.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfdff",
+          "id": "6900696250bc00c30d3bfd70",
+          "text": "like ",
+          "start": 9.44,
+          "end": 9.68,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd71",
+          "text": "it ",
+          "start": 9.68,
+          "end": 9.76,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd72",
+          "text": "wants ",
+          "start": 9.76,
+          "end": 10.04,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd73",
           "text": "to ",
-          "start": 10.68,
-          "end": 10.88,
+          "start": 10.04,
+          "end": 10.12,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe00",
-          "text": "fit ",
-          "start": 10.92,
-          "end": 11.16,
+          "id": "6900696250bc00c30d3bfd74",
+          "text": "jump ",
+          "start": 10.16,
+          "end": 10.36,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe01",
-          "text": "Big ",
-          "start": 11.16,
-          "end": 11.4,
+          "id": "6900696250bc00c30d3bfd75",
+          "text": "out ",
+          "start": 10.36,
+          "end": 10.52,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe02",
-          "text": "Mama ",
-          "start": 11.4,
-          "end": 11.68,
+          "id": "6900696250bc00c30d3bfd76",
+          "text": "of ",
+          "start": 10.56,
+          "end": 10.64,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe03",
-          "text": "Thornton's",
-          "start": 11.68,
-          "end": 12.08,
+          "id": "6900696250bc00c30d3bfd77",
+          "text": "your ",
+          "start": 10.64,
+          "end": 10.8,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe04",
-          "text": "brusque ",
-          "start": 12.08,
-          "end": 12.6,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe05",
-          "text": "and ",
-          "start": 12.6,
-          "end": 12.84,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe06",
-          "text": "badass ",
-          "start": 12.84,
-          "end": 13.32,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe07",
-          "text": "presence.",
-          "start": 13.36,
-          "end": 14.08,
-          "line": 1
+          "id": "6900696250bc00c30d3bfd78",
+          "text": "chest.",
+          "start": 10.8,
+          "end": 11.44,
+          "line": 0
         }
       ],
       "timing": {
-        "start": 10.68,
-        "end": 14.08,
-        "duration": 3.4000000000000004
+        "start": 9.44,
+        "end": 11.44,
+        "duration": 2
       },
       "speaker": {
         "id": 1,
@@ -341,111 +341,83 @@
     },
     {
       "id": 4,
-      "text": "A  lady  bear  whose  formidable  350-pound  frame and  scarred  face  made  her  the  biggest,",
+      "text": "But  deep  down,  you  know,  sugar, something  ain't  sitting  right.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfe08",
-          "text": "A ",
-          "start": 14.32,
-          "end": 14.52,
+          "id": "6900696250bc00c30d3bfd79",
+          "text": "But ",
+          "start": 11.56,
+          "end": 11.84,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe09",
-          "text": "lady ",
-          "start": 14.52,
-          "end": 14.84,
+          "id": "6900696250bc00c30d3bfd7a",
+          "text": "deep ",
+          "start": 11.84,
+          "end": 12.12,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe0a",
-          "text": "bear ",
-          "start": 14.84,
-          "end": 15.08,
+          "id": "6900696250bc00c30d3bfd7b",
+          "text": "down, ",
+          "start": 12.12,
+          "end": 12.48,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe0b",
-          "text": "whose ",
-          "start": 15.08,
-          "end": 15.4,
+          "id": "6900696250bc00c30d3bfd7c",
+          "text": "you ",
+          "start": 12.48,
+          "end": 12.68,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe0c",
-          "text": "formidable ",
-          "start": 15.4,
-          "end": 16.2,
+          "id": "6900696250bc00c30d3bfd7d",
+          "text": "know, ",
+          "start": 12.68,
+          "end": 12.92,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe0d",
-          "text": "350-pound ",
-          "start": 16.24,
-          "end": 17.76,
+          "id": "6900696250bc00c30d3bfd7e",
+          "text": "sugar,",
+          "start": 12.96,
+          "end": 13.48,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe0e",
-          "text": "frame",
-          "start": 17.8,
-          "end": 18.32,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe0f",
-          "text": "and ",
-          "start": 18.32,
-          "end": 18.6,
+          "id": "6900696250bc00c30d3bfd7f",
+          "text": "something ",
+          "start": 13.52,
+          "end": 14.04,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe10",
-          "text": "scarred ",
-          "start": 18.6,
-          "end": 18.96,
+          "id": "6900696250bc00c30d3bfd80",
+          "text": "ain't ",
+          "start": 14.04,
+          "end": 14.24,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe11",
-          "text": "face ",
-          "start": 18.96,
-          "end": 19.48,
+          "id": "6900696250bc00c30d3bfd81",
+          "text": "sitting ",
+          "start": 14.24,
+          "end": 14.56,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe12",
-          "text": "made ",
-          "start": 19.52,
-          "end": 19.92,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe13",
-          "text": "her ",
-          "start": 19.92,
-          "end": 20.16,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe14",
-          "text": "the ",
-          "start": 20.16,
-          "end": 20.32,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe15",
-          "text": "biggest,",
-          "start": 20.32,
-          "end": 20.64,
+          "id": "6900696250bc00c30d3bfd82",
+          "text": "right.",
+          "start": 14.56,
+          "end": 15,
           "line": 1
         }
       ],
       "timing": {
-        "start": 14.32,
-        "end": 20.64,
-        "duration": 6.32
+        "start": 11.56,
+        "end": 15,
+        "duration": 3.4399999999999995
       },
       "speaker": {
         "id": 1,
@@ -454,69 +426,55 @@
     },
     {
       "id": 5,
-      "text": "baddest,  and  saltiest  chick they  had  ever  met.",
+      "text": "That  man  don't  come  to  love.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfe16",
-          "text": "baddest, ",
-          "start": 20.76,
-          "end": 21.28,
+          "id": "6900696250bc00c30d3bfd83",
+          "text": "That ",
+          "start": 15.16,
+          "end": 15.36,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe17",
-          "text": "and ",
-          "start": 21.28,
-          "end": 21.48,
+          "id": "6900696250bc00c30d3bfd84",
+          "text": "man ",
+          "start": 15.36,
+          "end": 15.56,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe18",
-          "text": "saltiest ",
-          "start": 21.48,
-          "end": 22,
+          "id": "6900696250bc00c30d3bfd85",
+          "text": "don't ",
+          "start": 15.6,
+          "end": 15.84,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe19",
-          "text": "chick",
-          "start": 22,
-          "end": 22.28,
+          "id": "6900696250bc00c30d3bfd86",
+          "text": "come ",
+          "start": 15.84,
+          "end": 16.12,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe1a",
-          "text": "they ",
-          "start": 22.32,
-          "end": 22.48,
-          "line": 1
+          "id": "6900696250bc00c30d3bfd87",
+          "text": "to ",
+          "start": 16.12,
+          "end": 16.24,
+          "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe1b",
-          "text": "had ",
-          "start": 22.48,
-          "end": 22.64,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe1c",
-          "text": "ever ",
-          "start": 22.64,
-          "end": 22.88,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe1d",
-          "text": "met.",
-          "start": 22.88,
-          "end": 23.36,
-          "line": 1
+          "id": "6900696250bc00c30d3bfd88",
+          "text": "love.",
+          "start": 16.28,
+          "end": 16.68,
+          "line": 0
         }
       ],
       "timing": {
-        "start": 20.76,
-        "end": 23.36,
-        "duration": 2.599999999999998
+        "start": 15.16,
+        "end": 16.68,
+        "duration": 1.5199999999999996
       },
       "speaker": {
         "id": 1,
@@ -525,111 +483,48 @@
     },
     {
       "id": 6,
-      "text": "Hound  dog  was  written  not  just  for  her  voice,  but  for  her  very  essence.",
+      "text": "He  come  to  be  fed.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfe1e",
-          "text": "Hound ",
-          "start": 23.68,
-          "end": 24.04,
+          "id": "6900696250bc00c30d3bfd89",
+          "text": "He ",
+          "start": 16.8,
+          "end": 16.96,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe1f",
-          "text": "dog ",
-          "start": 24.04,
-          "end": 24.24,
+          "id": "6900696250bc00c30d3bfd8a",
+          "text": "come ",
+          "start": 16.96,
+          "end": 17.28,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe20",
-          "text": "was ",
-          "start": 24.24,
-          "end": 24.4,
+          "id": "6900696250bc00c30d3bfd8b",
+          "text": "to ",
+          "start": 17.28,
+          "end": 17.4,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe21",
-          "text": "written ",
-          "start": 24.4,
-          "end": 24.68,
+          "id": "6900696250bc00c30d3bfd8c",
+          "text": "be ",
+          "start": 17.4,
+          "end": 17.6,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe22",
-          "text": "not ",
-          "start": 24.68,
-          "end": 24.84,
+          "id": "6900696250bc00c30d3bfd8d",
+          "text": "fed.",
+          "start": 17.6,
+          "end": 18.2,
           "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe23",
-          "text": "just ",
-          "start": 24.84,
-          "end": 25.04,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe24",
-          "text": "for ",
-          "start": 25.04,
-          "end": 25.28,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe25",
-          "text": "her ",
-          "start": 25.28,
-          "end": 25.44,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe26",
-          "text": "voice, ",
-          "start": 25.44,
-          "end": 25.88,
-          "line": 0
-        },
-        {
-          "id": "6900696850bc00c30d3bfe27",
-          "text": "but ",
-          "start": 25.88,
-          "end": 26.04,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe28",
-          "text": "for ",
-          "start": 26.04,
-          "end": 26.2,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe29",
-          "text": "her ",
-          "start": 26.2,
-          "end": 26.4,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe2a",
-          "text": "very ",
-          "start": 26.4,
-          "end": 26.84,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe2b",
-          "text": "essence.",
-          "start": 26.84,
-          "end": 27.36,
-          "line": 1
         }
       ],
       "timing": {
-        "start": 23.68,
-        "end": 27.36,
-        "duration": 3.6799999999999997
+        "start": 16.8,
+        "end": 18.2,
+        "duration": 1.3999999999999986
       },
       "speaker": {
         "id": 1,
@@ -638,76 +533,700 @@
     },
     {
       "id": 7,
-      "text": "Designed  to  be  growled with  a  raw,  bold  energy.",
+      "text": "He'll  take  your  time,  your  money, your  peace  of  mind.",
       "words": [
         {
-          "id": "6900696850bc00c30d3bfe2c",
-          "text": "Designed ",
-          "start": 27.48,
-          "end": 28.04,
+          "id": "6900696250bc00c30d3bfd8e",
+          "text": "He'll ",
+          "start": 18.32,
+          "end": 18.6,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe2d",
-          "text": "to ",
-          "start": 28.04,
-          "end": 28.24,
+          "id": "6900696250bc00c30d3bfd8f",
+          "text": "take ",
+          "start": 18.6,
+          "end": 18.8,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe2e",
-          "text": "be ",
-          "start": 28.24,
-          "end": 28.44,
+          "id": "6900696250bc00c30d3bfd90",
+          "text": "your ",
+          "start": 18.8,
+          "end": 19,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe2f",
-          "text": "growled",
-          "start": 28.44,
-          "end": 28.84,
+          "id": "6900696250bc00c30d3bfd91",
+          "text": "time, ",
+          "start": 19,
+          "end": 19.52,
           "line": 0
         },
         {
-          "id": "6900696850bc00c30d3bfe30",
-          "text": "with ",
-          "start": 28.84,
-          "end": 29.04,
+          "id": "6900696250bc00c30d3bfd92",
+          "text": "your ",
+          "start": 19.52,
+          "end": 19.8,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd93",
+          "text": "money,",
+          "start": 19.8,
+          "end": 20.24,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd94",
+          "text": "your ",
+          "start": 20.28,
+          "end": 20.6,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe31",
-          "text": "a ",
-          "start": 29.04,
-          "end": 29.16,
+          "id": "6900696250bc00c30d3bfd95",
+          "text": "peace ",
+          "start": 20.6,
+          "end": 20.88,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe32",
-          "text": "raw, ",
-          "start": 29.2,
-          "end": 29.48,
+          "id": "6900696250bc00c30d3bfd96",
+          "text": "of ",
+          "start": 20.88,
+          "end": 21.04,
           "line": 1
         },
         {
-          "id": "6900696850bc00c30d3bfe33",
-          "text": "bold ",
-          "start": 29.52,
-          "end": 29.96,
-          "line": 1
-        },
-        {
-          "id": "6900696850bc00c30d3bfe34",
-          "text": "energy.",
-          "start": 29.96,
-          "end": 30.56,
+          "id": "6900696250bc00c30d3bfd97",
+          "text": "mind.",
+          "start": 21.04,
+          "end": 21.36,
           "line": 1
         }
       ],
       "timing": {
-        "start": 27.48,
-        "end": 30.56,
-        "duration": 3.0799999999999983
+        "start": 18.32,
+        "end": 21.36,
+        "duration": 3.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "And  leave  you  with  nothing but  an  empty,  cold  bed.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfd98",
+          "text": "And ",
+          "start": 21.48,
+          "end": 21.72,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd99",
+          "text": "leave ",
+          "start": 21.72,
+          "end": 21.96,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9a",
+          "text": "you ",
+          "start": 21.96,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9b",
+          "text": "with ",
+          "start": 22.08,
+          "end": 22.28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9c",
+          "text": "nothing",
+          "start": 22.28,
+          "end": 22.64,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9d",
+          "text": "but ",
+          "start": 22.64,
+          "end": 22.84,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9e",
+          "text": "an ",
+          "start": 22.84,
+          "end": 23.04,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfd9f",
+          "text": "empty, ",
+          "start": 23.04,
+          "end": 23.4,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfda0",
+          "text": "cold ",
+          "start": 23.4,
+          "end": 23.76,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfda1",
+          "text": "bed.",
+          "start": 23.8,
+          "end": 24.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.48,
+        "end": 24.44,
+        "duration": 2.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "He  ain't  looking  for  no  woman.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfda2",
+          "text": "He ",
+          "start": 24.56,
+          "end": 24.76,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda3",
+          "text": "ain't ",
+          "start": 24.76,
+          "end": 24.96,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda4",
+          "text": "looking ",
+          "start": 24.96,
+          "end": 25.2,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda5",
+          "text": "for ",
+          "start": 25.2,
+          "end": 25.32,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda6",
+          "text": "no ",
+          "start": 25.32,
+          "end": 25.52,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda7",
+          "text": "woman.",
+          "start": 25.56,
+          "end": 25.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 24.56,
+        "end": 25.92,
+        "duration": 1.360000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "He  looking  for  a  mama.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfda8",
+          "text": "He ",
+          "start": 26.04,
+          "end": 26.2,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfda9",
+          "text": "looking ",
+          "start": 26.2,
+          "end": 26.56,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdaa",
+          "text": "for ",
+          "start": 26.56,
+          "end": 26.76,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdab",
+          "text": "a ",
+          "start": 26.76,
+          "end": 26.84,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdac",
+          "text": "mama.",
+          "start": 26.84,
+          "end": 27.44,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 26.04,
+        "end": 27.44,
+        "duration": 1.4000000000000021
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "And  in  the  language  of  the  blues,  honey,  we  got  a  name  for  that  kind  of  man.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfdad",
+          "text": "And ",
+          "start": 27.6,
+          "end": 27.8,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdae",
+          "text": "in ",
+          "start": 27.8,
+          "end": 27.92,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdaf",
+          "text": "the ",
+          "start": 27.92,
+          "end": 28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb0",
+          "text": "language ",
+          "start": 28,
+          "end": 28.32,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb1",
+          "text": "of ",
+          "start": 28.32,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb2",
+          "text": "the ",
+          "start": 28.44,
+          "end": 28.56,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb3",
+          "text": "blues, ",
+          "start": 28.56,
+          "end": 28.8,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb4",
+          "text": "honey, ",
+          "start": 28.92,
+          "end": 29.28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb5",
+          "text": "we ",
+          "start": 29.32,
+          "end": 29.48,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb6",
+          "text": "got ",
+          "start": 29.52,
+          "end": 29.76,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb7",
+          "text": "a ",
+          "start": 29.76,
+          "end": 29.88,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb8",
+          "text": "name ",
+          "start": 29.88,
+          "end": 30.16,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdb9",
+          "text": "for ",
+          "start": 30.16,
+          "end": 30.32,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdba",
+          "text": "that ",
+          "start": 30.32,
+          "end": 30.48,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdbb",
+          "text": "kind ",
+          "start": 30.48,
+          "end": 30.76,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdbc",
+          "text": "of ",
+          "start": 30.8,
+          "end": 30.88,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdbd",
+          "text": "man.",
+          "start": 30.92,
+          "end": 31.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 27.6,
+        "end": 31.24,
+        "duration": 3.639999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "He's  a  hound  dog.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfdbe",
+          "text": "He's ",
+          "start": 31.36,
+          "end": 31.72,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdbf",
+          "text": "a ",
+          "start": 31.72,
+          "end": 31.92,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc0",
+          "text": "hound ",
+          "start": 31.92,
+          "end": 32.28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc1",
+          "text": "dog.",
+          "start": 32.32,
+          "end": 32.84,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 31.36,
+        "end": 32.84,
+        "duration": 1.480000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 14,
+      "text": "So  you  better  listen when  big  mama  talking.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfdc2",
+          "text": "So ",
+          "start": 32.96,
+          "end": 33.12,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc3",
+          "text": "you ",
+          "start": 33.12,
+          "end": 33.24,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc4",
+          "text": "better ",
+          "start": 33.24,
+          "end": 33.52,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc5",
+          "text": "listen",
+          "start": 33.52,
+          "end": 33.84,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc6",
+          "text": "when ",
+          "start": 33.84,
+          "end": 34,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc7",
+          "text": "big ",
+          "start": 34.04,
+          "end": 34.2,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc8",
+          "text": "mama ",
+          "start": 34.2,
+          "end": 34.52,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdc9",
+          "text": "talking.",
+          "start": 34.56,
+          "end": 35.08000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.96,
+        "end": 35.08000000000001,
+        "duration": 2.1200000000000117
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 15,
+      "text": "Let  me  sing  that  hound  dog right  on  out  your  door.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfdca",
+          "text": "Let ",
+          "start": 35.2,
+          "end": 35.4,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdcb",
+          "text": "me ",
+          "start": 35.4,
+          "end": 35.52,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdcc",
+          "text": "sing ",
+          "start": 35.56,
+          "end": 35.76,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdcd",
+          "text": "that ",
+          "start": 35.76,
+          "end": 35.92,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdce",
+          "text": "hound ",
+          "start": 35.96,
+          "end": 36.16,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdcf",
+          "text": "dog",
+          "start": 36.2,
+          "end": 36.4,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd0",
+          "text": "right ",
+          "start": 36.4,
+          "end": 36.56,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd1",
+          "text": "on ",
+          "start": 36.6,
+          "end": 36.76,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd2",
+          "text": "out ",
+          "start": 36.76,
+          "end": 37,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd3",
+          "text": "your ",
+          "start": 37,
+          "end": 37.16,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd4",
+          "text": "door.",
+          "start": 37.16,
+          "end": 37.40000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 35.2,
+        "end": 37.40000000000001,
+        "duration": 2.20000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 16,
+      "text": "And  let  my  music  fill  the  space he  left  behind.",
+      "words": [
+        {
+          "id": "6900696250bc00c30d3bfdd5",
+          "text": "And ",
+          "start": 37.52,
+          "end": 37.68,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd6",
+          "text": "let ",
+          "start": 37.68,
+          "end": 37.84,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd7",
+          "text": "my ",
+          "start": 37.88,
+          "end": 38.04,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd8",
+          "text": "music ",
+          "start": 38.04,
+          "end": 38.48,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdd9",
+          "text": "fill ",
+          "start": 38.48,
+          "end": 38.72,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfdda",
+          "text": "the ",
+          "start": 38.72,
+          "end": 38.88,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfddb",
+          "text": "space",
+          "start": 38.88,
+          "end": 39.28,
+          "line": 0
+        },
+        {
+          "id": "6900696250bc00c30d3bfddc",
+          "text": "he ",
+          "start": 39.28,
+          "end": 39.48,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfddd",
+          "text": "left ",
+          "start": 39.48,
+          "end": 39.72,
+          "line": 1
+        },
+        {
+          "id": "6900696250bc00c30d3bfdde",
+          "text": "behind.",
+          "start": 39.72,
+          "end": 40.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 37.52,
+        "end": 40.2,
+        "duration": 2.6799999999999997
       },
       "speaker": {
         "id": 1,

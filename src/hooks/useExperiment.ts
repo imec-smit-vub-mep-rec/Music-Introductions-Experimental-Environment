@@ -50,66 +50,48 @@ export function useExperiment() {
     }
   }, [getCurrentSession]);
 
-  // Load session on mount - ALWAYS create a new session on page reload
+  // Load existing session on mount - do NOT create new session automatically
   useEffect(() => {
-    console.log('🔄 PAGE LOAD DETECTED - ALWAYS CREATING NEW SESSION');
+    console.log('🔄 PAGE LOAD DETECTED - CHECKING FOR EXISTING SESSION');
     
-    // Clear any existing localStorage data first (database sessions are preserved)
-    clearAllSessionData().then(() => {
-      // Create a new session
-      createNewSession().then(newSession => {
-        saveSession(newSession);
-        sessionRef.current = newSession;
-        
-        console.log('🆕 NEW SESSION CREATED ON PAGE LOAD:', {
-          session_id: newSession.session_id,
-          group: newSession.group,
-          client_ip: newSession.client_ip,
-          referer: newSession.referer,
-          timestamp: new Date().toISOString()
-        });
-        
-        // Always start with empty responses on page load
-        setState(prev => ({
-          ...prev,
-          responses: {},
-          selectedGenre: null,
-          randomizedSongs: [],
-          randomizedIntroductions: [],
-          currentStep: 0,
-          currentQuestionIndex: 0,
-        }));
-        
-        // Sync the new session to database immediately
-        syncSessionToRemote().catch(error => {
-          console.error('❌ FAILED TO SYNC NEW SESSION TO DATABASE:', error);
-        });
-        
-      }).catch(error => {
-        console.error('❌ FAILED TO CREATE NEW SESSION ON PAGE LOAD:', error);
-        // If session creation fails, continue without session
-        sessionRef.current = null;
+    // Check if there's an existing session in localStorage
+    const existingSession = getSession();
+    if (existingSession) {
+      sessionRef.current = existingSession;
+      console.log('📋 EXISTING SESSION FOUND:', {
+        session_id: existingSession.session_id,
+        group: existingSession.group,
+        chosen_genre: existingSession.chosen_genre,
+        experiment_completed: existingSession.experiment_completed,
+        timestamp: new Date().toISOString()
       });
-    }).catch(error => {
-      console.error('❌ FAILED TO CLEAR LOCAL SESSION DATA:', error);
-      // Try to create new session anyway
-      createNewSession().then(newSession => {
-        saveSession(newSession);
-        sessionRef.current = newSession;
-        setState(prev => ({
-          ...prev,
-          responses: {},
-          selectedGenre: null,
-          randomizedSongs: [],
-          randomizedIntroductions: [],
-          currentStep: 0,
-          currentQuestionIndex: 0,
-        }));
-      }).catch(createError => {
-        console.error('❌ FAILED TO CREATE NEW SESSION AFTER CLEAR FAILURE:', createError);
-        sessionRef.current = null;
-      });
-    });
+      
+      // Restore state from existing session
+      setState(prev => ({
+        ...prev,
+        responses: {},
+        selectedGenre: existingSession.chosen_genre,
+        randomizedSongs: existingSession.randomized_songs,
+        randomizedIntroductions: existingSession.randomized_introductions,
+        // Don't restore currentStep - always start from welcome screen
+        currentStep: 0,
+        currentQuestionIndex: 0,
+      }));
+    } else {
+      console.log('📋 NO EXISTING SESSION FOUND - WAITING FOR INFORMED CONSENT');
+      sessionRef.current = null;
+      
+      // Start with clean state
+      setState(prev => ({
+        ...prev,
+        responses: {},
+        selectedGenre: null,
+        randomizedSongs: [],
+        randomizedIntroductions: [],
+        currentStep: 0,
+        currentQuestionIndex: 0,
+      }));
+    }
   }, []); // Only run once on mount
 
   // Listen for session changes (when new session is created)
@@ -143,8 +125,19 @@ export function useExperiment() {
 
   const nextStep = useCallback(() => {
     setState(prev => {
+      const currentStepName = experimentSteps[prev.currentStep];
       const newStep = Math.min(prev.currentStep + 1, experimentSteps.length - 1);
       const newStepName = experimentSteps[newStep];
+      
+      // Prevent progression from genre-selection without a selected genre
+      if (currentStepName === 'genre-selection' && !prev.selectedGenre) {
+        console.warn('⚠️ CANNOT PROCEED FROM GENRE SELECTION: No genre selected', {
+          current_step: currentStepName,
+          selected_genre: prev.selectedGenre,
+          timestamp: new Date().toISOString()
+        });
+        return prev; // Don't change state
+      }
       
       // Auto-increment song index when moving to next audio step
       let newSongIndex = prev.currentSongIndex;
@@ -266,7 +259,7 @@ export function useExperiment() {
       // Check if experiment is now complete
       updateExperimentCompletionStatus();
     } else {
-      console.warn('⚠️ COULD NOT SAVE ANSWERS: NO SESSION FOUND');
+      console.warn('⚠️ COULD NOT SAVE ANSWERS: NO SESSION FOUND (INFORMED CONSENT NOT YET ACCEPTED)');
     }
   }, [getCurrentSession, state.currentStep]);
 
@@ -304,13 +297,17 @@ export function useExperiment() {
       randomizedIntroductions,
     }));
     
-    // Update session
-    updateSessionGenre(genreId);
-    updateSessionRandomizedSongs(randomizedSongs, randomizedIntroductions);
-
-    // Sync to remote database after genre selection
-    safeSyncSession();
-  }, []);
+    // Update session if it exists
+    const currentSession = getCurrentSession();
+    if (currentSession) {
+      updateSessionGenre(genreId);
+      updateSessionRandomizedSongs(randomizedSongs, randomizedIntroductions);
+      // Sync to remote database after genre selection
+      safeSyncSession();
+    } else {
+      console.warn('⚠️ COULD NOT UPDATE SESSION: NO SESSION FOUND (INFORMED CONSENT NOT YET ACCEPTED)');
+    }
+  }, [getCurrentSession]);
 
   const getCurrentStep = useCallback(() => {
     return experimentSteps[state.currentStep];
@@ -412,7 +409,10 @@ export function useExperiment() {
 
   const saveSongAnswers = useCallback((answers: Record<string, AnswerValue>) => {
     const currentSession = getCurrentSession();
-    if (!currentSession || !state.selectedGenre) return;
+    if (!currentSession || !state.selectedGenre) {
+      console.warn('⚠️ COULD NOT SAVE SONG ANSWERS: NO SESSION OR GENRE FOUND');
+      return;
+    }
     
     const currentSong = getCurrentSong();
     if (!currentSong) return;
@@ -442,7 +442,10 @@ export function useExperiment() {
 
   const trackSongSkip = useCallback((skippedAtMs: number) => {
     const currentSession = getCurrentSession();
-    if (!currentSession) return;
+    if (!currentSession) {
+      console.warn('⚠️ COULD NOT TRACK SONG SKIP: NO SESSION FOUND');
+      return;
+    }
     
     const currentSong = getCurrentSong();
     if (!currentSong) return;
@@ -470,7 +473,10 @@ export function useExperiment() {
 
   const trackSongCompletion = useCallback((listeningTimeMs: number) => {
     const currentSession = getCurrentSession();
-    if (!currentSession) return;
+    if (!currentSession) {
+      console.warn('⚠️ COULD NOT TRACK SONG COMPLETION: NO SESSION FOUND');
+      return;
+    }
     
     const currentSong = getCurrentSong();
     if (!currentSong) return;
@@ -557,6 +563,11 @@ export function useExperiment() {
     }
   }, []);
 
+  // Helper function to check if session exists (for UI state)
+  const hasSession = useCallback(() => {
+    return getCurrentSession() !== null;
+  }, [getCurrentSession]);
+
   const getExperimentCompleted = useCallback(() => {
     const currentSession = getCurrentSession();
     return currentSession?.experiment_completed || false;
@@ -572,6 +583,7 @@ export function useExperiment() {
     currentQuestionIndex: state.currentQuestionIndex,
     session: getCurrentSession(),
     experimentCompleted: getExperimentCompleted(),
+    hasSession: hasSession(),
     
     // Navigation
     nextStep,

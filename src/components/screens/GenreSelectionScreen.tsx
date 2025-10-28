@@ -90,7 +90,7 @@ export function GenreSelectionScreen({
                   style={{ backgroundColor: genre.color }}
                 >
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white flex flex-col gap-4 items-center justify-center gap-2">
+                    <div className="text-center text-white flex flex-col items-center justify-center gap-4">
                       <div className="text-8xl">{genre.icon}</div>
                       <div className="text-2xl font-bold drop-shadow-lg">
                         {genre.name}
@@ -103,7 +103,7 @@ export function GenreSelectionScreen({
           </div>
 
           {/* Start Button */}
-          {selectedGenre && (
+          {selectedGenre ? (
             <div className="flex justify-center">
               <Button
                 onClick={onStart}
@@ -115,6 +115,12 @@ export function GenreSelectionScreen({
                 </strong>{" "}
                 with
               </Button>
+            </div>
+          ) : (
+            <div className="flex justify-center">
+              <div className="bg-gray-100 text-gray-500 px-12 py-4 text-lg rounded-full font-medium cursor-not-allowed">
+                Please select a genre to continue
+              </div>
             </div>
           )}
         </div>

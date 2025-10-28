@@ -153,7 +153,7 @@ export function AudioPlayerScreen({
         <div className="max-w-2xl mx-auto space-y-8">
           {/* Header */}
           <div className="flex items-center justify-between">
-            {onBack && (
+            {/* {onBack && (
               <Button
                 variant="ghost"
                 onClick={onBack}
@@ -161,7 +161,7 @@ export function AudioPlayerScreen({
               >
                 ← Back
               </Button>
-            )}
+            )} */}
             <div className="flex-1 text-center">
               <h1 className="text-2xl font-bold text-dark-purple">
                 {isExplanationPhase ? `Understanding ${genre.name}` : `Listening to ${genre.name}`}

@@ -196,7 +196,7 @@ export function SurveyScreen({
         <div className="max-w-2xl mx-auto space-y-8">
           {/* Header */}
           <div className="flex items-center justify-between">
-            {onBack && !showIntro && (
+            {/* {onBack && !showIntro && (
               <Button
                 variant="ghost"
                 onClick={handleBack}
@@ -204,7 +204,7 @@ export function SurveyScreen({
               >
                 ← Back
               </Button>
-            )}
+            )} */}
             <h1 className="text-2xl font-bold text-dark-purple flex-1 text-center">
               {survey.title}
             </h1>

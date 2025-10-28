@@ -56,21 +56,47 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
           
           console.log('🛡️ reCAPTCHA: Validation completed successfully in TermsScreen');
 
-          // Clear ALL existing session data (localStorage + database)
+          // Clear ALL existing session data (localStorage only - database sessions are preserved)
           await clearAllSessionData();
 
           // Force a small delay to ensure everything is cleared
           await new Promise((resolve) => setTimeout(resolve, 200));
 
+          // Create new session ONLY after informed consent is accepted
           const session = await createNewSession();
           saveSession(session);
 
-          console.log("🆕 NEW SESSION CREATED ON TERMS ACCEPTANCE:", {
+          console.log("🆕 NEW SESSION CREATED AFTER INFORMED CONSENT:", {
             session_id: session.session_id,
             group: session.group,
+            client_ip: session.client_ip,
+            referer: session.referer,
             onboarding_answers: Object.keys(session.answers.onboarding).length,
             timestamp: new Date().toISOString(),
           });
+
+          // Sync the new session to database immediately after creation
+          try {
+            const response = await fetch('/api/session/sync', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(session),
+            });
+
+            if (!response.ok) {
+              throw new Error(`Sync failed: ${response.statusText}`);
+            }
+
+            console.log('✅ SESSION SYNCED TO DATABASE AFTER CONSENT:', {
+              session_id: session.session_id,
+              timestamp: new Date().toISOString()
+            });
+          } catch (error) {
+            console.error('❌ FAILED TO SYNC SESSION TO DATABASE AFTER CONSENT:', error);
+            // Continue anyway - session is saved locally
+          }
 
           const timer = setTimeout(onAccept, 200);
           return () => clearTimeout(timer);
