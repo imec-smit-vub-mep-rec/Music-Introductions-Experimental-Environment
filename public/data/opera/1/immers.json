@@ -1,0 +1,1086 @@
+{
+  "metadata": {
+    "title": "haba_immers2",
+    "exportDate": "2025-10-27T14:54:51.867Z",
+    "totalSubtitles": 12,
+    "totalWords": 128
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "You  sit  in  the  shade,  escaping  the  intense midday  sun  that  burns  on  the  old  stone  fountain",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4745",
+          "text": "You ",
+          "start": 0.16,
+          "end": 0.52,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4746",
+          "text": "sit ",
+          "start": 0.56,
+          "end": 0.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4747",
+          "text": "in ",
+          "start": 0.88,
+          "end": 1.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4748",
+          "text": "the ",
+          "start": 1.16,
+          "end": 1.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4749",
+          "text": "shade, ",
+          "start": 1.28,
+          "end": 1.96,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474a",
+          "text": "escaping ",
+          "start": 2,
+          "end": 2.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474b",
+          "text": "the ",
+          "start": 2.6,
+          "end": 2.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474c",
+          "text": "intense",
+          "start": 2.76,
+          "end": 3.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474d",
+          "text": "midday ",
+          "start": 3.36,
+          "end": 3.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474e",
+          "text": "sun ",
+          "start": 3.96,
+          "end": 4.36,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f474f",
+          "text": "that ",
+          "start": 4.36,
+          "end": 4.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4750",
+          "text": "burns ",
+          "start": 4.64,
+          "end": 5.12,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4751",
+          "text": "on ",
+          "start": 5.12,
+          "end": 5.32,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4752",
+          "text": "the ",
+          "start": 5.32,
+          "end": 5.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4753",
+          "text": "old ",
+          "start": 5.48,
+          "end": 5.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4754",
+          "text": "stone ",
+          "start": 5.84,
+          "end": 6.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4755",
+          "text": "fountain",
+          "start": 6.32,
+          "end": 6.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 6.92,
+        "duration": 6.76
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "at  the  heart  of  a  sleepy  plaza.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4756",
+          "text": "at ",
+          "start": 7.04,
+          "end": 7.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4757",
+          "text": "the ",
+          "start": 7.28,
+          "end": 7.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4758",
+          "text": "heart ",
+          "start": 7.4,
+          "end": 7.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4759",
+          "text": "of ",
+          "start": 7.72,
+          "end": 7.96,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f475a",
+          "text": "a ",
+          "start": 7.96,
+          "end": 8.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f475b",
+          "text": "sleepy ",
+          "start": 8.12,
+          "end": 8.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f475c",
+          "text": "plaza.",
+          "start": 8.56,
+          "end": 9.2,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 7.04,
+        "end": 9.2,
+        "duration": 2.1599999999999993
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "The  air  hums  with  drowsy  chatter and  the  gentle  splash  of  water.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f475d",
+          "text": "The ",
+          "start": 9.52,
+          "end": 9.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f475e",
+          "text": "air ",
+          "start": 9.8,
+          "end": 10.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f475f",
+          "text": "hums ",
+          "start": 10.16,
+          "end": 10.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4760",
+          "text": "with ",
+          "start": 10.6,
+          "end": 10.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4761",
+          "text": "drowsy ",
+          "start": 10.88,
+          "end": 11.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4762",
+          "text": "chatter",
+          "start": 11.44,
+          "end": 12.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4763",
+          "text": "and ",
+          "start": 12.2,
+          "end": 12.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4764",
+          "text": "the ",
+          "start": 12.4,
+          "end": 12.52,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4765",
+          "text": "gentle ",
+          "start": 12.52,
+          "end": 13,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4766",
+          "text": "splash ",
+          "start": 13,
+          "end": 13.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4767",
+          "text": "of ",
+          "start": 13.64,
+          "end": 13.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4768",
+          "text": "water.",
+          "start": 13.84,
+          "end": 14.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 9.52,
+        "end": 14.52,
+        "duration": 5
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Softly  a  rhythm  starts  filling  the  air.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4769",
+          "text": "Softly ",
+          "start": 14.76,
+          "end": 15.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476a",
+          "text": "a ",
+          "start": 15.56,
+          "end": 15.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476b",
+          "text": "rhythm ",
+          "start": 15.76,
+          "end": 16.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476c",
+          "text": "starts ",
+          "start": 16.2,
+          "end": 16.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476d",
+          "text": "filling ",
+          "start": 16.72,
+          "end": 17.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476e",
+          "text": "the ",
+          "start": 17.12,
+          "end": 17.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f476f",
+          "text": "air.",
+          "start": 17.28,
+          "end": 17.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 14.76,
+        "end": 17.68,
+        "duration": 2.92
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "The  habanera  warm  and  slow, like  a  heartbeat  in  the  heat.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4770",
+          "text": "The ",
+          "start": 17.92,
+          "end": 18.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4771",
+          "text": "habanera ",
+          "start": 18.12,
+          "end": 19,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4772",
+          "text": "warm ",
+          "start": 19,
+          "end": 19.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4773",
+          "text": "and ",
+          "start": 19.48,
+          "end": 19.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4774",
+          "text": "slow,",
+          "start": 19.68,
+          "end": 20,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4775",
+          "text": "like ",
+          "start": 20.12,
+          "end": 20.36,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4776",
+          "text": "a ",
+          "start": 20.36,
+          "end": 20.52,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4777",
+          "text": "heartbeat ",
+          "start": 20.52,
+          "end": 21.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4778",
+          "text": "in ",
+          "start": 21.04,
+          "end": 21.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4779",
+          "text": "the ",
+          "start": 21.28,
+          "end": 21.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f477a",
+          "text": "heat.",
+          "start": 21.4,
+          "end": 21.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.92,
+        "end": 21.96,
+        "duration": 4.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "A  beautiful  woman  appears. Her  hair  is  wild.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f477b",
+          "text": "A ",
+          "start": 22.2,
+          "end": 22.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f477c",
+          "text": "beautiful ",
+          "start": 22.4,
+          "end": 23.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f477d",
+          "text": "woman ",
+          "start": 23.04,
+          "end": 23.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f477e",
+          "text": "appears.",
+          "start": 23.48,
+          "end": 24.32,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f477f",
+          "text": "Her ",
+          "start": 24.44,
+          "end": 24.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4780",
+          "text": "hair ",
+          "start": 24.68,
+          "end": 25.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4781",
+          "text": "is ",
+          "start": 25.08,
+          "end": 25.32,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4782",
+          "text": "wild.",
+          "start": 25.32,
+          "end": 25.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.2,
+        "end": 25.96,
+        "duration": 3.7600000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Her  dress  a  deep  blood  red  flame against  the  whitewashed  walls.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4783",
+          "text": "Her ",
+          "start": 26.08,
+          "end": 26.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4784",
+          "text": "dress ",
+          "start": 26.24,
+          "end": 26.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4785",
+          "text": "a ",
+          "start": 26.8,
+          "end": 27,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4786",
+          "text": "deep ",
+          "start": 27,
+          "end": 27.44,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4787",
+          "text": "blood ",
+          "start": 27.44,
+          "end": 27.92,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4788",
+          "text": "red ",
+          "start": 27.92,
+          "end": 28.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4789",
+          "text": "flame",
+          "start": 28.24,
+          "end": 28.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f478a",
+          "text": "against ",
+          "start": 28.88,
+          "end": 29.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f478b",
+          "text": "the ",
+          "start": 29.24,
+          "end": 29.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f478c",
+          "text": "whitewashed ",
+          "start": 29.4,
+          "end": 30.12,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f478d",
+          "text": "walls.",
+          "start": 30.12,
+          "end": 30.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 26.08,
+        "end": 30.8,
+        "duration": 4.720000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "The  bystanders  can't  help  but  following  her  every  step.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f478e",
+          "text": "The ",
+          "start": 30.92,
+          "end": 31.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f478f",
+          "text": "bystanders ",
+          "start": 31.08,
+          "end": 31.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4790",
+          "text": "can't ",
+          "start": 31.84,
+          "end": 32.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4791",
+          "text": "help ",
+          "start": 32.16,
+          "end": 32.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4792",
+          "text": "but ",
+          "start": 32.48,
+          "end": 32.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4793",
+          "text": "following ",
+          "start": 32.68,
+          "end": 33.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4794",
+          "text": "her ",
+          "start": 33.24,
+          "end": 33.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4795",
+          "text": "every ",
+          "start": 33.48,
+          "end": 34,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4796",
+          "text": "step.",
+          "start": 34,
+          "end": 34.6,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 30.92,
+        "end": 34.6,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "She  reaches  the  fountain,  dips  her  hands  into  the cool  water  and  lets  it  run  down  her  neck.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f4797",
+          "text": "She ",
+          "start": 34.92,
+          "end": 35.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4798",
+          "text": "reaches ",
+          "start": 35.16,
+          "end": 35.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f4799",
+          "text": "the ",
+          "start": 35.64,
+          "end": 35.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479a",
+          "text": "fountain, ",
+          "start": 35.8,
+          "end": 36.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479b",
+          "text": "dips ",
+          "start": 36.56,
+          "end": 37,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479c",
+          "text": "her ",
+          "start": 37,
+          "end": 37.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479d",
+          "text": "hands ",
+          "start": 37.24,
+          "end": 37.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479e",
+          "text": "into ",
+          "start": 37.64,
+          "end": 37.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f479f",
+          "text": "the",
+          "start": 37.88,
+          "end": 38,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a0",
+          "text": "cool ",
+          "start": 38,
+          "end": 38.36,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a1",
+          "text": "water ",
+          "start": 38.36,
+          "end": 39.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a2",
+          "text": "and ",
+          "start": 39.04,
+          "end": 39.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a3",
+          "text": "lets ",
+          "start": 39.24,
+          "end": 39.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a4",
+          "text": "it ",
+          "start": 39.56,
+          "end": 39.72,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a5",
+          "text": "run ",
+          "start": 39.76,
+          "end": 40.12,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a6",
+          "text": "down ",
+          "start": 40.12,
+          "end": 40.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a7",
+          "text": "her ",
+          "start": 40.4,
+          "end": 40.6,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47a8",
+          "text": "neck.",
+          "start": 40.6,
+          "end": 41.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 34.92,
+        "end": 41.12,
+        "duration": 6.199999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Then,  smiling,  she  begins  to  sing.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f47a9",
+          "text": "Then, ",
+          "start": 41.52,
+          "end": 42.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47aa",
+          "text": "smiling, ",
+          "start": 42.08,
+          "end": 43.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47ab",
+          "text": "she ",
+          "start": 43.08,
+          "end": 43.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47ac",
+          "text": "begins ",
+          "start": 43.28,
+          "end": 43.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47ad",
+          "text": "to ",
+          "start": 43.88,
+          "end": 44.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47ae",
+          "text": "sing.",
+          "start": 44.12,
+          "end": 44.64,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 41.52,
+        "end": 44.64,
+        "duration": 3.1199999999999974
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "She  sings  of  love,  a  rebellious  bird that  no  one  can  tame,",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f47af",
+          "text": "She ",
+          "start": 44.96,
+          "end": 45.32,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b0",
+          "text": "sings ",
+          "start": 45.32,
+          "end": 45.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b1",
+          "text": "of ",
+          "start": 45.88,
+          "end": 46.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b2",
+          "text": "love, ",
+          "start": 46.08,
+          "end": 46.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b3",
+          "text": "a ",
+          "start": 46.88,
+          "end": 47,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b4",
+          "text": "rebellious ",
+          "start": 47,
+          "end": 47.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b5",
+          "text": "bird",
+          "start": 47.72,
+          "end": 48.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b6",
+          "text": "that ",
+          "start": 48.24,
+          "end": 48.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b7",
+          "text": "no ",
+          "start": 48.48,
+          "end": 48.8,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b8",
+          "text": "one ",
+          "start": 48.8,
+          "end": 49.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47b9",
+          "text": "can ",
+          "start": 49.08,
+          "end": 49.44,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47ba",
+          "text": "tame,",
+          "start": 49.44,
+          "end": 49.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 44.96,
+        "end": 49.92,
+        "duration": 4.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "that  comes  when  it  pleases and  flees  when  you  call.",
+      "words": [
+        {
+          "id": "68ff8510ec36fc9a6a4f47bb",
+          "text": "that ",
+          "start": 50.04,
+          "end": 50.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47bc",
+          "text": "comes ",
+          "start": 50.28,
+          "end": 50.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47bd",
+          "text": "when ",
+          "start": 50.64,
+          "end": 50.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47be",
+          "text": "it ",
+          "start": 50.84,
+          "end": 50.96,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47bf",
+          "text": "pleases",
+          "start": 50.96,
+          "end": 51.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47c0",
+          "text": "and ",
+          "start": 51.76,
+          "end": 52.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47c1",
+          "text": "flees ",
+          "start": 52.04,
+          "end": 52.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47c2",
+          "text": "when ",
+          "start": 52.68,
+          "end": 52.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47c3",
+          "text": "you ",
+          "start": 52.92,
+          "end": 53.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8510ec36fc9a6a4f47c4",
+          "text": "call.",
+          "start": 53.12,
+          "end": 53.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 50.04,
+        "end": 53.52,
+        "duration": 3.480000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

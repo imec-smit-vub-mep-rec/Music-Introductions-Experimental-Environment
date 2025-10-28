@@ -51,3 +51,4 @@ function testDummyDataGeneration() {
 if (require.main === module) {
   testDummyDataGeneration();
 }
+

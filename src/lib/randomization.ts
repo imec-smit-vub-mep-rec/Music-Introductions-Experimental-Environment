@@ -59,7 +59,7 @@ export function getIntroductionTranscriptUrl(
   }
   
   // Use naming convention based on introduction style
-  const basePath = song.audioUrl.replace('/song.mp3', '');
+  const basePath = song.audioUrl.replace('/song', '').replace('.m4a', '').replace('.mp3', '');
   if (introductionStyle === 'informative_introduction') {
     return `${basePath}/inform.json`;
   } else if (introductionStyle === 'immersive_introduction') {

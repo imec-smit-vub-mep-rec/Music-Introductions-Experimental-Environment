@@ -1,0 +1,1163 @@
+{
+  "metadata": {
+    "title": "smoke_inform",
+    "exportDate": "2025-10-27T16:07:22.393Z",
+    "totalSubtitles": 12,
+    "totalWords": 139
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Smoke  on  the  water  may  have  one  of  the most  iconic  riffs  in  music  history,",
+      "words": [
+        {
+          "id": "68ff973857916332baa23924",
+          "text": "Smoke ",
+          "start": 0.16,
+          "end": 0.8,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23925",
+          "text": "on ",
+          "start": 0.8,
+          "end": 1,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23926",
+          "text": "the ",
+          "start": 1,
+          "end": 1.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23927",
+          "text": "water ",
+          "start": 1.12,
+          "end": 1.68,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23928",
+          "text": "may ",
+          "start": 1.68,
+          "end": 2.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23929",
+          "text": "have ",
+          "start": 2.12,
+          "end": 2.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2392a",
+          "text": "one ",
+          "start": 2.32,
+          "end": 2.48,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2392b",
+          "text": "of ",
+          "start": 2.48,
+          "end": 2.6,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2392c",
+          "text": "the",
+          "start": 2.6,
+          "end": 2.68,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2392d",
+          "text": "most ",
+          "start": 2.68,
+          "end": 2.92,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa2392e",
+          "text": "iconic ",
+          "start": 2.92,
+          "end": 3.52,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa2392f",
+          "text": "riffs ",
+          "start": 3.52,
+          "end": 3.92,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23930",
+          "text": "in ",
+          "start": 3.92,
+          "end": 4.12,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23931",
+          "text": "music ",
+          "start": 4.12,
+          "end": 4.52,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23932",
+          "text": "history,",
+          "start": 4.52,
+          "end": 5.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 5.12,
+        "duration": 4.96
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "but  its  origin  story  is  just  as  remarkable.",
+      "words": [
+        {
+          "id": "68ff973857916332baa23933",
+          "text": "but ",
+          "start": 5.24,
+          "end": 5.48,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23934",
+          "text": "its ",
+          "start": 5.48,
+          "end": 5.72,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23935",
+          "text": "origin ",
+          "start": 5.76,
+          "end": 6.24,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23936",
+          "text": "story ",
+          "start": 6.24,
+          "end": 6.72,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23937",
+          "text": "is ",
+          "start": 6.72,
+          "end": 7,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23938",
+          "text": "just ",
+          "start": 7,
+          "end": 7.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23939",
+          "text": "as ",
+          "start": 7.32,
+          "end": 7.52,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2393a",
+          "text": "remarkable.",
+          "start": 7.52,
+          "end": 8.36,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 5.24,
+        "end": 8.36,
+        "duration": 3.119999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Deep  Purple  had  planned  to  record  their  new  album, Machine  Head,  at  the  Montreux  Casino  in  Switzerland.",
+      "words": [
+        {
+          "id": "68ff973857916332baa2393b",
+          "text": "Deep ",
+          "start": 8.84,
+          "end": 9.2,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2393c",
+          "text": "Purple ",
+          "start": 9.2,
+          "end": 9.8,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2393d",
+          "text": "had ",
+          "start": 9.88,
+          "end": 10.08,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2393e",
+          "text": "planned ",
+          "start": 10.08,
+          "end": 10.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2393f",
+          "text": "to ",
+          "start": 10.32,
+          "end": 10.44,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23940",
+          "text": "record ",
+          "start": 10.48,
+          "end": 10.88,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23941",
+          "text": "their ",
+          "start": 10.88,
+          "end": 11.04,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23942",
+          "text": "new ",
+          "start": 11.04,
+          "end": 11.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23943",
+          "text": "album,",
+          "start": 11.32,
+          "end": 11.8,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23944",
+          "text": "Machine ",
+          "start": 11.8,
+          "end": 12.44,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23945",
+          "text": "Head, ",
+          "start": 12.44,
+          "end": 12.84,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23946",
+          "text": "at ",
+          "start": 12.84,
+          "end": 12.96,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23947",
+          "text": "the ",
+          "start": 12.96,
+          "end": 13.04,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23948",
+          "text": "Montreux ",
+          "start": 13.04,
+          "end": 13.64,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23949",
+          "text": "Casino ",
+          "start": 13.64,
+          "end": 14.2,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa2394a",
+          "text": "in ",
+          "start": 14.2,
+          "end": 14.36,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa2394b",
+          "text": "Switzerland.",
+          "start": 14.36,
+          "end": 15.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.84,
+        "end": 15.12,
+        "duration": 6.279999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "However,  the  night  before  the  sessions  began,  the  venue  went  up  in  flames ",
+      "words": [
+        {
+          "id": "68ff973857916332baa2394c",
+          "text": "However, ",
+          "start": 15.4,
+          "end": 16.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2394d",
+          "text": "the ",
+          "start": 16.16,
+          "end": 16.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2394e",
+          "text": "night ",
+          "start": 16.32,
+          "end": 16.64,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2394f",
+          "text": "before ",
+          "start": 16.64,
+          "end": 17,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23950",
+          "text": "the ",
+          "start": 17,
+          "end": 17.2,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23951",
+          "text": "sessions ",
+          "start": 17.2,
+          "end": 17.64,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23952",
+          "text": "began, ",
+          "start": 17.64,
+          "end": 18.16,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23953",
+          "text": "the ",
+          "start": 18.2,
+          "end": 18.36,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23954",
+          "text": "venue ",
+          "start": 18.36,
+          "end": 18.84,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23955",
+          "text": "went ",
+          "start": 18.88,
+          "end": 19.2,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23956",
+          "text": "up ",
+          "start": 19.2,
+          "end": 19.4,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23957",
+          "text": "in ",
+          "start": 19.4,
+          "end": 19.6,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23958",
+          "text": "flames ",
+          "start": 19.6,
+          "end": 20,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 15.4,
+        "end": 20,
+        "duration": 4.6
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "after  someone  in  the  audience  fired  a flare  gun  into  the  ceiling.",
+      "words": [
+        {
+          "id": "68ff973857916332baa2395e",
+          "text": "after ",
+          "start": 21.84,
+          "end": 22.16,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2395f",
+          "text": "someone ",
+          "start": 22.16,
+          "end": 22.48,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23960",
+          "text": "in ",
+          "start": 22.48,
+          "end": 22.6,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23961",
+          "text": "the ",
+          "start": 22.6,
+          "end": 22.72,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23962",
+          "text": "audience ",
+          "start": 22.72,
+          "end": 23.24,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23963",
+          "text": "fired ",
+          "start": 23.24,
+          "end": 23.68,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23964",
+          "text": "a",
+          "start": 23.68,
+          "end": 23.84,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23965",
+          "text": "flare ",
+          "start": 23.84,
+          "end": 24.12,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23966",
+          "text": "gun ",
+          "start": 24.16,
+          "end": 24.44,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23967",
+          "text": "into ",
+          "start": 24.44,
+          "end": 24.72,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23968",
+          "text": "the ",
+          "start": 24.72,
+          "end": 24.84,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23969",
+          "text": "ceiling.",
+          "start": 24.88,
+          "end": 25.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.84,
+        "end": 25.44,
+        "duration": 3.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Thanks  to  Claude  Nobs,  the  director  of  the Montreux  Jazz  Festival,  no  lives  were  lost.",
+      "words": [
+        {
+          "id": "68ff973857916332baa2396a",
+          "text": "Thanks ",
+          "start": 25.8,
+          "end": 26.2,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2396b",
+          "text": "to ",
+          "start": 26.2,
+          "end": 26.36,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2396c",
+          "text": "Claude ",
+          "start": 26.4,
+          "end": 26.76,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2396d",
+          "text": "Nobs, ",
+          "start": 26.76,
+          "end": 27.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2396e",
+          "text": "the ",
+          "start": 27.32,
+          "end": 27.44,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2396f",
+          "text": "director ",
+          "start": 27.44,
+          "end": 27.96,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23970",
+          "text": "of ",
+          "start": 27.96,
+          "end": 28.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23971",
+          "text": "the",
+          "start": 28.12,
+          "end": 28.24,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23972",
+          "text": "Montreux ",
+          "start": 28.24,
+          "end": 28.84,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23973",
+          "text": "Jazz ",
+          "start": 28.84,
+          "end": 29.2,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23974",
+          "text": "Festival, ",
+          "start": 29.2,
+          "end": 29.88,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23975",
+          "text": "no ",
+          "start": 29.88,
+          "end": 30.28,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23976",
+          "text": "lives ",
+          "start": 30.32,
+          "end": 30.64,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23977",
+          "text": "were ",
+          "start": 30.64,
+          "end": 30.8,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23978",
+          "text": "lost.",
+          "start": 30.8,
+          "end": 31.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 25.8,
+        "end": 31.36,
+        "duration": 5.559999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Nobs  rushed  in  and  out,  saving  several young  people  who  had  hidden  in  the  casino,",
+      "words": [
+        {
+          "id": "68ff973857916332baa23979",
+          "text": "Nobs ",
+          "start": 31.48,
+          "end": 31.96,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397a",
+          "text": "rushed ",
+          "start": 31.96,
+          "end": 32.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397b",
+          "text": "in ",
+          "start": 32.32,
+          "end": 32.52,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397c",
+          "text": "and ",
+          "start": 32.52,
+          "end": 32.64,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397d",
+          "text": "out, ",
+          "start": 32.64,
+          "end": 32.92,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397e",
+          "text": "saving ",
+          "start": 32.96,
+          "end": 33.48,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2397f",
+          "text": "several",
+          "start": 33.48,
+          "end": 33.88,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23980",
+          "text": "young ",
+          "start": 33.88,
+          "end": 34.08,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23981",
+          "text": "people ",
+          "start": 34.08,
+          "end": 34.6,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23982",
+          "text": "who ",
+          "start": 34.6,
+          "end": 34.76,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23983",
+          "text": "had ",
+          "start": 34.76,
+          "end": 34.96,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23984",
+          "text": "hidden ",
+          "start": 34.96,
+          "end": 35.2,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23985",
+          "text": "in ",
+          "start": 35.2,
+          "end": 35.32,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23986",
+          "text": "the ",
+          "start": 35.32,
+          "end": 35.44,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23987",
+          "text": "casino,",
+          "start": 35.44,
+          "end": 35.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 31.48,
+        "end": 35.96,
+        "duration": 4.48
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "thinking  they  would  be  sheltered  from  the  flames.",
+      "words": [
+        {
+          "id": "68ff973857916332baa23988",
+          "text": "thinking ",
+          "start": 36.08,
+          "end": 36.44,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23989",
+          "text": "they ",
+          "start": 36.44,
+          "end": 36.6,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398a",
+          "text": "would ",
+          "start": 36.6,
+          "end": 36.76,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398b",
+          "text": "be ",
+          "start": 36.76,
+          "end": 36.96,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398c",
+          "text": "sheltered ",
+          "start": 36.96,
+          "end": 37.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398d",
+          "text": "from ",
+          "start": 37.32,
+          "end": 37.56,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398e",
+          "text": "the ",
+          "start": 37.56,
+          "end": 37.68,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2398f",
+          "text": "flames.",
+          "start": 37.68,
+          "end": 38.36,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 36.08,
+        "end": 38.36,
+        "duration": 2.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "His  heroism  earned  him  a  place  in  the  song's  lyrics;",
+      "words": [
+        {
+          "id": "68ff973857916332baa23990",
+          "text": "His ",
+          "start": 38.6,
+          "end": 38.92,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23991",
+          "text": "heroism ",
+          "start": 38.92,
+          "end": 39.52,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23992",
+          "text": "earned ",
+          "start": 39.52,
+          "end": 39.76,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23993",
+          "text": "him ",
+          "start": 39.76,
+          "end": 39.96,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23994",
+          "text": "a ",
+          "start": 39.96,
+          "end": 40.08,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23995",
+          "text": "place ",
+          "start": 40.08,
+          "end": 40.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23996",
+          "text": "in ",
+          "start": 40.32,
+          "end": 40.52,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23997",
+          "text": "the ",
+          "start": 40.52,
+          "end": 40.64,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa23998",
+          "text": "song's ",
+          "start": 40.64,
+          "end": 41,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa23999",
+          "text": "lyrics;",
+          "start": 41,
+          "end": 41.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.6,
+        "end": 41.64,
+        "duration": 3.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Funky  Claude  was  running  in  and  out, pulling  kids  out  the  ground,",
+      "words": [
+        {
+          "id": "68ff973857916332baa2399a",
+          "text": "Funky ",
+          "start": 41.8,
+          "end": 42.32,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2399b",
+          "text": "Claude ",
+          "start": 42.32,
+          "end": 42.68,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2399c",
+          "text": "was ",
+          "start": 42.68,
+          "end": 42.92,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2399d",
+          "text": "running ",
+          "start": 42.92,
+          "end": 43.28,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2399e",
+          "text": "in ",
+          "start": 43.28,
+          "end": 43.44,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2399f",
+          "text": "and ",
+          "start": 43.44,
+          "end": 43.6,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239a0",
+          "text": "out,",
+          "start": 43.6,
+          "end": 43.92,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239a1",
+          "text": "pulling ",
+          "start": 43.92,
+          "end": 44.36,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa239a2",
+          "text": "kids ",
+          "start": 44.36,
+          "end": 44.68,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa239a3",
+          "text": "out ",
+          "start": 44.68,
+          "end": 44.92,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa239a4",
+          "text": "the ",
+          "start": 44.92,
+          "end": 45.04,
+          "line": 1
+        },
+        {
+          "id": "68ff973857916332baa239a5",
+          "text": "ground,",
+          "start": 45.04,
+          "end": 45.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 41.8,
+        "end": 45.64,
+        "duration": 3.8400000000000034
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "and  the  band  later  dedicated  the  album  to  him.",
+      "words": [
+        {
+          "id": "68ff973857916332baa239a6",
+          "text": "and ",
+          "start": 45.84,
+          "end": 46,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239a7",
+          "text": "the ",
+          "start": 46,
+          "end": 46.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239a8",
+          "text": "band ",
+          "start": 46.12,
+          "end": 46.44,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239a9",
+          "text": "later ",
+          "start": 46.44,
+          "end": 46.88,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239aa",
+          "text": "dedicated ",
+          "start": 46.88,
+          "end": 47.6,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239ab",
+          "text": "the ",
+          "start": 47.6,
+          "end": 47.72,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239ac",
+          "text": "album ",
+          "start": 47.72,
+          "end": 48.12,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239ad",
+          "text": "to ",
+          "start": 48.12,
+          "end": 48.24,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa239ae",
+          "text": "him.",
+          "start": 48.28,
+          "end": 48.48,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 45.84,
+        "end": 48.48,
+        "duration": 2.6399999999999935
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 546122,
+      "text": "during  a  Frank  Zappa  concert",
+      "words": [
+        {
+          "id": "68ff973857916332baa23959",
+          "text": "during ",
+          "start": 20,
+          "end": 20.36,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2395a",
+          "text": "a ",
+          "start": 20.36,
+          "end": 20.48,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2395b",
+          "text": "Frank ",
+          "start": 20.48,
+          "end": 20.8,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2395c",
+          "text": "Zappa ",
+          "start": 20.8,
+          "end": 21.16,
+          "line": 0
+        },
+        {
+          "id": "68ff973857916332baa2395d",
+          "text": "concert",
+          "start": 21.16,
+          "end": 21.72,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 20,
+        "end": 21.72,
+        "duration": 1.7199999999999989
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

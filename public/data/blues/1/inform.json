@@ -1,0 +1,766 @@
+{
+  "metadata": {
+    "title": "blind_n_inform.wav",
+    "exportDate": "2025-10-27T14:36:30.456Z",
+    "totalSubtitles": 7,
+    "totalWords": 93
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "I'd  Rather  Go  Blind  is  a  track  often  seen as  the  ultimate  ode  to  romantic  desperation,",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a504",
+          "text": "I'd ",
+          "start": 0.12,
+          "end": 0.48,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a505",
+          "text": "Rather ",
+          "start": 0.48,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a506",
+          "text": "Go ",
+          "start": 0.88,
+          "end": 1.16,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a507",
+          "text": "Blind ",
+          "start": 1.2,
+          "end": 1.56,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a508",
+          "text": "is ",
+          "start": 1.6,
+          "end": 1.8,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a509",
+          "text": "a ",
+          "start": 1.8,
+          "end": 1.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50a",
+          "text": "track ",
+          "start": 1.88,
+          "end": 2.24,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50b",
+          "text": "often ",
+          "start": 2.28,
+          "end": 2.84,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50c",
+          "text": "seen",
+          "start": 2.84,
+          "end": 3.16,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50d",
+          "text": "as ",
+          "start": 3.16,
+          "end": 3.36,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50e",
+          "text": "the ",
+          "start": 3.36,
+          "end": 3.52,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a50f",
+          "text": "ultimate ",
+          "start": 3.52,
+          "end": 4,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a510",
+          "text": "ode ",
+          "start": 4.04,
+          "end": 4.32,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a511",
+          "text": "to ",
+          "start": 4.36,
+          "end": 4.48,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a512",
+          "text": "romantic ",
+          "start": 4.52,
+          "end": 5.08,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a513",
+          "text": "desperation,",
+          "start": 5.08,
+          "end": 6.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.12,
+        "end": 6.12,
+        "duration": 6
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "but  it  was  born  in  one  of  the  least romantic  places  imaginable:  a  prison  cell.",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a514",
+          "text": "but ",
+          "start": 6.24,
+          "end": 6.68,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a515",
+          "text": "it ",
+          "start": 6.68,
+          "end": 6.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a516",
+          "text": "was ",
+          "start": 6.88,
+          "end": 7.12,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a517",
+          "text": "born ",
+          "start": 7.12,
+          "end": 7.4,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a518",
+          "text": "in ",
+          "start": 7.4,
+          "end": 7.56,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a519",
+          "text": "one ",
+          "start": 7.56,
+          "end": 7.76,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51a",
+          "text": "of ",
+          "start": 7.76,
+          "end": 7.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51b",
+          "text": "the ",
+          "start": 7.88,
+          "end": 8.04,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51c",
+          "text": "least",
+          "start": 8.04,
+          "end": 8.48,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51d",
+          "text": "romantic ",
+          "start": 8.48,
+          "end": 9.08,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51e",
+          "text": "places ",
+          "start": 9.08,
+          "end": 9.68,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a51f",
+          "text": "imaginable: ",
+          "start": 9.68,
+          "end": 10.64,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a520",
+          "text": "a ",
+          "start": 10.88,
+          "end": 11.2,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a521",
+          "text": "prison ",
+          "start": 11.2,
+          "end": 11.76,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a522",
+          "text": "cell.",
+          "start": 11.76,
+          "end": 12.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 6.24,
+        "end": 12.36,
+        "duration": 6.119999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Etta  James  wrote  it  together  with  Ellington  Jordan,  a  friend who  was  spending  his  time  in  prison  at  that  moment.",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a523",
+          "text": "Etta ",
+          "start": 12.68,
+          "end": 13.08,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a524",
+          "text": "James ",
+          "start": 13.08,
+          "end": 13.56,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a525",
+          "text": "wrote ",
+          "start": 13.56,
+          "end": 13.8,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a526",
+          "text": "it ",
+          "start": 13.8,
+          "end": 13.96,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a527",
+          "text": "together ",
+          "start": 14,
+          "end": 14.32,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a528",
+          "text": "with ",
+          "start": 14.32,
+          "end": 14.64,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a529",
+          "text": "Ellington ",
+          "start": 14.64,
+          "end": 15.2,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52a",
+          "text": "Jordan, ",
+          "start": 15.2,
+          "end": 15.96,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52b",
+          "text": "a ",
+          "start": 16,
+          "end": 16.24,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52c",
+          "text": "friend",
+          "start": 16.24,
+          "end": 16.6,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52d",
+          "text": "who ",
+          "start": 16.6,
+          "end": 16.76,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52e",
+          "text": "was ",
+          "start": 16.76,
+          "end": 16.88,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a52f",
+          "text": "spending ",
+          "start": 16.88,
+          "end": 17.32,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a530",
+          "text": "his ",
+          "start": 17.32,
+          "end": 17.56,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a531",
+          "text": "time ",
+          "start": 17.56,
+          "end": 17.84,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a532",
+          "text": "in ",
+          "start": 17.84,
+          "end": 18,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a533",
+          "text": "prison ",
+          "start": 18,
+          "end": 18.48,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a534",
+          "text": "at ",
+          "start": 18.48,
+          "end": 18.68,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a535",
+          "text": "that ",
+          "start": 18.72,
+          "end": 18.92,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a536",
+          "text": "moment.",
+          "start": 18.92,
+          "end": 19.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.68,
+        "end": 19.56,
+        "duration": 6.879999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "He  had  already  sketched  out  the  lyrics, channelling  all  the  sadness  and  desperation",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a537",
+          "text": "He ",
+          "start": 19.68,
+          "end": 19.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a538",
+          "text": "had ",
+          "start": 19.88,
+          "end": 20.16,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a539",
+          "text": "already ",
+          "start": 20.16,
+          "end": 20.56,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53a",
+          "text": "sketched ",
+          "start": 20.6,
+          "end": 21.08,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53b",
+          "text": "out ",
+          "start": 21.08,
+          "end": 21.32,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53c",
+          "text": "the ",
+          "start": 21.32,
+          "end": 21.52,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53d",
+          "text": "lyrics,",
+          "start": 21.52,
+          "end": 22.04,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53e",
+          "text": "channelling ",
+          "start": 22.08,
+          "end": 22.88,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a53f",
+          "text": "all ",
+          "start": 22.88,
+          "end": 23.12,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a540",
+          "text": "the ",
+          "start": 23.12,
+          "end": 23.32,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a541",
+          "text": "sadness ",
+          "start": 23.32,
+          "end": 23.84,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a542",
+          "text": "and ",
+          "start": 23.84,
+          "end": 24,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a543",
+          "text": "desperation",
+          "start": 24,
+          "end": 24.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 19.68,
+        "end": 24.68,
+        "duration": 5
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "of  his  confinement  into  it.",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a544",
+          "text": "of ",
+          "start": 24.8,
+          "end": 25,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a545",
+          "text": "his ",
+          "start": 25,
+          "end": 25.24,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a546",
+          "text": "confinement ",
+          "start": 25.24,
+          "end": 26.16,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a547",
+          "text": "into ",
+          "start": 26.16,
+          "end": 26.64,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a548",
+          "text": "it.",
+          "start": 26.64,
+          "end": 26.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 24.8,
+        "end": 26.96,
+        "duration": 2.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "So  as  you  listen,  try  to  hear  it  through  his  ears.",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a549",
+          "text": "So ",
+          "start": 27.08,
+          "end": 27.6,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54a",
+          "text": "as ",
+          "start": 27.64,
+          "end": 27.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54b",
+          "text": "you ",
+          "start": 27.88,
+          "end": 28.12,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54c",
+          "text": "listen, ",
+          "start": 28.12,
+          "end": 28.68,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54d",
+          "text": "try ",
+          "start": 28.68,
+          "end": 28.96,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54e",
+          "text": "to ",
+          "start": 29,
+          "end": 29.08,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a54f",
+          "text": "hear ",
+          "start": 29.12,
+          "end": 29.44,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a550",
+          "text": "it ",
+          "start": 29.44,
+          "end": 29.6,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a551",
+          "text": "through ",
+          "start": 29.6,
+          "end": 29.88,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a552",
+          "text": "his ",
+          "start": 29.92,
+          "end": 30.28,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a553",
+          "text": "ears.",
+          "start": 30.32,
+          "end": 31,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 27.08,
+        "end": 31,
+        "duration": 3.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "It's  not  just  about  losing  a  lover, it's  about  losing  everything  you  know.",
+      "words": [
+        {
+          "id": "68ff7b6bb483832f30f5a554",
+          "text": "It's ",
+          "start": 31.24,
+          "end": 31.48,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a555",
+          "text": "not ",
+          "start": 31.48,
+          "end": 31.64,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a556",
+          "text": "just ",
+          "start": 31.64,
+          "end": 31.92,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a557",
+          "text": "about ",
+          "start": 31.92,
+          "end": 32.28,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a558",
+          "text": "losing ",
+          "start": 32.28,
+          "end": 32.68,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a559",
+          "text": "a ",
+          "start": 32.72,
+          "end": 32.92,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55a",
+          "text": "lover,",
+          "start": 32.92,
+          "end": 33.48,
+          "line": 0
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55b",
+          "text": "it's ",
+          "start": 33.52,
+          "end": 33.76,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55c",
+          "text": "about ",
+          "start": 33.76,
+          "end": 34.04,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55d",
+          "text": "losing ",
+          "start": 34.04,
+          "end": 34.72,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55e",
+          "text": "everything ",
+          "start": 34.72,
+          "end": 35.32,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a55f",
+          "text": "you ",
+          "start": 35.32,
+          "end": 35.52,
+          "line": 1
+        },
+        {
+          "id": "68ff7b6bb483832f30f5a560",
+          "text": "know.",
+          "start": 35.52,
+          "end": 35.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 31.24,
+        "end": 35.92,
+        "duration": 4.680000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

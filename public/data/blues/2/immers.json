@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "title": "hound_dog_inform2 (2)",
+    "exportDate": "2025-10-28T06:59:20.191Z",
+    "totalSubtitles": 8,
+    "totalWords": 84
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "While  it  became  world  famous through  Elvis's  version,",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfde1",
+          "text": "While ",
+          "start": 0.16,
+          "end": 0.6,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfde2",
+          "text": "it ",
+          "start": 0.6,
+          "end": 0.76,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfde3",
+          "text": "became ",
+          "start": 0.76,
+          "end": 1.12,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfde4",
+          "text": "world ",
+          "start": 1.12,
+          "end": 1.4,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfde5",
+          "text": "famous",
+          "start": 1.4,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfde6",
+          "text": "through ",
+          "start": 1.76,
+          "end": 2,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfde7",
+          "text": "Elvis's ",
+          "start": 2.04,
+          "end": 2.56,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfde8",
+          "text": "version,",
+          "start": 2.6,
+          "end": 3.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 3.08,
+        "duration": 2.92
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "and  continues  to  reverberate  in  pop  music through  Doja  Cat's  Vegas,",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfde9",
+          "text": "and ",
+          "start": 3.2,
+          "end": 3.48,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdea",
+          "text": "continues ",
+          "start": 3.48,
+          "end": 4.08,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdeb",
+          "text": "to ",
+          "start": 4.08,
+          "end": 4.2,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdec",
+          "text": "reverberate ",
+          "start": 4.24,
+          "end": 4.88,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfded",
+          "text": "in ",
+          "start": 4.88,
+          "end": 5.16,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdee",
+          "text": "pop ",
+          "start": 5.16,
+          "end": 5.32,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdef",
+          "text": "music",
+          "start": 5.32,
+          "end": 5.64,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf0",
+          "text": "through ",
+          "start": 5.64,
+          "end": 5.8,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf1",
+          "text": "Doja ",
+          "start": 5.84,
+          "end": 6.12,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf2",
+          "text": "Cat's ",
+          "start": 6.12,
+          "end": 6.36,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf3",
+          "text": "Vegas,",
+          "start": 6.4,
+          "end": 7,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 3.2,
+        "end": 7,
+        "duration": 3.8
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Hound  Dog  was  originally  written by  Jerry  Leiber  and  Mike  Stoller",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfdf4",
+          "text": "Hound ",
+          "start": 7.12,
+          "end": 7.48,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf5",
+          "text": "Dog ",
+          "start": 7.48,
+          "end": 7.68,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf6",
+          "text": "was ",
+          "start": 7.68,
+          "end": 7.88,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf7",
+          "text": "originally ",
+          "start": 7.88,
+          "end": 8.44,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf8",
+          "text": "written",
+          "start": 8.44,
+          "end": 8.72,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfdf9",
+          "text": "by ",
+          "start": 8.72,
+          "end": 8.96,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdfa",
+          "text": "Jerry ",
+          "start": 8.96,
+          "end": 9.36,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdfb",
+          "text": "Leiber ",
+          "start": 9.36,
+          "end": 9.76,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdfc",
+          "text": "and ",
+          "start": 9.76,
+          "end": 9.92,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdfd",
+          "text": "Mike ",
+          "start": 9.92,
+          "end": 10.2,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfdfe",
+          "text": "Stoller",
+          "start": 10.2,
+          "end": 10.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 7.12,
+        "end": 10.56,
+        "duration": 3.4400000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "to  fit  Big  Mama  Thornton's brusque  and  badass  presence.",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfdff",
+          "text": "to ",
+          "start": 10.68,
+          "end": 10.88,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe00",
+          "text": "fit ",
+          "start": 10.92,
+          "end": 11.16,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe01",
+          "text": "Big ",
+          "start": 11.16,
+          "end": 11.4,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe02",
+          "text": "Mama ",
+          "start": 11.4,
+          "end": 11.68,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe03",
+          "text": "Thornton's",
+          "start": 11.68,
+          "end": 12.08,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe04",
+          "text": "brusque ",
+          "start": 12.08,
+          "end": 12.6,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe05",
+          "text": "and ",
+          "start": 12.6,
+          "end": 12.84,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe06",
+          "text": "badass ",
+          "start": 12.84,
+          "end": 13.32,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe07",
+          "text": "presence.",
+          "start": 13.36,
+          "end": 14.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 10.68,
+        "end": 14.08,
+        "duration": 3.4000000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "A  lady  bear  whose  formidable  350-pound  frame and  scarred  face  made  her  the  biggest,",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfe08",
+          "text": "A ",
+          "start": 14.32,
+          "end": 14.52,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe09",
+          "text": "lady ",
+          "start": 14.52,
+          "end": 14.84,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0a",
+          "text": "bear ",
+          "start": 14.84,
+          "end": 15.08,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0b",
+          "text": "whose ",
+          "start": 15.08,
+          "end": 15.4,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0c",
+          "text": "formidable ",
+          "start": 15.4,
+          "end": 16.2,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0d",
+          "text": "350-pound ",
+          "start": 16.24,
+          "end": 17.76,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0e",
+          "text": "frame",
+          "start": 17.8,
+          "end": 18.32,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe0f",
+          "text": "and ",
+          "start": 18.32,
+          "end": 18.6,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe10",
+          "text": "scarred ",
+          "start": 18.6,
+          "end": 18.96,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe11",
+          "text": "face ",
+          "start": 18.96,
+          "end": 19.48,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe12",
+          "text": "made ",
+          "start": 19.52,
+          "end": 19.92,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe13",
+          "text": "her ",
+          "start": 19.92,
+          "end": 20.16,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe14",
+          "text": "the ",
+          "start": 20.16,
+          "end": 20.32,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe15",
+          "text": "biggest,",
+          "start": 20.32,
+          "end": 20.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 14.32,
+        "end": 20.64,
+        "duration": 6.32
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "baddest,  and  saltiest  chick they  had  ever  met.",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfe16",
+          "text": "baddest, ",
+          "start": 20.76,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe17",
+          "text": "and ",
+          "start": 21.28,
+          "end": 21.48,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe18",
+          "text": "saltiest ",
+          "start": 21.48,
+          "end": 22,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe19",
+          "text": "chick",
+          "start": 22,
+          "end": 22.28,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe1a",
+          "text": "they ",
+          "start": 22.32,
+          "end": 22.48,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe1b",
+          "text": "had ",
+          "start": 22.48,
+          "end": 22.64,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe1c",
+          "text": "ever ",
+          "start": 22.64,
+          "end": 22.88,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe1d",
+          "text": "met.",
+          "start": 22.88,
+          "end": 23.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 20.76,
+        "end": 23.36,
+        "duration": 2.599999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Hound  dog  was  written  not  just  for  her  voice,  but  for  her  very  essence.",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfe1e",
+          "text": "Hound ",
+          "start": 23.68,
+          "end": 24.04,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe1f",
+          "text": "dog ",
+          "start": 24.04,
+          "end": 24.24,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe20",
+          "text": "was ",
+          "start": 24.24,
+          "end": 24.4,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe21",
+          "text": "written ",
+          "start": 24.4,
+          "end": 24.68,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe22",
+          "text": "not ",
+          "start": 24.68,
+          "end": 24.84,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe23",
+          "text": "just ",
+          "start": 24.84,
+          "end": 25.04,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe24",
+          "text": "for ",
+          "start": 25.04,
+          "end": 25.28,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe25",
+          "text": "her ",
+          "start": 25.28,
+          "end": 25.44,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe26",
+          "text": "voice, ",
+          "start": 25.44,
+          "end": 25.88,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe27",
+          "text": "but ",
+          "start": 25.88,
+          "end": 26.04,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe28",
+          "text": "for ",
+          "start": 26.04,
+          "end": 26.2,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe29",
+          "text": "her ",
+          "start": 26.2,
+          "end": 26.4,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe2a",
+          "text": "very ",
+          "start": 26.4,
+          "end": 26.84,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe2b",
+          "text": "essence.",
+          "start": 26.84,
+          "end": 27.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 23.68,
+        "end": 27.36,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Designed  to  be  growled with  a  raw,  bold  energy.",
+      "words": [
+        {
+          "id": "6900696850bc00c30d3bfe2c",
+          "text": "Designed ",
+          "start": 27.48,
+          "end": 28.04,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe2d",
+          "text": "to ",
+          "start": 28.04,
+          "end": 28.24,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe2e",
+          "text": "be ",
+          "start": 28.24,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe2f",
+          "text": "growled",
+          "start": 28.44,
+          "end": 28.84,
+          "line": 0
+        },
+        {
+          "id": "6900696850bc00c30d3bfe30",
+          "text": "with ",
+          "start": 28.84,
+          "end": 29.04,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe31",
+          "text": "a ",
+          "start": 29.04,
+          "end": 29.16,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe32",
+          "text": "raw, ",
+          "start": 29.2,
+          "end": 29.48,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe33",
+          "text": "bold ",
+          "start": 29.52,
+          "end": 29.96,
+          "line": 1
+        },
+        {
+          "id": "6900696850bc00c30d3bfe34",
+          "text": "energy.",
+          "start": 29.96,
+          "end": 30.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 27.48,
+        "end": 30.56,
+        "duration": 3.0799999999999983
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -76,3 +76,4 @@ Genres used: 5
 - Survey responses are generated based on actual question structures
 - The script is safe to run multiple times (generates unique session IDs)
 - Maximum recommended batch size is 10,000 sessions per run
+

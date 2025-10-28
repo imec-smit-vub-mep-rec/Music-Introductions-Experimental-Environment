@@ -1,0 +1,1037 @@
+{
+  "metadata": {
+    "title": "summer_inform2",
+    "exportDate": "2025-10-27T15:22:57.842Z",
+    "totalSubtitles": 12,
+    "totalWords": 121
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Summertime,  an  aria  immortalized by  voices  like  Ella  Fitzgerald's.",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005c1",
+          "text": "Summertime, ",
+          "start": 0.2,
+          "end": 1.36,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005c2",
+          "text": "an ",
+          "start": 1.52,
+          "end": 1.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005c3",
+          "text": "aria ",
+          "start": 1.72,
+          "end": 2.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005c4",
+          "text": "immortalized",
+          "start": 2.2,
+          "end": 3,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005c5",
+          "text": "by ",
+          "start": 3,
+          "end": 3.32,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005c6",
+          "text": "voices ",
+          "start": 3.32,
+          "end": 3.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005c7",
+          "text": "like ",
+          "start": 3.84,
+          "end": 4.16,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005c8",
+          "text": "Ella ",
+          "start": 4.2,
+          "end": 4.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005c9",
+          "text": "Fitzgerald's.",
+          "start": 4.48,
+          "end": 5.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 5.44,
+        "duration": 5.24
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "A Gershwin  masterpiece, right ?",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005cb",
+          "text": "A Gershwin ",
+          "start": 6,
+          "end": 6.48,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005cc",
+          "text": "masterpiece, right",
+          "start": 6.48,
+          "end": 7.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005cd",
+          "text": "?",
+          "start": 7.28,
+          "end": 7.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 6,
+        "end": 7.96,
+        "duration": 1.96
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Well,  the  truth  is  a  bit  more  complicated.",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005ce",
+          "text": "Well, ",
+          "start": 8.08,
+          "end": 8.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005cf",
+          "text": "the ",
+          "start": 8.76,
+          "end": 8.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d0",
+          "text": "truth ",
+          "start": 8.92,
+          "end": 9.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d1",
+          "text": "is ",
+          "start": 9.24,
+          "end": 9.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d2",
+          "text": "a ",
+          "start": 9.44,
+          "end": 9.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d3",
+          "text": "bit ",
+          "start": 9.56,
+          "end": 9.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d4",
+          "text": "more ",
+          "start": 9.76,
+          "end": 9.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d5",
+          "text": "complicated.",
+          "start": 9.96,
+          "end": 10.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 8.08,
+        "end": 10.96,
+        "duration": 2.880000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "The  lyrics,  for  instance,  are  by  the  writer Du Bose  Heyward,  whose  novel  inspired",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005d6",
+          "text": "The ",
+          "start": 11.16,
+          "end": 11.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d7",
+          "text": "lyrics, ",
+          "start": 11.44,
+          "end": 11.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d8",
+          "text": "for ",
+          "start": 11.96,
+          "end": 12.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005d9",
+          "text": "instance, ",
+          "start": 12.16,
+          "end": 12.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005da",
+          "text": "are ",
+          "start": 12.88,
+          "end": 13.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005db",
+          "text": "by ",
+          "start": 13.04,
+          "end": 13.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005dc",
+          "text": "the ",
+          "start": 13.24,
+          "end": 13.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005dd",
+          "text": "writer",
+          "start": 13.4,
+          "end": 13.8,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005de",
+          "text": "Du",
+          "start": 13.8,
+          "end": 13.9,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005df",
+          "text": "Bose ",
+          "start": 13.9,
+          "end": 14,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005e0",
+          "text": "Heyward, ",
+          "start": 14.4,
+          "end": 15.12,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005e1",
+          "text": "whose ",
+          "start": 15.12,
+          "end": 15.36,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005e2",
+          "text": "novel ",
+          "start": 15.36,
+          "end": 15.8,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005e3",
+          "text": "inspired",
+          "start": 15.8,
+          "end": 16.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 11.16,
+        "end": 16.32,
+        "duration": 5.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "the  opera  Porgy  and  Bess.",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005e4",
+          "text": "the ",
+          "start": 16.44,
+          "end": 16.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005e5",
+          "text": "opera ",
+          "start": 16.6,
+          "end": 17.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005e6",
+          "text": "Porgy ",
+          "start": 17.16,
+          "end": 17.64,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005e7",
+          "text": "and ",
+          "start": 17.64,
+          "end": 17.8,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005e8",
+          "text": "Bess.",
+          "start": 17.8,
+          "end": 18.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 16.44,
+        "end": 18.24,
+        "duration": 1.7999999999999972
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "And  the  melody,  place  it  next  to  the  old African  American spiritual:",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005e9",
+          "text": "And ",
+          "start": 18.52,
+          "end": 18.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005ea",
+          "text": "the ",
+          "start": 18.72,
+          "end": 18.84,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005eb",
+          "text": "melody, ",
+          "start": 18.84,
+          "end": 19.48,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005ec",
+          "text": "place ",
+          "start": 19.6,
+          "end": 20.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005ed",
+          "text": "it ",
+          "start": 20.08,
+          "end": 20.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005ee",
+          "text": "next ",
+          "start": 20.2,
+          "end": 20.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005ef",
+          "text": "to ",
+          "start": 20.56,
+          "end": 20.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f0",
+          "text": "the ",
+          "start": 20.76,
+          "end": 21,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f1",
+          "text": "old",
+          "start": 21,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f2",
+          "text": "African ",
+          "start": 21.28,
+          "end": 21.68,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005f3",
+          "text": "American spiritual:",
+          "start": 21.68,
+          "end": 22.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 18.52,
+        "end": 22.12,
+        "duration": 3.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "So  does  that  mean  this  masterpiece  was  simply stolen  from  the  African  American  community?",
+      "words": [
+        {
+          "id": "68ff89373ba1392757800605",
+          "text": "So ",
+          "start": 29,
+          "end": 29.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800606",
+          "text": "does ",
+          "start": 29.72,
+          "end": 29.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800607",
+          "text": "that ",
+          "start": 29.96,
+          "end": 30.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800608",
+          "text": "mean ",
+          "start": 30.16,
+          "end": 30.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800609",
+          "text": "this ",
+          "start": 30.4,
+          "end": 30.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780060a",
+          "text": "masterpiece ",
+          "start": 30.6,
+          "end": 31.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780060b",
+          "text": "was ",
+          "start": 31.24,
+          "end": 31.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780060c",
+          "text": "simply",
+          "start": 31.44,
+          "end": 31.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780060d",
+          "text": "stolen ",
+          "start": 31.96,
+          "end": 32.44,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780060e",
+          "text": "from ",
+          "start": 32.44,
+          "end": 32.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780060f",
+          "text": "the ",
+          "start": 32.64,
+          "end": 32.76,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800610",
+          "text": "African ",
+          "start": 32.76,
+          "end": 33.16,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800611",
+          "text": "American ",
+          "start": 33.2,
+          "end": 33.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800612",
+          "text": "community?",
+          "start": 33.6,
+          "end": 34.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29,
+        "end": 34.32,
+        "duration": 5.32
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "The  opera  was  led  by  white  artists, but  it  was  created  in  close  dialogue",
+      "words": [
+        {
+          "id": "68ff89373ba1392757800613",
+          "text": "The ",
+          "start": 34.6,
+          "end": 34.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800614",
+          "text": "opera ",
+          "start": 34.88,
+          "end": 35.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800615",
+          "text": "was ",
+          "start": 35.32,
+          "end": 35.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800616",
+          "text": "led ",
+          "start": 35.6,
+          "end": 35.84,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800617",
+          "text": "by ",
+          "start": 35.84,
+          "end": 36.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800618",
+          "text": "white ",
+          "start": 36.16,
+          "end": 36.48,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800619",
+          "text": "artists,",
+          "start": 36.52,
+          "end": 37.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780061a",
+          "text": "but ",
+          "start": 37.32,
+          "end": 37.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780061b",
+          "text": "it ",
+          "start": 37.48,
+          "end": 37.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780061c",
+          "text": "was ",
+          "start": 37.56,
+          "end": 37.76,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780061d",
+          "text": "created ",
+          "start": 37.76,
+          "end": 38.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780061e",
+          "text": "in ",
+          "start": 38.24,
+          "end": 38.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780061f",
+          "text": "close ",
+          "start": 38.56,
+          "end": 38.92,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800620",
+          "text": "dialogue",
+          "start": 38.92,
+          "end": 39.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 34.6,
+        "end": 39.24,
+        "duration": 4.640000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "with  the  African  Americans.",
+      "words": [
+        {
+          "id": "68ff89373ba1392757800621",
+          "text": "with ",
+          "start": 39.36,
+          "end": 39.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800622",
+          "text": "the ",
+          "start": 39.56,
+          "end": 39.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800623",
+          "text": "African ",
+          "start": 39.72,
+          "end": 40.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800624",
+          "text": "Americans.",
+          "start": 40.16,
+          "end": 41,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 39.36,
+        "end": 41,
+        "duration": 1.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "What  you  are  hearing,  then,  is  much  more than  a  song  by  Gershwin.",
+      "words": [
+        {
+          "id": "68ff89373ba1392757800625",
+          "text": "What ",
+          "start": 41.12,
+          "end": 41.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800626",
+          "text": "you ",
+          "start": 41.32,
+          "end": 41.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800627",
+          "text": "are ",
+          "start": 41.44,
+          "end": 41.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800628",
+          "text": "hearing, ",
+          "start": 41.6,
+          "end": 42,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800629",
+          "text": "then, ",
+          "start": 42,
+          "end": 42.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780062a",
+          "text": "is ",
+          "start": 42.36,
+          "end": 42.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780062b",
+          "text": "much ",
+          "start": 42.6,
+          "end": 42.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780062c",
+          "text": "more",
+          "start": 42.96,
+          "end": 43.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780062d",
+          "text": "than ",
+          "start": 43.24,
+          "end": 43.4,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780062e",
+          "text": "a ",
+          "start": 43.4,
+          "end": 43.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780062f",
+          "text": "song ",
+          "start": 43.6,
+          "end": 43.88,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800630",
+          "text": "by ",
+          "start": 43.88,
+          "end": 44.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800631",
+          "text": "Gershwin.",
+          "start": 44.12,
+          "end": 44.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 41.12,
+        "end": 44.8,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "It  is  the  product  of  a  complex  history of  cultural  exchange.",
+      "words": [
+        {
+          "id": "68ff89373ba1392757800632",
+          "text": "It ",
+          "start": 44.92,
+          "end": 45.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800633",
+          "text": "is ",
+          "start": 45.04,
+          "end": 45.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800634",
+          "text": "the ",
+          "start": 45.2,
+          "end": 45.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800635",
+          "text": "product ",
+          "start": 45.32,
+          "end": 45.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800636",
+          "text": "of ",
+          "start": 45.76,
+          "end": 45.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800637",
+          "text": "a ",
+          "start": 45.88,
+          "end": 46.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800638",
+          "text": "complex ",
+          "start": 46.08,
+          "end": 46.68,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba1392757800639",
+          "text": "history",
+          "start": 46.68,
+          "end": 47.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba139275780063a",
+          "text": "of ",
+          "start": 47.4,
+          "end": 47.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780063b",
+          "text": "cultural ",
+          "start": 47.6,
+          "end": 48.12,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba139275780063c",
+          "text": "exchange.",
+          "start": 48.12,
+          "end": 48.88,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 44.92,
+        "end": 48.88,
+        "duration": 3.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 352990,
+      "text": "'Sometimes  I  Feel  Like  a Motherless  Child'  and  the  resemblance  is  far  too  striking  to  ignore.",
+      "words": [
+        {
+          "id": "68ff89373ba13927578005f4",
+          "text": "'Sometimes ",
+          "start": 22.9201,
+          "end": 23,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f6",
+          "text": "I ",
+          "start": 23.72,
+          "end": 23.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f7",
+          "text": "Feel ",
+          "start": 23.96,
+          "end": 24.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f8",
+          "text": "Like ",
+          "start": 24.24,
+          "end": 24.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005f9",
+          "text": "a Motherless ",
+          "start": 24.44,
+          "end": 24.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005fb",
+          "text": "Child' ",
+          "start": 25.04,
+          "end": 25.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89373ba13927578005fc",
+          "text": "and ",
+          "start": 25.76,
+          "end": 25.88,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005fd",
+          "text": "the ",
+          "start": 25.88,
+          "end": 26,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005fe",
+          "text": "resemblance ",
+          "start": 26,
+          "end": 26.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba13927578005ff",
+          "text": "is ",
+          "start": 26.6,
+          "end": 26.88,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800600",
+          "text": "far ",
+          "start": 26.88,
+          "end": 27.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800601",
+          "text": "too ",
+          "start": 27.24,
+          "end": 27.36,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800602",
+          "text": "striking ",
+          "start": 27.4,
+          "end": 27.92,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800603",
+          "text": "to ",
+          "start": 27.96,
+          "end": 28.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89373ba1392757800604",
+          "text": "ignore.",
+          "start": 28.12,
+          "end": 28.72,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.9201,
+        "end": 28.72,
+        "duration": 5.799899999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

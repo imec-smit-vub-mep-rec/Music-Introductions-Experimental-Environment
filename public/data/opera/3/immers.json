@@ -1,0 +1,911 @@
+{
+  "metadata": {
+    "title": "summer_immers2",
+    "exportDate": "2025-10-27T14:51:48.075Z",
+    "totalSubtitles": 12,
+    "totalWords": 103
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Catfish  Row,  South  Carolina.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4849",
+          "text": "Catfish ",
+          "start": 0.16,
+          "end": 0.88,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f484a",
+          "text": "Row, ",
+          "start": 0.88,
+          "end": 1.36,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f484b",
+          "text": "South ",
+          "start": 1.4,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f484c",
+          "text": "Carolina.",
+          "start": 1.76,
+          "end": 2.52,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 2.52,
+        "duration": 2.36
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "The  air  trembles  with  heat,  insects  hum, in  the  heavy  summer  stillness.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f484d",
+          "text": "The ",
+          "start": 2.84,
+          "end": 3.04,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f484e",
+          "text": "air ",
+          "start": 3.04,
+          "end": 3.36,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f484f",
+          "text": "trembles ",
+          "start": 3.36,
+          "end": 3.92,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4850",
+          "text": "with ",
+          "start": 3.92,
+          "end": 4.16,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4851",
+          "text": "heat, ",
+          "start": 4.16,
+          "end": 4.8,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4852",
+          "text": "insects ",
+          "start": 4.8,
+          "end": 5.44,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4853",
+          "text": "hum,",
+          "start": 5.48,
+          "end": 5.8,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4854",
+          "text": "in ",
+          "start": 5.8,
+          "end": 6,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4855",
+          "text": "the ",
+          "start": 6,
+          "end": 6.12,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4856",
+          "text": "heavy ",
+          "start": 6.12,
+          "end": 6.48,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4857",
+          "text": "summer ",
+          "start": 6.48,
+          "end": 6.88,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4858",
+          "text": "stillness.",
+          "start": 6.88,
+          "end": 7.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 2.84,
+        "end": 7.6,
+        "duration": 4.76
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Then  a  voice  rises.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4859",
+          "text": "Then ",
+          "start": 8.04,
+          "end": 8.52,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f485a",
+          "text": "a ",
+          "start": 8.68,
+          "end": 8.8,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f485b",
+          "text": "voice ",
+          "start": 8.8,
+          "end": 9.16,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f485c",
+          "text": "rises.",
+          "start": 9.16,
+          "end": 9.88,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 8.04,
+        "end": 9.88,
+        "duration": 1.8400000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "You  see  a  mother  holding  her  child, soothing  her  with  a  gentle  lullaby.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f485d",
+          "text": "You ",
+          "start": 10.2,
+          "end": 10.48,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f485e",
+          "text": "see ",
+          "start": 10.48,
+          "end": 10.76,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f485f",
+          "text": "a ",
+          "start": 10.76,
+          "end": 10.88,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4860",
+          "text": "mother ",
+          "start": 10.88,
+          "end": 11.32,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4861",
+          "text": "holding ",
+          "start": 11.32,
+          "end": 11.72,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4862",
+          "text": "her ",
+          "start": 11.72,
+          "end": 11.88,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4863",
+          "text": "child,",
+          "start": 11.88,
+          "end": 12.72,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4864",
+          "text": "soothing ",
+          "start": 12.72,
+          "end": 13.2,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4865",
+          "text": "her ",
+          "start": 13.2,
+          "end": 13.4,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4866",
+          "text": "with ",
+          "start": 13.4,
+          "end": 13.64,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4867",
+          "text": "a ",
+          "start": 13.64,
+          "end": 13.76,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4868",
+          "text": "gentle ",
+          "start": 13.76,
+          "end": 14.24,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4869",
+          "text": "lullaby.",
+          "start": 14.24,
+          "end": 15,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 10.2,
+        "end": 15,
+        "duration": 4.800000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Hush,  little  one,  don't  you  cry.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f486a",
+          "text": "Hush, ",
+          "start": 15.48,
+          "end": 15.92,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f486b",
+          "text": "little ",
+          "start": 15.96,
+          "end": 16.24,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f486c",
+          "text": "one, ",
+          "start": 16.24,
+          "end": 16.76,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f486d",
+          "text": "don't ",
+          "start": 16.8,
+          "end": 17.16,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f486e",
+          "text": "you ",
+          "start": 17.16,
+          "end": 17.28,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f486f",
+          "text": "cry.",
+          "start": 17.36,
+          "end": 17.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 15.48,
+        "end": 17.76,
+        "duration": 2.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Here  in  my  arms  it  is  summer, and  life  is  easy.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4870",
+          "text": "Here ",
+          "start": 18.16,
+          "end": 18.64,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4871",
+          "text": "in ",
+          "start": 18.64,
+          "end": 18.84,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4872",
+          "text": "my ",
+          "start": 18.84,
+          "end": 19.16,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4873",
+          "text": "arms ",
+          "start": 19.16,
+          "end": 19.6,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4874",
+          "text": "it ",
+          "start": 19.6,
+          "end": 19.76,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4875",
+          "text": "is ",
+          "start": 19.76,
+          "end": 20,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4876",
+          "text": "summer,",
+          "start": 20,
+          "end": 20.44,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4877",
+          "text": "and ",
+          "start": 20.56,
+          "end": 20.8,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4878",
+          "text": "life ",
+          "start": 20.8,
+          "end": 21.08,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4879",
+          "text": "is ",
+          "start": 21.08,
+          "end": 21.28,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f487a",
+          "text": "easy.",
+          "start": 21.28,
+          "end": 21.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 18.16,
+        "end": 21.84,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Here  your  father  is  rich, and  your  mother  is  good  looking.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f487b",
+          "text": "Here ",
+          "start": 22.2,
+          "end": 22.64,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f487c",
+          "text": "your ",
+          "start": 22.64,
+          "end": 22.88,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f487d",
+          "text": "father ",
+          "start": 22.88,
+          "end": 23.28,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f487e",
+          "text": "is ",
+          "start": 23.28,
+          "end": 23.52,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f487f",
+          "text": "rich,",
+          "start": 23.52,
+          "end": 23.92,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4880",
+          "text": "and ",
+          "start": 23.92,
+          "end": 24.08,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4881",
+          "text": "your ",
+          "start": 24.08,
+          "end": 24.28,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4882",
+          "text": "mother ",
+          "start": 24.28,
+          "end": 24.6,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4883",
+          "text": "is ",
+          "start": 24.6,
+          "end": 24.8,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4884",
+          "text": "good ",
+          "start": 24.8,
+          "end": 25.04,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4885",
+          "text": "looking.",
+          "start": 25.08,
+          "end": 25.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.2,
+        "end": 25.6,
+        "duration": 3.400000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Here  the  future  is  ripe  with  promise, and  nothing  can  harm  you,",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4886",
+          "text": "Here ",
+          "start": 25.88,
+          "end": 26.56,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4887",
+          "text": "the ",
+          "start": 26.56,
+          "end": 26.72,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4888",
+          "text": "future ",
+          "start": 26.72,
+          "end": 27.2,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4889",
+          "text": "is ",
+          "start": 27.2,
+          "end": 27.4,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488a",
+          "text": "ripe ",
+          "start": 27.4,
+          "end": 27.68,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488b",
+          "text": "with ",
+          "start": 27.68,
+          "end": 27.88,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488c",
+          "text": "promise,",
+          "start": 27.88,
+          "end": 28.52,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488d",
+          "text": "and ",
+          "start": 28.64,
+          "end": 28.8,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488e",
+          "text": "nothing ",
+          "start": 28.8,
+          "end": 29.28,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f488f",
+          "text": "can ",
+          "start": 29.28,
+          "end": 29.56,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4890",
+          "text": "harm ",
+          "start": 29.56,
+          "end": 29.88,
+          "line": 1
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4891",
+          "text": "you,",
+          "start": 29.88,
+          "end": 30.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 25.88,
+        "end": 30.2,
+        "duration": 4.32
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "for  we  are  here.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4892",
+          "text": "for ",
+          "start": 30.32,
+          "end": 30.6,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4893",
+          "text": "we ",
+          "start": 30.6,
+          "end": 30.84,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4894",
+          "text": "are ",
+          "start": 30.84,
+          "end": 31.08,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4895",
+          "text": "here.",
+          "start": 31.08,
+          "end": 31.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 30.32,
+        "end": 31.68,
+        "duration": 1.3599999999999994
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Yet  the  melody  carries  a  trace  of  melancholy.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f4896",
+          "text": "Yet ",
+          "start": 32.08,
+          "end": 32.36,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4897",
+          "text": "the ",
+          "start": 32.36,
+          "end": 32.52,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4898",
+          "text": "melody ",
+          "start": 32.52,
+          "end": 32.96,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f4899",
+          "text": "carries ",
+          "start": 33,
+          "end": 33.4,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f489a",
+          "text": "a ",
+          "start": 33.44,
+          "end": 33.56,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f489b",
+          "text": "trace ",
+          "start": 33.56,
+          "end": 33.92,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f489c",
+          "text": "of ",
+          "start": 33.92,
+          "end": 34.04,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f489d",
+          "text": "melancholy.",
+          "start": 34.04,
+          "end": 35.04,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 32.08,
+        "end": 35.04,
+        "duration": 2.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "For  in  truth,  life  in  South  Carolina  is  anything  but  easy.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f489e",
+          "text": "For ",
+          "start": 35.16,
+          "end": 35.36,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f489f",
+          "text": "in ",
+          "start": 35.4,
+          "end": 35.64,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a0",
+          "text": "truth, ",
+          "start": 35.64,
+          "end": 36.24,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a1",
+          "text": "life ",
+          "start": 36.24,
+          "end": 36.56,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a2",
+          "text": "in ",
+          "start": 36.56,
+          "end": 36.76,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a3",
+          "text": "South ",
+          "start": 36.76,
+          "end": 37,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a4",
+          "text": "Carolina ",
+          "start": 37,
+          "end": 37.68,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a5",
+          "text": "is ",
+          "start": 37.68,
+          "end": 37.96,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a6",
+          "text": "anything ",
+          "start": 37.96,
+          "end": 38.48,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a7",
+          "text": "but ",
+          "start": 38.48,
+          "end": 38.72,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a8",
+          "text": "easy.",
+          "start": 38.72,
+          "end": 39.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 35.16,
+        "end": 39.28,
+        "duration": 4.1200000000000045
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "Least  of  all  if  you  are  Afro-American.",
+      "words": [
+        {
+          "id": "68ff85b6ec36fc9a6a4f48a9",
+          "text": "Least ",
+          "start": 39.4,
+          "end": 39.8,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48aa",
+          "text": "of ",
+          "start": 39.8,
+          "end": 39.96,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48ab",
+          "text": "all ",
+          "start": 39.96,
+          "end": 40.2,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48ac",
+          "text": "if ",
+          "start": 40.2,
+          "end": 40.4,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48ad",
+          "text": "you ",
+          "start": 40.44,
+          "end": 40.6,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48ae",
+          "text": "are ",
+          "start": 40.6,
+          "end": 40.84,
+          "line": 0
+        },
+        {
+          "id": "68ff85b6ec36fc9a6a4f48af",
+          "text": "Afro-American.",
+          "start": 40.88,
+          "end": 42,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 39.4,
+        "end": 42,
+        "duration": 2.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

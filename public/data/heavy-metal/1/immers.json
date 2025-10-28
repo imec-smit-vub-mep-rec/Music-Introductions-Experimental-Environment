@@ -1,0 +1,919 @@
+{
+  "metadata": {
+    "title": "ace_immers (1)",
+    "exportDate": "2025-10-27T15:58:33.214Z",
+    "totalSubtitles": 13,
+    "totalWords": 102
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "It's  late.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d222f1",
+          "text": "It's ",
+          "start": 0.16,
+          "end": 0.56,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222f2",
+          "text": "late.",
+          "start": 0.56,
+          "end": 1.04,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 1.04,
+        "duration": 0.88
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Darkness  fills  the  room,  broken  only  by  a  triangle  of  light,",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d222f3",
+          "text": "Darkness ",
+          "start": 1.2,
+          "end": 1.92,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222f4",
+          "text": "fills ",
+          "start": 1.92,
+          "end": 2.32,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222f5",
+          "text": "the ",
+          "start": 2.32,
+          "end": 2.48,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222f6",
+          "text": "room, ",
+          "start": 2.48,
+          "end": 3,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222f7",
+          "text": "broken ",
+          "start": 3.24,
+          "end": 3.84,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222f8",
+          "text": "only ",
+          "start": 3.84,
+          "end": 4.16,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222f9",
+          "text": "by ",
+          "start": 4.16,
+          "end": 4.44,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222fa",
+          "text": "a ",
+          "start": 4.44,
+          "end": 4.56,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222fb",
+          "text": "triangle ",
+          "start": 4.56,
+          "end": 5.16,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222fc",
+          "text": "of ",
+          "start": 5.16,
+          "end": 5.32,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d222fd",
+          "text": "light,",
+          "start": 5.32,
+          "end": 5.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 1.2,
+        "end": 5.76,
+        "duration": 4.56
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Its  light  seeps  through  the  thick  mist of  cigarette  smoke  floating  above  the  poker  table.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22303",
+          "text": "Its ",
+          "start": 8.36,
+          "end": 8.64,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22304",
+          "text": "light ",
+          "start": 8.64,
+          "end": 9,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22305",
+          "text": "seeps ",
+          "start": 9.04,
+          "end": 9.32,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22306",
+          "text": "through ",
+          "start": 9.32,
+          "end": 9.72,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22307",
+          "text": "the ",
+          "start": 9.72,
+          "end": 9.88,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22308",
+          "text": "thick ",
+          "start": 9.88,
+          "end": 10.16,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22309",
+          "text": "mist",
+          "start": 10.16,
+          "end": 10.52,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2230a",
+          "text": "of ",
+          "start": 10.52,
+          "end": 10.72,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2230b",
+          "text": "cigarette ",
+          "start": 10.72,
+          "end": 11.24,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2230c",
+          "text": "smoke ",
+          "start": 11.24,
+          "end": 11.84,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2230d",
+          "text": "floating ",
+          "start": 11.84,
+          "end": 12.32,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2230e",
+          "text": "above ",
+          "start": 12.44,
+          "end": 12.76,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2230f",
+          "text": "the ",
+          "start": 12.76,
+          "end": 12.92,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22310",
+          "text": "poker ",
+          "start": 12.92,
+          "end": 13.36,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22311",
+          "text": "table.",
+          "start": 13.36,
+          "end": 14,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.36,
+        "end": 14,
+        "duration": 5.640000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "I  know  I'm  born  to  lose, and  gambling  is  for  fools.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22312",
+          "text": "I ",
+          "start": 14.36,
+          "end": 14.6,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22313",
+          "text": "know ",
+          "start": 14.6,
+          "end": 14.84,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22314",
+          "text": "I'm ",
+          "start": 14.88,
+          "end": 15.08,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22315",
+          "text": "born ",
+          "start": 15.08,
+          "end": 15.4,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22316",
+          "text": "to ",
+          "start": 15.4,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22317",
+          "text": "lose,",
+          "start": 15.56,
+          "end": 16,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22318",
+          "text": "and ",
+          "start": 16.12,
+          "end": 16.36,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22319",
+          "text": "gambling ",
+          "start": 16.36,
+          "end": 16.88,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2231a",
+          "text": "is ",
+          "start": 16.88,
+          "end": 17.16,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2231b",
+          "text": "for ",
+          "start": 17.16,
+          "end": 17.4,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2231c",
+          "text": "fools.",
+          "start": 17.4,
+          "end": 18.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 14.36,
+        "end": 18.16,
+        "duration": 3.8000000000000007
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "But  I  don't  share  other's  greed, the  pleasure  is  to  play.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d2231d",
+          "text": "But ",
+          "start": 18.32,
+          "end": 18.56,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2231e",
+          "text": "I ",
+          "start": 18.56,
+          "end": 18.68,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2231f",
+          "text": "don't ",
+          "start": 18.68,
+          "end": 18.96,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22320",
+          "text": "share ",
+          "start": 18.96,
+          "end": 19.32,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22321",
+          "text": "other's ",
+          "start": 19.32,
+          "end": 19.56,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22322",
+          "text": "greed,",
+          "start": 19.56,
+          "end": 20.16,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22323",
+          "text": "the ",
+          "start": 20.28,
+          "end": 20.48,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22324",
+          "text": "pleasure ",
+          "start": 20.48,
+          "end": 20.96,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22325",
+          "text": "is ",
+          "start": 20.96,
+          "end": 21.24,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22326",
+          "text": "to ",
+          "start": 21.24,
+          "end": 21.44,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22327",
+          "text": "play.",
+          "start": 21.48,
+          "end": 22,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 18.32,
+        "end": 22,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "I  raise  the  stakes, play  for  the  high  hand,",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22328",
+          "text": "I ",
+          "start": 22.56,
+          "end": 22.8,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22329",
+          "text": "raise ",
+          "start": 22.84,
+          "end": 23.12,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2232a",
+          "text": "the ",
+          "start": 23.12,
+          "end": 23.28,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2232b",
+          "text": "stakes,",
+          "start": 23.28,
+          "end": 23.8,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2232c",
+          "text": "play ",
+          "start": 23.92,
+          "end": 24.36,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2232d",
+          "text": "for ",
+          "start": 24.36,
+          "end": 24.56,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2232e",
+          "text": "the ",
+          "start": 24.56,
+          "end": 24.68,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d2232f",
+          "text": "high ",
+          "start": 24.68,
+          "end": 25,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22330",
+          "text": "hand,",
+          "start": 25.04,
+          "end": 25.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.56,
+        "end": 25.64,
+        "duration": 3.080000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "But  it's  all  a  game  to  me.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22337",
+          "text": "But ",
+          "start": 28.24,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22338",
+          "text": "it's ",
+          "start": 28.44,
+          "end": 28.68,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22339",
+          "text": "all ",
+          "start": 28.68,
+          "end": 29.04,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2233a",
+          "text": "a ",
+          "start": 29.04,
+          "end": 29.2,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2233b",
+          "text": "game ",
+          "start": 29.2,
+          "end": 29.64,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2233c",
+          "text": "to ",
+          "start": 29.64,
+          "end": 29.76,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2233d",
+          "text": "me.",
+          "start": 29.8,
+          "end": 30.16,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 28.24,
+        "end": 30.16,
+        "duration": 1.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "The  game  nears  its  end.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d2233e",
+          "text": "The ",
+          "start": 30.84,
+          "end": 31,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2233f",
+          "text": "game ",
+          "start": 31,
+          "end": 31.44,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22340",
+          "text": "nears ",
+          "start": 31.44,
+          "end": 31.88,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22341",
+          "text": "its ",
+          "start": 31.88,
+          "end": 32.12,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22342",
+          "text": "end.",
+          "start": 32.12,
+          "end": 32.6,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 30.84,
+        "end": 32.6,
+        "duration": 1.7600000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 14,
+      "text": "You  lean  forward,  waiting  for  me  to  fold.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22343",
+          "text": "You ",
+          "start": 32.8,
+          "end": 33.2,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22344",
+          "text": "lean ",
+          "start": 33.24,
+          "end": 33.6,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22345",
+          "text": "forward, ",
+          "start": 33.6,
+          "end": 34.44,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22346",
+          "text": "waiting ",
+          "start": 34.44,
+          "end": 34.92,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22347",
+          "text": "for ",
+          "start": 34.92,
+          "end": 35.08,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22348",
+          "text": "me ",
+          "start": 35.08,
+          "end": 35.32,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22349",
+          "text": "to ",
+          "start": 35.32,
+          "end": 35.44,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2234a",
+          "text": "fold.",
+          "start": 35.52,
+          "end": 36.16,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 32.8,
+        "end": 36.16,
+        "duration": 3.3599999999999994
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 16,
+      "text": "And  then  the  light  goes  out.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22353",
+          "text": "And ",
+          "start": 40.44,
+          "end": 40.64,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22354",
+          "text": "then ",
+          "start": 40.64,
+          "end": 41.04,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22355",
+          "text": "the ",
+          "start": 41.28,
+          "end": 41.48,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22356",
+          "text": "light ",
+          "start": 41.48,
+          "end": 41.84,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22357",
+          "text": "goes ",
+          "start": 41.84,
+          "end": 42.36,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22358",
+          "text": "out.",
+          "start": 42.36,
+          "end": 42.8,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 40.44,
+        "end": 42.8,
+        "duration": 2.3599999999999994
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 171480,
+      "text": "chase odds  that  make  no  sense.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d22331",
+          "text": "chase odds ",
+          "start": 25.68,
+          "end": 26.08,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22333",
+          "text": "that ",
+          "start": 26.48,
+          "end": 26.68,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22334",
+          "text": "make ",
+          "start": 26.68,
+          "end": 27.04,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22335",
+          "text": "no ",
+          "start": 27.04,
+          "end": 27.36,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22336",
+          "text": "sense.",
+          "start": 27.36,
+          "end": 27.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 25.68,
+        "end": 27.92,
+        "duration": 2.240000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 675995,
+      "text": "springing  from  a  hanging  lampshade.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d222fe",
+          "text": "springing ",
+          "start": 5.8,
+          "end": 6.16,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d222ff",
+          "text": "from ",
+          "start": 6.28,
+          "end": 6.6,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22300",
+          "text": "a ",
+          "start": 6.6,
+          "end": 6.72,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22301",
+          "text": "hanging ",
+          "start": 6.72,
+          "end": 7.04,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d22302",
+          "text": "lampshade.",
+          "start": 7.08,
+          "end": 8.04,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 5.8,
+        "end": 8.04,
+        "duration": 2.2399999999999993
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 817053,
+      "text": "The  final  card turns: the  ace  of  spades.",
+      "words": [
+        {
+          "id": "68ff953393087eaf02d2234b",
+          "text": "The ",
+          "start": 36.4,
+          "end": 36.64,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2234c",
+          "text": "final",
+          "start": 36.64,
+          "end": 37.24,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2234d",
+          "text": " card turns:",
+          "start": 37.24,
+          "end": 37.56,
+          "line": 0
+        },
+        {
+          "id": "68ff953393087eaf02d2234f",
+          "text": "the ",
+          "start": 38.56,
+          "end": 38.84,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22350",
+          "text": "ace ",
+          "start": 38.84,
+          "end": 39.04,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22351",
+          "text": "of ",
+          "start": 39.04,
+          "end": 39.2,
+          "line": 1
+        },
+        {
+          "id": "68ff953393087eaf02d22352",
+          "text": "spades.",
+          "start": 39.2,
+          "end": 40.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 36.4,
+        "end": 40.08,
+        "duration": 3.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

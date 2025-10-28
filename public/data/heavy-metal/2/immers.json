@@ -1,0 +1,888 @@
+{
+  "metadata": {
+    "title": "smoke_immers",
+    "exportDate": "2025-10-27T15:48:01.958Z",
+    "totalSubtitles": 10,
+    "totalWords": 104
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Stepping  on  to  the  balcony,  the  Montreux  casino  stands  perfectly  reflected,",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2a",
+          "text": "Stepping ",
+          "start": 0.16,
+          "end": 0.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2b",
+          "text": "on ",
+          "start": 0.76,
+          "end": 0.92,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2c",
+          "text": "to ",
+          "start": 0.96,
+          "end": 1.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2d",
+          "text": "the ",
+          "start": 1.12,
+          "end": 1.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2e",
+          "text": "balcony, ",
+          "start": 1.24,
+          "end": 2.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae2f",
+          "text": "the ",
+          "start": 2.08,
+          "end": 2.2,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae30",
+          "text": "Montreux ",
+          "start": 2.2,
+          "end": 2.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae31",
+          "text": "casino ",
+          "start": 2.84,
+          "end": 3.52,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae32",
+          "text": "stands ",
+          "start": 3.52,
+          "end": 3.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae33",
+          "text": "perfectly ",
+          "start": 3.96,
+          "end": 4.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae34",
+          "text": "reflected,",
+          "start": 4.56,
+          "end": 5.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 5.16,
+        "duration": 5
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "like  a  golden  ghost  across  the black  mirror  of  Lake  Geneva.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae35",
+          "text": "like ",
+          "start": 5.28,
+          "end": 5.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae36",
+          "text": "a ",
+          "start": 5.56,
+          "end": 5.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae37",
+          "text": "golden ",
+          "start": 5.72,
+          "end": 6.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae38",
+          "text": "ghost ",
+          "start": 6.2,
+          "end": 6.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae39",
+          "text": "across ",
+          "start": 6.56,
+          "end": 6.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae3a",
+          "text": "the black ",
+          "start": 6.92,
+          "end": 7.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae3c",
+          "text": "mirror ",
+          "start": 7.32,
+          "end": 7.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae3d",
+          "text": "of ",
+          "start": 7.68,
+          "end": 7.88,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae3e",
+          "text": "Lake ",
+          "start": 7.88,
+          "end": 8.12,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae3f",
+          "text": "Geneva.",
+          "start": 8.12,
+          "end": 8.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.28,
+        "end": 8.76,
+        "duration": 3.4799999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Our  plan  is  simple: once  its  halls  fall  silent  for  the  season,",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae40",
+          "text": "Our ",
+          "start": 9.2,
+          "end": 9.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae41",
+          "text": "plan ",
+          "start": 9.48,
+          "end": 9.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae42",
+          "text": "is ",
+          "start": 9.88,
+          "end": 10.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae43",
+          "text": "simple:",
+          "start": 10.16,
+          "end": 10.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae44",
+          "text": "once ",
+          "start": 10.88,
+          "end": 11.32,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae45",
+          "text": "its ",
+          "start": 11.32,
+          "end": 11.52,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae46",
+          "text": "halls ",
+          "start": 11.52,
+          "end": 11.88,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae47",
+          "text": "fall ",
+          "start": 11.88,
+          "end": 12.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae48",
+          "text": "silent ",
+          "start": 12.24,
+          "end": 12.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae49",
+          "text": "for ",
+          "start": 12.64,
+          "end": 12.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4a",
+          "text": "the ",
+          "start": 12.84,
+          "end": 12.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4b",
+          "text": "season,",
+          "start": 12.96,
+          "end": 13.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 9.2,
+        "end": 13.4,
+        "duration": 4.200000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "we  will  fill  them  with  our  own  noise, and  record  our  next  album.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4c",
+          "text": "we ",
+          "start": 13.52,
+          "end": 13.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4d",
+          "text": "will ",
+          "start": 13.72,
+          "end": 14,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4e",
+          "text": "fill ",
+          "start": 14,
+          "end": 14.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae4f",
+          "text": "them ",
+          "start": 14.28,
+          "end": 14.44,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae50",
+          "text": "with ",
+          "start": 14.44,
+          "end": 14.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae51",
+          "text": "our ",
+          "start": 14.68,
+          "end": 14.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae52",
+          "text": "own ",
+          "start": 14.88,
+          "end": 15.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae53",
+          "text": "noise,",
+          "start": 15.16,
+          "end": 15.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae54",
+          "text": "and ",
+          "start": 15.64,
+          "end": 15.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae55",
+          "text": "record ",
+          "start": 15.84,
+          "end": 16.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae56",
+          "text": "our ",
+          "start": 16.28,
+          "end": 16.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae57",
+          "text": "next ",
+          "start": 16.48,
+          "end": 16.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae58",
+          "text": "album.",
+          "start": 16.84,
+          "end": 17.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 13.52,
+        "end": 17.52,
+        "duration": 4
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "But  for  now,  a  final  concert  was  taking  place.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae59",
+          "text": "But ",
+          "start": 17.64,
+          "end": 17.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5a",
+          "text": "for ",
+          "start": 17.84,
+          "end": 18.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5b",
+          "text": "now, ",
+          "start": 18.04,
+          "end": 18.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5c",
+          "text": "a ",
+          "start": 18.6,
+          "end": 18.76,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5d",
+          "text": "final ",
+          "start": 18.76,
+          "end": 19.12,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5e",
+          "text": "concert ",
+          "start": 19.12,
+          "end": 19.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae5f",
+          "text": "was ",
+          "start": 19.68,
+          "end": 19.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae60",
+          "text": "taking ",
+          "start": 19.96,
+          "end": 20.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae61",
+          "text": "place.",
+          "start": 20.28,
+          "end": 20.88,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.64,
+        "end": 20.88,
+        "duration": 3.2399999999999984
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "I  take  a  deep  breath.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae62",
+          "text": "I ",
+          "start": 21.04,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae63",
+          "text": "take ",
+          "start": 21.32,
+          "end": 21.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae64",
+          "text": "a ",
+          "start": 21.64,
+          "end": 21.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae65",
+          "text": "deep ",
+          "start": 21.76,
+          "end": 22,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae66",
+          "text": "breath.",
+          "start": 22,
+          "end": 22.56,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 21.04,
+        "end": 22.56,
+        "duration": 1.5199999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "The  jazzy  chaos  of  Frank  Zappa dances  across  the  air,",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae67",
+          "text": "The ",
+          "start": 22.8,
+          "end": 22.96,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae68",
+          "text": "jazzy ",
+          "start": 22.96,
+          "end": 23.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae69",
+          "text": "chaos ",
+          "start": 23.44,
+          "end": 23.92,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6a",
+          "text": "of ",
+          "start": 23.92,
+          "end": 24.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6b",
+          "text": "Frank ",
+          "start": 24.08,
+          "end": 24.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6c",
+          "text": "Zappa",
+          "start": 24.48,
+          "end": 24.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6d",
+          "text": "dances ",
+          "start": 24.88,
+          "end": 25.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6e",
+          "text": "across ",
+          "start": 25.48,
+          "end": 25.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae6f",
+          "text": "the ",
+          "start": 25.84,
+          "end": 26.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae70",
+          "text": "air,",
+          "start": 26.04,
+          "end": 26.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.8,
+        "end": 26.32,
+        "duration": 3.5199999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "when  suddenly  a  strange  mist  starts  to crawl  over  the  lake.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae71",
+          "text": "when ",
+          "start": 26.68,
+          "end": 27.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae72",
+          "text": "suddenly ",
+          "start": 27.04,
+          "end": 27.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae73",
+          "text": "a ",
+          "start": 27.72,
+          "end": 27.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae74",
+          "text": "strange ",
+          "start": 27.88,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae75",
+          "text": "mist ",
+          "start": 28.44,
+          "end": 28.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae76",
+          "text": "starts ",
+          "start": 28.8,
+          "end": 29.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae77",
+          "text": "to",
+          "start": 29.16,
+          "end": 29.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae78",
+          "text": "crawl ",
+          "start": 29.32,
+          "end": 29.72,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae79",
+          "text": "over ",
+          "start": 29.72,
+          "end": 30,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7a",
+          "text": "the ",
+          "start": 30,
+          "end": 30.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7b",
+          "text": "lake.",
+          "start": 30.08,
+          "end": 30.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 26.68,
+        "end": 30.56,
+        "duration": 3.879999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "I  smell  it  sharp  and  wrong. This  isn't  mist,  it's  smoke.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7c",
+          "text": "I ",
+          "start": 30.68,
+          "end": 30.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7d",
+          "text": "smell ",
+          "start": 30.88,
+          "end": 31.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7e",
+          "text": "it ",
+          "start": 31.2,
+          "end": 31.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae7f",
+          "text": "sharp ",
+          "start": 31.56,
+          "end": 32.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae80",
+          "text": "and ",
+          "start": 32.24,
+          "end": 32.44,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae81",
+          "text": "wrong.",
+          "start": 32.44,
+          "end": 33,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae82",
+          "text": "This ",
+          "start": 33.28,
+          "end": 33.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae83",
+          "text": "isn't ",
+          "start": 33.56,
+          "end": 34,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae84",
+          "text": "mist, ",
+          "start": 34,
+          "end": 34.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae85",
+          "text": "it's ",
+          "start": 34.6,
+          "end": 34.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae86",
+          "text": "smoke.",
+          "start": 34.92,
+          "end": 35.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 30.68,
+        "end": 35.52,
+        "duration": 4.840000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "I  look  up,  flames  are  devouring the  grand  old  building  from  within.",
+      "words": [
+        {
+          "id": "68ff8f1f5e5452fc2b4bae87",
+          "text": "I ",
+          "start": 35.68,
+          "end": 35.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae88",
+          "text": "look ",
+          "start": 35.88,
+          "end": 36.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae89",
+          "text": "up, ",
+          "start": 36.08,
+          "end": 36.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8a",
+          "text": "flames ",
+          "start": 36.48,
+          "end": 37.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8b",
+          "text": "are ",
+          "start": 37.04,
+          "end": 37.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8c",
+          "text": "devouring",
+          "start": 37.24,
+          "end": 37.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8d",
+          "text": "the ",
+          "start": 37.88,
+          "end": 38.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8e",
+          "text": "grand ",
+          "start": 38.04,
+          "end": 38.44,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae8f",
+          "text": "old ",
+          "start": 38.44,
+          "end": 38.72,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae90",
+          "text": "building ",
+          "start": 38.72,
+          "end": 39.2,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae91",
+          "text": "from ",
+          "start": 39.2,
+          "end": 39.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8f1f5e5452fc2b4bae92",
+          "text": "within.",
+          "start": 39.48,
+          "end": 40.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 35.68,
+        "end": 40.16,
+        "duration": 4.479999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

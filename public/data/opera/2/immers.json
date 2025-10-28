@@ -1,0 +1,1031 @@
+{
+  "metadata": {
+    "title": "vo_immers2",
+    "exportDate": "2025-10-27T14:59:05.339Z",
+    "totalSubtitles": 13,
+    "totalWords": 118
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Imagine  yourself  sitting in  the  vibrant  Cafe  Momus.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d956",
+          "text": "Imagine ",
+          "start": 0.2,
+          "end": 0.92,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d957",
+          "text": "yourself ",
+          "start": 0.92,
+          "end": 1.48,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d958",
+          "text": "sitting",
+          "start": 1.48,
+          "end": 1.84,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d959",
+          "text": "in ",
+          "start": 1.84,
+          "end": 2.04,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d95a",
+          "text": "the ",
+          "start": 2.04,
+          "end": 2.16,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d95b",
+          "text": "vibrant ",
+          "start": 2.16,
+          "end": 2.76,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d95c",
+          "text": "Cafe ",
+          "start": 2.76,
+          "end": 3.28,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d95d",
+          "text": "Momus.",
+          "start": 3.32,
+          "end": 4.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 4.08,
+        "duration": 3.88
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "You  are  surrounded  by  poets, painters  and  philosophers.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d95e",
+          "text": "You ",
+          "start": 4.28,
+          "end": 4.52,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d95f",
+          "text": "are ",
+          "start": 4.52,
+          "end": 4.76,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d960",
+          "text": "surrounded ",
+          "start": 4.76,
+          "end": 5.4,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d961",
+          "text": "by ",
+          "start": 5.4,
+          "end": 5.72,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d962",
+          "text": "poets,",
+          "start": 5.72,
+          "end": 6.32,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d963",
+          "text": "painters ",
+          "start": 6.36,
+          "end": 7,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d964",
+          "text": "and ",
+          "start": 7,
+          "end": 7.28,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d965",
+          "text": "philosophers.",
+          "start": 7.28,
+          "end": 8.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 4.28,
+        "end": 8.4,
+        "duration": 4.12
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "The  air  filled  with  clinking  glasses, heated  arguments,",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d966",
+          "text": "The ",
+          "start": 8.52,
+          "end": 8.8,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d967",
+          "text": "air ",
+          "start": 8.8,
+          "end": 9.04,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d968",
+          "text": "filled ",
+          "start": 9.04,
+          "end": 9.44,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d969",
+          "text": "with ",
+          "start": 9.44,
+          "end": 9.72,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d96a",
+          "text": "clinking ",
+          "start": 9.72,
+          "end": 10.24,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d96b",
+          "text": "glasses,",
+          "start": 10.24,
+          "end": 11.12,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d96c",
+          "text": "heated ",
+          "start": 11.12,
+          "end": 11.56,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d96d",
+          "text": "arguments,",
+          "start": 11.56,
+          "end": 12.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.52,
+        "end": 12.36,
+        "duration": 3.84
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "and  the  heavy  haze  of  wine  and  tobacco, until  the  door  opens.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d96e",
+          "text": "and ",
+          "start": 12.48,
+          "end": 12.76,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d96f",
+          "text": "the ",
+          "start": 12.76,
+          "end": 12.88,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d970",
+          "text": "heavy ",
+          "start": 12.88,
+          "end": 13.32,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d971",
+          "text": "haze ",
+          "start": 13.36,
+          "end": 13.84,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d972",
+          "text": "of ",
+          "start": 13.84,
+          "end": 14.04,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d973",
+          "text": "wine ",
+          "start": 14.04,
+          "end": 14.48,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d974",
+          "text": "and ",
+          "start": 14.48,
+          "end": 14.76,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d975",
+          "text": "tobacco,",
+          "start": 14.76,
+          "end": 15.56,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d976",
+          "text": "until ",
+          "start": 15.88,
+          "end": 16.72,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d977",
+          "text": "the ",
+          "start": 16.92,
+          "end": 17.16,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d978",
+          "text": "door ",
+          "start": 17.16,
+          "end": 17.64,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d979",
+          "text": "opens.",
+          "start": 17.68,
+          "end": 18.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.48,
+        "end": 18.56,
+        "duration": 6.079999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "As  she  moves  through  the  café, a  wave  of  silence  follows  her.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d97a",
+          "text": "As ",
+          "start": 18.88,
+          "end": 19.16,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d97b",
+          "text": "she ",
+          "start": 19.16,
+          "end": 19.36,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d97c",
+          "text": "moves ",
+          "start": 19.36,
+          "end": 19.8,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d97d",
+          "text": "through ",
+          "start": 19.8,
+          "end": 20.16,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d97e",
+          "text": "the ",
+          "start": 20.16,
+          "end": 20.28,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d97f",
+          "text": "café,",
+          "start": 20.28,
+          "end": 20.84,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d980",
+          "text": "a ",
+          "start": 21.08,
+          "end": 21.36,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d981",
+          "text": "wave ",
+          "start": 21.36,
+          "end": 21.64,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d982",
+          "text": "of ",
+          "start": 21.64,
+          "end": 21.84,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d983",
+          "text": "silence ",
+          "start": 21.84,
+          "end": 22.44,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d984",
+          "text": "follows ",
+          "start": 22.44,
+          "end": 22.8,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d985",
+          "text": "her.",
+          "start": 22.8,
+          "end": 23.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 18.88,
+        "end": 23.16,
+        "duration": 4.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Her  beauty,  her  sensuality, is  mesmerising.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d986",
+          "text": "Her ",
+          "start": 23.28,
+          "end": 23.44,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d987",
+          "text": "beauty, ",
+          "start": 23.44,
+          "end": 24.12,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d988",
+          "text": "her ",
+          "start": 24.16,
+          "end": 24.36,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d989",
+          "text": "sensuality,",
+          "start": 24.36,
+          "end": 25.44,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d98a",
+          "text": "is ",
+          "start": 25.56,
+          "end": 25.88,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d98b",
+          "text": "mesmerising.",
+          "start": 25.88,
+          "end": 27.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 23.28,
+        "end": 27.2,
+        "duration": 3.919999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Clinging  to  her  arm  is  an  older, wealthy  man.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d98c",
+          "text": "Clinging ",
+          "start": 27.32,
+          "end": 27.8,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d98d",
+          "text": "to ",
+          "start": 27.84,
+          "end": 28,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d98e",
+          "text": "her ",
+          "start": 28.04,
+          "end": 28.28,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d98f",
+          "text": "arm ",
+          "start": 28.28,
+          "end": 28.6,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d990",
+          "text": "is ",
+          "start": 28.6,
+          "end": 28.8,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d991",
+          "text": "an ",
+          "start": 28.8,
+          "end": 29.04,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d992",
+          "text": "older,",
+          "start": 29.04,
+          "end": 29.52,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d993",
+          "text": "wealthy ",
+          "start": 29.52,
+          "end": 30,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d994",
+          "text": "man.",
+          "start": 30,
+          "end": 30.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 27.32,
+        "end": 30.4,
+        "duration": 3.0799999999999983
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Nothing  more  than  a  walking  purse.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d995",
+          "text": "Nothing ",
+          "start": 30.52,
+          "end": 30.96,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d996",
+          "text": "more ",
+          "start": 30.96,
+          "end": 31.2,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d997",
+          "text": "than ",
+          "start": 31.24,
+          "end": 31.44,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d998",
+          "text": "a ",
+          "start": 31.44,
+          "end": 31.68,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d999",
+          "text": "walking ",
+          "start": 31.68,
+          "end": 32.12,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d99a",
+          "text": "purse.",
+          "start": 32.12,
+          "end": 32.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 30.52,
+        "end": 32.76,
+        "duration": 2.2399999999999984
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "But  across  the  cafe  sits  her  true  love, the  penniless  painter  Marcello.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d99b",
+          "text": "But ",
+          "start": 32.92,
+          "end": 33.76,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d99c",
+          "text": "across ",
+          "start": 33.76,
+          "end": 34.16,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d99d",
+          "text": "the ",
+          "start": 34.16,
+          "end": 34.36,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d99e",
+          "text": "cafe ",
+          "start": 34.36,
+          "end": 34.84,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d99f",
+          "text": "sits ",
+          "start": 34.88,
+          "end": 35.16,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a0",
+          "text": "her ",
+          "start": 35.16,
+          "end": 35.36,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a1",
+          "text": "true ",
+          "start": 35.36,
+          "end": 35.68,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a2",
+          "text": "love,",
+          "start": 35.68,
+          "end": 36.2,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a3",
+          "text": "the ",
+          "start": 36.24,
+          "end": 36.4,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a4",
+          "text": "penniless ",
+          "start": 36.4,
+          "end": 36.96,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a5",
+          "text": "painter ",
+          "start": 37,
+          "end": 37.52,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a6",
+          "text": "Marcello.",
+          "start": 37.52,
+          "end": 38.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.92,
+        "end": 38.48,
+        "duration": 5.559999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "To  catch  his  attention, she  begins  to  sing.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d9a7",
+          "text": "To ",
+          "start": 38.76,
+          "end": 39,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a8",
+          "text": "catch ",
+          "start": 39.04,
+          "end": 39.24,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9a9",
+          "text": "his ",
+          "start": 39.24,
+          "end": 39.4,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9aa",
+          "text": "attention,",
+          "start": 39.4,
+          "end": 40.2,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ab",
+          "text": "she ",
+          "start": 40.2,
+          "end": 40.48,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ac",
+          "text": "begins ",
+          "start": 40.48,
+          "end": 41,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ad",
+          "text": "to ",
+          "start": 41,
+          "end": 41.28,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ae",
+          "text": "sing.",
+          "start": 41.32,
+          "end": 41.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.76,
+        "end": 41.84,
+        "duration": 3.0800000000000054
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "This  is  no  subtle  serenade.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d9af",
+          "text": "This ",
+          "start": 42.04,
+          "end": 42.4,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b0",
+          "text": "is ",
+          "start": 42.4,
+          "end": 42.6,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b1",
+          "text": "no ",
+          "start": 42.6,
+          "end": 42.92,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b2",
+          "text": "subtle ",
+          "start": 42.92,
+          "end": 43.28,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b3",
+          "text": "serenade.",
+          "start": 43.28,
+          "end": 44.2,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 42.04,
+        "end": 44.2,
+        "duration": 2.1600000000000037
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "It  is  a  public  lap  dance, one  that  both  her  former  lover",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d9b4",
+          "text": "It ",
+          "start": 44.32,
+          "end": 44.44,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b5",
+          "text": "is ",
+          "start": 44.44,
+          "end": 44.6,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b6",
+          "text": "a ",
+          "start": 44.6,
+          "end": 44.76,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b7",
+          "text": "public ",
+          "start": 44.76,
+          "end": 45.24,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b8",
+          "text": "lap ",
+          "start": 45.24,
+          "end": 45.64,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9b9",
+          "text": "dance,",
+          "start": 45.64,
+          "end": 46.24,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ba",
+          "text": "one ",
+          "start": 46.24,
+          "end": 46.48,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9bb",
+          "text": "that ",
+          "start": 46.48,
+          "end": 46.68,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9bc",
+          "text": "both ",
+          "start": 46.68,
+          "end": 46.96,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9bd",
+          "text": "her ",
+          "start": 46.96,
+          "end": 47.16,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9be",
+          "text": "former ",
+          "start": 47.16,
+          "end": 47.6,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9bf",
+          "text": "lover",
+          "start": 47.6,
+          "end": 48.08000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 44.32,
+        "end": 48.08000000000001,
+        "duration": 3.760000000000012
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "and  her  new  benefactor  must  endure, While  the  cafe  savors  every  note.",
+      "words": [
+        {
+          "id": "68ff850fd163d0655d79d9c0",
+          "text": "and ",
+          "start": 48.2,
+          "end": 48.52,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c1",
+          "text": "her ",
+          "start": 48.52,
+          "end": 48.72,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c2",
+          "text": "new ",
+          "start": 48.72,
+          "end": 49.08,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c3",
+          "text": "benefactor ",
+          "start": 49.08,
+          "end": 49.84,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c4",
+          "text": "must ",
+          "start": 49.84,
+          "end": 50.28,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c5",
+          "text": "endure,",
+          "start": 50.28,
+          "end": 50.96,
+          "line": 0
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c6",
+          "text": "While ",
+          "start": 51.08,
+          "end": 51.28,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c7",
+          "text": "the ",
+          "start": 51.28,
+          "end": 51.44,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c8",
+          "text": "cafe ",
+          "start": 51.44,
+          "end": 52.04,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9c9",
+          "text": "savors ",
+          "start": 52.08,
+          "end": 52.8,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9ca",
+          "text": "every ",
+          "start": 52.8,
+          "end": 53.52,
+          "line": 1
+        },
+        {
+          "id": "68ff850fd163d0655d79d9cb",
+          "text": "note.",
+          "start": 53.52,
+          "end": 54,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 48.2,
+        "end": 54,
+        "duration": 5.799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

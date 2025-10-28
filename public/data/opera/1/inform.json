@@ -1,0 +1,924 @@
+{
+  "metadata": {
+    "title": "haba_info2",
+    "exportDate": "2025-10-27T15:15:11.041Z",
+    "totalSubtitles": 11,
+    "totalWords": 107
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Originating  from  Cuba, the Habanera  derives  its  name  from  Havana.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf53fd",
+          "text": "Originating ",
+          "start": 0.2,
+          "end": 1.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf53fe",
+          "text": "from ",
+          "start": 1.08,
+          "end": 1.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf53ff",
+          "text": "Cuba,",
+          "start": 1.44,
+          "end": 1.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5400",
+          "text": "the Habanera ",
+          "start": 2.08,
+          "end": 2.28,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5402",
+          "text": "derives ",
+          "start": 2.96,
+          "end": 3.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5403",
+          "text": "its ",
+          "start": 3.48,
+          "end": 3.72,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5404",
+          "text": "name ",
+          "start": 3.72,
+          "end": 3.96,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5405",
+          "text": "from ",
+          "start": 3.96,
+          "end": 4.28,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5406",
+          "text": "Havana.",
+          "start": 4.28,
+          "end": 4.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 4.8,
+        "duration": 4.6
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Bizet  borrowed  the  melody  from  a  popular Spanish  song  of  the  time  by  Sebastian  Iradier.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf5407",
+          "text": "Bizet ",
+          "start": 5.04,
+          "end": 5.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5408",
+          "text": "borrowed ",
+          "start": 5.6,
+          "end": 6.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5409",
+          "text": "the ",
+          "start": 6.08,
+          "end": 6.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540a",
+          "text": "melody ",
+          "start": 6.24,
+          "end": 6.68,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540b",
+          "text": "from ",
+          "start": 6.68,
+          "end": 7,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540c",
+          "text": "a ",
+          "start": 7,
+          "end": 7.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540d",
+          "text": "popular",
+          "start": 7.12,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540e",
+          "text": "Spanish ",
+          "start": 7.64,
+          "end": 8.16,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf540f",
+          "text": "song ",
+          "start": 8.16,
+          "end": 8.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5410",
+          "text": "of ",
+          "start": 8.52,
+          "end": 8.72,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5411",
+          "text": "the ",
+          "start": 8.72,
+          "end": 8.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5412",
+          "text": "time ",
+          "start": 8.84,
+          "end": 9.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5413",
+          "text": "by ",
+          "start": 9.24,
+          "end": 9.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5414",
+          "text": "Sebastian ",
+          "start": 9.56,
+          "end": 10.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5415",
+          "text": "Iradier.",
+          "start": 10.28,
+          "end": 11.04,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.04,
+        "end": 11.04,
+        "duration": 5.999999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "But  he  didn't  simply  copy  it.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf5416",
+          "text": "But ",
+          "start": 11.32,
+          "end": 11.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5417",
+          "text": "he ",
+          "start": 11.96,
+          "end": 12.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5418",
+          "text": "didn't ",
+          "start": 12.12,
+          "end": 12.48,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5419",
+          "text": "simply ",
+          "start": 12.48,
+          "end": 12.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf541a",
+          "text": "copy ",
+          "start": 12.96,
+          "end": 13.36,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf541b",
+          "text": "it.",
+          "start": 13.4,
+          "end": 13.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 11.32,
+        "end": 13.68,
+        "duration": 2.3599999999999994
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Traditionally,  habaneras  were  sung  by  men bragging  about  their  amorous  adventures.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf541c",
+          "text": "Traditionally, ",
+          "start": 13.8,
+          "end": 14.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf541d",
+          "text": "habaneras ",
+          "start": 14.76,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf541e",
+          "text": "were ",
+          "start": 15.52,
+          "end": 15.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf541f",
+          "text": "sung ",
+          "start": 15.76,
+          "end": 16.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5420",
+          "text": "by ",
+          "start": 16.04,
+          "end": 16.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5421",
+          "text": "men",
+          "start": 16.32,
+          "end": 16.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5422",
+          "text": "bragging ",
+          "start": 16.92,
+          "end": 17.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5423",
+          "text": "about ",
+          "start": 17.48,
+          "end": 17.8,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5424",
+          "text": "their ",
+          "start": 17.8,
+          "end": 18.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5425",
+          "text": "amorous ",
+          "start": 18.12,
+          "end": 18.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5426",
+          "text": "adventures.",
+          "start": 18.64,
+          "end": 19.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 13.8,
+        "end": 19.52,
+        "duration": 5.719999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Here,  however,  a  woman  takes  center  stage.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf5427",
+          "text": "Here, ",
+          "start": 19.64,
+          "end": 20.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5428",
+          "text": "however, ",
+          "start": 20.16,
+          "end": 20.8,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5429",
+          "text": "a ",
+          "start": 20.8,
+          "end": 21,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf542a",
+          "text": "woman ",
+          "start": 21,
+          "end": 21.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf542b",
+          "text": "takes ",
+          "start": 21.4,
+          "end": 21.8,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf542c",
+          "text": "center ",
+          "start": 21.8,
+          "end": 22.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf542d",
+          "text": "stage.",
+          "start": 22.12,
+          "end": 22.8,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.64,
+        "end": 22.8,
+        "duration": 3.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Furthermore,  the  habanera  rhythm  itself was  originally  meant  for  a  couple's  dance, ",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf542e",
+          "text": "Furthermore, ",
+          "start": 22.96,
+          "end": 23.84,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf542f",
+          "text": "the ",
+          "start": 23.88,
+          "end": 24.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5430",
+          "text": "habanera ",
+          "start": 24.08,
+          "end": 24.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5431",
+          "text": "rhythm ",
+          "start": 24.72,
+          "end": 25.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5432",
+          "text": "itself",
+          "start": 25.12,
+          "end": 25.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5433",
+          "text": "was ",
+          "start": 25.72,
+          "end": 25.92,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5434",
+          "text": "originally ",
+          "start": 25.92,
+          "end": 26.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5435",
+          "text": "meant ",
+          "start": 26.48,
+          "end": 26.88,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5436",
+          "text": "for ",
+          "start": 26.88,
+          "end": 27.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5437",
+          "text": "a ",
+          "start": 27.08,
+          "end": 27.2,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5438",
+          "text": "couple's ",
+          "start": 27.2,
+          "end": 27.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5439",
+          "text": "dance, ",
+          "start": 27.64,
+          "end": 28.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.96,
+        "end": 28.2,
+        "duration": 5.239999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Yet  in  Bizet's  opera,  Carmen  dances  alone. She  doesn't  need  a  partner.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf5442",
+          "text": "Yet ",
+          "start": 32.16,
+          "end": 32.52,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5443",
+          "text": "in ",
+          "start": 32.52,
+          "end": 32.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5444",
+          "text": "Bizet's ",
+          "start": 32.72,
+          "end": 33.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5445",
+          "text": "opera, ",
+          "start": 33.36,
+          "end": 33.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5446",
+          "text": "Carmen ",
+          "start": 33.92,
+          "end": 34.52,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5447",
+          "text": "dances ",
+          "start": 34.52,
+          "end": 35.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5448",
+          "text": "alone.",
+          "start": 35.12,
+          "end": 35.76000000000001,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5449",
+          "text": "She ",
+          "start": 35.88,
+          "end": 36.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf544a",
+          "text": "doesn't ",
+          "start": 36.08,
+          "end": 36.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf544b",
+          "text": "need ",
+          "start": 36.48,
+          "end": 36.76,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf544c",
+          "text": "a ",
+          "start": 36.76,
+          "end": 36.96,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf544d",
+          "text": "partner.",
+          "start": 36.96,
+          "end": 37.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.16,
+        "end": 37.52,
+        "duration": 5.3600000000000065
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "She  commands  the  entire  stage.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf544e",
+          "text": "She ",
+          "start": 37.64,
+          "end": 37.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf544f",
+          "text": "commands ",
+          "start": 37.92,
+          "end": 38.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5450",
+          "text": "the ",
+          "start": 38.56,
+          "end": 38.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5451",
+          "text": "entire ",
+          "start": 38.72,
+          "end": 39.36,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5452",
+          "text": "stage.",
+          "start": 39.36,
+          "end": 40.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 37.64,
+        "end": 40.24,
+        "duration": 2.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "In  that  way,  Habanera  is  more  than  just another  song  about  love.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf5453",
+          "text": "In ",
+          "start": 40.48,
+          "end": 40.64,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5454",
+          "text": "that ",
+          "start": 40.68,
+          "end": 40.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5455",
+          "text": "way, ",
+          "start": 40.96,
+          "end": 41.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5456",
+          "text": "Habanera ",
+          "start": 41.48,
+          "end": 42.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5457",
+          "text": "is ",
+          "start": 42.16,
+          "end": 42.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5458",
+          "text": "more ",
+          "start": 42.4,
+          "end": 42.68,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5459",
+          "text": "than ",
+          "start": 42.68,
+          "end": 42.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf545a",
+          "text": "just",
+          "start": 42.88,
+          "end": 43.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf545b",
+          "text": "another ",
+          "start": 43.2,
+          "end": 43.72,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf545c",
+          "text": "song ",
+          "start": 43.72,
+          "end": 44.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf545d",
+          "text": "about ",
+          "start": 44.12,
+          "end": 44.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf545e",
+          "text": "love.",
+          "start": 44.48,
+          "end": 45.04,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 40.48,
+        "end": 45.04,
+        "duration": 4.560000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "It's  a  tribute  to  women who  refuse  to  be  tamed.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf545f",
+          "text": "It's ",
+          "start": 45.2,
+          "end": 45.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5460",
+          "text": "a ",
+          "start": 45.44,
+          "end": 45.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5461",
+          "text": "tribute ",
+          "start": 45.56,
+          "end": 46,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5462",
+          "text": "to ",
+          "start": 46,
+          "end": 46.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5463",
+          "text": "women",
+          "start": 46.24,
+          "end": 46.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5464",
+          "text": "who ",
+          "start": 46.6,
+          "end": 46.8,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5465",
+          "text": "refuse ",
+          "start": 46.8,
+          "end": 47.44,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5466",
+          "text": "to ",
+          "start": 47.44,
+          "end": 47.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5467",
+          "text": "be ",
+          "start": 47.6,
+          "end": 47.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5468",
+          "text": "tamed.",
+          "start": 47.84,
+          "end": 48.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 45.2,
+        "end": 48.4,
+        "duration": 3.1999999999999957
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 847796,
+      "text": "such  as  tango. It  steps  intertwined  and  intimate.",
+      "words": [
+        {
+          "id": "68ff89fce1c875d68ccf543a",
+          "text": "such ",
+          "start": 28.32,
+          "end": 28.52,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf543b",
+          "text": "as ",
+          "start": 28.52,
+          "end": 28.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf543c",
+          "text": "tango.",
+          "start": 28.72,
+          "end": 29.28,
+          "line": 0
+        },
+        {
+          "id": "68ff89fce1c875d68ccf543d",
+          "text": "It ",
+          "start": 29.44,
+          "end": 29.72,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf543e",
+          "text": "steps ",
+          "start": 29.72,
+          "end": 30.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf543f",
+          "text": "intertwined ",
+          "start": 30.08,
+          "end": 30.92,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5440",
+          "text": "and ",
+          "start": 30.92,
+          "end": 31.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89fce1c875d68ccf5441",
+          "text": "intimate.",
+          "start": 31.24,
+          "end": 31.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 28.32,
+        "end": 31.96,
+        "duration": 3.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

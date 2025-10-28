@@ -40,109 +40,109 @@
   "songs": [
     {
       "id": "disco_1",
-      "title": "The Hustle",
-      "artist": "Van McCoy",
+      "title": "Smalltown Boy",
+      "artist": "Bronski Beat",
       "genre": "disco",
-      "audioUrl": "/data/disco/1/song.mp3",
-      "informIntroductionUrl": "/data/disco/1/inform.wav",
-      "immersIntroductionUrl": "/data/disco/1/immers.wav"
+      "audioUrl": "/data/disco/1/song.m4a",
+      "informIntroductionUrl": "/data/disco/1/inform.m4a",
+      "immersIntroductionUrl": "/data/disco/1/immers.m4a"
     },
     {
       "id": "disco_2",
       "title": "Love to Love You Baby",
       "artist": "Donna Summer",
       "genre": "disco",
-      "audioUrl": "/data/disco/2/song.mp3",
-      "informIntroductionUrl": "/data/disco/2/inform.wav",
-      "immersIntroductionUrl": "/data/disco/2/immers.wav"
+      "audioUrl": "/data/disco/2/song.m4a",
+      "informIntroductionUrl": "/data/disco/2/inform.m4a",
+      "immersIntroductionUrl": "/data/disco/2/immers.m4a"
     },
     {
       "id": "disco_3",
       "title": "YMCA",
       "artist": "Village People",
       "genre": "disco",
-      "audioUrl": "/data/disco/3/song.mp3",
+      "audioUrl": "/data/disco/3/song.m4a",
       "informIntroductionUrl": "/data/disco/3/inform.wav",
       "immersIntroductionUrl": "/data/disco/3/immers.wav"
     },
     {
       "id": "opera_1",
-      "title": "La Traviata",
-      "artist": "Opera Singer",
+      "title": "Carmen, Act 1 - Habanera",
+      "artist": "Georges Bizet",
       "genre": "opera",
-      "audioUrl": "/data/opera/1/song.mp3",
+      "audioUrl": "/data/opera/1/song.m4a",
       "informIntroductionUrl": "/data/opera/1/inform.wav",
       "immersIntroductionUrl": "/data/opera/1/immers.wav"
     },
     {
       "id": "opera_2",
-      "title": "Carmen",
-      "artist": "Opera Singer",
+      "title": "La Bohème + Act 1: Quando Me'n Vò",
+      "artist": "Giacomo Puccini",
       "genre": "opera",
-      "audioUrl": "/data/opera/2/song.mp3",
+      "audioUrl": "/data/opera/2/song.m4a",
       "informIntroductionUrl": "/data/opera/2/inform.wav",
       "immersIntroductionUrl": "/data/opera/2/immers.wav"
     },
     {
       "id": "opera_3",
-      "title": "The Magic Flute",
-      "artist": "Opera Singer",
+      "title": "Porgy and Bess: Summertime",
+      "artist": "George Gershwin",
       "genre": "opera",
-      "audioUrl": "/data/opera/3/song.mp3",
+      "audioUrl": "/data/opera/3/song.m4a",
       "informIntroductionUrl": "/data/opera/3/inform.wav",
       "immersIntroductionUrl": "/data/opera/3/immers.wav"
     },
     {
       "id": "heavy-metal_1",
-      "title": "Thunder Strike",
-      "artist": "Metal Band",
+      "title": "Ace of Spades",
+      "artist": "Motörhead",
       "genre": "heavy-metal",
-      "audioUrl": "/data/heavy-metal/1/song.mp3",
+      "audioUrl": "/data/heavy-metal/1/song.m4a",
       "informIntroductionUrl": "/data/heavy-metal/1/inform.wav",
       "immersIntroductionUrl": "/data/heavy-metal/1/immers.wav"
     },
     {
       "id": "heavy-metal_2",
-      "title": "Iron Fist",
-      "artist": "Metal Band",
+      "title": "Smoke on the Water",
+      "artist": "Deep Purple",
       "genre": "heavy-metal",
-      "audioUrl": "/data/heavy-metal/2/song.mp3",
+      "audioUrl": "/data/heavy-metal/2/song.m4a",
       "informIntroductionUrl": "/data/heavy-metal/2/inform.wav",
       "immersIntroductionUrl": "/data/heavy-metal/2/immers.wav"
     },
     {
       "id": "heavy-metal_3",
-      "title": "Steel Warriors",
-      "artist": "Metal Band",
+      "title": "War Pigs",
+      "artist": "Black Sabbath",
       "genre": "heavy-metal",
-      "audioUrl": "/data/heavy-metal/3/song.mp3",
+      "audioUrl": "/data/heavy-metal/3/song.m4a",
       "informIntroductionUrl": "/data/heavy-metal/3/inform.wav",
       "immersIntroductionUrl": "/data/heavy-metal/3/immers.wav"
     },
     {
       "id": "blues_1",
-      "title": "Midnight Blues",
-      "artist": "Blues Master",
+      "title": "I'd Rather Go Blind",
+      "artist": "Etta James",
       "genre": "blues",
-      "audioUrl": "/data/blues/1/song.mp3",
-      "informIntroductionUrl": "/data/blues/1/inform.wav",
-      "immersIntroductionUrl": "/data/blues/1/immers.wav"
+      "audioUrl": "/data/blues/1/song.m4a",
+      "informIntroductionUrl": "/data/blues/1/inform.m4a",
+      "immersIntroductionUrl": "/data/blues/1/immers.m4a"
     },
     {
       "id": "blues_2",
-      "title": "Crossroads",
-      "artist": "Blues Master",
+      "title": "Hound Dog",
+      "artist": "Elvis Presley",
       "genre": "blues",
-      "audioUrl": "/data/blues/2/song.mp3",
+      "audioUrl": "/data/blues/2/song.m4a",
       "informIntroductionUrl": "/data/blues/2/inform.wav",
       "immersIntroductionUrl": "/data/blues/2/immers.wav"
     },
     {
       "id": "blues_3",
-      "title": "Sweet Home Chicago",
-      "artist": "Blues Master",
+      "title": "The Thrill Is Gone",
+      "artist": "B.B. King",
       "genre": "blues",
-      "audioUrl": "/data/blues/3/song.mp3",
+      "audioUrl": "/data/blues/3/song.m4a",
       "informIntroductionUrl": "/data/blues/3/inform.wav",
       "immersIntroductionUrl": "/data/blues/3/immers.wav"
     },
@@ -151,7 +151,7 @@
       "title": "Country Roads",
       "artist": "Country Star",
       "genre": "country",
-      "audioUrl": "/data/country/1/song.mp3",
+      "audioUrl": "/data/country/1/song.m4a",
       "informIntroductionUrl": "/data/country/1/inform.wav",
       "immersIntroductionUrl": "/data/country/1/immers.wav"
     },
@@ -160,7 +160,7 @@
       "title": "Honky Tonk Angel",
       "artist": "Country Star",
       "genre": "country",
-      "audioUrl": "/data/country/2/song.mp3",
+      "audioUrl": "/data/country/2/song.m4a",
       "informIntroductionUrl": "/data/country/2/inform.wav",
       "immersIntroductionUrl": "/data/country/2/immers.wav"
     },
@@ -169,7 +169,7 @@
       "title": "Rodeo Queen",
       "artist": "Country Star",
       "genre": "country",
-      "audioUrl": "/data/country/3/song.mp3",
+      "audioUrl": "/data/country/3/song.m4a",
       "informIntroductionUrl": "/data/country/3/inform.wav",
       "immersIntroductionUrl": "/data/country/3/immers.wav"
     }

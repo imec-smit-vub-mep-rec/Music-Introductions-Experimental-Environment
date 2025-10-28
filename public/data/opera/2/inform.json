@@ -1,0 +1,943 @@
+{
+  "metadata": {
+    "title": "vo_info2",
+    "exportDate": "2025-10-27T15:08:44.768Z",
+    "totalSubtitles": 9,
+    "totalWords": 114
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "This  is  an  aria  from  Puccini's  La  Bohème. An  opera  inspired  on  Henry  Murger's  novel",
+      "words": [
+        {
+          "id": "68ff89360091646e399641bd",
+          "text": "This ",
+          "start": 0.16,
+          "end": 0.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641be",
+          "text": "is ",
+          "start": 0.72,
+          "end": 0.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641bf",
+          "text": "an ",
+          "start": 0.96,
+          "end": 1.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c0",
+          "text": "aria ",
+          "start": 1.16,
+          "end": 1.52,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c1",
+          "text": "from ",
+          "start": 1.52,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c2",
+          "text": "Puccini's ",
+          "start": 1.76,
+          "end": 2.36,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c3",
+          "text": "La ",
+          "start": 2.4,
+          "end": 2.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c4",
+          "text": "Bohème.",
+          "start": 2.6,
+          "end": 2.7,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641c5",
+          "text": "An ",
+          "start": 3.4,
+          "end": 3.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641c6",
+          "text": "opera ",
+          "start": 3.68,
+          "end": 4,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641c7",
+          "text": "inspired ",
+          "start": 4,
+          "end": 4.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641c8",
+          "text": "on ",
+          "start": 4.64,
+          "end": 4.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641c9",
+          "text": "Henry ",
+          "start": 4.88,
+          "end": 5.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641ca",
+          "text": "Murger's ",
+          "start": 5.28,
+          "end": 5.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641cb",
+          "text": "novel",
+          "start": 5.88,
+          "end": 6.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 6.32,
+        "duration": 6.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "La  Vie  Bohème,  in  which  he  reminisces  about  his own  life  as  a  penniless  artist  in  Paris.",
+      "words": [
+        {
+          "id": "68ff89360091646e399641cc",
+          "text": "La ",
+          "start": 6.44,
+          "end": 6.68,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641cd",
+          "text": "Vie ",
+          "start": 6.68,
+          "end": 6.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641ce",
+          "text": "Bohème, ",
+          "start": 6.88,
+          "end": 6.98,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641cf",
+          "text": "in ",
+          "start": 7.64,
+          "end": 7.8,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d0",
+          "text": "which ",
+          "start": 7.8,
+          "end": 7.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d1",
+          "text": "he ",
+          "start": 7.96,
+          "end": 8.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d2",
+          "text": "reminisces ",
+          "start": 8.12,
+          "end": 8.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d3",
+          "text": "about ",
+          "start": 8.72,
+          "end": 8.96,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d4",
+          "text": "his",
+          "start": 8.96,
+          "end": 9.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641d5",
+          "text": "own ",
+          "start": 9.2,
+          "end": 9.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641d6",
+          "text": "life ",
+          "start": 9.48,
+          "end": 9.8,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641d7",
+          "text": "as ",
+          "start": 9.8,
+          "end": 9.96,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641d8",
+          "text": "a ",
+          "start": 9.96,
+          "end": 10.16,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641d9",
+          "text": "penniless ",
+          "start": 10.16,
+          "end": 10.64,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641da",
+          "text": "artist ",
+          "start": 10.64,
+          "end": 11.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641db",
+          "text": "in ",
+          "start": 11.08,
+          "end": 11.36,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641dc",
+          "text": "Paris.",
+          "start": 11.36,
+          "end": 11.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 6.44,
+        "end": 11.92,
+        "duration": 5.4799999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "A story  Puccini  himself  could  relate  to since  he  lived  in  similar  conditions",
+      "words": [
+        {
+          "id": "68ff89360091646e399641de",
+          "text": "A story ",
+          "start": 12.32,
+          "end": 12.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641df",
+          "text": "Puccini ",
+          "start": 12.72,
+          "end": 13.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641e0",
+          "text": "himself ",
+          "start": 13.2,
+          "end": 13.64,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641e1",
+          "text": "could ",
+          "start": 13.64,
+          "end": 13.84,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641e2",
+          "text": "relate ",
+          "start": 13.84,
+          "end": 14.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641e3",
+          "text": "to",
+          "start": 14.16,
+          "end": 14.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641e4",
+          "text": "since ",
+          "start": 14.6,
+          "end": 14.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641e5",
+          "text": "he ",
+          "start": 14.84,
+          "end": 15.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641e6",
+          "text": "lived ",
+          "start": 15.08,
+          "end": 15.36,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641e7",
+          "text": "in ",
+          "start": 15.36,
+          "end": 15.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641e8",
+          "text": "similar ",
+          "start": 15.56,
+          "end": 15.96,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641e9",
+          "text": "conditions",
+          "start": 15.96,
+          "end": 16.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.32,
+        "end": 16.4,
+        "duration": 4.079999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "during  his  student  years  in  Milan.",
+      "words": [
+        {
+          "id": "68ff89360091646e399641ea",
+          "text": "during ",
+          "start": 16.52,
+          "end": 16.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641eb",
+          "text": "his ",
+          "start": 16.88,
+          "end": 17.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641ec",
+          "text": "student ",
+          "start": 17.08,
+          "end": 17.48,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641ed",
+          "text": "years ",
+          "start": 17.52,
+          "end": 17.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641ee",
+          "text": "in ",
+          "start": 17.92,
+          "end": 18.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641ef",
+          "text": "Milan.",
+          "start": 18.12,
+          "end": 18.72,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 16.52,
+        "end": 18.72,
+        "duration": 2.1999999999999993
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "In  that  way,  the  opera  fits  the  verismo  tradition; an  Italian  literary  movement  that  focuses",
+      "words": [
+        {
+          "id": "68ff89360091646e399641f0",
+          "text": "In ",
+          "start": 19.08,
+          "end": 19.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f1",
+          "text": "that ",
+          "start": 19.36,
+          "end": 19.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f2",
+          "text": "way, ",
+          "start": 19.56,
+          "end": 20,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f3",
+          "text": "the ",
+          "start": 20.04,
+          "end": 20.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f4",
+          "text": "opera ",
+          "start": 20.24,
+          "end": 20.68,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f5",
+          "text": "fits ",
+          "start": 20.68,
+          "end": 21.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f6",
+          "text": "the ",
+          "start": 21.04,
+          "end": 21.16,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f7",
+          "text": "verismo ",
+          "start": 21.2,
+          "end": 21.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f8",
+          "text": "tradition;",
+          "start": 21.92,
+          "end": 22.76,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e399641f9",
+          "text": "an ",
+          "start": 22.76,
+          "end": 23,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641fa",
+          "text": "Italian ",
+          "start": 23.04,
+          "end": 23.48,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641fb",
+          "text": "literary ",
+          "start": 23.48,
+          "end": 24,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641fc",
+          "text": "movement ",
+          "start": 24,
+          "end": 24.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641fd",
+          "text": "that ",
+          "start": 24.6,
+          "end": 24.8,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e399641fe",
+          "text": "focuses",
+          "start": 24.8,
+          "end": 25.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 19.08,
+        "end": 25.24,
+        "duration": 6.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "on  the  lives  of  ordinary,  real  people, and  their  everyday  struggles.",
+      "words": [
+        {
+          "id": "68ff89360091646e399641ff",
+          "text": "on ",
+          "start": 25.36,
+          "end": 25.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964200",
+          "text": "the ",
+          "start": 25.6,
+          "end": 25.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964201",
+          "text": "lives ",
+          "start": 25.72,
+          "end": 26.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964202",
+          "text": "of ",
+          "start": 26.04,
+          "end": 26.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964203",
+          "text": "ordinary, ",
+          "start": 26.32,
+          "end": 27,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964204",
+          "text": "real ",
+          "start": 27,
+          "end": 27.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964205",
+          "text": "people,",
+          "start": 27.4,
+          "end": 27.92,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964206",
+          "text": "and ",
+          "start": 27.92,
+          "end": 28.08,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964207",
+          "text": "their ",
+          "start": 28.08,
+          "end": 28.28,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964208",
+          "text": "everyday ",
+          "start": 28.28,
+          "end": 28.68,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964209",
+          "text": "struggles.",
+          "start": 28.72,
+          "end": 29.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 25.36,
+        "end": 29.52,
+        "duration": 4.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "The  aria  is  sung  by  Musetta,  a  so-called  Grisette; an  independent  working  class  woman  torn  between",
+      "words": [
+        {
+          "id": "68ff89360091646e3996420a",
+          "text": "The ",
+          "start": 30,
+          "end": 30.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996420b",
+          "text": "aria ",
+          "start": 30.24,
+          "end": 30.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996420c",
+          "text": "is ",
+          "start": 30.6,
+          "end": 30.88,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996420d",
+          "text": "sung ",
+          "start": 30.88,
+          "end": 31.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996420e",
+          "text": "by ",
+          "start": 31.24,
+          "end": 31.4,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996420f",
+          "text": "Musetta, ",
+          "start": 31.4,
+          "end": 32.2,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964210",
+          "text": "a ",
+          "start": 32.4,
+          "end": 32.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964211",
+          "text": "so-called ",
+          "start": 32.64,
+          "end": 33.24,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964212",
+          "text": "Grisette;",
+          "start": 33.24,
+          "end": 34.04,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964213",
+          "text": "an ",
+          "start": 34.2,
+          "end": 34.4,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964214",
+          "text": "independent ",
+          "start": 34.4,
+          "end": 35.2,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964215",
+          "text": "working ",
+          "start": 35.2,
+          "end": 35.68,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964216",
+          "text": "class ",
+          "start": 35.68,
+          "end": 36.04,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964217",
+          "text": "woman ",
+          "start": 36.04,
+          "end": 36.6,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964218",
+          "text": "torn ",
+          "start": 36.64,
+          "end": 37,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964219",
+          "text": "between",
+          "start": 37,
+          "end": 37.28,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 30,
+        "end": 37.28,
+        "duration": 7.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "a  passionate  love,  amour  de  coeur, and  the  search  for  material  security, a mour  material. ",
+      "words": [
+        {
+          "id": "68ff89360091646e3996421a",
+          "text": "a ",
+          "start": 37.4,
+          "end": 37.56,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996421b",
+          "text": "passionate ",
+          "start": 37.56,
+          "end": 38.12,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996421c",
+          "text": "love, ",
+          "start": 38.12,
+          "end": 38.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996421d",
+          "text": "amour ",
+          "start": 38.72,
+          "end": 39.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996421e",
+          "text": "de ",
+          "start": 39.12,
+          "end": 39.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996421f",
+          "text": "coeur,",
+          "start": 39.32,
+          "end": 39.64,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964220",
+          "text": "and ",
+          "start": 39.84,
+          "end": 40.04,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964221",
+          "text": "the ",
+          "start": 40.04,
+          "end": 40.2,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964222",
+          "text": "search ",
+          "start": 40.2,
+          "end": 40.56,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964223",
+          "text": "for ",
+          "start": 40.56,
+          "end": 40.72,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964224",
+          "text": "material ",
+          "start": 40.76,
+          "end": 41.52,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964225",
+          "text": "security, a",
+          "start": 41.52,
+          "end": 42.24,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964226",
+          "text": "mour ",
+          "start": 42.36,
+          "end": 42.84,
+          "line": 1
+        },
+        {
+          "id": "68ff89360091646e39964227",
+          "text": "material. ",
+          "start": 42.88,
+          "end": 43.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 37.4,
+        "end": 43.8,
+        "duration": 6.399999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "The  sensual  song  she  sings  reflects  that  tension.",
+      "words": [
+        {
+          "id": "68ff89360091646e39964228",
+          "text": "The ",
+          "start": 44.2,
+          "end": 44.44,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e39964229",
+          "text": "sensual ",
+          "start": 44.44,
+          "end": 45,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422a",
+          "text": "song ",
+          "start": 45,
+          "end": 45.32,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422b",
+          "text": "she ",
+          "start": 45.32,
+          "end": 45.6,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422c",
+          "text": "sings ",
+          "start": 45.6,
+          "end": 46.08,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422d",
+          "text": "reflects ",
+          "start": 46.08,
+          "end": 46.72,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422e",
+          "text": "that ",
+          "start": 46.72,
+          "end": 47,
+          "line": 0
+        },
+        {
+          "id": "68ff89360091646e3996422f",
+          "text": "tension.",
+          "start": 47,
+          "end": 47.4,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 44.2,
+        "end": 47.4,
+        "duration": 3.1999999999999957
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,875 @@
+{
+  "metadata": {
+    "title": "war_pigs_inform",
+    "exportDate": "2025-10-27T16:03:26.938Z",
+    "totalSubtitles": 11,
+    "totalWords": 100
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Released  in  1970,  when  the  Vietnam  War  was  raging, ",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903a9",
+          "text": "Released ",
+          "start": 0.12,
+          "end": 0.72,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903aa",
+          "text": "in ",
+          "start": 0.72,
+          "end": 0.88,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ab",
+          "text": "1970, ",
+          "start": 0.88,
+          "end": 1.88,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ac",
+          "text": "when ",
+          "start": 1.92,
+          "end": 2.16,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ad",
+          "text": "the ",
+          "start": 2.16,
+          "end": 2.28,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ae",
+          "text": "Vietnam ",
+          "start": 2.28,
+          "end": 2.84,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903af",
+          "text": "War ",
+          "start": 2.84,
+          "end": 3.16,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b0",
+          "text": "was ",
+          "start": 3.16,
+          "end": 3.4,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b1",
+          "text": "raging, ",
+          "start": 3.4,
+          "end": 4.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.12,
+        "end": 4.16,
+        "duration": 4.04
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Black  Sabbath  released  War  Pigs.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903be",
+          "text": "Black ",
+          "start": 7.2,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903bf",
+          "text": "Sabbath ",
+          "start": 7.64,
+          "end": 8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c0",
+          "text": "released ",
+          "start": 8,
+          "end": 8.52,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c1",
+          "text": "War ",
+          "start": 8.52,
+          "end": 8.96,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c2",
+          "text": "Pigs.",
+          "start": 9,
+          "end": 9.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 7.2,
+        "end": 9.68,
+        "duration": 2.4799999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "There  were  protests  in  the  street, all  kinds  of  anti-war  things  going  on.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903c3",
+          "text": "There ",
+          "start": 9.96,
+          "end": 10.16,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c4",
+          "text": "were ",
+          "start": 10.16,
+          "end": 10.36,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c5",
+          "text": "protests ",
+          "start": 10.36,
+          "end": 11,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c6",
+          "text": "in ",
+          "start": 11,
+          "end": 11.2,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c7",
+          "text": "the ",
+          "start": 11.2,
+          "end": 11.32,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c8",
+          "text": "street,",
+          "start": 11.32,
+          "end": 11.96,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903c9",
+          "text": "all ",
+          "start": 11.96,
+          "end": 12.28,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ca",
+          "text": "kinds ",
+          "start": 12.28,
+          "end": 12.56,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903cb",
+          "text": "of ",
+          "start": 12.56,
+          "end": 12.72,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903cc",
+          "text": "anti-war ",
+          "start": 12.72,
+          "end": 13.24,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903cd",
+          "text": "things ",
+          "start": 13.28,
+          "end": 13.64,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ce",
+          "text": "going ",
+          "start": 13.64,
+          "end": 13.96,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903cf",
+          "text": "on.",
+          "start": 13.96,
+          "end": 14.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 9.96,
+        "end": 14.36,
+        "duration": 4.399999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "War  is  the  real  Satanism and  politicians  are  the  real  Satanists.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903d0",
+          "text": "War ",
+          "start": 14.68,
+          "end": 15.24,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d1",
+          "text": "is ",
+          "start": 15.24,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d2",
+          "text": "the ",
+          "start": 15.52,
+          "end": 15.72,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d3",
+          "text": "real ",
+          "start": 15.72,
+          "end": 16.04,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d4",
+          "text": "Satanism",
+          "start": 16.08,
+          "end": 16.96,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d5",
+          "text": "and ",
+          "start": 16.96,
+          "end": 17.2,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d6",
+          "text": "politicians ",
+          "start": 17.2,
+          "end": 18.12,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d7",
+          "text": "are ",
+          "start": 18.12,
+          "end": 18.28,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d8",
+          "text": "the ",
+          "start": 18.28,
+          "end": 18.48,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903d9",
+          "text": "real ",
+          "start": 18.48,
+          "end": 18.88,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903da",
+          "text": "Satanists.",
+          "start": 18.88,
+          "end": 19.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 14.68,
+        "end": 19.68,
+        "duration": 5
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "That's  what  the  song  is  trying  to  say.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903db",
+          "text": "That's ",
+          "start": 19.8,
+          "end": 20.08,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903dc",
+          "text": "what ",
+          "start": 20.08,
+          "end": 20.28,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903dd",
+          "text": "the ",
+          "start": 20.28,
+          "end": 20.4,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903de",
+          "text": "song ",
+          "start": 20.4,
+          "end": 20.68,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903df",
+          "text": "is ",
+          "start": 20.68,
+          "end": 20.8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e0",
+          "text": "trying ",
+          "start": 20.8,
+          "end": 21.12,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e1",
+          "text": "to ",
+          "start": 21.12,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e2",
+          "text": "say.",
+          "start": 21.28,
+          "end": 21.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.8,
+        "end": 21.68,
+        "duration": 1.879999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "The  message  struck  a  chord.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903e3",
+          "text": "The ",
+          "start": 22.2,
+          "end": 22.4,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e4",
+          "text": "message ",
+          "start": 22.4,
+          "end": 22.8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e5",
+          "text": "struck ",
+          "start": 22.8,
+          "end": 23.16,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e6",
+          "text": "a ",
+          "start": 23.16,
+          "end": 23.32,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e7",
+          "text": "chord.",
+          "start": 23.32,
+          "end": 23.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 22.2,
+        "end": 23.96,
+        "duration": 1.7600000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Crowds  of  veterans  rose  to  their  feet  when  War  Pigs  was  played, ",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903e8",
+          "text": "Crowds ",
+          "start": 24.12,
+          "end": 24.6,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903e9",
+          "text": "of ",
+          "start": 24.6,
+          "end": 24.72,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ea",
+          "text": "veterans ",
+          "start": 24.72,
+          "end": 25.28,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903eb",
+          "text": "rose ",
+          "start": 25.28,
+          "end": 25.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ec",
+          "text": "to ",
+          "start": 25.64,
+          "end": 25.72,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ed",
+          "text": "their ",
+          "start": 25.76,
+          "end": 25.92,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ee",
+          "text": "feet ",
+          "start": 25.92,
+          "end": 26.16,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ef",
+          "text": "when ",
+          "start": 26.16,
+          "end": 26.36,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f0",
+          "text": "War ",
+          "start": 26.4,
+          "end": 26.6,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f1",
+          "text": "Pigs ",
+          "start": 26.6,
+          "end": 26.84,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f2",
+          "text": "was ",
+          "start": 26.84,
+          "end": 27.08,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f3",
+          "text": "played, ",
+          "start": 27.08,
+          "end": 27.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 24.12,
+        "end": 27.68,
+        "duration": 3.5599999999999987
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Half  a  century  later,  it  remains  one  of Sabbath's  most  hauntingly  relevant  songs.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903f8",
+          "text": "Half ",
+          "start": 29.8,
+          "end": 30.08,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f9",
+          "text": "a ",
+          "start": 30.08,
+          "end": 30.16,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903fa",
+          "text": "century ",
+          "start": 30.16,
+          "end": 30.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903fb",
+          "text": "later, ",
+          "start": 30.64,
+          "end": 31.12,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903fc",
+          "text": "it ",
+          "start": 31.24,
+          "end": 31.4,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903fd",
+          "text": "remains ",
+          "start": 31.44,
+          "end": 31.88,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903fe",
+          "text": "one ",
+          "start": 31.88,
+          "end": 32.08,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ff",
+          "text": "of",
+          "start": 32.08,
+          "end": 32.24,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee290400",
+          "text": "Sabbath's ",
+          "start": 32.24,
+          "end": 32.6,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee290401",
+          "text": "most ",
+          "start": 32.6,
+          "end": 32.84,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee290402",
+          "text": "hauntingly ",
+          "start": 32.84,
+          "end": 33.56,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee290403",
+          "text": "relevant ",
+          "start": 33.56,
+          "end": 34.08,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee290404",
+          "text": "songs.",
+          "start": 34.08,
+          "end": 34.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.8,
+        "end": 34.76,
+        "duration": 4.959999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Because  the  war  pigs  never  seem  to  disappear.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee290405",
+          "text": "Because ",
+          "start": 34.88,
+          "end": 35.28,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee290406",
+          "text": "the ",
+          "start": 35.28,
+          "end": 35.52,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee290407",
+          "text": "war ",
+          "start": 35.52,
+          "end": 35.8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee290408",
+          "text": "pigs ",
+          "start": 35.84,
+          "end": 36.4,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee290409",
+          "text": "never ",
+          "start": 36.44,
+          "end": 37.24,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee29040a",
+          "text": "seem ",
+          "start": 37.24,
+          "end": 37.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee29040b",
+          "text": "to ",
+          "start": 37.68,
+          "end": 37.8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee29040c",
+          "text": "disappear.",
+          "start": 37.84,
+          "end": 38.8,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 34.88,
+        "end": 38.8,
+        "duration": 3.9199999999999946
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 680933,
+      "text": "and  Britain  was  on  the  verge of  being  sucked  into  the  conflict,",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903b2",
+          "text": "and ",
+          "start": 4.16,
+          "end": 4.32,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b3",
+          "text": "Britain ",
+          "start": 4.32,
+          "end": 4.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b4",
+          "text": "was ",
+          "start": 4.64,
+          "end": 4.8,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b5",
+          "text": "on ",
+          "start": 4.8,
+          "end": 4.96,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b6",
+          "text": "the ",
+          "start": 4.96,
+          "end": 5.08,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b7",
+          "text": "verge",
+          "start": 5.08,
+          "end": 5.24,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b8",
+          "text": "of ",
+          "start": 5.36,
+          "end": 5.48,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903b9",
+          "text": "being ",
+          "start": 5.48,
+          "end": 5.8,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903ba",
+          "text": "sucked ",
+          "start": 5.8,
+          "end": 6.08,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903bb",
+          "text": "into ",
+          "start": 6.08,
+          "end": 6.36,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903bc",
+          "text": "the ",
+          "start": 6.36,
+          "end": 6.48,
+          "line": 1
+        },
+        {
+          "id": "68ff97334b456cf6ee2903bd",
+          "text": "conflict,",
+          "start": 6.48,
+          "end": 7.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 4.16,
+        "end": 7.2,
+        "duration": 3.04
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 780746,
+      "text": "lifted  by  its  message.",
+      "words": [
+        {
+          "id": "68ff97334b456cf6ee2903f4",
+          "text": "lifted ",
+          "start": 27.68,
+          "end": 28.2,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f5",
+          "text": "by ",
+          "start": 28.2,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f6",
+          "text": "its ",
+          "start": 28.44,
+          "end": 28.64,
+          "line": 0
+        },
+        {
+          "id": "68ff97334b456cf6ee2903f7",
+          "text": "message.",
+          "start": 28.64,
+          "end": 29.32,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 27.68,
+        "end": 29.32,
+        "duration": 1.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

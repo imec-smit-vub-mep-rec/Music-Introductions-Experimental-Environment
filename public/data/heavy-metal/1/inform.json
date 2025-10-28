@@ -1,0 +1,1064 @@
+{
+  "metadata": {
+    "title": "ace_inform",
+    "exportDate": "2025-10-27T16:11:12.265Z",
+    "totalSubtitles": 11,
+    "totalWords": 127
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "With  its  iconic  Runaway  Train  bass  riff and  lyrics  celebrating  a  life  of  risk,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4bada6",
+          "text": "With ",
+          "start": 0.16,
+          "end": 0.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bada7",
+          "text": "its ",
+          "start": 0.48,
+          "end": 0.72,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bada8",
+          "text": "iconic ",
+          "start": 0.72,
+          "end": 1.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bada9",
+          "text": "Runaway ",
+          "start": 1.2,
+          "end": 1.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badaa",
+          "text": "Train ",
+          "start": 1.84,
+          "end": 2.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badab",
+          "text": "bass ",
+          "start": 2.28,
+          "end": 2.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badac",
+          "text": "riff",
+          "start": 2.6,
+          "end": 3.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badad",
+          "text": "and ",
+          "start": 3.04,
+          "end": 3.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badae",
+          "text": "lyrics ",
+          "start": 3.24,
+          "end": 3.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badaf",
+          "text": "celebrating ",
+          "start": 3.64,
+          "end": 4.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb0",
+          "text": "a ",
+          "start": 4.28,
+          "end": 4.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb1",
+          "text": "life ",
+          "start": 4.4,
+          "end": 4.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb2",
+          "text": "of ",
+          "start": 4.64,
+          "end": 4.76,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb3",
+          "text": "risk,",
+          "start": 4.76,
+          "end": 5.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 5.2,
+        "duration": 5.04
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Motorhead's  1980  hit  Ace  of  Spades  stands  as the  ultimate  anthem  for  high  stakes  gambling.",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badb4",
+          "text": "Motorhead's ",
+          "start": 5.32,
+          "end": 6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb5",
+          "text": "1980 ",
+          "start": 6.04,
+          "end": 7.04,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb6",
+          "text": "hit ",
+          "start": 7.08,
+          "end": 7.44,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb7",
+          "text": "Ace ",
+          "start": 7.48,
+          "end": 7.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb8",
+          "text": "of ",
+          "start": 7.84,
+          "end": 8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badb9",
+          "text": "Spades ",
+          "start": 8,
+          "end": 8.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badba",
+          "text": "stands ",
+          "start": 8.8,
+          "end": 9.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badbb",
+          "text": "as",
+          "start": 9.24,
+          "end": 9.4,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badbc",
+          "text": "the ",
+          "start": 9.4,
+          "end": 9.6,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badbd",
+          "text": "ultimate ",
+          "start": 9.6,
+          "end": 10.2,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badbe",
+          "text": "anthem ",
+          "start": 10.2,
+          "end": 10.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badbf",
+          "text": "for ",
+          "start": 10.68,
+          "end": 10.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc0",
+          "text": "high ",
+          "start": 10.96,
+          "end": 11.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc1",
+          "text": "stakes ",
+          "start": 11.28,
+          "end": 11.6,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc2",
+          "text": "gambling.",
+          "start": 11.6,
+          "end": 12.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.32,
+        "end": 12.36,
+        "duration": 7.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Although  the  song  is  frequently  interpreted as  a  metaphor  for  Lemmy's  philosophy  in  life,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badc3",
+          "text": "Although ",
+          "start": 12.84,
+          "end": 13.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc4",
+          "text": "the ",
+          "start": 13.24,
+          "end": 13.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc5",
+          "text": "song ",
+          "start": 13.36,
+          "end": 13.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc6",
+          "text": "is ",
+          "start": 13.64,
+          "end": 13.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc7",
+          "text": "frequently ",
+          "start": 13.84,
+          "end": 14.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc8",
+          "text": "interpreted",
+          "start": 14.36,
+          "end": 15.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badc9",
+          "text": "as ",
+          "start": 15.12,
+          "end": 15.36,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badca",
+          "text": "a ",
+          "start": 15.36,
+          "end": 15.44,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badcb",
+          "text": "metaphor ",
+          "start": 15.44,
+          "end": 15.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badcc",
+          "text": "for ",
+          "start": 15.96,
+          "end": 16.2,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badcd",
+          "text": "Lemmy's ",
+          "start": 16.2,
+          "end": 16.64,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badce",
+          "text": "philosophy ",
+          "start": 16.64,
+          "end": 17.2,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badcf",
+          "text": "in ",
+          "start": 17.2,
+          "end": 17.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd0",
+          "text": "life,",
+          "start": 17.4,
+          "end": 17.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.84,
+        "end": 17.8,
+        "duration": 4.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "he  argued  that  it  really  wasn't  so  deep,  just  a song  filled  with  all  kinds  of  gambling  references,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badd1",
+          "text": "he ",
+          "start": 17.92,
+          "end": 18.12,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd2",
+          "text": "argued ",
+          "start": 18.12,
+          "end": 18.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd3",
+          "text": "that ",
+          "start": 18.48,
+          "end": 18.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd4",
+          "text": "it ",
+          "start": 18.68,
+          "end": 18.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd5",
+          "text": "really ",
+          "start": 18.84,
+          "end": 19.2,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd6",
+          "text": "wasn't ",
+          "start": 19.2,
+          "end": 19.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd7",
+          "text": "so ",
+          "start": 19.56,
+          "end": 19.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd8",
+          "text": "deep, ",
+          "start": 19.8,
+          "end": 20.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badd9",
+          "text": "just ",
+          "start": 20.4,
+          "end": 20.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badda",
+          "text": "a",
+          "start": 20.76,
+          "end": 21,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4baddb",
+          "text": "song ",
+          "start": 21,
+          "end": 21.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4baddc",
+          "text": "filled ",
+          "start": 21.32,
+          "end": 21.6,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4baddd",
+          "text": "with ",
+          "start": 21.6,
+          "end": 21.8,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badde",
+          "text": "all ",
+          "start": 21.8,
+          "end": 22.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4baddf",
+          "text": "kinds ",
+          "start": 22.08,
+          "end": 22.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade0",
+          "text": "of ",
+          "start": 22.4,
+          "end": 22.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade1",
+          "text": "gambling ",
+          "start": 22.56,
+          "end": 23.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade2",
+          "text": "references,",
+          "start": 23.08,
+          "end": 23.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.92,
+        "end": 23.92,
+        "duration": 6
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "one  of  them  being:  Read 'em and weep",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4bade3",
+          "text": "one ",
+          "start": 24.28,
+          "end": 24.52,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade4",
+          "text": "of ",
+          "start": 24.52,
+          "end": 24.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade5",
+          "text": "them ",
+          "start": 24.6,
+          "end": 24.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade6",
+          "text": "being: ",
+          "start": 24.84,
+          "end": 25.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bade7",
+          "text": "Read 'em and weep",
+          "start": 25.32,
+          "end": 25.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 24.28,
+        "end": 25.76,
+        "duration": 1.4800000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "The  Dead  Man's  Hand  Again,  was  a  tribute  to  the  Old  West  gunslinger ",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badeb",
+          "text": "The ",
+          "start": 26.56,
+          "end": 26.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badec",
+          "text": "Dead ",
+          "start": 26.76,
+          "end": 27.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4baded",
+          "text": "Man's ",
+          "start": 27.08,
+          "end": 27.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badee",
+          "text": "Hand ",
+          "start": 27.48,
+          "end": 27.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badef",
+          "text": "Again, ",
+          "start": 27.84,
+          "end": 28.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf0",
+          "text": "was ",
+          "start": 28.56,
+          "end": 28.76,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf1",
+          "text": "a ",
+          "start": 28.76,
+          "end": 28.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf2",
+          "text": "tribute ",
+          "start": 28.92,
+          "end": 29.36,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf3",
+          "text": "to ",
+          "start": 29.36,
+          "end": 29.52,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf4",
+          "text": "the ",
+          "start": 29.56,
+          "end": 29.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf5",
+          "text": "Old ",
+          "start": 29.68,
+          "end": 29.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf6",
+          "text": "West ",
+          "start": 29.92,
+          "end": 30.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf7",
+          "text": "gunslinger ",
+          "start": 30.28,
+          "end": 31.04,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 26.56,
+        "end": 31.04,
+        "duration": 4.48
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "According  to  legend,  Hickok  was  shot  in  the  back during  a  poker  game  in  Deadwood,  Dakota,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badfb",
+          "text": "According ",
+          "start": 33.08,
+          "end": 33.48,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badfc",
+          "text": "to ",
+          "start": 33.52,
+          "end": 33.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badfd",
+          "text": "legend, ",
+          "start": 33.68,
+          "end": 34.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badfe",
+          "text": "Hickok ",
+          "start": 34.24,
+          "end": 34.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badff",
+          "text": "was ",
+          "start": 34.64,
+          "end": 34.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae00",
+          "text": "shot ",
+          "start": 34.84,
+          "end": 35.08,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae01",
+          "text": "in ",
+          "start": 35.08,
+          "end": 35.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae02",
+          "text": "the ",
+          "start": 35.24,
+          "end": 35.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae03",
+          "text": "back",
+          "start": 35.36,
+          "end": 35.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae04",
+          "text": "during ",
+          "start": 35.6,
+          "end": 36,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae05",
+          "text": "a ",
+          "start": 36,
+          "end": 36.08,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae06",
+          "text": "poker ",
+          "start": 36.08,
+          "end": 36.44,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae07",
+          "text": "game ",
+          "start": 36.44,
+          "end": 36.88,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae08",
+          "text": "in ",
+          "start": 36.88,
+          "end": 37.24,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae09",
+          "text": "Deadwood, ",
+          "start": 37.24,
+          "end": 37.84,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae0a",
+          "text": "Dakota,",
+          "start": 37.84,
+          "end": 38.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 33.08,
+        "end": 38.56,
+        "duration": 5.480000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "still  holding  his  final  hand: Black  aces  and  eights,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4bae0b",
+          "text": "still ",
+          "start": 38.76,
+          "end": 39.16,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae0c",
+          "text": "holding ",
+          "start": 39.16,
+          "end": 39.56,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae0d",
+          "text": "his ",
+          "start": 39.56,
+          "end": 39.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae0e",
+          "text": "final ",
+          "start": 39.8,
+          "end": 40.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae0f",
+          "text": "hand:",
+          "start": 40.28,
+          "end": 40.8,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae10",
+          "text": "Black ",
+          "start": 40.92,
+          "end": 41.4,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae11",
+          "text": "aces ",
+          "start": 41.44,
+          "end": 41.92,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae12",
+          "text": "and ",
+          "start": 41.92,
+          "end": 42.28,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae13",
+          "text": "eights,",
+          "start": 42.28,
+          "end": 42.72000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.76,
+        "end": 42.72000000000001,
+        "duration": 3.960000000000015
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "since  known  as  the  Dead  Man's  Hand. And  the  Ace  of  Spades  in  particular,",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4bae14",
+          "text": "since ",
+          "start": 42.84,
+          "end": 43.24,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae15",
+          "text": "known ",
+          "start": 43.24,
+          "end": 43.64,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae16",
+          "text": "as ",
+          "start": 43.64,
+          "end": 43.84,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae17",
+          "text": "the ",
+          "start": 43.84,
+          "end": 44,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae18",
+          "text": "Dead ",
+          "start": 44,
+          "end": 44.28,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae19",
+          "text": "Man's ",
+          "start": 44.32,
+          "end": 44.68,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1a",
+          "text": "Hand.",
+          "start": 44.68,
+          "end": 45.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1b",
+          "text": "And ",
+          "start": 45.36,
+          "end": 45.56,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1c",
+          "text": "the ",
+          "start": 45.56,
+          "end": 45.72,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1d",
+          "text": "Ace ",
+          "start": 45.72,
+          "end": 45.96,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1e",
+          "text": "of ",
+          "start": 45.96,
+          "end": 46.04,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae1f",
+          "text": "Spades ",
+          "start": 46.04,
+          "end": 46.48,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae20",
+          "text": "in ",
+          "start": 46.48,
+          "end": 46.68,
+          "line": 1
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae21",
+          "text": "particular,",
+          "start": 46.68,
+          "end": 47.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 42.84,
+        "end": 47.2,
+        "duration": 4.359999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "became  a  symbol  of  bad  luck.",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4bae22",
+          "text": "became ",
+          "start": 47.32,
+          "end": 47.76,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae23",
+          "text": "a ",
+          "start": 47.76,
+          "end": 47.88,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae24",
+          "text": "symbol ",
+          "start": 47.88,
+          "end": 48.36,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae25",
+          "text": "of ",
+          "start": 48.36,
+          "end": 48.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae26",
+          "text": "bad ",
+          "start": 48.6,
+          "end": 48.96,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4bae27",
+          "text": "luck.",
+          "start": 48.96,
+          "end": 49.2,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 47.32,
+        "end": 49.2,
+        "duration": 1.8800000000000026
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 642877,
+      "text": "Wild  Bill  Hickok.",
+      "words": [
+        {
+          "id": "68ff8ef85e5452fc2b4badf8",
+          "text": "Wild ",
+          "start": 31.08,
+          "end": 31.6,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badf9",
+          "text": "Bill ",
+          "start": 31.64,
+          "end": 32,
+          "line": 0
+        },
+        {
+          "id": "68ff8ef85e5452fc2b4badfa",
+          "text": "Hickok.",
+          "start": 32,
+          "end": 32.52,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 31.08,
+        "end": 32.52,
+        "duration": 1.4400000000000048
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}
