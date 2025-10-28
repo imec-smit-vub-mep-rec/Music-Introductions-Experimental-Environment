@@ -22,16 +22,15 @@ export function GenreSelectionScreen({
   onSelectGenre,
   onStart,
   onBack,
-  title = "Choose a Genre",
+  title,
   subtitle,
   sessionGroup,
 }: GenreSelectionScreenProps) {
   // Generate title and subtitle based on session group
   const displayTitle =
-    title ||
-    (sessionGroup === "unfamiliar"
+    sessionGroup === "unfamiliar"
       ? "Choose an Unfamiliar Genre"
-      : "Choose a Familiar Genre");
+      : "Choose a Familiar Genre";
   const displaySubtitle =
     subtitle ||
     (sessionGroup === "unfamiliar"
@@ -110,7 +109,11 @@ export function GenreSelectionScreen({
                 onClick={onStart}
                 className="bg-dark-purple text-white hover:bg-dark-purple/90 px-12 py-4 text-lg rounded-full font-medium"
               >
-                Start
+                I confirm this is a genre I am{" "}
+                <strong className="font-bold">
+                  {sessionGroup === "unfamiliar" ? "unfamiliar" : "familiar"}
+                </strong>{" "}
+                with
               </Button>
             </div>
           )}

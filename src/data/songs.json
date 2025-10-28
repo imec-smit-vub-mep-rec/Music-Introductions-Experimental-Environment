@@ -39,9 +39,9 @@
     },
 
     {
-      "id": "reggea",
-      "name": "Reggea",
-      "icon": "🎶",
+      "id": "reggae",
+      "name": "Reggae",
+      "icon": "🇯🇲",
       "color": "#9B59B6",
       "pattern": "purple"
     }
@@ -156,31 +156,31 @@
       "immersIntroductionUrl": "/data/blues/3/immers.wav"
     },
     {
-      "id": "reggea_1",
+      "id": "reggae_1",
       "title": "Bam Bam",
       "artist": "Sister Nancy",
-      "genre": "reggea",
-      "audioUrl": "/data/reggea/1/song.m4a",
-      "informIntroductionUrl": "/data/reggea/1/inform.wav",
-      "immersIntroductionUrl": "/data/reggea/1/immers.wav"
+      "genre": "reggae",
+      "audioUrl": "/data/reggae/1/song.m4a",
+      "informIntroductionUrl": "/data/reggae/1/inform.wav",
+      "immersIntroductionUrl": "/data/reggae/1/immers.wav"
     },
     {
-      "id": "reggea_2",
+      "id": "reggae_2",
       "title": "Red Red Wine",
       "artist": "UB40",
-      "genre": "reggea",
-      "audioUrl": "/data/reggea/2/song.m4a",
-      "informIntroductionUrl": "/data/reggea/2/inform.wav",
-      "immersIntroductionUrl": "/data/reggea/2/immers.wav"
+      "genre": "reggae",
+      "audioUrl": "/data/reggae/2/song.m4a",
+      "informIntroductionUrl": "/data/reggae/2/inform.wav",
+      "immersIntroductionUrl": "/data/reggae/2/immers.wav"
     },
     {
-      "id": "reggea_3",
+      "id": "reggae_3",
       "title": "One Love / People Get Ready",
       "artist": "Bob Marley & The Wailers",
-      "genre": "reggea",
-      "audioUrl": "/data/reggea/3/song.m4a",
-      "informIntroductionUrl": "/data/reggea/3/inform.wav",
-      "immersIntroductionUrl": "/data/reggea/3/immers.wav"
+      "genre": "reggae",
+      "audioUrl": "/data/reggae/3/song.m4a",
+      "informIntroductionUrl": "/data/reggae/3/inform.wav",
+      "immersIntroductionUrl": "/data/reggae/3/immers.wav"
     },
     {
       "id": "country_1",
