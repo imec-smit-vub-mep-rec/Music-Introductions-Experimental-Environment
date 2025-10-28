@@ -1,0 +1,791 @@
+{
+  "metadata": {
+    "title": "bambam_immers",
+    "exportDate": "2025-10-28T12:00:34.880Z",
+    "totalSubtitles": 11,
+    "totalWords": 88
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "You  know  one  thing I  could  never  understand?",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d56f",
+          "text": "You ",
+          "start": 0.36,
+          "end": 0.64,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d570",
+          "text": "know ",
+          "start": 0.64,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d571",
+          "text": "one ",
+          "start": 0.84,
+          "end": 1.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d572",
+          "text": "thing",
+          "start": 1.04,
+          "end": 1.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d573",
+          "text": "I ",
+          "start": 1.24,
+          "end": 1.32,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d574",
+          "text": "could ",
+          "start": 1.32,
+          "end": 1.48,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d575",
+          "text": "never ",
+          "start": 1.48,
+          "end": 1.72,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d576",
+          "text": "understand?",
+          "start": 1.72,
+          "end": 2.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.36,
+        "end": 2.44,
+        "duration": 2.08
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Why  everybody  always talking  about  my  ambition.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d577",
+          "text": "Why ",
+          "start": 2.56,
+          "end": 2.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d578",
+          "text": "everybody ",
+          "start": 2.92,
+          "end": 3.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d579",
+          "text": "always",
+          "start": 3.6,
+          "end": 4.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d57a",
+          "text": "talking ",
+          "start": 4.04,
+          "end": 4.36,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d57b",
+          "text": "about ",
+          "start": 4.36,
+          "end": 4.56,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d57c",
+          "text": "my ",
+          "start": 4.56,
+          "end": 4.8,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d57d",
+          "text": "ambition.",
+          "start": 4.8,
+          "end": 5.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 2.56,
+        "end": 5.6,
+        "duration": 3.0399999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Everywhere  I  go,  people  ask Nancy,  where  you  get  it  from?",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d57e",
+          "text": "Everywhere ",
+          "start": 5.96,
+          "end": 6.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d57f",
+          "text": "I ",
+          "start": 6.44,
+          "end": 6.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d580",
+          "text": "go, ",
+          "start": 6.56,
+          "end": 6.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d581",
+          "text": "people ",
+          "start": 6.96,
+          "end": 7.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d582",
+          "text": "ask",
+          "start": 7.44,
+          "end": 7.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d583",
+          "text": "Nancy, ",
+          "start": 7.68,
+          "end": 8.36,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d584",
+          "text": "where ",
+          "start": 8.4,
+          "end": 8.68,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d585",
+          "text": "you ",
+          "start": 8.68,
+          "end": 8.84,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d586",
+          "text": "get ",
+          "start": 8.84,
+          "end": 9,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d587",
+          "text": "it ",
+          "start": 9,
+          "end": 9.12,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d588",
+          "text": "from?",
+          "start": 9.12,
+          "end": 9.600000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.96,
+        "end": 9.600000000000001,
+        "duration": 3.6400000000000015
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "But  dem don't  know, I  get  it  from  creation.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d589",
+          "text": "But ",
+          "start": 9.72,
+          "end": 10.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d58a",
+          "text": "dem don't ",
+          "start": 10.04,
+          "end": 10.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d58b",
+          "text": "know,",
+          "start": 10.28,
+          "end": 10.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d58d",
+          "text": "I ",
+          "start": 10.84,
+          "end": 11.04,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d58e",
+          "text": "get ",
+          "start": 11.08,
+          "end": 11.24,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d58f",
+          "text": "it ",
+          "start": 11.24,
+          "end": 11.32,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d590",
+          "text": "from ",
+          "start": 11.32,
+          "end": 11.56,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d591",
+          "text": "creation.",
+          "start": 11.56,
+          "end": 12.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 9.72,
+        "end": 12.48,
+        "duration": 2.76
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Some  even  say  I  try to  mash  up  dem  plans.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d592",
+          "text": "Some ",
+          "start": 12.8,
+          "end": 13.12,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d593",
+          "text": "even ",
+          "start": 13.12,
+          "end": 13.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d594",
+          "text": "say ",
+          "start": 13.32,
+          "end": 13.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d595",
+          "text": "I ",
+          "start": 13.44,
+          "end": 13.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d596",
+          "text": "try",
+          "start": 13.56,
+          "end": 13.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d597",
+          "text": "to ",
+          "start": 13.72,
+          "end": 13.84,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d598",
+          "text": "mash ",
+          "start": 13.88,
+          "end": 14.16,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d599",
+          "text": "up ",
+          "start": 14.16,
+          "end": 14.28,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d59a",
+          "text": "dem ",
+          "start": 14.28,
+          "end": 14.56,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d59b",
+          "text": "plans.",
+          "start": 14.56,
+          "end": 15.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 12.8,
+        "end": 15.08,
+        "duration": 2.2799999999999994
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "What  a  commotion! What  a  fuss.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d59c",
+          "text": "What ",
+          "start": 15.2,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d59d",
+          "text": "a ",
+          "start": 15.52,
+          "end": 15.72,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d59e",
+          "text": "commotion!",
+          "start": 15.72,
+          "end": 16.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d59f",
+          "text": "What ",
+          "start": 16.68,
+          "end": 16.92,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a0",
+          "text": "a ",
+          "start": 16.92,
+          "end": 17.12,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a1",
+          "text": "fuss.",
+          "start": 17.12,
+          "end": 17.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 15.2,
+        "end": 17.6,
+        "duration": 2.400000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "But  me  never  watch  dem  things.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d5a2",
+          "text": "But ",
+          "start": 17.88,
+          "end": 18.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a3",
+          "text": "me ",
+          "start": 18.16,
+          "end": 18.48,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a4",
+          "text": "never ",
+          "start": 18.48,
+          "end": 18.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a5",
+          "text": "watch ",
+          "start": 18.84,
+          "end": 19.12,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a6",
+          "text": "dem ",
+          "start": 19.12,
+          "end": 19.36,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a7",
+          "text": "things.",
+          "start": 19.36,
+          "end": 19.84,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 17.88,
+        "end": 19.84,
+        "duration": 1.9600000000000009
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "All  I  ever  want  to  do is  bring  joy.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d5a8",
+          "text": "All ",
+          "start": 20,
+          "end": 20.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5a9",
+          "text": "I ",
+          "start": 20.28,
+          "end": 20.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5aa",
+          "text": "ever ",
+          "start": 20.4,
+          "end": 20.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5ab",
+          "text": "want ",
+          "start": 20.64,
+          "end": 20.88,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5ac",
+          "text": "to ",
+          "start": 20.92,
+          "end": 21.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5ad",
+          "text": "do",
+          "start": 21.04,
+          "end": 21.32,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5ae",
+          "text": "is ",
+          "start": 21.32,
+          "end": 21.56,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5af",
+          "text": "bring ",
+          "start": 21.56,
+          "end": 21.88,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b0",
+          "text": "joy.",
+          "start": 21.88,
+          "end": 22.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 20,
+        "end": 22.4,
+        "duration": 2.3999999999999986
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Make  the  people  dance  and  spread  good  energy  to  di world.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d5b1",
+          "text": "Make ",
+          "start": 22.56,
+          "end": 22.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b2",
+          "text": "the ",
+          "start": 22.84,
+          "end": 22.96,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b3",
+          "text": "people ",
+          "start": 22.96,
+          "end": 23.32,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b4",
+          "text": "dance ",
+          "start": 23.32,
+          "end": 23.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b5",
+          "text": "and ",
+          "start": 23.84,
+          "end": 24,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b6",
+          "text": "spread ",
+          "start": 24,
+          "end": 24.32,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b7",
+          "text": "good ",
+          "start": 24.32,
+          "end": 24.6,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b8",
+          "text": "energy ",
+          "start": 24.6,
+          "end": 24.92,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5b9",
+          "text": "to ",
+          "start": 24.92,
+          "end": 25.04,
+          "line": 1
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5bb",
+          "text": "di world.",
+          "start": 25.2,
+          "end": 25.8,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.56,
+        "end": 25.8,
+        "duration": 3.240000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "So  right  now,  mi a go  do  just  that.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d5bc",
+          "text": "So ",
+          "start": 25.92,
+          "end": 26.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5bd",
+          "text": "right ",
+          "start": 26.16,
+          "end": 26.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5be",
+          "text": "now, ",
+          "start": 26.4,
+          "end": 26.76,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c1",
+          "text": "mi a go ",
+          "start": 27,
+          "end": 27.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c2",
+          "text": "do ",
+          "start": 27.16,
+          "end": 27.32,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c3",
+          "text": "just ",
+          "start": 27.36,
+          "end": 27.72,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c4",
+          "text": "that.",
+          "start": 27.72,
+          "end": 28.08,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 25.92,
+        "end": 28.08,
+        "duration": 2.1599999999999966
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "This  one  come  from  my  heart.",
+      "words": [
+        {
+          "id": "6900ae7ad4303db235c2d5c5",
+          "text": "This ",
+          "start": 28.2,
+          "end": 28.48,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c6",
+          "text": "one ",
+          "start": 28.48,
+          "end": 28.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c7",
+          "text": "come ",
+          "start": 28.92,
+          "end": 29.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c8",
+          "text": "from ",
+          "start": 29.24,
+          "end": 29.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5c9",
+          "text": "my ",
+          "start": 29.52,
+          "end": 29.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae7ad4303db235c2d5ca",
+          "text": "heart.",
+          "start": 29.84,
+          "end": 30.4,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 28.2,
+        "end": 30.4,
+        "duration": 2.1999999999999993
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

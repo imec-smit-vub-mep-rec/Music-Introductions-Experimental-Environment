@@ -1,0 +1,923 @@
+{
+  "metadata": {
+    "title": "folsom_inform",
+    "exportDate": "2025-10-28T08:56:14.006Z",
+    "totalSubtitles": 10,
+    "totalWords": 109
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "In  1968,  Johnny  Cash  recorded  two  shows at  Folsom  Prison  in  California",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7b9",
+          "text": "In ",
+          "start": 0.4,
+          "end": 0.72,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ba",
+          "text": "1968, ",
+          "start": 0.72,
+          "end": 2.04,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7bb",
+          "text": "Johnny ",
+          "start": 2.04,
+          "end": 2.44,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7bc",
+          "text": "Cash ",
+          "start": 2.48,
+          "end": 2.76,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7bd",
+          "text": "recorded ",
+          "start": 2.76,
+          "end": 3.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7be",
+          "text": "two ",
+          "start": 3.28,
+          "end": 3.52,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7bf",
+          "text": "shows",
+          "start": 3.56,
+          "end": 3.96,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c0",
+          "text": "at ",
+          "start": 3.96,
+          "end": 4.12,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c1",
+          "text": "Folsom ",
+          "start": 4.12,
+          "end": 4.56,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c2",
+          "text": "Prison ",
+          "start": 4.56,
+          "end": 4.96,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c3",
+          "text": "in ",
+          "start": 4.96,
+          "end": 5.16,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c4",
+          "text": "California",
+          "start": 5.16,
+          "end": 5.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.4,
+        "end": 5.84,
+        "duration": 5.4399999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "for  the  album  At  Folsom  Prison. Prisoners  related  strongly  with  the  song.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7c5",
+          "text": "for ",
+          "start": 5.96,
+          "end": 6.24,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c6",
+          "text": "the ",
+          "start": 6.24,
+          "end": 6.36,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c7",
+          "text": "album ",
+          "start": 6.36,
+          "end": 6.84,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c8",
+          "text": "At ",
+          "start": 6.84,
+          "end": 7.04,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7c9",
+          "text": "Folsom ",
+          "start": 7.04,
+          "end": 7.48,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ca",
+          "text": "Prison.",
+          "start": 7.48,
+          "end": 8.08,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7cb",
+          "text": "Prisoners ",
+          "start": 8.48,
+          "end": 9.08,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7cc",
+          "text": "related ",
+          "start": 9.08,
+          "end": 9.6,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7cd",
+          "text": "strongly ",
+          "start": 9.6,
+          "end": 10.08,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ce",
+          "text": "with ",
+          "start": 10.08,
+          "end": 10.32,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7cf",
+          "text": "the ",
+          "start": 10.32,
+          "end": 10.48,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d0",
+          "text": "song.",
+          "start": 10.48,
+          "end": 11,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.96,
+        "end": 11,
+        "duration": 5.04
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "They  felt  understood, and  they  started  writing  to  him, ",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7d1",
+          "text": "They ",
+          "start": 11.2,
+          "end": 11.36,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d2",
+          "text": "felt ",
+          "start": 11.36,
+          "end": 11.68,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d3",
+          "text": "understood,",
+          "start": 11.68,
+          "end": 12.68,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d4",
+          "text": "and ",
+          "start": 12.68,
+          "end": 12.88,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d5",
+          "text": "they ",
+          "start": 12.88,
+          "end": 13,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d6",
+          "text": "started ",
+          "start": 13,
+          "end": 13.4,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d7",
+          "text": "writing ",
+          "start": 13.4,
+          "end": 13.8,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d8",
+          "text": "to ",
+          "start": 13.8,
+          "end": 13.92,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7d9",
+          "text": "him, ",
+          "start": 13.96,
+          "end": 14.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 11.2,
+        "end": 14.36,
+        "duration": 3.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Those  letters  and  concerts lit  a  fire  in  Cash.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7e3",
+          "text": "Those ",
+          "start": 17.56,
+          "end": 17.88,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e4",
+          "text": "letters ",
+          "start": 17.88,
+          "end": 18.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e5",
+          "text": "and ",
+          "start": 18.28,
+          "end": 18.52,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e6",
+          "text": "concerts",
+          "start": 18.52,
+          "end": 19.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e7",
+          "text": "lit ",
+          "start": 19.32,
+          "end": 19.56,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e8",
+          "text": "a ",
+          "start": 19.6,
+          "end": 19.76,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e9",
+          "text": "fire ",
+          "start": 19.76,
+          "end": 20.12,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ea",
+          "text": "in ",
+          "start": 20.12,
+          "end": 20.36,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7eb",
+          "text": "Cash.",
+          "start": 20.36,
+          "end": 20.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.56,
+        "end": 20.96,
+        "duration": 3.400000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "He  became  the  face  of  a  movement.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7ec",
+          "text": "He ",
+          "start": 21.16,
+          "end": 21.32,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ed",
+          "text": "became ",
+          "start": 21.32,
+          "end": 21.72,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ee",
+          "text": "the ",
+          "start": 21.72,
+          "end": 21.88,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ef",
+          "text": "face ",
+          "start": 21.88,
+          "end": 22.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f0",
+          "text": "of ",
+          "start": 22.28,
+          "end": 22.44,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f1",
+          "text": "a ",
+          "start": 22.44,
+          "end": 22.56,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f2",
+          "text": "movement.",
+          "start": 22.56,
+          "end": 23.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 21.16,
+        "end": 23.28,
+        "duration": 2.120000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "He  took  the  unheard  stories  from  the  cellblocks and  carried  them  to  the  steps  of  Capitol  Hill.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7f3",
+          "text": "He ",
+          "start": 23.52,
+          "end": 23.72,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f4",
+          "text": "took ",
+          "start": 23.72,
+          "end": 23.96,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f5",
+          "text": "the ",
+          "start": 23.96,
+          "end": 24.12,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f6",
+          "text": "unheard ",
+          "start": 24.12,
+          "end": 24.6,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f7",
+          "text": "stories ",
+          "start": 24.6,
+          "end": 25.12,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f8",
+          "text": "from ",
+          "start": 25.12,
+          "end": 25.4,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7f9",
+          "text": "the ",
+          "start": 25.4,
+          "end": 25.52,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7fa",
+          "text": "cellblocks",
+          "start": 25.52,
+          "end": 26.52,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7fb",
+          "text": "and ",
+          "start": 26.52,
+          "end": 26.76,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7fc",
+          "text": "carried ",
+          "start": 26.76,
+          "end": 27.08,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7fd",
+          "text": "them ",
+          "start": 27.08,
+          "end": 27.24,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7fe",
+          "text": "to ",
+          "start": 27.24,
+          "end": 27.32,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7ff",
+          "text": "the ",
+          "start": 27.36,
+          "end": 27.48,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd800",
+          "text": "steps ",
+          "start": 27.48,
+          "end": 27.92,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd801",
+          "text": "of ",
+          "start": 27.92,
+          "end": 28.08,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd802",
+          "text": "Capitol ",
+          "start": 28.08,
+          "end": 28.44,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd803",
+          "text": "Hill.",
+          "start": 28.48,
+          "end": 28.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 23.52,
+        "end": 28.92,
+        "duration": 5.400000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Standing  before  a  US  Senate  hearing,  Johnny  Cash  advocated  for  a  more  humane  system,",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd804",
+          "text": "Standing ",
+          "start": 29.36,
+          "end": 29.92,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd805",
+          "text": "before ",
+          "start": 29.92,
+          "end": 30.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd806",
+          "text": "a ",
+          "start": 30.28,
+          "end": 30.44,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd807",
+          "text": "US ",
+          "start": 30.44,
+          "end": 30.76,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd808",
+          "text": "Senate ",
+          "start": 30.76,
+          "end": 31.08,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd809",
+          "text": "hearing, ",
+          "start": 31.08,
+          "end": 31.68,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80a",
+          "text": "Johnny ",
+          "start": 31.68,
+          "end": 32.04,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80b",
+          "text": "Cash ",
+          "start": 32.08,
+          "end": 32.36,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80c",
+          "text": "advocated ",
+          "start": 32.4,
+          "end": 33.04,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80d",
+          "text": "for ",
+          "start": 33.04,
+          "end": 33.28,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80e",
+          "text": "a ",
+          "start": 33.28,
+          "end": 33.36,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd80f",
+          "text": "more ",
+          "start": 33.36,
+          "end": 33.6,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd810",
+          "text": "humane ",
+          "start": 33.6,
+          "end": 34.24,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd811",
+          "text": "system,",
+          "start": 34.24,
+          "end": 34.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.36,
+        "end": 34.92,
+        "duration": 5.560000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "suggesting,  for  example,  that  first- time  inmates be  separated  from  hardened  criminals",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd812",
+          "text": "suggesting, ",
+          "start": 35.12,
+          "end": 35.84,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd813",
+          "text": "for ",
+          "start": 35.84,
+          "end": 36,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd814",
+          "text": "example, ",
+          "start": 36,
+          "end": 36.64,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd815",
+          "text": "that ",
+          "start": 36.64,
+          "end": 36.8,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd816",
+          "text": "first-",
+          "start": 36.8,
+          "end": 37.16,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd817",
+          "text": "time ",
+          "start": 37.16,
+          "end": 37.44,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd818",
+          "text": "inmates",
+          "start": 37.44,
+          "end": 37.96,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd819",
+          "text": "be ",
+          "start": 38,
+          "end": 38.28,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd81a",
+          "text": "separated ",
+          "start": 38.28,
+          "end": 38.84,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd81b",
+          "text": "from ",
+          "start": 38.84,
+          "end": 39.12,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd81c",
+          "text": "hardened ",
+          "start": 39.12,
+          "end": 39.52,
+          "line": 1
+        },
+        {
+          "id": "690083e5d6c34eb87bffd81d",
+          "text": "criminals",
+          "start": 39.52,
+          "end": 40.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 35.12,
+        "end": 40.32,
+        "duration": 5.200000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "and  minor  offenders  be  kept  out  of  prison.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd81e",
+          "text": "and ",
+          "start": 40.44,
+          "end": 40.64,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd81f",
+          "text": "minor ",
+          "start": 40.64,
+          "end": 40.96,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd820",
+          "text": "offenders ",
+          "start": 40.96,
+          "end": 41.52,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd821",
+          "text": "be ",
+          "start": 41.56,
+          "end": 41.84,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd822",
+          "text": "kept ",
+          "start": 41.84,
+          "end": 42.08,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd823",
+          "text": "out ",
+          "start": 42.08,
+          "end": 42.28,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd824",
+          "text": "of ",
+          "start": 42.32,
+          "end": 42.44,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd825",
+          "text": "prison.",
+          "start": 42.44,
+          "end": 43.08,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 40.44,
+        "end": 43.08,
+        "duration": 2.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 711408,
+      "text": "asking  him  to  perform  his  music  in  other  prisons.",
+      "words": [
+        {
+          "id": "690083e5d6c34eb87bffd7da",
+          "text": "asking ",
+          "start": 14.4,
+          "end": 14.76,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7db",
+          "text": "him ",
+          "start": 14.76,
+          "end": 14.92,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7dc",
+          "text": "to ",
+          "start": 14.92,
+          "end": 15.04,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7dd",
+          "text": "perform ",
+          "start": 15.08,
+          "end": 15.48,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7de",
+          "text": "his ",
+          "start": 15.48,
+          "end": 15.64,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7df",
+          "text": "music ",
+          "start": 15.64,
+          "end": 16.16,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e0",
+          "text": "in ",
+          "start": 16.16,
+          "end": 16.36,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e1",
+          "text": "other ",
+          "start": 16.36,
+          "end": 16.56,
+          "line": 0
+        },
+        {
+          "id": "690083e5d6c34eb87bffd7e2",
+          "text": "prisons.",
+          "start": 16.56,
+          "end": 17.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 14.4,
+        "end": 17.24,
+        "duration": 2.839999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

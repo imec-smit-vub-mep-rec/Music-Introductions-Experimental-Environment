@@ -1,0 +1,740 @@
+{
+  "metadata": {
+    "title": "wine_inform",
+    "exportDate": "2025-10-28T11:16:45.251Z",
+    "totalSubtitles": 9,
+    "totalWords": 85
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "UB40  come  together  in  Birmingham, right inna di time  they  call  the Winter  of Discontent .",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf1e8",
+          "text": "UB40 ",
+          "start": 0.2,
+          "end": 1.4,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1e9",
+          "text": "come ",
+          "start": 1.44,
+          "end": 1.84,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1ea",
+          "text": "together ",
+          "start": 1.84,
+          "end": 2.28,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1eb",
+          "text": "in ",
+          "start": 2.28,
+          "end": 2.48,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1ec",
+          "text": "Birmingham, right inna",
+          "start": 2.48,
+          "end": 3.24,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f0",
+          "text": "di time ",
+          "start": 4.04,
+          "end": 4.28,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f1",
+          "text": "they ",
+          "start": 4.28,
+          "end": 4.56,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f2",
+          "text": "call ",
+          "start": 4.56,
+          "end": 5,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f3",
+          "text": "the Winter ",
+          "start": 5,
+          "end": 5.2,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f5",
+          "text": "of Discontent",
+          "start": 5.72,
+          "end": 5.92,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f6",
+          "text": ".",
+          "start": 5.92,
+          "end": 6.88,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 6.88,
+        "duration": 6.68
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Britain's  economy  was  down  bad,  people  struggling  to  get  by.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf1f7",
+          "text": "Britain's ",
+          "start": 7.04,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f8",
+          "text": "economy ",
+          "start": 7.64,
+          "end": 8.12,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1f9",
+          "text": "was ",
+          "start": 8.12,
+          "end": 8.4,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1fa",
+          "text": "down ",
+          "start": 8.4,
+          "end": 8.84,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1fb",
+          "text": "bad, ",
+          "start": 8.84,
+          "end": 9.288,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf1fc",
+          "text": "people ",
+          "start": 9.52,
+          "end": 9.88,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1fd",
+          "text": "struggling ",
+          "start": 9.88,
+          "end": 10.44,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1fe",
+          "text": "to ",
+          "start": 10.44,
+          "end": 10.6,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf1ff",
+          "text": "get ",
+          "start": 10.6,
+          "end": 10.8,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf200",
+          "text": "by.",
+          "start": 10.8,
+          "end": 11.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 7.04,
+        "end": 11.24,
+        "duration": 4.2
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "The  band  name  tell  the  story,  UB40 standing  for  unemployment  benefit  Form  40.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf201",
+          "text": "The ",
+          "start": 11.72,
+          "end": 11.92,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf202",
+          "text": "band ",
+          "start": 11.96,
+          "end": 12.28,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf203",
+          "text": "name ",
+          "start": 12.28,
+          "end": 12.72,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf204",
+          "text": "tell ",
+          "start": 12.76,
+          "end": 12.92,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf205",
+          "text": "the ",
+          "start": 12.96,
+          "end": 13.16,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf206",
+          "text": "story, ",
+          "start": 13.16,
+          "end": 13.84,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf207",
+          "text": "UB40",
+          "start": 13.88,
+          "end": 14.92,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf208",
+          "text": "standing ",
+          "start": 15.08,
+          "end": 15.64,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf209",
+          "text": "for ",
+          "start": 15.64,
+          "end": 15.88,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf20a",
+          "text": "unemployment ",
+          "start": 15.88,
+          "end": 16.68,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf20b",
+          "text": "benefit ",
+          "start": 16.68,
+          "end": 17.36,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf20c",
+          "text": "Form ",
+          "start": 17.36,
+          "end": 17.41,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf20d",
+          "text": "40.",
+          "start": 17.411,
+          "end": 17.461,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 11.72,
+        "end": 17.461,
+        "duration": 5.740999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Dem a  real  reflection  of  a  changing  Britain,  a  mixed  race  reggae  band ",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf20e",
+          "text": "Dem a ",
+          "start": 19.08,
+          "end": 19.28,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf210",
+          "text": "real ",
+          "start": 19.48,
+          "end": 19.76,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf211",
+          "text": "reflection ",
+          "start": 19.76,
+          "end": 20.52,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf212",
+          "text": "of ",
+          "start": 20.52,
+          "end": 20.68,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf213",
+          "text": "a ",
+          "start": 20.68,
+          "end": 20.84,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf214",
+          "text": "changing ",
+          "start": 20.84,
+          "end": 21.2,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf216",
+          "text": "Britain, ",
+          "start": 21.4,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf217",
+          "text": "a ",
+          "start": 22.12,
+          "end": 22.32,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf218",
+          "text": "mixed ",
+          "start": 22.32,
+          "end": 22.68,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf219",
+          "text": "race ",
+          "start": 22.68,
+          "end": 23,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf21a",
+          "text": "reggae ",
+          "start": 23,
+          "end": 23.4,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf21b",
+          "text": "band ",
+          "start": 23.4,
+          "end": 23.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 19.08,
+        "end": 23.92,
+        "duration": 4.840000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "And  from  those  humble  beginnings, dem  rise  high.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf229",
+          "text": "And ",
+          "start": 28.4,
+          "end": 28.56,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf22a",
+          "text": "from ",
+          "start": 28.56,
+          "end": 28.76,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf22b",
+          "text": "those ",
+          "start": 28.8,
+          "end": 29.12,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf22c",
+          "text": "humble ",
+          "start": 29.16,
+          "end": 29.44,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf22d",
+          "text": "beginnings,",
+          "start": 29.48,
+          "end": 30.28,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf22e",
+          "text": "dem ",
+          "start": 30.32,
+          "end": 30.6,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf22f",
+          "text": "rise ",
+          "start": 30.6,
+          "end": 31.04,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf230",
+          "text": "high.",
+          "start": 31.04,
+          "end": 31.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 28.4,
+        "end": 31.48,
+        "duration": 3.080000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "In  1983, they  cover  Red,  Red  Wine.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf231",
+          "text": "In ",
+          "start": 31.84,
+          "end": 32.04,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf232",
+          "text": "1983,",
+          "start": 32.08,
+          "end": 33.36,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf233",
+          "text": "they ",
+          "start": 33.4,
+          "end": 33.64,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf234",
+          "text": "cover ",
+          "start": 33.64,
+          "end": 34,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf235",
+          "text": "Red, ",
+          "start": 34,
+          "end": 34.44,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf236",
+          "text": "Red ",
+          "start": 34.44,
+          "end": 34.68,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf237",
+          "text": "Wine.",
+          "start": 34.68,
+          "end": 35.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 31.84,
+        "end": 35.2,
+        "duration": 3.360000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Smooth,  soulful,  sweet.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf238",
+          "text": "Smooth, ",
+          "start": 35.32,
+          "end": 36.2,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf239",
+          "text": "soulful, ",
+          "start": 36.24,
+          "end": 37.16,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf23a",
+          "text": "sweet.",
+          "start": 37.2,
+          "end": 37.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 35.32,
+        "end": 37.92,
+        "duration": 2.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "It  climbs  straight  to  number  one  in  Britain.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf23b",
+          "text": "It ",
+          "start": 38.04,
+          "end": 38.24,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf23c",
+          "text": "climbs ",
+          "start": 38.28,
+          "end": 38.68,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf23d",
+          "text": "straight ",
+          "start": 38.68,
+          "end": 39,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf23e",
+          "text": "to ",
+          "start": 39,
+          "end": 39.12,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf23f",
+          "text": "number ",
+          "start": 39.16,
+          "end": 39.52,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf240",
+          "text": "one ",
+          "start": 39.52,
+          "end": 39.72,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf241",
+          "text": "in ",
+          "start": 39.72,
+          "end": 39.96,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf242",
+          "text": "Britain.",
+          "start": 39.96,
+          "end": 40.32,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 38.04,
+        "end": 40.32,
+        "duration": 2.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 439710,
+      "text": "blending  the  sound  of  Jamaica with  the  spirit  of  the  English  working  class.",
+      "words": [
+        {
+          "id": "6900a52c9270025a2efbf21c",
+          "text": "blending ",
+          "start": 23.92,
+          "end": 24.48,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf21d",
+          "text": "the ",
+          "start": 24.48,
+          "end": 24.64,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf21e",
+          "text": "sound ",
+          "start": 24.64,
+          "end": 24.84,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf21f",
+          "text": "of ",
+          "start": 24.84,
+          "end": 25,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf220",
+          "text": "Jamaica",
+          "start": 25,
+          "end": 25.56,
+          "line": 0
+        },
+        {
+          "id": "6900a52c9270025a2efbf221",
+          "text": "with ",
+          "start": 25.68,
+          "end": 25.88,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf222",
+          "text": "the ",
+          "start": 25.88,
+          "end": 26,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf223",
+          "text": "spirit ",
+          "start": 26,
+          "end": 26.44,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf224",
+          "text": "of ",
+          "start": 26.44,
+          "end": 26.56,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf225",
+          "text": "the ",
+          "start": 26.56,
+          "end": 26.64,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf226",
+          "text": "English ",
+          "start": 26.64,
+          "end": 27.04,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf227",
+          "text": "working ",
+          "start": 27.04,
+          "end": 27.44,
+          "line": 1
+        },
+        {
+          "id": "6900a52c9270025a2efbf228",
+          "text": "class.",
+          "start": 27.44,
+          "end": 28.08,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 23.92,
+        "end": 28.08,
+        "duration": 4.159999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

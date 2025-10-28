@@ -1,0 +1,868 @@
+{
+  "metadata": {
+    "title": "Okie",
+    "exportDate": "2025-10-28T09:08:29.556Z",
+    "totalSubtitles": 11,
+    "totalWords": 99
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Picture  a  small  town  out  in  America, late  1960s.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aacc5",
+          "text": "Picture ",
+          "start": 0.16,
+          "end": 0.68,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacc6",
+          "text": "a ",
+          "start": 0.68,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacc7",
+          "text": "small ",
+          "start": 0.84,
+          "end": 1.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacc8",
+          "text": "town ",
+          "start": 1.24,
+          "end": 1.6,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacc9",
+          "text": "out ",
+          "start": 1.64,
+          "end": 1.84,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacca",
+          "text": "in ",
+          "start": 1.84,
+          "end": 2,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aaccb",
+          "text": "America,",
+          "start": 2,
+          "end": 2.68,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aaccc",
+          "text": "late ",
+          "start": 2.72,
+          "end": 3.08,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aaccd",
+          "text": "1960s.",
+          "start": 3.08,
+          "end": 4.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 4.4,
+        "duration": 4.24
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Little  old  square,  flag  flapping  proud  in  the  breeze.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aacce",
+          "text": "Little ",
+          "start": 4.72,
+          "end": 5.04,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aaccf",
+          "text": "old ",
+          "start": 5.04,
+          "end": 5.28,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacd0",
+          "text": "square, ",
+          "start": 5.28,
+          "end": 5.84,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacd1",
+          "text": "flag ",
+          "start": 5.88,
+          "end": 6.4,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacd2",
+          "text": "flapping ",
+          "start": 6.48,
+          "end": 7,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacd3",
+          "text": "proud ",
+          "start": 7,
+          "end": 7.32,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacd4",
+          "text": "in ",
+          "start": 7.32,
+          "end": 7.52,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacd5",
+          "text": "the ",
+          "start": 7.52,
+          "end": 7.64,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacd6",
+          "text": "breeze.",
+          "start": 7.64,
+          "end": 8.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 4.72,
+        "end": 8.16,
+        "duration": 3.4400000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Old  boys  in  cowboy  hats, sitting  outside  the  barber  shop,",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aacd7",
+          "text": "Old ",
+          "start": 8.36,
+          "end": 8.68,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacd8",
+          "text": "boys ",
+          "start": 8.68,
+          "end": 9.04,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacd9",
+          "text": "in ",
+          "start": 9.04,
+          "end": 9.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacda",
+          "text": "cowboy ",
+          "start": 9.24,
+          "end": 9.72,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacdb",
+          "text": "hats,",
+          "start": 9.72,
+          "end": 10.08,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacdc",
+          "text": "sitting ",
+          "start": 10.12,
+          "end": 10.44,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacdd",
+          "text": "outside ",
+          "start": 10.44,
+          "end": 10.84,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacde",
+          "text": "the ",
+          "start": 10.84,
+          "end": 11,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacdf",
+          "text": "barber ",
+          "start": 11,
+          "end": 11.32,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aace0",
+          "text": "shop,",
+          "start": 11.32,
+          "end": 11.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.36,
+        "end": 11.84,
+        "duration": 3.4800000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "swapping  stories  about  the  good  old  days.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aace1",
+          "text": "swapping ",
+          "start": 12,
+          "end": 12.52,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace2",
+          "text": "stories ",
+          "start": 12.52,
+          "end": 12.96,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace3",
+          "text": "about ",
+          "start": 12.96,
+          "end": 13.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace4",
+          "text": "the ",
+          "start": 13.24,
+          "end": 13.4,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace5",
+          "text": "good ",
+          "start": 13.4,
+          "end": 13.56,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace6",
+          "text": "old ",
+          "start": 13.56,
+          "end": 13.8,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace7",
+          "text": "days.",
+          "start": 13.8,
+          "end": 14.44,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 12,
+        "end": 14.44,
+        "duration": 2.4399999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Out  past  the  town line tough, the  world's  changing  fast.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aace8",
+          "text": "Out ",
+          "start": 14.84,
+          "end": 15.08,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aace9",
+          "text": "past ",
+          "start": 15.12,
+          "end": 15.36,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacea",
+          "text": "the ",
+          "start": 15.36,
+          "end": 15.52,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aaceb",
+          "text": "town line tough,",
+          "start": 15.52,
+          "end": 15.88,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacee",
+          "text": "the ",
+          "start": 16.44,
+          "end": 16.56,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacef",
+          "text": "world's ",
+          "start": 16.56,
+          "end": 16.96,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacf0",
+          "text": "changing ",
+          "start": 16.96,
+          "end": 17.72,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacf1",
+          "text": "fast.",
+          "start": 17.72,
+          "end": 18.28,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 14.84,
+        "end": 18.28,
+        "duration": 3.4400000000000013
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Kids  growing  their  hair  long, marching  with  protest  signs.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aacf2",
+          "text": "Kids ",
+          "start": 18.56,
+          "end": 19,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacf3",
+          "text": "growing ",
+          "start": 19,
+          "end": 19.4,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacf4",
+          "text": "their ",
+          "start": 19.4,
+          "end": 19.52,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacf5",
+          "text": "hair ",
+          "start": 19.52,
+          "end": 19.8,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacf6",
+          "text": "long,",
+          "start": 19.8,
+          "end": 20.4,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacf7",
+          "text": "marching ",
+          "start": 20.44,
+          "end": 20.84,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacf8",
+          "text": "with ",
+          "start": 20.84,
+          "end": 21.04,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacf9",
+          "text": "protest ",
+          "start": 21.04,
+          "end": 21.68,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aacfa",
+          "text": "signs.",
+          "start": 21.68,
+          "end": 22.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 18.56,
+        "end": 22.4,
+        "duration": 3.84
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "While  our  boys  are  overseas fighting  for  our  freedom.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aacfb",
+          "text": "While ",
+          "start": 22.52,
+          "end": 22.76,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacfc",
+          "text": "our ",
+          "start": 22.76,
+          "end": 22.96,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacfd",
+          "text": "boys ",
+          "start": 22.96,
+          "end": 23.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacfe",
+          "text": "are ",
+          "start": 23.24,
+          "end": 23.4,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aacff",
+          "text": "overseas",
+          "start": 23.4,
+          "end": 24.08,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad00",
+          "text": "fighting ",
+          "start": 24.08,
+          "end": 24.48,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad01",
+          "text": "for ",
+          "start": 24.48,
+          "end": 24.68,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad02",
+          "text": "our ",
+          "start": 24.68,
+          "end": 24.84,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad03",
+          "text": "freedom.",
+          "start": 24.84,
+          "end": 25.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 22.52,
+        "end": 25.52,
+        "duration": 3
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "They  say  we're  behind  the  times. Call  us  simple.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aad04",
+          "text": "They ",
+          "start": 25.84,
+          "end": 26.08,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad05",
+          "text": "say ",
+          "start": 26.08,
+          "end": 26.28,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad06",
+          "text": "we're ",
+          "start": 26.28,
+          "end": 26.56,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad07",
+          "text": "behind ",
+          "start": 26.56,
+          "end": 26.96,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad08",
+          "text": "the ",
+          "start": 26.96,
+          "end": 27.08,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad09",
+          "text": "times.",
+          "start": 27.08,
+          "end": 27.84,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad0a",
+          "text": "Call ",
+          "start": 27.84,
+          "end": 28.12,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad0b",
+          "text": "us ",
+          "start": 28.12,
+          "end": 28.36,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad0c",
+          "text": "simple.",
+          "start": 28.36,
+          "end": 28.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 25.84,
+        "end": 28.92,
+        "duration": 3.080000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "But  I'll  tell  you  this, I'm  proud  of  who  I  am.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aad0d",
+          "text": "But ",
+          "start": 29.12,
+          "end": 29.32,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad0e",
+          "text": "I'll ",
+          "start": 29.32,
+          "end": 29.56,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad0f",
+          "text": "tell ",
+          "start": 29.56,
+          "end": 29.8,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad10",
+          "text": "you ",
+          "start": 29.8,
+          "end": 29.96,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad11",
+          "text": "this,",
+          "start": 29.96,
+          "end": 30.52,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad12",
+          "text": "I'm ",
+          "start": 30.52,
+          "end": 30.88,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad13",
+          "text": "proud ",
+          "start": 30.88,
+          "end": 31.4,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad14",
+          "text": "of ",
+          "start": 31.4,
+          "end": 31.48,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad15",
+          "text": "who ",
+          "start": 31.56,
+          "end": 31.76,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad16",
+          "text": "I ",
+          "start": 31.76,
+          "end": 32,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad17",
+          "text": "am.",
+          "start": 32,
+          "end": 32.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.12,
+        "end": 32.56,
+        "duration": 3.4400000000000013
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Proud  to  wear  my  boots,  tip  my  hat and  defend  my  country.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aad18",
+          "text": "Proud ",
+          "start": 32.72,
+          "end": 33.04,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad19",
+          "text": "to ",
+          "start": 33.04,
+          "end": 33.12,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1a",
+          "text": "wear ",
+          "start": 33.16,
+          "end": 33.4,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1b",
+          "text": "my ",
+          "start": 33.4,
+          "end": 33.64,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1c",
+          "text": "boots, ",
+          "start": 33.64,
+          "end": 34.16,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1d",
+          "text": "tip ",
+          "start": 34.28,
+          "end": 34.6,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1e",
+          "text": "my ",
+          "start": 34.6,
+          "end": 34.8,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad1f",
+          "text": "hat",
+          "start": 34.8,
+          "end": 35.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad20",
+          "text": "and ",
+          "start": 35.24,
+          "end": 35.4,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad21",
+          "text": "defend ",
+          "start": 35.4,
+          "end": 35.92,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad22",
+          "text": "my ",
+          "start": 35.92,
+          "end": 36.12,
+          "line": 1
+        },
+        {
+          "id": "690085d03eaede6e300aad23",
+          "text": "country.",
+          "start": 36.12,
+          "end": 36.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.72,
+        "end": 36.76,
+        "duration": 4.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "I'm  a  proud  Okie  from  Muskogee.",
+      "words": [
+        {
+          "id": "690085d03eaede6e300aad24",
+          "text": "I'm ",
+          "start": 36.96,
+          "end": 37.32,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad25",
+          "text": "a ",
+          "start": 37.32,
+          "end": 37.48,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad26",
+          "text": "proud ",
+          "start": 37.48,
+          "end": 37.88,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad27",
+          "text": "Okie ",
+          "start": 37.88,
+          "end": 38.24,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad28",
+          "text": "from ",
+          "start": 38.24,
+          "end": 38.52,
+          "line": 0
+        },
+        {
+          "id": "690085d03eaede6e300aad29",
+          "text": "Muskogee.",
+          "start": 38.52,
+          "end": 39.16,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 36.96,
+        "end": 39.16,
+        "duration": 2.1999999999999957
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,906 @@
+{
+  "metadata": {
+    "title": "wine_immers",
+    "exportDate": "2025-10-28T12:04:59.548Z",
+    "totalSubtitles": 14,
+    "totalWords": 98
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Picture  this  now.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9ba",
+          "text": "Picture ",
+          "start": 0.2,
+          "end": 0.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9bb",
+          "text": "this ",
+          "start": 0.6,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9bc",
+          "text": "now.",
+          "start": 0.84,
+          "end": 1.16,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 1.16,
+        "duration": 0.96
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Mi  deh  sit  down inna  the  bar,",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9bd",
+          "text": "Mi ",
+          "start": 1.48,
+          "end": 1.64,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9be",
+          "text": "deh ",
+          "start": 1.64,
+          "end": 1.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9bf",
+          "text": "sit ",
+          "start": 1.88,
+          "end": 2.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c0",
+          "text": "down",
+          "start": 2.04,
+          "end": 2.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c1",
+          "text": "inna ",
+          "start": 2.28,
+          "end": 2.44,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c3",
+          "text": "the ",
+          "start": 2.52,
+          "end": 2.64,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c4",
+          "text": "bar,",
+          "start": 2.64,
+          "end": 3,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 1.48,
+        "end": 3,
+        "duration": 1.52
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "glass  in  hand,",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9c5",
+          "text": "glass ",
+          "start": 3.2,
+          "end": 3.88,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c6",
+          "text": "in ",
+          "start": 3.88,
+          "end": 4.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c7",
+          "text": "hand,",
+          "start": 4.08,
+          "end": 4.32,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 3.2,
+        "end": 4.32,
+        "duration": 1.12
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "music  soft  inna  the  background.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9c8",
+          "text": "music ",
+          "start": 4.44,
+          "end": 5.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9c9",
+          "text": "soft ",
+          "start": 5.08,
+          "end": 5.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ca",
+          "text": "inna ",
+          "start": 5.52,
+          "end": 5.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9cb",
+          "text": "the ",
+          "start": 5.76,
+          "end": 5.88,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9cc",
+          "text": "background.",
+          "start": 5.88,
+          "end": 6.56,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 4.44,
+        "end": 6.56,
+        "duration": 2.119999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Then  she  walk  in mi old  love.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9cd",
+          "text": "Then ",
+          "start": 6.84,
+          "end": 7.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ce",
+          "text": "she ",
+          "start": 7.08,
+          "end": 7.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9cf",
+          "text": "walk ",
+          "start": 7.28,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d0",
+          "text": "in",
+          "start": 7.64,
+          "end": 8.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d2",
+          "text": "mi old ",
+          "start": 8.44,
+          "end": 8.8,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d3",
+          "text": "love.",
+          "start": 8.8,
+          "end": 9.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 6.84,
+        "end": 9.24,
+        "duration": 2.4000000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Mi  heart  skip  a  beat,",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9d4",
+          "text": "Mi ",
+          "start": 9.56,
+          "end": 9.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d5",
+          "text": "heart ",
+          "start": 9.88,
+          "end": 10.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d6",
+          "text": "skip ",
+          "start": 10.2,
+          "end": 10.48,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d7",
+          "text": "a ",
+          "start": 10.52,
+          "end": 10.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9d8",
+          "text": "beat,",
+          "start": 10.68,
+          "end": 11.04,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 9.56,
+        "end": 11.04,
+        "duration": 1.4799999999999986
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "hoping  she  might  come sit  beside  me  one  more  time.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9d9",
+          "text": "hoping ",
+          "start": 11.16,
+          "end": 11.64,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9da",
+          "text": "she ",
+          "start": 11.64,
+          "end": 11.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9db",
+          "text": "might ",
+          "start": 11.8,
+          "end": 12.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9dc",
+          "text": "come",
+          "start": 12.04,
+          "end": 12.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9dd",
+          "text": "sit ",
+          "start": 12.36,
+          "end": 12.6,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9de",
+          "text": "beside ",
+          "start": 12.6,
+          "end": 13.08,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9df",
+          "text": "me ",
+          "start": 13.08,
+          "end": 13.44,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e0",
+          "text": "one ",
+          "start": 13.48,
+          "end": 13.88,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e1",
+          "text": "more ",
+          "start": 13.88,
+          "end": 14.12,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e2",
+          "text": "time.",
+          "start": 14.12,
+          "end": 14.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 11.16,
+        "end": 14.68,
+        "duration": 3.5199999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "But  just  as  mi  start  to  dream, mi  see  a  next  man",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9e3",
+          "text": "But ",
+          "start": 15.56,
+          "end": 15.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e4",
+          "text": "just ",
+          "start": 15.84,
+          "end": 16.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e5",
+          "text": "as ",
+          "start": 16.2,
+          "end": 16.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e6",
+          "text": "mi ",
+          "start": 16.4,
+          "end": 16.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e7",
+          "text": "start ",
+          "start": 16.56,
+          "end": 16.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e8",
+          "text": "to ",
+          "start": 16.84,
+          "end": 16.96,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9e9",
+          "text": "dream,",
+          "start": 16.96,
+          "end": 17.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ea",
+          "text": "mi ",
+          "start": 17.64,
+          "end": 17.76,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9eb",
+          "text": "see ",
+          "start": 17.8,
+          "end": 18,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ec",
+          "text": "a ",
+          "start": 18,
+          "end": 18.12,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ed",
+          "text": "next ",
+          "start": 18.12,
+          "end": 18.4,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ee",
+          "text": "man",
+          "start": 18.4,
+          "end": 18.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 15.56,
+        "end": 18.68,
+        "duration": 3.119999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "walking  in  with  her.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9ef",
+          "text": "walking ",
+          "start": 18.68,
+          "end": 19.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f0",
+          "text": "in ",
+          "start": 19.16,
+          "end": 19.36,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f1",
+          "text": "with ",
+          "start": 19.36,
+          "end": 19.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f2",
+          "text": "her.",
+          "start": 19.56,
+          "end": 19.84,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 18.68,
+        "end": 19.84,
+        "duration": 1.1600000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Right  then  all  the  courage drops  straight  to  mi  shoes.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9f3",
+          "text": "Right ",
+          "start": 20.08,
+          "end": 20.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f4",
+          "text": "then ",
+          "start": 20.56,
+          "end": 20.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f5",
+          "text": "all ",
+          "start": 21.08,
+          "end": 21.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f6",
+          "text": "the ",
+          "start": 21.44,
+          "end": 21.64,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f7",
+          "text": "courage",
+          "start": 21.64,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f8",
+          "text": "drops ",
+          "start": 22.08,
+          "end": 22.68,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9f9",
+          "text": "straight ",
+          "start": 22.68,
+          "end": 23.12,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9fa",
+          "text": "to ",
+          "start": 23.12,
+          "end": 23.24,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9fb",
+          "text": "mi ",
+          "start": 23.28,
+          "end": 23.44,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9fc",
+          "text": "shoes.",
+          "start": 23.44,
+          "end": 24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 20.08,
+        "end": 24,
+        "duration": 3.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "The  pain  come  rushing  back like  a  wound  that  always  gets",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4ef9fd",
+          "text": "The ",
+          "start": 24.56,
+          "end": 24.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9fe",
+          "text": "pain ",
+          "start": 24.84,
+          "end": 25.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4ef9ff",
+          "text": "come ",
+          "start": 25.2,
+          "end": 25.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa00",
+          "text": "rushing ",
+          "start": 25.44,
+          "end": 25.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa01",
+          "text": "back",
+          "start": 25.8,
+          "end": 26.32,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa02",
+          "text": "like ",
+          "start": 26.32,
+          "end": 26.64,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa03",
+          "text": "a ",
+          "start": 26.64,
+          "end": 26.84,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa04",
+          "text": "wound ",
+          "start": 26.84,
+          "end": 27.2,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa05",
+          "text": "that ",
+          "start": 27.2,
+          "end": 27.48,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa06",
+          "text": "always ",
+          "start": 27.48,
+          "end": 28,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa07",
+          "text": "gets",
+          "start": 28,
+          "end": 28.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 24.56,
+        "end": 28.2,
+        "duration": 3.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 13,
+      "text": "scratched  open  again.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4efa08",
+          "text": "scratched ",
+          "start": 28.32,
+          "end": 28.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa09",
+          "text": "open ",
+          "start": 28.92,
+          "end": 29.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa0a",
+          "text": "again.",
+          "start": 29.4,
+          "end": 29.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 28.32,
+        "end": 29.92,
+        "duration": 1.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 14,
+      "text": "All  I  can  do  is  ease  the  sorrow for  a  little  while.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4efa0b",
+          "text": "All ",
+          "start": 30.52,
+          "end": 30.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa0c",
+          "text": "I ",
+          "start": 30.92,
+          "end": 31.04,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa0d",
+          "text": "can ",
+          "start": 31.04,
+          "end": 31.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa0e",
+          "text": "do ",
+          "start": 31.24,
+          "end": 31.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa0f",
+          "text": "is ",
+          "start": 31.6,
+          "end": 31.96,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa10",
+          "text": "ease ",
+          "start": 32,
+          "end": 32.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa11",
+          "text": "the ",
+          "start": 32.44,
+          "end": 32.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa12",
+          "text": "sorrow",
+          "start": 32.68,
+          "end": 33.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa13",
+          "text": "for ",
+          "start": 33.08,
+          "end": 33.32,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa14",
+          "text": "a ",
+          "start": 33.32,
+          "end": 33.48,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa15",
+          "text": "little ",
+          "start": 33.48,
+          "end": 33.8,
+          "line": 1
+        },
+        {
+          "id": "6900ae79b2912187ea4efa16",
+          "text": "while.",
+          "start": 33.8,
+          "end": 34.28,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 30.52,
+        "end": 34.28,
+        "duration": 3.7600000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 15,
+      "text": "The  only  cure  for  this  kinda  pain.",
+      "words": [
+        {
+          "id": "6900ae79b2912187ea4efa17",
+          "text": "The ",
+          "start": 34.52,
+          "end": 34.76,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa18",
+          "text": "only ",
+          "start": 34.76,
+          "end": 35.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa19",
+          "text": "cure ",
+          "start": 35.2,
+          "end": 35.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa1a",
+          "text": "for ",
+          "start": 35.6,
+          "end": 35.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa1b",
+          "text": "this ",
+          "start": 35.8,
+          "end": 36.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa1c",
+          "text": "kinda ",
+          "start": 36.08,
+          "end": 36.36,
+          "line": 0
+        },
+        {
+          "id": "6900ae79b2912187ea4efa1e",
+          "text": "pain.",
+          "start": 36.52,
+          "end": 37,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 34.52,
+        "end": 37,
+        "duration": 2.479999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

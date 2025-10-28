@@ -1,0 +1,771 @@
+{
+  "metadata": {
+    "title": "folsom",
+    "exportDate": "2025-10-28T09:05:42.462Z",
+    "totalSubtitles": 12,
+    "totalWords": 83
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "I'm  sitting  here  in  my  cell watching  time  crawl  by.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac12",
+          "text": "I'm ",
+          "start": 0.2,
+          "end": 0.64,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac13",
+          "text": "sitting ",
+          "start": 0.64,
+          "end": 1,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac14",
+          "text": "here ",
+          "start": 1,
+          "end": 1.28,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac15",
+          "text": "in ",
+          "start": 1.28,
+          "end": 1.44,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac16",
+          "text": "my ",
+          "start": 1.44,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac17",
+          "text": "cell",
+          "start": 1.76,
+          "end": 2.24,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac18",
+          "text": "watching ",
+          "start": 2.48,
+          "end": 3.04,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac19",
+          "text": "time ",
+          "start": 3.08,
+          "end": 3.52,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac1a",
+          "text": "crawl ",
+          "start": 3.52,
+          "end": 3.88,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac1b",
+          "text": "by.",
+          "start": 3.92,
+          "end": 4.4,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 4.4,
+        "duration": 4.2
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "I  bet  the  rich  folks  on  board are  dining  fine,  drinking,  laughing,",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac23",
+          "text": "I ",
+          "start": 8.8,
+          "end": 9,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac24",
+          "text": "bet ",
+          "start": 9,
+          "end": 9.24,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac25",
+          "text": "the ",
+          "start": 9.24,
+          "end": 9.36,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac26",
+          "text": "rich ",
+          "start": 9.36,
+          "end": 9.6,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac27",
+          "text": "folks ",
+          "start": 9.64,
+          "end": 10.04,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac28",
+          "text": "on ",
+          "start": 10.04,
+          "end": 10.32,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac29",
+          "text": "board",
+          "start": 10.32,
+          "end": 10.76,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac2a",
+          "text": "are ",
+          "start": 10.76,
+          "end": 11,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac2b",
+          "text": "dining ",
+          "start": 11.04,
+          "end": 11.64,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac2c",
+          "text": "fine, ",
+          "start": 11.64,
+          "end": 12.32,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac2d",
+          "text": "drinking, ",
+          "start": 12.72,
+          "end": 13.56,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac2e",
+          "text": "laughing,",
+          "start": 13.56,
+          "end": 14.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.8,
+        "end": 14.16,
+        "duration": 5.359999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "smoking  something  sweet.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac2f",
+          "text": "smoking ",
+          "start": 14.28,
+          "end": 14.96,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac30",
+          "text": "something ",
+          "start": 14.96,
+          "end": 15.4,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac31",
+          "text": "sweet.",
+          "start": 15.4,
+          "end": 15.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 14.28,
+        "end": 15.92,
+        "duration": 1.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "I  know  I  belong  here.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac32",
+          "text": "I ",
+          "start": 17.12,
+          "end": 17.32,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac33",
+          "text": "know ",
+          "start": 17.32,
+          "end": 17.6,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac34",
+          "text": "I ",
+          "start": 17.6,
+          "end": 17.76,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac35",
+          "text": "belong ",
+          "start": 17.8,
+          "end": 18.2,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac36",
+          "text": "here.",
+          "start": 18.2,
+          "end": 18.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 17.12,
+        "end": 18.68,
+        "duration": 1.5599999999999987
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Ain't  no  freedom  meant  for  me.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac37",
+          "text": "Ain't ",
+          "start": 19.32,
+          "end": 19.52,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac38",
+          "text": "no ",
+          "start": 19.56,
+          "end": 19.76,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac39",
+          "text": "freedom ",
+          "start": 19.76,
+          "end": 20.24,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac3a",
+          "text": "meant ",
+          "start": 20.24,
+          "end": 20.48,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac3b",
+          "text": "for ",
+          "start": 20.48,
+          "end": 20.64,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac3c",
+          "text": "me.",
+          "start": 20.64,
+          "end": 21.08,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.32,
+        "end": 21.08,
+        "duration": 1.759999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "But  if  that  train  were  mine,",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac3d",
+          "text": "But ",
+          "start": 21.48,
+          "end": 22,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac3e",
+          "text": "if ",
+          "start": 22.4,
+          "end": 22.8,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac3f",
+          "text": "that ",
+          "start": 22.8,
+          "end": 23.04,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac40",
+          "text": "train ",
+          "start": 23.04,
+          "end": 23.48,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac41",
+          "text": "were ",
+          "start": 23.52,
+          "end": 23.76,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac42",
+          "text": "mine,",
+          "start": 23.76,
+          "end": 24.44,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 21.48,
+        "end": 24.44,
+        "duration": 2.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "I'd  move  it  just  a  little further  down  the  line.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac43",
+          "text": "I'd ",
+          "start": 24.64,
+          "end": 25,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac44",
+          "text": "move ",
+          "start": 25,
+          "end": 25.36,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac45",
+          "text": "it ",
+          "start": 25.36,
+          "end": 25.56,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac46",
+          "text": "just ",
+          "start": 25.56,
+          "end": 26.08,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac47",
+          "text": "a ",
+          "start": 26.08,
+          "end": 26.28,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac48",
+          "text": "little",
+          "start": 26.28,
+          "end": 26.68,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac49",
+          "text": "further ",
+          "start": 26.68,
+          "end": 27.12,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac4a",
+          "text": "down ",
+          "start": 27.12,
+          "end": 27.4,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac4b",
+          "text": "the ",
+          "start": 27.4,
+          "end": 27.52,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac4c",
+          "text": "line.",
+          "start": 27.52,
+          "end": 28.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 24.64,
+        "end": 28.24,
+        "duration": 3.599999999999998
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Cause  every  time  it  passes, it's  mocking  me.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac4d",
+          "text": "Cause ",
+          "start": 29.36,
+          "end": 29.64,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac4e",
+          "text": "every ",
+          "start": 29.64,
+          "end": 29.92,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac4f",
+          "text": "time ",
+          "start": 29.92,
+          "end": 30.12,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac50",
+          "text": "it ",
+          "start": 30.12,
+          "end": 30.32,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac51",
+          "text": "passes,",
+          "start": 30.32,
+          "end": 31.04,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac52",
+          "text": "it's ",
+          "start": 31.24,
+          "end": 31.48,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac53",
+          "text": "mocking ",
+          "start": 31.48,
+          "end": 32,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac54",
+          "text": "me.",
+          "start": 32,
+          "end": 32.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.36,
+        "end": 32.36,
+        "duration": 3
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Whistling,  bragging,",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac55",
+          "text": "Whistling, ",
+          "start": 32.76,
+          "end": 33.64,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac56",
+          "text": "bragging,",
+          "start": 33.76,
+          "end": 34.64,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 32.76,
+        "end": 34.64,
+        "duration": 1.8800000000000026
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "carrying  folks  free across  the  country.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac57",
+          "text": "carrying ",
+          "start": 34.92,
+          "end": 35.52,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac58",
+          "text": "folks ",
+          "start": 35.52,
+          "end": 35.84,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac59",
+          "text": "free",
+          "start": 35.84,
+          "end": 36.24,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac5a",
+          "text": "across ",
+          "start": 36.28,
+          "end": 36.68,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac5b",
+          "text": "the ",
+          "start": 36.68,
+          "end": 36.84,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac5c",
+          "text": "country.",
+          "start": 36.84,
+          "end": 37.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 34.92,
+        "end": 37.52,
+        "duration": 2.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "And  that  sound, that's  what  tears  me  apart.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac5d",
+          "text": "And ",
+          "start": 38.16,
+          "end": 38.44,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac5e",
+          "text": "that ",
+          "start": 38.44,
+          "end": 38.72,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac5f",
+          "text": "sound,",
+          "start": 38.72,
+          "end": 39.24,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac60",
+          "text": "that's ",
+          "start": 40.32,
+          "end": 40.6,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac61",
+          "text": "what ",
+          "start": 40.6,
+          "end": 40.8,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac62",
+          "text": "tears ",
+          "start": 40.84,
+          "end": 41.2,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac63",
+          "text": "me ",
+          "start": 41.2,
+          "end": 41.4,
+          "line": 1
+        },
+        {
+          "id": "6900857e3eaede6e300aac64",
+          "text": "apart.",
+          "start": 41.4,
+          "end": 42,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 38.16,
+        "end": 42,
+        "duration": 3.8400000000000034
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 834746,
+      "text": "Out  there  I  hear  that  train  rolling.",
+      "words": [
+        {
+          "id": "6900857e3eaede6e300aac1c",
+          "text": "Out ",
+          "start": 5.6,
+          "end": 5.96,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac1d",
+          "text": "there ",
+          "start": 5.96,
+          "end": 6.28,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac1e",
+          "text": "I ",
+          "start": 6.4,
+          "end": 6.64,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac1f",
+          "text": "hear ",
+          "start": 6.68,
+          "end": 6.96,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac20",
+          "text": "that ",
+          "start": 6.96,
+          "end": 7.16,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac21",
+          "text": "train ",
+          "start": 7.16,
+          "end": 7.6,
+          "line": 0
+        },
+        {
+          "id": "6900857e3eaede6e300aac22",
+          "text": "rolling.",
+          "start": 7.6,
+          "end": 8.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 5.6,
+        "end": 8.24,
+        "duration": 2.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

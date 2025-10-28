@@ -1,0 +1,889 @@
+{
+  "metadata": {
+    "title": "bambam_info",
+    "exportDate": "2025-10-28T11:05:22.834Z",
+    "totalSubtitles": 11,
+    "totalWords": 102
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Now  listen yah .",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015ba1",
+          "text": "Now ",
+          "start": 0.2,
+          "end": 0.6,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba2",
+          "text": "listen yah",
+          "start": 0.6,
+          "end": 0.84,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba3",
+          "text": ".",
+          "start": 0.96,
+          "end": 1.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 1.28,
+        "duration": 1.08
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Back  in  the  early  80s,  Sister  Nancy step pon  the  Stalag Riddim ,",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015ba4",
+          "text": "Back ",
+          "start": 1.4,
+          "end": 1.88,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba5",
+          "text": "in ",
+          "start": 1.88,
+          "end": 2.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba6",
+          "text": "the ",
+          "start": 2.12,
+          "end": 2.24,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba7",
+          "text": "early ",
+          "start": 2.24,
+          "end": 2.6,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba8",
+          "text": "80s, ",
+          "start": 2.64,
+          "end": 3.24,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015ba9",
+          "text": "Sister ",
+          "start": 3.36,
+          "end": 3.84,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015baa",
+          "text": "Nancy",
+          "start": 3.84,
+          "end": 4.28,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bab",
+          "text": "step pon ",
+          "start": 4.32,
+          "end": 4.76,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bad",
+          "text": "the ",
+          "start": 4.96,
+          "end": 5.16,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bae",
+          "text": "Stalag Riddim",
+          "start": 5.16,
+          "end": 5.64,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015baf",
+          "text": ",",
+          "start": 5.64,
+          "end": 6.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 1.4,
+        "end": 6.2,
+        "duration": 4.800000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "the  classic  beat  from  producer  Winston  Riley.",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bb0",
+          "text": "the ",
+          "start": 6.4,
+          "end": 6.56,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb1",
+          "text": "classic ",
+          "start": 6.56,
+          "end": 7.08,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb2",
+          "text": "beat ",
+          "start": 7.08,
+          "end": 7.36,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb3",
+          "text": "from ",
+          "start": 7.36,
+          "end": 7.64,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb4",
+          "text": "producer ",
+          "start": 7.64,
+          "end": 8.28,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb5",
+          "text": "Winston ",
+          "start": 8.28,
+          "end": 8.88,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb6",
+          "text": "Riley.",
+          "start": 8.88,
+          "end": 9.36,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 6.4,
+        "end": 9.36,
+        "duration": 2.959999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "She  went  full  improv  mode,  vibing  so  deep she  didn't  even  remember  what  she  said",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bb7",
+          "text": "She ",
+          "start": 9.64,
+          "end": 9.84,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb8",
+          "text": "went ",
+          "start": 9.84,
+          "end": 10.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bb9",
+          "text": "full ",
+          "start": 10.12,
+          "end": 10.52,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bba",
+          "text": "improv ",
+          "start": 10.52,
+          "end": 11,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bbb",
+          "text": "mode, ",
+          "start": 11,
+          "end": 11.44,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bbc",
+          "text": "vibing ",
+          "start": 11.44,
+          "end": 12.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bbd",
+          "text": "so ",
+          "start": 12.12,
+          "end": 12.36,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bbe",
+          "text": "deep",
+          "start": 12.36,
+          "end": 12.56,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bbf",
+          "text": "she ",
+          "start": 12.56,
+          "end": 12.72,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc0",
+          "text": "didn't ",
+          "start": 12.72,
+          "end": 13,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc1",
+          "text": "even ",
+          "start": 13,
+          "end": 13.24,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc2",
+          "text": "remember ",
+          "start": 13.24,
+          "end": 13.72,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc3",
+          "text": "what ",
+          "start": 13.72,
+          "end": 13.92,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc4",
+          "text": "she ",
+          "start": 13.92,
+          "end": 14.12,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bc5",
+          "text": "said",
+          "start": 14.12,
+          "end": 14.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 9.64,
+        "end": 14.2,
+        "duration": 4.559999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "when  the  tune done. Couple  days  later, ",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bc6",
+          "text": "when ",
+          "start": 14.32,
+          "end": 14.6,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bc7",
+          "text": "the ",
+          "start": 14.6,
+          "end": 14.72,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bc8",
+          "text": "tune done.",
+          "start": 14.72,
+          "end": 15.08,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bca",
+          "text": "Couple ",
+          "start": 15.76,
+          "end": 16.16,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bcb",
+          "text": "days ",
+          "start": 16.16,
+          "end": 16.4,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bcc",
+          "text": "later, ",
+          "start": 16.4,
+          "end": 16.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 14.32,
+        "end": 16.84,
+        "duration": 2.5199999999999996
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "just  to  write  down  the  lyrics.",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bd7",
+          "text": "just ",
+          "start": 19.88,
+          "end": 20.2,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bd8",
+          "text": "to ",
+          "start": 20.2,
+          "end": 20.4,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bd9",
+          "text": "write ",
+          "start": 20.44,
+          "end": 20.72,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bda",
+          "text": "down ",
+          "start": 20.72,
+          "end": 20.92,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bdb",
+          "text": "the ",
+          "start": 20.92,
+          "end": 21.04,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bdc",
+          "text": "lyrics.",
+          "start": 21.04,
+          "end": 21.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.88,
+        "end": 21.68,
+        "duration": 1.8000000000000007
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "But  outta  that  spontaneous  session come  a  true legend:  Bam  Bam ,",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bdd",
+          "text": "But ",
+          "start": 21.84,
+          "end": 22.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bde",
+          "text": "outta ",
+          "start": 22.16,
+          "end": 22.48,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015be0",
+          "text": "that ",
+          "start": 22.64,
+          "end": 22.84,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015be1",
+          "text": "spontaneous ",
+          "start": 22.84,
+          "end": 23.76,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015be2",
+          "text": "session",
+          "start": 23.76,
+          "end": 24.36,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015be3",
+          "text": "come ",
+          "start": 24.36,
+          "end": 24.72,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015be4",
+          "text": "a ",
+          "start": 24.72,
+          "end": 24.84,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015be5",
+          "text": "true legend: ",
+          "start": 24.84,
+          "end": 25.12,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015be6",
+          "text": "Bam",
+          "start": 25.527372727272727,
+          "end": 25.68,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015be7",
+          "text": " Bam",
+          "start": 25.68,
+          "end": 26.2,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015be8",
+          "text": ",",
+          "start": 26.2,
+          "end": 26.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.84,
+        "end": 26.6,
+        "duration": 4.760000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Funny  thing  is,  Sister  Nancy  never  even know  how  big  the  song  get ' round  the  world",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bf1",
+          "text": "Funny ",
+          "start": 29.68,
+          "end": 30.08,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf2",
+          "text": "thing ",
+          "start": 30.08,
+          "end": 30.32,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf3",
+          "text": "is, ",
+          "start": 30.32,
+          "end": 30.72,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf4",
+          "text": "Sister ",
+          "start": 30.76,
+          "end": 31.16,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf5",
+          "text": "Nancy ",
+          "start": 31.16,
+          "end": 31.48,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf6",
+          "text": "never ",
+          "start": 31.52,
+          "end": 31.84,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf7",
+          "text": "even",
+          "start": 31.84,
+          "end": 32.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf8",
+          "text": "know ",
+          "start": 32.12,
+          "end": 32.32,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bf9",
+          "text": "how ",
+          "start": 32.32,
+          "end": 32.48,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bfa",
+          "text": "big ",
+          "start": 32.48,
+          "end": 32.68,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bfb",
+          "text": "the ",
+          "start": 32.68,
+          "end": 32.92,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bfc",
+          "text": "song ",
+          "start": 32.92,
+          "end": 33.12,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bfd",
+          "text": "get '",
+          "start": 33.12,
+          "end": 33.32,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bfe",
+          "text": "round ",
+          "start": 33.36,
+          "end": 33.68,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bff",
+          "text": "the ",
+          "start": 33.68,
+          "end": 33.8,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015c00",
+          "text": "world",
+          "start": 33.8,
+          "end": 34.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.68,
+        "end": 34.2,
+        "duration": 4.520000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "till  years  later  she  heard it  back through  the  grapevine.",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015c01",
+          "text": "till ",
+          "start": 34.32,
+          "end": 34.64,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c02",
+          "text": "years ",
+          "start": 34.64,
+          "end": 35,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c03",
+          "text": "later ",
+          "start": 35,
+          "end": 35.6,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c04",
+          "text": "she ",
+          "start": 35.6,
+          "end": 35.8,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c05",
+          "text": "heard it ",
+          "start": 35.84,
+          "end": 36.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c06",
+          "text": "back",
+          "start": 36.12,
+          "end": 36.36,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015c07",
+          "text": "through ",
+          "start": 36.36,
+          "end": 36.52,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015c08",
+          "text": "the ",
+          "start": 36.52,
+          "end": 36.64,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015c09",
+          "text": "grapevine.",
+          "start": 36.64,
+          "end": 37.16,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 34.32,
+        "end": 37.16,
+        "duration": 2.8399999999999963
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 639365,
+      "text": "the  most  sampled  reggae  song  of  all  time.",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015be9",
+          "text": "the ",
+          "start": 26.72,
+          "end": 26.92,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bea",
+          "text": "most ",
+          "start": 26.92,
+          "end": 27.28,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015beb",
+          "text": "sampled ",
+          "start": 27.28,
+          "end": 27.72,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bec",
+          "text": "reggae ",
+          "start": 27.72,
+          "end": 28.12,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bed",
+          "text": "song ",
+          "start": 28.16,
+          "end": 28.4,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bee",
+          "text": "of ",
+          "start": 28.44,
+          "end": 28.64,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bef",
+          "text": "all ",
+          "start": 28.64,
+          "end": 29,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bf0",
+          "text": "time.",
+          "start": 29,
+          "end": 29.56,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 26.72,
+        "end": 29.56,
+        "duration": 2.84
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 978045,
+      "text": "she  have  to  sit  down, and  play  it over  and  over,",
+      "words": [
+        {
+          "id": "69009f19a8115dbf90015bcd",
+          "text": "she ",
+          "start": 16.84,
+          "end": 17.08,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bce",
+          "text": "have ",
+          "start": 17.12,
+          "end": 17.32,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bcf",
+          "text": "to ",
+          "start": 17.32,
+          "end": 17.52,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bd0",
+          "text": "sit ",
+          "start": 17.56,
+          "end": 17.8,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bd1",
+          "text": "down,",
+          "start": 17.8,
+          "end": 18.04,
+          "line": 0
+        },
+        {
+          "id": "69009f19a8115dbf90015bd2",
+          "text": "and ",
+          "start": 18.04,
+          "end": 18.24,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bd3",
+          "text": "play ",
+          "start": 18.24,
+          "end": 18.592,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bd4",
+          "text": "it over ",
+          "start": 18.68,
+          "end": 19.04,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bd5",
+          "text": "and ",
+          "start": 19.04,
+          "end": 19.32,
+          "line": 1
+        },
+        {
+          "id": "69009f19a8115dbf90015bd6",
+          "text": "over,",
+          "start": 19.32,
+          "end": 19.76,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 16.84,
+        "end": 19.76,
+        "duration": 2.9200000000000017
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

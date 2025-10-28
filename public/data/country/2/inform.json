@@ -1,0 +1,1094 @@
+{
+  "metadata": {
+    "title": "So_lonesome_inform",
+    "exportDate": "2025-10-28T08:53:49.960Z",
+    "totalSubtitles": 13,
+    "totalWords": 127
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "It  was  New  Year's  Eve  1952.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c047",
+          "text": "It ",
+          "start": 0.24,
+          "end": 0.56,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c048",
+          "text": "was ",
+          "start": 0.56,
+          "end": 0.8,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c049",
+          "text": "New ",
+          "start": 0.8,
+          "end": 1,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c04a",
+          "text": "Year's ",
+          "start": 1,
+          "end": 1.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c04b",
+          "text": "Eve ",
+          "start": 1.36,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c04c",
+          "text": "1952.",
+          "start": 1.8,
+          "end": 3.4,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.24,
+        "end": 3.4,
+        "duration": 3.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "Hank  Williams,  the  most  revered  figure in  country  music,  was  on  the  open  road",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c04d",
+          "text": "Hank ",
+          "start": 3.8,
+          "end": 4.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c04e",
+          "text": "Williams, ",
+          "start": 4.16,
+          "end": 4.96,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c04f",
+          "text": "the ",
+          "start": 5,
+          "end": 5.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c050",
+          "text": "most ",
+          "start": 5.12,
+          "end": 5.4,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c051",
+          "text": "revered ",
+          "start": 5.4,
+          "end": 5.88,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c052",
+          "text": "figure",
+          "start": 5.88,
+          "end": 6.4,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c053",
+          "text": "in ",
+          "start": 6.4,
+          "end": 6.6,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c054",
+          "text": "country ",
+          "start": 6.6,
+          "end": 6.96,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c055",
+          "text": "music, ",
+          "start": 6.96,
+          "end": 7.6,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c056",
+          "text": "was ",
+          "start": 7.8,
+          "end": 8,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c057",
+          "text": "on ",
+          "start": 8,
+          "end": 8.24,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c058",
+          "text": "the ",
+          "start": 8.24,
+          "end": 8.36,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c059",
+          "text": "open ",
+          "start": 8.36,
+          "end": 8.68,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c05a",
+          "text": "road",
+          "start": 8.68,
+          "end": 9.200000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 3.8,
+        "end": 9.200000000000001,
+        "duration": 5.400000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "heading  to  a  gig  in  Ohio.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c05b",
+          "text": "heading ",
+          "start": 9.32,
+          "end": 9.68,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c05c",
+          "text": "to ",
+          "start": 9.68,
+          "end": 9.8,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c05d",
+          "text": "a ",
+          "start": 9.84,
+          "end": 9.96,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c05e",
+          "text": "gig ",
+          "start": 10,
+          "end": 10.28,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c05f",
+          "text": "in ",
+          "start": 10.28,
+          "end": 10.48,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c060",
+          "text": "Ohio.",
+          "start": 10.48,
+          "end": 11.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 9.32,
+        "end": 11.24,
+        "duration": 1.92
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "The  next  morning,  they  found  him  cold and  stiff  in  the  back  seat  of  his  car.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c061",
+          "text": "The ",
+          "start": 11.92,
+          "end": 12.04,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c062",
+          "text": "next ",
+          "start": 12.04,
+          "end": 12.32,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c063",
+          "text": "morning, ",
+          "start": 12.32,
+          "end": 12.92,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c064",
+          "text": "they ",
+          "start": 12.92,
+          "end": 13.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c065",
+          "text": "found ",
+          "start": 13.12,
+          "end": 13.44,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c066",
+          "text": "him ",
+          "start": 13.44,
+          "end": 13.68,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c067",
+          "text": "cold",
+          "start": 13.68,
+          "end": 14.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c068",
+          "text": "and ",
+          "start": 14.12,
+          "end": 14.28,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c069",
+          "text": "stiff ",
+          "start": 14.28,
+          "end": 14.76,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06a",
+          "text": "in ",
+          "start": 14.76,
+          "end": 14.96,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06b",
+          "text": "the ",
+          "start": 14.96,
+          "end": 15.04,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06c",
+          "text": "back ",
+          "start": 15.04,
+          "end": 15.24,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06d",
+          "text": "seat ",
+          "start": 15.28,
+          "end": 15.4,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06e",
+          "text": "of ",
+          "start": 15.44,
+          "end": 15.56,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c06f",
+          "text": "his ",
+          "start": 15.56,
+          "end": 15.76,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c070",
+          "text": "car.",
+          "start": 15.76,
+          "end": 16.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 11.92,
+        "end": 16.12,
+        "duration": 4.200000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Hank  was  a  singer  songwriter who  poured  his  daily  life  into  his  music.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c071",
+          "text": "Hank ",
+          "start": 17.04,
+          "end": 17.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c072",
+          "text": "was ",
+          "start": 17.4,
+          "end": 17.64,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c073",
+          "text": "a ",
+          "start": 17.64,
+          "end": 17.8,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c074",
+          "text": "singer ",
+          "start": 17.8,
+          "end": 18.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c075",
+          "text": "songwriter",
+          "start": 18.12,
+          "end": 18.92,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c076",
+          "text": "who ",
+          "start": 18.92,
+          "end": 19.16,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c077",
+          "text": "poured ",
+          "start": 19.16,
+          "end": 19.48,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c078",
+          "text": "his ",
+          "start": 19.48,
+          "end": 19.72,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c079",
+          "text": "daily ",
+          "start": 19.72,
+          "end": 20.2,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c07a",
+          "text": "life ",
+          "start": 20.2,
+          "end": 20.52,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c07b",
+          "text": "into ",
+          "start": 20.52,
+          "end": 20.72,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c07c",
+          "text": "his ",
+          "start": 20.76,
+          "end": 20.92,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c07d",
+          "text": "music.",
+          "start": 20.92,
+          "end": 21.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.04,
+        "end": 21.68,
+        "duration": 4.640000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "And  that  makes  I'm  So  Lonesome  I  Could  Cry heartbreaking.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c07e",
+          "text": "And ",
+          "start": 21.88,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c07f",
+          "text": "that ",
+          "start": 22.08,
+          "end": 22.24,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c080",
+          "text": "makes ",
+          "start": 22.24,
+          "end": 22.84,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c081",
+          "text": "I'm ",
+          "start": 22.84,
+          "end": 23.16,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c082",
+          "text": "So ",
+          "start": 23.16,
+          "end": 23.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c083",
+          "text": "Lonesome ",
+          "start": 23.4,
+          "end": 23.88,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c084",
+          "text": "I ",
+          "start": 23.88,
+          "end": 24.04,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c085",
+          "text": "Could ",
+          "start": 24.04,
+          "end": 24.28,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c086",
+          "text": "Cry",
+          "start": 24.28,
+          "end": 24.68,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c087",
+          "text": "heartbreaking.",
+          "start": 24.84,
+          "end": 25.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.88,
+        "end": 25.84,
+        "duration": 3.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "He  once  had  it  all,  his  dream  of performing  at  the  Grand  Ole  Opry.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c088",
+          "text": "He ",
+          "start": 26.24,
+          "end": 26.44,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c089",
+          "text": "once ",
+          "start": 26.44,
+          "end": 26.8,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08a",
+          "text": "had ",
+          "start": 26.8,
+          "end": 27,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08b",
+          "text": "it ",
+          "start": 27,
+          "end": 27.16,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08c",
+          "text": "all, ",
+          "start": 27.16,
+          "end": 27.6,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08d",
+          "text": "his ",
+          "start": 27.8,
+          "end": 28.04,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08e",
+          "text": "dream ",
+          "start": 28.04,
+          "end": 28.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c08f",
+          "text": "of",
+          "start": 28.36,
+          "end": 28.52,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c090",
+          "text": "performing ",
+          "start": 28.52,
+          "end": 29.04,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c091",
+          "text": "at ",
+          "start": 29.04,
+          "end": 29.16,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c092",
+          "text": "the ",
+          "start": 29.16,
+          "end": 29.28,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c093",
+          "text": "Grand ",
+          "start": 29.28,
+          "end": 29.6,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c094",
+          "text": "Ole ",
+          "start": 29.6,
+          "end": 29.84,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c095",
+          "text": "Opry.",
+          "start": 29.84,
+          "end": 30.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 26.24,
+        "end": 30.36,
+        "duration": 4.120000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "And  he  was  married  to  Audrey, the  love  of  his  life.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c096",
+          "text": "And ",
+          "start": 30.6,
+          "end": 30.76,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c097",
+          "text": "he ",
+          "start": 30.76,
+          "end": 30.88,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c098",
+          "text": "was ",
+          "start": 30.88,
+          "end": 31.04,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c099",
+          "text": "married ",
+          "start": 31.04,
+          "end": 31.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c09a",
+          "text": "to ",
+          "start": 31.4,
+          "end": 31.56,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c09b",
+          "text": "Audrey,",
+          "start": 31.6,
+          "end": 32.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c09c",
+          "text": "the ",
+          "start": 32.28,
+          "end": 32.4,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c09d",
+          "text": "love ",
+          "start": 32.4,
+          "end": 32.64,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c09e",
+          "text": "of ",
+          "start": 32.64,
+          "end": 32.76,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c09f",
+          "text": "his ",
+          "start": 32.76,
+          "end": 32.96,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0a0",
+          "text": "life.",
+          "start": 32.96,
+          "end": 33.48,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 30.6,
+        "end": 33.48,
+        "duration": 2.8799999999999955
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "But  fame  could  not  quiet  his  demons.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c0a1",
+          "text": "But ",
+          "start": 33.84,
+          "end": 34.08,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a2",
+          "text": "fame ",
+          "start": 34.08,
+          "end": 34.44,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a3",
+          "text": "could ",
+          "start": 34.44,
+          "end": 34.56,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a4",
+          "text": "not ",
+          "start": 34.56,
+          "end": 34.84,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a5",
+          "text": "quiet ",
+          "start": 34.84,
+          "end": 35.2,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a6",
+          "text": "his ",
+          "start": 35.2,
+          "end": 35.36,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a7",
+          "text": "demons.",
+          "start": 35.36,
+          "end": 36.08,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 33.84,
+        "end": 36.08,
+        "duration": 2.239999999999995
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "His  struggle  with  alcohol  cost  him  both.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c0a8",
+          "text": "His ",
+          "start": 36.44,
+          "end": 36.64,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0a9",
+          "text": "struggle ",
+          "start": 36.64,
+          "end": 37.04,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0aa",
+          "text": "with ",
+          "start": 37.04,
+          "end": 37.28,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0ab",
+          "text": "alcohol ",
+          "start": 37.28,
+          "end": 37.84,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0ac",
+          "text": "cost ",
+          "start": 37.84,
+          "end": 38.2,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0ad",
+          "text": "him ",
+          "start": 38.2,
+          "end": 38.4,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0ae",
+          "text": "both.",
+          "start": 38.4,
+          "end": 38.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 36.44,
+        "end": 38.96,
+        "duration": 2.520000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "When  Audrey  told  him  she  was  leaving, Hank  said,  Audrey,  I  won't  live",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c0af",
+          "text": "When ",
+          "start": 39.4,
+          "end": 39.64,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b0",
+          "text": "Audrey ",
+          "start": 39.68,
+          "end": 39.96,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b1",
+          "text": "told ",
+          "start": 39.96,
+          "end": 40.16,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b2",
+          "text": "him ",
+          "start": 40.16,
+          "end": 40.32,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b3",
+          "text": "she ",
+          "start": 40.32,
+          "end": 40.48,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b4",
+          "text": "was ",
+          "start": 40.48,
+          "end": 40.64,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b5",
+          "text": "leaving,",
+          "start": 40.64,
+          "end": 41.32,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0b6",
+          "text": "Hank ",
+          "start": 41.32,
+          "end": 41.6,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0b7",
+          "text": "said, ",
+          "start": 41.64,
+          "end": 42.12,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0b8",
+          "text": "Audrey, ",
+          "start": 42.36,
+          "end": 42.92,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0b9",
+          "text": "I ",
+          "start": 43.12,
+          "end": 43.36,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0ba",
+          "text": "won't ",
+          "start": 43.36,
+          "end": 43.64,
+          "line": 1
+        },
+        {
+          "id": "690083e623b3536ef278c0bb",
+          "text": "live",
+          "start": 43.64,
+          "end": 43.76000000000001,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 39.4,
+        "end": 43.76000000000001,
+        "duration": 4.360000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "another  year  without  you.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c0bc",
+          "text": "another ",
+          "start": 43.88,
+          "end": 44.24,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0bd",
+          "text": "year ",
+          "start": 44.24,
+          "end": 44.48,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0be",
+          "text": "without ",
+          "start": 44.48,
+          "end": 44.92,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0bf",
+          "text": "you.",
+          "start": 44.92,
+          "end": 45.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 43.88,
+        "end": 45.28,
+        "duration": 1.3999999999999986
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "And  those  words  turned  out  true.",
+      "words": [
+        {
+          "id": "690083e623b3536ef278c0c0",
+          "text": "And ",
+          "start": 45.72,
+          "end": 45.88,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0c1",
+          "text": "those ",
+          "start": 45.88,
+          "end": 46.16,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0c2",
+          "text": "words ",
+          "start": 46.16,
+          "end": 46.72,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0c3",
+          "text": "turned ",
+          "start": 46.76,
+          "end": 47.12,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0c4",
+          "text": "out ",
+          "start": 47.12,
+          "end": 47.32,
+          "line": 0
+        },
+        {
+          "id": "690083e623b3536ef278c0c5",
+          "text": "true.",
+          "start": 47.32,
+          "end": 47.88,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 45.72,
+        "end": 47.88,
+        "duration": 2.1600000000000037
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "title": "love_immer",
+    "exportDate": "2025-10-28T12:08:00.829Z",
+    "totalSubtitles": 8,
+    "totalWords": 59
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "While  the  politicians  out  deh playing  their  games, ",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84ca",
+          "text": "While ",
+          "start": 0.16,
+          "end": 0.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84cb",
+          "text": "the ",
+          "start": 0.52,
+          "end": 0.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84cc",
+          "text": "politicians ",
+          "start": 0.68,
+          "end": 1.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84cd",
+          "text": "out ",
+          "start": 1.28,
+          "end": 1.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ce",
+          "text": "deh",
+          "start": 1.52,
+          "end": 1.76,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84cf",
+          "text": "playing ",
+          "start": 1.8,
+          "end": 2.28,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d0",
+          "text": "their ",
+          "start": 2.28,
+          "end": 2.48,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d1",
+          "text": "games, ",
+          "start": 2.48,
+          "end": 3.12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.16,
+        "end": 3.12,
+        "duration": 2.96
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "People  running  from  their  home, nowhere to  go,  nowhere  to  hide.",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84d8",
+          "text": "People ",
+          "start": 5.56,
+          "end": 5.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d9",
+          "text": "running ",
+          "start": 5.92,
+          "end": 6.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84da",
+          "text": "from ",
+          "start": 6.2,
+          "end": 6.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84db",
+          "text": "their ",
+          "start": 6.44,
+          "end": 6.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84dc",
+          "text": "home,",
+          "start": 6.68,
+          "end": 7,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84df",
+          "text": "nowhere to ",
+          "start": 7.56,
+          "end": 7.68,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e0",
+          "text": "go, ",
+          "start": 7.72,
+          "end": 8.04,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e1",
+          "text": "nowhere ",
+          "start": 8.08,
+          "end": 8.56,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e2",
+          "text": "to ",
+          "start": 8.56,
+          "end": 8.68,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e3",
+          "text": "hide.",
+          "start": 8.72,
+          "end": 9.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.56,
+        "end": 9.2,
+        "duration": 3.6399999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "So  how  we  win  this  spiritual  battle?",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84e4",
+          "text": "So ",
+          "start": 9.8,
+          "end": 10,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e5",
+          "text": "how ",
+          "start": 10,
+          "end": 10.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e6",
+          "text": "we ",
+          "start": 10.2,
+          "end": 10.36,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e7",
+          "text": "win ",
+          "start": 10.4,
+          "end": 10.56,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e8",
+          "text": "this ",
+          "start": 10.6,
+          "end": 10.84,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84e9",
+          "text": "spiritual ",
+          "start": 10.84,
+          "end": 11.36,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ea",
+          "text": "battle?",
+          "start": 11.36,
+          "end": 11.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 9.8,
+        "end": 11.76,
+        "duration": 1.959999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "How  we  turn  all  them  dirty  remarks  our  cheek?",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84eb",
+          "text": "How ",
+          "start": 12.32,
+          "end": 12.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ec",
+          "text": "we ",
+          "start": 12.6,
+          "end": 12.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ed",
+          "text": "turn ",
+          "start": 12.8,
+          "end": 13.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ee",
+          "text": "all ",
+          "start": 13.08,
+          "end": 13.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ef",
+          "text": "them ",
+          "start": 13.24,
+          "end": 13.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f0",
+          "text": "dirty ",
+          "start": 13.4,
+          "end": 13.72,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f1",
+          "text": "remarks ",
+          "start": 13.72,
+          "end": 14.2,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f3",
+          "text": "our ",
+          "start": 14.32,
+          "end": 14.48,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f4",
+          "text": "cheek?",
+          "start": 14.48,
+          "end": 14.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 12.32,
+        "end": 14.96,
+        "duration": 2.6400000000000006
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "How  we  still  feel  all  right inna  dis  world  of  confusion?",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84f5",
+          "text": "How ",
+          "start": 15.08,
+          "end": 15.32,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f6",
+          "text": "we ",
+          "start": 15.32,
+          "end": 15.48,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f7",
+          "text": "still ",
+          "start": 15.48,
+          "end": 15.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f8",
+          "text": "feel ",
+          "start": 15.8,
+          "end": 16.12,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84f9",
+          "text": "all ",
+          "start": 16.16,
+          "end": 16.4,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84fa",
+          "text": "right",
+          "start": 16.44,
+          "end": 16.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84fb",
+          "text": "inna ",
+          "start": 16.6,
+          "end": 16.76,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84fc",
+          "text": "dis ",
+          "start": 16.84,
+          "end": 17.08,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84fd",
+          "text": "world ",
+          "start": 17.08,
+          "end": 17.32,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84fe",
+          "text": "of ",
+          "start": 17.32,
+          "end": 17.44,
+          "line": 1
+        },
+        {
+          "id": "6900ae7802a95df1e7be84ff",
+          "text": "confusion?",
+          "start": 17.44,
+          "end": 18.32,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 15.08,
+        "end": 18.32,
+        "duration": 3.24
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Come  together  now,",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be8500",
+          "text": "Come ",
+          "start": 18.6,
+          "end": 18.92,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8501",
+          "text": "together ",
+          "start": 18.96,
+          "end": 19.24,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8502",
+          "text": "now,",
+          "start": 19.36,
+          "end": 19.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 18.6,
+        "end": 19.68,
+        "duration": 1.0799999999999983
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "cause  I've  got  the  answer.",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be8503",
+          "text": "cause ",
+          "start": 19.8,
+          "end": 20.08,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8504",
+          "text": "I've ",
+          "start": 20.08,
+          "end": 20.28,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8505",
+          "text": "got ",
+          "start": 20.32,
+          "end": 20.52,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8506",
+          "text": "the ",
+          "start": 20.52,
+          "end": 20.68,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be8507",
+          "text": "answer.",
+          "start": 20.68,
+          "end": 21.2,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 19.8,
+        "end": 21.2,
+        "duration": 1.3999999999999986
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 151378,
+      "text": "violence  rage  right  behind  their  back.",
+      "words": [
+        {
+          "id": "6900ae7802a95df1e7be84d2",
+          "text": "violence ",
+          "start": 3.16,
+          "end": 3.6,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d3",
+          "text": "rage ",
+          "start": 3.72,
+          "end": 4.16,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d4",
+          "text": "right ",
+          "start": 4.16,
+          "end": 4.44,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d5",
+          "text": "behind ",
+          "start": 4.44,
+          "end": 4.8,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d6",
+          "text": "their ",
+          "start": 4.8,
+          "end": 5,
+          "line": 0
+        },
+        {
+          "id": "6900ae7802a95df1e7be84d7",
+          "text": "back.",
+          "start": 5,
+          "end": 5.4,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 3.16,
+        "end": 5.4,
+        "duration": 2.24
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "title": "love_info",
+    "exportDate": "2025-10-28T10:58:09.135Z",
+    "totalSubtitles": 8,
+    "totalWords": 78
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "It  was  1976,  election  time  in  Jamaica and  the  island  split  down  the  middle",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa039dc",
+          "text": "It ",
+          "start": 0.2,
+          "end": 0.36,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039dd",
+          "text": "was ",
+          "start": 0.36,
+          "end": 0.6,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039de",
+          "text": "1976, ",
+          "start": 0.6,
+          "end": 2.28,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039df",
+          "text": "election ",
+          "start": 2.32,
+          "end": 2.92,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e0",
+          "text": "time ",
+          "start": 2.92,
+          "end": 3.16,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e1",
+          "text": "in ",
+          "start": 3.16,
+          "end": 3.28,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e2",
+          "text": "Jamaica",
+          "start": 3.28,
+          "end": 3.84,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e3",
+          "text": "and ",
+          "start": 4,
+          "end": 4.24,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e4",
+          "text": "the ",
+          "start": 4.24,
+          "end": 4.4,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e5",
+          "text": "island ",
+          "start": 4.4,
+          "end": 4.76,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e6",
+          "text": "split ",
+          "start": 4.8,
+          "end": 5.2,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e7",
+          "text": "down ",
+          "start": 5.2,
+          "end": 5.48,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e8",
+          "text": "the ",
+          "start": 5.48,
+          "end": 5.56,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039e9",
+          "text": "middle",
+          "start": 5.56,
+          "end": 5.72,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.2,
+        "end": 5.72,
+        "duration": 5.52
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "between  Manley  and  Seaga  for  president.",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa039ea",
+          "text": "between ",
+          "start": 5.84,
+          "end": 6.2,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039eb",
+          "text": "Manley ",
+          "start": 6.2,
+          "end": 6.68,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039ec",
+          "text": "and ",
+          "start": 6.68,
+          "end": 6.92,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039ed",
+          "text": "Seaga ",
+          "start": 6.96,
+          "end": 7.4,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039ee",
+          "text": "for ",
+          "start": 7.4,
+          "end": 7.56,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039ef",
+          "text": "president.",
+          "start": 7.56,
+          "end": 8.24,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 5.84,
+        "end": 8.24,
+        "duration": 2.4000000000000004
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Violence  a  mash  up  di  streets  and people  look  to  Bob  Marley  for  direction,",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa039f0",
+          "text": "Violence ",
+          "start": 8.52,
+          "end": 9.24,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f1",
+          "text": "a ",
+          "start": 9.24,
+          "end": 9.4,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f2",
+          "text": "mash ",
+          "start": 9.4,
+          "end": 9.6,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f3",
+          "text": "up ",
+          "start": 9.6,
+          "end": 9.72,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f4",
+          "text": "di ",
+          "start": 9.72,
+          "end": 9.84,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f5",
+          "text": "streets ",
+          "start": 9.84,
+          "end": 10.28,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f6",
+          "text": "and",
+          "start": 10.28,
+          "end": 10.52,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f7",
+          "text": "people ",
+          "start": 10.52,
+          "end": 10.88,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f8",
+          "text": "look ",
+          "start": 10.88,
+          "end": 11.12,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039f9",
+          "text": "to ",
+          "start": 11.12,
+          "end": 11.28,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039fa",
+          "text": "Bob ",
+          "start": 11.32,
+          "end": 11.52,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039fb",
+          "text": "Marley ",
+          "start": 11.52,
+          "end": 11.84,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039fc",
+          "text": "for ",
+          "start": 11.84,
+          "end": 12,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039fd",
+          "text": "direction,",
+          "start": 12,
+          "end": 12.68,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 8.52,
+        "end": 12.68,
+        "duration": 4.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "though  he  refuse  to  take  any  side, him  open  up  his  Hope Road  Home",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa039fe",
+          "text": "though ",
+          "start": 13.12,
+          "end": 13.4,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa039ff",
+          "text": "he ",
+          "start": 13.4,
+          "end": 13.52,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a00",
+          "text": "refuse ",
+          "start": 13.52,
+          "end": 13.92,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a01",
+          "text": "to ",
+          "start": 13.92,
+          "end": 14.04,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a02",
+          "text": "take ",
+          "start": 14.08,
+          "end": 14.36,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a03",
+          "text": "any ",
+          "start": 14.36,
+          "end": 14.68,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a04",
+          "text": "side,",
+          "start": 14.68,
+          "end": 15.2,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a05",
+          "text": "him ",
+          "start": 15.36,
+          "end": 15.72,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a06",
+          "text": "open ",
+          "start": 15.72,
+          "end": 15.96,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a07",
+          "text": "up ",
+          "start": 15.96,
+          "end": 16.12,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a08",
+          "text": "his ",
+          "start": 16.12,
+          "end": 16.36,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a09",
+          "text": "Hope Road",
+          "start": 16.36,
+          "end": 16.68,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a0a",
+          "text": " Home",
+          "start": 16.68,
+          "end": 16.96,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 13.12,
+        "end": 16.96,
+        "duration": 3.8400000000000016
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "to  anyone  who  need  peace, no  matter  where dem  come  from.",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa03a0c",
+          "text": "to ",
+          "start": 17.36,
+          "end": 17.6,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a0d",
+          "text": "anyone ",
+          "start": 17.64,
+          "end": 18.08,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a0e",
+          "text": "who ",
+          "start": 18.08,
+          "end": 18.24,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a0f",
+          "text": "need ",
+          "start": 18.24,
+          "end": 18.56,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a10",
+          "text": "peace,",
+          "start": 18.56,
+          "end": 18.96,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a11",
+          "text": "no ",
+          "start": 19.08,
+          "end": 19.24,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a12",
+          "text": "matter ",
+          "start": 19.24,
+          "end": 19.56,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a13",
+          "text": "where dem ",
+          "start": 19.56,
+          "end": 19.8,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a15",
+          "text": "come ",
+          "start": 19.96,
+          "end": 20.16,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a16",
+          "text": "from.",
+          "start": 20.16,
+          "end": 20.6,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 17.36,
+        "end": 20.6,
+        "duration": 3.240000000000002
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "It  was  there,  surrounded  by  friends and  strangers  alike,",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa03a17",
+          "text": "It ",
+          "start": 21.12,
+          "end": 21.28,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a18",
+          "text": "was ",
+          "start": 21.28,
+          "end": 21.52,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a19",
+          "text": "there, ",
+          "start": 21.52,
+          "end": 22.08,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1a",
+          "text": "surrounded ",
+          "start": 22.08,
+          "end": 22.64,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1b",
+          "text": "by ",
+          "start": 22.64,
+          "end": 22.96,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1c",
+          "text": "friends",
+          "start": 22.96,
+          "end": 23.32,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1d",
+          "text": "and ",
+          "start": 23.32,
+          "end": 23.44,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1e",
+          "text": "strangers ",
+          "start": 23.44,
+          "end": 24.08,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a1f",
+          "text": "alike,",
+          "start": 24.08,
+          "end": 24.52,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 21.12,
+        "end": 24.52,
+        "duration": 3.3999999999999986
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "that  Bob  reworked  One Love ,",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa03a20",
+          "text": "that ",
+          "start": 24.64,
+          "end": 24.88,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a21",
+          "text": "Bob ",
+          "start": 24.88,
+          "end": 25.28,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a22",
+          "text": "reworked ",
+          "start": 25.28,
+          "end": 26.08,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a23",
+          "text": "One Love",
+          "start": 26.08,
+          "end": 26.56,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a24",
+          "text": ",",
+          "start": 26.56,
+          "end": 26.92,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 24.64,
+        "end": 26.92,
+        "duration": 2.280000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Scribbling  new  words, turning  anger  into  hope.",
+      "words": [
+        {
+          "id": "69009e96f4f08ff0dfa03a25",
+          "text": "Scribbling ",
+          "start": 27.04,
+          "end": 27.64,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a26",
+          "text": "new ",
+          "start": 27.64,
+          "end": 27.92,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a27",
+          "text": "words,",
+          "start": 27.92,
+          "end": 28.44,
+          "line": 0
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a28",
+          "text": "turning ",
+          "start": 28.48,
+          "end": 29.04,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a29",
+          "text": "anger ",
+          "start": 29.04,
+          "end": 29.4,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a2a",
+          "text": "into ",
+          "start": 29.4,
+          "end": 29.64,
+          "line": 1
+        },
+        {
+          "id": "69009e96f4f08ff0dfa03a2b",
+          "text": "hope.",
+          "start": 29.68,
+          "end": 29.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 27.04,
+        "end": 29.92,
+        "duration": 2.8800000000000026
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}

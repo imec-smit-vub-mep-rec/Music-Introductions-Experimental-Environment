@@ -1,0 +1,1068 @@
+{
+  "metadata": {
+    "title": "So_lonesome",
+    "exportDate": "2025-10-28T09:00:28.895Z",
+    "totalSubtitles": 15,
+    "totalWords": 119
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "Imagine  growing  up  poor. ",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fccc3",
+          "text": "Imagine ",
+          "start": 0.24,
+          "end": 0.88,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccc4",
+          "text": "growing ",
+          "start": 0.88,
+          "end": 1.28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccc5",
+          "text": "up ",
+          "start": 1.28,
+          "end": 1.48,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccc6",
+          "text": "poor. ",
+          "start": 1.48,
+          "end": 1.96,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 0.24,
+        "end": 1.96,
+        "duration": 1.72
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "At  night  you'd  listen  to  the  radio and  dream  of  another  life  as  an  artist.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fccd2",
+          "text": "At ",
+          "start": 7.28,
+          "end": 7.52,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd3",
+          "text": "night ",
+          "start": 7.52,
+          "end": 7.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd4",
+          "text": "you'd ",
+          "start": 7.76,
+          "end": 8,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd5",
+          "text": "listen ",
+          "start": 8,
+          "end": 8.28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd6",
+          "text": "to ",
+          "start": 8.28,
+          "end": 8.4,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd7",
+          "text": "the ",
+          "start": 8.4,
+          "end": 8.52,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd8",
+          "text": "radio",
+          "start": 8.52,
+          "end": 9.28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccd9",
+          "text": "and ",
+          "start": 9.28,
+          "end": 9.44,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccda",
+          "text": "dream ",
+          "start": 9.44,
+          "end": 9.84,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccdb",
+          "text": "of ",
+          "start": 9.84,
+          "end": 10,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccdc",
+          "text": "another ",
+          "start": 10,
+          "end": 10.4,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccdd",
+          "text": "life ",
+          "start": 10.4,
+          "end": 11,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccde",
+          "text": "as ",
+          "start": 11,
+          "end": 11.2,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccdf",
+          "text": "an ",
+          "start": 11.2,
+          "end": 11.36,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcce0",
+          "text": "artist.",
+          "start": 11.36,
+          "end": 12,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 7.28,
+        "end": 12,
+        "duration": 4.72
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Far  from  the  misery  you  live  in.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcce1",
+          "text": "Far ",
+          "start": 12.16,
+          "end": 12.48,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce2",
+          "text": "from ",
+          "start": 12.48,
+          "end": 12.68,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce3",
+          "text": "the ",
+          "start": 12.68,
+          "end": 12.8,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce4",
+          "text": "misery ",
+          "start": 12.8,
+          "end": 13.36,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce5",
+          "text": "you ",
+          "start": 13.36,
+          "end": 13.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce6",
+          "text": "live ",
+          "start": 13.6,
+          "end": 13.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce7",
+          "text": "in.",
+          "start": 13.84,
+          "end": 14.2,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 12.16,
+        "end": 14.2,
+        "duration": 2.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "You  become  the  most  famous  country  singer  in  America.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fccef",
+          "text": "You ",
+          "start": 18.32,
+          "end": 18.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf0",
+          "text": "become ",
+          "start": 18.6,
+          "end": 18.96,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf1",
+          "text": "the ",
+          "start": 18.96,
+          "end": 19.08,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf2",
+          "text": "most ",
+          "start": 19.08,
+          "end": 19.36,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf3",
+          "text": "famous ",
+          "start": 19.36,
+          "end": 19.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf4",
+          "text": "country ",
+          "start": 19.84,
+          "end": 20.32,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf5",
+          "text": "singer ",
+          "start": 20.36,
+          "end": 20.68,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf6",
+          "text": "in ",
+          "start": 20.68,
+          "end": 20.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf7",
+          "text": "America.",
+          "start": 20.84,
+          "end": 21.56,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 18.32,
+        "end": 21.56,
+        "duration": 3.2399999999999984
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "You're  married  to  the  love  of  your  life.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fccf8",
+          "text": "You're ",
+          "start": 21.84,
+          "end": 22.12,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccf9",
+          "text": "married ",
+          "start": 22.12,
+          "end": 22.44,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccfa",
+          "text": "to ",
+          "start": 22.44,
+          "end": 22.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccfb",
+          "text": "the ",
+          "start": 22.64,
+          "end": 22.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccfc",
+          "text": "love ",
+          "start": 22.76,
+          "end": 23,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccfd",
+          "text": "of ",
+          "start": 23,
+          "end": 23.12,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccfe",
+          "text": "your ",
+          "start": 23.12,
+          "end": 23.32,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccff",
+          "text": "life.",
+          "start": 23.32,
+          "end": 23.88,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 21.84,
+        "end": 23.88,
+        "duration": 2.039999999999999
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "But  old  habits  don't  fade e asy.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd00",
+          "text": "But ",
+          "start": 24.84,
+          "end": 25.08,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd01",
+          "text": "old ",
+          "start": 25.08,
+          "end": 25.36,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd02",
+          "text": "habits ",
+          "start": 25.36,
+          "end": 25.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd03",
+          "text": "don't ",
+          "start": 25.84,
+          "end": 26.16,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd04",
+          "text": "fade e",
+          "start": 26.16,
+          "end": 26.56,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd05",
+          "text": "asy.",
+          "start": 26.56,
+          "end": 27.08,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 24.84,
+        "end": 27.08,
+        "duration": 2.2399999999999984
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "You've  known  misery  too  long.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd06",
+          "text": "You've ",
+          "start": 27.48,
+          "end": 27.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd07",
+          "text": "known ",
+          "start": 27.76,
+          "end": 28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd08",
+          "text": "misery ",
+          "start": 28,
+          "end": 28.52,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd09",
+          "text": "too ",
+          "start": 28.52,
+          "end": 28.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd0a",
+          "text": "long.",
+          "start": 28.76,
+          "end": 29.28,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 27.48,
+        "end": 29.28,
+        "duration": 1.8000000000000007
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "And  the  bottle's  been  your  only  friend.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd0b",
+          "text": "And ",
+          "start": 29.48,
+          "end": 29.64,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd0c",
+          "text": "the ",
+          "start": 29.64,
+          "end": 29.8,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd0d",
+          "text": "bottle's ",
+          "start": 29.8,
+          "end": 30.2,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd0e",
+          "text": "been ",
+          "start": 30.2,
+          "end": 30.44,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd0f",
+          "text": "your ",
+          "start": 30.44,
+          "end": 30.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd10",
+          "text": "only ",
+          "start": 30.6,
+          "end": 30.88,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd11",
+          "text": "friend.",
+          "start": 30.88,
+          "end": 31.48,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 29.48,
+        "end": 31.48,
+        "duration": 2
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Now  that  same  drink  is  taking everything  from  you.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd12",
+          "text": "Now ",
+          "start": 32.08,
+          "end": 32.4,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd13",
+          "text": "that ",
+          "start": 32.4,
+          "end": 32.64,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd14",
+          "text": "same ",
+          "start": 32.64,
+          "end": 32.92,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd15",
+          "text": "drink ",
+          "start": 32.92,
+          "end": 33.32,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd16",
+          "text": "is ",
+          "start": 33.36,
+          "end": 33.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd17",
+          "text": "taking",
+          "start": 33.6,
+          "end": 33.88,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd18",
+          "text": "everything ",
+          "start": 33.88,
+          "end": 34.32,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd19",
+          "text": "from ",
+          "start": 34.32,
+          "end": 34.64,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd1a",
+          "text": "you.",
+          "start": 34.64,
+          "end": 34.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 32.08,
+        "end": 34.92,
+        "duration": 2.8400000000000034
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 10,
+      "text": "Your  voice,  your  stage,  your  marriage.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd1b",
+          "text": "Your ",
+          "start": 35.16,
+          "end": 35.4,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd1c",
+          "text": "voice, ",
+          "start": 35.4,
+          "end": 36,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd1d",
+          "text": "your ",
+          "start": 36.04,
+          "end": 36.28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd1e",
+          "text": "stage, ",
+          "start": 36.28,
+          "end": 37,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd1f",
+          "text": "your ",
+          "start": 37.24,
+          "end": 37.44,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd20",
+          "text": "marriage.",
+          "start": 37.44,
+          "end": 38.12,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 35.16,
+        "end": 38.12,
+        "duration": 2.960000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 11,
+      "text": "It's  New  Year's  Eve,  1952.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd21",
+          "text": "It's ",
+          "start": 39.08,
+          "end": 39.32,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd22",
+          "text": "New ",
+          "start": 39.32,
+          "end": 39.52,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd23",
+          "text": "Year's ",
+          "start": 39.52,
+          "end": 39.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd24",
+          "text": "Eve, ",
+          "start": 39.84,
+          "end": 40.2,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd25",
+          "text": "1952.",
+          "start": 40.36,
+          "end": 41.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 39.08,
+        "end": 41.76,
+        "duration": 2.6799999999999997
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 12,
+      "text": "You're  in  the  back  of  your  car, staring  out  in  the  darkness.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd26",
+          "text": "You're ",
+          "start": 42.04,
+          "end": 42.32,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd27",
+          "text": "in ",
+          "start": 42.32,
+          "end": 42.48,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd28",
+          "text": "the ",
+          "start": 42.48,
+          "end": 42.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd29",
+          "text": "back ",
+          "start": 42.6,
+          "end": 42.84,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2a",
+          "text": "of ",
+          "start": 42.84,
+          "end": 42.96,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2b",
+          "text": "your ",
+          "start": 42.96,
+          "end": 43.2,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2c",
+          "text": "car,",
+          "start": 43.2,
+          "end": 43.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2d",
+          "text": "staring ",
+          "start": 44.08,
+          "end": 44.56,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2e",
+          "text": "out ",
+          "start": 44.56,
+          "end": 44.72,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd2f",
+          "text": "in ",
+          "start": 44.72,
+          "end": 44.92,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd30",
+          "text": "the ",
+          "start": 44.92,
+          "end": 45,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcd31",
+          "text": "darkness.",
+          "start": 45,
+          "end": 45.64,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 42.04,
+        "end": 45.64,
+        "duration": 3.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 14,
+      "text": "And  all  you  see  and  feel  is  lonesomeness.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcd32",
+          "text": "And ",
+          "start": 46.16,
+          "end": 46.4,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd33",
+          "text": "all ",
+          "start": 46.4,
+          "end": 46.72,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd34",
+          "text": "you ",
+          "start": 46.72,
+          "end": 46.96,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd35",
+          "text": "see ",
+          "start": 46.96,
+          "end": 47.28,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd36",
+          "text": "and ",
+          "start": 47.32,
+          "end": 47.56,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd37",
+          "text": "feel ",
+          "start": 47.56,
+          "end": 48.16,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd38",
+          "text": "is ",
+          "start": 48.8,
+          "end": 49.08,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcd39",
+          "text": "lonesomeness.",
+          "start": 49.08,
+          "end": 49.76,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 46.16,
+        "end": 49.76,
+        "duration": 3.6000000000000014
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 172928,
+      "text": "Being  a  kid,  shining  shoes,  selling  peanuts,  just  to  get  by.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fccc7",
+          "text": "Being ",
+          "start": 2.4,
+          "end": 2.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccc8",
+          "text": "a ",
+          "start": 2.76,
+          "end": 2.88,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccc9",
+          "text": "kid, ",
+          "start": 2.88,
+          "end": 3.24,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccca",
+          "text": "shining ",
+          "start": 3.24,
+          "end": 3.76,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcccb",
+          "text": "shoes, ",
+          "start": 3.76,
+          "end": 4.44,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcccc",
+          "text": "selling ",
+          "start": 4.48,
+          "end": 4.96,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcccd",
+          "text": "peanuts, ",
+          "start": 4.96,
+          "end": 5.52,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccce",
+          "text": "just ",
+          "start": 5.56,
+          "end": 5.84,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fcccf",
+          "text": "to ",
+          "start": 5.84,
+          "end": 5.92,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccd0",
+          "text": "get ",
+          "start": 5.96,
+          "end": 6.16,
+          "line": 1
+        },
+        {
+          "id": "6900857a1b77ab65633fccd1",
+          "text": "by.",
+          "start": 6.16,
+          "end": 6.56,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 2.4,
+        "end": 6.56,
+        "duration": 4.16
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 529728,
+      "text": "And  then  somehow  that  dream  comes  true.",
+      "words": [
+        {
+          "id": "6900857a1b77ab65633fcce8",
+          "text": "And ",
+          "start": 14.92,
+          "end": 15.12,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcce9",
+          "text": "then ",
+          "start": 15.12,
+          "end": 15.6,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccea",
+          "text": "somehow ",
+          "start": 15.6,
+          "end": 16.2,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcceb",
+          "text": "that ",
+          "start": 16.24,
+          "end": 16.44,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccec",
+          "text": "dream ",
+          "start": 16.44,
+          "end": 16.88,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fcced",
+          "text": "comes ",
+          "start": 16.88,
+          "end": 17.24,
+          "line": 0
+        },
+        {
+          "id": "6900857a1b77ab65633fccee",
+          "text": "true.",
+          "start": 17.24,
+          "end": 17.68,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 14.92,
+        "end": 17.68,
+        "duration": 2.76
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}
