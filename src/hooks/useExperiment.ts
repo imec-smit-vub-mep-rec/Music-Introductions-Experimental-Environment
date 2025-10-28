@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { ExperimentState, AnswerValue } from '@/lib/types';
-import { experimentSteps, getSongsByGenre } from '@/lib/config';
+import { experimentSteps, getSongsByGenre, experimentConfig } from '@/lib/config';
 import { 
   getSession, 
   saveSession, 
