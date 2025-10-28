@@ -515,7 +515,7 @@
         "questions": [
           {
             "id": "14_on_gmsi_1",
-            "text": "I don't spend much of my disposable income on music",
+            "text": "I spend much of my disposable income on music",
             "type": "multipleChoice",
             "required": true,
             "choices": [

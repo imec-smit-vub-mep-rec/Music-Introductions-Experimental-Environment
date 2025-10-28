@@ -24,6 +24,11 @@ export function LyricsDisplay({
   const activeLineRef = useRef<HTMLDivElement>(null);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Sort subtitles by start time to ensure proper chronological order
+  const sortedSubtitles = transcript?.subtitles ? 
+    [...transcript.subtitles].sort((a, b) => a.timing.start - b.timing.start) : 
+    [];
+
   // Find the currently active word and line based on current time
   useEffect(() => {
     if (!transcript || !isPlaying) return;
@@ -32,8 +37,8 @@ export function LyricsDisplay({
     let foundLineIndex = 0;
 
     // Find the active word
-    for (let i = 0; i < transcript.subtitles.length; i++) {
-      const subtitle = transcript.subtitles[i];
+    for (let i = 0; i < sortedSubtitles.length; i++) {
+      const subtitle = sortedSubtitles[i];
       for (const word of subtitle.words) {
         if (currentTime >= word.start && currentTime <= word.end) {
           foundActiveWord = word;
@@ -49,15 +54,15 @@ export function LyricsDisplay({
       setActiveLineIndex(foundLineIndex);
     } else {
       // If no word is active, find the closest line
-      for (let i = 0; i < transcript.subtitles.length; i++) {
-        const subtitle = transcript.subtitles[i];
+      for (let i = 0; i < sortedSubtitles.length; i++) {
+        const subtitle = sortedSubtitles[i];
         if (currentTime >= subtitle.timing.start && currentTime <= subtitle.timing.end) {
           setActiveLineIndex(i);
           break;
         }
       }
     }
-  }, [currentTime, transcript, isPlaying]);
+  }, [currentTime, transcript, isPlaying, sortedSubtitles]);
 
   // Handle user scrolling
   const handleScroll = () => {
@@ -103,7 +108,7 @@ export function LyricsDisplay({
     };
   }, []);
 
-  if (!transcript || !transcript.subtitles.length) {
+  if (!transcript || !sortedSubtitles.length) {
     return (
       <div className={cn("flex items-center justify-center h-64 text-dark-purple/50", className)}>
         <p>No lyrics available</p>
@@ -128,7 +133,7 @@ export function LyricsDisplay({
       }}
     >
       <div className="space-y-8">
-        {transcript.subtitles.map((subtitle, subtitleIndex) => (
+        {sortedSubtitles.map((subtitle, subtitleIndex) => (
           <div
             key={subtitle.id}
             ref={subtitleIndex === activeLineIndex ? activeLineRef : null}
