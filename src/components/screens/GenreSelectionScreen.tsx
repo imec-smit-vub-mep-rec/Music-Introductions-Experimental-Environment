@@ -53,16 +53,15 @@ export function GenreSelectionScreen({
                 ← Back
               </Button>
             )} */}
-            <div className="flex-1 text-left">
+            <div className="flex-1 text-center">
               <h1 className="text-xl font-bold text-dark-purple mb-2 md:text-2xl">
-                {displayTitle}.
+                {displayTitle}
               </h1>
               <p className="text-dark-purple/70 text-sm md:text-base">
                 {displaySubtitle} <br /> Then click the button below to start
                 the experiment.
               </p>
             </div>
-            <div className="w-16" /> {/* Spacer for centering */}
           </div>
 
           {/* Selected Genre Header */}

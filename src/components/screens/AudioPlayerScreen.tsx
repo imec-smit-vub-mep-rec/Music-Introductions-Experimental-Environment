@@ -171,7 +171,6 @@ export function AudioPlayerScreen({
                 {isExplanationPhase && ' • Explanation'}
               </p>
             </div>
-            <div className="w-16" /> {/* Spacer for centering */}
           </div>
 
           {/* Audio Player */}

@@ -189,7 +189,6 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
               Final Questionnaire
             </h1>
             <p className="text-dark-purple/70 text-lg">
-              Thank you for participating in our music discovery experiment!
               Please complete this final questionnaire to help us understand
               your experience.
             </p>
