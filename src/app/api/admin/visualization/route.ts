@@ -1,24 +1,16 @@
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { Pool } from 'pg';
+import { neon } from '@neondatabase/serverless';
 
-// Neon PostgreSQL configuration
 const connectionString = process.env.DATABASE_URL;
+const sql = connectionString ? neon(connectionString) : null;
 
-if (!connectionString) {
-  console.error('❌ DATABASE_URL environment variable is not set');
-}
-
-// Create connection pool
-const pool = connectionString ? new Pool({
-  connectionString,
-  ssl: {
-    rejectUnauthorized: false, // Required for Neon
-  },
-  max: 5, // Limit connections for serverless
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
-}) : null;
+type VisualizationRow = {
+  session_id: number;
+  group_type: string;
+  post_listening_answers: unknown;
+  randomized_introductions: unknown;
+};
 
 export async function GET() {
   // Check authentication
@@ -32,7 +24,7 @@ export async function GET() {
     );
   }
 
-  if (!pool) {
+  if (!sql) {
     return NextResponse.json(
       { error: 'Database not configured' },
       { status: 500 }
@@ -40,24 +32,20 @@ export async function GET() {
   }
 
   try {
-    const client = await pool.connect();
+    // Get all song data with scores
+    const query = `
+      SELECT 
+        session_id,
+        group_type,
+        post_listening_answers,
+        randomized_introductions
+      FROM experiment_sessions 
+      WHERE post_listening_answers IS NOT NULL 
+      AND jsonb_array_length(COALESCE(post_listening_answers, '[]'::jsonb)) > 0
+      ORDER BY created_at DESC
+    `;
     
-    try {
-      // Get all song data with scores
-      const query = `
-        SELECT 
-          session_id,
-          group_type,
-          post_listening_answers,
-          randomized_introductions
-        FROM experiment_sessions 
-        WHERE post_listening_answers IS NOT NULL 
-        AND jsonb_array_length(COALESCE(post_listening_answers, '[]'::jsonb)) > 0
-        ORDER BY created_at DESC
-      `;
-      
-      const result = await client.query(query);
-      const sessions = result.rows;
+    const sessions = await sql(query) as VisualizationRow[];
 
       // Process the data for visualization
       const visualizationData = {
@@ -85,7 +73,7 @@ export async function GET() {
         }>>
       };
 
-      sessions.forEach(session => {
+      sessions.forEach((session: VisualizationRow) => {
         try {
           const songAnswers = typeof session.post_listening_answers === 'string' 
             ? JSON.parse(session.post_listening_answers) 
@@ -176,19 +164,15 @@ export async function GET() {
       const uniqueQuestions = [...new Set(visualizationData.scatterPlotData.map(d => d.question))];
       const uniqueIntroductionTypes = [...new Set(visualizationData.scatterPlotData.map(d => d.introductionType))];
 
-      return NextResponse.json({
-        scatterPlotData: visualizationData.scatterPlotData,
-        boxPlotData: visualizationData.boxPlotData,
-        summaryStats: visualizationData.summaryStats,
-        uniqueQuestions,
-        uniqueIntroductionTypes,
-        totalSessions: sessions.length,
-        totalDataPoints: visualizationData.scatterPlotData.length
-      });
-
-    } finally {
-      client.release();
-    }
+    return NextResponse.json({
+      scatterPlotData: visualizationData.scatterPlotData,
+      boxPlotData: visualizationData.boxPlotData,
+      summaryStats: visualizationData.summaryStats,
+      uniqueQuestions,
+      uniqueIntroductionTypes,
+      totalSessions: sessions.length,
+      totalDataPoints: visualizationData.scatterPlotData.length
+    });
   } catch (error) {
     console.error('❌ VISUALIZATION ERROR:', error);
     return NextResponse.json(

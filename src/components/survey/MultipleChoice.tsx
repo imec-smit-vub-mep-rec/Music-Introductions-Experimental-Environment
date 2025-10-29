@@ -28,24 +28,16 @@ export function MultipleChoice({
   onAutoNext
 }: MultipleChoiceProps) {
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  // Reset state when question changes - this is the key fix
+  // Reset confirmation effect on question change
   useEffect(() => {
     setShowConfirmation(false);
-    setSelectedOption(null);
   }, [question]);
 
-  // Only update from external value if it's not empty
-  useEffect(() => {
-    if (value && value !== '') {
-      setSelectedOption(value as string);
-    }
-  }, [value]);
+  const selectedOption = (value as string) ?? "";
 
   const handleValueChange = (newValue: string) => {
     onChange(newValue);
-    setSelectedOption(newValue);
     setShowConfirmation(true);
     
     // Auto-advance after 0.5 seconds with visual confirmation
@@ -63,8 +55,8 @@ export function MultipleChoice({
         {required && <span className="text-red-500 ml-1">*</span>}
       </h3>
       <RadioGroup 
-        key={question} // Force re-render for each new question
-        value={selectedOption || ""} // Use internal state, not external value
+        key={question}
+        value={selectedOption}
         onValueChange={handleValueChange}
         className="space-y-3"
       >

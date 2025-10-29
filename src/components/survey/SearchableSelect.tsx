@@ -42,14 +42,17 @@ export function SearchableSelect({
     setSelectedOption(null);
   }, [question]);
 
-  // Update from external value
+  // Update from external value (allow empty string or falsy values to clear)
   useEffect(() => {
-    if (value && value !== '') {
-      const option = options.find(opt => opt.value === value);
-      if (option) {
-        setSelectedOption(option);
-        setSearchTerm(option.text);
-      }
+    if (value === '' || value === undefined || value === null) {
+      setSelectedOption(null);
+      setSearchTerm('');
+      return;
+    }
+    const option = options.find(opt => opt.value === value);
+    if (option) {
+      setSelectedOption(option);
+      setSearchTerm(option.text);
     }
   }, [value, options]);
 

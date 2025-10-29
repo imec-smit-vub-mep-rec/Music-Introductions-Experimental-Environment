@@ -23,25 +23,17 @@ export function RatingScale({
   onAutoNext
 }: RatingScaleProps) {
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [selectedRating, setSelectedRating] = useState<number | null>(null);
   const range = Array.from({ length: max - min + 1 }, (_, i) => min + i);
 
-  // Reset state when question changes - this is the key fix
+  // Reset confirmation on question change
   useEffect(() => {
     setShowConfirmation(false);
-    setSelectedRating(null);
   }, [question]);
-
-  // Only update from external value if it's not empty
-  useEffect(() => {
-    if (value && value !== null && value !== undefined) {
-      setSelectedRating(value as number);
-    }
-  }, [value]);
+  
+  const selectedRating = (value as number) ?? null;
 
   const handleRatingClick = (rating: number) => {
     onChange(rating);
-    setSelectedRating(rating);
     setShowConfirmation(true);
     
     // Auto-advance after 0.5 seconds with visual confirmation

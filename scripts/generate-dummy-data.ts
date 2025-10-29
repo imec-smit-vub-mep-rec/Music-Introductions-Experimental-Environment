@@ -1,13 +1,12 @@
 #!/usr/bin/env tsx
 
-import { Pool } from 'pg';
+import { neon } from '@neondatabase/serverless';
 import { randomInt, randomFloat, randomChoice, randomChoices, randomDate } from './utils/random';
 import { experimentConfig } from '../src/lib/config';
 
-// Database connection configuration
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://localhost:5432/serendipity_experiment',
-});
+// Database connection configuration (HTTP client)
+const connectionString = process.env.DATABASE_URL || 'postgresql://localhost:5432/serendipity_experiment';
+const sql = neon(connectionString);
 
 interface DummySession {
   id: string;
@@ -216,8 +215,8 @@ async function insertDummySessions(count: number): Promise<void> {
   
   try {
     // Get the current maximum session_id to avoid conflicts
-    const maxResult = await pool.query('SELECT MAX(session_id) as max_id FROM experiment_sessions');
-    const maxSessionId = maxResult.rows[0]?.max_id || 0;
+    const maxRows = await sql`SELECT MAX(session_id) as max_id FROM experiment_sessions`;
+    const maxSessionId = (maxRows[0] as any)?.max_id || 0;
     
     const sessions: DummySession[] = [];
     
@@ -244,52 +243,41 @@ async function insertDummySessions(count: number): Promise<void> {
         )`;
       }).join(', ');
       
-      const query = `
-        INSERT INTO experiment_sessions (
-          id, session_id, group_type, chosen_genre, randomized_songs, randomized_introductions,
-          onboarding_answers, demographics_answers, post_listening_answers, final_answers,
-          qualtrics_response_id, raw_session_data, start_time, experiment_completed, 
-          engagement_metrics, expires_at
-        ) VALUES ${values}
-      `;
-      
-      const params = batch.flatMap(session => [
-        session.id,
-        session.session_id,
-        session.group_type,
-        session.chosen_genre,
-        JSON.stringify(session.randomized_songs),
-        JSON.stringify(session.randomized_introductions),
-        JSON.stringify(session.onboarding_answers),
-        JSON.stringify(session.demographics_answers),
-        JSON.stringify(session.post_listening_answers),
-        JSON.stringify(session.final_answers),
-        session.qualtrics_response_id,
-        JSON.stringify(session.raw_session_data),
-        session.start_time,
-        session.experiment_completed,
-        JSON.stringify(session.engagement_metrics),
-        session.expires_at,
-      ]);
-      
-      await pool.query(query, params);
+      // Insert rows one by one (simpler with HTTP client)
+      for (const session of batch) {
+        await sql`
+          INSERT INTO experiment_sessions (
+            id, session_id, group_type, chosen_genre, randomized_songs, randomized_introductions,
+            onboarding_answers, demographics_answers, post_listening_answers, final_answers,
+            qualtrics_response_id, raw_session_data, start_time, experiment_completed, 
+            engagement_metrics, expires_at, created_at, updated_at
+          ) VALUES (
+            ${session.id}, ${session.session_id}, ${session.group_type}, ${session.chosen_genre},
+            ${JSON.stringify(session.randomized_songs)}, ${JSON.stringify(session.randomized_introductions)},
+            ${JSON.stringify(session.onboarding_answers)}, ${JSON.stringify(session.demographics_answers)},
+            ${JSON.stringify(session.post_listening_answers)}, ${JSON.stringify(session.final_answers)},
+            ${session.qualtrics_response_id || null}, ${JSON.stringify(session.raw_session_data)},
+            ${session.start_time}, ${session.experiment_completed},
+            ${JSON.stringify(session.engagement_metrics)}, ${session.expires_at}, NOW(), NOW()
+          )
+        `;
+      }
       console.log(`Inserted batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(sessions.length / batchSize)}`);
     }
     
     console.log(`Successfully inserted ${count} dummy sessions!`);
     
     // Show some statistics
-    const statsResult = await pool.query(`
+    const statsRows = await sql`
       SELECT 
         COUNT(*) as total_sessions,
         COUNT(CASE WHEN experiment_completed = true THEN 1 END) as completed_sessions,
         COUNT(CASE WHEN group_type = 'unfamiliar' THEN 1 END) as unfamiliar_sessions,
         COUNT(CASE WHEN group_type = 'familiar' THEN 1 END) as familiar_sessions,
         COUNT(DISTINCT chosen_genre) as genres_used
-      FROM experiment_sessions
-    `);
+      FROM experiment_sessions`;
     
-    const stats = statsResult.rows[0];
+    const stats = (statsRows[0] as any) || {};
     console.log('\nDatabase Statistics:');
     console.log(`Total sessions: ${stats.total_sessions}`);
     console.log(`Completed sessions: ${stats.completed_sessions}`);
@@ -321,7 +309,7 @@ async function main() {
     console.error('Failed to generate dummy data:', error);
     process.exit(1);
   } finally {
-    await pool.end();
+    // No pool to close when using Neon HTTP client
   }
 }
 
