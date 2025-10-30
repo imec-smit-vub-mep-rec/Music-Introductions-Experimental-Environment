@@ -164,7 +164,7 @@ export function AudioPlayerScreen({
             )} */}
             <div className="flex-1 text-center">
               <h1 className="text-2xl font-bold text-dark-purple">
-                {isExplanationPhase ? `Understanding ${genre.name}` : `Listening to ${genre.name}`}
+                {isExplanationPhase ? `Intro to song ${songNumber}` : `Listening to ${genre.name}`}
               </h1>
               <p className="text-dark-purple/70">
                 Song {songNumber} of {totalSongs}

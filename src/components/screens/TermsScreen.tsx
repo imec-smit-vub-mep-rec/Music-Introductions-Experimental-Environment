@@ -104,11 +104,10 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
             // Continue anyway - session is saved locally
           }
 
-          const timer = setTimeout(() => {
-            onAccept();
-            setIsProcessing(false);
-          }, 200);
-          return () => clearTimeout(timer);
+          // Proceed immediately after successful validation and session sync
+          setRecaptchaValidating(false);
+          onAccept();
+          setIsProcessing(false);
         } catch (error) {
           console.error("Failed to create session or validate reCAPTCHA:", error);
           setRecaptchaError(error instanceof Error ? error.message : 'Validation failed');

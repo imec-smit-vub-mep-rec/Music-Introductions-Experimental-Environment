@@ -19,6 +19,7 @@ export const experimentSteps = [
   'onboarding',
   'demographics',
   'genre-selection',
+  'genre-confirmation',
   'audio-song-1',
   'survey-song-1',
   'audio-song-2',

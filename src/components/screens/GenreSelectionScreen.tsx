@@ -30,12 +30,12 @@ export function GenreSelectionScreen({
   // Generate title and subtitle based on session group
   const displayTitle =
     sessionGroup === "unfamiliar"
-      ? "Choose an unfamiliar genre"
-      : "Choose a familiar genre";
+      ? "Choose a genre you rarely listen to"
+      : "Choose a genre you frequently listen to";
   const displaySubtitle =
     subtitle ||
     (sessionGroup === "unfamiliar"
-      ? "Pick a genre you rarely listen to"
+      ? "Pick a genre you seldomly listen to."
       : "Pick a genre you frequently listen to (compared to the other options)");
 
   return (

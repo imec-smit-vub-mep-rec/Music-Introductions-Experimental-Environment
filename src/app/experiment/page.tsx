@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { useExperiment } from '@/hooks/useExperiment';
-import { experimentConfig } from '@/lib/config';
-import { WelcomeScreen } from '@/components/screens/WelcomeScreen';
-import { TermsScreen } from '@/components/screens/TermsScreen';
-import { SurveyScreen } from '@/components/screens/SurveyScreen';
-import { GenreSelectionScreen } from '@/components/screens/GenreSelectionScreen';
-import { AudioPlayerScreen } from '@/components/screens/AudioPlayerScreen';
-import { QualtricsScreen } from '@/components/screens/QualtricsScreen';
-import { ThankYouScreen } from '@/components/screens/ThankYouScreen';
-import { useEngagementTracking } from '@/hooks/useEngagementTracking';
-import { getSession } from '@/lib/session';
+import { useEffect } from "react";
+import { useExperiment } from "@/hooks/useExperiment";
+import { experimentConfig } from "@/lib/config";
+import { WelcomeScreen } from "@/components/screens/WelcomeScreen";
+import { TermsScreen } from "@/components/screens/TermsScreen";
+import { SurveyScreen } from "@/components/screens/SurveyScreen";
+import { GenreSelectionScreen } from "@/components/screens/GenreSelectionScreen";
+import { AudioPlayerScreen } from "@/components/screens/AudioPlayerScreen";
+import { QualtricsScreen } from "@/components/screens/QualtricsScreen";
+import { ThankYouScreen } from "@/components/screens/ThankYouScreen";
+import { useEngagementTracking } from "@/hooks/useEngagementTracking";
+import { getSession } from "@/lib/session";
+import { GenreConfirmationScreen } from "@/components/screens/GenreConfirmationScreen";
 
 export default function ExperimentPage() {
   const {
@@ -41,37 +42,37 @@ export default function ExperimentPage() {
 
   // Get session for engagement tracking
   const currentSession = getSession();
-  
+
   // Set up engagement tracking
   useEngagementTracking({
     page: currentStepName,
     trackClicks: true,
     trackScrolls: true,
     trackAudioInteractions: true,
-    trackPageTime: true
+    trackPageTime: true,
   });
 
   // Log step transitions
   useEffect(() => {
-    console.info('🔄 EXPERIMENT STEP CHANGED:', {
+    console.info("🔄 EXPERIMENT STEP CHANGED:", {
       step_name: currentStepName,
       step_index: currentStep,
       session_id: currentSession?.session_id,
       group: currentSession?.group,
       selected_genre: currentSession?.chosen_genre,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }, [currentStepName, currentStep, currentSession]);
 
   const renderCurrentStep = () => {
     switch (currentStepName) {
-      case 'welcome':
+      case "welcome":
         return <WelcomeScreen onStart={nextStep} />;
 
-      case 'terms':
+      case "terms":
         return <TermsScreen onAccept={nextStep} />;
 
-      case 'onboarding':
+      case "onboarding":
         return (
           <SurveyScreen
             key="onboarding-survey" // Force re-render for onboarding
@@ -82,7 +83,7 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'demographics':
+      case "demographics":
         return (
           <SurveyScreen
             key="demographics-survey" // Force re-render for demographics
@@ -94,7 +95,7 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'genre-selection':
+      case "genre-selection":
         return (
           <GenreSelectionScreen
             genres={experimentConfig.genres}
@@ -106,15 +107,38 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'audio-song-1':
-      case 'audio-song-2':
-      case 'audio-song-3':
+      // Confirmation of genre selection
+
+      case "genre-confirmation":
+        const chosenGenre = experimentConfig.genres.find(
+          (g) => g.id === selectedGenre
+        );
+        if (!chosenGenre)
+          return (
+            <div>
+              Please select a genre in the previous step.
+              <button onClick={prevStep}>Back</button>
+            </div>
+          );
+        return (
+          <GenreConfirmationScreen
+            chosenGenre={chosenGenre}
+            onBack={prevStep}
+            onStart={nextStep}
+          />
+        );
+
+      case "audio-song-1":
+      case "audio-song-2":
+      case "audio-song-3":
         const currentSong = getCurrentSong();
-        const currentGenre = experimentConfig.genres.find(g => g.id === selectedGenre);
+        const currentGenre = experimentConfig.genres.find(
+          (g) => g.id === selectedGenre
+        );
         const songNumber = getCurrentSongNumber();
-        
+
         if (!currentSong || !currentGenre) return <div>Loading...</div>;
-        
+
         return (
           <AudioPlayerScreen
             song={currentSong}
@@ -145,9 +169,9 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'survey-song-1':
-      case 'survey-song-2':
-      case 'survey-song-3':
+      case "survey-song-1":
+      case "survey-song-2":
+      case "survey-song-3":
         return (
           <SurveyScreen
             key={`survey-${currentSongIndex}`} // Force re-render for each song
@@ -164,10 +188,10 @@ export default function ExperimentPage() {
           />
         );
 
-      case 'qualtrics':
+      case "qualtrics":
         return <QualtricsScreen onComplete={nextStep} />;
 
-      case 'thank-you':
+      case "thank-you":
         return <ThankYouScreen />;
 
       default:
@@ -175,9 +199,5 @@ export default function ExperimentPage() {
     }
   };
 
-  return (
-    <div className="min-h-screen">
-      {renderCurrentStep()}
-    </div>
-  );
+  return <div className="min-h-screen">{renderCurrentStep()}</div>;
 }

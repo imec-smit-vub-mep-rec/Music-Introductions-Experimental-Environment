@@ -464,7 +464,7 @@ export function AudioPlayer({
       </div>
 
       {/* Controls */}
-      <div className="flex items-center justify-center space-x-4">
+      <div className="flex items-center justify-center align-middle space-x-4">
         {/* <Button
           variant="outline"
           size="icon"
@@ -486,7 +486,7 @@ export function AudioPlayer({
         ) : (
           <Button
             onClick={togglePlayPause}
-            className="w-16 h-16 rounded-full bg-dark-purple text-white hover:bg-dark-purple/90"
+            className="w-14 h-14 rounded-full bg-dark-purple text-white hover:bg-dark-purple/90"
           >
             {isPlaying ? <PauseIcon /> : <PlayIcon />}
           </Button>
@@ -495,7 +495,7 @@ export function AudioPlayer({
         <Button
           onClick={handleSkip}
           disabled={showLyrics || !canSkip} // Disable skip during introduction/explanation phase or until 30 seconds played
-          className="w-12 h-12 rounded-full bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-10 h-10 rounded-full bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
           title={
             showLyrics
               ? "Cannot skip during introduction"
@@ -511,17 +511,17 @@ export function AudioPlayer({
         {!showLyrics && (
           <>
             <div className="flex items-center justify-center space-x-4">|</div>
-            <div className="flex items-center justify-center space-x-4 flex-col pt-4">
-              <div className="flex items-center justify-center space-x-4 flex-col gap-2">
+            <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center justify-center space-x-4 gap-2">
                 <span className="text-xs text-dark-purple/70">
-                  Strong opinion about this song? Let us know:
+                  Strong opinion?<br/> Let us know:
                 </span>
                 <div className="flex items-center justify-between space-x-4">
                 <Button
                   onClick={handleDislike}
                   variant={disliked === true ? "default" : "outline"}
                   className={cn(
-                    "w-12 h-12 rounded-full",
+                    "w-10 h-10 rounded-full",
                     disliked === true
                       ? "bg-red-500 text-white hover:bg-red-600"
                       : "border-red-500 text-red-500 hover:bg-red-50"
@@ -537,7 +537,7 @@ export function AudioPlayer({
                   onClick={handleLike}
                   variant={liked === true ? "default" : "outline"}
                   className={cn(
-                    "w-12 h-12 rounded-full",
+                    "w-10 h-10 rounded-full",
                     liked === true
                       ? "bg-green-500 text-white hover:bg-green-600"
                       : "border-green-500 text-green-500 hover:bg-green-50"
