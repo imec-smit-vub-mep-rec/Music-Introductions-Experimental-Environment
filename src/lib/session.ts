@@ -228,6 +228,19 @@ export function saveSession(session: SessionData): void {
   }
 }
 
+// Serialized sync queue to ensure ordered, non-overlapping remote writes
+let syncQueue: Promise<void> = Promise.resolve();
+let lastSyncError: unknown = null;
+
+function enqueueSync(task: () => Promise<void>) {
+  syncQueue = syncQueue
+    .then(task)
+    .catch(err => {
+      lastSyncError = err;
+    });
+  return syncQueue;
+}
+
 export function updateSessionGenre(genre: string): void {
   const session = getSession();
   if (session) {
@@ -760,25 +773,38 @@ export async function syncSessionToRemote(): Promise<void> {
     return;
   }
 
-  try {
-    const response = await fetch('/api/session/sync', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(session),
-    });
+  // Create an immutable snapshot to avoid mid-flight mutations
+  const payload = JSON.parse(JSON.stringify(session));
 
-    if (!response.ok) {
-      throw new Error(`Sync failed: ${response.statusText}`);
+  return enqueueSync(async () => {
+    try {
+      const response = await fetch('/api/session/sync', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+        // Helps complete syncs during rapid navigations/unloads
+        keepalive: true,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Sync failed: ${response.status} ${response.statusText}`);
+      }
+
+      console.log('✅ SESSION SYNCED TO REMOTE:', {
+        session_id: payload.session_id,
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      // Network aborts during rapid navigation often surface as TypeError: Failed to fetch
+      if (message.includes('Failed to fetch')) {
+        console.warn('⚠️ REMOTE SYNC ABORTED (navigation/change in-flight). Data is saved locally and will retry on next sync.');
+        return; // swallow non-fatal aborts
+      }
+      console.error('❌ REMOTE SYNC FAILED:', error);
+      // Session is still saved locally; allow next sync to proceed without throwing
     }
-
-    console.log('✅ SESSION SYNCED TO REMOTE:', {
-      session_id: session.session_id,
-      timestamp: new Date().toISOString()
-    });
-  } catch (error) {
-    console.error('❌ REMOTE SYNC FAILED:', error);
-    // Session is still saved locally, so user experience isn't affected
-  }
+  });
 }

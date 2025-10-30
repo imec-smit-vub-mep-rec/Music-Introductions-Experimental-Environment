@@ -32,9 +32,11 @@ export default function ExperimentPage() {
     getCurrentSongNumber,
     isLastSong,
     saveSongAnswers,
+    saveSongAnswer,
     trackSongSkip,
     trackSongCompletion,
     clearResponses,
+    getCurrentSongAnswers,
   } = useExperiment();
 
   // Get session for engagement tracking
@@ -150,16 +152,12 @@ export default function ExperimentPage() {
           <SurveyScreen
             key={`survey-${currentSongIndex}`} // Force re-render for each song
             survey={experimentConfig.surveys.postListening}
-            responses={responses}
-            onAnswer={setLocalResponse}
+            responses={{ ...getCurrentSongAnswers(), ...responses }}
+            onAnswer={saveSongAnswer}
             onNext={() => {
-              // Save song answers before moving to next step
-              saveSongAnswers(responses);
-              
-              // Clear responses so the next song survey starts blank
+              // Persist using the session as source of truth
+              saveSongAnswers();
               clearResponses();
-              
-              // Move to next step
               nextStep();
             }}
             onBack={prevStep}

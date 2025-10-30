@@ -119,7 +119,8 @@ export function SurveyScreen({
       setCurrentBlockIndex(currentBlockIndex + 1);
       setCurrentQuestionIndex(0);
     } else {
-      onNext();
+      // Defer to allow any last onAnswer state updates to flush before submit
+      setTimeout(() => onNext(), 0);
     }
   };
 

@@ -369,6 +369,8 @@ export function useExperiment() {
     }));
   }, []);
 
+  
+
   const selectGenre = useCallback((genreId: string) => {
     // Randomize songs and introductions for this genre
     const songs = getSongsByGenre(genreId);
@@ -458,6 +460,40 @@ export function useExperiment() {
     return state.randomizedIntroductions[state.currentSongIndex] as 'no_introduction' | 'informative_introduction' | 'immersive_introduction';
   }, [state.randomizedIntroductions, state.currentSongIndex]);
 
+  const getCurrentSongAnswers = useCallback((): Record<string, AnswerValue> => {
+    const currentSession = getCurrentSession();
+    const current = getCurrentSong();
+    if (!currentSession || !current) return {};
+    const idx = currentSession.answers.songs.findIndex(s => s.songId === current.id);
+    return idx !== -1 ? (currentSession.answers.songs[idx].answers || {}) : {};
+  }, [getCurrentSession, getCurrentSong]);
+
+  const saveSongAnswer = useCallback((questionId: string, answer: AnswerValue) => {
+    const currentSession = getCurrentSession();
+    const current = getCurrentSong();
+    if (!currentSession || !current) return;
+    // Update local UI state immediately for visual selection
+    setState(prev => ({
+      ...prev,
+      responses: {
+        ...prev.responses,
+        [questionId]: answer,
+      },
+    }));
+    const sessionNow = getCurrentSession();
+    if (!sessionNow) return;
+    const idx = sessionNow.answers.songs.findIndex(s => s.songId === current.id);
+    const prevAnswers = idx !== -1 ? (sessionNow.answers.songs[idx].answers || {}) : {};
+    updateSongSession(current.id, {
+      answers: {
+        ...prevAnswers,
+        [questionId]: answer,
+      }
+    });
+    // Do not sync on every keystroke/selection to avoid DB flooding.
+    // Sync happens on survey submit (saveSongAnswers) and on step changes.
+  }, [getCurrentSession, getCurrentSong, safeSyncSession]);
+
   const getCurrentSongNumber = useCallback(() => {
     return state.currentSongIndex + 1;
   }, [state.currentSongIndex]);
@@ -502,7 +538,7 @@ export function useExperiment() {
     }));
   }, []);
 
-  const saveSongAnswers = useCallback((answers: Record<string, AnswerValue>) => {
+  const saveSongAnswers = useCallback(() => {
     const currentSession = getCurrentSession();
     if (!currentSession || !state.selectedGenre) {
       console.warn('⚠️ COULD NOT SAVE SONG ANSWERS: NO SESSION OR GENRE FOUND');
@@ -512,20 +548,20 @@ export function useExperiment() {
     const currentSong = getCurrentSong();
     if (!currentSong) return;
     
+    // Read the authoritative answers from the session to avoid stale state
+    const sessionNow = getCurrentSession();
+    const idx = sessionNow?.answers.songs.findIndex(s => s.songId === currentSong.id) ?? -1;
+    const finalAnswers = idx !== -1 ? (sessionNow!.answers.songs[idx].answers || {}) : {};
+
     console.log('📊 SONG SURVEY ANSWERS SAVED:', {
       session_id: currentSession.session_id,
       song_id: currentSong.id,
       song_title: currentSong.title,
       introduction_style: getCurrentIntroductionStyle(),
-      answers: answers,
-      answers_count: Object.keys(answers).length,
+      answers: finalAnswers,
+      answers_count: Object.keys(finalAnswers).length,
       song_number: state.currentSongIndex + 1,
       timestamp: new Date().toISOString()
-    });
-    
-    // Update the existing song session with the survey answers
-    updateSongSession(currentSong.id, {
-      answers
     });
 
     // Check if experiment is now complete
@@ -533,7 +569,7 @@ export function useExperiment() {
 
     // Sync to remote database after saving song answers
     safeSyncSession();
-  }, [getCurrentSession, state.selectedGenre, getCurrentSong, getCurrentIntroductionStyle, state.currentSongIndex]);
+  }, [getCurrentSession, state.selectedGenre, getCurrentSong, getCurrentIntroductionStyle, state.currentSongIndex, updateExperimentCompletionStatus, safeSyncSession]);
 
   const trackSongSkip = useCallback((skippedAtMs: number) => {
     const currentSession = getCurrentSession();
@@ -688,6 +724,8 @@ export function useExperiment() {
     // Responses
     saveResponse,
     saveSongAnswers,
+    saveSongAnswer,
+    getCurrentSongAnswers,
     clearResponses,
     setLocalResponse,
     clearAllSurveyData,
