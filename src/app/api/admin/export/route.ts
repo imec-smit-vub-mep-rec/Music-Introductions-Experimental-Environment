@@ -8,6 +8,7 @@ type SessionRow = {
   session_id: number;
   group_type: string;
   chosen_genre: string | null;
+  referer: string | null;
   start_time: string;
   onboarding_answers: unknown;
   demographics_answers: unknown;
@@ -107,6 +108,7 @@ export async function GET(request: NextRequest) {
         session_id,
         group_type,
         chosen_genre,
+        referer,
         start_time,
         onboarding_answers,
         demographics_answers,
@@ -256,6 +258,7 @@ export async function GET(request: NextRequest) {
         session_id: session.session_id,
         group_type: session.group_type,
         chosen_genre: session.chosen_genre,
+        referer: session.referer || "",
         start_time: new Date(session.start_time).toLocaleString(),
         qualtrics_response_id: session.qualtrics_response_id || "",
         created_at: new Date(session.created_at).toLocaleString(),
