@@ -4204,6 +4204,23 @@
             "placeholder": "Please enter your response..."
           }
         ]
+      },
+      {
+        "id": "BL_73ra_1",
+        "title": "Raffle",
+        "description": "Collection of contact information for the prize drawing (optional)",
+        "questions": [
+          {
+            "id": "73_pl_ra_1",
+            "text": "Can we contact you for a raffle prize? If so, please enter your email address.",
+            "type": "textInput",
+            "required": false,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Raffle contact",
+            "placeholder": "Please enter your email address..."
+          }
+        ]
       }
     ],
     "randomizeBlocks": false
