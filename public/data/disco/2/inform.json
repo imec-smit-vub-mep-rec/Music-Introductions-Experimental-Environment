@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "title": "Kopie van love_n_inform",
-    "exportDate": "2025-10-28T09:34:13.182Z",
+    "title": "love_inform3",
+    "exportDate": "2025-10-30T18:10:09.845Z",
     "totalSubtitles": 9,
-    "totalWords": 109
+    "totalWords": 110
   },
   "subtitles": [
     {
@@ -11,115 +11,115 @@
       "text": "When  Neil  Bogart,  head  of  Casablanca  Records, heard  Donna  Summer's  Love  to  Love  You  Baby,",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4d79",
+          "id": "69039e7a6e244a1633d05753",
           "text": "When ",
-          "start": 0.2,
-          "end": 0.64,
+          "start": 0.16,
+          "end": 0.52,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7a",
+          "id": "69039e7a6e244a1633d05754",
           "text": "Neil ",
-          "start": 0.64,
-          "end": 0.92,
+          "start": 0.52,
+          "end": 0.88,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7b",
+          "id": "69039e7a6e244a1633d05755",
           "text": "Bogart, ",
-          "start": 0.96,
+          "start": 0.92,
           "end": 1.56,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7c",
+          "id": "69039e7a6e244a1633d05756",
           "text": "head ",
-          "start": 1.6,
-          "end": 1.88,
+          "start": 1.68,
+          "end": 2.16,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7d",
+          "id": "69039e7a6e244a1633d05757",
           "text": "of ",
-          "start": 1.88,
-          "end": 2.04,
+          "start": 2.16,
+          "end": 2.36,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7e",
+          "id": "69039e7a6e244a1633d05758",
           "text": "Casablanca ",
-          "start": 2.08,
-          "end": 2.84,
+          "start": 2.4,
+          "end": 3.08,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d7f",
+          "id": "69039e7a6e244a1633d05759",
           "text": "Records,",
-          "start": 2.84,
-          "end": 3.4,
+          "start": 3.08,
+          "end": 3.84,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d80",
+          "id": "69039e7a6e244a1633d0575a",
           "text": "heard ",
-          "start": 3.4,
-          "end": 3.72,
+          "start": 3.84,
+          "end": 4.2,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d81",
+          "id": "69039e7a6e244a1633d0575b",
           "text": "Donna ",
-          "start": 3.72,
-          "end": 4.08,
+          "start": 4.2,
+          "end": 4.6,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d82",
+          "id": "69039e7a6e244a1633d0575c",
           "text": "Summer's ",
-          "start": 4.12,
-          "end": 4.68,
+          "start": 4.64,
+          "end": 5.2,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d83",
+          "id": "69039e7a6e244a1633d0575d",
           "text": "Love ",
-          "start": 4.68,
-          "end": 5,
+          "start": 5.2,
+          "end": 5.68,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d84",
+          "id": "69039e7a6e244a1633d0575e",
           "text": "to ",
-          "start": 5,
-          "end": 5.08,
+          "start": 5.68,
+          "end": 5.84,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d85",
+          "id": "69039e7a6e244a1633d0575f",
           "text": "Love ",
-          "start": 5.12,
-          "end": 5.44,
+          "start": 5.88,
+          "end": 6.16,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d86",
+          "id": "69039e7a6e244a1633d05760",
           "text": "You ",
-          "start": 5.44,
-          "end": 5.6,
+          "start": 6.16,
+          "end": 6.32,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d87",
+          "id": "69039e7a6e244a1633d05761",
           "text": "Baby,",
-          "start": 5.6,
-          "end": 6.04,
+          "start": 6.32,
+          "end": 6.92,
           "line": 1
         }
       ],
       "timing": {
-        "start": 0.2,
-        "end": 6.04,
-        "duration": 5.84
+        "start": 0.16,
+        "end": 6.92,
+        "duration": 6.76
       },
       "speaker": {
         "id": 1,
@@ -131,73 +131,73 @@
       "text": "he  quite  literally  could  not  get  enough  of  it.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4d88",
+          "id": "69039e7a6e244a1633d05762",
           "text": "he ",
-          "start": 6.16,
-          "end": 6.48,
+          "start": 7.16,
+          "end": 7.44,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d89",
+          "id": "69039e7a6e244a1633d05763",
           "text": "quite ",
-          "start": 6.48,
-          "end": 6.72,
+          "start": 7.44,
+          "end": 7.8,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d8a",
+          "id": "69039e7a6e244a1633d05764",
           "text": "literally ",
-          "start": 6.76,
-          "end": 7.32,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d8b",
-          "text": "could ",
-          "start": 7.32,
-          "end": 7.52,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d8c",
-          "text": "not ",
-          "start": 7.52,
-          "end": 7.72,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d8d",
-          "text": "get ",
-          "start": 7.72,
-          "end": 8,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d8e",
-          "text": "enough ",
-          "start": 8,
+          "start": 7.8,
           "end": 8.4,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d8f",
-          "text": "of ",
+          "id": "69039e7a6e244a1633d05765",
+          "text": "could ",
           "start": 8.4,
-          "end": 8.68,
+          "end": 8.64,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d90",
+          "id": "69039e7a6e244a1633d05766",
+          "text": "not ",
+          "start": 8.64,
+          "end": 9,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d05767",
+          "text": "get ",
+          "start": 9,
+          "end": 9.36,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d05768",
+          "text": "enough ",
+          "start": 9.36,
+          "end": 9.72,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d05769",
+          "text": "of ",
+          "start": 9.72,
+          "end": 9.88,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d0576a",
           "text": "it.",
-          "start": 8.68,
-          "end": 8.92,
+          "start": 9.88,
+          "end": 10.2,
           "line": 0
         }
       ],
       "timing": {
-        "start": 6.16,
-        "end": 8.92,
-        "duration": 2.76
+        "start": 7.16,
+        "end": 10.2,
+        "duration": 3.039999999999999
       },
       "speaker": {
         "id": 1,
@@ -206,111 +206,111 @@
     },
     {
       "id": 2,
-      "text": "One  night  during  a  party  at  his  Beverly  Hills  mansion,  he  played  the  track.",
+      "text": "One  night  during  a  party  at  his  Beverly Hills  mansion,  he  played  the  track,",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4d91",
+          "id": "69039e7a6e244a1633d0576b",
           "text": "One ",
-          "start": 9.04,
-          "end": 9.44,
+          "start": 10.56,
+          "end": 10.92,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d92",
+          "id": "69039e7a6e244a1633d0576c",
           "text": "night ",
-          "start": 9.44,
-          "end": 9.72,
+          "start": 10.92,
+          "end": 11.32,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d93",
+          "id": "69039e7a6e244a1633d0576d",
           "text": "during ",
-          "start": 9.72,
-          "end": 10.12,
+          "start": 11.32,
+          "end": 11.68,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d94",
+          "id": "69039e7a6e244a1633d0576e",
           "text": "a ",
-          "start": 10.12,
-          "end": 10.28,
+          "start": 11.68,
+          "end": 11.8,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d95",
+          "id": "69039e7a6e244a1633d0576f",
           "text": "party ",
-          "start": 10.28,
-          "end": 10.64,
+          "start": 11.8,
+          "end": 12.2,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d96",
+          "id": "69039e7a6e244a1633d05770",
           "text": "at ",
-          "start": 10.64,
-          "end": 10.8,
+          "start": 12.2,
+          "end": 12.36,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d97",
+          "id": "69039e7a6e244a1633d05771",
           "text": "his ",
-          "start": 10.8,
-          "end": 11.04,
+          "start": 12.36,
+          "end": 12.56,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d98",
-          "text": "Beverly ",
-          "start": 11.04,
-          "end": 11.44,
-          "line": 1
+          "id": "69039e7a6e244a1633d05772",
+          "text": "Beverly",
+          "start": 12.56,
+          "end": 12.96,
+          "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d99",
+          "id": "69039e7a6e244a1633d05773",
           "text": "Hills ",
-          "start": 11.48,
-          "end": 11.88,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d9a",
-          "text": "mansion, ",
-          "start": 11.88,
-          "end": 12.48,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d9b",
-          "text": "he ",
-          "start": 12.52,
-          "end": 12.68,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d9c",
-          "text": "played ",
-          "start": 12.68,
-          "end": 13,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4d9d",
-          "text": "the ",
           "start": 13,
-          "end": 13.24,
+          "end": 13.28,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4d9e",
-          "text": "track.",
-          "start": 13.24,
-          "end": 13.84,
+          "id": "69039e7a6e244a1633d05774",
+          "text": "mansion, ",
+          "start": 13.28,
+          "end": 14,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d05775",
+          "text": "he ",
+          "start": 14.16,
+          "end": 14.4,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d05776",
+          "text": "played ",
+          "start": 14.4,
+          "end": 14.84,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d05777",
+          "text": "the ",
+          "start": 14.84,
+          "end": 14.96,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d05778",
+          "text": "track,",
+          "start": 14.96,
+          "end": 15.6,
           "line": 1
         }
       ],
       "timing": {
-        "start": 9.04,
-        "end": 13.84,
-        "duration": 4.800000000000001
+        "start": 10.56,
+        "end": 15.6,
+        "duration": 5.039999999999999
       },
       "speaker": {
         "id": 1,
@@ -319,69 +319,69 @@
     },
     {
       "id": 3,
-      "text": "The  atmosphere  grew  hotter, the  guests  more  uninhibited.",
+      "text": "the  atmosphere  grew  hotter, the  guests  more  uninhibited.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4d9f",
-          "text": "The ",
-          "start": 13.96,
-          "end": 14.08,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4da0",
-          "text": "atmosphere ",
-          "start": 14.08,
-          "end": 14.68,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4da1",
-          "text": "grew ",
-          "start": 14.72,
-          "end": 15,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4da2",
-          "text": "hotter,",
-          "start": 15.04,
-          "end": 15.72,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4da3",
+          "id": "69039e7a6e244a1633d05779",
           "text": "the ",
-          "start": 15.84,
-          "end": 16,
+          "start": 15.72,
+          "end": 15.88,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d0577a",
+          "text": "atmosphere ",
+          "start": 15.88,
+          "end": 16.36,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d0577b",
+          "text": "grew ",
+          "start": 16.4,
+          "end": 16.68,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d0577c",
+          "text": "hotter,",
+          "start": 16.72,
+          "end": 17.4,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d0577d",
+          "text": "the ",
+          "start": 17.68,
+          "end": 17.76,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4da4",
+          "id": "69039e7a6e244a1633d0577e",
           "text": "guests ",
-          "start": 16.04,
-          "end": 16.48,
+          "start": 17.8,
+          "end": 18.28,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4da5",
+          "id": "69039e7a6e244a1633d0577f",
           "text": "more ",
-          "start": 16.48,
-          "end": 16.8,
+          "start": 18.28,
+          "end": 18.76,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4da6",
+          "id": "69039e7a6e244a1633d05780",
           "text": "uninhibited.",
-          "start": 16.8,
-          "end": 17.92,
+          "start": 18.76,
+          "end": 19.84,
           "line": 1
         }
       ],
       "timing": {
-        "start": 13.96,
-        "end": 17.92,
-        "duration": 3.960000000000001
+        "start": 15.72,
+        "end": 19.84,
+        "duration": 4.119999999999999
       },
       "speaker": {
         "id": 1,
@@ -390,139 +390,139 @@
     },
     {
       "id": 4,
-      "text": "The  only  problem  was  that  some  naked  person always  had  to  get  up  and  start  the  song  again,",
+      "text": "The  only  problem  was  that  some  naked  person always  had  to  get  up  and  start  the  song  again",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4da7",
+          "id": "69039e7a6e244a1633d05781",
           "text": "The ",
-          "start": 18.04,
-          "end": 18.24,
+          "start": 20.16,
+          "end": 20.36,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4da8",
+          "id": "69039e7a6e244a1633d05782",
           "text": "only ",
-          "start": 18.24,
-          "end": 18.56,
+          "start": 20.36,
+          "end": 20.64,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4da9",
+          "id": "69039e7a6e244a1633d05783",
           "text": "problem ",
-          "start": 18.56,
-          "end": 19.24,
+          "start": 20.64,
+          "end": 21.4,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4daa",
+          "id": "69039e7a6e244a1633d05784",
           "text": "was ",
-          "start": 19.24,
-          "end": 19.48,
+          "start": 21.4,
+          "end": 21.64,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dab",
+          "id": "69039e7a6e244a1633d05785",
           "text": "that ",
-          "start": 19.48,
-          "end": 19.72,
+          "start": 21.64,
+          "end": 22.16,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dac",
+          "id": "69039e7a6e244a1633d05786",
           "text": "some ",
-          "start": 19.72,
-          "end": 20.04,
+          "start": 22.16,
+          "end": 22.52,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dad",
+          "id": "69039e7a6e244a1633d05787",
           "text": "naked ",
-          "start": 20.04,
-          "end": 20.44,
+          "start": 22.52,
+          "end": 22.84,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dae",
+          "id": "69039e7a6e244a1633d05788",
           "text": "person",
-          "start": 20.44,
-          "end": 21.16,
+          "start": 22.84,
+          "end": 23.32,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4daf",
+          "id": "69039e7a6e244a1633d05789",
           "text": "always ",
-          "start": 21.16,
-          "end": 21.6,
+          "start": 23.32,
+          "end": 23.76,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db0",
+          "id": "69039e7a6e244a1633d0578a",
           "text": "had ",
-          "start": 21.6,
-          "end": 21.84,
+          "start": 23.76,
+          "end": 24,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db1",
+          "id": "69039e7a6e244a1633d0578b",
           "text": "to ",
-          "start": 21.84,
-          "end": 22,
+          "start": 24,
+          "end": 24.12,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db2",
+          "id": "69039e7a6e244a1633d0578c",
           "text": "get ",
-          "start": 22,
-          "end": 22.2,
+          "start": 24.16,
+          "end": 24.32,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db3",
+          "id": "69039e7a6e244a1633d0578d",
           "text": "up ",
-          "start": 22.2,
-          "end": 22.44,
+          "start": 24.32,
+          "end": 24.52,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db4",
+          "id": "69039e7a6e244a1633d0578e",
           "text": "and ",
-          "start": 22.44,
-          "end": 22.64,
+          "start": 24.52,
+          "end": 24.72,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db5",
+          "id": "69039e7a6e244a1633d0578f",
           "text": "start ",
-          "start": 22.64,
-          "end": 22.96,
+          "start": 24.72,
+          "end": 25.08,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db6",
+          "id": "69039e7a6e244a1633d05790",
           "text": "the ",
-          "start": 22.96,
-          "end": 23.2,
+          "start": 25.08,
+          "end": 25.2,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db7",
+          "id": "69039e7a6e244a1633d05791",
           "text": "song ",
-          "start": 23.2,
-          "end": 23.44,
+          "start": 25.2,
+          "end": 25.44,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4db8",
-          "text": "again,",
-          "start": 23.48,
-          "end": 23.72,
+          "id": "69039e7a6e244a1633d05792",
+          "text": "again",
+          "start": 25.48,
+          "end": 25.64,
           "line": 1
         }
       ],
       "timing": {
-        "start": 18.04,
-        "end": 23.72,
-        "duration": 5.68
+        "start": 20.16,
+        "end": 25.64,
+        "duration": 5.48
       },
       "speaker": {
         "id": 1,
@@ -531,62 +531,69 @@
     },
     {
       "id": 5,
-      "text": "when it  reached  the  end  of  its three and half  minutes.",
+      "text": "when  it  reached  the  end  of  its three-and-a-half  minutes.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4db9",
-          "text": "when it ",
-          "start": 23.84,
-          "end": 24.08,
+          "id": "69039e7a6e244a1633d05793",
+          "text": "when ",
+          "start": 25.76,
+          "end": 25.92,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dbb",
+          "id": "69039e7a6e244a1633d05794",
+          "text": "it ",
+          "start": 25.92,
+          "end": 26.04,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d05795",
           "text": "reached ",
-          "start": 24.28,
-          "end": 24.6,
+          "start": 26.08,
+          "end": 26.44,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dbc",
+          "id": "69039e7a6e244a1633d05796",
           "text": "the ",
-          "start": 24.6,
-          "end": 24.84,
+          "start": 26.44,
+          "end": 26.64,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dbd",
+          "id": "69039e7a6e244a1633d05797",
           "text": "end ",
-          "start": 24.84,
-          "end": 25.08,
+          "start": 26.64,
+          "end": 26.88,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dbe",
+          "id": "69039e7a6e244a1633d05798",
           "text": "of ",
-          "start": 25.08,
-          "end": 25.2,
+          "start": 26.88,
+          "end": 27,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dbf",
-          "text": "its three and half ",
-          "start": 25.2,
-          "end": 25.36,
+          "id": "69039e7a6e244a1633d05799",
+          "text": "its three-and-a-half ",
+          "start": 27,
+          "end": 27.2,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc1",
+          "id": "69039e7a6e244a1633d0579b",
           "text": "minutes.",
-          "start": 26.16,
-          "end": 26.96,
+          "start": 27.84,
+          "end": 28.48,
           "line": 1
         }
       ],
       "timing": {
-        "start": 23.84,
-        "end": 26.96,
-        "duration": 3.120000000000001
+        "start": 25.76,
+        "end": 28.48,
+        "duration": 2.719999999999999
       },
       "speaker": {
         "id": 1,
@@ -595,132 +602,132 @@
     },
     {
       "id": 6,
-      "text": "So  Bogart  called  Giorgio  Moroder,  the  producer in  the  middle  of  the  night  with  a  simple  order.",
+      "text": "So  Bogart  called  Giorgio  Moroder,  the  producer, in  the  middle  of  the  night  with  a  simple  order.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4dc2",
+          "id": "69039e7a6e244a1633d0579c",
           "text": "So ",
-          "start": 27.2,
-          "end": 27.76,
+          "start": 28.76,
+          "end": 29.04,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc3",
+          "id": "69039e7a6e244a1633d0579d",
           "text": "Bogart ",
-          "start": 27.8,
-          "end": 28.24,
+          "start": 29.04,
+          "end": 29.44,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc4",
+          "id": "69039e7a6e244a1633d0579e",
           "text": "called ",
-          "start": 28.24,
-          "end": 28.64,
+          "start": 29.44,
+          "end": 29.84,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc5",
+          "id": "69039e7a6e244a1633d0579f",
           "text": "Giorgio ",
-          "start": 28.64,
-          "end": 29.32,
+          "start": 29.84,
+          "end": 30.32,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc6",
+          "id": "69039e7a6e244a1633d057a0",
           "text": "Moroder, ",
-          "start": 29.36,
-          "end": 29.88,
+          "start": 30.32,
+          "end": 30.96,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc7",
+          "id": "69039e7a6e244a1633d057a1",
           "text": "the ",
-          "start": 29.88,
-          "end": 30,
+          "start": 31.16,
+          "end": 31.28,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc8",
-          "text": "producer",
-          "start": 30,
-          "end": 30.88,
+          "id": "69039e7a6e244a1633d057a2",
+          "text": "producer,",
+          "start": 31.28,
+          "end": 31.88,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dc9",
+          "id": "69039e7a6e244a1633d057a3",
           "text": "in ",
-          "start": 30.88,
-          "end": 31.08,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dca",
-          "text": "the ",
-          "start": 31.08,
-          "end": 31.2,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dcb",
-          "text": "middle ",
-          "start": 31.2,
-          "end": 31.44,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dcc",
-          "text": "of ",
-          "start": 31.44,
-          "end": 31.6,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dcd",
-          "text": "the ",
-          "start": 31.6,
-          "end": 31.72,
-          "line": 1
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dce",
-          "text": "night ",
-          "start": 31.72,
+          "start": 31.88,
           "end": 32.04,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dcf",
-          "text": "with ",
+          "id": "69039e7a6e244a1633d057a4",
+          "text": "the ",
           "start": 32.04,
-          "end": 32.32,
+          "end": 32.16,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd0",
-          "text": "a ",
-          "start": 32.32,
+          "id": "69039e7a6e244a1633d057a5",
+          "text": "middle ",
+          "start": 32.16,
           "end": 32.48,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd1",
-          "text": "simple ",
+          "id": "69039e7a6e244a1633d057a6",
+          "text": "of ",
           "start": 32.48,
-          "end": 33.04,
+          "end": 32.64,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd2",
+          "id": "69039e7a6e244a1633d057a7",
+          "text": "the ",
+          "start": 32.64,
+          "end": 32.76,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d057a8",
+          "text": "night ",
+          "start": 32.76,
+          "end": 33.36,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d057a9",
+          "text": "with ",
+          "start": 33.36,
+          "end": 33.6,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d057aa",
+          "text": "a ",
+          "start": 33.6,
+          "end": 33.72,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d057ab",
+          "text": "simple ",
+          "start": 33.72,
+          "end": 34.08,
+          "line": 1
+        },
+        {
+          "id": "69039e7a6e244a1633d057ac",
           "text": "order.",
-          "start": 33.08,
-          "end": 33.64,
+          "start": 34.08,
+          "end": 34.64,
           "line": 1
         }
       ],
       "timing": {
-        "start": 27.2,
-        "end": 33.64,
-        "duration": 6.440000000000001
+        "start": 28.76,
+        "end": 34.64,
+        "duration": 5.879999999999999
       },
       "speaker": {
         "id": 1,
@@ -732,31 +739,31 @@
       "text": "Make  it  longer.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4dd3",
+          "id": "69039e7a6e244a1633d057ad",
           "text": "Make ",
-          "start": 33.88,
-          "end": 34.28,
+          "start": 34.88,
+          "end": 35.36,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd4",
+          "id": "69039e7a6e244a1633d057ae",
           "text": "it ",
-          "start": 34.28,
-          "end": 34.48,
+          "start": 35.36,
+          "end": 35.64,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd5",
+          "id": "69039e7a6e244a1633d057af",
           "text": "longer.",
-          "start": 34.48,
-          "end": 35.2,
+          "start": 35.64,
+          "end": 36.36,
           "line": 0
         }
       ],
       "timing": {
-        "start": 33.88,
-        "end": 35.2,
-        "duration": 1.3200000000000003
+        "start": 34.88,
+        "end": 36.36,
+        "duration": 1.4799999999999969
       },
       "speaker": {
         "id": 1,
@@ -768,136 +775,136 @@
       "text": "The  result  was  a  17  minute  masterpiece,  an  ode to  intimacy  and  a  critique  of  three  minute  sex.",
       "words": [
         {
-          "id": "69008d32a2c7ac3fd2da4dd6",
+          "id": "69039e7a6e244a1633d057b0",
           "text": "The ",
-          "start": 35.96,
-          "end": 36.12,
-          "line": 0
-        },
-        {
-          "id": "69008d32a2c7ac3fd2da4dd7",
-          "text": "result ",
-          "start": 36.12,
+          "start": 36.68,
           "end": 36.84,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd8",
+          "id": "69039e7a6e244a1633d057b1",
+          "text": "result ",
+          "start": 36.84,
+          "end": 37.24,
+          "line": 0
+        },
+        {
+          "id": "69039e7a6e244a1633d057b2",
           "text": "was ",
-          "start": 36.88,
-          "end": 37.16,
+          "start": 37.24,
+          "end": 37.48,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dd9",
+          "id": "69039e7a6e244a1633d057b3",
           "text": "a ",
-          "start": 37.16,
-          "end": 37.28,
+          "start": 37.48,
+          "end": 37.6,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dda",
+          "id": "69039e7a6e244a1633d057b4",
           "text": "17 ",
-          "start": 37.28,
-          "end": 37.78,
+          "start": 37.6,
+          "end": 38,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4ddb",
+          "id": "69039e7a6e244a1633d057b5",
           "text": "minute ",
-          "start": 37.78,
-          "end": 38.28,
+          "start": 38,
+          "end": 38.4,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4ddc",
+          "id": "69039e7a6e244a1633d057b6",
           "text": "masterpiece, ",
-          "start": 38.28,
-          "end": 39.4,
+          "start": 38.4,
+          "end": 39.32,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4ddd",
+          "id": "69039e7a6e244a1633d057b7",
           "text": "an ",
-          "start": 39.4,
-          "end": 39.8,
+          "start": 39.52,
+          "end": 39.88,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4dde",
+          "id": "69039e7a6e244a1633d057b8",
           "text": "ode",
-          "start": 39.84,
-          "end": 40.08,
+          "start": 39.88,
+          "end": 40.12,
           "line": 0
         },
         {
-          "id": "69008d32a2c7ac3fd2da4ddf",
+          "id": "69039e7a6e244a1633d057b9",
           "text": "to ",
-          "start": 40.08,
+          "start": 40.12,
           "end": 40.24,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de0",
+          "id": "69039e7a6e244a1633d057ba",
           "text": "intimacy ",
           "start": 40.28,
-          "end": 41.12,
+          "end": 41.2,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de1",
+          "id": "69039e7a6e244a1633d057bb",
           "text": "and ",
-          "start": 41.28,
-          "end": 41.64,
+          "start": 41.2,
+          "end": 41.36,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de2",
+          "id": "69039e7a6e244a1633d057bc",
           "text": "a ",
-          "start": 41.64,
-          "end": 41.76,
+          "start": 41.36,
+          "end": 41.48,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de3",
+          "id": "69039e7a6e244a1633d057bd",
           "text": "critique ",
-          "start": 41.76,
-          "end": 42.44,
+          "start": 41.48,
+          "end": 41.92,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de4",
+          "id": "69039e7a6e244a1633d057be",
           "text": "of ",
-          "start": 42.44,
-          "end": 42.68,
+          "start": 41.92,
+          "end": 42.12,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de5",
+          "id": "69039e7a6e244a1633d057bf",
           "text": "three ",
-          "start": 42.68,
-          "end": 43.12,
+          "start": 42.12,
+          "end": 42.5,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de6",
+          "id": "69039e7a6e244a1633d057c0",
           "text": "minute ",
-          "start": 43.12,
-          "end": 43.56,
+          "start": 42.5,
+          "end": 42.88,
           "line": 1
         },
         {
-          "id": "69008d32a2c7ac3fd2da4de7",
+          "id": "69039e7a6e244a1633d057c1",
           "text": "sex.",
-          "start": 43.56,
-          "end": 44.16,
+          "start": 42.88,
+          "end": 43.28,
           "line": 1
         }
       ],
       "timing": {
-        "start": 35.96,
-        "end": 44.16,
-        "duration": 8.199999999999996
+        "start": 36.68,
+        "end": 43.28,
+        "duration": 6.600000000000001
       },
       "speaker": {
         "id": 1,

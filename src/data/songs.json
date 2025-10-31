@@ -53,8 +53,8 @@
       "artist": "Bronski Beat",
       "genre": "disco",
       "audioUrl": "/data/disco/1/song.m4a",
-      "informIntroductionUrl": "/data/disco/1/inform.m4a",
-      "immersIntroductionUrl": "/data/disco/1/immers.m4a"
+      "informIntroductionUrl": "/data/disco/1/inform.wav",
+      "immersIntroductionUrl": "/data/disco/1/immers.wav"
     },
     {
       "id": "disco_2",
@@ -62,8 +62,8 @@
       "artist": "Donna Summer",
       "genre": "disco",
       "audioUrl": "/data/disco/2/song.m4a",
-      "informIntroductionUrl": "/data/disco/2/inform.m4a",
-      "immersIntroductionUrl": "/data/disco/2/immers.m4a"
+      "informIntroductionUrl": "/data/disco/2/inform.wav",
+      "immersIntroductionUrl": "/data/disco/2/immers.wav"
     },
     {
       "id": "disco_3",
@@ -134,8 +134,8 @@
       "artist": "Etta James",
       "genre": "blues",
       "audioUrl": "/data/blues/1/song.m4a",
-      "informIntroductionUrl": "/data/blues/1/inform.m4a",
-      "immersIntroductionUrl": "/data/blues/1/immers.m4a"
+      "informIntroductionUrl": "/data/blues/1/inform.wav",
+      "immersIntroductionUrl": "/data/blues/1/immers.wav"
     },
     {
       "id": "blues_2",

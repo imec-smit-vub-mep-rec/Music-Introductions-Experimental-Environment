@@ -1,76 +1,69 @@
 {
   "metadata": {
-    "title": "Kopie van love_n_immers",
-    "exportDate": "2025-10-28T09:25:44.363Z",
-    "totalSubtitles": 13,
+    "title": "love_immers3",
+    "exportDate": "2025-10-30T14:14:42.840Z",
+    "totalSubtitles": 11,
     "totalWords": 98
   },
   "subtitles": [
     {
       "id": 0,
-      "text": "You  are  home,  sitting  next  to  your  crush.",
+      "text": "You're  home,  sitting  next  to  your  crush.",
       "words": [
         {
-          "id": "69008b0c652063879214dd4e",
-          "text": "You ",
-          "start": 0.2,
-          "end": 0.6,
+          "id": "69037213fa723f74f18af71d",
+          "text": "You're ",
+          "start": 0.16,
+          "end": 0.56,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd4f",
-          "text": "are ",
-          "start": 0.6,
-          "end": 0.84,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd50",
+          "id": "69037213fa723f74f18af71e",
           "text": "home, ",
-          "start": 0.84,
-          "end": 1.36,
+          "start": 0.56,
+          "end": 1.12,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd51",
+          "id": "69037213fa723f74f18af71f",
           "text": "sitting ",
-          "start": 1.36,
-          "end": 1.76,
+          "start": 1.6,
+          "end": 2,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd52",
+          "id": "69037213fa723f74f18af720",
           "text": "next ",
-          "start": 1.76,
-          "end": 2.12,
+          "start": 2,
+          "end": 2.32,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd53",
+          "id": "69037213fa723f74f18af721",
           "text": "to ",
-          "start": 2.12,
-          "end": 2.24,
+          "start": 2.32,
+          "end": 2.44,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd54",
+          "id": "69037213fa723f74f18af722",
           "text": "your ",
-          "start": 2.28,
-          "end": 2.56,
+          "start": 2.48,
+          "end": 2.68,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd55",
+          "id": "69037213fa723f74f18af723",
           "text": "crush.",
-          "start": 2.56,
-          "end": 3.2,
+          "start": 2.68,
+          "end": 3.24,
           "line": 0
         }
       ],
       "timing": {
-        "start": 0.2,
-        "end": 3.2,
-        "duration": 3
+        "start": 0.16,
+        "end": 3.24,
+        "duration": 3.08
       },
       "speaker": {
         "id": 1,
@@ -79,105 +72,83 @@
     },
     {
       "id": 1,
-      "text": "Candle light  flickers, painting  your  living  room",
+      "text": "Candlelight  flickers, painting  your  living  room in  a  warm  golden  glow.",
       "words": [
         {
-          "id": "69008b0c652063879214dd56",
-          "text": "Candle light ",
-          "start": 3.32,
-          "end": 3.96,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd57",
-          "text": "flickers,",
+          "id": "69037213fa723f74f18af724",
+          "text": "Candlelight ",
           "start": 3.96,
-          "end": 4.68,
+          "end": 4.8,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd58",
-          "text": "painting ",
+          "id": "69037213fa723f74f18af725",
+          "text": "flickers, painting ",
           "start": 4.8,
-          "end": 5.28,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd59",
-          "text": "your ",
-          "start": 5.28,
           "end": 5.52,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd5a",
-          "text": "living ",
-          "start": 5.52,
-          "end": 5.76,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd5b",
-          "text": "room",
-          "start": 5.76,
-          "end": 6,
-          "line": 1
-        }
-      ],
-      "timing": {
-        "start": 3.32,
-        "end": 6,
-        "duration": 2.68
-      },
-      "speaker": {
-        "id": 1,
-        "name": "Speaker 2"
-      }
-    },
-    {
-      "id": 2,
-      "text": "in  a  warm  golden  glow.",
-      "words": [
-        {
-          "id": "69008b0c652063879214dd5c",
-          "text": "in ",
-          "start": 6,
-          "end": 6.2,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd5d",
-          "text": "a ",
-          "start": 6.2,
+          "id": "69037213fa723f74f18af727",
+          "text": "your ",
+          "start": 6.12,
           "end": 6.32,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd5e",
-          "text": "warm ",
+          "id": "69037213fa723f74f18af728",
+          "text": "living ",
           "start": 6.32,
-          "end": 6.68,
+          "end": 6.6,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd5f",
-          "text": "golden ",
-          "start": 6.68,
-          "end": 7.24,
+          "id": "69037213fa723f74f18af729",
+          "text": "room",
+          "start": 6.6,
+          "end": 6.96,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd60",
-          "text": "glow.",
-          "start": 7.24,
+          "id": "69037213fa723f74f18af72a",
+          "text": "in ",
+          "start": 6.96,
+          "end": 7.2,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af72b",
+          "text": "a ",
+          "start": 7.2,
+          "end": 7.32,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af72c",
+          "text": "warm ",
+          "start": 7.32,
           "end": 7.8,
-          "line": 0
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af72d",
+          "text": "golden ",
+          "start": 7.84,
+          "end": 8.44,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af72e",
+          "text": "glow.",
+          "start": 8.44,
+          "end": 9,
+          "line": 1
         }
       ],
       "timing": {
-        "start": 6,
-        "end": 7.8,
-        "duration": 1.7999999999999998
+        "start": 3.96,
+        "end": 9,
+        "duration": 5.04
       },
       "speaker": {
         "id": 1,
@@ -189,108 +160,108 @@
       "text": "Shadows  dance  together  on  the  wall, more  intimate  than  you  yet  dare  to  be.",
       "words": [
         {
-          "id": "69008b0c652063879214dd61",
+          "id": "69037213fa723f74f18af72f",
           "text": "Shadows ",
-          "start": 8.04,
-          "end": 8.76,
+          "start": 9.76,
+          "end": 10.56,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd62",
+          "id": "69037213fa723f74f18af730",
           "text": "dance ",
-          "start": 8.76,
-          "end": 9.2,
+          "start": 10.56,
+          "end": 10.96,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd63",
+          "id": "69037213fa723f74f18af731",
           "text": "together ",
-          "start": 9.2,
-          "end": 9.72,
+          "start": 10.96,
+          "end": 11.28,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd64",
+          "id": "69037213fa723f74f18af732",
           "text": "on ",
-          "start": 9.72,
-          "end": 10.04,
+          "start": 11.28,
+          "end": 11.52,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd65",
+          "id": "69037213fa723f74f18af733",
           "text": "the ",
-          "start": 10.04,
-          "end": 10.16,
+          "start": 11.52,
+          "end": 11.6,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd66",
+          "id": "69037213fa723f74f18af734",
           "text": "wall,",
-          "start": 10.16,
-          "end": 10.48,
+          "start": 11.6,
+          "end": 12.12,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd67",
+          "id": "69037213fa723f74f18af735",
           "text": "more ",
-          "start": 10.6,
-          "end": 11.04,
+          "start": 12.4,
+          "end": 12.72,
           "line": 1
         },
         {
-          "id": "69008b0c652063879214dd68",
+          "id": "69037213fa723f74f18af736",
           "text": "intimate ",
-          "start": 11.04,
-          "end": 11.8,
+          "start": 12.72,
+          "end": 13.32,
           "line": 1
         },
         {
-          "id": "69008b0c652063879214dd69",
+          "id": "69037213fa723f74f18af737",
           "text": "than ",
-          "start": 11.8,
-          "end": 12.08,
+          "start": 13.32,
+          "end": 13.52,
           "line": 1
         },
         {
-          "id": "69008b0c652063879214dd6a",
+          "id": "69037213fa723f74f18af738",
           "text": "you ",
-          "start": 12.08,
-          "end": 12.52,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd6b",
-          "text": "yet ",
-          "start": 12.56,
-          "end": 12.96,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd6c",
-          "text": "dare ",
-          "start": 13,
-          "end": 13.36,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd6d",
-          "text": "to ",
-          "start": 13.36,
-          "end": 13.56,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd6e",
-          "text": "be.",
           "start": 13.56,
-          "end": 13.96,
+          "end": 13.76,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af739",
+          "text": "yet ",
+          "start": 13.8,
+          "end": 14.04,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af73a",
+          "text": "dare ",
+          "start": 14.08,
+          "end": 14.44,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af73b",
+          "text": "to ",
+          "start": 14.44,
+          "end": 14.6,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af73c",
+          "text": "be.",
+          "start": 14.64,
+          "end": 15.12,
           "line": 1
         }
       ],
       "timing": {
-        "start": 8.04,
-        "end": 13.96,
-        "duration": 5.920000000000002
+        "start": 9.76,
+        "end": 15.12,
+        "duration": 5.359999999999999
       },
       "speaker": {
         "id": 1,
@@ -299,41 +270,48 @@
     },
     {
       "id": 5,
-      "text": "Your  eyes  meet and linger .",
+      "text": "Your  eyes  meet  and  linger.",
       "words": [
         {
-          "id": "69008b0c652063879214dd6f",
+          "id": "69037213fa723f74f18af73d",
           "text": "Your ",
-          "start": 14.16,
-          "end": 14.52,
+          "start": 15.6,
+          "end": 16,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd70",
+          "id": "69037213fa723f74f18af73e",
           "text": "eyes ",
-          "start": 14.52,
-          "end": 14.8,
+          "start": 16,
+          "end": 16.36,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd71",
-          "text": "meet and linger",
-          "start": 14.8,
-          "end": 15.16,
+          "id": "69037213fa723f74f18af73f",
+          "text": "meet ",
+          "start": 16.36,
+          "end": 17.08,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd73",
-          "text": ".",
-          "start": 15.48,
-          "end": 16.04,
+          "id": "69037213fa723f74f18af740",
+          "text": "and ",
+          "start": 17.08,
+          "end": 17.4,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af741",
+          "text": "linger.",
+          "start": 17.4,
+          "end": 18.04,
           "line": 0
         }
       ],
       "timing": {
-        "start": 14.16,
-        "end": 16.04,
-        "duration": 1.879999999999999
+        "start": 15.6,
+        "end": 18.04,
+        "duration": 2.4399999999999995
       },
       "speaker": {
         "id": 1,
@@ -345,52 +323,52 @@
       "text": "You  don't  know  what  to  say.",
       "words": [
         {
-          "id": "69008b0c652063879214dd74",
+          "id": "69037213fa723f74f18af742",
           "text": "You ",
-          "start": 16.16,
-          "end": 16.68,
+          "start": 18.72,
+          "end": 18.84,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd75",
+          "id": "69037213fa723f74f18af743",
           "text": "don't ",
-          "start": 16.68,
-          "end": 16.96,
+          "start": 18.88,
+          "end": 19.16,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd76",
+          "id": "69037213fa723f74f18af744",
           "text": "know ",
-          "start": 16.96,
-          "end": 17.24,
+          "start": 19.16,
+          "end": 19.32,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd77",
+          "id": "69037213fa723f74f18af745",
           "text": "what ",
-          "start": 17.24,
-          "end": 17.48,
+          "start": 19.32,
+          "end": 19.56,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd78",
+          "id": "69037213fa723f74f18af746",
           "text": "to ",
-          "start": 17.52,
-          "end": 17.68,
+          "start": 19.56,
+          "end": 19.72,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd79",
+          "id": "69037213fa723f74f18af747",
           "text": "say.",
-          "start": 17.68,
-          "end": 18.12,
+          "start": 19.76,
+          "end": 20.24,
           "line": 0
         }
       ],
       "timing": {
-        "start": 16.16,
-        "end": 18.12,
-        "duration": 1.9600000000000009
+        "start": 18.72,
+        "end": 20.24,
+        "duration": 1.5199999999999996
       },
       "speaker": {
         "id": 1,
@@ -399,69 +377,69 @@
     },
     {
       "id": 7,
-      "text": "Words  feel  silly, in  a  moment  so  tender.",
+      "text": "Words  feel  silly in  a  moment  so  tender.",
       "words": [
         {
-          "id": "69008b0c652063879214dd7a",
+          "id": "69037213fa723f74f18af748",
           "text": "Words ",
-          "start": 18.44,
-          "end": 19.04,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd7b",
-          "text": "feel ",
-          "start": 19.08,
-          "end": 19.44,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd7c",
-          "text": "silly,",
-          "start": 19.48,
-          "end": 20.08,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd7d",
-          "text": "in ",
-          "start": 20.12,
-          "end": 20.32,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd7e",
-          "text": "a ",
-          "start": 20.32,
-          "end": 20.44,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd7f",
-          "text": "moment ",
-          "start": 20.44,
-          "end": 20.88,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd80",
-          "text": "so ",
           "start": 20.88,
-          "end": 21.2,
+          "end": 21.48,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af749",
+          "text": "feel ",
+          "start": 21.48,
+          "end": 21.88,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af74a",
+          "text": "silly",
+          "start": 21.88,
+          "end": 22.36,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af74b",
+          "text": "in ",
+          "start": 22.36,
+          "end": 22.52,
           "line": 1
         },
         {
-          "id": "69008b0c652063879214dd81",
+          "id": "69037213fa723f74f18af74c",
+          "text": "a ",
+          "start": 22.52,
+          "end": 22.64,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af74d",
+          "text": "moment ",
+          "start": 22.64,
+          "end": 23.04,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af74e",
+          "text": "so ",
+          "start": 23.04,
+          "end": 23.28,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af74f",
           "text": "tender.",
-          "start": 21.24,
-          "end": 21.88,
+          "start": 23.32,
+          "end": 23.92,
           "line": 1
         }
       ],
       "timing": {
-        "start": 18.44,
-        "end": 21.88,
-        "duration": 3.4399999999999977
+        "start": 20.88,
+        "end": 23.92,
+        "duration": 3.0400000000000027
       },
       "speaker": {
         "id": 1,
@@ -470,48 +448,76 @@
     },
     {
       "id": 8,
-      "text": "You  feel  a  magnetic  pull.",
+      "text": "You  feel  a  magnetic  pull that  makes  you  ache",
       "words": [
         {
-          "id": "69008b0c652063879214dd82",
+          "id": "69037213fa723f74f18af750",
           "text": "You ",
-          "start": 22.12,
-          "end": 22.32,
+          "start": 24.48,
+          "end": 24.72,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd83",
+          "id": "69037213fa723f74f18af751",
           "text": "feel ",
-          "start": 22.32,
-          "end": 22.6,
+          "start": 24.72,
+          "end": 25.08,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd84",
+          "id": "69037213fa723f74f18af752",
           "text": "a ",
-          "start": 22.6,
-          "end": 22.68,
+          "start": 25.08,
+          "end": 25.2,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd85",
+          "id": "69037213fa723f74f18af753",
           "text": "magnetic ",
-          "start": 22.68,
-          "end": 23.24,
+          "start": 25.2,
+          "end": 25.8,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd86",
-          "text": "pull.",
-          "start": 23.24,
-          "end": 23.84,
+          "id": "69037213fa723f74f18af754",
+          "text": "pull",
+          "start": 25.8,
+          "end": 26.48,
           "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af755",
+          "text": "that ",
+          "start": 26.48,
+          "end": 26.64,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af756",
+          "text": "makes ",
+          "start": 26.64,
+          "end": 26.96,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af757",
+          "text": "you ",
+          "start": 26.96,
+          "end": 27.24,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af758",
+          "text": "ache",
+          "start": 27.28,
+          "end": 27.52,
+          "line": 1
         }
       ],
       "timing": {
-        "start": 22.12,
-        "end": 23.84,
-        "duration": 1.7199999999999989
+        "start": 24.48,
+        "end": 27.52,
+        "duration": 3.039999999999999
       },
       "speaker": {
         "id": 1,
@@ -520,90 +526,62 @@
     },
     {
       "id": 9,
-      "text": "That  makes  you  ache  for  the  accidental brush  of  your  skin.",
+      "text": "for  the  accidental  brush  of  your  skin.",
       "words": [
         {
-          "id": "69008b0c652063879214dd87",
-          "text": "That ",
-          "start": 24.04,
-          "end": 24.24,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd88",
-          "text": "makes ",
-          "start": 24.24,
-          "end": 24.48,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd89",
-          "text": "you ",
-          "start": 24.48,
-          "end": 24.72,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd8a",
-          "text": "ache ",
-          "start": 24.76,
-          "end": 25.2,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd8b",
+          "id": "69037213fa723f74f18af759",
           "text": "for ",
-          "start": 25.2,
-          "end": 25.36,
+          "start": 27.64,
+          "end": 27.84,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd8c",
+          "id": "69037213fa723f74f18af75a",
           "text": "the ",
-          "start": 25.36,
-          "end": 25.52,
+          "start": 27.84,
+          "end": 28.04,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd8d",
-          "text": "accidental",
-          "start": 25.52,
-          "end": 26.24,
+          "id": "69037213fa723f74f18af75b",
+          "text": "accidental ",
+          "start": 28.04,
+          "end": 28.76,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd8e",
+          "id": "69037213fa723f74f18af75c",
           "text": "brush ",
-          "start": 26.24,
-          "end": 26.76,
-          "line": 1
+          "start": 28.76,
+          "end": 29.12,
+          "line": 0
         },
         {
-          "id": "69008b0c652063879214dd8f",
+          "id": "69037213fa723f74f18af75d",
           "text": "of ",
-          "start": 26.76,
-          "end": 27,
-          "line": 1
+          "start": 29.12,
+          "end": 29.28,
+          "line": 0
         },
         {
-          "id": "69008b0c652063879214dd90",
+          "id": "69037213fa723f74f18af75e",
           "text": "your ",
-          "start": 27,
-          "end": 27.28,
-          "line": 1
+          "start": 29.28,
+          "end": 29.48,
+          "line": 0
         },
         {
-          "id": "69008b0c652063879214dd91",
+          "id": "69037213fa723f74f18af75f",
           "text": "skin.",
-          "start": 27.28,
-          "end": 27.88,
-          "line": 1
+          "start": 29.48,
+          "end": 30,
+          "line": 0
         }
       ],
       "timing": {
-        "start": 24.04,
-        "end": 27.88,
-        "duration": 3.84
+        "start": 27.64,
+        "end": 30,
+        "duration": 2.3599999999999994
       },
       "speaker": {
         "id": 1,
@@ -612,76 +590,62 @@
     },
     {
       "id": 10,
-      "text": "Your  world  shrinks  to  a  single  point, their  lips ",
+      "text": "Your  world  shrinks  to  a  single  point.",
       "words": [
         {
-          "id": "69008b0c652063879214dd92",
+          "id": "69037213fa723f74f18af760",
           "text": "Your ",
-          "start": 28.12,
-          "end": 28.36,
+          "start": 30.52,
+          "end": 30.8,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd93",
+          "id": "69037213fa723f74f18af761",
           "text": "world ",
-          "start": 28.36,
-          "end": 28.72,
+          "start": 30.8,
+          "end": 31.2,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dd94",
+          "id": "69037213fa723f74f18af762",
           "text": "shrinks ",
-          "start": 28.72,
-          "end": 29.24,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd95",
-          "text": "to ",
-          "start": 29.24,
-          "end": 29.4,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd96",
-          "text": "a ",
-          "start": 29.44,
-          "end": 29.6,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd97",
-          "text": "single ",
-          "start": 29.6,
-          "end": 30,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd98",
-          "text": "point,",
-          "start": 30,
-          "end": 30.88,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd99",
-          "text": "their ",
-          "start": 30.92,
-          "end": 31.24,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dd9a",
-          "text": "lips ",
-          "start": 31.24,
+          "start": 31.2,
           "end": 31.84,
-          "line": 1
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af763",
+          "text": "to ",
+          "start": 31.84,
+          "end": 32.04,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af764",
+          "text": "a ",
+          "start": 32.08,
+          "end": 32.24,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af765",
+          "text": "single ",
+          "start": 32.24,
+          "end": 32.72,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af766",
+          "text": "point.",
+          "start": 32.72,
+          "end": 33.36,
+          "line": 0
         }
       ],
       "timing": {
-        "start": 28.12,
-        "end": 31.84,
-        "duration": 3.719999999999999
+        "start": 30.52,
+        "end": 33.36,
+        "duration": 2.84
       },
       "speaker": {
         "id": 1,
@@ -690,62 +654,83 @@
     },
     {
       "id": 11,
-      "text": "the  boundary  between  your  skin  and  theirs,",
+      "text": "Their  lips,  that  warm  red  promise.  You  want  to  dissolve.",
       "words": [
         {
-          "id": "69008b0c652063879214dda5",
-          "text": "the ",
-          "start": 36.4,
-          "end": 36.52,
+          "id": "69037213fa723f74f18af767",
+          "text": "Their ",
+          "start": 33.84,
+          "end": 34.2,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dda6",
-          "text": "boundary ",
-          "start": 36.56,
+          "id": "69037213fa723f74f18af768",
+          "text": "lips, ",
+          "start": 34.2,
+          "end": 34.76,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af769",
+          "text": "that ",
+          "start": 35.04,
+          "end": 35.28,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af76a",
+          "text": "warm ",
+          "start": 35.28,
+          "end": 35.8,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af76b",
+          "text": "red ",
+          "start": 35.8,
+          "end": 36.32,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af76c",
+          "text": "promise. ",
+          "start": 36.32,
           "end": 37.08,
           "line": 0
         },
         {
-          "id": "69008b0c652063879214dda7",
-          "text": "between ",
-          "start": 37.08,
-          "end": 37.52,
-          "line": 0
+          "id": "69037213fa723f74f18af76d",
+          "text": "You ",
+          "start": 37.48,
+          "end": 37.68,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214dda8",
-          "text": "your ",
-          "start": 37.52,
-          "end": 37.88,
-          "line": 0
+          "id": "69037213fa723f74f18af76e",
+          "text": "want ",
+          "start": 37.68,
+          "end": 37.92,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214dda9",
-          "text": "skin ",
-          "start": 37.88,
-          "end": 38.24,
-          "line": 0
+          "id": "69037213fa723f74f18af76f",
+          "text": "to ",
+          "start": 37.92,
+          "end": 38,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddaa",
-          "text": "and ",
-          "start": 38.24,
-          "end": 38.52,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214ddab",
-          "text": "theirs,",
-          "start": 38.52,
-          "end": 38.84,
-          "line": 0
+          "id": "69037213fa723f74f18af770",
+          "text": "dissolve.",
+          "start": 38.04,
+          "end": 38.88,
+          "line": 1
         }
       ],
       "timing": {
-        "start": 36.4,
-        "end": 38.84,
-        "duration": 2.440000000000005
+        "start": 33.84,
+        "end": 38.88,
+        "duration": 5.039999999999999
       },
       "speaker": {
         "id": 1,
@@ -754,133 +739,118 @@
     },
     {
       "id": 12,
-      "text": "blur  into  a  single  electric  buzz.",
+      "text": "To  feel  the  boundary  between  your  skin  and theirs  blur  into  a  single  electric  buzz.",
       "words": [
         {
-          "id": "69008b0c652063879214ddac",
+          "id": "69037213fa723f74f18af771",
+          "text": "To ",
+          "start": 39.12,
+          "end": 39.32,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af772",
+          "text": "feel ",
+          "start": 39.36,
+          "end": 39.72,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af773",
+          "text": "the ",
+          "start": 39.72,
+          "end": 39.88,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af774",
+          "text": "boundary ",
+          "start": 39.88,
+          "end": 40.32,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af775",
+          "text": "between ",
+          "start": 40.32,
+          "end": 40.76,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af776",
+          "text": "your ",
+          "start": 40.76,
+          "end": 41.08,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af777",
+          "text": "skin ",
+          "start": 41.08,
+          "end": 41.48,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af778",
+          "text": "and",
+          "start": 41.48,
+          "end": 41.72,
+          "line": 0
+        },
+        {
+          "id": "69037213fa723f74f18af779",
+          "text": "theirs ",
+          "start": 41.72,
+          "end": 42.32,
+          "line": 1
+        },
+        {
+          "id": "69037213fa723f74f18af77a",
           "text": "blur ",
-          "start": 38.96,
-          "end": 39.28,
-          "line": 0
+          "start": 42.32,
+          "end": 42.92,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddad",
+          "id": "69037213fa723f74f18af77b",
           "text": "into ",
-          "start": 39.32,
-          "end": 39.76,
-          "line": 0
+          "start": 42.92,
+          "end": 43.28,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddae",
+          "id": "69037213fa723f74f18af77c",
           "text": "a ",
-          "start": 39.76,
-          "end": 39.96,
-          "line": 0
+          "start": 43.28,
+          "end": 43.52,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddaf",
+          "id": "69037213fa723f74f18af77d",
           "text": "single ",
-          "start": 39.96,
-          "end": 40.56,
-          "line": 0
+          "start": 43.52,
+          "end": 44.04,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddb0",
+          "id": "69037213fa723f74f18af77e",
           "text": "electric ",
-          "start": 40.6,
-          "end": 41.32,
-          "line": 0
+          "start": 44.04,
+          "end": 44.64,
+          "line": 1
         },
         {
-          "id": "69008b0c652063879214ddb1",
+          "id": "69037213fa723f74f18af77f",
           "text": "buzz.",
-          "start": 41.32,
-          "end": 42.04,
-          "line": 0
-        }
-      ],
-      "timing": {
-        "start": 38.96,
-        "end": 42.04,
-        "duration": 3.0799999999999983
-      },
-      "speaker": {
-        "id": 1,
-        "name": "Speaker 2"
-      }
-    },
-    {
-      "id": 921795,
-      "text": "that  warm  red promise. You  want  to  dissolve,  to  feel",
-      "words": [
-        {
-          "id": "69008b0c652063879214dd9b",
-          "text": "that ",
-          "start": 31.96,
-          "end": 32.24,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd9c",
-          "text": "warm ",
-          "start": 32.28,
-          "end": 32.68,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd9d",
-          "text": "red promise.",
-          "start": 32.68,
-          "end": 32.92,
-          "line": 0
-        },
-        {
-          "id": "69008b0c652063879214dd9f",
-          "text": "You ",
-          "start": 34.12,
-          "end": 34.4,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dda0",
-          "text": "want ",
-          "start": 34.4,
-          "end": 34.72,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dda1",
-          "text": "to ",
-          "start": 34.72,
-          "end": 34.84,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dda2",
-          "text": "dissolve, ",
-          "start": 34.88,
-          "end": 35.68,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dda3",
-          "text": "to ",
-          "start": 35.88,
-          "end": 36.08,
-          "line": 1
-        },
-        {
-          "id": "69008b0c652063879214dda4",
-          "text": "feel",
-          "start": 36.12,
-          "end": 36.4,
+          "start": 44.64,
+          "end": 45.32,
           "line": 1
         }
       ],
       "timing": {
-        "start": 31.96,
-        "end": 36.4,
-        "duration": 4.439999999999998
+        "start": 39.12,
+        "end": 45.32,
+        "duration": 6.200000000000003
       },
       "speaker": {
         "id": 1,

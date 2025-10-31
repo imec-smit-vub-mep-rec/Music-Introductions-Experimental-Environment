@@ -1,0 +1,887 @@
+{
+  "metadata": {
+    "title": "smalltown_immers3",
+    "exportDate": "2025-10-30T14:05:41.788Z",
+    "totalSubtitles": 9,
+    "totalWords": 106
+  },
+  "subtitles": [
+    {
+      "id": 0,
+      "text": "The  cold  rain  soaks  your  jacket  as  you  wait for  the  train  that  will  take  you  far  away.",
+      "words": [
+        {
+          "id": "6903707542975356d526d754",
+          "text": "The ",
+          "start": 0.24,
+          "end": 0.4,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d755",
+          "text": "cold ",
+          "start": 0.4,
+          "end": 0.76,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d756",
+          "text": "rain ",
+          "start": 0.76,
+          "end": 1.24,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d757",
+          "text": "soaks ",
+          "start": 1.24,
+          "end": 1.56,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d758",
+          "text": "your ",
+          "start": 1.56,
+          "end": 1.72,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d759",
+          "text": "jacket ",
+          "start": 1.72,
+          "end": 2.16,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d75a",
+          "text": "as ",
+          "start": 2.16,
+          "end": 2.32,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d75b",
+          "text": "you ",
+          "start": 2.32,
+          "end": 2.44,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d75c",
+          "text": "wait",
+          "start": 2.48,
+          "end": 2.64,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d75d",
+          "text": "for ",
+          "start": 2.64,
+          "end": 2.84,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d75e",
+          "text": "the ",
+          "start": 2.84,
+          "end": 2.96,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d75f",
+          "text": "train ",
+          "start": 2.96,
+          "end": 3.32,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d760",
+          "text": "that ",
+          "start": 3.32,
+          "end": 3.48,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d761",
+          "text": "will ",
+          "start": 3.48,
+          "end": 3.68,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d762",
+          "text": "take ",
+          "start": 3.68,
+          "end": 3.88,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d763",
+          "text": "you ",
+          "start": 3.88,
+          "end": 4,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d764",
+          "text": "far ",
+          "start": 4.04,
+          "end": 4.36,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d765",
+          "text": "away.",
+          "start": 4.4,
+          "end": 4.92,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 0.24,
+        "end": 4.92,
+        "duration": 4.68
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 1,
+      "text": "You  hold  tight  to  a  small  case  that  contains everything  that  remains  from  your  childhood.",
+      "words": [
+        {
+          "id": "6903707542975356d526d766",
+          "text": "You ",
+          "start": 5.52,
+          "end": 5.72,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d767",
+          "text": "hold ",
+          "start": 5.72,
+          "end": 6,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d768",
+          "text": "tight ",
+          "start": 6.04,
+          "end": 6.32,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d769",
+          "text": "to ",
+          "start": 6.32,
+          "end": 6.48,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76a",
+          "text": "a ",
+          "start": 6.52,
+          "end": 6.64,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76b",
+          "text": "small ",
+          "start": 6.64,
+          "end": 6.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76c",
+          "text": "case ",
+          "start": 6.96,
+          "end": 7.28,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76d",
+          "text": "that ",
+          "start": 7.28,
+          "end": 7.44,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76e",
+          "text": "contains",
+          "start": 7.44,
+          "end": 7.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d76f",
+          "text": "everything ",
+          "start": 7.96,
+          "end": 8.48,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d770",
+          "text": "that ",
+          "start": 8.48,
+          "end": 8.64,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d771",
+          "text": "remains ",
+          "start": 8.68,
+          "end": 9.12,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d772",
+          "text": "from ",
+          "start": 9.12,
+          "end": 9.32,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d773",
+          "text": "your ",
+          "start": 9.32,
+          "end": 9.52,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d774",
+          "text": "childhood.",
+          "start": 9.52,
+          "end": 10.24,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 5.52,
+        "end": 10.24,
+        "duration": 4.720000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 2,
+      "text": "The  wind  blows  the  rain  in  your  face, and  you  can't  tell  where  the  raindrops  end",
+      "words": [
+        {
+          "id": "6903707542975356d526d775",
+          "text": "The ",
+          "start": 10.88,
+          "end": 11.08,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d776",
+          "text": "wind ",
+          "start": 11.08,
+          "end": 11.36,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d777",
+          "text": "blows ",
+          "start": 11.36,
+          "end": 11.8,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d778",
+          "text": "the ",
+          "start": 11.8,
+          "end": 11.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d779",
+          "text": "rain ",
+          "start": 11.96,
+          "end": 12.24,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d77a",
+          "text": "in ",
+          "start": 12.24,
+          "end": 12.36,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d77b",
+          "text": "your ",
+          "start": 12.36,
+          "end": 12.56,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d77c",
+          "text": "face,",
+          "start": 12.56,
+          "end": 13.04,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d77d",
+          "text": "and ",
+          "start": 13.04,
+          "end": 13.2,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d77e",
+          "text": "you ",
+          "start": 13.2,
+          "end": 13.32,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d77f",
+          "text": "can't ",
+          "start": 13.36,
+          "end": 13.6,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d780",
+          "text": "tell ",
+          "start": 13.64,
+          "end": 13.84,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d781",
+          "text": "where ",
+          "start": 13.84,
+          "end": 14,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d782",
+          "text": "the ",
+          "start": 14,
+          "end": 14.12,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d783",
+          "text": "raindrops ",
+          "start": 14.12,
+          "end": 14.8,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d784",
+          "text": "end",
+          "start": 14.8,
+          "end": 15.2,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 10.88,
+        "end": 15.2,
+        "duration": 4.3199999999999985
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 3,
+      "text": "and  the  tears  begin.",
+      "words": [
+        {
+          "id": "6903707542975356d526d785",
+          "text": "and ",
+          "start": 15.32,
+          "end": 15.48,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d786",
+          "text": "the ",
+          "start": 15.48,
+          "end": 15.6,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d787",
+          "text": "tears ",
+          "start": 15.6,
+          "end": 16,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d788",
+          "text": "begin.",
+          "start": 16,
+          "end": 16.64,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 15.32,
+        "end": 16.64,
+        "duration": 1.3200000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 4,
+      "text": "But  you  have  to  leave.",
+      "words": [
+        {
+          "id": "6903707542975356d526d789",
+          "text": "But ",
+          "start": 17.48,
+          "end": 17.64,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d78a",
+          "text": "you ",
+          "start": 17.64,
+          "end": 17.76,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d78b",
+          "text": "have ",
+          "start": 17.76,
+          "end": 17.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d78c",
+          "text": "to ",
+          "start": 17.96,
+          "end": 18.08,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d78d",
+          "text": "leave.",
+          "start": 18.12,
+          "end": 18.6,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 17.48,
+        "end": 18.6,
+        "duration": 1.120000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Behind  you  lies  a  narrow  minded  village, a  family  that  will  never  understand.",
+      "words": [
+        {
+          "id": "6903707542975356d526d78e",
+          "text": "Behind ",
+          "start": 19.04,
+          "end": 19.44,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d78f",
+          "text": "you ",
+          "start": 19.44,
+          "end": 19.6,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d790",
+          "text": "lies ",
+          "start": 19.64,
+          "end": 19.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d791",
+          "text": "a ",
+          "start": 20,
+          "end": 20.16,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d792",
+          "text": "narrow ",
+          "start": 20.16,
+          "end": 20.44,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d793",
+          "text": "minded ",
+          "start": 20.48,
+          "end": 20.84,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d794",
+          "text": "village,",
+          "start": 20.84,
+          "end": 21.64,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d795",
+          "text": "a ",
+          "start": 21.84,
+          "end": 21.96,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d796",
+          "text": "family ",
+          "start": 21.96,
+          "end": 22.32,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d797",
+          "text": "that ",
+          "start": 22.32,
+          "end": 22.44,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d798",
+          "text": "will ",
+          "start": 22.44,
+          "end": 22.64,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d799",
+          "text": "never ",
+          "start": 22.64,
+          "end": 22.88,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d79a",
+          "text": "understand.",
+          "start": 22.88,
+          "end": 23.84,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 19.04,
+        "end": 23.84,
+        "duration": 4.800000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Here  you  will  never  be  free, never  be  accepted  for  who  you  are.",
+      "words": [
+        {
+          "id": "6903707542975356d526d79b",
+          "text": "Here ",
+          "start": 24.32,
+          "end": 24.84,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d79c",
+          "text": "you ",
+          "start": 24.96,
+          "end": 25.08,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d79d",
+          "text": "will ",
+          "start": 25.08,
+          "end": 25.28,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d79e",
+          "text": "never ",
+          "start": 25.28,
+          "end": 25.52,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d79f",
+          "text": "be ",
+          "start": 25.56,
+          "end": 25.72,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7a0",
+          "text": "free,",
+          "start": 25.72,
+          "end": 26.2,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7a1",
+          "text": "never ",
+          "start": 26.44,
+          "end": 26.68,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a2",
+          "text": "be ",
+          "start": 26.72,
+          "end": 26.92,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a3",
+          "text": "accepted ",
+          "start": 26.92,
+          "end": 27.52,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a4",
+          "text": "for ",
+          "start": 27.52,
+          "end": 27.68,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a5",
+          "text": "who ",
+          "start": 27.68,
+          "end": 27.8,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a6",
+          "text": "you ",
+          "start": 27.84,
+          "end": 28.04,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7a7",
+          "text": "are.",
+          "start": 28.04,
+          "end": 28.44,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 24.32,
+        "end": 28.44,
+        "duration": 4.120000000000001
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 7,
+      "text": "So  you  turn  your  face  to  the  storm and  wait  for  the  train,",
+      "words": [
+        {
+          "id": "6903707542975356d526d7a8",
+          "text": "So ",
+          "start": 29.04,
+          "end": 29.24,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7a9",
+          "text": "you ",
+          "start": 29.24,
+          "end": 29.4,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7aa",
+          "text": "turn ",
+          "start": 29.4,
+          "end": 29.6,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7ab",
+          "text": "your ",
+          "start": 29.6,
+          "end": 29.8,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7ac",
+          "text": "face ",
+          "start": 29.8,
+          "end": 30.04,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7ad",
+          "text": "to ",
+          "start": 30.04,
+          "end": 30.12,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7ae",
+          "text": "the ",
+          "start": 30.16,
+          "end": 30.32,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7af",
+          "text": "storm",
+          "start": 30.32,
+          "end": 30.92,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7b0",
+          "text": "and ",
+          "start": 31.04,
+          "end": 31.24,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7b1",
+          "text": "wait ",
+          "start": 31.24,
+          "end": 31.44,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7b2",
+          "text": "for ",
+          "start": 31.44,
+          "end": 31.6,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7b3",
+          "text": "the ",
+          "start": 31.6,
+          "end": 31.76,
+          "line": 1
+        },
+        {
+          "id": "6903707542975356d526d7b4",
+          "text": "train,",
+          "start": 31.76,
+          "end": 32.36,
+          "line": 1
+        }
+      ],
+      "timing": {
+        "start": 29.04,
+        "end": 32.36,
+        "duration": 3.3200000000000003
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    },
+    {
+      "id": 8,
+      "text": "hoping  it  will  take  you  to  a  brighter  future.",
+      "words": [
+        {
+          "id": "6903707542975356d526d7b5",
+          "text": "hoping ",
+          "start": 32.6,
+          "end": 32.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7b6",
+          "text": "it ",
+          "start": 32.96,
+          "end": 33.04,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7b7",
+          "text": "will ",
+          "start": 33.04,
+          "end": 33.28,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7b8",
+          "text": "take ",
+          "start": 33.28,
+          "end": 33.48,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7b9",
+          "text": "you ",
+          "start": 33.48,
+          "end": 33.64,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7ba",
+          "text": "to ",
+          "start": 33.64,
+          "end": 33.8,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7bb",
+          "text": "a ",
+          "start": 33.84,
+          "end": 33.96,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7bc",
+          "text": "brighter ",
+          "start": 33.96,
+          "end": 34.28,
+          "line": 0
+        },
+        {
+          "id": "6903707542975356d526d7bd",
+          "text": "future.",
+          "start": 34.28,
+          "end": 34.8,
+          "line": 0
+        }
+      ],
+      "timing": {
+        "start": 32.6,
+        "end": 34.8,
+        "duration": 2.1999999999999957
+      },
+      "speaker": {
+        "id": 1,
+        "name": "Speaker 2"
+      }
+    }
+  ]
+}
