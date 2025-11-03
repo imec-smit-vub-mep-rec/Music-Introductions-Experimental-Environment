@@ -21,8 +21,8 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
             different genres.
           </p>
           <p className="text-black mt-4 text-center bg-yellow-200/80 backdrop-blur-sm rounded-2xl p-4 border border-white/20 text-sm leading-relaxed">
-            <span className="font-bold">Attention:</span> This experiment involves listening to music. Please
-            ensure you have a stable internet connection and are in an
+            <span className="font-bold">Attention:</span> This experiment involves listening to music.
+            Ensure you have a stable internet connection and are in an
             environment where you can play music and focus on the task. Connect
             headphones if needed.
           </p>

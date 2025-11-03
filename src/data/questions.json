@@ -2,7 +2,7 @@
   "onboarding": {
     "id": "pre_list_onboarding",
     "title": "About You",
-    "intro": "Please answer the following questions about yourself. There are no right or wrong answers - we're interested in your personal preferences and experiences.",
+    "intro": "In the following section, you'll be asked several questions about your music listening habits and your relationship with music. There are no right or wrong answers - we're just interested in learning about your personal preferences and experiences.",
     "blocks": [
       {
         "id": "BL_8tSKZsMsPBrsCRE",
@@ -4201,7 +4201,7 @@
             "choices": [],
             "answers": [],
             "dataExportTag": "Additional comments",
-            "placeholder": "Please enter your response..."
+            "placeholder": "Enter your response here..."
           }
         ]
       }

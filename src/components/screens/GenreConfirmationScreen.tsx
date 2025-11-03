@@ -28,6 +28,9 @@ export function GenreConfirmationScreen({
             amazing tracks.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
+            Before some songs, you&apos;ll hear a short spoken introduction.
+          </p> 
+          <p className="text-gray-700 leading-7 mb-4">
             If you feel you&apos;ve heard enough of a song, you can move on
             after about thirty seconds. After each song, you&apos;ll be asked a
             few questions about your listening experience.

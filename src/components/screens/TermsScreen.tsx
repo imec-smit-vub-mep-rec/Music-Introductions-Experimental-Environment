@@ -151,7 +151,7 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
               Privacy first
             </h2>
             <p className="text-dark-purple/80 leading-relaxed"></p>
-            Please read the informed consent document carefully and check the
+            Read the informed consent document carefully and check the
             boxes below to indicate that you have read and agree with the
             document.
             <div className="mt-4">
@@ -220,7 +220,7 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
           {consent1 && consent2 && (
             <div className="text-center space-y-2">
               {!recaptchaToken && (
-                <p className="text-dark-purple/70">Please wait while we verify you&apos;re human...</p>
+                <p className="text-dark-purple/70">Verifying you&apos;re human...</p>
               )}
               {recaptchaToken && !recaptchaValidating && !recaptchaError && (
                 <p className="text-dark-purple/70">Thank you! Proceeding...</p>

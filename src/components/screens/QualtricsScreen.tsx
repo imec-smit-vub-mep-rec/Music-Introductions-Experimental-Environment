@@ -189,7 +189,7 @@ export function QualtricsScreen({ onComplete }: QualtricsScreenProps) {
               Final Questionnaire
             </h1>
             <p className="text-dark-purple/70 text-lg">
-              Please complete this final questionnaire to help us understand
+              Complete this final questionnaire to help us understand
               your experience.
             </p>
           </div>

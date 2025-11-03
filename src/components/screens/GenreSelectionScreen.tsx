@@ -35,8 +35,8 @@ export function GenreSelectionScreen({
   const displaySubtitle =
     subtitle ||
     (sessionGroup === "unfamiliar"
-      ? "Pick a genre you seldomly listen to."
-      : "Pick a genre you frequently listen to (compared to the other options)");
+      ? "Pick a genre you seldomly listen to. If you listen to all of these genres, pick the one you're least familiar with."
+      : "Choose a genre you know well or often listen to. If your favorite genre isn't listed, pick the one you're most familiar with.");
 
   return (
     <ExperimentLayout background="light">
@@ -123,7 +123,7 @@ export function GenreSelectionScreen({
           ) : (
             <div className="flex justify-center">
               <div className="bg-gray-100 text-gray-500 px-12 py-4 text-lg rounded-full font-medium cursor-not-allowed">
-                Please select a genre to continue
+                Select a genre to continue
               </div>
             </div>
           )}
