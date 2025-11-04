@@ -23,10 +23,11 @@ interface MCQuestionGroup {
 
 // Helper function to check if two MC questions have the same choices
 function hasSameChoices(q1: Question, q2: Question): boolean {
-  if (q1.type !== 'multipleChoice' || q2.type !== 'multipleChoice') return false;
+  if (q1.type !== "multipleChoice" || q2.type !== "multipleChoice")
+    return false;
   if (!q1.choices || !q2.choices) return false;
   if (q1.choices.length !== q2.choices.length) return false;
-  
+
   // Check if all choice values match
   return q1.choices.every((c1, i) => {
     const c2 = q2.choices?.[i];
@@ -42,12 +43,14 @@ function groupMCQuestions(block: QuestionBlock): MCQuestionGroup[] {
   let startIndex = 0;
 
   block.questions.forEach((question, index) => {
-    if (question.type === 'multipleChoice' && question.choices) {
-      const scale = question.choices.map(c => c.text);
-      
+    if (question.type === "multipleChoice" && question.choices) {
+      const scale = question.choices.map((c) => c.text);
+
       // If this is the first question or matches the current group
-      if (currentGroup.length === 0 || 
-          (currentGroup.length > 0 && hasSameChoices(currentGroup[0], question))) {
+      if (
+        currentGroup.length === 0 ||
+        (currentGroup.length > 0 && hasSameChoices(currentGroup[0], question))
+      ) {
         if (currentGroup.length === 0) {
           startIndex = index;
           currentScale = scale;
@@ -59,7 +62,7 @@ function groupMCQuestions(block: QuestionBlock): MCQuestionGroup[] {
           groups.push({
             questions: currentGroup,
             scale: currentScale,
-            startIndex
+            startIndex,
           });
         }
         currentGroup = [question];
@@ -72,7 +75,7 @@ function groupMCQuestions(block: QuestionBlock): MCQuestionGroup[] {
         groups.push({
           questions: currentGroup,
           scale: currentScale,
-          startIndex
+          startIndex,
         });
         currentGroup = [];
         currentScale = [];
@@ -85,7 +88,7 @@ function groupMCQuestions(block: QuestionBlock): MCQuestionGroup[] {
     groups.push({
       questions: currentGroup,
       scale: currentScale,
-      startIndex
+      startIndex,
     });
   }
 
@@ -128,13 +131,14 @@ export function SurveyScreen({
   useEffect(() => {
     // First, filter blocks based on optional onlyShowForIntroductionTypes
     const applicableBlocks = survey.blocks.filter((block) => {
-      if (!block.onlyShowForIntroductionTypes || !introductionStyle) return true;
+      if (!block.onlyShowForIntroductionTypes || !introductionStyle)
+        return true;
       return block.onlyShowForIntroductionTypes.includes(introductionStyle);
     });
 
-    console.log('applicableBlocks', applicableBlocks);
-    console.log('survey.randomizeBlocks', survey.randomizeBlocks);
-    console.log('introductionStyle', introductionStyle);
+    console.log("applicableBlocks", applicableBlocks);
+    console.log("survey.randomizeBlocks", survey.randomizeBlocks);
+    console.log("introductionStyle", introductionStyle);
 
     if (survey.randomizeBlocks) {
       // Shuffle blocks randomly
@@ -151,7 +155,10 @@ export function SurveyScreen({
 
   // Calculate question groups for current block
   const currentBlockGroups = useMemo(() => {
-    if (randomizedBlocks.length > 0 && currentBlockIndex < randomizedBlocks.length) {
+    if (
+      randomizedBlocks.length > 0 &&
+      currentBlockIndex < randomizedBlocks.length
+    ) {
       const currentBlock = randomizedBlocks[currentBlockIndex];
       return groupMCQuestions(currentBlock);
     }
@@ -185,26 +192,30 @@ export function SurveyScreen({
   }
 
   const currentBlock = randomizedBlocks[currentBlockIndex];
-  
+
   // Check if current question is part of a grouped MC question
-  const currentMCGroup = questionGroups.find(group => {
+  const currentMCGroup = questionGroups.find((group) => {
     const groupEndIndex = group.startIndex + group.questions.length - 1;
-    return currentQuestionIndex >= group.startIndex && currentQuestionIndex <= groupEndIndex;
+    return (
+      currentQuestionIndex >= group.startIndex &&
+      currentQuestionIndex <= groupEndIndex
+    );
   });
 
   // For display purposes, only show LikertGrid if there's more than 1 question in the group
   // Otherwise, treat it as a normal question
-  const displayMCGroup = currentMCGroup && currentMCGroup.questions.length > 1 
-    ? currentMCGroup 
-    : null;
+  const displayMCGroup =
+    currentMCGroup && currentMCGroup.questions.length > 1
+      ? currentMCGroup
+      : null;
 
   // If there's a single-question group, get that question; otherwise get the current question
   const currentQuestion = currentBlock
-    ? (displayMCGroup 
-        ? null // When showing LikertGrid, no single question
-        : (currentMCGroup && currentMCGroup.questions.length === 1
-            ? currentMCGroup.questions[0] // Single question from group
-            : currentBlock.questions[currentQuestionIndex])) // Normal question
+    ? displayMCGroup
+      ? null // When showing LikertGrid, no single question
+      : currentMCGroup && currentMCGroup.questions.length === 1
+      ? currentMCGroup.questions[0] // Single question from group
+      : currentBlock.questions[currentQuestionIndex] // Normal question
     : null;
   const currentAnswer = currentQuestion
     ? responses[currentQuestion.id]
@@ -265,10 +276,11 @@ export function SurveyScreen({
     }
 
     setShowValidationError(false);
-    
+
     // If we're in a grouped MC question, skip to the end of the group
     if (displayMCGroup) {
-      const groupEndIndex = displayMCGroup.startIndex + displayMCGroup.questions.length - 1;
+      const groupEndIndex =
+        displayMCGroup.startIndex + displayMCGroup.questions.length - 1;
       // Skip to the question after the group
       const nextIndex = groupEndIndex + 1;
       if (nextIndex < currentBlock.questions.length) {
@@ -298,17 +310,20 @@ export function SurveyScreen({
 
   const handleBack = () => {
     setShowValidationError(false);
-    
+
     // If we're in a grouped MC question, go back to the start of the group
     if (displayMCGroup && currentQuestionIndex > displayMCGroup.startIndex) {
       setCurrentQuestionIndex(displayMCGroup.startIndex);
     } else if (currentQuestionIndex > 0) {
       // Check if previous question is part of a group
-      const prevMCGroup = questionGroups.find(group => {
+      const prevMCGroup = questionGroups.find((group) => {
         const groupEndIndex = group.startIndex + group.questions.length - 1;
-        return (currentQuestionIndex - 1) >= group.startIndex && (currentQuestionIndex - 1) <= groupEndIndex;
+        return (
+          currentQuestionIndex - 1 >= group.startIndex &&
+          currentQuestionIndex - 1 <= groupEndIndex
+        );
       });
-      
+
       if (prevMCGroup) {
         // Go to start of previous group
         setCurrentQuestionIndex(prevMCGroup.startIndex);
@@ -329,7 +344,7 @@ export function SurveyScreen({
   const canProceed = () => {
     // If we're showing a grouped MC question, check if all questions in the group are answered
     if (displayMCGroup) {
-      const allAnswered = displayMCGroup.questions.every(q => {
+      const allAnswered = displayMCGroup.questions.every((q) => {
         const answer = responses[q.id];
         return answer !== undefined && answer !== null && answer !== "";
       });
@@ -414,7 +429,6 @@ export function SurveyScreen({
       .reduce((total, block) => total + block.questions.length, 0) +
     currentQuestionIndex +
     1;
-  const currentBlockQuestionsNumber = currentBlock.questions.length;
 
   return (
     <ExperimentLayout background="light">
@@ -479,7 +493,6 @@ export function SurveyScreen({
               {/* Progress Tracker */}
               <ProgressTracker
                 current={currentQuestionNumber}
-                inBlock={currentBlockQuestionsNumber}
                 total={totalQuestions}
               />
 
@@ -490,16 +503,18 @@ export function SurveyScreen({
                   <>
                     <LikertGrid
                       question={currentBlock?.title || ""}
-                      statements={displayMCGroup.questions.map(q => q.text)}
+                      statements={displayMCGroup.questions.map((q) => q.text)}
                       scale={displayMCGroup.scale}
                       value={(() => {
                         // Create a combined value object with question IDs as keys
                         const combinedValue: Record<string, string> = {};
                         displayMCGroup.questions.forEach((q) => {
                           const answer = responses[q.id];
-                          if (answer && typeof answer === 'string') {
+                          if (answer && typeof answer === "string") {
                             // Find the choice text that matches the answer value
-                            const choice = q.choices?.find(c => c.value === answer);
+                            const choice = q.choices?.find(
+                              (c) => c.value === answer
+                            );
                             if (choice) {
                               combinedValue[q.id] = choice.text;
                             }
@@ -509,14 +524,21 @@ export function SurveyScreen({
                       })()}
                       onChange={(value) => {
                         // When a response is selected, update the individual question
-                        if (typeof value === 'object' && !Array.isArray(value)) {
+                        if (
+                          typeof value === "object" &&
+                          !Array.isArray(value)
+                        ) {
                           const responseValue = value as Record<string, string>;
                           // The keys are question IDs (since we pass questionIds to LikertGrid)
                           Object.keys(responseValue).forEach((questionId) => {
-                            const question = displayMCGroup.questions.find(q => q.id === questionId);
+                            const question = displayMCGroup.questions.find(
+                              (q) => q.id === questionId
+                            );
                             if (question) {
                               // Find the choice value that matches the text
-                              const choice = question.choices?.find(c => c.text === responseValue[questionId]);
+                              const choice = question.choices?.find(
+                                (c) => c.text === responseValue[questionId]
+                              );
                               if (choice) {
                                 handleGroupedAnswer(question.id, choice.value);
                               }
@@ -524,9 +546,11 @@ export function SurveyScreen({
                           });
                         }
                       }}
-                      required={displayMCGroup.questions.some(q => q.required)}
+                      required={displayMCGroup.questions.some(
+                        (q) => q.required
+                      )}
                       onAutoNext={undefined} // Don't auto-advance for groups
-                      questionIds={displayMCGroup.questions.map(q => q.id)}
+                      questionIds={displayMCGroup.questions.map((q) => q.id)}
                     />
                     {showValidationError && (
                       <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">

@@ -4,12 +4,11 @@ import { Progress } from '@/components/ui/progress';
 
 interface ProgressTrackerProps {
   current: number;
-  inBlock: number | undefined;
   total: number;
   className?: string;
 }
 
-export function ProgressTracker({ current, inBlock, total, className = '' }: ProgressTrackerProps) {
+export function ProgressTracker({ current, total, className = '' }: ProgressTrackerProps) {
   const progress = total > 0 ? (current / total) * 100 : 0;
 
   return (
