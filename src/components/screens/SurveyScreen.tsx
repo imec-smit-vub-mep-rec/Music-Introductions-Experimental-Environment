@@ -414,6 +414,7 @@ export function SurveyScreen({
       .reduce((total, block) => total + block.questions.length, 0) +
     currentQuestionIndex +
     1;
+  const currentBlockQuestionsNumber = currentBlock.questions.length;
 
   return (
     <ExperimentLayout background="light">
@@ -478,6 +479,7 @@ export function SurveyScreen({
               {/* Progress Tracker */}
               <ProgressTracker
                 current={currentQuestionNumber}
+                inBlock={currentBlockQuestionsNumber}
                 total={totalQuestions}
               />
 

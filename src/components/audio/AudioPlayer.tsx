@@ -495,7 +495,7 @@ export function AudioPlayer({
 
       {/* Controls */}
       <div className="flex items-center justify-center align-middle space-x-4">
-        <Button
+        {/* <Button
           variant="outline"
           size="icon"
           aria-label="Restart song"
@@ -504,7 +504,7 @@ export function AudioPlayer({
           className="w-10 h-10 rounded-full border-dark-purple text-dark-purple hover:bg-maize hover:border-maize disabled:opacity-50"
         >
           ⏮
-        </Button>
+        </Button> */}
 
         {hasFinished ? (
           <Button

@@ -4,18 +4,19 @@ import { Progress } from '@/components/ui/progress';
 
 interface ProgressTrackerProps {
   current: number;
+  inBlock: number | undefined;
   total: number;
   className?: string;
 }
 
-export function ProgressTracker({ current, total, className = '' }: ProgressTrackerProps) {
+export function ProgressTracker({ current, inBlock, total, className = '' }: ProgressTrackerProps) {
   const progress = total > 0 ? (current / total) * 100 : 0;
 
   return (
     <div className={`w-full ${className}`}>
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm font-medium text-dark-purple">
-          Question {current} of {total}
+          {/* Question {current} - {inBlock ? `${current + inBlock - 1}` : ''} of {total} */}
         </span>
         <span className="text-sm text-dark-purple/70">
           {Math.round(progress)}%

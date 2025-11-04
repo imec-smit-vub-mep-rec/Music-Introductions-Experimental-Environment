@@ -77,10 +77,10 @@ export function LikertGrid({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-lg font-medium text-dark-purple">
+      {/* <h3 className="text-lg font-medium text-dark-purple">
         {question}
         {required && <span className="text-red-500 ml-1">*</span>}
-      </h3>
+      </h3> */}
       
       <div className="overflow-x-auto">
         <table key={question} className="w-full border-collapse table-fixed">
