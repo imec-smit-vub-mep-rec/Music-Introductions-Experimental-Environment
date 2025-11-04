@@ -35,8 +35,8 @@ export function GenreSelectionScreen({
   const displaySubtitle =
     subtitle ||
     (sessionGroup === "unfamiliar"
-      ? "Pick a genre you seldomly listen to. If you listen to all of these genres, pick the one you're least familiar with."
-      : "Choose a genre you know well or often listen to. If your favorite genre isn't listed, pick the one you're most familiar with.");
+      ? "Pick a genre you rarely listen to, but want to try."
+      : "Pick a genre you frequently listen to, and want to explore further. If your favorite genre isn't listed, pick the one you're most familiar with.");
 
   return (
     <ExperimentLayout background="light">
