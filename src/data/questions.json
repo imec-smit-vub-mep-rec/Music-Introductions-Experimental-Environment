@@ -2827,7 +2827,7 @@
   "postListening": {
     "id": "post_item",
     "title": "Your Listening Experience",
-    "intro": "The following questions are about the song (and spoken introduction) you just listened to.",
+    "intro": "The following questions are about what you just listened to.",
     "blocks": [
       {
         "id": "BL_1B2E7llCriM5rw2",
