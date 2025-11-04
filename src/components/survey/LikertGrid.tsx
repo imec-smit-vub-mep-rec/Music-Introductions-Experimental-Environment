@@ -11,6 +11,7 @@ interface LikertGridProps {
   onChange: (value: AnswerValue) => void;
   required?: boolean;
   onAutoNext?: () => void;
+  questionIds?: string[]; // Optional: question IDs for each statement (used for grouped MC questions)
 }
 
 export function LikertGrid({ 
@@ -20,10 +21,19 @@ export function LikertGrid({
   value, 
   onChange, 
   required = false,
-  onAutoNext
+  onAutoNext,
+  questionIds
 }: LikertGridProps) {
   const [responses, setResponses] = useState<Record<string, string>>({});
   const [showConfirmation, setShowConfirmation] = useState(false);
+
+  // Get the key for a statement (use questionId if available, otherwise use index)
+  const getStatementKey = (index: number): string => {
+    if (questionIds && questionIds[index]) {
+      return questionIds[index];
+    }
+    return index.toString();
+  };
 
   // Reset state when question changes - this is the key fix
   useEffect(() => {
@@ -39,16 +49,20 @@ export function LikertGrid({
   }, [value]);
 
   const handleResponseChange = (statementIndex: number, scaleValue: string) => {
+    const key = getStatementKey(statementIndex);
     const newResponses = {
       ...responses,
-      [statementIndex.toString()]: scaleValue
+      [key]: scaleValue
     };
     setResponses(newResponses);
     onChange(newResponses as unknown as AnswerValue);
     setShowConfirmation(true);
     
     // Auto-advance after all statements are answered
-    const allAnswered = statements.every((_, index) => newResponses[index.toString()]);
+    const allAnswered = statements.every((_, index) => {
+      const responseKey = getStatementKey(index);
+      return newResponses[responseKey];
+    });
     if (allAnswered && onAutoNext) {
       setTimeout(() => {
         onAutoNext();
@@ -56,7 +70,10 @@ export function LikertGrid({
     }   
   };
 
-  const isAllAnswered = statements.every((_, index) => responses[index.toString()]);
+  const isAllAnswered = statements.every((_, index) => {
+    const key = getStatementKey(index);
+    return responses[key];
+  });
 
   return (
     <div className="space-y-6">
@@ -69,7 +86,7 @@ export function LikertGrid({
         <table key={question} className="w-full border-collapse table-fixed">
           <thead>
             <tr>
-              <th className="text-left p-2 border-b border-dark-purple/20 text-dark-purple font-medium w-1/2 sm:w-2/3">
+              <th className="text-left border-b border-dark-purple/20 text-dark-purple font-medium w-1/4 sm:w-1/2">
                 Statement
               </th>
               {scale.map((scaleItem, scaleIndex) => (
@@ -87,21 +104,21 @@ export function LikertGrid({
           <tbody>
             {statements.map((statement, statementIndex) => (
               <tr key={statementIndex} className="border-b border-dark-purple/10">
-                <td className="p-2 sm:p-4 text-dark-purple text-xs sm:text-sm leading-relaxed w-1/2 sm:w-2/3">
+                <td className="py-2 sm:py-4 text-dark-purple text-xs sm:text-sm leading-relaxed w-1/2">
                   {statement}
                 </td>
                 {scale.map((scaleItem, scaleIndex) => (
                   <td key={scaleIndex} className="p-1 text-center w-[10%]">
                     <button
                       onClick={() => handleResponseChange(statementIndex, scaleItem)}
-                      className={`
+                        className={`
                         w-5 h-5 sm:w-6 sm:h-6 rounded-full border-2 flex items-center justify-center mx-auto
                         transition-all duration-200 text-[10px] sm:text-xs font-medium
-                        ${responses[statementIndex.toString()] === scaleItem
+                        ${responses[getStatementKey(statementIndex)] === scaleItem
                           ? 'bg-maize border-maize text-dark-purple' 
                           : 'border-dark-purple text-dark-purple hover:border-maize hover:bg-maize/20'
                         }
-                        ${showConfirmation && responses[statementIndex.toString()] === scaleItem
+                        ${showConfirmation && responses[getStatementKey(statementIndex)] === scaleItem
                           ? 'ring-2 ring-maize ring-offset-1 scale-110' 
                           : ''
                         }
@@ -117,13 +134,7 @@ export function LikertGrid({
         </table>
       </div>
       
-      {isAllAnswered && (
-        <div className="text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-maize/20 text-maize font-medium rounded-lg">
-            ✓ All statements completed
-          </div>
-        </div>
-      )}
+     
     </div>
   );
 }

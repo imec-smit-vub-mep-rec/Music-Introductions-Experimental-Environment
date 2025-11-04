@@ -265,6 +265,36 @@ export function AudioPlayer({
     });
   };
 
+  const handleRestart = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const fromTime = audio.currentTime;
+    
+    // Seek back to the beginning
+    audio.currentTime = 0;
+    setInternalCurrentTime(0);
+    
+    // Track the seek operation if callback is provided
+    if (fromTime > 0) {
+      onSeek?.(fromTime, 0);
+    }
+    
+    // If the audio is paused, ensure it stays paused. If it's playing, continue playing from the start.
+    if (isPlaying) {
+      audio.play().catch((error) => {
+        console.log("Play failed after restart:", error);
+      });
+    }
+
+    console.log("⏮ RESTARTED TO BEGINNING:", {
+      song_id: song.id,
+      song_title: song.title,
+      from_time: fromTime,
+      timestamp: new Date().toISOString(),
+    });
+  };
+
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -465,15 +495,16 @@ export function AudioPlayer({
 
       {/* Controls */}
       <div className="flex items-center justify-center align-middle space-x-4">
-        {/* <Button
+        <Button
           variant="outline"
           size="icon"
-          onClick={onPrevious}
-          disabled={!hasPrevious}
-          className="w-12 h-12 rounded-full border-dark-purple text-dark-purple hover:bg-maize hover:border-maize disabled:opacity-50"
+          aria-label="Restart song"
+          onClick={handleRestart}
+          disabled={currentTime < 0.5}
+          className="w-10 h-10 rounded-full border-dark-purple text-dark-purple hover:bg-maize hover:border-maize disabled:opacity-50"
         >
           ⏮
-        </Button> */}
+        </Button>
 
         {hasFinished ? (
           <Button

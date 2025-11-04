@@ -550,7 +550,7 @@
           },
           {
             "id": "15_on_gmsi_2",
-            "text": "I keep track of new music that I come across e.g. new artists or recordings",
+            "text": "I try to stay informed about new music and artists",
             "type": "multipleChoice",
             "required": true,
             "choices": [
@@ -681,17 +681,17 @@
               },
               {
                 "id": "5",
-                "text": "2 hrs",
+                "text": "1.5 - 2 hours",
                 "value": "5"
               },
               {
                 "id": "6",
-                "text": "2-3 hrs",
+                "text": "2-3 hours",
                 "value": "6"
               },
               {
                 "id": "7",
-                "text": "4 hrs or more",
+                "text": "4 hours or more",
                 "value": "7"
               }
             ],
@@ -1275,7 +1275,7 @@
               },
               {
                 "id": "4",
-                "text": "Prefer to self-describe",
+                "text": "Other",
                 "value": "4"
               },
               {
@@ -2827,8 +2827,124 @@
   "postListening": {
     "id": "post_item",
     "title": "Your Listening Experience",
-    "intro": "The following questions concern your experience of the part of the playlist you just listened to.",
+    "intro": "The following questions are about the song (and spoken introduction) you just listened to.",
     "blocks": [
+      {
+        "id": "BL_1B2E7llCriM5rw2",
+        "title": "Quality",
+        "description": "Quality of introductions",
+        "onlyShowForIntroductionTypes": [
+          "informative_introduction",
+          "immersive_introduction"
+        ],
+        "questions": [
+          {
+            "id": "68_pi_qu_1",
+            "text": "The voice in the introduction was pleasant to listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Introduction - Pleasantness"
+          },
+          {
+            "id": "69_pi_qu_2",
+            "text": "The spoken introduction was interesting to listen to",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Introduction - Interestingness"
+          },
+          {
+            "id": "70_pi_qu_3",
+            "text": "The spoken introduction was easy to understand",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Introduction - Understandability"
+          }
+        ]
+      },
       {
         "id": "BL_9yGPnRDpLtebTam",
         "title": "Serendipity",
@@ -3662,7 +3778,7 @@
           },
           {
             "id": "59_pi_pc_5",
-            "text": "This song feels superficial to me",
+            "text": "This song feels superficial (without depth) to me",
             "type": "multipleChoice",
             "required": true,
             "choices": [
@@ -4042,153 +4158,6 @@
         ]
       },
       {
-        "id": "BL_1B2E7llCriM5rw2",
-        "title": "Quality",
-        "description": "Quality",
-        "questions": [
-          {
-            "id": "68_pl_qu_1",
-            "text": "The spoken introductions were clearly articulated",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Clarity"
-          },
-          {
-            "id": "69_pl_qu_2",
-            "text": "The spoken introductions were of good audio quality",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Audio quality"
-          },
-          {
-            "id": "70_pl_qu_3",
-            "text": "The spoken introductions were interesting",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Interest"
-          },
-          {
-            "id": "71_pl_qu_4",
-            "text": "The spoken introductions were annoying",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Annoyance"
-          }
-        ]
-      },
-      {
         "id": "BL_3UyNXZtv9iSAAlw",
         "title": "Other comments",
         "description": "Other comments",
@@ -4202,6 +4171,23 @@
             "answers": [],
             "dataExportTag": "Additional comments",
             "placeholder": "Enter your response here..."
+          }
+        ]
+      },
+      {
+        "id": "contact_email",
+        "title": "Contact information",
+        "description": "Contact information (optional)",
+        "questions": [
+          {
+            "id": "73_pl_ci_1",
+            "text": "Can we contact you for a follow-up study?",
+            "type": "textInput",
+            "required": false,
+            "choices": [],
+            "answers": [],
+            "dataExportTag": "Email address",
+            "placeholder": "Enter your email address here if you would like to participate in a follow-up study"
           }
         ]
       }

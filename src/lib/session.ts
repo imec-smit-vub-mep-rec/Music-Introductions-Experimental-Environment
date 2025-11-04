@@ -798,8 +798,19 @@ export async function syncSessionToRemote(): Promise<void> {
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      // Network aborts during rapid navigation often surface as TypeError: Failed to fetch
-      if (message.includes('Failed to fetch')) {
+      const errorName = error instanceof Error ? error.name : '';
+      
+      // Network aborts during rapid navigation often surface as:
+      // - TypeError: Failed to fetch
+      // - TypeError: NetworkError when attempting to fetch resource
+      // - DOMException: The operation was aborted
+      if (
+        message.includes('Failed to fetch') ||
+        message.includes('NetworkError') ||
+        message.includes('fetch resource') ||
+        errorName === 'NetworkError' ||
+        errorName === 'AbortError'
+      ) {
         console.warn('⚠️ REMOTE SYNC ABORTED (navigation/change in-flight). Data is saved locally and will retry on next sync.');
         return; // swallow non-fatal aborts
       }

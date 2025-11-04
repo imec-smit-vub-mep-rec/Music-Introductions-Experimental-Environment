@@ -64,6 +64,9 @@ export interface QuestionBlock {
   id: string;
   title: string;
   description?: string;
+  // When provided, this block is only shown if the current song's
+  // introduction style is included in the specified list
+  onlyShowForIntroductionTypes?: import('./session').IntroductionStyle[];
   questions: Question[];
 }
 

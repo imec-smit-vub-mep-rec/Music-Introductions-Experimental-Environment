@@ -23,17 +23,10 @@ export function GenreConfirmationScreen({
             {chosenGenre?.name || "your genre"}!
           </h1>
           <p className="text-gray-700 leading-7 mb-4">
-            We&apos;ve prepared a short playlist of three songs to help you
-            explore this genre further. Take your time to listen and savor these
-            amazing tracks.
+          We&apos;ve prepared a short playlist of three songs from this genre for you to listen to. Before some songs, you&apos;ll hear a short spoken introduction. 
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            Before some songs, you&apos;ll hear a short spoken introduction.
-          </p> 
-          <p className="text-gray-700 leading-7 mb-4">
-            If you feel you&apos;ve heard enough of a song, you can move on
-            after about thirty seconds. After each song, you&apos;ll be asked a
-            few questions about your listening experience.
+          Feel free to listen at your own pace, you can move on after about thirty seconds if you feel you&apos;ve heard enough. After each song, a few short questions will follow about your listening experience. 
           </p>
           <p className="text-gray-700 leading-7 mb-8">Enjoy the music!</p>
 

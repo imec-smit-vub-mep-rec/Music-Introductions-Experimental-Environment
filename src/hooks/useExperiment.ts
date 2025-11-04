@@ -143,10 +143,18 @@ export function useExperiment() {
   }, []);
 
   const nextStep = useCallback(() => {
+    let shouldSync = true;
+    
     setState(prev => {
       const currentStepName = experimentSteps[prev.currentStep];
       const newStep = Math.min(prev.currentStep + 1, experimentSteps.length - 1);
       const newStepName = experimentSteps[newStep];
+      
+      // Skip sync when transitioning to thank-you page since data is already saved
+      // in FinalSurveyScreen's handleSubmit before onComplete() is called
+      if (newStepName === 'thank-you') {
+        shouldSync = false;
+      }
       
       // Prevent progression from genre-selection without a selected genre
       if (currentStepName === 'genre-selection' && !prev.selectedGenre) {
@@ -266,8 +274,12 @@ export function useExperiment() {
     });
 
     // Sync to remote database on step change
-    safeSyncSession();
-  }, []);
+    // Skip sync when transitioning to thank-you page since data is already saved
+    // in FinalSurveyScreen's handleSubmit before onComplete() is called
+    if (shouldSync) {
+      safeSyncSession();
+    }
+  }, [getCurrentSession, safeSyncSession]);
 
   const prevStep = useCallback(() => {
     setState(prev => {

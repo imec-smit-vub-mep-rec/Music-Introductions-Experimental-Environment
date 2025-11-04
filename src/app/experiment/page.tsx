@@ -8,11 +8,11 @@ import { TermsScreen } from "@/components/screens/TermsScreen";
 import { SurveyScreen } from "@/components/screens/SurveyScreen";
 import { GenreSelectionScreen } from "@/components/screens/GenreSelectionScreen";
 import { AudioPlayerScreen } from "@/components/screens/AudioPlayerScreen";
-import { QualtricsScreen } from "@/components/screens/QualtricsScreen";
 import { ThankYouScreen } from "@/components/screens/ThankYouScreen";
 import { useEngagementTracking } from "@/hooks/useEngagementTracking";
 import { getSession } from "@/lib/session";
 import { GenreConfirmationScreen } from "@/components/screens/GenreConfirmationScreen";
+import { FinalSurveyScreen } from "@/components/screens/FinalSurveyScreen";
 
 export default function ExperimentPage() {
   const {
@@ -185,11 +185,12 @@ export default function ExperimentPage() {
               nextStep();
             }}
             onBack={prevStep}
+            introductionStyle={getCurrentIntroductionStyle()}
           />
         );
 
       case "qualtrics":
-        return <QualtricsScreen onComplete={nextStep} />;
+        return <FinalSurveyScreen onComplete={nextStep} />;
 
       case "thank-you":
         return <ThankYouScreen />;

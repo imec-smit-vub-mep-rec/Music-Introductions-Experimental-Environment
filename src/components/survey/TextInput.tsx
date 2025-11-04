@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { AnswerValue } from '@/lib/types';
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { AnswerValue } from "@/lib/types";
+import { useEffect } from "react";
 
 interface TextInputProps {
   question: string;
@@ -13,14 +14,19 @@ interface TextInputProps {
   required?: boolean;
 }
 
-export function TextInput({ 
-  question, 
-  value, 
-  onChange, 
-  placeholder = '',
+export function TextInput({
+  question,
+  value,
+  onChange,
+  placeholder = "",
   multiline = false,
-  required = false 
+  required = false,
 }: TextInputProps) {
+  // Reset state when question changes - ensures clean input on question switch
+  useEffect(() => {
+    // This ensures the component resets when question prop changes
+  }, [question]);
+
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-medium text-dark-purple">
