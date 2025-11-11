@@ -2835,6 +2835,41 @@
         "description": "Serendipity",
         "questions": [
           {
+            "id": "45_pi_se_9",
+            "text": "I was pleasantly surprised",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Pleasant surprise"
+          },
+          {
             "id": "37_pi_se_1",
             "text": "The song differs from the type of music I normally listen to",
             "type": "multipleChoice",
@@ -2905,41 +2940,6 @@
             "dataExportTag": "Intriguing"
           },
           {
-            "id": "39_pi_se_3",
-            "text": "I felt surprised",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Unexpected"
-          },
-          {
             "id": "attention_check_1",
             "text": "Indicate 'Strongly disagree' to continue",
             "type": "multipleChoice",
@@ -3008,6 +3008,41 @@
             ],
             "answers": [],
             "dataExportTag": "Unexpected"
+          },
+          {
+            "id": "39_pi_se_3",
+            "text": "I felt surprised",
+            "type": "multipleChoice",
+            "required": true,
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Unexpected - surprised"
           },
           {
             "id": "41_pi_se_5",
@@ -3148,41 +3183,6 @@
             ],
             "answers": [],
             "dataExportTag": "Novelty"
-          },
-          {
-            "id": "45_pi_se_9",
-            "text": "I was pleasantly surprised",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Pleasant surprise"
           }
         ]
       },

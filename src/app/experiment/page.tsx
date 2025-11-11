@@ -91,7 +91,7 @@ export default function ExperimentPage() {
             responses={responses}
             onAnswer={saveResponse}
             onNext={nextStep}
-            onBack={prevStep}
+            //onBack={prevStep}
           />
         );
 
