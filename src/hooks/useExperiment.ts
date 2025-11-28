@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { ExperimentState, AnswerValue } from '@/lib/types';
-import { experimentSteps, getSongsByGenre, experimentConfig } from '@/lib/config';
+import { experimentSteps, getSongsByGenre, experimentConfig, validateAttentionChecks } from '@/lib/config';
 import { 
   getSession, 
   saveSession, 
@@ -187,7 +187,8 @@ export function useExperiment() {
       }
       
       // Additional validation: Check if onboarding survey is actually completed before allowing progression
-      if (currentStepName === 'onboarding' && newStepName === 'demographics') {
+      // Also check attention checks when transitioning from onboarding
+      if (currentStepName === 'onboarding') {
         const currentSession = getCurrentSession();
         if (currentSession && currentSession.answers.onboarding) {
           const onboardingAnswers = currentSession.answers.onboarding;
@@ -204,13 +205,35 @@ export function useExperiment() {
           if (!allRequiredAnswered) {
             console.warn('⚠️ CANNOT PROCEED FROM ONBOARDING: Not all required questions answered', {
               current_step: currentStepName,
-              attempted_next_step: newStepName,
               answered_questions: Object.keys(onboardingAnswers).length,
               required_questions: onboardingQuestions.length,
               timestamp: new Date().toISOString()
             });
             return prev; // Don't change state - stay on onboarding
           }
+          
+          // Validate attention checks - if BOTH failed, redirect to attention-check-failed
+          const attentionChecksPassed = validateAttentionChecks(onboardingAnswers);
+          
+          if (!attentionChecksPassed) {
+            console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
+              session_id: currentSession.session_id,
+              timestamp: new Date().toISOString()
+            });
+            // Find the index of 'attention-check-failed' step
+            const failedStepIndex = experimentSteps.indexOf('attention-check-failed');
+            return {
+              ...prev,
+              currentStep: failedStepIndex,
+            };
+          }
+          
+          // If attention checks passed, skip the attention-check-failed step and go to demographics
+          const demographicsIndex = experimentSteps.indexOf('demographics');
+          return {
+            ...prev,
+            currentStep: demographicsIndex,
+          };
         }
       }
       

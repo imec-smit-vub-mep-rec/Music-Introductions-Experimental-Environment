@@ -13,6 +13,7 @@ import { useEngagementTracking } from "@/hooks/useEngagementTracking";
 import { getSession } from "@/lib/session";
 import { GenreConfirmationScreen } from "@/components/screens/GenreConfirmationScreen";
 import { FinalSurveyScreen } from "@/components/screens/FinalSurveyScreen";
+import { AttentionCheckFailedScreen } from "@/components/screens/AttentionCheckFailedScreen";
 
 export default function ExperimentPage() {
   const {
@@ -82,6 +83,9 @@ export default function ExperimentPage() {
             onNext={nextStep}
           />
         );
+
+      case "attention-check-failed":
+        return <AttentionCheckFailedScreen />;
 
       case "demographics":
         return (

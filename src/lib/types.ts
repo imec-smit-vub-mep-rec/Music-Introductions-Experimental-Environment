@@ -6,6 +6,7 @@ export type ExperimentStep =
   | 'welcome' 
   | 'terms' 
   | 'onboarding' 
+  | 'attention-check-failed'
   | 'demographics'
   | 'genre-selection'
   | 'audio-song-1'
@@ -39,6 +40,9 @@ export interface Question {
   statements?: string[];
   scale?: string[];
   dataExportTag?: string;
+  // Attention check properties
+  isAttentionCheck?: boolean;
+  correctAnswer?: string;
 }
 
 export interface Song {

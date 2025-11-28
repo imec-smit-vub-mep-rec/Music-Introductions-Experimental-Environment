@@ -220,6 +220,43 @@
             "dataExportTag": "Seldom daydream"
           },
           {
+            "id": "attention_check_1",
+            "text": "Please select Disagree for this item.",
+            "type": "multipleChoice",
+            "required": true,
+            "isAttentionCheck": true,
+            "correctAnswer": "2",
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Attention Check 1"
+          },
+          {
             "id": "6_on_im_7",
             "text": "I do not have a good imagination",
             "type": "multipleChoice",
@@ -914,6 +951,43 @@
             ],
             "answers": [],
             "dataExportTag": "Not interested abstract"
+          },
+          {
+            "id": "attention_check_2",
+            "text": "Please select 'Strongly agree' for this item.",
+            "type": "multipleChoice",
+            "required": true,
+            "isAttentionCheck": true,
+            "correctAnswer": "5",
+            "choices": [
+              {
+                "id": "1",
+                "text": "Strongly disagree",
+                "value": "1"
+              },
+              {
+                "id": "2",
+                "text": "Disagree",
+                "value": "2"
+              },
+              {
+                "id": "3",
+                "text": "Neutral",
+                "value": "3"
+              },
+              {
+                "id": "4",
+                "text": "Agree",
+                "value": "4"
+              },
+              {
+                "id": "5",
+                "text": "Strongly agree",
+                "value": "5"
+              }
+            ],
+            "answers": [],
+            "dataExportTag": "Attention Check 2"
           },
           {
             "id": "25_on_in_7",
