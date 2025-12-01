@@ -37,6 +37,11 @@ export interface SessionData {
   randomized_introductions: IntroductionStyle[];
   start_time: string;
   experiment_completed: boolean;
+  // Prolific integration
+  isProlificSession?: boolean;
+  prolific_pid?: string;
+  prolific_study_id?: string;
+  prolific_session_id?: string;
   answers: {
     onboarding: Record<string, AnswerValue>;
     demographics: Record<string, AnswerValue>;
@@ -53,6 +58,7 @@ export interface SessionData {
 }
 
 const SESSION_STORAGE_KEY = "serendipity_session";
+const PROLIFIC_DATA_STORAGE_KEY = "serendipity_prolific_data";
 
 // Global counter to ensure uniqueness even with rapid successive calls
 let sessionCounter = 0;
@@ -114,6 +120,19 @@ export function generateRandomGroup(): SessionGroup {
 export async function createNewSession(): Promise<SessionData> {
   let clientIp: string | undefined;
   let referer: string | undefined;
+  let prolificPid: string | undefined;
+  let prolificStudyId: string | undefined;
+  let prolificSessionId: string | undefined;
+  
+  // Clear any existing Prolific data when starting a new session
+  // (will be repopulated if this is a Prolific session)
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.removeItem(PROLIFIC_DATA_STORAGE_KEY);
+    } catch (error) {
+      console.warn('Could not clear existing Prolific data:', error);
+    }
+  }
   
   try {
     // Fetch client IP address
@@ -133,6 +152,14 @@ export async function createNewSession(): Promise<SessionData> {
   // Extract referer from URL
   try {
     referer = getRefererFromURL();
+    // Extract Prolific parameters from URL
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      prolificPid = urlParams.get('PROLIFIC_PID') || undefined;
+      prolificStudyId = urlParams.get('STUDY_ID') || undefined;
+      prolificSessionId = urlParams.get('SESSION_ID') || undefined;
+    }
+
     if (referer) {
       console.log('🔗 REFERER DETECTED:', {
         referer: referer,
@@ -167,6 +194,10 @@ export async function createNewSession(): Promise<SessionData> {
     },
     client_ip: clientIp, // Store client IP for session tracking
     referer: referer, // Store referer parameter from URL
+    isProlificSession: !!(prolificPid && prolificStudyId && prolificSessionId),
+    prolific_pid: prolificPid,
+    prolific_study_id: prolificStudyId,
+    prolific_session_id: prolificSessionId,
   };
 
   console.log("🎯 NEW SESSION CREATED:", {
@@ -174,9 +205,32 @@ export async function createNewSession(): Promise<SessionData> {
     group: group,
     client_ip: clientIp,
     referer: referer,
+    is_prolific: !!(prolificPid && prolificStudyId && prolificSessionId),
     counter: sessionCounter,
     timestamp: new Date().toISOString(),
   });
+
+  // Store Prolific data separately so it persists even if session is cleared
+  if (prolificPid && prolificStudyId && prolificSessionId) {
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(PROLIFIC_DATA_STORAGE_KEY, JSON.stringify({
+          isProlificSession: true,
+          prolific_pid: prolificPid,
+          prolific_study_id: prolificStudyId,
+          prolific_session_id: prolificSessionId,
+        }));
+        console.log('💾 PROLIFIC DATA STORED SEPARATELY:', {
+          prolific_pid: prolificPid,
+          prolific_study_id: prolificStudyId,
+          prolific_session_id: prolificSessionId,
+          timestamp: new Date().toISOString(),
+        });
+      } catch (error) {
+        console.warn('Could not store Prolific data separately:', error);
+      }
+    }
+  }
 
   return session;
 }
@@ -597,17 +651,73 @@ export async function clearAllSessionData(): Promise<void> {
   // Get current session before clearing (for logging only)
   const currentSession = getSession();
   
+  // Preserve Prolific data if it exists (so thank-you screen can still show the button)
+  // We'll clear it only when starting a completely new session
+  const prolificData = currentSession?.isProlificSession ? {
+    isProlificSession: currentSession.isProlificSession,
+    prolific_pid: currentSession.prolific_pid,
+    prolific_study_id: currentSession.prolific_study_id,
+    prolific_session_id: currentSession.prolific_session_id,
+  } : null;
+  
   // Only clear localStorage - NEVER delete from database
   clearSession();
+  
+  // Restore Prolific data if it was a Prolific session
+  if (prolificData && typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(PROLIFIC_DATA_STORAGE_KEY, JSON.stringify(prolificData));
+      console.log('💾 PROLIFIC DATA PRESERVED AFTER SESSION CLEAR:', {
+        prolific_pid: prolificData.prolific_pid,
+        timestamp: new Date().toISOString(),
+      });
+    } catch (error) {
+      console.warn('Could not preserve Prolific data:', error);
+    }
+  }
   
   console.log('🧹 LOCAL SESSION DATA CLEARED (DATABASE PRESERVED):', {
     had_session: !!currentSession,
     session_id: currentSession?.session_id,
     client_ip: currentSession?.client_ip,
     referer: currentSession?.referer,
+    prolific_data_preserved: !!prolificData,
     message: 'Database sessions are preserved for multiple users per IP/device',
     timestamp: new Date().toISOString(),
   });
+}
+
+// Helper function to get Prolific data (from session or separate storage)
+export function getProlificData(): {
+  isProlificSession: boolean;
+  prolific_pid?: string;
+  prolific_study_id?: string;
+  prolific_session_id?: string;
+} | null {
+  if (typeof window === "undefined") return null;
+
+  // First try to get from current session
+  const session = getSession();
+  if (session?.isProlificSession) {
+    return {
+      isProlificSession: true,
+      prolific_pid: session.prolific_pid,
+      prolific_study_id: session.prolific_study_id,
+      prolific_session_id: session.prolific_session_id,
+    };
+  }
+
+  // Fallback to separate storage (in case session was cleared)
+  try {
+    const stored = localStorage.getItem(PROLIFIC_DATA_STORAGE_KEY);
+    if (stored) {
+      return JSON.parse(stored);
+    }
+  } catch (error) {
+    console.warn("Error loading Prolific data from separate storage:", error);
+  }
+
+  return null;
 }
 
 export function updateQualtricsResponseId(responseId: string): void {

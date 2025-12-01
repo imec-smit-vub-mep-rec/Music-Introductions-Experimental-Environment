@@ -6,7 +6,7 @@ import { Song, Genre, Transcript } from "@/lib/types";
 import { LyricsDisplay } from "@/components/audio/LyricsDisplay";
 import { cn } from "@/lib/utils";
 import { updateSongLikeStatus, updateSongDislikeStatus } from "@/lib/session";
-import { PauseIcon, PlayIcon, ThumbsDown, ThumbsUp } from "lucide-react";
+import { FastForward, PauseIcon, PlayIcon, ThumbsDown, ThumbsUp } from "lucide-react";
 
 interface AudioPlayerProps {
   song: Song;
@@ -535,7 +535,7 @@ export function AudioPlayer({
               : "Skip song"
           }
         >
-          ⏭
+          <FastForward className="w-6 h-6" />
         </Button>
 
         {/* Like/Dislike Buttons - Only show during song playback (not introduction) */}

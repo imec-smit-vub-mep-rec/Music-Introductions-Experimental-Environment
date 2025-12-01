@@ -36,6 +36,9 @@ export async function POST(request: NextRequest) {
           raw_session_data = ${JSON.stringify(sessionData)},
           engagement_metrics = ${JSON.stringify(sessionData.engagement_metrics)},
           referer = ${sessionData.referer || null},
+          prolific_pid = ${sessionData.prolific_pid || null},
+          prolific_study_id = ${sessionData.prolific_study_id || null},
+          prolific_session_id = ${sessionData.prolific_session_id || null},
           expires_at = ${new Date(Date.now() + 2 * 365 * 24 * 60 * 60 * 1000).toISOString()},
           updated_at = NOW()
         WHERE session_id = ${sessionData.session_id}
@@ -56,6 +59,7 @@ export async function POST(request: NextRequest) {
           start_time, experiment_completed, 
           onboarding_answers, demographics_answers, post_listening_answers, final_answers,
           qualtrics_response_id, raw_session_data, engagement_metrics, 
+          prolific_pid, prolific_study_id, prolific_session_id,
           expires_at, created_at, updated_at
         ) VALUES (
           ${`session_${sessionData.session_id}`},
@@ -75,6 +79,9 @@ export async function POST(request: NextRequest) {
           ${sessionData.qualtrics_response_id || null},
           ${JSON.stringify(sessionData)},
           ${JSON.stringify(sessionData.engagement_metrics)},
+          ${sessionData.prolific_pid || null},
+          ${sessionData.prolific_study_id || null},
+          ${sessionData.prolific_session_id || null},
           ${new Date(Date.now() + 2 * 365 * 24 * 60 * 60 * 1000).toISOString()},
           NOW(), NOW()
         )

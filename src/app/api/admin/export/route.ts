@@ -9,6 +9,9 @@ type SessionRow = {
   group_type: string;
   chosen_genre: string | null;
   referer: string | null;
+  prolific_pid: string | null;
+  prolific_study_id: string | null;
+  prolific_session_id: string | null;
   start_time: string;
   onboarding_answers: unknown;
   demographics_answers: unknown;
@@ -109,6 +112,9 @@ export async function GET(request: NextRequest) {
         group_type,
         chosen_genre,
         referer,
+        prolific_pid,
+        prolific_study_id,
+        prolific_session_id,
         start_time,
         onboarding_answers,
         demographics_answers,
@@ -259,6 +265,9 @@ export async function GET(request: NextRequest) {
         group_type: session.group_type,
         chosen_genre: session.chosen_genre,
         referer: session.referer || "",
+        prolific_pid: session.prolific_pid || "",
+        prolific_study_id: session.prolific_study_id || "",
+        prolific_session_id: session.prolific_session_id || "",
         start_time: new Date(session.start_time).toLocaleString(),
         qualtrics_response_id: session.qualtrics_response_id || "",
         created_at: new Date(session.created_at).toLocaleString(),

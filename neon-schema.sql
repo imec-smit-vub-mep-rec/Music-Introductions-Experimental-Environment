@@ -34,6 +34,10 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     expires_at TIMESTAMP WITH TIME ZONE NOT NULL -- GDPR compliance: auto-delete after 2 years
+
+    prolific_pid VARCHAR(48),
+    prolific_study_id VARCHAR(48),
+    prolific_session_id VARCHAR(48),
 );
 
 -- Create indexes for performance
