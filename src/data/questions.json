@@ -3014,10 +3014,12 @@
             "dataExportTag": "Intriguing"
           },
           {
-            "id": "attention_check_1",
+            "id": "attention_check_postlistening",
             "text": "Indicate 'Strongly disagree' to continue",
             "type": "multipleChoice",
             "required": true,
+            "isAttentionCheck": true,
+            "correctAnswer": "1",
             "choices": [
               {
                 "id": "1",
@@ -3046,7 +3048,7 @@
               }
             ],
             "answers": [],
-            "dataExportTag": "Attention check 1"
+            "dataExportTag": "Attention check postlistening"
           },
           {
             "id": "40_pi_se_4",

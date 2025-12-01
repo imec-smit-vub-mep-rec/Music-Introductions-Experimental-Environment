@@ -37,6 +37,8 @@ export interface SessionData {
   randomized_introductions: IntroductionStyle[];
   start_time: string;
   experiment_completed: boolean;
+  // Attention check tracking
+  failed_attention_checks: number; // Global counter for failed attention checks across all surveys
   // Prolific integration
   isProlificSession?: boolean;
   prolific_pid?: string;
@@ -182,6 +184,7 @@ export async function createNewSession(): Promise<SessionData> {
     randomized_introductions: [],
     start_time: new Date().toISOString(),
     experiment_completed: false,
+    failed_attention_checks: 0, // Initialize global attention check failure counter
     answers: {
       onboarding: {}, // Always start with empty onboarding answers
       demographics: {}, // Always start with empty demographics answers
@@ -248,6 +251,16 @@ export function getSession(): SessionData | null {
     if (session && typeof session.experiment_completed === 'undefined') {
       session.experiment_completed = false;
       console.log("🔄 MIGRATING SESSION TO INCLUDE EXPERIMENT_COMPLETED:", {
+        session_id: session.session_id,
+        timestamp: new Date().toISOString(),
+      });
+      saveSession(session);
+    }
+    
+    // Migrate existing sessions to include failed_attention_checks property
+    if (session && typeof session.failed_attention_checks === 'undefined') {
+      session.failed_attention_checks = 0;
+      console.log("🔄 MIGRATING SESSION TO INCLUDE FAILED_ATTENTION_CHECKS:", {
         session_id: session.session_id,
         timestamp: new Date().toISOString(),
       });
@@ -379,6 +392,24 @@ export function updateSessionFinalAnswers(
   } else {
     console.warn("⚠️ Could not update final answers. No session found.");
   }
+}
+
+export function incrementFailedAttentionChecks(): void {
+  const session = getSession();
+  if (session) {
+    session.failed_attention_checks = (session.failed_attention_checks || 0) + 1;
+    console.log("❌ FAILED ATTENTION CHECK COUNT INCREMENTED:", {
+      session_id: session.session_id,
+      failed_count: session.failed_attention_checks,
+      timestamp: new Date().toISOString(),
+    });
+    saveSession(session);
+  }
+}
+
+export function getFailedAttentionChecksCount(): number {
+  const session = getSession();
+  return session?.failed_attention_checks || 0;
 }
 
 export function addSongSession(songSession: SongSession): void {

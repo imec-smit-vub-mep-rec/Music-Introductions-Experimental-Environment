@@ -2,7 +2,14 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { ExperimentState, AnswerValue } from '@/lib/types';
-import { experimentSteps, getSongsByGenre, experimentConfig, validateAttentionChecks } from '@/lib/config';
+import { 
+  experimentSteps, 
+  getSongsByGenre, 
+  experimentConfig, 
+  validateOnboardingAttentionChecks,
+  validatePostListeningAttentionCheck,
+  MAX_FAILED_ATTENTION_CHECKS 
+} from '@/lib/config';
 import { 
   getSession, 
   saveSession, 
@@ -15,6 +22,8 @@ import {
   syncSessionToRemote,
   updateExperimentCompletionStatus,
   clearAllSessionData,
+  incrementFailedAttentionChecks,
+  getFailedAttentionChecksCount,
   SessionData
 } from '@/lib/session';
 import { randomizeSongsForGenre, randomizeIntroductions } from '@/lib/randomization';
@@ -212,12 +221,30 @@ export function useExperiment() {
             return prev; // Don't change state - stay on onboarding
           }
           
-          // Validate attention checks - if BOTH failed, redirect to attention-check-failed
-          const attentionChecksPassed = validateAttentionChecks(onboardingAnswers);
+          // Validate attention checks and count failures
+          const { newFailures } = validateOnboardingAttentionChecks(onboardingAnswers);
           
-          if (!attentionChecksPassed) {
+          // Update the global failed attention checks count
+          for (let i = 0; i < newFailures; i++) {
+            incrementFailedAttentionChecks();
+          }
+          
+          // Get the updated total failure count
+          const totalFailures = getFailedAttentionChecksCount();
+          
+          console.log('🔍 ONBOARDING ATTENTION CHECK SUMMARY:', {
+            session_id: currentSession.session_id,
+            new_failures: newFailures,
+            total_failures: totalFailures,
+            max_allowed: MAX_FAILED_ATTENTION_CHECKS,
+            timestamp: new Date().toISOString()
+          });
+          
+          // If total failures >= MAX, redirect to attention-check-failed
+          if (totalFailures >= MAX_FAILED_ATTENTION_CHECKS) {
             console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
               session_id: currentSession.session_id,
+              total_failures: totalFailures,
               timestamp: new Date().toISOString()
             });
             // Find the index of 'attention-check-failed' step
@@ -228,7 +255,7 @@ export function useExperiment() {
             };
           }
           
-          // If attention checks passed, skip the attention-check-failed step and go to demographics
+          // If attention checks passed (< MAX failures), skip the attention-check-failed step and go to demographics
           const demographicsIndex = experimentSteps.indexOf('demographics');
           return {
             ...prev,
@@ -261,6 +288,60 @@ export function useExperiment() {
               timestamp: new Date().toISOString()
             });
             return prev; // Don't change state - stay on demographics
+          }
+        }
+      }
+      
+      // Check attention check when transitioning FROM a postListening survey (survey-song-X)
+      if (currentStepName.startsWith('survey-song-')) {
+        const currentSession = getCurrentSession();
+        if (currentSession) {
+          // Get the song index based on current step name
+          const songNumber = parseInt(currentStepName.replace('survey-song-', ''));
+          const songIndex = songNumber - 1;
+          
+          // Find the song session for the current song
+          const songSession = currentSession.answers.songs.find((s, idx) => {
+            // Match by index since songs are added in order
+            return idx === songIndex;
+          }) || currentSession.answers.songs[songIndex];
+          
+          if (songSession && songSession.answers) {
+            // Validate the postListening attention check
+            const { failed } = validatePostListeningAttentionCheck(songSession.answers);
+            
+            if (failed) {
+              // Increment the global failure count
+              incrementFailedAttentionChecks();
+              
+              // Get the updated total failure count
+              const totalFailures = getFailedAttentionChecksCount();
+              
+              console.log('🔍 POST-LISTENING ATTENTION CHECK SUMMARY:', {
+                session_id: currentSession.session_id,
+                song_index: songIndex,
+                failed: true,
+                total_failures: totalFailures,
+                max_allowed: MAX_FAILED_ATTENTION_CHECKS,
+                timestamp: new Date().toISOString()
+              });
+              
+              // If total failures >= MAX, redirect to attention-check-failed
+              if (totalFailures >= MAX_FAILED_ATTENTION_CHECKS) {
+                console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
+                  session_id: currentSession.session_id,
+                  total_failures: totalFailures,
+                  reason: 'Post-listening attention check failure pushed total over limit',
+                  timestamp: new Date().toISOString()
+                });
+                // Find the index of 'attention-check-failed' step
+                const failedStepIndex = experimentSteps.indexOf('attention-check-failed');
+                return {
+                  ...prev,
+                  currentStep: failedStepIndex,
+                };
+              }
+            }
           }
         }
       }
