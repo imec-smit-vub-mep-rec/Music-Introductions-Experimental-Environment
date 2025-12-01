@@ -4116,41 +4116,6 @@
             ],
             "answers": [],
             "dataExportTag": "Genre interest"
-          },
-          {
-            "id": "attention_check_2",
-            "text": "Indicate 'Strongly agree' to continue",
-            "type": "multipleChoice",
-            "required": true,
-            "choices": [
-              {
-                "id": "1",
-                "text": "Strongly disagree",
-                "value": "1"
-              },
-              {
-                "id": "2",
-                "text": "Disagree",
-                "value": "2"
-              },
-              {
-                "id": "3",
-                "text": "Neutral",
-                "value": "3"
-              },
-              {
-                "id": "4",
-                "text": "Agree",
-                "value": "4"
-              },
-              {
-                "id": "5",
-                "text": "Strongly agree",
-                "value": "5"
-              }
-            ],
-            "answers": [],
-            "dataExportTag": "Attention check 2"
           }
         ]
       },
