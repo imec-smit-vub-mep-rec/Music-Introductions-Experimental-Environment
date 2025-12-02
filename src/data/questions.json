@@ -4179,23 +4179,6 @@
             "placeholder": "Enter your response here..."
           }
         ]
-      },
-      {
-        "id": "contact_email",
-        "title": "Contact information",
-        "description": "Contact information (optional)",
-        "questions": [
-          {
-            "id": "71_pl_ci_1",
-            "text": "Can we contact you for a follow-up study?",
-            "type": "textInput",
-            "required": false,
-            "choices": [],
-            "answers": [],
-            "dataExportTag": "Email address",
-            "placeholder": "Enter your email address here if you would like to participate in a follow-up study"
-          }
-        ]
       }
     ],
     "randomizeBlocks": false
