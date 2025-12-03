@@ -34,6 +34,10 @@ Examples:
 ?ref=vub_students
 ?ref=prolific
 
+### Prolific URL example
+```
+http://localhost:3000/experiment?PROLIFIC_PID=1234567890&STUDY_ID=1234567890&SESSION_ID=1234567890
+```
 ### Introduction Styles
 - `no_introduction`: No spoken explanation
 - `informative_introduction`: Introduction for users familiar with the genre

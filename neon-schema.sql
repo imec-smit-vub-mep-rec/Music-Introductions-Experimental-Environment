@@ -30,11 +30,11 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     -- Metadata
     start_time TIMESTAMP WITH TIME ZONE NOT NULL,
     experiment_completed BOOLEAN NOT NULL DEFAULT FALSE,
+    attention_check_failed BOOLEAN NOT NULL DEFAULT FALSE,
     engagement_metrics JSONB NOT NULL DEFAULT '{}',
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-    expires_at TIMESTAMP WITH TIME ZONE NOT NULL -- GDPR compliance: auto-delete after 2 years
-
+    expires_at TIMESTAMP WITH TIME ZONE NOT NULL, -- GDPR compliance: auto-delete after 2 years
     prolific_pid VARCHAR(48),
     prolific_study_id VARCHAR(48),
     prolific_session_id VARCHAR(48),

@@ -39,6 +39,7 @@ export interface SessionData {
   experiment_completed: boolean;
   // Attention check tracking
   failed_attention_checks: number; // Global counter for failed attention checks across all surveys
+  attention_check_failed: boolean; // Flag to prevent restarting after attention check failure
   // Prolific integration
   isProlificSession?: boolean;
   prolific_pid?: string;
@@ -185,6 +186,7 @@ export async function createNewSession(): Promise<SessionData> {
     start_time: new Date().toISOString(),
     experiment_completed: false,
     failed_attention_checks: 0, // Initialize global attention check failure counter
+    attention_check_failed: false, // Initialize attention check failed flag
     answers: {
       onboarding: {}, // Always start with empty onboarding answers
       demographics: {}, // Always start with empty demographics answers
@@ -261,6 +263,16 @@ export function getSession(): SessionData | null {
     if (session && typeof session.failed_attention_checks === 'undefined') {
       session.failed_attention_checks = 0;
       console.log("🔄 MIGRATING SESSION TO INCLUDE FAILED_ATTENTION_CHECKS:", {
+        session_id: session.session_id,
+        timestamp: new Date().toISOString(),
+      });
+      saveSession(session);
+    }
+    
+    // Migrate existing sessions to include attention_check_failed property
+    if (session && typeof session.attention_check_failed === 'undefined') {
+      session.attention_check_failed = false;
+      console.log("🔄 MIGRATING SESSION TO INCLUDE ATTENTION_CHECK_FAILED:", {
         session_id: session.session_id,
         timestamp: new Date().toISOString(),
       });
@@ -410,6 +422,24 @@ export function incrementFailedAttentionChecks(): void {
 export function getFailedAttentionChecksCount(): number {
   const session = getSession();
   return session?.failed_attention_checks || 0;
+}
+
+export function markAttentionCheckFailed(): void {
+  const session = getSession();
+  if (session) {
+    session.attention_check_failed = true;
+    console.log("❌ ATTENTION CHECK FAILED FLAG SET:", {
+      session_id: session.session_id,
+      failed_count: session.failed_attention_checks,
+      timestamp: new Date().toISOString(),
+    });
+    saveSession(session);
+  }
+}
+
+export function hasAttentionCheckFailed(): boolean {
+  const session = getSession();
+  return session?.attention_check_failed || false;
 }
 
 export function addSongSession(songSession: SongSession): void {

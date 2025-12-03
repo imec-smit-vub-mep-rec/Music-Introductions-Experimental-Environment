@@ -24,6 +24,8 @@ import {
   clearAllSessionData,
   incrementFailedAttentionChecks,
   getFailedAttentionChecksCount,
+  markAttentionCheckFailed,
+  hasAttentionCheckFailed,
   SessionData
 } from '@/lib/session';
 import { randomizeSongsForGenre, randomizeIntroductions } from '@/lib/randomization';
@@ -72,8 +74,23 @@ export function useExperiment() {
         group: existingSession.group,
         chosen_genre: existingSession.chosen_genre,
         experiment_completed: existingSession.experiment_completed,
+        attention_check_failed: existingSession.attention_check_failed,
         timestamp: new Date().toISOString()
       });
+      
+      // If attention checks failed, redirect to failed screen
+      if (existingSession.attention_check_failed) {
+        console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
+          session_id: existingSession.session_id,
+          timestamp: new Date().toISOString()
+        });
+        const failedStepIndex = experimentSteps.indexOf('attention-check-failed');
+        setState(prev => ({
+          ...prev,
+          currentStep: failedStepIndex,
+        }));
+        return;
+      }
       
       // If experiment is completed, clear the session to allow new user
       if (existingSession.experiment_completed) {
@@ -240,13 +257,15 @@ export function useExperiment() {
             timestamp: new Date().toISOString()
           });
           
-          // If total failures >= MAX, redirect to attention-check-failed
+          // If total failures >= MAX, mark as failed and redirect to attention-check-failed
           if (totalFailures >= MAX_FAILED_ATTENTION_CHECKS) {
             console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
               session_id: currentSession.session_id,
               total_failures: totalFailures,
               timestamp: new Date().toISOString()
             });
+            // Mark attention check as failed to prevent restart
+            markAttentionCheckFailed();
             // Find the index of 'attention-check-failed' step
             const failedStepIndex = experimentSteps.indexOf('attention-check-failed');
             return {
@@ -326,7 +345,7 @@ export function useExperiment() {
                 timestamp: new Date().toISOString()
               });
               
-              // If total failures >= MAX, redirect to attention-check-failed
+              // If total failures >= MAX, mark as failed and redirect to attention-check-failed
               if (totalFailures >= MAX_FAILED_ATTENTION_CHECKS) {
                 console.warn('❌ ATTENTION CHECKS FAILED - REDIRECTING TO FAILED SCREEN', {
                   session_id: currentSession.session_id,
@@ -334,6 +353,8 @@ export function useExperiment() {
                   reason: 'Post-listening attention check failure pushed total over limit',
                   timestamp: new Date().toISOString()
                 });
+                // Mark attention check as failed to prevent restart
+                markAttentionCheckFailed();
                 // Find the index of 'attention-check-failed' step
                 const failedStepIndex = experimentSteps.indexOf('attention-check-failed');
                 return {

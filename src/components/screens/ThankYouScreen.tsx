@@ -28,6 +28,17 @@ export function ThankYouScreen() {
       ? process.env.NEXT_PUBLIC_PROLIFIC_REDIRECT_URL
       : undefined;
 
+  // Auto-redirect Prolific users after 1 second
+  useEffect(() => {
+    if (isProlificSession && prolificRedirectUrl) {
+      const timer = setTimeout(() => {
+        window.location.href = prolificRedirectUrl;
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isProlificSession, prolificRedirectUrl]);
+
   const handleProlificRedirect = () => {
     if (prolificRedirectUrl) {
       window.location.href = prolificRedirectUrl;
@@ -44,7 +55,7 @@ export function ThankYouScreen() {
           </h1>
           <p className="text-white/90 text-lg leading-relaxed">
             {isProlificSession
-              ? "Thank you, please click the button below to submit your answers and return to Prolific. You need to click the button to get your reward."
+              ? "Thank you! You will be automatically redirected to Prolific in a moment. If the redirect doesn't work, please click the button below to submit your answers and return to Prolific."
               : "            Your participation in this music discovery experiment is complete. This experiment was designed to study music discovery patterns and the role of serendipity in finding new favorite genres."}
           </p>
           <div className="bg-white rounded-2xl p-6 border border-white/20">
@@ -61,7 +72,14 @@ export function ThankYouScreen() {
               </div>
             )}
             <p className="text-sm text-gray-500">
-              Any questions or remarks about this research? Please contact us at <a href="mailto:brett.binst@vub.be" className="text-blue-500 hover:text-yellow-200">brett.binst@vub.be</a>.
+              Any questions or remarks about this research? Please contact us at{" "}
+              <a
+                href="mailto:brett.binst@vub.be"
+                className="text-blue-500 hover:text-yellow-200"
+              >
+                brett.binst@vub.be
+              </a>
+              .
             </p>
             <div className="flex items-center justify-between mt-8">
               <a

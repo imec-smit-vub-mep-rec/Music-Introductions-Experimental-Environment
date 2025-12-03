@@ -10,6 +10,8 @@ import {
   saveSession,
   hasCompletedSession,
   clearAllSessionData,
+  hasAttentionCheckFailed,
+  getSession,
 } from "@/lib/session";
 import { validateRecaptcha } from "@/lib/recaptcha";
 
@@ -36,6 +38,17 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
     if (consent1 && consent2 && recaptchaToken && !isProcessing) {
       // Prevent multiple simultaneous processing
       setIsProcessing(true);
+      
+      // Check if attention checks failed - prevent restart
+      if (hasAttentionCheckFailed()) {
+        console.warn("❌ ATTENTION CHECKS FAILED - PREVENTING NEW SESSION CREATION", {
+          timestamp: new Date().toISOString()
+        });
+        setIsProcessing(false);
+        // Redirect to attention-check-failed screen
+        // This will be handled by the useExperiment hook checking the flag
+        return;
+      }
       
       // Check if user has already completed the experiment
       if (hasCompletedSession()) {
