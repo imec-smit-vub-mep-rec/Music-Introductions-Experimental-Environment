@@ -35,7 +35,8 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   }, []);
 
   useEffect(() => {
-    if (consent1 && consent2 && recaptchaToken && !isProcessing) {
+    // Don't re-run if there's already an error (prevents infinite loop on validation failure)
+    if (consent1 && consent2 && recaptchaToken && !isProcessing && !recaptchaError) {
       // Prevent multiple simultaneous processing
       setIsProcessing(true);
       
@@ -131,7 +132,7 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
 
       initializeSession();
     }
-  }, [consent1, consent2, recaptchaToken, onAccept, isProcessing]);
+  }, [consent1, consent2, recaptchaToken, onAccept, isProcessing, recaptchaError]);
 
   if (loading) {
     return (

@@ -55,7 +55,7 @@ export async function validateRecaptcha(token: string, expectedAction: string = 
     if (
       !recaptchaData?.riskAnalysis?.score ||
       recaptchaData?.tokenProperties?.valid !== true ||
-      recaptchaData?.riskAnalysis?.score < 0.5 // Adjust threshold as needed
+      recaptchaData?.riskAnalysis?.score < .4 // Adjust threshold as needed
     ) {
       console.log('🛡️ reCAPTCHA: Validation failed', JSON.stringify(recaptchaData, null, 2));
       throw new Error('reCAPTCHA validation failed');
