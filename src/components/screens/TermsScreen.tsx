@@ -4,16 +4,13 @@ import { useState, useEffect } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { ExperimentLayout } from "@/components/layout/ExperimentLayout";
-import { RecaptchaWrapper } from "@/components/RecaptchaWrapper";
 import {
   createNewSession,
   saveSession,
   hasCompletedSession,
   clearAllSessionData,
   hasAttentionCheckFailed,
-  getSession,
 } from "@/lib/session";
-import { validateRecaptcha } from "@/lib/recaptcha";
 
 interface TermsScreenProps {
   onAccept: () => void;
@@ -23,10 +20,8 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   const [consent1, setConsent1] = useState(false);
   const [consent2, setConsent2] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
-  const [recaptchaValidating, setRecaptchaValidating] = useState(false);
-  const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Simulate loading spinner
@@ -35,8 +30,8 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
   }, []);
 
   useEffect(() => {
-    // Don't re-run if there's already an error (prevents infinite loop on validation failure)
-    if (consent1 && consent2 && recaptchaToken && !isProcessing && !recaptchaError) {
+    // Don't re-run if there's already an error (prevents infinite loop)
+    if (consent1 && consent2 && !isProcessing && !error) {
       // Prevent multiple simultaneous processing
       setIsProcessing(true);
       
@@ -62,20 +57,6 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
       // Clear any existing session data and create new session
       const initializeSession = async () => {
         try {
-          setRecaptchaValidating(true);
-          setRecaptchaError(null);
-
-          // Validate reCAPTCHA token
-          console.log('🛡️ reCAPTCHA: Starting validation in TermsScreen', {
-            hasToken: !!recaptchaToken,
-            tokenLength: recaptchaToken?.length,
-            timestamp: new Date().toISOString()
-          });
-          
-          await validateRecaptcha(recaptchaToken, 'consent_form');
-          
-          console.log('🛡️ reCAPTCHA: Validation completed successfully in TermsScreen');
-
           // Clear ALL existing session data (localStorage only - database sessions are preserved)
           await clearAllSessionData();
 
@@ -113,26 +94,24 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
               session_id: session.session_id,
               timestamp: new Date().toISOString()
             });
-          } catch (error) {
-            console.error('❌ FAILED TO SYNC SESSION TO DATABASE AFTER CONSENT:', error);
+          } catch (syncError) {
+            console.error('❌ FAILED TO SYNC SESSION TO DATABASE AFTER CONSENT:', syncError);
             // Continue anyway - session is saved locally
           }
 
-          // Proceed immediately after successful validation and session sync
-          setRecaptchaValidating(false);
+          // Proceed immediately after session creation
           onAccept();
           setIsProcessing(false);
-        } catch (error) {
-          console.error("Failed to create session or validate reCAPTCHA:", error);
-          setRecaptchaError(error instanceof Error ? error.message : 'Validation failed');
-          setRecaptchaValidating(false);
+        } catch (err) {
+          console.error("Failed to create session:", err);
+          setError(err instanceof Error ? err.message : 'Session creation failed');
           setIsProcessing(false);
         }
       };
 
       initializeSession();
     }
-  }, [consent1, consent2, recaptchaToken, onAccept, isProcessing, recaptchaError]);
+  }, [consent1, consent2, onAccept, isProcessing, error]);
 
   if (loading) {
     return (
@@ -148,17 +127,6 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
     <ExperimentLayout background="light">
       <div className="min-h-screen flex items-center justify-center px-6">
         <div className="w-full max-w-md space-y-8">
-          {/* reCAPTCHA Wrapper */}
-          <RecaptchaWrapper 
-            action="consent_form" 
-            onTokenGenerated={(token) => {
-              console.log('🛡️ reCAPTCHA: Token received in TermsScreen', {
-                tokenLength: token.length,
-                timestamp: new Date().toISOString()
-              });
-              setRecaptchaToken(token);
-            }}
-          />
           {/* Privacy Card */}
           <div className="bg-ultra-violet/10 rounded-2xl p-6 border border-ultra-violet/20">
             <h2 className="text-2xl font-bold text-dark-purple mb-4">
@@ -233,22 +201,19 @@ export function TermsScreen({ onAccept }: TermsScreenProps) {
 
           {consent1 && consent2 && (
             <div className="text-center space-y-2">
-              {!recaptchaToken && (
-                <p className="text-dark-purple/70">Verifying you&apos;re human...</p>
-              )}
-              {recaptchaToken && !recaptchaValidating && !recaptchaError && (
-                <p className="text-dark-purple/70">Thank you! Proceeding...</p>
-              )}
-              {recaptchaValidating && (
+              {isProcessing && (
                 <div className="flex items-center justify-center space-x-2">
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-ultra-violet"></div>
-                  <p className="text-dark-purple/70">Validating...</p>
+                  <p className="text-dark-purple/70">Setting up your session...</p>
                 </div>
               )}
-              {recaptchaError && (
+              {!isProcessing && !error && (
+                <p className="text-dark-purple/70">Thank you! Proceeding...</p>
+              )}
+              {error && (
                 <div className="bg-red-100 border border-red-300 rounded-lg p-3">
                   <p className="text-red-700 text-sm">
-                    Verification failed. Please refresh the page and try again.
+                    Something went wrong. Please refresh the page and try again.
                   </p>
                 </div>
               )}

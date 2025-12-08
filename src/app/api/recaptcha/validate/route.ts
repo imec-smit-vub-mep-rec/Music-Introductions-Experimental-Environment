@@ -41,18 +41,6 @@ export async function POST(request: NextRequest) {
 
     const recaptchaData = await recaptchaResponse.json();
 
-    // TEST MODE: Force failure for testing (set FORCE_RECAPTCHA_FAIL=true in .env.local)
-    if (process.env.FORCE_RECAPTCHA_FAIL === 'true') {
-      console.log('reCAPTCHA: TEST MODE - Forcing validation failure');
-      return NextResponse.json(
-        {
-          error: "reCAPTCHA validation failed (test mode)",
-          details: { testMode: true },
-        },
-        { status: 400 }
-      );
-    }
-
     // Check if reCAPTCHA validation was successful
     if (
       !recaptchaData?.riskAnalysis?.score ||
