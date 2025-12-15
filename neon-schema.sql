@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     session_id BIGINT UNIQUE NOT NULL,
     
     -- Client tracking
-    client_ip VARCHAR(45) NOT NULL, -- Store client IP address (supports IPv6)
+    client_ip VARCHAR(45) NOT NULL DEFAULT '127.0.0.1', -- Store client IP address (supports IPv6)
     referer VARCHAR(500), -- Store referer parameter from URL (?ref=value)
     
     -- Experiment configuration
@@ -35,9 +35,10 @@ CREATE TABLE IF NOT EXISTS experiment_sessions (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     expires_at TIMESTAMP WITH TIME ZONE NOT NULL, -- GDPR compliance: auto-delete after 2 years
+    qualtrics_response_id VARCHAR(255),
     prolific_pid VARCHAR(48),
     prolific_study_id VARCHAR(48),
-    prolific_session_id VARCHAR(48),
+    prolific_session_id VARCHAR(48)
 );
 
 -- Create indexes for performance
@@ -45,9 +46,15 @@ CREATE INDEX IF NOT EXISTS idx_session_id ON experiment_sessions(session_id);
 CREATE INDEX IF NOT EXISTS idx_client_ip ON experiment_sessions(client_ip);
 CREATE INDEX IF NOT EXISTS idx_referer ON experiment_sessions(referer);
 CREATE INDEX IF NOT EXISTS idx_group_type ON experiment_sessions(group_type);
+CREATE INDEX IF NOT EXISTS idx_chosen_genre ON experiment_sessions(chosen_genre);
 CREATE INDEX IF NOT EXISTS idx_created_at ON experiment_sessions(created_at);
 CREATE INDEX IF NOT EXISTS idx_expires_at ON experiment_sessions(expires_at);
 CREATE INDEX IF NOT EXISTS idx_experiment_completed ON experiment_sessions(experiment_completed);
+CREATE INDEX IF NOT EXISTS idx_attention_check_failed ON experiment_sessions(attention_check_failed);
+CREATE INDEX IF NOT EXISTS idx_qualtrics_response_id ON experiment_sessions(qualtrics_response_id);
+CREATE INDEX IF NOT EXISTS idx_prolific_pid ON experiment_sessions(prolific_pid);
+CREATE INDEX IF NOT EXISTS idx_prolific_session_id ON experiment_sessions(prolific_session_id);
+CREATE INDEX IF NOT EXISTS idx_prolific_study_id ON experiment_sessions(prolific_study_id);
 
 -- Create indexes for JSONB columns for better query performance
 CREATE INDEX IF NOT EXISTS idx_onboarding_answers ON experiment_sessions USING GIN (onboarding_answers);

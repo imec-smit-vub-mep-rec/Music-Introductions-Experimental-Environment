@@ -21,7 +21,118 @@ type SessionRow = {
   engagement_metrics: unknown;
   created_at: string;
   updated_at: string;
+  experiment_completed: boolean;
 };
+
+// Helper function to normalize session data to handle question changes during the study
+// This ensures all sessions have consistent fields regardless of when they were collected
+function normalizeSessionData(session: SessionRow): {
+  onboardingAnswers: Record<string, unknown>;
+  demographicsAnswers: Record<string, unknown>;
+  postListeningAnswers: unknown[];
+  finalAnswers: Record<string, unknown>;
+} {
+  // Parse JSON data
+  let onboardingAnswers: Record<string, unknown> = {};
+  let demographicsAnswers: Record<string, unknown> = {};
+  let postListeningAnswers: unknown[] = [];
+  let finalAnswers: Record<string, unknown> = {};
+
+  try {
+    onboardingAnswers =
+      typeof session.onboarding_answers === "string"
+        ? JSON.parse(session.onboarding_answers)
+        : (session.onboarding_answers as Record<string, unknown>) || {};
+  } catch {
+    console.warn(`Failed to parse onboarding_answers for session ${session.session_id}`);
+  }
+
+  try {
+    demographicsAnswers =
+      typeof session.demographics_answers === "string"
+        ? JSON.parse(session.demographics_answers)
+        : (session.demographics_answers as Record<string, unknown>) || {};
+  } catch {
+    console.warn(`Failed to parse demographics_answers for session ${session.session_id}`);
+  }
+
+  try {
+    postListeningAnswers =
+      typeof session.post_listening_answers === "string"
+        ? JSON.parse(session.post_listening_answers)
+        : (session.post_listening_answers as unknown[]) || [];
+  } catch {
+    console.warn(`Failed to parse post_listening_answers for session ${session.session_id}`);
+  }
+
+  try {
+    finalAnswers =
+      typeof session.final_answers === "string"
+        ? JSON.parse(session.final_answers)
+        : (session.final_answers as Record<string, unknown>) || {};
+  } catch {
+    console.warn(`Failed to parse final_answers for session ${session.session_id}`);
+  }
+
+  // === NORMALIZE ONBOARDING ANSWERS ===
+  
+  // Handle attention_check_1 (added later): if not present, set to "2" (correct answer)
+  if (onboardingAnswers["attention_check_1"] === undefined || onboardingAnswers["attention_check_1"] === null) {
+    onboardingAnswers["attention_check_1"] = "2";
+    console.log(`📝 Session ${session.session_id}: Added missing onboarding attention_check_1 = "2"`);
+  }
+
+  // Handle attention_check_2 (added later): if not present, set to "5" (correct answer)
+  if (onboardingAnswers["attention_check_2"] === undefined || onboardingAnswers["attention_check_2"] === null) {
+    onboardingAnswers["attention_check_2"] = "5";
+    console.log(`📝 Session ${session.session_id}: Added missing onboarding attention_check_2 = "5"`);
+  }
+
+  // === NORMALIZE FINAL ANSWERS ===
+
+  // Handle 71_pl_ci_1 (removed later): if not present, add it as empty string
+  if (finalAnswers["71_pl_ci_1"] === undefined) {
+    finalAnswers["71_pl_ci_1"] = "";
+    console.log(`📝 Session ${session.session_id}: Added missing 71_pl_ci_1 = ""`);
+  }
+
+  // Handle attention_check_2 (removed later): if not present, set to "5" (correct answer)
+  if (finalAnswers["attention_check_2"] === undefined || finalAnswers["attention_check_2"] === null) {
+    finalAnswers["attention_check_2"] = "5";
+    console.log(`📝 Session ${session.session_id}: Added missing final attention_check_2 = "5"`);
+  }
+
+  // === NORMALIZE POST-LISTENING ANSWERS ===
+  
+  if (Array.isArray(postListeningAnswers)) {
+    postListeningAnswers = postListeningAnswers.map((song: unknown, songIndex: number) => {
+      if (song && typeof song === "object" && song !== null && "answers" in song) {
+        const songObj = song as { answers?: Record<string, unknown>; [key: string]: unknown };
+        const songAnswers = songObj.answers || {};
+
+        // Handle attention_check_postlistening → attention_check_1 rename
+        // If attention_check_postlistening is present, move its value to attention_check_1
+        if (songAnswers["attention_check_postlistening"] !== undefined) {
+          if (songAnswers["attention_check_1"] === undefined) {
+            songAnswers["attention_check_1"] = songAnswers["attention_check_postlistening"];
+            console.log(`📝 Session ${session.session_id}, Song ${songIndex + 1}: Renamed attention_check_postlistening to attention_check_1`);
+          }
+          delete songAnswers["attention_check_postlistening"];
+        }
+
+        return { ...songObj, answers: songAnswers };
+      }
+      return song;
+    });
+  }
+
+  return {
+    onboardingAnswers,
+    demographicsAnswers,
+    postListeningAnswers,
+    finalAnswers,
+  };
+}
 
 // Neon PostgreSQL configuration
 const connectionString = process.env.DATABASE_URL;
@@ -61,10 +172,10 @@ function getQuestionText(
 
 // Helper function to get all expected question IDs for a survey type
 function getExpectedQuestionIds(
-  surveyType: "onboarding" | "demographics" | "final"
+  surveyType: "onboarding" | "demographics" | "final" | "postListening"
 ): string[] {
   try {
-    const survey = questionsData[surveyType];
+    const survey = questionsData[surveyType as keyof typeof questionsData];
     if (!survey || !survey.blocks) return [];
 
     const questionIds: string[] = [];
@@ -77,6 +188,21 @@ function getExpectedQuestionIds(
         }
       }
     }
+    return questionIds;
+  } catch {
+    return [];
+  }
+}
+
+// Helper function to get only REQUIRED question IDs (excluding attention checks)
+function getRequiredQuestionIds(
+  surveyType: "onboarding" | "demographics" | "final" | "postListening"
+): string[] {
+  try {
+    const survey = questionsData[surveyType as keyof typeof questionsData];
+    if (!survey || !survey.blocks) return [];
+
+    const questionIds: string[] = [];
     return questionIds;
   } catch {
     return [];
@@ -96,6 +222,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const useQuestionText = searchParams.get('useQuestionText') !== 'false'; // Default to true
   const columnFormat = useQuestionText ? 'questionText' : 'questionId';
+  const filter = searchParams.get('filter'); // 'completed' or null (all)
 
   if (!sql) {
     return NextResponse.json(
@@ -105,8 +232,11 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Get all session data
-    const query = `
+    // Build query to fetch sessions
+    // When filtering for 'completed', we use experiment_completed = TRUE from the database
+    // and then apply additional validation for birth year > 1920
+    // Always filter by start_time > November 5th 2025 (study start date)
+    let query = `
       SELECT 
         session_id,
         group_type,
@@ -123,65 +253,91 @@ export async function GET(request: NextRequest) {
         qualtrics_response_id,
         engagement_metrics,
         created_at,
-        updated_at
+        updated_at,
+        experiment_completed
       FROM experiment_sessions 
-      ORDER BY created_at DESC
+      WHERE start_time > '2025-11-05'::timestamp
     `;
 
-    const sessions = await sql(query) as SessionRow[];
+    // Filter by experiment_completed when filter=completed
+    if (filter === 'completed') {
+      query += ` AND experiment_completed = TRUE`;
+    }
 
-    // Get expected question IDs for validation
+    query += ` ORDER BY created_at DESC`;
+
+    let sessions = await sql(query) as SessionRow[];
+
+    // Get expected question IDs for validation (used for logging)
     const expectedOnboardingIds = getExpectedQuestionIds("onboarding");
     const expectedDemographicsIds = getExpectedQuestionIds("demographics");
     const expectedFinalIds = getExpectedQuestionIds("final");
 
+    // If filtering for completed sessions, apply validation filters
+    if (filter === 'completed') {
+      // Filter sessions based on multiple criteria
+      const originalCount = sessions.length;
+      sessions = sessions.filter((session: SessionRow) => {
+        // Filter out sessions with null/undefined chosen_genre
+        if (session.chosen_genre === null || session.chosen_genre === undefined || session.chosen_genre === "") {
+          console.log(`❌ Session ${session.session_id}: No chosen_genre, excluding from export`);
+          return false;
+        }
+
+        // Filter out test sessions (prolific_pid = "testpid")
+        if (session.prolific_pid === "testpid") {
+          console.log(`❌ Session ${session.session_id}: Test session (prolific_pid=testpid), excluding from export`);
+          return false;
+        }
+
+        // Parse demographics to check birth year
+        let demographicsAnswers: Record<string, unknown> = {};
+        try {
+          demographicsAnswers =
+            typeof session.demographics_answers === "string"
+              ? JSON.parse(session.demographics_answers)
+              : (session.demographics_answers as Record<string, unknown>) || {};
+        } catch {
+          console.log(`❌ Session ${session.session_id}: Failed to parse demographics_answers for birth year check`);
+          return false;
+        }
+
+        // Get birth year from demographics (field id: 35_dem_2)
+        const birthYearStr = demographicsAnswers["35_dem_2"];
+        if (birthYearStr === undefined || birthYearStr === null || birthYearStr === "") {
+          console.log(`❌ Session ${session.session_id}: No birth year found, excluding from export`);
+          return false;
+        }
+
+        const birthYear = parseInt(String(birthYearStr), 10);
+        if (isNaN(birthYear)) {
+          console.log(`❌ Session ${session.session_id}: Invalid birth year "${birthYearStr}", excluding from export`);
+          return false;
+        }
+
+        if (birthYear <= 1920) {
+          console.log(`❌ Session ${session.session_id}: Birth year ${birthYear} <= 1920, excluding from export`);
+          return false;
+        }
+
+        return true;
+      });
+
+      console.log(`✅ Filtered from ${originalCount} to ${sessions.length} sessions (experiment_completed=TRUE, birth_year > 1920, has chosen_genre, not test)`);
+    }
+
     // Transform data for Excel export
     const exportData = sessions.map((session: SessionRow) => {
-      // Safely parse JSON data, handling cases where it might already be parsed
-      let onboardingAnswers: Record<string, unknown> = {};
-      let demographicsAnswers: Record<string, unknown> = {};
-      let postListeningAnswers: unknown[] = [];
-      let finalAnswers: Record<string, unknown> = {};
+      // Normalize session data to ensure consistent fields across all sessions
+      // This handles question changes that occurred during the study
+      const normalized = normalizeSessionData(session);
+      const { onboardingAnswers, demographicsAnswers, postListeningAnswers, finalAnswers } = normalized;
+      
+      // Parse engagement metrics separately (not part of normalization)
       let engagementMetrics: {
         page_times: Record<string, number>;
         interactions: unknown[];
       } = { page_times: {}, interactions: [] };
-
-      try {
-        onboardingAnswers =
-          typeof session.onboarding_answers === "string"
-            ? JSON.parse(session.onboarding_answers)
-            : session.onboarding_answers || {};
-      } catch {
-        console.warn("Failed to parse onboarding_answers");
-      }
-
-      try {
-        demographicsAnswers =
-          typeof session.demographics_answers === "string"
-            ? JSON.parse(session.demographics_answers)
-            : session.demographics_answers || {};
-      } catch {
-        console.warn("Failed to parse demographics_answers");
-      }
-
-      try {
-        postListeningAnswers =
-          typeof session.post_listening_answers === "string"
-            ? JSON.parse(session.post_listening_answers)
-            : session.post_listening_answers || [];
-      } catch {
-        console.warn("Failed to parse post_listening_answers");
-      }
-
-      try {
-        finalAnswers =
-          typeof session.final_answers === "string"
-            ? JSON.parse(session.final_answers)
-            : session.final_answers || {};
-      } catch {
-        console.warn("Failed to parse final_answers");
-      }
 
       try {
         engagementMetrics =
@@ -473,6 +629,94 @@ export async function GET(request: NextRequest) {
 
     const summarySheet = XLSX.utils.json_to_sheet(summaryData);
     XLSX.utils.book_append_sheet(workbook, summarySheet, "Summary");
+
+    // Create Field Statistics sheet - overview of all columns with counts and stats
+    const fieldStatsData: { 
+      field: string; 
+      non_null_count: number; 
+      null_count: number;
+      response_rate: string;
+      is_numeric: boolean;
+      average: string;
+      median: string;
+      min: string;
+      max: string;
+    }[] = [];
+
+    // Get all unique column names from exportData
+    const allColumns = new Set<string>();
+    exportData.forEach((row) => {
+      Object.keys(row).forEach((key) => allColumns.add(key));
+    });
+
+    // Calculate statistics for each column
+    allColumns.forEach((columnName) => {
+      const values = exportData.map((row) => row[columnName]);
+      
+      // Count non-null values (exclude undefined, null, and empty strings)
+      const nonNullValues = values.filter(
+        (v) => v !== undefined && v !== null && v !== ""
+      );
+      const nonNullCount = nonNullValues.length;
+      const nullCount = values.length - nonNullCount;
+      const responseRate = values.length > 0 
+        ? ((nonNullCount / values.length) * 100).toFixed(1) + "%" 
+        : "0%";
+
+      // Check if values are numeric
+      const numericValues = nonNullValues
+        .map((v) => {
+          if (typeof v === "number") return v;
+          if (typeof v === "string") {
+            const parsed = parseFloat(v);
+            return isNaN(parsed) ? null : parsed;
+          }
+          return null;
+        })
+        .filter((v): v is number => v !== null);
+
+      const isNumeric = numericValues.length > 0 && numericValues.length >= nonNullCount * 0.5;
+
+      let average = "-";
+      let median = "-";
+      let min = "-";
+      let max = "-";
+
+      if (isNumeric && numericValues.length > 0) {
+        // Calculate average
+        const sum = numericValues.reduce((a, b) => a + b, 0);
+        average = (sum / numericValues.length).toFixed(2);
+
+        // Calculate median
+        const sorted = [...numericValues].sort((a, b) => a - b);
+        const mid = Math.floor(sorted.length / 2);
+        median = sorted.length % 2 !== 0
+          ? sorted[mid].toFixed(2)
+          : ((sorted[mid - 1] + sorted[mid]) / 2).toFixed(2);
+
+        // Calculate min and max
+        min = Math.min(...numericValues).toFixed(2);
+        max = Math.max(...numericValues).toFixed(2);
+      }
+
+      fieldStatsData.push({
+        field: columnName,
+        non_null_count: nonNullCount,
+        null_count: nullCount,
+        response_rate: responseRate,
+        is_numeric: isNumeric,
+        average,
+        median,
+        min,
+        max,
+      });
+    });
+
+    // Sort by field name for easier reading
+    fieldStatsData.sort((a, b) => a.field.localeCompare(b.field));
+
+    const fieldStatsSheet = XLSX.utils.json_to_sheet(fieldStatsData);
+    XLSX.utils.book_append_sheet(workbook, fieldStatsSheet, "Field Statistics");
 
     // Generate Excel buffer
     const excelBuffer = XLSX.write(workbook, {

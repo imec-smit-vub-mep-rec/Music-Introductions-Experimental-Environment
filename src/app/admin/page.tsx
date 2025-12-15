@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Download, Lock, Users, Clock, BarChart3, AlertCircle } from 'lucide-react';
 import { VisualizationSection } from '@/components/admin/VisualizationSection';
 
@@ -33,6 +34,7 @@ export default function AdminPage() {
   const [isExporting, setIsExporting] = useState(false);
   const [stats, setStats] = useState<AdminStats | null>(null);
   const [error, setError] = useState('');
+  const [exportFilter, setExportFilter] = useState<'all' | 'completed'>('all');
 
   const checkAuthStatus = useCallback(async () => {
     try {
@@ -102,7 +104,8 @@ export default function AdminPage() {
     setError('');
 
     try {
-      const response = await fetch('/api/admin/export');
+      const filterParam = exportFilter === 'completed' ? '?filter=completed' : '';
+      const response = await fetch(`/api/admin/export${filterParam}`);
       
       if (response.ok) {
         // Get filename from response headers
@@ -318,7 +321,7 @@ export default function AdminPage() {
             <div>
               <h2 className="text-xl font-semibold text-gray-900">Data Export</h2>
               <p className="text-gray-600 mt-1">
-                Export all experiment data to Excel format for analysis
+                Export experiment data to Excel format for analysis
               </p>
             </div>
             <Button
@@ -329,6 +332,37 @@ export default function AdminPage() {
               <Download className="h-4 w-4" />
               <span>{isExporting ? 'Exporting...' : 'Export to Excel'}</span>
             </Button>
+          </div>
+
+          {/* Filter Options */}
+          <div className="mb-4">
+            <Label className="text-sm font-medium text-gray-700 mb-3 block">
+              Export Filter
+            </Label>
+            <RadioGroup
+              value={exportFilter}
+              onValueChange={(value) => setExportFilter(value as 'all' | 'completed')}
+              className="space-y-2"
+            >
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="all" id="filter-all" />
+                <Label
+                  htmlFor="filter-all"
+                  className="text-sm font-normal cursor-pointer"
+                >
+                  All sessions
+                </Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="completed" id="filter-completed" />
+                <Label
+                  htmlFor="filter-completed"
+                  className="text-sm font-normal cursor-pointer"
+                >
+                  Completed sessions only
+                </Label>
+              </div>
+            </RadioGroup>
           </div>
 
           {error && (
