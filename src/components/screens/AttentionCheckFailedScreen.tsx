@@ -97,14 +97,7 @@ export function AttentionCheckFailedScreen() {
                   </div>
                   <p className="text-gray-500 text-sm mt-4">
                     If you believe this was an error, please contact the
-                    researcher via email at{" "}
-                    <a
-                      href="mailto:brett.binst@vub.be"
-                      className="text-blue-500 hover:text-yellow-200"
-                    >
-                      brett.binst@vub.be
-                    </a>
-                    .
+                    researcher via email at (redacted for review)
                   </p>
                 </>
               )}

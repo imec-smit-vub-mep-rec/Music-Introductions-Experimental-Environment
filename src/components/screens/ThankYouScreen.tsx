@@ -72,52 +72,11 @@ export function ThankYouScreen() {
               </div>
             )}
             <p className="text-sm text-gray-500">
-              Any questions or remarks about this research? Please contact us at{" "}
-              <a
-                href="mailto:brett.binst@vub.be"
-                className="text-blue-500 hover:text-yellow-200"
-              >
-                brett.binst@vub.be
-              </a>
+              Any questions or remarks about this research? Please contact us at (redacted for review)
               .
             </p>
             <div className="flex items-center justify-between mt-8">
-              <a
-                href="https://www.fwo.be"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/logos/fwo.png"
-                  alt="FWO"
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <a
-                href="https://smit.research.vub.be/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/logos/smit.png"
-                  alt="SMIT"
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <a
-                href="https://www.vub.be"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/logos/vub.jpg"
-                  alt="VUB"
-                  width={100}
-                  height={100}
-                />
-              </a>
+             (logos removed for review)
             </div>
           </div>
         </div>

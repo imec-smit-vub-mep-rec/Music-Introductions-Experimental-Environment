@@ -8,6 +8,7 @@ type SessionRow = {
   session_id: number;
   group_type: string;
   chosen_genre: string | null;
+  client_ip: string | null;
   referer: string | null;
   prolific_pid: string | null;
   prolific_study_id: string | null;
@@ -203,6 +204,19 @@ function getRequiredQuestionIds(
     if (!survey || !survey.blocks) return [];
 
     const questionIds: string[] = [];
+    for (const block of survey.blocks) {
+      if (block.questions) {
+        for (const question of block.questions) {
+          // Skip attention check questions
+          if (question.id && !question.id.includes('attention_check')) {
+            // Only include required questions
+            if (question.required !== false) {
+              questionIds.push(question.id);
+            }
+          }
+        }
+      }
+    }
     return questionIds;
   } catch {
     return [];
@@ -241,6 +255,7 @@ export async function GET(request: NextRequest) {
         session_id,
         group_type,
         chosen_genre,
+        client_ip,
         referer,
         prolific_pid,
         prolific_study_id,
@@ -259,10 +274,8 @@ export async function GET(request: NextRequest) {
       WHERE start_time > '2025-11-05'::timestamp
     `;
 
-    // Filter by experiment_completed when filter=completed
-    if (filter === 'completed') {
-      query += ` AND experiment_completed = TRUE`;
-    }
+    // Note: We no longer filter by experiment_completed in SQL because the flag may be unreliable.
+    // Instead, we validate completeness by checking if all required questions are answered.
 
     query += ` ORDER BY created_at DESC`;
 
@@ -273,32 +286,151 @@ export async function GET(request: NextRequest) {
     const expectedDemographicsIds = getExpectedQuestionIds("demographics");
     const expectedFinalIds = getExpectedQuestionIds("final");
 
+    // Track filter statistics
+    const filterStats = {
+      total_before_filters: 0,
+      incomplete_survey: 0,
+      no_chosen_genre: 0,
+      test_prolific_pid: 0,
+      localhost_ip: 0,
+      no_birth_year: 0,
+      invalid_birth_year: 0,
+      birth_year_too_old: 0,
+      failed_attention_checks: 0,
+      passed_all_filters: 0,
+    };
+
+    // Get required question IDs for completeness validation
+    const requiredOnboardingIds = getRequiredQuestionIds("onboarding");
+    const requiredDemographicsIds = getRequiredQuestionIds("demographics");
+    const requiredFinalIds = getRequiredQuestionIds("final");
+
     // If filtering for completed sessions, apply validation filters
     if (filter === 'completed') {
-      // Filter sessions based on multiple criteria
-      const originalCount = sessions.length;
+      // Filter sessions based on multiple criteria and track statistics
+      filterStats.total_before_filters = sessions.length;
+      
       sessions = sessions.filter((session: SessionRow) => {
-        // Filter out sessions with null/undefined chosen_genre
-        if (session.chosen_genre === null || session.chosen_genre === undefined || session.chosen_genre === "") {
-          console.log(`❌ Session ${session.session_id}: No chosen_genre, excluding from export`);
-          return false;
-        }
-
-        // Filter out test sessions (prolific_pid = "testpid")
-        if (session.prolific_pid === "testpid") {
-          console.log(`❌ Session ${session.session_id}: Test session (prolific_pid=testpid), excluding from export`);
-          return false;
-        }
-
-        // Parse demographics to check birth year
+        // First, check survey completeness by validating all required questions are answered
+        // Parse all answer sections
+        let onboardingAnswers: Record<string, unknown> = {};
         let demographicsAnswers: Record<string, unknown> = {};
+        let postListeningAnswers: unknown[] = [];
+        let finalAnswers: Record<string, unknown> = {};
+
+        try {
+          onboardingAnswers =
+            typeof session.onboarding_answers === "string"
+              ? JSON.parse(session.onboarding_answers)
+              : (session.onboarding_answers as Record<string, unknown>) || {};
+        } catch {
+          console.log(`❌ Session ${session.session_id}: Failed to parse onboarding_answers`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
         try {
           demographicsAnswers =
             typeof session.demographics_answers === "string"
               ? JSON.parse(session.demographics_answers)
               : (session.demographics_answers as Record<string, unknown>) || {};
         } catch {
-          console.log(`❌ Session ${session.session_id}: Failed to parse demographics_answers for birth year check`);
+          console.log(`❌ Session ${session.session_id}: Failed to parse demographics_answers`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        try {
+          postListeningAnswers =
+            typeof session.post_listening_answers === "string"
+              ? JSON.parse(session.post_listening_answers)
+              : (session.post_listening_answers as unknown[]) || [];
+        } catch {
+          console.log(`❌ Session ${session.session_id}: Failed to parse post_listening_answers`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        try {
+          finalAnswers =
+            typeof session.final_answers === "string"
+              ? JSON.parse(session.final_answers)
+              : (session.final_answers as Record<string, unknown>) || {};
+        } catch {
+          console.log(`❌ Session ${session.session_id}: Failed to parse final_answers`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Check if all required onboarding questions are answered
+        const missingOnboarding = requiredOnboardingIds.filter(
+          (qId) => onboardingAnswers[qId] === undefined || onboardingAnswers[qId] === null || onboardingAnswers[qId] === ""
+        );
+        if (missingOnboarding.length > 0) {
+          console.log(`❌ Session ${session.session_id}: Missing ${missingOnboarding.length} required onboarding questions`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Check if all required demographics questions are answered
+        const missingDemographics = requiredDemographicsIds.filter(
+          (qId) => demographicsAnswers[qId] === undefined || demographicsAnswers[qId] === null || demographicsAnswers[qId] === ""
+        );
+        if (missingDemographics.length > 0) {
+          console.log(`❌ Session ${session.session_id}: Missing ${missingDemographics.length} required demographics questions`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Check if all required final questions are answered
+        const missingFinal = requiredFinalIds.filter(
+          (qId) => finalAnswers[qId] === undefined || finalAnswers[qId] === null || finalAnswers[qId] === ""
+        );
+        if (missingFinal.length > 0) {
+          console.log(`❌ Session ${session.session_id}: Missing ${missingFinal.length} required final questions`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Check if we have exactly 3 songs with answers
+        if (!Array.isArray(postListeningAnswers) || postListeningAnswers.length !== 3) {
+          console.log(`❌ Session ${session.session_id}: Expected 3 songs, found ${Array.isArray(postListeningAnswers) ? postListeningAnswers.length : 0}`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Check each song has answers
+        const songsWithAnswers = postListeningAnswers.filter((song: unknown) => {
+          if (song && typeof song === "object" && song !== null && "answers" in song) {
+            const songAnswers = (song as { answers?: Record<string, unknown> }).answers;
+            return songAnswers && typeof songAnswers === "object" && Object.keys(songAnswers).length > 0;
+          }
+          return false;
+        });
+        if (songsWithAnswers.length !== 3) {
+          console.log(`❌ Session ${session.session_id}: Only ${songsWithAnswers.length}/3 songs have answers`);
+          filterStats.incomplete_survey++;
+          return false;
+        }
+
+        // Filter out sessions with null/undefined chosen_genre
+        if (session.chosen_genre === null || session.chosen_genre === undefined || session.chosen_genre === "") {
+          console.log(`❌ Session ${session.session_id}: No chosen_genre, excluding from export`);
+          filterStats.no_chosen_genre++;
+          return false;
+        }
+
+        // Filter out test sessions (prolific_pid = "testpid")
+        if (session.prolific_pid === "testpid") {
+          console.log(`❌ Session ${session.session_id}: Test session (prolific_pid=testpid), excluding from export`);
+          filterStats.test_prolific_pid++;
+          return false;
+        }
+
+        // Filter out localhost sessions (client_ip = "::1")
+        if (session.client_ip === "::1") {
+          console.log(`❌ Session ${session.session_id}: Localhost session (client_ip=::1), excluding from export`);
+          filterStats.localhost_ip++;
           return false;
         }
 
@@ -306,24 +438,74 @@ export async function GET(request: NextRequest) {
         const birthYearStr = demographicsAnswers["35_dem_2"];
         if (birthYearStr === undefined || birthYearStr === null || birthYearStr === "") {
           console.log(`❌ Session ${session.session_id}: No birth year found, excluding from export`);
+          filterStats.no_birth_year++;
           return false;
         }
 
         const birthYear = parseInt(String(birthYearStr), 10);
         if (isNaN(birthYear)) {
           console.log(`❌ Session ${session.session_id}: Invalid birth year "${birthYearStr}", excluding from export`);
+          filterStats.invalid_birth_year++;
           return false;
         }
 
         if (birthYear <= 1920) {
           console.log(`❌ Session ${session.session_id}: Birth year ${birthYear} <= 1920, excluding from export`);
+          filterStats.birth_year_too_old++;
+          return false;
+        }
+
+        // Count failed attention checks
+        // Correct answers: attention_check_1 = "2", attention_check_2 = "5", attention_check_postlistening/attention_check_1 (per song) = "1"
+        let failedAttentionChecks = 0;
+
+        // Check onboarding attention_check_1 (correct: "2")
+        if (onboardingAnswers["attention_check_1"] !== undefined && 
+            onboardingAnswers["attention_check_1"] !== null && 
+            String(onboardingAnswers["attention_check_1"]) !== "2") {
+          failedAttentionChecks++;
+          console.log(`⚠️ Session ${session.session_id}: Failed onboarding attention_check_1 (answered: ${onboardingAnswers["attention_check_1"]}, expected: 2)`);
+        }
+
+        // Check onboarding attention_check_2 (correct: "5")
+        if (onboardingAnswers["attention_check_2"] !== undefined && 
+            onboardingAnswers["attention_check_2"] !== null && 
+            String(onboardingAnswers["attention_check_2"]) !== "5") {
+          failedAttentionChecks++;
+          console.log(`⚠️ Session ${session.session_id}: Failed onboarding attention_check_2 (answered: ${onboardingAnswers["attention_check_2"]}, expected: 5)`);
+        }
+
+        // Check post-listening attention checks for each song (correct: "1")
+        if (Array.isArray(postListeningAnswers)) {
+          postListeningAnswers.forEach((song: unknown, songIndex: number) => {
+            if (song && typeof song === "object" && song !== null && "answers" in song) {
+              const songAnswers = (song as { answers?: Record<string, unknown> }).answers || {};
+              
+              // Check for attention_check_1 (renamed from attention_check_postlistening)
+              const attentionAnswer = songAnswers["attention_check_1"] ?? songAnswers["attention_check_postlistening"];
+              if (attentionAnswer !== undefined && 
+                  attentionAnswer !== null && 
+                  String(attentionAnswer) !== "1") {
+                failedAttentionChecks++;
+                console.log(`⚠️ Session ${session.session_id}: Failed song ${songIndex + 1} attention check (answered: ${attentionAnswer}, expected: 1)`);
+              }
+            }
+          });
+        }
+
+        // Exclude sessions with 2 or more failed attention checks
+        if (failedAttentionChecks >= 2) {
+          console.log(`❌ Session ${session.session_id}: Failed ${failedAttentionChecks} attention checks (≥2), excluding from export`);
+          filterStats.failed_attention_checks++;
           return false;
         }
 
         return true;
       });
 
-      console.log(`✅ Filtered from ${originalCount} to ${sessions.length} sessions (experiment_completed=TRUE, birth_year > 1920, has chosen_genre, not test)`);
+      filterStats.passed_all_filters = sessions.length;
+      console.log(`✅ Filtered from ${filterStats.total_before_filters} to ${sessions.length} sessions`);
+      console.log(`📊 Filter statistics:`, filterStats);
     }
 
     // Transform data for Excel export
@@ -717,6 +899,68 @@ export async function GET(request: NextRequest) {
 
     const fieldStatsSheet = XLSX.utils.json_to_sheet(fieldStatsData);
     XLSX.utils.book_append_sheet(workbook, fieldStatsSheet, "Field Statistics");
+
+    // Create Filter Statistics sheet - shows how many rows were removed by each filter
+    const filterStatsData = [
+      { 
+        filter: "Total sessions (after start_time filter)", 
+        count: filterStats.total_before_filters,
+        description: "All sessions with start_time > 2025-11-05"
+      },
+      { 
+        filter: "Removed: Incomplete survey", 
+        count: filterStats.incomplete_survey,
+        description: "Sessions missing required questions (onboarding, demographics, final, or 3 songs)"
+      },
+      { 
+        filter: "Removed: No chosen genre", 
+        count: filterStats.no_chosen_genre,
+        description: "Sessions where chosen_genre is null, undefined, or empty"
+      },
+      { 
+        filter: "Removed: Test Prolific ID", 
+        count: filterStats.test_prolific_pid,
+        description: "Sessions where prolific_pid = 'testpid'"
+      },
+      { 
+        filter: "Removed: Localhost IP", 
+        count: filterStats.localhost_ip,
+        description: "Sessions where client_ip = '::1' (localhost)"
+      },
+      { 
+        filter: "Removed: No birth year", 
+        count: filterStats.no_birth_year,
+        description: "Sessions where birth year (35_dem_2) is missing"
+      },
+      { 
+        filter: "Removed: Invalid birth year", 
+        count: filterStats.invalid_birth_year,
+        description: "Sessions where birth year could not be parsed as a number"
+      },
+      { 
+        filter: "Removed: Birth year ≤ 1920", 
+        count: filterStats.birth_year_too_old,
+        description: "Sessions where birth year is 1920 or earlier"
+      },
+      { 
+        filter: "Removed: Failed ≥2 attention checks", 
+        count: filterStats.failed_attention_checks,
+        description: "Sessions where 2 or more attention checks were answered incorrectly"
+      },
+      { 
+        filter: "TOTAL REMOVED", 
+        count: filterStats.total_before_filters - filterStats.passed_all_filters,
+        description: "Total number of sessions excluded from export"
+      },
+      { 
+        filter: "PASSED ALL FILTERS (exported)", 
+        count: filterStats.passed_all_filters,
+        description: "Valid sessions included in the export"
+      },
+    ];
+
+    const filterStatsSheet = XLSX.utils.json_to_sheet(filterStatsData);
+    XLSX.utils.book_append_sheet(workbook, filterStatsSheet, "Filter Statistics");
 
     // Generate Excel buffer
     const excelBuffer = XLSX.write(workbook, {
