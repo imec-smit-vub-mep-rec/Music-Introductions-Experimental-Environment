@@ -73,6 +73,16 @@ http://localhost:3000/experiment?PROLIFIC_PID=1234567890&STUDY_ID=1234567890&SES
 4. Run `npm run dev` to start the development server
 5. Open [http://localhost:3000](http://localhost:3000) to see the result
 
+## Reviewer overview of the introductions
+
+`/review` is a password-protected page for reviewers. It lists every song per genre and shows its informative or immersive introduction (toggle), with audio, the synced transcript, and the song itself. The selected song and style are kept in the URL (e.g. `/review?song=blues_1&style=immersive`), so links to a specific introduction can be shared.
+
+Set the password with an environment variable (e.g. in Vercel project settings) and redeploy:
+```
+REVIEW_PASSWORD=choose-a-strong-password
+```
+The page stays locked until `REVIEW_PASSWORD` is set. Changing the password logs out existing reviewers. The audio and transcript files under `public/data` remain publicly reachable by direct URL, as the experiment needs them.
+
 ## localStorage Data Structure
 
 All experiment data is stored locally in the browser under the key `serendipity_session`. See [METRICS_DOCUMENTATION.md](./METRICS_DOCUMENTATION.md) for complete details.
