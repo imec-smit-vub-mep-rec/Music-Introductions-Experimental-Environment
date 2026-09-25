@@ -24,6 +24,9 @@ interface AudioPlayerScreenProps {
   introductionStyle?: string;
   onSkip?: (skippedAtMs: number) => void;
   onSongComplete?: (listeningTimeMs: number) => void;
+  // When provided, called as the introduction ends instead of starting the song
+  // (the public review page shows the introductions without the song recordings)
+  onIntroductionComplete?: () => void;
 }
 
 export function AudioPlayerScreen({
@@ -39,7 +42,8 @@ export function AudioPlayerScreen({
   songNumber = 1,
   introductionStyle = 'no_introduction',
   onSkip,
-  onSongComplete
+  onSongComplete,
+  onIntroductionComplete
 }: AudioPlayerScreenProps) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -136,6 +140,11 @@ export function AudioPlayerScreen({
   };
 
   const handleExplanationComplete = () => {
+    if (onIntroductionComplete) {
+      onIntroductionComplete();
+      return;
+    }
+
     // Switch to song phase
     setIsExplanationPhase(false);
     setCurrentAudioUrl(song.audioUrl);
