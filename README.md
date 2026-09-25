@@ -75,13 +75,15 @@ http://localhost:3000/experiment?PROLIFIC_PID=1234567890&STUDY_ID=1234567890&SES
 
 ## Reviewer overview of the introductions
 
-`/review` is a password-protected page for reviewers. It lists every song per genre and shows its informative or immersive introduction (toggle), with audio, the synced transcript, and the song itself. The selected song and style are kept in the URL (e.g. `/review?song=blues_1&style=immersive`), so links to a specific introduction can be shared.
+`/review` is a password-protected page for reviewers. It lists every song per genre and shows its informative or immersive introduction (toggle) in the original participant player (`AudioPlayerScreen`): the lyrics scroll along with the spoken introduction, then the song starts. The full transcript is shown below it. The selected song and style are kept in the URL (e.g. `/review?song=blues_1&style=immersive`), so links to a specific introduction can be shared. Session tracking is disabled on `/review` (see `getSession` in `src/lib/session.ts`), so browsing it never changes a participant session stored in the same browser.
+
+The songs in `public/data` are placeholders (anonymized). The original recordings are in `public/review-audio`, which `src/proxy.ts` only serves to reviewers who are logged in on `/review`.
 
 Set the password with an environment variable (e.g. in Vercel project settings) and redeploy:
 ```
 REVIEW_PASSWORD=choose-a-strong-password
 ```
-The page stays locked until `REVIEW_PASSWORD` is set. Changing the password logs out existing reviewers. The audio and transcript files under `public/data` remain publicly reachable by direct URL, as the experiment needs them.
+The page stays locked until `REVIEW_PASSWORD` is set. Changing the password logs out existing reviewers. The introduction audio and transcripts under `public/data` remain publicly reachable by direct URL, as the experiment needs them.
 
 ## localStorage Data Structure
 

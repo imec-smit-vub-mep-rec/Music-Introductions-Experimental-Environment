@@ -7,17 +7,19 @@ import type { Genre, Song } from '@/lib/types';
 import type { IntroductionStyle } from '@/lib/session';
 import { getIntroductionTranscriptUrl } from '@/lib/randomization';
 import { cn } from '@/lib/utils';
-import { IntroductionPlayer, prefetchTranscript } from './IntroductionPlayer';
+import { AudioPlayerScreen } from '@/components/screens/AudioPlayerScreen';
+import { IntroductionTranscript, prefetchTranscript } from './IntroductionTranscript';
 
 export type ReviewStyle = 'informative' | 'immersive';
 
-const STYLES: Record<
-  ReviewStyle,
-  { label: string; introductionStyle: IntroductionStyle; audioKey: 'informIntroductionUrl' | 'immersIntroductionUrl' }
-> = {
-  informative: { label: 'Informative', introductionStyle: 'informative_introduction', audioKey: 'informIntroductionUrl' },
-  immersive: { label: 'Immersive', introductionStyle: 'immersive_introduction', audioKey: 'immersIntroductionUrl' },
+const STYLES: Record<ReviewStyle, { label: string; introductionStyle: IntroductionStyle }> = {
+  informative: { label: 'Informative', introductionStyle: 'informative_introduction' },
+  immersive: { label: 'Immersive', introductionStyle: 'immersive_introduction' },
 };
+
+// The public experiment serves placeholder songs from /data; the original
+// recordings live in /review-audio, which only logged-in reviewers can load.
+const toReviewAudioUrl = (url: string) => url.replace(/^\/data\//, '/review-audio/');
 
 interface IntroductionBrowserProps {
   genres: Genre[];
@@ -46,10 +48,12 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
 
   const songIndex = orderedSongs.findIndex((song) => song.id === songId);
   const song = orderedSongs[songIndex];
-  const genre = genres.find((g) => g.id === song.genre)!;
+  const group = groups.find((g) => g.genre.id === song.genre)!;
+  const genre = group.genre;
   const introductionStyle = STYLES[style].introductionStyle;
-  const audioUrl = song[STYLES[style].audioKey];
   const transcriptUrl = getIntroductionTranscriptUrl(song, introductionStyle);
+  // Stable object: AudioPlayerScreen restarts the introduction whenever `song` changes
+  const reviewSong = useMemo(() => ({ ...song, audioUrl: toReviewAudioUrl(song.audioUrl) }), [song]);
 
   // Keep the selection in the URL so reviewers can share or bookmark it
   useEffect(() => {
@@ -63,17 +67,6 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
       if (url) prefetchTranscript(url);
     }
   }, [song]);
-
-  // Only one audio element plays at a time
-  useEffect(() => {
-    const handlePlay = (event: Event) => {
-      document.querySelectorAll('audio').forEach((audio) => {
-        if (audio !== event.target) audio.pause();
-      });
-    };
-    document.addEventListener('play', handlePlay, true);
-    return () => document.removeEventListener('play', handlePlay, true);
-  }, []);
 
   const goTo = (offset: number) => {
     const next = orderedSongs[(songIndex + offset + orderedSongs.length) % orderedSongs.length];
@@ -103,9 +96,10 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
           <p className="mt-2 max-w-3xl text-dark-purple/70">
             All spoken introductions used in the experiment: {orderedSongs.length} songs across{' '}
             {groups.length} genres, each with an informative and an immersive version. In the experiment,
-            each participant heard three songs from one genre, and each song was randomly paired with no
-            introduction, the informative introduction, or the immersive introduction, played right before the
-            song.
+            each participant heard three songs from one genre in random order, and each song was randomly paired
+            with no introduction, the informative introduction, or the immersive introduction. Each introduction
+            is shown below in the player participants used: the lyrics scroll along with the spoken
+            introduction, and the song starts automatically when it ends.
           </p>
         </header>
 
@@ -174,7 +168,7 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
           {/* Selected song */}
           <main className="min-w-0 space-y-6">
             <section className="rounded-2xl border border-dark-purple/10 bg-white p-5 shadow-sm sm:p-8">
-              <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+              <div className="flex flex-wrap items-end justify-between gap-4">
                 <div className="min-w-0">
                   <p className="mb-1 text-sm font-medium text-dark-purple/60">
                     <span aria-hidden>{genre.icon}</span> {genre.name} · song {songIndex + 1} of{' '}
@@ -208,25 +202,39 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
                   ))}
                 </div>
               </div>
-
-              {audioUrl && transcriptUrl ? (
-                <IntroductionPlayer
-                  key={`${song.id}-${style}`}
-                  audioUrl={audioUrl}
-                  transcriptUrl={transcriptUrl}
-                />
-              ) : (
-                <p className="text-sm text-dark-purple/60">This song has no {style} introduction.</p>
-              )}
             </section>
 
-            <section className="rounded-2xl border border-dark-purple/10 bg-white p-5 shadow-sm sm:p-8">
-              <h3 className="mb-1 font-semibold text-dark-purple">The song</h3>
-              <p className="mb-4 text-sm text-dark-purple/60">
-                The track participants heard after the introduction.
-              </p>
-              <audio key={song.id} src={song.audioUrl} controls preload="none" className="w-full" />
+            <section
+              aria-labelledby="participant-view"
+              className="overflow-hidden rounded-2xl border border-dark-purple/10 shadow-sm"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-dark-purple/10 bg-white px-5 py-3 text-sm">
+                <h3 id="participant-view" className="font-semibold text-dark-purple">
+                  Participant view
+                </h3>
+                <span className="text-dark-purple/60">Introduction first, then the song</span>
+              </div>
+              <AudioPlayerScreen
+                key={`${song.id}-${style}`}
+                song={reviewSong}
+                genre={genre}
+                currentSongIndex={group.songs.indexOf(song)}
+                totalSongs={group.songs.length}
+                songNumber={group.songs.indexOf(song) + 1}
+                introductionStyle={introductionStyle}
+                hasNextSong
+                hasPreviousSong
+                onNextSong={() => goTo(1)}
+                onPreviousSong={() => goTo(-1)}
+                onComplete={() => undefined}
+              />
             </section>
+
+            {transcriptUrl && (
+              <section className="rounded-2xl border border-dark-purple/10 bg-white p-5 shadow-sm sm:p-8">
+                <IntroductionTranscript key={transcriptUrl} transcriptUrl={transcriptUrl} />
+              </section>
+            )}
 
             <div className="flex justify-between gap-4">
               <button

@@ -33,11 +33,12 @@ export function isValidReviewPassword(candidate: string): boolean {
   return safeEqual(createReviewToken(candidate), createReviewToken(password));
 }
 
-export async function isReviewAuthenticated(): Promise<boolean> {
+export function isValidReviewToken(token: string | undefined): boolean {
   const password = getReviewPassword();
-  if (!password) return false;
+  return !!password && !!token && safeEqual(token, createReviewToken(password));
+}
 
+export async function isReviewAuthenticated(): Promise<boolean> {
   const cookieStore = await cookies();
-  const token = cookieStore.get(REVIEW_COOKIE_NAME)?.value;
-  return !!token && safeEqual(token, createReviewToken(password));
+  return isValidReviewToken(cookieStore.get(REVIEW_COOKIE_NAME)?.value);
 }
