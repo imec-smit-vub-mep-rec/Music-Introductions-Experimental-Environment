@@ -1,14 +1,13 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Genre, Song } from '@/lib/types';
 import type { IntroductionStyle } from '@/lib/session';
 import { getIntroductionTranscriptUrl } from '@/lib/randomization';
 import { cn } from '@/lib/utils';
-import { AudioPlayerScreen } from '@/components/screens/AudioPlayerScreen';
 import { IntroductionTranscript, prefetchTranscript } from './IntroductionTranscript';
+import { ParticipantView } from './ParticipantView';
 
 export type ReviewStyle = 'informative' | 'immersive';
 
@@ -16,10 +15,6 @@ const STYLES: Record<ReviewStyle, { label: string; introductionStyle: Introducti
   informative: { label: 'Informative', introductionStyle: 'informative_introduction' },
   immersive: { label: 'Immersive', introductionStyle: 'immersive_introduction' },
 };
-
-// The public experiment serves placeholder songs from /data; the original
-// recordings live in /review-audio, which only logged-in reviewers can load.
-const toReviewAudioUrl = (url: string) => url.replace(/^\/data\//, '/review-audio/');
 
 interface IntroductionBrowserProps {
   genres: Genre[];
@@ -29,8 +24,6 @@ interface IntroductionBrowserProps {
 }
 
 export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle }: IntroductionBrowserProps) {
-  const router = useRouter();
-
   // Songs grouped by genre, in genre order
   const groups = useMemo(
     () =>
@@ -52,8 +45,6 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
   const genre = group.genre;
   const introductionStyle = STYLES[style].introductionStyle;
   const transcriptUrl = getIntroductionTranscriptUrl(song, introductionStyle);
-  // Stable object: AudioPlayerScreen restarts the introduction whenever `song` changes
-  const reviewSong = useMemo(() => ({ ...song, audioUrl: toReviewAudioUrl(song.audioUrl) }), [song]);
 
   // Keep the selection in the URL so reviewers can share or bookmark it
   useEffect(() => {
@@ -73,33 +64,19 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
     setSongId(next.id);
   };
 
-  const handleLogout = async () => {
-    await fetch('/api/review/auth', { method: 'DELETE' });
-    router.refresh();
-  };
-
   return (
     <div className="min-h-screen bg-ivory">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
         <header className="mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <h1 className="text-2xl font-bold text-dark-purple sm:text-3xl">Music introductions</h1>
-            <button
-              type="button"
-              onClick={handleLogout}
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-dark-purple/15 bg-white px-3 py-2 text-sm text-dark-purple/70 hover:text-dark-purple"
-            >
-              <LogOut className="h-4 w-4" />
-              Log out
-            </button>
-          </div>
+          <h1 className="text-2xl font-bold text-dark-purple sm:text-3xl">Music introductions</h1>
           <p className="mt-2 max-w-3xl text-dark-purple/70">
             All spoken introductions used in the experiment: {orderedSongs.length} songs across{' '}
             {groups.length} genres, each with an informative and an immersive version. In the experiment,
             each participant heard three songs from one genre in random order, and each song was randomly paired
             with no introduction, the informative introduction, or the immersive introduction. Each introduction
-            is shown below in the player participants used: the lyrics scroll along with the spoken
-            introduction, and the song starts automatically when it ends.
+            is shown below in the player participants used, with the lyrics scrolling along with the spoken
+            introduction. In the experiment, the song then started automatically; the song recordings
+            themselves are not included here.
           </p>
         </header>
 
@@ -212,21 +189,16 @@ export function IntroductionBrowser({ genres, songs, initialSongId, initialStyle
                 <h3 id="participant-view" className="font-semibold text-dark-purple">
                   Participant view
                 </h3>
-                <span className="text-dark-purple/60">Introduction first, then the song</span>
+                <span className="text-dark-purple/60">As participants saw it</span>
               </div>
-              <AudioPlayerScreen
+              <ParticipantView
                 key={`${song.id}-${style}`}
-                song={reviewSong}
+                song={song}
                 genre={genre}
-                currentSongIndex={group.songs.indexOf(song)}
-                totalSongs={group.songs.length}
                 songNumber={group.songs.indexOf(song) + 1}
+                totalSongs={group.songs.length}
                 introductionStyle={introductionStyle}
-                hasNextSong
-                hasPreviousSong
                 onNextSong={() => goTo(1)}
-                onPreviousSong={() => goTo(-1)}
-                onComplete={() => undefined}
               />
             </section>
 
