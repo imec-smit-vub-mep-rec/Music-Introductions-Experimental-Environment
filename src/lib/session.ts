@@ -63,6 +63,14 @@ export interface SessionData {
 const SESSION_STORAGE_KEY = "serendipity_session";
 const PROLIFIC_DATA_STORAGE_KEY = "serendipity_prolific_data";
 
+// The reviewer overview renders experiment screens for preview only. It must never
+// read or write a participant session that may exist in the same browser, so
+// session tracking (song sessions, interactions, likes) is a no-op there.
+function isPreviewPage(): boolean {
+  const { pathname } = window.location;
+  return pathname === "/review" || pathname.startsWith("/review/");
+}
+
 // Global counter to ensure uniqueness even with rapid successive calls
 let sessionCounter = 0;
 
@@ -241,7 +249,7 @@ export async function createNewSession(): Promise<SessionData> {
 }
 
 export function getSession(): SessionData | null {
-  if (typeof window === "undefined") return null;
+  if (typeof window === "undefined" || isPreviewPage()) return null;
 
   try {
     const stored = localStorage.getItem(SESSION_STORAGE_KEY);

@@ -51,20 +51,14 @@ export function getIntroductionUrl(
 }
 
 export function getIntroductionTranscriptUrl(
-  song: { id: string; audioUrl: string }, 
+  song: { informIntroductionUrl?: string; immersIntroductionUrl?: string },
   introductionStyle: IntroductionStyle
 ): string | null {
-  if (introductionStyle === 'no_introduction') {
-    return null;
-  }
-  
-  // Use naming convention based on introduction style
-  const basePath = song.audioUrl.replace('/song', '').replace('.m4a', '').replace('.mp3', '');
-  if (introductionStyle === 'informative_introduction') {
-    return `${basePath}/inform.json`;
-  } else if (introductionStyle === 'immersive_introduction') {
-    return `${basePath}/immers.json`;
-  }
-  
-  return null;
+  // Each transcript sits next to its introduction audio (inform.wav -> inform.json)
+  const introductionUrl =
+    introductionStyle === 'informative_introduction' ? song.informIntroductionUrl
+    : introductionStyle === 'immersive_introduction' ? song.immersIntroductionUrl
+    : undefined;
+
+  return introductionUrl ? introductionUrl.replace(/\.[^./]+$/, '.json') : null;
 }
